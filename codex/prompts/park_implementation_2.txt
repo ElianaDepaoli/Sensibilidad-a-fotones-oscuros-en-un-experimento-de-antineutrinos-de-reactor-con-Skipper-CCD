@@ -1,0 +1,29 @@
+What is query:
+Derive the cross section production of dark photons via Compton-like process. 
+This is needed to reproduce figure 1 in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/papers_init/
+Reproduce it
+
+How, strategy:
+Decide weather you need to use Reference 15 and others or do it from first principles. Report it by stablishing the background formulas you'll use.
+Then, code to implement the cross section production.
+For the moment, do not implement any Danilov or posterior corrections.
+Be explicit in wich energy region classic COMPTON total cross section is not allowed.
+
+What is expected as outcome:
+A report*.html for you to follow-up. At the end of the report inform model and reasoning effort, time to resolve the task, tokens used. 
+A report*.pdf for human gathering the detail cross section calculation, the plots and claims. Produce both an english and spanish.
+
+Rules for human report:
+Stay simple, avoid useless connectors. Don't be polite. Use human speak, not machine. Clarity, intelligible, readable, simple is a goal.
+All the formulas in latex format. Mus have the structure of a physics lecture
+
+Rules for you: 
+add a skill*.md with the skills you need to adjust to these and the following requierements within this session.
+
+Rules for coding:
+use ROOT 6.36.000 With C++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Structure every calculation inside a function. Provide them with comments for human.
+Stay simple, use ROOT documentation and forums.
+Make easy to use for a different experiment with a different background, ROI, exposure, detector mass, A, Z.
+
+Interpret * contextually

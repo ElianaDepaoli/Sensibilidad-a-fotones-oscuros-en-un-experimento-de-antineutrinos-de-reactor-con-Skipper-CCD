@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Park / TEXONO: implementation handoff</title><style>body{margin:0;background:#f7f6f2;color:#172331;font:17px/1.55 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:40px 25px 80px}h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1}h2{margin-top:2em;border-bottom:1px solid #bbb}h3{margin-top:1.5em}a{color:#145a80}table{border-collapse:collapse;width:100%;font-size:.91rem}td,th{border:1px solid #ccc;padding:9px;text-align:left;vertical-align:top}th{background:#e6edf1}pre{overflow:auto;background:#eaf0f3;padding:15px;font-size:.8rem}code{font-size:.9em}.note{background:#fff1d9;border-left:5px solid #b77715;padding:16px}.pass{color:#126849}.fail{color:#a12d2d}.figure img{width:100%;max-height:650px}figcaption{font-size:.88rem;color:#475669}.meta{font-size:.88rem;color:#536473}.equation{padding:12px;background:#fff;overflow:auto}.scroll{overflow-x:auto}li{margin:.3em 0}</style></head><body><main><h1>Park / TEXONO: implementation handoff</h1><aside id="continuation-update" class="note"><strong>Continuation:</strong>
+    A conditional production normalization and a lower source cutoff closely track the Figure 1 curves.
+    This is a hypothesis about an undocumented implementation choice; it changes the stated equation.
+    The TEXONO limit remains unreproduced.
+    <a href="report_park_texono_continuation.html">New diagnostics, plot and run receipt</a>.</aside><p>The remaining issue is the paper comparison, not compilation or quadrature.
+    The result ε₉₅=1.565499511e-05 does not match the printed 2.1e-05.</p>
+    <div class="scroll"><table><tr><th>File in code/park_texono/</th><th>Responsibility</th></tr><tr><td>derive.py</td><td>Dirac trace recursion, symbolic photon limit, Ward identities, header generation</td></tr><tr><td>matrix_element_generated.h</td><td>Generated compact invariant squared amplitude</td></tr><tr><td>park_texono.cpp</td><td>All numerical physics and ROOT plots; comments at each function</td></tr><tr><td>texono.conf</td><td>Power, baseline, exposure, target mass, A/Z, ROI, counts, uncertainty and acceptance</td></tr><tr><td>inspect_sources.py</td><td>PDF vector path extraction; fixed, documented axis calibration</td></tr><tr><td>figures.py</td><td>Marimo display of ROOT outputs; no replacement physics calculation</td></tr><tr><td>make_reports.py</td><td>HTML generation, provenance merge, and vault receipt</td></tr></table></div>
+    <p>Change experiment inputs in texono.conf. For a compound, A is grams per mole of formula units and Z is the electron count
+    per formula unit. For a mixture, use the weighted electron-per-mass ratio. baseline_m is metres; the code converts it to centimetres.
+    sigma_events is the total event-count uncertainty. background=observed preserves Park's uncertainty-only convention;
+    a different background enables the documented positive-residual count cap. It is not a Poisson likelihood.</p>
+    <p>efficiency is a constant full-containment acceptance. A response matrix or energy-dependent efficiency is not implemented.
+    The numerical implementation is intended for the paper's sub-MeV masses and MeV energies; porting it to lower energies
+    requires atomic physics and a validated source spectrum. NIST data are diagnostic only.</p>
+    <h2>Numerical consistency</h2>
+    <p>Doubling quadrature nodes changes the event coefficient by 2.10942e-13 fractionally.
+    Swapping the order of source and detector integration changes it by 2.87104e-13.
+    The incident gamma-tail extension also passes its stored tolerance.</p>
+    <pre>PASS: exact explicit Dirac matrices agree; both Ward identities vanish on shell
+PASS: interference traces agree; photon limit equals Klein-Nishina exactly
+PASS: s/u symmetry and external electron mass shell
+F(s,u)= -2*(2*M2**2*m**4 - 2*M2**2*m**2*s - 2*M2**2*m**2*u + 2*M2**2*s*u - 2*M2*m**4*s - 2*M2*m**4*u + 8*M2*m**2*s*u - 2*M2*s**2*u - 2*M2*s*u**2 - 6*m**8 + 3*m**4*s**2 + 14*m**4*s*u + 3*m**4*u**2 - m**2*s**3 - 7*m**2*s**2*u - 7*m**2*s*u**2 - m**2*u**3 + s**3*u + s*u**3)/((-m**2 + s)**2*(-m**2 + u)**2)
+</pre><pre>ROOT 6.36.000; C++ 13.3.0
+PASS: finite-mass trace integrals match Reference 15; production KN and detection 2/3 KN limits
+N95 = 197.176
+N_e = 4.681235955e+28
+N(epsilon=1) = 3.282783995e+21
+epsilon95 = 1.565499511e-05
+Park printed epsilon95 = 2.1e-05
+Paper limit comparison = FAIL (reported, no normalization fitted)
+PASS: quadrature, gamma-tail, photon integral, count cap, and power scaling checks
+Info in &lt;TCanvas::Print&gt;: SVG file output/figure1.svg has been created
+Info in &lt;TCanvas::Print&gt;: pdf file output/figure1.pdf has been created
+Info in &lt;TCanvas::Print&gt;: SVG file output/figure2_texono.svg has been created
+Info in &lt;TCanvas::Print&gt;: pdf file output/figure2_texono.pdf has been created
+Info in &lt;TCanvas::Print&gt;: SVG file output/cross_sections.svg has been created
+Info in &lt;TCanvas::Print&gt;: pdf file output/cross_sections.pdf has been created
+Info in &lt;TCanvas::Print&gt;: SVG file output/compton_validity.svg has been created
+Info in &lt;TCanvas::Print&gt;: pdf file output/compton_validity.pdf has been created
+Info in &lt;TCanvas::Print&gt;: SVG file output/figure1_comparison.svg has been created
+Info in &lt;TCanvas::Print&gt;: pdf file output/figure1_comparison.pdf has been created
+Figure 1 m=0.1 MeV: median relative residual=0.04223486988; PASS (10% diagnostic tolerance)
+Figure 1 m=0.5 MeV: median relative residual=0.1141071908; FAIL (10% diagnostic tolerance)
+Figure 1 m=1 MeV: median relative residual=0.3812906341; FAIL (10% diagnostic tolerance)
+</pre>
+    <h2>Continuation constraints</h2><ul>
+    <li>Do not overwrite the original corpus, reports, or previous provenance records.</li>
+    <li>Do not apply a fitted acceptance to claim reproduction. The prompt-flux/literal-bound diagnostic is not the stated Eq. (3) computation.</li>
+    <li>Do not claim the complete exclusion compilation was reproduced. The requested scope is TEXONO.</li>
+    <li>The photon source and the three-photon width are literature inputs. A tree-level derivation does not verify them.</li>
+    <li>Existing marimo environment: /home/eliana/.marimo/bin/python. No PyMuPDF dependency is needed; pdftocairo supplies SVG paths.</li></ul>
+    <p><a href="report_park_texono_human.html">Complete human report</a> · <a href="code/park_texono/output/results.json">Machine-readable results</a> ·
+    <a href="provenance/claims.yaml">Claims and figure provenance</a>.</p><footer><h2>Execution record</h2><p>Model: GPT-6 (reported by the session).
+    Reasoning effort: not exposed. Exact token usage: not exposed; no estimate is substituted.
+    Elapsed wall time to this report build: 21.15 minutes, including the interruption and approval waits.
+    Start: 2026-09-17T15:45:41+00:00; report build: 2026-09-17T16:06:50.125460+00:00.</p>
+    <p>ROOT 6.36.000; g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0.
+    Existing notebook environment: /home/eliana/.marimo/bin/python (marimo 0.24.0).
+    No packages were installed in the base environment.</p></footer></main></body></html>

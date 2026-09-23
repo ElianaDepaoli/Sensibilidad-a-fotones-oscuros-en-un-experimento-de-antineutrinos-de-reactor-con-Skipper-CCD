@@ -1,0 +1,27 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Park / TEXONO: seguimiento</title><style>body{margin:0;background:#f7f6f2;color:#172331;font:17px/1.55 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:40px 25px 80px}h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1}h2{margin-top:2em;border-bottom:1px solid #bbb}h3{margin-top:1.5em}a{color:#145a80}table{border-collapse:collapse;width:100%;font-size:.91rem}td,th{border:1px solid #ccc;padding:9px;text-align:left;vertical-align:top}th{background:#e6edf1}pre{overflow:auto;background:#eaf0f3;padding:15px;font-size:.8rem}code{font-size:.9em}.note{background:#fff1d9;border-left:5px solid #b77715;padding:16px}.pass{color:#126849}.fail{color:#a12d2d}.figure img{width:100%;max-height:650px}figcaption{font-size:.88rem;color:#475669}.meta{font-size:.88rem;color:#536473}.equation{padding:12px;background:#fff;overflow:auto}.scroll{overflow-x:auto}li{margin:.3em 0}</style></head><body><main><h1>Park / TEXONO: seguimiento</h1><aside id="continuation-update" class="note"><strong>Continuación:</strong>
+    Normalizar el espectro de producción por su propia sección eficaz total y bajar el corte de la fuente
+    aproxima las curvas de la figura original. Es una hipótesis sobre una elección de implementación no documentada;
+    modifica la ecuación publicada. El límite de TEXONO sigue sin reproducirse.
+    <a href="report_park_texono_continuation.html">Diagnóstico, figura y registro de ejecución, en inglés</a>.</aside><p>El cálculo pedido está implementado en ROOT/C++. Los controles de las secciones eficaces pasan.
+    El límite de TEXONO publicado por Park no se reproduce.</p>
+    <p>El resultado directo es ε₉₅=1.5655e-05; el artículo indica 2.1e-05.
+    La figura original también difiere del cálculo a masa finita.</p>
+    <ul><li>Las secciones eficaces de producción y detección se derivaron de los diagramas de QED.
+    La referencia 15 verifica la integral de producción; la referencia 20 permite verificar las amplitudes y el espacio de fases de detección.</li>
+    <li>Se conserva el factor 2/3 de Park para detección. No se aplican correcciones de Danilov ni posteriores.</li>
+    <li>El límite inferior impreso para la energía del fotón saliente difiere del permitido por la cinemática de Compton.
+    Se evaluaron ambas opciones.</li>
+    <li>Usar la normalización citada para fotones prontos junto con el límite inferior literal da 2.113492e-05.
+    La coincidencia sirve como diagnóstico; no demuestra qué normalización usó el autor.</li>
+    <li>Thomson no sirve para fotones de MeV. Klein–Nishina describe la dispersión en electrones libres,
+    pero no equivale a la atenuación total del material del reactor.</li></ul>
+    <p>El siguiente dato útil es el código original de Park, con la normalización de la fuente y los límites de integración del detector.
+    Hasta entonces, la explicación de la diferencia de normalización es una hipótesis.</p>
+    <p><a href="report_park_texono_human.html">Derivación, figuras y controles, en inglés</a> ·
+    <a href="code/park_texono/output/figures.html">Notebook exportado</a> · <a href="rfh_park_texono_en.html">English</a>.</p><footer><h2>Execution record</h2><p>Model: GPT-6 (reported by the session).
+    Reasoning effort: not exposed. Exact token usage: not exposed; no estimate is substituted.
+    Elapsed wall time to this report build: 21.15 minutes, including the interruption and approval waits.
+    Start: 2026-09-17T15:45:41+00:00; report build: 2026-09-17T16:06:50.125460+00:00.</p>
+    <p>ROOT 6.36.000; g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0.
+    Existing notebook environment: /home/eliana/.marimo/bin/python (marimo 0.24.0).
+    No packages were installed in the base environment.</p></footer></main></body></html>

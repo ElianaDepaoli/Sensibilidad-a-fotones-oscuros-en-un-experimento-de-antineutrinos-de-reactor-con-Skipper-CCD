@@ -1,0 +1,217 @@
+claims:
+- id: darkphoton-v3-redo
+  statement: >
+    The corrected ROOT run passes independent cross-section and bounded event-limit checks;
+    every exported curve has finite visible points and survives until canvas export.
+    The figures compare published source data with independent predictions and do not
+    establish complete numerical reproduction of Park or Danilov.
+  evidence:
+  - code/darkphoton_v3/redo.cpp::Checks,CheckGraph,Save,Figure1,Limits
+  - code/darkphoton_v3/output/run_receipt.txt
+  - code/darkphoton_v3/output/danilov_digitized.csv
+  - papers/darkphoton_v3/danilov2019.pdf::Eqs.5,6,9 and Fig.1
+  numbers: [v3_redo_limits, v3_redo_inputs, v3_redo_domains]
+figures:
+- file: "code/darkphoton_v3/output/lecture_es-6.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-1.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-3.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/report_darkphoton_v3_en.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_medium.png"
+  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
+  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
+  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
+  from_library: "ROOT graph drawing and image export."
+  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-5.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/danilov_page3.png"
+  produced_by: "pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf"
+  shows: "Source page for Danilov TEXONO vector digitization and visual axis calibration."
+  from_scratch: "No new physics; exact vector path selection and axis transform are implemented in redo.cpp::DanilovPoints."
+  from_library: "Poppler source rendering."
+  choices: ["Deduplicate identical embedded vector paths.","Use actual PDF coordinates rather than an analytic imitation of the curve."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure2_texono_medium.png"
+  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
+  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
+  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
+  from_library: "ROOT integration and graphics; published curves are external reference evidence."
+  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-4.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure2_texono_medium.svg"
+  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
+  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
+  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
+  from_library: "ROOT integration and graphics; published curves are external reference evidence."
+  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/danilov_page3.svg"
+  produced_by: "pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf"
+  shows: "Source page for Danilov TEXONO vector digitization and visual axis calibration."
+  from_scratch: "No new physics; exact vector path selection and axis transform are implemented in redo.cpp::DanilovPoints."
+  from_library: "Poppler source rendering."
+  choices: ["Deduplicate identical embedded vector paths.","Use actual PDF coordinates rather than an analytic imitation of the curve."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_medium.svg"
+  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
+  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
+  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
+  from_library: "ROOT graph drawing and image export."
+  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-3.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_medium.pdf"
+  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
+  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
+  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
+  from_library: "ROOT graph drawing and image export."
+  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_comparison.svg"
+  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
+  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
+  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
+  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
+  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_comparison.png"
+  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
+  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
+  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
+  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
+  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_comparison.pdf"
+  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
+  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
+  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
+  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
+  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-2.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-5.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-2.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-4.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-1.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure2_texono_medium.pdf"
+  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
+  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
+  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
+  from_library: "ROOT integration and graphics; published curves are external reference evidence."
+  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/report_darkphoton_v3_es.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "report_darkphoton_v3_en.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "report_darkphoton_v3_es.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "papers/darkphoton_v3/park2017.pdf"
+  produced_by: "local source preservation::copy supplied project PDF"
+  shows: "Local reference PDF supporting the equations and published comparison."
+  from_scratch: "None; reference artifact."
+  from_library: "Local PDF copy."
+  choices: ["Cite local sources and preserve the original scientific inputs."]
+  supports: [darkphoton-v3-redo]
+- file: "papers/darkphoton_v3/danilov2019.pdf"
+  produced_by: "local source preservation::copy supplied project PDF"
+  shows: "Local reference PDF supporting the equations and published comparison."
+  from_scratch: "None; reference artifact."
+  from_library: "Local PDF copy."
+  choices: ["Cite local sources and preserve the original scientific inputs."]
+  supports: [darkphoton-v3-redo]
+- file: "papers/darkphoton_v3/reference15.pdf"
+  produced_by: "local source preservation::copy supplied project PDF"
+  shows: "Local reference PDF supporting the equations and published comparison."
+  from_scratch: "None; reference artifact."
+  from_library: "Local PDF copy."
+  choices: ["Cite local sources and preserve the original scientific inputs."]
+  supports: [darkphoton-v3-redo]

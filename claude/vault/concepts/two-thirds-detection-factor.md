@@ -1,0 +1,2 @@
+# The 2/3 detection factor
+σ(A'e→γe) for M ≪ m_e: transverse A' → ε²σ_KN; longitudinal → ~0; average over 3 → (2/3)ε²σ_KN. Park eq 6 and Lou–Wu eq 11 use 2/3 (unpolarized beam). The reactor beam is transverse (oscillation/direct emission) or mostly transverse (Compton-like, see [[longitudinal-fraction]]), so the factor is 1 (Danilov, v3) to within 1% at M ≤ 0.1 MeV; at M = 0.5–1 MeV use f_T σ_T + f_L σ_L with σ_T/ε²σ_KN = 0.96–1.00, σ_L/ε²σ_KN = 0.02–0.31. Numbers: `provenance/numbers.json` inverse_*.

@@ -1,0 +1,14 @@
+
+Processing continuation.C...
+Continuation: ROOT 6.36.000; existing source included unchanged
+PASS: finite-mass trace integrals match Reference 15; production KN and detection 2/3 KN limits; finite-mass detailed balance
+PASS finite-mass rate M=0.001 nodes=2.109423747e-13 order=2.869926519e-13
+PASS finite-mass rate M=0.1 nodes=2.117195308e-13 order=8.468337143e-12
+PASS finite-mass rate M=0.5 nodes=2.119415754e-13 order=1.665845218e-07
+PASS finite-mass rate M=1 nodes=2.114974862e-13 order=3.562469401e-06
+PASS: conditional massless limit; small-mass normalization diagnostic leaves TEXONO mismatch
+Bin residual M=0.1 baseline=0.0420647644 lower-cutoff=0.0420647644 conditional=0.04242800484 conditional+lower-cutoff=0.04242800484
+Bin residual M=0.5 baseline=0.1161444674 lower-cutoff=0.1161444674 conditional=0.04660430614 conditional+lower-cutoff=0.04660430614
+Bin residual M=1 baseline=0.3787300449 lower-cutoff=0.3787300449 conditional=0.0107603018 conditional+lower-cutoff=0.0107603018
+Info in <TCanvas::Print>: SVG file output/continuation/figure1_diagnostic.svg has been created
+Info in <TCanvas::Print>: pdf file output/continuation/figure1_diagnostic.pdf has been created

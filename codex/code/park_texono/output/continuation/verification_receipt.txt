@@ -1,0 +1,3 @@
+PASS: report links and embedded figures; provenance references; exported notebook exists
+PASS: numerical-convergence checks; failed paper-limit comparison remains explicitly recorded
+UNCOVERED: reactor transport, detector response, raw-event likelihood, decay loop, prompt-fission spectrum

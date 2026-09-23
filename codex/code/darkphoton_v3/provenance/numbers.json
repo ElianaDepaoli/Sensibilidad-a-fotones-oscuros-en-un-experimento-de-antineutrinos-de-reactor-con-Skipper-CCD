@@ -1,0 +1,87 @@
+{
+  "v3_redo_limits": {
+    "value": {
+      "mass_eV": 1000,
+      "medium_eta_one_sixth": 0.0000133504102754,
+      "medium_eta_one": 0.00000853015258343,
+      "park_convention": 0.0000156549951055,
+      "park_quoted": 0.000021,
+      "danilov_pdf_plateau": 0.00003465684673334552
+    },
+    "statement": "Conditional mixing limits, compared without fitted normalization.",
+    "produced_by": "code/darkphoton_v3/redo.cpp::Limits,DanilovPoints",
+    "from_scratch": "ROOT/C++ calculation and formula audit; empirical inputs taken from local sources.",
+    "from_library": "ROOT quadrature and graphics; Park and Danilov PDF reference inputs.",
+    "choices": [
+      "Do not claim reproduction of either published curve."
+    ]
+  },
+  "v3_redo_inputs": {
+    "value": {
+      "power_MW": 2900,
+      "baseline_m": 28,
+      "mass_kg": 187,
+      "days": 160,
+      "Z": 108,
+      "A_g_mol": 259.8099219,
+      "roi_MeV": [
+        3,
+        8
+      ],
+      "N95": 195.7,
+      "excess": 30.7,
+      "sigma": 100.6,
+      "eta": 0.16666666666666666,
+      "mgamma_eV": [
+        20,
+        20
+      ],
+      "L_abs_cm": 10,
+      "source_normalization": 580000000000000000,
+      "source_scale_MeV": 0.91,
+      "source_fit_min_MeV": 0.2,
+      "park_gamma_min_MeV": 1,
+      "gamma_max_MeV": 40,
+      "source_figure_power_MW": 1000,
+      "figure1_masses_MeV": [
+        0.1,
+        0.5,
+        1
+      ],
+      "medium_source_masses_eV": [
+        1,
+        10,
+        1000
+      ],
+      "park_sigma_multiplier": 1.96,
+      "one_sided_gaussian_multiplier": 1.644853626951
+    },
+    "statement": "Configured source, experiment and confidence conventions.",
+    "produced_by": "code/darkphoton_v3/config.conf; local Park and Danilov PDFs",
+    "from_scratch": "ROOT/C++ calculation and formula audit; empirical inputs taken from local sources.",
+    "from_library": "ROOT quadrature and graphics; Park and Danilov PDF reference inputs.",
+    "choices": [
+      "Use an explicitly estimated selection efficiency.",
+      "Provide configurable excess and uncertainty for Gaussian caps."
+    ]
+  },
+  "v3_redo_domains": {
+    "value": {
+      "medium_max_mass_eV": 10000,
+      "epsilon_max": 0.01,
+      "resonance_halfwidth_fraction": 0.1,
+      "production_plot_epsilon": 0.000001,
+      "quadrature_nodes": 96,
+      "danilov_splitting_coefficient": 2,
+      "inverse_unpolarized_factor": 0.6666666666666666,
+      "medium_light_mass_power": 8
+    },
+    "statement": "Validity cuts, plotted normalization and verified formula coefficients.",
+    "produced_by": "code/darkphoton_v3/redo.cpp::Checks,Split,DetectionTotal,Limit",
+    "from_scratch": "ROOT/C++ calculation and formula audit; empirical inputs taken from local sources.",
+    "from_library": "ROOT quadrature and graphics; Park and Danilov PDF reference inputs.",
+    "choices": [
+      "Omit resonance; restrict the medium prediction to relativistic small masses."
+    ]
+  }
+}

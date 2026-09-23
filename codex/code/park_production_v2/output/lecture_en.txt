@@ -1,0 +1,549 @@
+              Dark-photon production by Compton scattering
+                            A derivation and a test of Park’s Figure 1
+
+                               Independent ROOT/C++ calculation
+
+                                         17 September 2026
+
+                                              Abstract
+         We derive the unpolarized tree-level cross section for a real photon scattering on an
+     electron at rest to produce a massive dark photon. The derivation starts with the two
+     electron-exchange diagrams. An exact polynomial trace calculation and independent Dirac
+     matrices check the result. We fold the cross section with Park’s reactor spectrum and com-
+     pare against coordinates extracted afresh from the supplied PDF. The calculation passes the
+     cross-section checks but does not reproduce the full published figure. No later correction is
+     included.
+
+
+1   Question, assumptions and background formulas
+
+The process and notation are
+                    γ(k) + e− (p) −→ A′ (q) + e− (p′ ),     m = me ,    M = mA ′ .                   (1)
+We use the metric and interaction
+            gµν = diag(1, −1, −1, −1),      Lint = −eψ̄γ µ ψAµ − ϵeψ̄γ µ ψA′µ ,   e2 = 4πα.          (2)
+The electron is free and initially at rest. We average over its two spins and the two incident
+photon polarizations, and sum over all final states. We work to leading order in the coupling and
+set natural units in the derivation. Binding, transport, in-medium mixing, detector response,
+and later corrections are outside this calculation.
+Background formulas used, rather than derived here, are the QED vertex, electron propagator,
+spin completeness and two-body phase space:
+                                                                                   i(̸ r + m)
+                    Vγµ = −ieγ µ ,       VAν′ = −iϵeγ ν ,              SF (r) =                  ,   (3)
+                                                                                  r2 − m2 + i0
+       X                                 dσ       |M|2
+            us (p)ūs (p) ≠ p + m,         =               .                                        (4)
+        s
+                                         dt   16π(s − m2 )2
+
+Reference 15 is not needed to derive the differential or total cross section. We use its vector-
+boson result only as an independent numerical check, with its coupling identified as shown below.
+Park supplies the empirical reactor spectrum and the figure to be tested. No detection reference
+is needed for this production-only task.
+
+
+2   Kinematics and the production threshold
+
+In the laboratory define the incident photon energy and the outgoing dark-photon energy by
+                                                                   p
+                p = (m, 0), k = (E, 0, 0, E), q 0 = x, Q = |q| = x2 − M 2 .              (5)
+
+                                                   1
+           s = (p + k)2 = m2 + 2mE,                                    u = (p − q)2 = m2 + M 2 − 2mx,                  (6)
+           t = (k − q) = 2m(x − E),
+                        2
+                                                        s + t + u = 2m + M .     2         2
+                                                                                                                       (7)
+
+At threshold both final particles are at rest relative to each other in the centre-of-mass frame.
+Therefore
+                                                                 M2
+                          s ≥ (m + M )2 =⇒           Eth = M +        .                       (8)
+                                                                 2m
+The threshold is not merely the dark-photon rest energy. For the plotted masses it is
+
+                                             M [MeV]            Eth [MeV]
+                                                   0.1              0.109785
+                                                   0.5              0.744619
+                                                     1              1.978476
+
+Introduce the Källén function and centre-of-mass quantities
+
+    λ(s, m2 , M 2 ) = [s − (m + M )2 ][s − (m − M )2 ],                                                                (9)
+                                                                            p
+                       s + M 2 − m2                                             λ(s, m2 , M 2 )              s − m2
+               q∗0 =         √        ,                              q∗ =             √           ,   k∗ =     √ .    (10)
+                            2 s                                                      2 s                      2 s
+Boosting along the beam gives
+                                                                                                E       E+m
+             x = γ(q∗0 + βq∗ cos θ∗ ),                                               β=            , γ = √ , (11)
+                                                                                               E+m        s
+                                                        p
+                 (E + m)(s + M 2 − m2 ) ± E                 λ(s, m2 , M 2 )
+    x± (E, M ) =                                                                 .                                    (12)
+                                   2s
+The cross section is zero outside these endpoints. The final electron has total energy
+
+                                               Ee′ = m + E − x.                                                       (13)
+
+
+3     The two amplitudes and current conservation
+
+The intermediate electron momenta are
+
+                    rs = p + k,           ru = p − q,           a = s − m2 ,           b = u − m2 .                   (14)
+
+Ignoring an irrelevant common phase, the sum of the two diagrams is
+
+                                     M = ϵe2 ū(p′ )Γνµ u(p) εµ (k)ξν∗ (q),                                           (15)
+                                              ̸ rs + m µ      ̸ ru + m ν
+                                    Γνµ = γ ν         γ + γµ             γ .                                          (16)
+                                                   a               b
+Both diagrams are required. Contracting with the incident momentum uses
+
+                                                  ̸ k = (̸ rs − m) − (̸ p − m),                                       (17)
+                                                                ′
+                                                  ̸ k = (̸ p − m) − (̸ ru − m),                                       (18)
+                                  (̸ r − m)(̸ r + m) = r2 − m2 .                                                      (19)
+
+The on-shell Dirac equations then make the first term give the electron current and the second
+its negative:
+                      kµ ū(p′ )Γνµ u(p) = ū(p′ )γ ν u(p) − ū(p′ )γ ν u(p) = 0.          (20)
+
+                                                            2
+For the outgoing momentum use
+
+                           ̸ q ≠ rs − ̸ p′ ≠ p− ̸ ru      =⇒        qν ū(p′ )Γνµ u(p) = 0.                 (21)
+
+The polarization sums can therefore be contracted as
+                            X
+                                εµ ε∗µ′ −→ −gµµ′ ,                                                            (22)
+                                        λ
+                                       X                            qν qν ′
+                                             ξν∗ ξν ′ = −gνν ′ +            −→ −gνν ′ .                       (23)
+                                                                     M2
+                                        λ′
+
+This does not mean the physical longitudinal polarization is dropped. Its contribution is included
+by the covariant sum after the Ward identity is used. The independent matrix calculation
+explicitly sums all three massive-vector polarizations and checks equality. There is no average
+over final polarizations and no production factor of two-thirds.
+
+
+4    Evaluating the spin trace
+
+The factor from averaging initial states is
+                                                  1      1      11  1
+                                                              =    = .                                        (24)
+                                               2se + 1 Nγ,pol   22  4
+
+
+                |M|2 = ϵ2 e4 F,                                                                               (25)
+                                   h                                i
+                       1                                     ν ′ µ′
+                  F = gµµ′ gνν ′ Tr (̸ p′ + m)Γνµ (̸ p + m)Γ          ,                   Γ = γ 0 Γ† γ 0 .    (26)
+                       4
+Here the denominators remain inside the vertex. To show the trace reduction explicitly, let
+                                                                      
+                       2          2           1 Tss Tuu Tsu + Tus
+                 c=m , d=M ,            F =          + 2 +                .                (27)
+                                              4 a2      b        ab
+
+For example, the first term is
+                                                                                
+                    Tss = Tr (̸ p′ + m)γ ν (̸ rs + m)γ µ (̸ p + m)γµ (̸ rs + m)γν .                           (28)
+
+The Dirac algebra reduces all contractions to scalar products:
+
+          Tr(γ α γ β ) = 4g αβ ,                                                                              (29)
+          α β ρ σ
+     Tr(γ γ γ γ ) = 4(g      αβ ρσ
+                                   g     −g g αρ βσ
+                                                      +g   ασ βρ
+                                                             g ),                                             (30)
+                    2                                                         2                     2
+                 p = c,                                                     k = 0,               q = d,       (31)
+                     a                                                           d−b                  a+b
+                p·k = ,                                                    p·q =     ,          k·q =     .   (32)
+                     2                                                             2                    2
+Longer even traces follow by pairing the first gamma matrix with each subsequent one, with
+alternating signs. Odd traces vanish. Expanding the four spinor/propagator factors gives
+
+                                       Tss = 16cd + 32c2 + 16ac − 8ab,                                        (33)
+                                       Tuu = 16cd + 32c + 16bc − 8ab,
+                                                            2
+                                                                                                              (34)
+                          Tsu = Tus = −8d2 + 32c2 + 8bd + 8bc + 8ad + 8ac.                                    (35)
+
+
+
+
+                                                                3
+Combining the terms gives the compact result
+                                                     "                   2        #
+                               a b                    1 1             1 1          d
+                  F = −2        +         + 4(2c + d)  + +c            +         −      .            (36)
+                               b a                    a b             a b          ab
+
+This formula was derived in the new C++ code. It was not imported from a prior implementation
+or fitted to the figure. The program represents polynomials by their powers of the four invariants.
+The small dyadic rational coeﬀicients are represented exactly in binary arithmetic. It asserts
+exact polynomial equality for the compact form, the interference terms, crossing, and the photon
+limit. Independent complex Dirac matrices provide a separate numerical check.
+
+
+5     Differential and total cross sections
+
+The laboratory Jacobian and invariant flux give
+               dt
+                  = 2m,                                    s − m2 = 2mE,                             (37)
+               dx
+          dσprod     ϵ 2 e4
+                 =          F (a, b, c, d) ,                   a = 2mE,          b = M 2 − 2mx.      (38)
+           dx      32πmE 2
+
+For numerical results in centimetres, multiply by the squared conversion constant. The differ-
+ential cross section then has units of area per energy:
+                                                                      
+                                             −11             dσ cm2
+                      ℏc = 1.973269804 × 10      MeV cm,                 .               (39)
+                                                             dx MeV
+
+The integration can also be done analytically. With the incident energy fixed, define
+
+              H = 2c + d,                                                                            (40)
+                                                                           
+                       b2            1   c                            2c − d             |b| 4Hc
+            G(b) = −      + 4H         +         b + −2a + 4H 1 +                   ln      −    ,   (41)
+                       a             a a2                                a                a   b
+             dG
+                = F,        b± = M 2 − 2mx± ,                                                        (42)
+             db
+                     ϵ2 e4 (ℏc)2
+           σprod =               [G(b− ) − G(b+ )] .                                                 (43)
+                     64πm2 E 2
+
+The sign follows from the fact that the invariant decreases as the outgoing energy increases. The
+code compares this antiderivative against direct quadrature and Reference 15.
+
+
+6     Two independent limits and reference checks
+
+6.1    The photon limit
+
+When the produced vector is massless, the scattering-angle relation and trace become
+                                                   E
+                                          x=                   ,                                     (44)
+                                          1 + (E/m)(1 − cos θ)
+                                                         
+                                              E  x
+                                 F M =0 = 2     + − sin2 θ .                                         (45)
+                                              x  E
+
+
+                                                       4
+                                         1
+
+        σprod/ ∈2 [barn / electron]
+                                                                                              M=0.0 MeV
+                                                                                              M=0.1 MeV
+                                                                                              M=0.5 MeV
+                                                                                              M=1.0 MeV
+                                      10−1
+
+
+
+
+                                      10−2
+
+
+
+
+                                      10−3
+                                                   1     2      3     4         5   6     7       8       9     10
+                                                                                                          Eγ [MeV]
+
+
+
+Figure 1: Derived total production cross sections per free electron, with the squared mixing
+factored out. The massless curve is Klein–Nishina.
+
+For a real final photon, setting the squared mixing coeﬀicient to unity recovers Klein–Nishina.
+Its total is
+                                                                                  
+                         2 1+y      2(1 + y) ln(1 + 2y)      ln(1 + 2y)     1 + 3y
+           σKN (E) = 2πre                   −             +             −              ,   (46)
+                             y2      1 + 2y       y              2y        (1 + 2y)2
+                               E            αℏc
+                          y= ,         re =     .                                          (47)
+                               m             m
+
+6.2   Reference 15
+
+Gondolo and Raffelt’s Appendix uses the following independent total formula for its vector
+branch, after identifying the coupling:
+                                                               2           √                           
+                                                             αgχee q∗         s 2q∗0 Ee∗ + 2q∗ k∗ − M 2
+                                      gχee = ϵe,       σ15 =            A+B    ln 0                       (ℏc)2 ,    (48)
+                                                              8s k∗         q∗   2q∗ Ee∗ − 2q∗ k∗ − M 2
+                                           s + m2
+                                      Ee∗ =   √ ,                                                                    (49)
+                                             2 s
+                                               2(m2 − M 2 ) 16(M 2 + 2m2 )s
+                                        A=2+                +                ,                                       (50)
+                                                    s          (s − m2 )2
+                                               4(M 2 + 2m2 ) 4(4m4 − M 4 )
+                                        B =2−                −             .                                         (51)
+                                                  s − m2       (s − m2 )2
+
+This is a borrowed check, not a step in the derivation. The maximum relative difference on the
+tested grid is
+                      δ15 = 7.06102 × 10−14 ,     δKN = 7.20535 × 10−14 .                 (52)
+These are numerical consistency errors, not experimental uncertainties or global bounds outside
+the tested grid.
+
+
+
+                                                                            5
+7   From one photon to a reactor spectrum
+
+Park’s empirical photon spectrum is a supplied input:
+                                                              
+                      dṄγ                   P              E
+             Sγ (E) =      = 0.58 × 10 18
+                                                  exp −            s−1 MeV−1 .                (53)
+                       dE                   MW          0.91 MeV
+It is not derived from fission physics here. Its stated domain starts near the following energy;
+the text then restricts the study to incident and detected energies above the larger value:
+                           Espectrum ≳ 0.2 MeV,            Estudy > 1 MeV.                    (54)
+We use the stated study cutoff as the baseline and also compute the lower-cutoff alternative, since
+the figure itself displays dark photons below that study energy. The target is the production
+spectrum at the reactor, not a detector count. Park’s single-interaction source equation is
+                                    Z EU
+                          dṄA′                       1     dσprod (E, x)
+                                =          Sγ (E)                         dE.                 (55)
+                           dx        EL             σKN (E)      dx
+
+The numerator and denominator are both per electron. Multiplying both by the same atomic
+electron count cancels it. This is why the free-electron baseline does not depend on the atomic
+number. It does not imply that real photon transport is material independent.
+The exact incident-energy support follows from the laboratory angle:
+                            (x − m)E + mx − M 2 /2             p
+                    cos θ =                         ,     Q = x2 − M 2 ,                      (56)
+                                      EQ
+                                                       
+                                            mx − M 2 /2
+                     EL = max Ecut , Eth ,                ,                                   (57)
+                                            m−x+Q
+                                                    
+                            min E , mx − M /2 , m − x − Q > 0,
+                                                 2
+                                     max
+                     EU =                 m−x−Q                                               (58)
+                            
+                              Emax ,                        m − x − Q ≤ 0.
+There is no contribution if the positive-angle denominator is nonpositive or the interval is empty.
+For this mass range the numerator in these bounds is positive. We integrate to the cutoff below
+and check the larger one for convergence:
+                                                          test
+                             Emax = 40 MeV,              Emax  = 60 MeV.                      (59)
+The reproduced photon integral at the reference reactor power is
+                                    Z ∞
+                 P = 1 mGW ,                Sγ (E)dE = 1.75883 × 1020 s−1 ,                   (60)
+                                           1 MeV
+
+which agrees with the rounded number printed by Park. The plotted choice of mixing is a
+convention for the leading coeﬀicient, not a controlled prediction at strong mixing.
+                          ϵ=1     means plotting the coeﬀicient of ϵ2 .                       (61)
+
+
+8   Comparison with Figure 1
+
+We extract horizontal staircase segments from the original PDF vector paths. Each is compared
+once with the predicted mean over that segment’s energy interval. We do not compare both
+sides of a vertical step as independent data. No normalization is fitted.
+                                      Z xi+1
+                                 1           dṄA′               Si
+                       Si =                        dx,   ri = PDF − 1 .                  (62)
+                             xi+1 − xi xi     dx              Si
+
+                                                     6
+     dNA'/dEA' [1021 MeV-1 s-1]                                                       QED M=0.1 MeV
+                                                                                      Park PDF M=0.1 MeV
+                                     1                                                QED M=0.5 MeV
+                                                                                      Park PDF M=0.5 MeV
+                                                                                      QED M=1.0 MeV
+                                                                                      Park PDF M=1.0 MeV
+
+
+                                  10−1
+
+
+
+
+                                  10−2
+
+
+
+
+                                         0   0.5       1      1.5      2      2.5         3           3.5     4
+                                                                                                            EA' [MeV]
+
+
+
+Figure 2: Solid: the new tree-level calculation with Park’s stated source equation. Dotted:
+coordinates extracted from the supplied Figure 1, not computed data. The axes and rate units
+match the original.
+
+
+The central comparison avoids the threshold and the noisy tail. Its selected interval and diag-
+nostic tolerance are
+                        1.8 ≤ x/MeV ≤ 3.2,       median(ri ) < 0.10.                       (63)
+
+                                                   M [MeV]   Bins   Median residual    Maximum
+                                                       0.1   137             4.15%         21.72%
+                                                       0.5   136            11.56%         23.69%
+                                                         1   139            37.85%         55.09%
+
+The tolerance is our stated diagnostic choice, not an uncertainty published by Park. The smallest
+mass passes this central-interval criterion, while the other masses do not. A central-interval pass
+cannot certify the complete curve. The lower source cutoff improves the low-energy part of the
+lightest curve, but cannot change the central interval.
+The full Figure 1 is not reproduced. The source-equation calculation and the original figure
+disagree despite the independent cross-section checks. The source PDF has no original event
+sample, generator settings, or bin covariance. Those omissions prevent identifying the author’s
+implementation from the plot alone. Any explanation based on an undocumented generation or
+normalization choice remains a hypothesis. No such choice has been fitted or substituted into
+this calculation.
+
+
+
+
+                                                                        7
+9     When a classical Compton total is not allowed
+
+9.1   Thomson is a low-energy limit
+
+The classical Thomson total is
+                                               "                     2        #
+                        8π 2                          E  26       E
+                   σT =   r ,       σKN = σT       1−2 +                   + ··· .          (64)
+                         3 e                          m  5        m
+
+It requires incident energies much smaller than the electron mass. With a chosen relative-error
+criterion, the numerical boundary is
+                           σT
+                                 − 1 < 0.05     ⇐⇒      E ≲ 12.970 keV                      (65)
+                         σKN (E)
+
+on the low-energy branch. Thomson must not replace Klein–Nishina in the reactor energy range
+used here.
+
+
+9.2   Klein–Nishina is one channel, not total material attenuation
+
+The relativistic free-electron formula remains valid for the Compton channel in its stated ap-
+proximation. A material also permits photoelectric absorption, coherent scattering and pair
+production. Atomic binding matters near shell energies. Pair production in a nuclear field
+opens at approximately
+                                  Eγ ≥ 2me = 1.021997900 MeV.                             (66)
+This is a threshold, not a statement that pair production dominates immediately. There is
+no universal energy boundary at which Compton equals the total material cross section. As a
+concrete check, we compare the following proxy with the NIST uranium total:
+                  
+                   µ           Z
+                         = NA σKN ,        Z = 92, A = 238.02891 g mol−1 .             (67)
+                   ρ KN        A
+
+                     E [MeV]     (µ/ρ)NIST [cm2 /g]    KN/NIST        σT /σKN
+                           0.2             1.29800          0.073           1.64
+                             1             0.07896          0.623           3.15
+                             2             0.04878          0.698           4.55
+                             3             0.04447          0.602           5.78
+                             5             0.04463          0.432           8.03
+                             8             0.04879          0.286          11.11
+
+Over the tabulated sample, the free-electron Compton proxy never reaches the precision criterion
+below. We retain Park’s denominator for the figure test, but do not endorse it as precision total
+attenuation. The NIST comparison is a diagnostic; it does not modify the source spectrum.
+
+                                                     (µ/ρ)KN
+                       0.1 ≤ E/MeV ≤ 10,                      − 1 < 0.10.                   (68)
+                                                    (µ/ρ)NIST
+
+
+
+
+                                               8
+         µ/ ρ [cm2/g], uranium
+                                                               NA(Z/A)σKN
+                                    1
+                                                               NIST: µ/ ρ
+
+
+                                 10−1
+
+
+
+
+                                 10−2
+                                   10−1                   1                         10
+                                                                              Eγ [MeV]
+
+
+
+Figure 3: Free-electron Compton proxy versus the total uranium attenuation from NIST. The
+material dependence is missing from a Compton-only denominator.
+
+
+10 Implementation, checks and limits of the result
+
+All new calculation, extraction and reporting utilities are C++ using ROOT. The executable
+was compiled with the requested environment. LaTeX produces the lecture PDFs. There is no
+Python component. The code is separated into named functions for the trace, kinematics, cross
+sections, source convolution, PDF extraction, comparison and reports.
+The source configuration exposes thermal power, spectrum normalization and slope, incident-
+energy bounds, and quadrature order. A different measured source can replace the photon-
+spectrum function. Background, exposure, detector mass, region of interest and target compo-
+sition belong to a subsequent detection calculation; they do not change the production cross
+section. For a later electron target the bookkeeping factor would be
+                                                               Z
+                                            Ne = mdet [g] NA     .                            (69)
+                                                               A
+No detection model or acceptance has been invented to make those parameters enter this
+production-only result.
+Checks actually run: exact polynomial identities; Clifford algebra; independent complex-matrix
+traces and physical polarizations; both Ward identities on an on-shell grid; analytic totals versus
+quadrature and Reference 15; Klein–Nishina; source-node doubling and upper-tail extension; the
+printed photon integral; and direct PDF-bin comparisons. The tested source-node difference is
+
+                                          δnodes = 1.80078 × 10−13 .                          (70)
+
+Not checked: the empirical reactor spectrum against its original measurement, reactor transport,
+bound-electron effects, loop corrections, the author’s unpublished generator and event statistics.
+The matrix Ward tests sample physical points; the report also provides their analytic proof.
+Numerical tests do not establish accuracy outside the tested domain. The full published Figure
+1 remains unreproduced.
+
+
+                                                      9
+References
+
+[1] H. K. Park, Detecting Dark Photons with Reactor Neutrino Experiments, Phys.
+    Rev. Lett. 119, 081801 (2017). doi:10.1103/PhysRevLett.119.081801. Local source:
+    papers/park_production_v2/park2017.pdf.
+
+[2] P. Gondolo and G. G. Raffelt, Solar neutrino limit on axions and keV-mass
+    bosons, Phys. Rev. D 79, 107301 (2009), Appendix. arXiv:0807.2926. Local source:
+    papers/park_production_v2/reference15.pdf.
+
+[3] NIST, X-Ray Mass Attenuation Coeﬀicients: Uranium. https://physics.nist.gov/
+    PhysRefData/XrayMassCoef/ElemTab/z92.html. Downloaded source retained locally.
+
+[4] ROOT, Numerical integration reference, version 6.36. https://root.cern.ch/doc/v636/
+    classROOT_1_1Math_1_1GaussLegendreIntegrator.html.
+
+
+
+
+                                          10
+

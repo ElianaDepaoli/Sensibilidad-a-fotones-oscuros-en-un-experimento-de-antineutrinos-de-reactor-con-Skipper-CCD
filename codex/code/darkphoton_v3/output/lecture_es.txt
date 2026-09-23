@@ -1,0 +1,304 @@
+          Producción y detección Compton de fotones oscuros
+          TEXONO: cálculo en vacío, corrección del medio y límites publicados
+
+
+                                            ROOT/C++
+
+                                         21 September 2026
+
+
+                                               Resumen
+
+         La sección eficaz de producción a nivel árbol satisface controles matriciales independi-
+     entes, identidades de Ward, integrales totales y el límite sin masa. El recálculo de la figura 1
+     de Park no reproduce el espectro publicado completo; mostramos la discrepancia sin ajustar
+     una normalización. Para TEXONO comparamos el límite citado por Park, la curva extraída
+     del PDF de Danilov, un cálculo con las convenciones de Park y un cálculo en medio homogé-
+     neo. El resultado en el medio incluye explícitamente la eficiencia de selección. No afirmamos
+     una exclusión en la resonancia material ni fuera del régimen indicado de mezcla pequeña.
+
+
+
+1   Qué se deriva y qué se toma de las fuentes
+
+Reutilizamos y verificamos de nuevo el núcleo de trazas polinómicas de v2. Los vértices QED,
+el propagador del electrón, la completitud de espines y el espacio de fases de dos cuerpos son
+identidades de partida. La traza compacta, la convolución numérica, la sección inversa y el
+cálculo de exclusión se implementan aquí. Gondolo–Raffelt (referencia 15 de Park) aporta un
+control independiente de la sección total; no hace falta para generar el núcleo diferencial. Park
+aporta el espectro empírico y las entradas experimentales. Danilov aporta las probabilidades en
+el medio y la corrección de selección.
+
+
+2   Amplitud de producción y traza
+
+ γ(k) + e(p) → X(q) + e(p′ ),     p2 = p′2 = m2 , k 2 = 0, q 2 = M 2 ,     g = diag(1, −1, −1, −1). (1)
+
+                  Lint = −eψ̄γ µ ψ(Aµ + ϵXµ ),                                                          (2)
+                                  [                                     ]
+                                ′   ν ̸ p+ ̸ k + m µ   µ ̸ p− ̸ q + m ν
+                   M = ϵe ū(p ) γ
+                          2
+                                                  γ +γ               γ u(p)εµ ξν∗ .                     (3)
+                                         s − m2             u − m2
+
+Se requieren ambos diagramas de intercambio del electrón. Las ecuaciones de Dirac sobre la
+capa de masa anulan la contracción con cualquiera de los momentos vectoriales externos. La
+suma de polarizaciones masivas puede entonces reemplazarse por la métrica en la amplitud al
+cuadrado: el término longitudinal se anula por conservación de corriente. Esto no elimina una
+polarización física.
+
+                |M|2 = ϵ2 e4 F,   a = s − m2 , b = u − m2 , c = m2 , d = M 2 ,                          (4)
+                           (      )             [           (       )       ]
+                              a b                 1 1         1 1 2      d
+                  F = −2        +   + 4(2c + d)    + +c         +      −       .                        (5)
+                              b a                 a b         a b        ab
+
+
+                                                    1
+La traza promedia sobre dos espines del electrón y dos polarizaciones del fotón incidente, con
+un factor de un cuarto. Se obtiene expandiendo ambos diagramas y aplicando las identidades de
+trazas de matrices gamma pares. El código verifica la identidad polinómica y evalúa la misma
+amplitud con matrices de Dirac complejas independientes y polarizaciones físicas explícitas.
+
+
+3   Sección eficaz en laboratorio y umbral
+
+                                                                                       M2
+                            s = m2 + 2mEγ ,     b = M 2 − 2mEX ,         Eγ,th = M +      ,    (6)
+                                                                                       2m
+             λ(s, m2 , M 2 ) = [s − (m + M )2 ][s − (m − M )2 ],                               (7)
+                                                               √
+                         ±     (Eγ + m)(s + M 2 − m2 ) ± Eγ λ
+                       EX =                                          ,                         (8)
+                                                2s
+                 dσγe→Xe       ϵ2 e4 (ℏc)2         −
+                             =             F,    EX  ≤ EX ≤ EX   +
+                                                                   .                           (9)
+                   dEX          32πmEγ2
+
+Fuera de los extremos o por debajo del umbral la sección es cero. La integral numérica coincide
+con la primitiva analítica derivada y con la referencia 15. A masa cero, la integral es Klein–
+Nishina multiplicada por la mezcla al cuadrado. Son resultados a nivel árbol para electrones
+libres; no establecen que Compton sea la atenuación total del material.
+              ∫ 40 MeV
+                                Φγ (E) dσprod (E, x)                           P −E/(0.91 MeV)
+   Park
+  ΦX (x) =                                           dE, Φγ (E) = 0.58 × 1018    e             .
+               max(1 MeV,Eth ) σKN (E)      dx                                MW
+                                                                                            (10)
+El núcleo impone además el soporte angular. La figura 1 usa 1 GW y las tres masas originales.
+Los puntos abiertos son coordenadas vectoriales extraídas del PDF de Park en v2 y reutilizadas
+como datos fuente. No se reproduce el cálculo original completo; cambiar el corte del espectro o
+ajustar un factor global no es una solución verificada. El espectro gamma es un ajuste empírico
+por encima de 0.2 MeV; el corte de integración indicado por Park es 1 MeV.
+
+
+4   Detección por el proceso inverso
+
+La inversión temporal da la misma amplitud invariante al cuadrado. Para un vector masivo
+incidente no polarizado, el promedio sobre tres polarizaciones introduce el factor dos tercios
+respecto de producción. Para energía incidente E, momento pX y energía saliente del fotón w,
+                √
+           pX = E 2 − M 2 , s = m2 + M 2 + 2mE, a = M 2 + 2mE, b = −2mw,                  (11)
+                   (s − m2 )(E + m ± pX )
+            w± =                          ,                                                   (12)
+                             2s
+       unpol
+     dσXe→γe       2 ϵ2 e4 (ℏc)2 F
+               =                   .                                                          (13)
+       dw          3 32πmp2X
+
+El límite inverso sin masa es dos tercios de Klein–Nishina. Corresponde a la convención de Park,
+no a estados transversales producidos por oscilaciones. La contención completa da Evis = E al
+sumar las energías del electrón y del fotón. Un detector real requiere una función de respuesta;
+la contención completa es una aproximación explícita.
+
+
+
+
+                                                   2
+     dNA'/dEA' / ∈2 [1021 s-1 MeV-1]
+                                                                                           Calculated M=0.1 MeV
+                                                                                           Park PDF M=0.1 MeV
+                                          1                                                Calculated M=0.5 MeV
+                                                                                           Park PDF M=0.5 MeV
+                                                                                           Calculated M=1.0 MeV
+                                                                                           Park PDF M=1.0 MeV
+
+
+                                       10−1
+
+
+
+
+                                       10−2
+
+
+
+
+                                              0   0.5      1       1.5       2       2.5         3          3.5      4
+                                                                                                                  EA' [MeV]
+
+
+
+
+Figura 1: Recálculo frente a la figura 1 de Park. Las curvas continuas son calculadas; los puntos
+son datos extraídos de la fuente.
+
+5   Producción y conversión en el medio
+
+                                                        m2γ = 4παne /m,                                                       (14)
+                                                  (∆m2 )2 = (M 2 − m2γ )2 + 2ϵ2 M 2 (M 2 + m2γ ),                             (15)
+                                                                   ϵ2 M 4                   ℏc
+                                                    Pγ→X =                    , ΓR =      ,                                   (16)
+                                                           (∆m2R )2 + E 2 Γ2R        Labs
+                                                            ϵ2 M 4
+                                                    PX→γ =          ,     Φmed
+                                                                            X (E) = Φγ (E)Pγ→X (E).                           (17)
+                                                           (∆m2D )2
+
+Son las ecuaciones (5), (6) y (9) de Danilov, no probabilidades exactas a todos los órdenes.
+La implementación anterior usaba incorrectamente 4 en lugar de 2 en la separación y aplicaba
+la expresión del detector en resonancia. La ecuación (9) desprecia explícitamente la absorción
+fuera de resonancia. Omitimos una ventana conservadora del diez por ciento en masa alrededor
+de cada masa de plasma. Dentro de ella hace falta un cálculo de detector finito, absorbente y no
+homogéneo. Fijamos ambas masas de plasma en 20 eV y la longitud de absorción del reactor en
+10 cm, siguiendo las elecciones ilustrativas del artículo. Muy por encima de la escala de plasma
+ambas probabilidades tienden a la mezcla al cuadrado. Muy por debajo, su producto escala como
+ϵ4 (M/mγ )8 si el amortiguamiento es despreciable. La fuente directa de oscilaciones conserva la
+energía del fotón; la convolución Compton de Park la redistribuye. Son prescripciones de fuente
+alternativas y no se multiplican entre sí.
+
+
+
+
+                                                                             3
+                                  1022
+       dNX /dE / ∈2 [s-1 MeV-1]
+                                                                             ∈=10-6; configured reactor
+                                  1021                                               mX =1 eV
+                                  1020                                               mX =10 eV
+                                                                                     mX =1000 eV
+                                  1019
+                                  1018
+                                  1017
+                                    16
+                                  10
+                                  1015
+                                  1014
+                                  1013
+                                  1012
+                                  1011
+
+                                             1     2      3     4      5      6       7       8       9       10
+                                                                                                   EX =Eγ [MeV]
+
+
+
+
+Figura 2: Fuente en el medio a la potencia configurada. La normalización se evalúa en ϵ = 10−6
+y se divide por su cuadrado.
+
+
+6   Tasa de eventos, estadística y comparaciones
+
+                                                   Ne = Mdet [kg] 103 NA Z/A,                                      (18)
+                                                               ∫
+                                                         Ne T η 8 MeV
+                                               Nmed =                  Φγ (E)Pγ→X (E)PX→γ (E)σKN (E)dE,            (19)
+                                                         4πR2 3 MeV
+                                       Nmed (ϵ95 , M ) = 195.7, 0 < ϵ95 ≤ 0.01.                                    (20)
+
+Las entradas son 2.9 GW, 28 m, 187 kg de CsI, 160 días de exposición, Z = 108 y A =
+259.8099219 g/mol. El exceso que cita Danilov es 30.7 ± 100.6 eventos. Su límite unilateral
+es de 195.7 eventos seleccionados. La supresión anti-Compton que supone equivale a η = 1/6,
+aproximadamente 1174 eventos antes de selección. Es una estimación, no una eficiencia medida
+para fotones oscuros. Mostramos también eficiencia unitaria. El informe anterior usaba sólo el
+límite de eventos seleccionados con eficiencia unitaria y omitía esta corrección. El recálculo con
+la convención de Park usa la fuente convolucionada, la sección inversa masiva, eficiencia unitaria
+y 1.96(100.6) eventos. Park lo llama 95% CL; para una gaussiana centrada corresponde a un
+límite unilateral de 97.5%. No debe identificarse sin explicación con la convención unilateral
+de Danilov. La línea roja es el límite 2.1 × 10−5 citado por Park, no un conjunto de datos
+digitalizado de nuevo. La negra se extrae directamente del PDF vectorial de Danilov. El cálculo
+independiente en el medio no se ajusta a ninguna línea. Persisten diferencias porque no se
+reproducen completamente la normalización publicada, la prescripción de fuente y la aceptación
+del detector.
+
+
+
+
+                                                                      4
+    ∈ limit (see statistical conventions)
+                                                                            Park published: 2.1 × 10
+                                                                                                   -5
+
+                                            10−2
+                                                                            Danilov published (PDF extraction)
+
+                                                                            Recomputed Park convention (1.96σ)
+
+                                                                            This work: medium, efficiency 0.167
+                                            10−3
+                                                                            This work: medium, unit efficiency
+
+
+
+
+                                            10−4
+
+
+
+
+                                            10−5
+
+
+
+
+                                            10−6 −2
+                                               10     10−1   1   10   102          103            104             105        106
+                                                                                                                        mX [eV]
+
+
+
+Figura 3: Comparación sólo para TEXONO. Los huecos cerca de 20 eV indican la resonancia sin
+límite calculado. Las curvas en el medio terminan en 10 keV; el cálculo masivo con la convención
+de Park llega a 1 MeV.
+
+
+7                       Validez y verificación realizada
+
+El núcleo de producción tiene cinemática masiva exacta de dos cuerpos dentro de QED a nivel
+árbol para electrones libres. El modelo de detector en el medio usa modos transversales rela-
+tivistas, M ≪ me , E, y se presenta sólo hasta 10 keV para una ROI de 3–8 MeV. Las masas
+de plasma y la absorción son entradas constantes. No se simulan atenuación material, ligadura
+atómica, redispersión, escape de fotones, geometría finita ni selección dependiente de la energía.
+El límite en el medio está condicionado a este modelo de respuesta y fuente; no es una exclusión
+TEXONO validada a nivel de detector. Los controles ejecutados incluyen trazas matriciales
+independientes e identidades de Ward, la sección total de la referencia 15, integración analítica,
+ambos límites de dispersión sin masa, el coeficiente corregido, cierre de la raíz, doble resolu-
+ción de cuadratura y rechazo de dominios inválidos. Cada curva se comprueba por sus puntos
+finitos dentro de los ejes y su presencia en el lienzo al exportar. Las imágenes se inspeccionan
+visualmente. La predicción independiente no reproduce el espectro completo de Park ni la curva
+numérica de Danilov; las diferencias quedan visibles.
+
+
+Referencias
+
+[1] H.   K.   Park,   Phys.  Rev.   Lett.    119,     081801    (2017),                                                  local     source
+    papers/darkphoton_v3/park2017.pdf, Eqs. (1)–(7), Figs. 1–2.
+
+[2] M. Danilov, S. Demidov and D. Gorbunov, arXiv:1804.10777 (2019), local source
+    papers/darkphoton_v3/danilov2019.pdf, Eqs. (5), (6), (9), Fig. 1 and TEXONO dis-
+    cussion.
+
+
+                                                                      5
+[3] P. Gondolo and G. Raffelt, Phys. Rev. D 79, 107301 (2009), vector appendix, local source
+    papers/darkphoton_v3/reference15.pdf.
+
+
+
+
+                                             6
+

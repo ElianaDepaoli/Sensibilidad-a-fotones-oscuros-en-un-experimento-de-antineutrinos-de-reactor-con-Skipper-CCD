@@ -1,0 +1,29 @@
+# Environments, caches, build products
+.venv/
+__pycache__/
+__marimo__/
+*.pyc
+tex-cache/
+**/tools/tectonic
+*.fmt
+*.o
+*.so
+
+# LaTeX auxiliaries
+*.aux
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.synctex.gz
+
+# Agent session state
+.session-start
+.attempts
+
+# Deliberately not published (see README)
+apuntes/
+mycodes/DP.C
+mycodes/DP2.C
+mycodes/DP3_Danilov*.C
+*.C.bak*

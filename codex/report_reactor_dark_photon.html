@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark-photon searches at reactor-neutrino experiments</title>
+  <style>
+    :root{--ink:#17202a;--muted:#5b6573;--paper:#fbfaf7;--panel:#fff;--line:#d9dee5;--blue:#124e78;--teal:#0e766e;--amber:#9a6200;--red:#9b2c2c}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+    main{max-width:1180px;margin:auto;padding:40px 24px 80px} h1{font-size:clamp(2rem,5vw,4rem);line-height:1.02;max-width:900px;margin:.2em 0}
+    h2{margin-top:2.2em;border-bottom:2px solid var(--ink);padding-bottom:.25em} h3{margin-top:1.6em} a{color:var(--blue)}
+    .dek{font-size:1.2rem;max-width:850px;color:var(--muted)} .meta,.small{color:var(--muted);font-size:.9rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card,.note{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+    .card b{display:block;color:var(--teal);margin-bottom:6px}.note{border-left:5px solid var(--amber)} .warning{border-left-color:var(--red)}
+    table{width:100%;border-collapse:collapse;background:var(--panel);font-size:.92rem} th,td{padding:11px 10px;border:1px solid var(--line);vertical-align:top;text-align:left} th{background:#edf3f6}
+    .scroll{overflow-x:auto}.tag{display:inline-block;border:1px solid currentColor;border-radius:99px;padding:1px 8px;font-size:.78rem;white-space:nowrap}.direct{color:var(--teal)}.recast{color:var(--blue)}.projection{color:var(--amber)}
+    code{background:#eef0f2;padding:.1em .3em;border-radius:4px}.refs li{margin:.65em 0}
+  </style>
+</head>
+<body><main>
+  <p class="meta">Literature audit · updated 17 September 2026 · local paper set preserved</p>
+  <h1>Dark-photon searches at reactor-neutrino experiments</h1>
+  <p class="dek">Energy ranges, production mechanisms, experimental strategies, reported exclusions, projected sensitivities, and the disputes that change how the limits should be read.</p>
+
+  <section>
+    <h2>Answer in one screen</h2>
+    <div class="grid">
+      <div class="card"><b>Standard visible-vector channel</b>MeV reactor γ rays produce an on-shell dark photon through γe → A′e or γ–A′ conversion in matter. A nearby detector searches for A′e → γe. The rate scales approximately as ε⁴: ε² at production and ε² at detection.</div>
+      <div class="card"><b>Established analysis window</b>TEXONO used electron/γ data in 3–8 MeV. Park also recast NEOS data in 1–5 MeV. The useful incident reactor-photon range is roughly 0.2–15 MeV across the studies, but the detector threshold fixes the practical reach.</div>
+      <div class="card"><b>Mass reach</b>The conventional reactor Compton-like program mainly targets sub-MeV A′. A 2026 neutron-capture de-excitation proposal extends the recast to 0.1–6.9 MeV using discrete nuclear lines and visible A′ → e⁺e⁻ decays above threshold.</div>
+      <div class="card"><b>Evidence status</b>Most visible-A′ reactor limits are phenomenological recasts, not dedicated collaboration searches. NEON is the direct collaboration result, but it searches for light dark matter from invisible A′ decay and is model-dependent.</div>
+    </div>
+    <div class="note warning"><strong>Do not quote the original NEOS number as settled.</strong> Park reported ε &lt; 1.3×10<sup>−5</sup> below 1 MeV, but the 2019 reanalysis argued that the necessary detector/background stability was not demonstrated and did not use NEOS. The same reanalysis also restored in-medium oscillations and found loss of sensitivity below roughly 0.1 eV.</div>
+  </section>
+
+  <section>
+    <h2>Signal models</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Model</th><th>Production in reactor</th><th>Detection</th><th>Relevant energy or mass scale</th><th>Parameter actually constrained</th></tr></thead>
+      <tbody>
+        <tr><td>Visible kinetic-mixing A′</td><td>γe → A′e, equivalently in-medium γ–A′ conversion after decoherence</td><td>A′e → γe; for m<sub>A′</sub>&gt;2m<sub>e</sub>, A′→e⁺e⁻</td><td>Reactor photons at MeV energies; classic analyses use sub-MeV A′ and 1–8 MeV deposited energy</td><td>ε versus m<sub>A′</sub></td></tr>
+        <tr><td>Nuclear de-excitation A′</td><td>N*→NA′ following neutron capture; discrete E1 transition lines</td><td>A′e → γe or A′→e⁺e⁻ in TEXONO</td><td>Selected lines at 3.297, 4.060, 4.711, and 7.007 MeV; reported reach 0.1–6.9 MeV</td><td>ε versus m<sub>A′</sub></td></tr>
+        <tr><td>Invisible A′→χχ</td><td>γe → A′e followed by A′→χχ</td><td>χ–electron scattering at keV recoil energy</td><td>NEON ROI 1–10 keV; m<sub>χ</sub> from 1 to 1000 keV under m<sub>A′</sub>=3m<sub>χ</sub></td><td>σ<sub>e</sub> or ε after fixing dark-sector couplings and masses</td></tr>
+        <tr><td>Dark axion portal</td><td>γe → eA′a through the aγA′ vertex</td><td>A′→aγ monophoton-like deposit</td><td>MeV-scale A′; detector-dependent thresholds</td><td>G<sub>aγγ′</sub> versus m<sub>A′</sub>, not the ordinary ε-only plane</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Experiments and claims</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Study / experiment</th><th>Status</th><th>Window and mechanism</th><th>Claim</th><th>How to use it</th></tr></thead>
+      <tbody>
+        <tr><td><a href="papers_reactor_dark_photon/01_park_2017.pdf">Park: NEOS + TEXONO</a></td><td><span class="tag recast">recast</span></td><td>γe→A′e; A′e→γe. NEOS 1–5 MeV; TEXONO 3–8 MeV.</td><td>At 95% CL and m<sub>A′</sub>&lt;1 MeV: ε&lt;1.3×10<sup>−5</sup> (NEOS) and ε&lt;2.1×10<sup>−5</sup> (TEXONO). Projected DANSS near 10<sup>−6</sup>.</td><td>Historical starting point. The NEOS statistical treatment and TEXONO efficiency treatment were challenged later.</td></tr>
+        <tr><td><a href="papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf">Danilov–Demidov–Gorbunov: TEXONO</a></td><td><span class="tag recast">corrected recast</span></td><td>In-medium γ↔A′ oscillations plus absorption; TEXONO 3–8 MeV.</td><td>Revised 95% CL TEXONO contour; strong suppression below the material plasma scale and practical insensitivity below about 0.1 eV. Rejects the published NEOS recast as too optimistic.</td><td>Baseline reference for the conventional visible-A′ channel. Retains reactor-composition and anti-Compton-efficiency uncertainty.</td></tr>
+        <tr><td><a href="papers_reactor_dark_photon/03_deniverville_lee_lee_2021.pdf">CONUS, MINER, RENO, NEOS</a></td><td><span class="tag projection">projection</span></td><td>Dark axion portal; A′→aγ. Thresholds range from negligible to 3.5 MeV.</td><td>One-year, 95% CL sensitivity contours in G<sub>aγγ′</sub>–m<sub>A′</sub>.</td><td>Useful for a different portal. Do not overlay as if it were an ε-only kinetic-mixing limit.</td></tr>
+        <tr><td><a href="papers_reactor_dark_photon/04_smirnov_et_al_2022.pdf">JUNO-TAO</a></td><td><span class="tag projection">projection</span></td><td>γe→Xe and inverse process; 0.8–10 MeV; 180-day exposure assumption.</td><td>With 1% background systematic, DP coupling sensitivity is roughly 10<sup>−4</sup>; energy-window optimization improves it by about one order of magnitude. No new parameter space is excluded in their comparison.</td><td>Important because it makes the background-systematic limitation explicit and labels the earlier NEOS sensitivity controversial.</td></tr>
+        <tr><td><a href="papers_reactor_dark_photon/05_du_liu_wang_wu_2024.pdf">TEXONO CsI + PCGe</a></td><td><span class="tag recast">transport recast</span></td><td>Multiple Compton scattering before γ→A′ conversion; CsI 3–8 MeV and PCGe 0.3–12.3 keV.</td><td>Claims about a tenfold production enhancement and substantially stronger TEXONO limits from tens of eV to 1 MeV.</td><td>Contested. Read only together with the 2025 GEANT-based rebuttal below.</td></tr>
+        <tr><td><a href="papers_reactor_dark_photon/06_neon_2025.pdf">NEON</a></td><td><span class="tag direct">direct data</span></td><td>Invisible A′→χχ; χ–electron scattering; reactor-on minus reactor-off in 1–10 keV.</td><td>No signal. At 90% CL, σ<sub>e</sub>&lt;3.17×10<sup>−35</sup> cm² at m<sub>χ</sub>=100 keV, within the assumed m<sub>A′</sub>=3m<sub>χ</sub> model.</td><td>The cleanest experimental strategy here, but it is a light-dark-matter search, not a model-independent visible-A′ limit.</td></tr>
+        <tr><td><a href="papers_reactor_dark_photon/07_demidov_gorbunov_polonski_2025.pdf">Demidov–Gorbunov–Polonski</a></td><td><span class="tag recast">theory rebuttal</span></td><td>Photon transport with energy loss and GEANT validation.</td><td>Enhancement rises from 1.2 at 2 MeV to 2.6 at 0.2 MeV; corresponding change in the mixing limit stays below 30%, not the much larger 2024 claim.</td><td>Use this as the current caution on multiple-scattering “improvements”; reactor-specific primary γ spectra remain a limiting input.</td></tr>
+        <tr><td><a href="papers_reactor_dark_photon/08_lou_wu_2026.pdf">Lou–Wu: TEXONO</a></td><td><span class="tag recast">new recast</span></td><td>Neutron-capture N*→NA′ plus conventional Compton-like production; scattering and visible decay.</td><td>Reports new ε constraints over 0.1–6.9 MeV and stronger reach than conventional Compton-like production in the studied mass region.</td><td>Promising extension, still a phenomenological recast. The selected nuclear lines are calibrated, but a detector-collaboration analysis is still absent.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Experimental strategy that would settle the issue</h2>
+    <ol>
+      <li>Use reactor-on/off data with identical cuts and exposure-normalized spectra. Do not infer a limit from the square root of a huge on-only background count.</li>
+      <li>Publish the single-site acceptance for A′e→γe and the multi-site acceptance for A′→e⁺e⁻. TEXONO’s anti-Compton selection is signal-dependent.</li>
+      <li>Build the primary γ spectrum and transport model for the actual core, fuel cycle, moderator, shielding, and detector line of sight. The old FRJ-1 parameterization is useful but not reactor-specific.</li>
+      <li>Fit energy shape and normalization jointly. For nuclear de-excitation, target line energies; for invisible decay, exploit the reactor-on minus reactor-off keV spectrum.</li>
+      <li>Report separate likelihoods for visible A′, invisible A′→χχ, and dark-axion-portal models. Their couplings and branching ratios are not interchangeable.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>What was checked</h2>
+    <p>The seed PDF was read in full. Seven later primary papers were traced from citations and related-paper searches, downloaded from arXiv, converted to text, and checked at the abstract, setup, results, and conclusion sections. SHA-256 digests and canonical URLs are in <a href="papers_reactor_dark_photon/manifest.tsv">the manifest</a>.</p>
+    <p><strong>Not checked:</strong> no exclusion curve was digitized or numerically reproduced; no collaboration likelihood was rerun; the 2026 nuclear-transition calculation was not independently recomputed; the old FRJ-1 reactor γ spectrum was not validated against a modern reactor simulation. Every numerical result above is therefore a sourced claim, not an independent reproduction.</p>
+  </section>
+
+  <section>
+    <h2>Local sources</h2>
+    <ol class="refs">
+      <li><a href="papers_reactor_dark_photon/01_park_2017.pdf">Park 2017 PDF</a> · <a href="https://arxiv.org/abs/1705.02470">canonical record</a></li>
+      <li><a href="papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf">Danilov, Demidov &amp; Gorbunov 2019 PDF</a> · <a href="https://arxiv.org/abs/1804.10777">canonical record</a></li>
+      <li><a href="papers_reactor_dark_photon/03_deniverville_lee_lee_2021.pdf">deNiverville, Lee &amp; Lee 2021 PDF</a> · <a href="https://arxiv.org/abs/2011.03276">canonical record</a></li>
+      <li><a href="papers_reactor_dark_photon/04_smirnov_et_al_2022.pdf">Smirnov et al. 2022 PDF</a> · <a href="https://arxiv.org/abs/2109.04276">canonical record</a></li>
+      <li><a href="papers_reactor_dark_photon/05_du_liu_wang_wu_2024.pdf">Du et al. 2024 PDF</a> · <a href="https://arxiv.org/abs/2309.00231">canonical record</a></li>
+      <li><a href="papers_reactor_dark_photon/06_neon_2025.pdf">NEON 2025 PDF</a> · <a href="https://arxiv.org/abs/2407.16194">canonical record</a></li>
+      <li><a href="papers_reactor_dark_photon/07_demidov_gorbunov_polonski_2025.pdf">Demidov, Gorbunov &amp; Polonski 2025 PDF</a> · <a href="https://arxiv.org/abs/2512.17652">canonical record</a></li>
+      <li><a href="papers_reactor_dark_photon/08_lou_wu_2026.pdf">Lou &amp; Wu 2026 PDF</a> · <a href="https://arxiv.org/abs/2606.08487">canonical record</a></li>
+    </ol>
+  </section>
+</main></body></html>

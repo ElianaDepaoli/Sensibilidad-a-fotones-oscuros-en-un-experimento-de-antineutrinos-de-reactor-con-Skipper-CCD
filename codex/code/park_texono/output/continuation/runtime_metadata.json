@@ -1,0 +1,9 @@
+{
+  "model": "GPT-6",
+  "reasoning_effort": null,
+  "tokens_used": null,
+  "diagnostic_start_utc": "2026-09-17T22:37:52+00:00",
+  "report_build_utc": "2026-09-17T22:43:42.210314+00:00",
+  "diagnostic_elapsed_seconds": 350.210314,
+  "timing_scope": "From first recorded diagnostic timestamp, excluding context recovery and prior sessions."
+}

@@ -1,0 +1,592 @@
+       Producción de fotones oscuros por dispersión Compton
+                        Derivación y comparación con la figura 1 de Park
+
+                              Cálculo independiente en ROOT/C++
+
+                                      17 de septiembre de 2026
+
+
+                                              Abstract
+
+         Derivamos la sección eficaz no polarizada, a nivel árbol, de un fotón real que se dispersa
+     en un electrón en reposo y produce un fotón oscuro masivo. Partimos de los dos diagramas
+     de intercambio de electrones. Verificamos el resultado mediante trazas polinómicas exactas y
+     matrices de Dirac independientes. Integramos la sección eficaz con el espectro del reactor de
+     Park y comparamos con coordenadas extraídas de nuevo del PDF suministrado. El cálculo
+     pasa las verificaciones de la sección eficaz, pero no reproduce la figura publicada completa.
+     No se incluyen correcciones posteriores.
+
+
+1   Pregunta, hipótesis y fórmulas de partida
+
+El proceso y la notación son
+
+                    γ(k) + e− (p) −→ A′ (q) + e− (p′ ),     m = me ,     M = mA ′ .                   (1)
+
+Usamos la métrica y la interacción
+
+            gµν = diag(1, −1, −1, −1),      Lint = −eψ̄γ µ ψAµ − ϵeψ̄γ µ ψA′µ ,    e2 = 4πα.          (2)
+
+El electrón es libre y está inicialmente en reposo. Promediamos sobre sus dos espines y las dos
+polarizaciones del fotón incidente, y sumamos sobre los estados finales. Trabajamos al orden
+dominante en el acoplamiento y usamos unidades naturales en la derivación. Las ligaduras
+atómicas, el transporte, la mezcla en el medio, la respuesta del detector y las correcciones
+posteriores quedan fuera del cálculo.
+Las fórmulas de partida que usamos, sin derivarlas aquí, son el vértice de QED, el propagador
+del electrón, la completitud de espines y el espacio de fases de dos cuerpos:
+
+                                                                                     i(̸ r + m)
+                    Vγµ = −ieγ µ ,       VAν′ = −iϵeγ ν ,               SF (r) =                ,     (3)
+                                                                                   r2 − m2 + i0
+      X                                  dσ       |M|2
+            us (p)ūs (p) ≠ p + m,         =               .                                         (4)
+        s
+                                         dt   16π(s − m2 )2
+
+La referencia 15 no es necesaria para derivar la sección eficaz diferencial ni la total. Usamos
+su resultado para bosones vectoriales sólo como verificación numérica independiente, con la
+identificación de acoplamientos indicada más adelante. Park aporta el espectro empírico del
+reactor y la figura que se compara. Esta tarea de producción no requiere una referencia de
+detección.
+
+
+
+
+                                                   1
+2     Cinemática y umbral de producción
+
+En el laboratorio definimos las energías del fotón incidente y del fotón oscuro saliente mediante
+                                                                      p
+                p = (m, 0), k = (E, 0, 0, E), q 0 = x, Q = |q| = x2 − M 2 .                   (5)
+
+
+           s = (p + k)2 = m2 + 2mE,                                 u = (p − q)2 = m2 + M 2 − 2mx,                (6)
+           t = (k − q) = 2m(x − E),
+                        2
+                                                        s + t + u = 2m + M .  2       2
+                                                                                                                  (7)
+
+En el umbral, ambas partículas finales están en reposo relativo en el centro de masa. Por lo
+tanto
+                                                              M2
+                         s ≥ (m + M )2 =⇒         Eth = M +       .                      (8)
+                                                              2m
+El umbral no es simplemente la energía en reposo del fotón oscuro. Para las masas de la figura
+vale
+
+                                             M [MeV]            Eth [MeV]
+                                                   0.1           0.109785
+                                                   0.5           0.744619
+                                                     1           1.978476
+
+Introducimos la función de Källén y las magnitudes del centro de masa
+
+    λ(s, m2 , M 2 ) = [s − (m + M )2 ][s − (m − M )2 ],                                                           (9)
+                                                                         p
+                       s + M 2 − m2                                          λ(s, m2 , M 2 )            s − m2
+               q∗0 =        √         ,                           q∗ =            √          ,   k∗ =     √ .    (10)
+                            2 s                                                 2 s                      2 s
+
+La transformación al laboratorio, en la dirección del haz, da
+                                                                                           E       E+m
+             x = γ(q∗0 + βq∗ cos θ∗ ),                                            β=          , γ = √ , (11)
+                                                                                          E+m        s
+                                                        p
+                 (E + m)(s + M 2 − m2 ) ± E                 λ(s, m2 , M 2 )
+    x± (E, M ) =                                                              .                                  (12)
+                                   2s
+
+La sección eficaz es cero fuera de estos extremos. La energía total del electrón final es
+
+                                               Ee′ = m + E − x.                                                  (13)
+
+
+3     Las dos amplitudes y la conservación de la corriente
+
+Los momentos de los electrones intermedios son
+
+                    rs = p + k,           ru = p − q,           a = s − m2 ,         b = u − m2 .                (14)
+
+Omitiendo una fase global irrelevante, la suma de los dos diagramas es
+
+                                   M = ϵe2 ū(p′ )Γνµ u(p) εµ (k)ξν∗ (q),                                        (15)
+                                            ̸ rs + m µ      ̸ ru + m ν
+                                  Γνµ = γ ν         γ + γµ             γ .                                       (16)
+                                                 a               b
+
+
+                                                            2
+Se necesitan ambos diagramas. Para contraer con el momento incidente usamos
+
+                                                      ̸ k = (̸ rs − m) − (̸ p − m),                           (17)
+                                                      ̸ k = (̸ p′ − m) − (̸ ru − m),                          (18)
+                                   (̸ r − m)(̸ r + m) = r − m .
+                                                             2        2
+                                                                                                              (19)
+
+Las ecuaciones de Dirac en la capa de masa hacen que el primer término dé la corriente del
+electrón y el segundo su opuesto:
+
+                           kµ ū(p′ )Γνµ u(p) = ū(p′ )γ ν u(p) − ū(p′ )γ ν u(p) = 0.                        (20)
+
+Para el momento saliente usamos
+
+                           ̸ q ≠ rs − ̸ p′ ≠ p− ̸ ru     =⇒       qν ū(p′ )Γνµ u(p) = 0.                   (21)
+
+Por lo tanto, las sumas de polarizaciones pueden contraerse como
+                             X
+                                 εµ ε∗µ′ −→ −gµµ′ ,                                                           (22)
+                                       λ
+                                       X                          qν qν ′
+                                            ξν∗ ξν ′ = −gνν ′ +           −→ −gνν ′ .                         (23)
+                                                                   M2
+                                       λ′
+
+Esto no significa que se descarte la polarización longitudinal física. La suma covariante la incluye
+una vez usada la identidad de Ward. El cálculo matricial independiente suma explícitamente
+las tres polarizaciones del vector masivo y comprueba la igualdad. No se promedian las polar-
+izaciones finales ni aparece un factor de dos tercios en producción.
+
+
+4    Evaluación de la traza de espines
+
+El factor de promedio sobre los estados iniciales es
+                                                 1      1      11  1
+                                                             =    = .                                         (24)
+                                              2se + 1 Nγ,pol   22  4
+
+                |M|2 = ϵ2 e4 F,                                                                               (25)
+                                   h                                i
+                       1                                     ν ′ µ′
+                  F = gµµ′ gνν ′ Tr (̸ p′ + m)Γνµ (̸ p + m)Γ          ,                 Γ = γ 0 Γ† γ 0 .      (26)
+                       4
+Los denominadores siguen dentro del vértice. Para mostrar explícitamente la reducción de la
+traza, definimos
+                                                                     
+                      2          2           1 Tss Tuu Tsu + Tus
+                 c=m , d=M ,            F =        + 2 +                .              (27)
+                                             4 a2      b         ab
+Por ejemplo, el primer término es
+                                                                                
+                    Tss = Tr (̸ p′ + m)γ ν (̸ rs + m)γ µ (̸ p + m)γµ (̸ rs + m)γν .                           (28)
+
+El álgebra de Dirac reduce todas las contracciones a productos escalares:
+
+          Tr(γ α γ β ) = 4g αβ ,                                                                              (29)
+          α β ρ σ
+     Tr(γ γ γ γ ) = 4(g      αβ ρσ
+                                   g   −g g  αρ βσ
+                                                     +g   ασ βρ
+                                                            g ),                                              (30)
+                 p2 = c,                                                   k 2 = 0,            q 2 = d,       (31)
+                      a                                                          d−b                 a+b
+                p·k = ,                                                   p·q =       ,       k·q =       .   (32)
+                      2                                                             2                   2
+
+                                                            3
+Las trazas pares más largas se obtienen emparejando la primera matriz gamma con cada una
+de las siguientes, con signos alternados. Las trazas impares se anulan. Al expandir los cuatro
+factores de espinores y propagadores resulta
+
+                                 Tss = 16cd + 32c2 + 16ac − 8ab,                                        (33)
+                                 Tuu = 16cd + 32c + 16bc − 8ab,
+                                                      2
+                                                                                                        (34)
+                        Tsu = Tus = −8d2 + 32c2 + 8bd + 8bc + 8ad + 8ac.                                (35)
+
+Al combinar los términos se obtiene el resultado compacto
+                                                        "                   2        #
+                                 a b                    1 1              1 1          d
+                 F = −2           +         + 4(2c + d)  + +c             +         −      .            (36)
+                                 b a                    a b              a b          ab
+
+Esta fórmula se derivó en el nuevo código C++. No se importó de una implementación anterior
+ni se ajustó a la figura. El programa representa los polinomios mediante las potencias de los
+cuatro invariantes. Los pequeños coeficientes racionales diádicos se representan exactamente
+en aritmética binaria. Comprueba la igualdad polinómica exacta para la forma compacta, los
+términos de interferencia, el cruce y el límite de fotón. Las matrices complejas de Dirac aportan
+una verificación numérica independiente.
+
+
+5   Secciones eficaces diferencial y total
+
+El jacobiano de laboratorio y el flujo invariante dan
+               dt
+                  = 2m,                                       s − m2 = 2mE,                             (37)
+               dx
+          dσprod     ϵ 2 e4
+                 =          F (a, b, c, d) ,                      a = 2mE,          b = M 2 − 2mx.      (38)
+           dx      32πmE 2
+
+Para obtener resultados numéricos en centímetros multiplicamos por el cuadrado de la constante
+de conversión. La sección eficaz diferencial queda en unidades de área por energía:
+                                                                       
+                                             −11             dσ cm2
+                     ℏc = 1.973269804 × 10       MeV cm,                  .               (39)
+                                                             dx MeV
+
+La integración también puede hacerse analíticamente. Con la energía incidente fija, definimos
+
+              H = 2c + d,                                                                               (40)
+                                                                              
+                       b2              1   c                             2c − d             |b| 4Hc
+            G(b) = −        + 4H         + 2       b + −2a + 4H 1 +                    ln      −    ,   (41)
+                       a               a a                                  a                a   b
+             dG
+                = F,         b± = M 2 − 2mx± ,                                                          (42)
+             db
+                    ϵ2 e4 (ℏc)2
+          σprod =               [G(b− ) − G(b+ )] .                                                     (43)
+                    64πm2 E 2
+
+El signo se debe a que el invariante disminuye cuando aumenta la energía saliente. El código
+compara esta primitiva con la integración numérica directa y con la referencia 15.
+
+
+
+
+                                                          4
+                                         1
+
+        σprod/ ∈2 [barn / electron]
+                                                                                      M=0.0 MeV
+                                                                                      M=0.1 MeV
+                                                                                      M=0.5 MeV
+                                                                                      M=1.0 MeV
+                                      10−1
+
+
+
+
+                                      10−2
+
+
+
+
+                                      10−3
+                                             1   2      3        4       5   6    7       8       9     10
+                                                                                                  Eγ [MeV]
+
+
+
+Figure 1: Secciones eficaces totales de producción por electrón libre, con el cuadrado de la mezcla
+extraído como factor. La curva sin masa es Klein–Nishina.
+
+6     Dos verificaciones independientes: límite de fotón y referencia
+
+6.1   El límite de fotón
+
+Cuando el vector producido no tiene masa, la relación angular y la traza se reducen a
+                                                                       E
+                                                            x=                     ,                         (44)
+                                                              1 + (E/m)(1 − cos θ)
+                                                                             
+                                                                  E  x
+                                                     F M =0 = 2     + − sin θ .
+                                                                            2
+                                                                                                             (45)
+                                                                  x  E
+
+Para un fotón real en el estado final, tomar el coeficiente de mezcla cuadrado igual a la unidad
+recupera Klein–Nishina. Su sección eficaz total es
+                                                                                   
+                         2 1+y     2(1 + y) ln(1 + 2y)         ln(1 + 2y)    1 + 3y
+         σKN (E) = 2πre                     −               +             −             ,   (46)
+                             y2     1 + 2y          y              2y       (1 + 2y)2
+                               E            αℏc
+                          y= ,         re =     .                                           (47)
+                              m              m
+
+
+
+
+                                                                     5
+6.2   La referencia 15
+
+El apéndice de Gondolo y Raffelt da la siguiente fórmula total independiente para el caso vec-
+torial, una vez identificado el acoplamiento:
+                                     2             √                              
+                                  αgχee  q∗            s 2q∗0 Ee∗ + 2q∗ k∗ − M 2
+            gχee = ϵe,     σ15 =              A+B       ln 0                         (ℏc)2 , (48)
+                                    8s k∗            q∗     2q∗ Ee∗ − 2q∗ k∗ − M 2
+                   s + m2
+             Ee∗ = √ ,                                                                       (49)
+                     2 s
+                        2(m2 − M 2 ) 16(M 2 + 2m2 )s
+              A=2+                   +                    ,                                  (50)
+                              s             (s − m2 )2
+                        4(M 2 + 2m2 ) 4(4m4 − M 4 )
+              B =2−                    −                .                                    (51)
+                           s − m2           (s − m2 )2
+
+Ésta es una verificación tomada de la literatura, no un paso de la derivación. La máxima
+diferencia relativa en la grilla comprobada es
+
+                       δ15 = 7.06102 × 10−14 ,           δKN = 7.20535 × 10−14 .                (52)
+
+Son errores de consistencia numérica, no incertidumbres experimentales ni cotas globales fuera
+de la grilla comprobada.
+
+
+7     De un fotón al espectro del reactor
+
+El espectro empírico de fotones de Park es un dato de entrada:
+                                                               
+                       dṄγ                   P              E
+             Sγ (E) =       = 0.58 × 10 18
+                                                  exp −             s−1 MeV−1 .                 (53)
+                       dE                    MW          0.91 MeV
+
+Aquí no se deriva a partir de la física de fisión. Su dominio declarado empieza cerca de la siguiente
+energía; luego el texto restringe el estudio a energías incidentes y detectadas por encima del valor
+mayor:
+                            Espectrum ≳ 0.2 MeV,         Estudy > 1 MeV.                         (54)
+Usamos el corte declarado para el estudio como cálculo principal y evaluamos también el corte
+menor, porque la figura muestra fotones oscuros por debajo de aquella energía. Calculamos el
+espectro producido en el reactor, no el número de eventos en un detector. La ecuación de fuente
+de Park para una sola interacción es
+                                    Z EU
+                          dṄA′                       1     dσprod (E, x)
+                                =          Sγ (E)                         dE.                   (55)
+                           dx        EL             σKN (E)      dx
+
+El numerador y el denominador están expresados por electrón. Multiplicar ambos por el mismo
+número de electrones atómicos lo cancela. Por eso el cálculo principal de electrones libres no
+depende del número atómico. Esto no implica que el transporte real de fotones sea independiente
+del material.
+
+
+
+
+                                                     6
+El soporte exacto de energía incidente se obtiene del ángulo de laboratorio:
+
+                                                   (x − m)E + mx − M 2 /2              p
+                                             cos θ =                       ,      Q = x2 − M 2 ,                       (56)
+                                                             EQ
+                                                                               
+                                                                    mx − M 2 /2
+                                              EL = max Ecut , Eth ,               ,                                    (57)
+                                                                    m−x+Q
+                                                                           
+                                                   min E , mx − M /2 , m − x − Q > 0,
+                                                                         2
+                                                            max
+                                              EU =               m−x−Q                                                 (58)
+                                                   
+                                                     Emax ,                         m − x − Q ≤ 0.
+
+No hay contribución si el denominador del extremo inferior es no positivo o si el intervalo es
+vacío. Para este rango de masas, el numerador de estos límites es positivo. Integramos hasta el
+corte indicado y comprobamos la convergencia con el mayor:
+                                                                             test
+                                                       Emax = 40 MeV,       Emax  = 60 MeV.                            (59)
+
+La integral de fotones reproducida a la potencia de referencia es
+                                      Z ∞
+                   P = 1 mGW ,              Sγ (E)dE = 1.75883 × 1020 s−1 ,                                            (60)
+                                                                1 MeV
+
+que coincide con el número redondeado de Park. La elección de mezcla usada en la figura es una
+convención para mostrar el coeficiente dominante, no una predicción controlada para mezcla
+fuerte.
+                        ϵ = 1 significa graficar el coeficiente de ϵ2 .                   (61)
+
+
+8   Comparación con la figura 1
+     dNA'/dEA' [1021 MeV-1 s-1]
+
+
+
+
+                                                                                     QED M=0.1 MeV
+                                                                                     Park PDF M=0.1 MeV
+                                     1                                               QED M=0.5 MeV
+                                                                                     Park PDF M=0.5 MeV
+                                                                                     QED M=1.0 MeV
+                                                                                     Park PDF M=1.0 MeV
+
+
+                                  10−1
+
+
+
+
+                                  10−2
+
+
+
+
+                                         0   0.5        1     1.5       2      2.5       3           3.5     4
+                                                                                                           EA' [MeV]
+
+
+
+Figure 2: Líneas continuas: nuevo cálculo a nivel árbol con la ecuación de fuente declarada por
+Park. Líneas punteadas: coordenadas extraídas de la figura 1 suministrada, no datos calculados.
+Los ejes y las unidades de tasa coinciden con el original.
+
+                                                                        7
+Extraemos segmentos horizontales de las curvas escalonadas vectoriales del PDF original. Cada
+uno se compara una sola vez con la predicción media en su intervalo de energía. No trata-
+mos ambos extremos de un escalón vertical como datos independientes. No se ajusta ninguna
+normalización.                    Z xi+1
+                             1            dṄA′               Si
+                   Si =                         dx,    ri = PDF − 1 .                     (62)
+                         xi+1 − xi xi      dx                Si
+La comparación central evita el umbral y la cola ruidosa. El intervalo elegido y la tolerancia de
+diagnóstico son
+                         1.8 ≤ x/MeV ≤ 3.2,        median(ri ) < 0.10.                       (63)
+
+                         M [MeV]     Bins   Residuo mediano         Máximo
+                               0.1    137               4.15%       21.72%
+                               0.5    136              11.56%       23.69%
+                                 1    139              37.85%       55.09%
+
+La tolerancia es una elección explícita de diagnóstico, no una incertidumbre publicada por Park.
+La masa menor pasa el criterio del intervalo central; las otras no. Pasar ese criterio no certifica
+la curva completa. El corte menor de la fuente mejora la parte de baja energía de la curva más
+liviana, pero no puede cambiar el intervalo central.
+La figura 1 completa no está reproducida. El cálculo de la ecuación de fuente y la figura
+original discrepan a pesar de las verificaciones independientes de la sección eficaz. El PDF no
+aporta la muestra original de eventos, la configuración del generador ni la covarianza de los bins.
+Esas ausencias impiden identificar la implementación del autor sólo a partir de la figura. Una
+explicación basada en una elección no documentada de generación o normalización sigue siendo
+una hipótesis. No se ajustó ni se sustituyó tal elección en este cálculo.
+
+
+9     Cuándo no se puede usar una sección total clásica de Compton
+
+9.1   Thomson es un límite de baja energía
+
+La sección total clásica de Thomson es
+                                                "                      2       #
+                         8π 2                          E  26        E
+                    σT =   r ,       σKN = σT       1−2 +                    + ··· .          (64)
+                          3 e                          m  5         m
+
+Requiere energías incidentes mucho menores que la masa del electrón. Para el siguiente criterio
+de error relativo, el límite numérico es
+                              σT
+                                    − 1 < 0.05 ⇐⇒ E ≲ 12.970 keV                           (65)
+                            σKN (E)
+en la rama de baja energía. Thomson no puede reemplazar a Klein–Nishina en el rango de
+energías del reactor usado aquí.
+
+
+9.2   Klein–Nishina es un canal, no la atenuación total del material
+
+La fórmula relativista para electrones libres sigue siendo válida para el canal Compton dentro
+de su aproximación. Un material también permite absorción fotoeléctrica, dispersión coherente
+y producción de pares. La ligadura atómica importa cerca de las energías de las capas. La
+producción de pares en el campo nuclear se abre aproximadamente en
+                                 Eγ ≥ 2me = 1.021997900 MeV.                                  (66)
+
+                                                8
+Éste es un umbral, no una afirmación de que la producción de pares domina inmediatamente. No
+existe un límite universal de energía en el que Compton sea igual a la sección total del material.
+Como verificación concreta, comparamos la siguiente aproximación con la atenuación total de
+uranio de NIST:
+                   
+                    µ            Z
+                           = NA σKN ,         Z = 92, A = 238.02891 g mol−1 .                (67)
+                    ρ KN         A
+
+                                          E [MeV]   (µ/ρ)NIST [cm2 /g]    KN/NIST     σT /σKN
+                                              0.2             1.29800         0.073      1.64
+                                                1             0.07896         0.623      3.15
+                                                2             0.04878         0.698      4.55
+                                                3             0.04447         0.602      5.78
+                                                5             0.04463         0.432      8.03
+                                                8             0.04879         0.286     11.11
+
+En los puntos tabulados, la aproximación Compton de electrones libres nunca alcanza el siguiente
+criterio de precisión. Conservamos el denominador de Park para comparar la figura, pero no lo
+presentamos como una atenuación total precisa. La comparación con NIST es un diagnóstico y
+no modifica el espectro de la fuente.
+                                                                       (µ/ρ)KN
+                                           0.1 ≤ E/MeV ≤ 10,                    − 1 < 0.10.                (68)
+                                                                      (µ/ρ)NIST
+         µ/ ρ [cm2/g], uranium
+
+
+
+
+                                                                           NA(Z/A)σKN
+                                    1
+                                                                           NIST: µ/ ρ
+
+
+                                 10−1
+
+
+
+
+                                 10−2
+                                   10−1                               1                               10
+                                                                                                Eγ [MeV]
+
+
+
+Figure 3: Aproximación Compton de electrones libres frente a la atenuación total de uranio de
+NIST. Un denominador que sólo incluye Compton omite esta dependencia del material.
+
+
+
+10 Implementación, verificaciones y límites del resultado
+
+Todas las nuevas herramientas de cálculo, extracción y generación de informes están escritas
+en C++ y usan ROOT. El ejecutable se compiló con el entorno solicitado. LaTeX produce los
+
+                                                                  9
+PDF de estas notas. No hay un componente Python. El código separa en funciones la traza, la
+cinemática, las secciones eficaces, la integral de fuente, la extracción del PDF, la comparación y
+los informes.
+La configuración de fuente expone la potencia térmica, la normalización y la pendiente del
+espectro, los límites de energía incidente y el orden de cuadratura. Otra fuente medida puede
+reemplazar la función del espectro de fotones. El fondo, la exposición, la masa del detector, la
+región de interés y la composición del blanco pertenecen a un cálculo posterior de detección;
+no cambian la sección eficaz de producción. Para un blanco electrónico posterior, el factor de
+conteo sería
+                                                        Z
+                                       Ne = mdet [g] NA .                                  (69)
+                                                        A
+No se inventó un modelo de detección ni una aceptación para introducir esos parámetros en este
+resultado de producción.
+Verificaciones ejecutadas: identidades polinómicas exactas; álgebra de Clifford; trazas matri-
+ciales complejas y polarizaciones físicas independientes; ambas identidades de Ward en una
+grilla en la capa de masa; secciones totales analíticas frente a cuadratura y referencia 15; Klein–
+Nishina; duplicación de nodos y extensión de la cola de la fuente; integral de fotones publicada;
+y comparación directa con los bins del PDF. La diferencia comprobada al duplicar nodos es
+
+                                     δnodes = 1.80078 × 10−13 .                                  (70)
+
+No se verificaron: el espectro empírico del reactor frente a su medición original, el transporte en
+el reactor, los efectos de electrones ligados, las correcciones de lazo, el generador no publicado del
+autor ni su estadística de eventos. Las pruebas matriciales de Ward muestrean puntos físicos; el
+informe también da su demostración analítica. Las pruebas numéricas no establecen la precisión
+fuera del dominio comprobado. La figura 1 publicada completa sigue sin reproducirse.
+
+
+References
+
+[1] H. K. Park, Detecting Dark Photons with Reactor Neutrino Experiments, Phys.
+    Rev. Lett. 119, 081801 (2017). doi:10.1103/PhysRevLett.119.081801. Fuente local:
+    papers/park_production_v2/park2017.pdf.
+
+[2] P. Gondolo and G. G. Raffelt, Solar neutrino limit on axions and keV-mass
+    bosons, Phys. Rev. D 79, 107301 (2009), Appendix. arXiv:0807.2926. Fuente local:
+    papers/park_production_v2/reference15.pdf.
+
+[3] NIST, X-Ray Mass Attenuation Coeﬀicients: Uranium. https://physics.nist.gov/
+    PhysRefData/XrayMassCoef/ElemTab/z92.html. Fuente descargada conservada local-
+    mente.
+
+[4] ROOT, Numerical integration reference, version 6.36. https://root.cern.ch/doc/v636/
+    classROOT_1_1Math_1_1GaussLegendreIntegrator.html.
+
+
+
+
+                                                 10
+

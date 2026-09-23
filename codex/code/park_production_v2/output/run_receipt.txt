@@ -1,0 +1,20 @@
+ROOT 6.36.000; compiler 13.3.0
+PASS: exact polynomial compact formula, analytic primitive derivative, photon limit, interference equality and crossing symmetry
+PASS: Clifford algebra, on-shell kinematics, both Ward identities, physical polarizations and independent matrix traces
+PASS: derived analytic totals, Reference 15 totals, Klein-Nishina totals, quadrature, gamma tail and printed photon count
+reference15_max_relative_error=7.06101843662e-14; KN_max_relative_error=7.20534742982e-14; spectrum_nodes=1.80078174594e-13
+PASS: independent source integration order; maximum relative difference=1.1990408666e-14
+Extracted 907 horizontal PDF segments from 3 spectrum curves
+Figure 1 M=0.1 available median residual=0.0543079495417; lower cutoff=0.0256612042407
+Figure 1 M=0.1 central median residual=0.0414967524505; lower cutoff=0.0414967524505
+Figure 1 M=0.5 available median residual=0.152838280092; lower cutoff=0.152838280092
+Figure 1 M=0.5 central median residual=0.115551202919; lower cutoff=0.115551202919
+Figure 1 M=1 available median residual=0.370145090123; lower cutoff=0.370145090123
+Figure 1 M=1 central median residual=0.37854708634; lower cutoff=0.37854708634
+Info in <TCanvas::Print>: pdf file output/figure1_comparison.pdf has been created
+Info in <TCanvas::Print>: SVG file output/figure1_comparison.svg has been created
+Info in <TCanvas::Print>: pdf file output/cross_section.pdf has been created
+Info in <TCanvas::Print>: SVG file output/cross_section.svg has been created
+Info in <TCanvas::Print>: pdf file output/compton_validity.pdf has been created
+Info in <TCanvas::Print>: SVG file output/compton_validity.svg has been created
+STATUS: source-equation computation completed; full Figure 1 reproduction not established.

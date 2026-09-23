@@ -1,0 +1,3 @@
+PASS: bin-average diagnostics; conditional massless/rate checks; finite-mass convergence receipts
+Wrote continuation report, bilingual notices, provenance, and separate vault receipt; baseline retained.
+UNRESOLVED: original Figure 1 implementation and printed TEXONO limit; no full reproduction claim.

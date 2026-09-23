@@ -1,0 +1,51 @@
+What is query:
+Go through all the documents in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_claudia/apuntes
+Stabliblish weather there is any difference in theoretical approch to perform the cross section calculations. Decide if the final formulas, the ones that are needded to calculate the expected number of dark photons arriving to a detector, have differences. Stablish if the differences derive from errors. 
+
+The goal:
+The correct cross section of dark photon production
+
+How, strategy:
+
+Evaluate theoretical models. 
+Go through papers in ~/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_claudia/papers_reactor_dark_photon.
+
+What is expected as outcome:
+A report*.html for you to follow-up. At the end of the report inform model and reasoning effort, time to resolve the task, tokens used. 
+A report*.pdf for human gathering the detail cross section calculation and claims. Produce both an english and spanish. Must have the structure of a physics lecture.
+
+Rules for human report:
+Stay simple and direct. Don't be polite, make claims without hesitations. Use human speak, not machine. Clarity, intelligible, readable is a goal.
+All the formulas in latex format.
+
+Rules for you: 
+add a skill*.md with the skills you need to adjust to these and the following requierements within this session.
+Interpret * contextually
+
+
+********************************************************************************
+Prompt 2:
+Your report is well organized but difficult to understand for humans.
+Redo it
+-> Remove all considerations regarding  Dark_Photon_cross_Section.pdf (apunte 2, anónimo).
+-> Regarding Dark_Photon_cross_section-1.pdf, say how to correct what is wrong.
+-> Compare in a figure the expected number of dark photons produce by each model.
+
+******************************************************************************
+Prompt 3: 
+Your report is well organized but difficult to follow for humans.
+Provide a new one.
+Focus on Dark_Photon_cross_section-1.pdf. Explicit how to correct what is wrong
+Produce a self-contained report in pdf format using the notation of Dark_Photon_cross_section-1.pdf.
+Use the figures to show wrong approach versus correct one.
+If you correct something, for example a threshold, it has to be clear what do you refer to and in what step of the expected number dNA'/dE'A impacts.
+******************************************************************************
+Proyecto_Final_DarkPhoton_claudia/mycodes/DP3_Danilov.C implements cross section and exclusion limits calculation derived from Dark_Photon_cross_section-1.pdf.
+For the moment, go through it and evaluate how to apply the corrections in the cross section (see functions double cos_theta_f(), double fsu_f(),double ds_dwp_f(), double wpmin_f(), double invwpmin_f(), vector<double> wp_f(), vector<double> wp_production_f(), vector<double> Rw_f(), and so on)
+Strategy: 
+Work in a copy of the original. Use ROOT as in the original.
+If you need to modify a function, create a new one with similar name (for example cos_theta_f -> cos_theta_new_f).
+Follow the sytle of coding and variable names. Observe that they follow the Dark_Photon_cross_section-1.pdf.
+To add the curves obtain with the new functions to the two figures that are printed on screen. 
+How to proceed if you need permission:
+yes to all. I won't be here in the following 8 hours.

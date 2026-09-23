@@ -1,0 +1,29 @@
+PASS: symbolic trace, independent matrices, Ward identities, Reference15, analytic totals, production/inverse KN, massive detailed balance
+PASS: Danilov coefficient, vacuum limit, bounded roots, event-cap closure, quadrature, invalid-domain rejection
+VISIBLE Figure1 calculation: 339 points
+VISIBLE Figure1 Park points: 346 points
+VISIBLE Figure1 calculation: 310 points
+VISIBLE Figure1 Park points: 308 points
+VISIBLE Figure1 calculation: 234 points
+VISIBLE Figure1 Park points: 253 points
+Info in <TCanvas::Print>: pdf file output/figure1_comparison.pdf has been created
+Info in <TCanvas::Print>: SVG file output/figure1_comparison.svg has been created
+Info in <TCanvas::Print>: png file output/figure1_comparison.png has been created
+Info in <TCanvas::Print>: pdf file output/figure1_medium.pdf has been created
+Info in <TCanvas::Print>: SVG file output/figure1_medium.svg has been created
+Info in <TCanvas::Print>: png file output/figure1_medium.png has been created
+Info in <TCanvas::Print>: pdf file output/figure2_texono_medium.pdf has been created
+Info in <TCanvas::Print>: SVG file output/figure2_texono_medium.svg has been created
+Info in <TCanvas::Print>: png file output/figure2_texono_medium.png has been created
+VISIBLE Medium source: 197 points
+VISIBLE Medium source: 197 points
+VISIBLE Medium source: 197 points
+VISIBLE TEXONO comparison: 74 points
+VISIBLE TEXONO comparison: 142 points
+VISIBLE TEXONO comparison: 79 points
+VISIBLE TEXONO comparison: 142 points
+VISIBLE TEXONO comparison: 61 points
+VISIBLE TEXONO comparison: 61 points
+VISIBLE TEXONO comparison: 19 points
+medium_epsilon95_at_1keV=1.33504102754e-05; unit_efficiency=8.53015258343e-06; Park_convention_at_1keV=1.56549951055e-05
+PASS: all exported curves finite, populated, in-frame and alive at save

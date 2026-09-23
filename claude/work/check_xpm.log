@@ -1,0 +1,48 @@
+
+1. Route A: CM two-body momentum, boosted to the lab
+----------------------------------------------------
+   PASS: gamma*Eq_cm +- betagamma*q_cm == eq (5), and gamma^2-(bg)^2 = 1
+
+2. Route B: cos(theta) = +-1 in the exact lab relation
+------------------------------------------------------
+   PASS: solving the on-shell condition for cos gives eq (4) of the report
+   PASS: the quadratic has coefficients (4s, -4(E+m)(s+M^2-m^2), .), discriminant 16E^2 lambda,
+         and its two roots are exactly x_+ and x_- of eq (5)
+
+3. Which root is which: forward/backward, and the forward cone
+--------------------------------------------------------------
+   PASS (sympy): beta*_A' > beta_cm  <=>  2E(m-M) > M(2m-M),
+         i.e. only for M < m and E > E_b = M(2m-M)/(2(m-M)); for M >= m, never.
+   PASS: |cos(theta)| = 1 at both endpoints to 2.4e-09 over 296 points
+         (169 points with x_- backward, 127 with the emission confined to a forward cone)
+         E_b(M=0.1) = 0.1122 MeV (vs E_th = 0.1098);  E_b(M=0.5) = 11.865 MeV
+   E=3.0 MeV, M=0.5 MeV: emission confined to theta <= 67.38 deg
+   E=3.0 MeV, M=1.0 MeV: emission confined to theta <= 17.41 deg
+   PASS: |cos(theta)| > 1 at every sampled x outside [x_-, x_+] (1184 probes)
+
+4. The M -> 0 limit is the note's own range (and Compton)
+---------------------------------------------------------
+   PASS: x_+ -> E  and  x_- -> E/(1+2E/m), the Compton backscatter energy = note eq (25)
+         so the note's range is the M=0 limit of eq (5), not an approximation of it
+
+5. Threshold: lambda >= 0
+-------------------------
+   PASS: lambda(s,m^2,M^2) = 0  <=>  E = M + M^2/(2m)  (the other root is E = -M + M^2/2m < 0)
+   PASS: at threshold x_+ = x_- = M(E_th+m)/(m+M)  (A' at rest in the CM)
+     M=0.1: E_th=0.1098 MeV, x_-=x_+=0.1016 MeV
+     M=0.5: E_th=0.7446 MeV, x_-=x_+=0.6210 MeV
+     M=1.0: E_th=1.9785 MeV, x_-=x_+=1.6476 MeV
+
+6. The u-channel pole x = M^2/2m never lies inside [x_-, x_+]
+-------------------------------------------------------------
+   PASS: min over M,E of x_-/(M^2/2m) = 1.137 > 1  (E up to 60 MeV, M up to 1.4 MeV)
+
+7. Numbers quoted in the write-up
+---------------------------------
+   E=3 MeV, M=0.1: [x_-, x_+] = [0.2460, 3.0000] MeV
+   E=3 MeV, M=0.5: [x_-, x_+] = [0.5011, 2.9981] MeV
+   E=3 MeV, M=1.0: [x_-, x_+] = [1.3359, 2.9548] MeV
+   note's range at E=3 MeV (its eq (24)-(25), M-independent): [0.2354, 3.0000] MeV
+
+ALL ASSERTIONS PASSED
+wrote work/check_xpm_out.json

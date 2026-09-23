@@ -1,0 +1,337 @@
+                                                                                                                                                        INR-TH/2018-009
+
+                                                               Constraints on hidden photons produced in nuclear reactors
+
+                                                                    Mikhail Danilov,1, ∗ Sergey Demidov,2, 3, † and Dmitry Gorbunov2, 3, ‡
+                                                              1
+                                                                Lebedev Physical Institute of the Russian Academy of Sciences, Moscow 119991, Russia
+                                                         2
+                                                             Institute for Nuclear Research of the Russian Academy of Sciences, Moscow 117312, Russia
+                                                                     3
+                                                                       Moscow Institute of Physics and Technology, Dolgoprudny 141700, Russia
+                                                          New light vector particles – hidden photons – are present in many extensions of the Standard
+                                                       Model of particle physics. They can be produced in nuclear reactors and registered by neutrino
+                                                       detectors. We obtain new limits on the models with the hidden photons from an analysis of published
+                                                       results of the TEXONO neutrino experiment. Accounting for oscillations between the visible and
+                                                       hidden photons, we find that the neutrino experiments are generally insensitive to the hidden photons
+                                                       lighter than ∼ 0.1 eV.
+arXiv:1804.10777v2 [hep-ph] 22 Jan 2019
+
+
+
+
+                                             A number of extensions of the Standard Model of par-          components. The interaction with the electromagnetic
+                                          ticle physics (SM) introduce massive vectors, singlet with       current produces a quantum wave packet of photon Aµ ,
+                                          respect to the SM gauge group. These hypothetical par-           which is not a propagation eigenstate. In the relativistic
+                                          ticles are called hidden photons, dark photons, parapho-         regime the evolution of transverse modes of the photon–
+                                          tons [1]. They can serve as dark matter particles or mes-        hidden photon system can be described by the following
+                                          sengers between the visible sector (SM) and hidden sec-          Hamiltonian (see, e.g. [8])
+                                          tor(s), which dynamics solves (some of) SM phenomeno-                                 2 2
+                                                                                                                                   mX + m2γ −m2X
+                                                                                                                                                      
+                                          logical and theoretical problems (neutrino oscillations,                          1
+                                                                                                                     H=                                  .        (2)
+                                          matter-antimatter asymmetry of the Universe, etc) or                             2Eγ       −m2X      m2X
+                                          suggests some phenomena which impacts on physics and
+                                          the Universe are not recognizable at present (see e.g. [2–       Here mγ is an effective mass of photon which the lat-
+                                          4]).                                                             ter acquires due to its coherent forward scattering off
+                                             The hidden photon can couple to the SM via vector             free electrons of the media [9]. The value of mγ co-
+                                          portal interaction. The corresponding coupling constant          incides with the corresponding plasma frequency [10],
+                                          is dimensionless and hence low- and high-energy exper-           m2γ = 4παne /me , where α is fine-structure constant, me
+                                          iments exhibit similar sensitivity to this type of new           is electron mass and ne is density of free electrons1 in-
+                                          physics, if the hidden photon is sufficiently light. In par-     side the reactor. Numerically, for the reactor material
+                                          ticular, the hidden photon Xµ of mass mX can mix with            one finds that the photon mass varies within
+                                          the SM photon Aµ , the relevant lagrangian [5] reads
+                                                                                                                                   mγ ≃ 20 − 60 eV .                    (3)
+                                                   1 2       1 2                  m2X
+                                          L = − Fµν       − Xµν   − Xµν F µν +      Xµ2 − eAµ jem
+                                                                                               µ
+                                                                                                  .        The Hamiltonian (2) determines propagation eigenstates
+                                                   4         4       2           2
+                                                                                                (1)        of the system which are mixtures of Aµ and Sµ . In
+                                          Here Fµν ≡ ∂µ Aν − ∂ν Aµ , Xµν ≡ ∂µ Xν − ∂ν Xµ ;  is a          terms of interaction eigenstates Sµ and Aµ , their evolu-
+                                          dimensionless parameter of visible-hidden photon mixing          tion looks as oscillations, with the transition probability
+                                                                                                                                       2
+                                          and jemµ
+                                                     is electromagnetic current.                           P (γ → γ 0 ) = 42 sin2 ∆m
+                                                                                                                                    4Eγ
+                                                                                                                                         L
+                                                                                                                                           valid for negligible absorp-
+                                            The mixing term in (1) can be responsible for the hid-         tion. The corresponding oscillation length is given by
+                                          den photon production in a nuclear reactor, if kinemati-
+                                                                                                                                                            2
+                                          cally allowed, hidden photons of i.e. mX . 1 MeV can be                                            Eγ (10 eV)
+                                                                                                                        Losc ≈ 2.5 cm ×                 ,               (4)
+                                          produced by photons of energy Eγ ∼ 1−10 MeV.                                                     1 MeV ∆m2
+                                            For sufficiently small mX the mixing in (1) converts
+                                          photons into hidden photons via oscillations similar to          where the mass squared difference ∆m2 reads
+                                          the well-studied neutrino oscillations. The visible-to-                     q           2
+                                          hidden photon oscillations are fully described e.g. in              ∆m2 =      m2X − m2γ + 22 m2X (m2X + m2γ ) .             (5)
+                                          Ref. [6] devoted to the hidden photon production and
+                                          propagation in the Sun. Given the above analogy with             The latter never falls below m2γ & (20 eV)2 , except for
+                                          neutrino oscillations, we consider the interaction eigen-        the region, mX ≈ mγ , where the oscillation length (4)
+                                          states to be more convenient for the estimate of hidden          is largest, and which we call the resonance region in
+                                          photon yield. Typically, one replaces (see, e.g. [7]) the
+                                          hidden photon in (1) as Xµ → Sµ − Aµ , with Sµ being
+                                          sterile with respect to the electromagnetic interaction.
+                                                                                                            1 For the reactor photon energies all electrons in matter can be
+                                          The kinetic term of (1) becomes diagonal in terms of
+                                          the new variables, while the mass term gains off-diagonal          considered as free.
+                                                                                                                           2
+
+what follows. Hence, the oscillation length (4) is typi-      this result follows from the calculation of Compton scat-
+cally much smaller than the size of the nuclear reactor       tering with X emerging due to mixing with photon. (This
+core of order meters.                                         result deviates from that in Ref. [13], where a numeri-
+   The oscillations between the states Sµ and Aµ pro-         cal factor 2/3 was introduced to account for difference
+ceed until corresponding wave packets of the Hamiltonian      in numbers of polarization states between photon (two)
+eigenstates get separated in space due to their different     and massive photon (three). We find this factor irrele-
+velocities, or photon interacts in media; both processes      vant since only two transverse polarizations of the hidden
+naturally break the quantum coherence between the two         photon are produced via oscillations of the massless pho-
+oscillating states and invalidate the oscillation approxi-    ton. The production of the longitudinal component of the
+mation to the hidden photon production. The relevant          massive photon is suppressed for the masses and photon
+coherence length due to space separation of wave pack-        energies of interest, P ∝ m2X /Eγ2 , see e.g. [8, 14].) In the
+ets in vacuum can be estimated as lcoh ∼ σ/∆v where           opposite case mX  mγ one obtains from Eq. (6)
+σ is size of the photon wave packet at production and                                               m 4
+                                                                                                       X
+∆v is difference in velocities of the mass eigenstates. Us-                 P ≈ 6 × 10−6 × 2 ×               ,          (8)
+ing typical half-lifes of prompt γ-decays of fission frag-                                          1 eV
+ments about 10−12 −10−11 s (see e.g. [11, 12]), one obtains   where we use mγ = 20 eV for the estimate.
+σ ∼ 0.03 − 0.3 cm. The corresponding coherence length           The hidden photon production rate is obtained by con-
+                                    2       2
+lcoh ∼ 6 · 108−9 cm × (Eγ /1 MeV) (10 eV) /∆m2 always         volution of the probability (6) with the photon flux in the
+exceeds the oscillation length (4). This statement re-        reactor, which we take normalized to that measured [15]
+mains true even in the media where the coherence length       for Eγ & 0.2 MeV from the FRJ-1 reactor core
+decreases due to interactions of fission products and af-
+                                                                       dNγ                  T         Eγ
+ter rescattering of photons off electrons reducing σ to                    = 0.58 × 1021 ×    × e− 0.91 MeV
+                                                                       dEγ                 GW
+10−6 cm. So the oscillation approximation is justified in
+our case.                                                     in units photons/(s×MeV), with T being the reactor
+   The oscillation is terminated by absorption of the pho-    thermal power. The hidden photons leave the reactor
+ton in the reactor material. The photon absorption            and can be observed at some distance in a detector de-
+length in a nuclear reactor, 1/Γ, varies from a few to        signed to measure the reactor antineutrino flux. The hid-
+few tens cm for the energy range 1 − 10 MeV. Its effect       den photons oscillate and produce photons which can be
+                                         m2      m2
+can be described by the replacement 2Eγγ → 2Eγγ − iΓ          detected via the Compton scattering off electrons. Each
+in the Hamiltonian (2). The absorption length is much         hidden photon then produces the Compton-like signature
+shorter than the reactor size of about several meters, but    with the probability
+it is typically longer than the oscillation length (4) ex-                                     m4X
+cept for the resonance region ∆m2 ≈ 0. In the following                           P = 2 ×           2 ,                  (9)
+                                                                                             (∆m2 )
+numerical estimates we take 1/Γ = 10 cm. Most photons
+produced in the core get absorbed in the reactor mate-        (see (6), where we set Γ = 0, which can be done away
+rial (mostly in water and steel) unless they oscillate into   from the resonance region) and mγ in ∆m2 (5) should
+hidden photons with the probability [6]                       be calculated for material along the hidden photon path
+                                                              inside the detector. Even neglecting mγ (that is for
+                                m4X                           mX  mγ ) one obtains an estimate P ≈ 2 .
+               P = 2 ×         2           ,          (6)
+                          (∆m2 ) + Eγ2 Γ2                        However, the neutrino detectors are made of dense
+                                                              material, so the effective photon mass is certainly not
+which can be obtained straightforwardly by solving the
+                                                              smaller than that in water. For the numerical estimates
+Schrodinger equation with the Hamiltonian (2) for dis-
+                                                              below we chose mγ = 20 eV inside neutrino detector
+tances larger than the absorption length. The term in
+                                                              as well. Hence, the total probability in general non-
+denominator of (6) responsible for the photon absorp-
+                                                              resonance case is just a product of (6) and (9), which
+tion dominates when
+                                                          implies a huge suppression factor for the light hidden
+                           Eγ      10 cm                      photons, mX  mγ .
+       2
+    ∆m  Eγ Γ ≈ 2 ×                        eV2 ,   (7)
+                         1 MeV      1/Γ                          In the resonance case, mγ = mX , the mass difference
+                                                              (5) becomes equal to
+i.e. in the resonance region, where mX ≈ mγ with the
+accuracy of a few percent.                                                                 m γ 2
+                                                                          ∆m2 = 0.8 × −3               eV2 ,
+   In the non-resonance case the condition (7) is oppo-                                10     20 eV
+site, and the probability depends on the relation between     and the oscillation length (4) is
+mX and mγ . For heavier hidden photons, i.e. when                                                                2
+                                                                                        Eγ 10−3
+                                                                                                     
+mX  mγ > 20 eV, the probability turns to simple                                                         20 eV
+                                                                         Losc = 3 m                                   .
+P = 2 law. In the absence of coherence in γ-X system                                 1 MeV              mγ
+                                                                                                                                                3
+
+One observes, that for  < 10−3 condition (7) is obeyed          for the searches. The signature of a hidden photon is
+and the probability (6) reduces to                               identical to the Compton scattering process. Therefore,
+                                                                 the anti-Compton selection decreases the efficiency of the
+                        m 4  1 MeV 2
+   P ≈ 4 × 104 × 2 ×
+                            γ
+                                 ×              .  (10)          hidden photon detection. The suppression factor of the
+                         20 eV        Eγ                         anti-Compton selection for single photons is not given by
+                                                                 the TEXONO collaboration. It can be smaller than that
+One expects similar enhancement for the hidden-to-               for the background suppression. However, for the upper
+visible conversion probability, however it generally oc-         limit estimates we can assume them to be equal. This
+curs for another resonance mass mX , since reactor and           leads to the upper limit of 1174.1 hidden photon events
+detector materials are different, and so the corresponding       in the TEXONO experiment at the 95% CL.
+photon masses.
+                                                                    In Fig. 1 we present a revised 95% CL upper limit on
+   Therefore, in the two very narrow mass ranges the
+                                                                 the parameters  and mX of the model from TEXONO
+number of signal events in the detector gets amplified
+                                                                 data where in recalculation of the results from [13] we
+hundred thousand times with respect to the Compton-
+                                                                 take into account both the theoretical and experimental
+based result, P = 2 . Since the estimate (10) is valid only
+                                                                 issues discussed above. At large masses of the hidden
+in the very narrow mass ranges defined by the photon ef-
+fective mass in the matter, its applicability requires a
+                                                                             0
+good knowledge of the nuclear reactor core structure and                                                                              EW
+                                                                                              T                        Rydberg
+the detector, which is unavailable for us. However, it can                                        EX
+                                                                                  AC
+                                                                                                    O
+                                                                                                     N
+be applied by e.g. the NEOS and TEXONO collabora-                            -3                         O
+tions. Note, that in the realistic case of inhomogeneous
+materials the probability formula (6) gets modified,see
+                                                                             -6        CA
+Ref. [6].                                                                                ST
+                                                                  Log10 
+                                                                                                             Solar
+   A side remark concerns the recent paper [13] where a                                                     Lifetime
+
+study similar to ours was performed but the oscillations                     -9
+                                                                                                                                 HB
+were neglected. We find that at mX & 20 eV its re-
+sults for the event numbers are underestimated by fac-                                                                                dDM
+                                                                            -12
+tor 3/2, except the resonance regions where they may
+be (a special study is needed) underestimated by a fac-
+tor of ∼ 105 . For lighter hidden photons, mX . 20 eV,                      -15
+                                                                                  -2          0                2            4               6
+the number of signal events are overestimated by fac-                                                    Log10 mX , [eV]
+tor 2/3 × (mγ /mX )8 , see expressions for the conversion
+probabilities (6) and (9). While Ref. [13] claims the mass-
+                                                                 FIG. 1.     95% CL exclusion upper limit in the parameter
+independent upper limit of about  . 10−5 , our observa-
+                                                                 plane (mX , ) of the hidden photon model from TEXONO
+tion suggests, instead, that the neutrino experiments are        experiment (black solid line) in comparison with other results
+absolutely insensitive to the hidden photons lighter than        (see Ref. [18] for details).
+about 0.05 eV.
+   Now we turn to the analysis of the experimental data
+                                                                 photon, i.e. mX >  ∼ 20 eV, the overall correction to the
+of the TEXONO neutrino experiment [16], and use its re-
+                                                                 signal estimate claimed in [13] is a factor of 4; given the 4
+sult to place limits2 on mixing . To measure the ν̄e − e−
+                                                                 dependence the corresponding limit on  is only slightly
+scattering cross section the TEXONO experiment used
+                                                                 weaker than that presented in [13]. At the same time we
+scintillator crystal detector, located at 28 m from the core
+                                                                 see that the sensitivity of the reactor experiment to the
+of T = 2.9 GW thermal-power reactor. With electron re-
+                                                                 hidden photon model is drastically decreased for mX <       ∼
+coil energy in 3-8 MeV range the TEXONO collaboration
+                                                                 20 eV.
+extracted 414 ± 100.6 events in 160 days. This number is
+                                                                    A side remark concerns Ref. [13], where TEXONO and
+30.7 ± 100.6 events larger than the SM expectation. The
+                                                                 NEOS data were both analyzed to constrain . For
+excess is smaller than 195.7 events at the 95% CL. We use
+                                                                 the TEXONO data analysis in [13] the suppression of
+this number to determine the 95% CL upper limit on the
+                                                                 the hidden photon detection efficiency due to the anti-
+number of hidden photons detected in the TEXONO ex-
+                                                                 Compton selection was ignored. This underestimates
+periment. The TEXONO collaboration applies a special
+                                                                 the upper limit on the number of hidden photons by
+anti-Compton selection, which reduces the background
+                                                                 a factor which can be as large as 6. Analysis of the
+by a factor of 6 in the energy range 3-8 MeV utilized
+                                                                 NEOS data is wrong at several points. Since Ref. [23]
+                                                                 from [13] is not available for us, we naturally assume that
+                                                                 the conclusion ’all of the reactor-on event candidates are
+2 See Ref. [17] for similar study in a model where new massive
+                                                                 due to background’ is based on the approximate equality
+  vector boson directly couples to neutrinos.                    Non /Ton = Nof f /Tof f . Here Non (Nof f ) and Ton (Tof f )
+                                                                                                                         4
+
+are the number of e/γ-events and data taking time dur-           To conclude, we present theoretical description of the
+ing the reactor on (off) period. Then the absence of the      expected dark photon signal in reactor neutrino experi-
+signal events associated with the hidden photons implies      ments and obtain corrected upper limits on the hidden
+                                                              photon mass mX and the mixing parameter  from the
+                                   Ton                        TEXONO data, see Fig. 1. There are two comments in
+             Nhph = Non − Nof f          ≈ 0.         (11)
+                                   Tof f                      order. First, we disregard Compton rescattering of the
+                                                              photons during their propagation in the reactor core. The
+Its statistical uncertainty                                   secondary photons may contribute to the hidden photon
+             s                      s                         production. In this respect our limits are conservative.
+                           T2
+                                                     
+                                                Ton           Second, in our estimates we take minimum value of the
+  ∆Nhph =      Non + Nof f 2on =        Non 1 +
+                          Tof f                 Tof f         effective photon mass equal mγ ≈ 20 eV for the reactor
+                                                              and detector. The sensitivity to lighter hidden photons,
+determines the upper limit on the hidden-visible mix-         mX < mγ , is strongly reduced. The chosen value refers
+ing, 1.64∆Nhph would correspond to 95% CL. It is worth        to water and grows in denser materials, thus suppressing
+to mention that the two-sided CL were used in [13] in-        the sensitivity for correspondingly heavier hidden pho-
+stead of one-sided. Therefore, the obtained upper lim-        tons. Therefore, we expect, that limits in Fig. 1 may be
+its correspond to 97.5%CL instead of 95% CL. Numeri-          improved, but only mildly, with dedicated analyses per-
+cally for the NEOS                                            formed by the NEOS and TEXONO collaborations. The
+                 √ on- and off- time
+                                  √ intervals we obtain
+∆Nphp ≈ 2.2 × Non instead of Non adopted in [13].             only promising case is the resonance, mX ≈ mγ , where
+   Even more important is that the estimation of the up-      the amplified production of the hidden photons may sig-
+per limit ignores possible systematic errors. The upper       nificantly improve the limit on mixing .
+limit corresponds to 7.3 × 10−5 of the total number of
+e/γ-events. This small number implicitly assumes the
+                                                                We thank S. Gninenko, S. Troitsky and I. Tkachev for
+absence of time variations of the detector efficiency and
+                                                              valuable discussions. The theoretical analysis of hidden
+background contribution at a similar very low relative
+                                                              photon production and detection within the oscillation
+level. The NEOS experiment [19] has not presented any
+                                                              approximation was supported by the RSF grant 17-12-
+evidence of such a challenging stability.
+                                                              01547. The analysis of the experimental data adopted
+   Indeed, signatures of the hidden photon interactions       to limit the model parameters was supported by the
+in the NEOS detector are practically indistinguishable        Grant of the Russian Federation Government, Agreement
+from signatures of positrons in the electron antineutrino     #14.W03.31.0026 from 15.02.2018.
+induced Inverse Beta Decay (IBD) reactions. The NEOS
+experiment detected 339.1 thousand IBD events whose
+signature includes apart from a prompt positron signal
+also a delayed event resulting from n-Gd capture. At
+                                                                ∗
+least 292.7 thousand of them (1626 events per day for              mvdanil@gmail.com
+                                                                †
+data taking of 180 days) had the total positron energy             demidov@ms2.inr.ac.ru
+                                                                 ‡
+(prompt energy) in the range 1-5 MeV, at which the es-             gorby@ms2.inr.ac.ru
+timation of the expected number of hidden photons was          [1] L. B. Okun, Sov. Phys. J. Exp. Theor. Phys. 56, 502
+                                                                   (1982), [Zh. Eksp. Teor. Fiz.83,892(1982)].
+performed. This number is 5.5 times larger than the 95%        [2] M. Pospelov, A. Ritz, and M. B. Voloshin, Phys. Lett.
+CL upper limit on number of observed hidden photon                 B662, 53 (2008), arXiv:0711.4866 [hep-ph].
+events presented in the paper [13]. Here we again point        [3] J. D. Bjorken, R. Essig, P. Schuster, and N. Toro, Phys.
+out that the hidden photon event candidates would look             Rev. D80, 075018 (2009), arXiv:0906.0580 [hep-ph].
+like single prompt events and thus their number can not        [4] P. Ilten, Y. Soreq, M. Williams, and W. Xue, J. High
+be smaller than the number of fully reconstructed IBD              Energy Phys. 06, 004 (2018), arXiv:1801.04847 [hep-ph].
+events divided by the neutron detection efficiency and         [5] B. Holdom, Phys. Lett. 166B, 196 (1986).
+                                                               [6] J. Redondo, J. Cosmol. Astropart. Phys. 1507, 024
+other IBD process selection efficiencies. This observation         (2015), arXiv:1501.07292 [hep-ph].
+again explicitly demonstrates that the estimation [13] of      [7] J. Redondo, J. Cosmol. Astropart. Phys. 0807, 008
+the upper limit on the number of detected hidden pho-              (2008), arXiv:0801.1527 [hep-ph].
+tons in the NEOS experiment can not be correct. It is at       [8] J. Redondo and G. Raffelt, J. Cosmol. Astropart. Phys.
+least a factor of 6 too optimistic. For a typical stability        1308, 034 (2013), arXiv:1305.2920 [hep-ph].
+of the detector efficiency and background level of about       [9] E. Braaten and D. Segel, Phys. Rev. D48, 1478 (1993),
+                                                                   arXiv:hep-ph/9302213 [hep-ph].
+1% the limit on the number of the detected hidden pho-
+                                                              [10] E. Lifshitz and L. Pitaevski, Course of Theoretical
+tons in the NEOS experiment derived in [13] is 2 orders            Physics, Vol. 10 (Pergamon, Amsterdam, 1981).
+of magnitude too optimistic. That is why we do not use        [11] S. A. Johansson, Nuclear Physics 60, 378 (1964).
+the NEOS data in our calculations of the upper limit on       [12] H. Albinsson, Physica Scripta 3, 113 (1971).
+the mixing parameter  shown in Fig. 1.                       [13] H. Park, Phys. Rev. Lett. 119, 081801 (2017),
+                                                                                                                      5
+
+     arXiv:1705.02470 [hep-ph].                              [17] M. Lindner, F. S. Queiroz, W. Rodejohann,         and
+[14] H. An, M. Pospelov, and J. Pradler, Phys. Lett. B725,        X.-J. Xu, J. High Energy Phys. 05, 098 (2018),
+     190 (2013), arXiv:1302.3884 [hep-ph].                        arXiv:1803.00060 [hep-ph].
+[15] H. Bechteler et al., Spezielle Berichte der Kern-       [18] J. Jaeckel and A. Ringwald, Ann. Rev. Nucl. Part. Sci.
+     forschungsanlage Juelich 255, 62 (1984).                     60, 405 (2010), arXiv:1002.0329 [hep-ph].
+[16] M. Deniz et al. (TEXONO), Phys. Rev. D81, 072001        [19] Y. Ko et al., Phys. Rev. Lett. 118, 121802 (2017),
+     (2010), arXiv:0911.1597 [hep-ex].                            arXiv:1610.05134 [hep-ex].
+

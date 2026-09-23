@@ -1,0 +1,5 @@
+{
+"0.1": {"median_absolute_relative_error":0.0422349,"comparison_pass_10percent":true},
+"0.5": {"median_absolute_relative_error":0.114107,"comparison_pass_10percent":false},
+"1": {"median_absolute_relative_error":0.381291,"comparison_pass_10percent":false}
+}

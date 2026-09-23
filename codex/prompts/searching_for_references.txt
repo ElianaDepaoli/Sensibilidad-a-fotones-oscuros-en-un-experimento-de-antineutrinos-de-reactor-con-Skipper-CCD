@@ -1,0 +1,13 @@
+What is query:
+Kinds of dark photon theory. Energy ranges. Sources. Experiments that calculated sensitivity and exclution limits.
+
+How, strategy:
+Go through out the web, search in scientific papers.
+
+What is expected as outcome:
+New folder in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/ containing reliable papers
+A report.html both for you and for human to follow-up
+A rfh.html for human. Produce a version in english language and reasonable translation in spanish. 
+
+Rules for human report:
+Stay simple, avoid useless connectors. Don't be polite. 

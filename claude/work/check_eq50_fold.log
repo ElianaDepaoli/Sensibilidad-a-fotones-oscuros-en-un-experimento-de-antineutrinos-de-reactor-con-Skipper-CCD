@@ -1,0 +1,19 @@
+threshold implied by the note's range (range non-empty): w >= M/2; with w' >= M imposed: w >= M. Exact: M + M^2/2m
+M=0.1: photons with M < w < E_th = 1.1% of those above M
+   x=1.0 MeV: exact fold 0.1081, note-(50) fold 0.1160, ratio 1.073  [1e21/MeV/s]
+   x=2.0 MeV: exact fold 0.0171, note-(50) fold 0.0181, ratio 1.061  [1e21/MeV/s]
+   x=3.0 MeV: exact fold 0.0036, note-(50) fold 0.0038, ratio 1.056  [1e21/MeV/s]
+   x=5.0 MeV: exact fold 0.0002, note-(50) fold 0.0002, ratio 1.051  [1e21/MeV/s]
+   A' per s in [3,8] MeV: exact 2.534e+18, note 2.671e+18, ratio 1.054
+M=0.5: photons with M < w < E_th = 23.6% of those above M
+   x=1.0 MeV: exact fold 0.1116, note-(50) fold 0.1801, ratio 1.614  [1e21/MeV/s]
+   x=2.0 MeV: exact fold 0.0171, note-(50) fold 0.0262, ratio 1.526  [1e21/MeV/s]
+   x=3.0 MeV: exact fold 0.0036, note-(50) fold 0.0053, ratio 1.479  [1e21/MeV/s]
+   x=5.0 MeV: exact fold 0.0002, note-(50) fold 0.0003, ratio 1.434  [1e21/MeV/s]
+   A' per s in [3,8] MeV: exact 2.538e+18, note 3.706e+18, ratio 1.460
+M=1.0: photons with M < w < E_th = 65.9% of those above M
+   x=1.0 MeV: exact fold 0.0000, note-(50) fold 1.5043, ratio nan  [1e21/MeV/s]
+   x=2.0 MeV: exact fold 0.0177, note-(50) fold 0.0393, ratio 2.218  [1e21/MeV/s]
+   x=3.0 MeV: exact fold 0.0037, note-(50) fold 0.0075, ratio 2.048  [1e21/MeV/s]
+   x=5.0 MeV: exact fold 0.0002, note-(50) fold 0.0004, ratio 1.902  [1e21/MeV/s]
+   A' per s in [3,8] MeV: exact 2.569e+18, note 5.109e+18, ratio 1.988

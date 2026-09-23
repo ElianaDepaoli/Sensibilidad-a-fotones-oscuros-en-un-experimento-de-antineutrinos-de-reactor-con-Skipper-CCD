@@ -1,0 +1,302 @@
+claims:
+  - id: exact-tree-level-cross-section
+    statement: >
+      The unpolarized tree-level squared amplitude for gamma e -> A' e is eps^2 e^4 F(a,b,c,d) with
+      F = -2(a/b+b/a) + 4(2c+d)[(1/a+1/b) + c(1/a+1/b)^2 - d/(ab)], a=s-m^2, b=u-m^2, c=m^2, d=M^2,
+      and dsigma/dx = eps^2 e^4 F/(32 pi m E^2) on x in [x_-, x_+]. The v2 report, deNiverville-Lee-Lee
+      and Smirnov et al. all state this same cross section.
+    evidence:
+      - work/check_cross_section.py::F_numeric
+      - work/check_cross_section.py::main (section 1, asserts < 1e-9)
+      - apuntes/report_park_production_v2_en.pdf eq (36), (38)
+      - papers_reactor_dark_photon/03_deniverville_lee_lee_2021.pdf eq (18)-(20)
+      - papers_reactor_dark_photon/04_smirnov_et_al_2022.pdf eq (3)
+    numbers: [max_rel_dev_matrix_vs_v2_F, max_rel_dev_matrix_vs_deNiverville, max_rel_dev_exact_vs_smirnov, max_rel_dev_explicit_pol_vs_covariant]
+
+  - id: spanish-notes-amplitude-wrong
+    statement: >
+      The squared amplitude eq (40) of the Spanish note in apuntes/ is wrong: it deviates from the
+      exact F by -39% to +33% on random on-shell points, and at M=0 it misses exactly the electron-mass terms
+      8 m^2 (1/a+1/b) + 8 m^4 (1/a+1/b)^2 of Klein-Nishina.
+    evidence:
+      - work/check_cross_section.py::F_apuntes
+      - work/check_cross_section.py::main (section 2, sympy identity at M=0)
+      - apuntes/Dark_Photon_cross_section-1.pdf eq (39)-(41)
+    numbers: [apuntes_M2_rel_dev_min, apuntes_M2_rel_dev_max]
+
+  - id: spanish-notes-kinematics-wrong
+    statement: >
+      The note uses |q| ~ x, quotes the threshold as E=M instead of M + M^2/2m, and gives kinematic ranges
+      that do not match the exact [x_-, x_+]; the note's eq (19) does solve its (approximate) eq (18).
+    evidence:
+      - work/check_cross_section.py::x_pm
+      - work/check_cross_section.py::cos_theta
+      - work/check_cross_section.py::main (section 3, sympy solve of eq (18))
+      - apuntes/Dark_Photon_cross_section-1.pdf eq (16)-(25), Table 1
+    numbers: [Eth_M1MeV, xrange_exact_E3_M1, xrange_doc1_E3_M1, costheta_exact_E3_x2_M1, costheta_doc1_E3_x2_M1]
+
+  - id: spanish-notes-final-dsigma-wrong
+    statement: >
+      The note's final dsigma/domega' (eq 50) is off by up to a factor 2 pointwise at E=3 MeV; integrated over
+      the exact range it overshoots by 0.5%, 7%, 36% for M=0.1, 0.5, 1 MeV; over the note's own range at M=1 MeV
+      the integrand crosses the pole u-m^2=0 and the integral does not exist. The M=0 total (eq 52) is correct.
+    evidence:
+      - work/check_cross_section.py::dsig_dx_apuntes
+      - work/check_cross_section.py::main (sections 4 and 5)
+      - work/fig_dsigma_dx_E3.pdf
+    numbers: [doc1_over_exact_E3_M01_min, doc1_over_exact_E3_M01_max, doc1_over_exact_E3_M1_min, doc1_over_exact_E3_M1_max, sigma_doc1_over_exact_E3_M0.1, sigma_doc1_over_exact_E3_M0.5, sigma_doc1_over_exact_E3_M1.0, doc1_pole_inside_own_range_M1]
+
+  - id: park-figure1-tail-is-the-photon-spectrum
+    statement: >
+      Park's Figure 1 (M=0.1 MeV) above 2 MeV equals the photon spectrum S_gamma(E) within reading error
+      (0.065 vs 0.064 at 2 MeV, 0.007 vs 0.0072 at 4 MeV, in 1e21/MeV/s), whereas his own eq (1) with the exact
+      cross section and sigma_tot = sigma_KN gives 0.017 and 0.0009. The v2 report's Figure 2 follows Park's
+      curve, so its 4% agreement with Park does not validate its implementation of eq (1). The fold of eq (1)
+      is correctly normalised (integral = photon number to 0.1%).
+    evidence:
+      - work/check_cross_section.py::dN_dx_compton
+      - work/check_cross_section.py::main (section 9, flat-KN bounds and normalisation asserts)
+      - papers_reactor_dark_photon/01_park_2017.pdf Fig 1 (read by eye)
+      - apuntes/report_park_production_v2_en.pdf Fig 2 and its eq (62)-(63) table
+    numbers: [dNdx_A_M0.1_x1.0, dNdx_A_M0.1_x2.0, dNdx_A_M0.1_x3.0, dNdx_A_M0.1_x4.0, dNdx_B_x2.0, dNdx_B_x4.0, park_fig1_by_eye_x2, NA_tot_over_Ngamma]
+
+  - id: two-mechanisms-differ-in-window
+    statement: >
+      Park's Compton-like source formula (eq 1, with sigma_tot = sigma_KN and the exact cross section) and the
+      Danilov oscillation formula in its eps^2 limit (E_X = E_gamma) give A' rates in the 3-8 MeV window that
+      differ by a factor 7.7 for the same eps and Park spectrum, independently of M between 0.1 and 1 MeV.
+      The Compton-like channel is the secondary-photon channel of Demidov et al. 2025 and is subleading.
+    evidence:
+      - work/check_cross_section.py::main (section 8)
+      - papers_reactor_dark_photon/01_park_2017.pdf eq (1), (3)
+      - papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf eq (6)
+      - papers_reactor_dark_photon/07_demidov_gorbunov_polonski_2025.pdf Fig 3, eq (17)
+      - papers_reactor_dark_photon/08_lou_wu_2026.pdf Fig 1 (de-excitation channel beats Compton-like)
+    numbers: [N_window_A_M0.1, N_window_B, ratio_A_over_B_M0.1, ratio_A_over_B_M1.0, Ngamma_above_1MeV_1GW]
+
+  - id: two-thirds-is-unpolarized-average
+    statement: >
+      The factor 2/3 in Park eq (6) and Lou-Wu eq (11) is the average of sigma(A' e -> gamma e) over three A'
+      polarizations for M << m_e; a transverse A' scatters with eps^2 sigma_KN (factor 1). Compton-produced
+      A' are transverse to 1% at M=0.1 MeV; at M=0.5-1 MeV their longitudinal fraction is 8-21% and the
+      detection cross section is f_T sigma_T + f_L sigma_L with sigma_T/eps^2 sigma_KN = 0.96-1.00 and
+      sigma_L/eps^2 sigma_KN = 0.02-0.31.
+    evidence:
+      - work/check_cross_section.py::inverse_sigma
+      - work/check_cross_section.py::F_numeric (which='L')
+      - work/check_cross_section.py::main (section 6, asserts T/KN=1 and unpol/KN=2/3 at M=0.01 MeV)
+      - work/fig_longitudinal_fraction.pdf
+      - papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf (paragraph on Ref. [13]'s 2/3)
+    numbers: [inverse_T_over_KN_E3.0_M0.01, inverse_unpol_over_KN_E3.0_M0.01, inverse_T_over_KN_E3.0_M0.5, inverse_L_over_KN_E3.0_M0.5, inverse_T_over_KN_E3.0_M1.0, inverse_L_over_KN_E3.0_M1.0, inverse_T_over_KN_E8.0_M1.0, inverse_L_over_KN_E8.0_M1.0, long_frac_E3.0_M0.1, long_frac_E3.0_M0.5, long_frac_E3.0_M1.0, long_frac_E8.0_M1.0]
+
+  - id: mass-suppression-of-compton-like-production
+    statement: >
+      At E=3 MeV the exact total production cross section is 0.995, 0.886, 0.609 of eps^2 sigma_KN for
+      M=0.1, 0.5, 1 MeV, so Park's eq (2) approximation is good only for M << 0.5 MeV.
+    evidence:
+      - work/check_cross_section.py::main (section 7)
+      - work/fig_sigma_total.pdf
+    numbers: [sigma_exact_over_KN_E3_M0.1, sigma_exact_over_KN_E3_M0.5, sigma_exact_over_KN_E3_M1.0]
+
+  - id: note-range-error-irrelevant-in-texono-window
+    statement: >
+      The naive threshold in the note's Table 1 is not used in its eq (50); the same error enters through the
+      range eqs (24)-(25). Folded with Park's spectrum, that range error does not affect A' with E_A' >= 3 MeV;
+      the note's eq (50) overestimates the 3-8 MeV A' rate by 1.05, 1.46, 1.99 for M = 0.1, 0.5, 1 MeV, and
+      that comes from the amplitude and Jacobian of eq (50) itself. The range error matters only for E_A' below
+      ~1.5 MeV (M = 1 MeV), where the note also integrates across its pole.
+    evidence:
+      - work/check_eq50_fold.py::dN_note
+      - work/check_cross_section.py::dN_dx_compton
+      - apuntes/Dark_Photon_cross_section-1.pdf eq (24)-(25), (50), Table 1
+    numbers: [eq50_fold_over_exact_window_M0.1, eq50_fold_over_exact_window_M0.5, eq50_fold_over_exact_window_M1.0, frac_photons_below_threshold_M1.0]
+
+  - id: dp3-two-normalisation-factors-cancelled
+    statement: >
+      Two normalisation errors in DP3_Danilov.C nearly cancelled: ds_dwp_f used h c instead of hbar c (cross section
+      (2 pi)^2 = 39.5x too large) while differential_number_DP divided a per-electron cross section by the NIST
+      per-atom uranium cross section (production 92x too low), net 2.33. That is why the code's Fig 1 maxima appeared
+      to agree with Park (6.98e20 vs ~1e21) and why eps_95 came out at Park's 2.1e-5. With hbar c alone the maximum
+      falls to 1.77e19 (56x below Park) and eps_95 rises to 5.3e-5; with both factors fixed the maximum is 1.24e21
+      and eps_95 is 1.73e-5, so the agreement survives for the right reasons. The NIST column is per atom: its ratio
+      to Klein-Nishina is 91.1-92.2 over 1-8 MeV. The Ne in Nobs() is the detector's electron count (Park eq 7) and
+      does not supply this factor, which belongs to eq (1).
+    evidence:
+      - mycodes/DP3_Danilov_new.C::ds_dwp_new_f
+      - mycodes/DP3_Danilov_new.C::differential_number_DP_new (Z_per_atom_new)
+      - mycodes/DP3_Danilov_new.C::tot_cs_f vs ::sigma_KN_cm2
+      - mycodes/run_new.log, mycodes/run_orig_hbarc.log
+      - mycodes/README_DP3_Danilov_new.md
+    numbers: [dp3_hc_over_hbarc_squared, dp3_sigma_nist_over_KN_1MeV, dp3_fig1_max_orig_hc_noZ_M0.1, dp3_fig1_max_new_hbarc_Z_M0.1, dp3_eps95_texono_hbarc_noZ, dp3_eps95_texono_new, dp3_eps95_texono_eq50_Z, dp3_fig1_new_at_2MeV_M0.1]
+
+  - id: note-discontinuity-is-the-range-not-the-formula
+    statement: >
+      The break in the mA' = 1 MeV curve of the Fig 1 reproduction is the u-channel propagator pole at
+      w' = mA'^2/2me = 0.978 MeV, which the exact formula has as well (it diverges there too). What the |k'| ~ w'
+      approximation does is produce a range that contains it: eq (20) returns legal angles for w' < mA', where the
+      A' would carry less energy than its rest mass, so the endpoints (24)-(25) land at 0.312 MeV instead of
+      x_- = 1.336 MeV. Evaluating the exact formula on the note's range reproduces the discontinuity; evaluating the
+      note's formula on the exact range gives a smooth curve. The pole is outside the exact range for every mass
+      checked (min x_- / (mA'^2/2me) = 10.4, 2.04, 1.26 at mA' = 0.1, 0.5, 1 MeV) because b = 0 puts the exchanged
+      electron on shell, i.e. the forbidden subprocess e -> e A' with both particles real.
+    evidence:
+      - work/check_cross_section.py::dsig_dx_apuntes
+      - work/check_cross_section.py::dsig_dx_exact
+      - work/check_cross_section.py::x_pm
+      - mycodes/README_DP3_Danilov_new.md section 6
+      - apuntes/Dark_Photon_cross_section-1.pdf eq (18)-(20), (24)-(25), (46), (50)
+    numbers: [u_pole_position_M1, note_dsdx_at_pole_E3_M1, exact_dsdx_at_pole_E3_M1, min_xminus_over_pole_M1, xrange_exact_E3_M1, xrange_doc1_E3_M1]
+
+  - id: xpm-endpoints-derivation
+    statement: >
+      The exact A' energy range x_pm = [(E+m)(s+M^2-m^2) +- E sqrt(lambda(s,m^2,M^2))]/(2s) follows in two
+      independent ways: (A) boosting the CM two-body energy E* = (s+M^2-m^2)/2sqrt(s) with cos(theta*) = +-1,
+      and (B) setting cos(theta) = +-1 in the exact lab angle-energy relation, which gives a quadratic in x with
+      discriminant 16 E^2 lambda whose roots are x_pm. Route (B) is the Spanish note's own argument; with
+      |k'| ~ x that quadratic degenerates to two linear equations, which is where the second root and the
+      threshold are lost. x_+ is always forward emission; x_- is backward only when 2E(m-M) > M(2m-M),
+      otherwise the emission is confined to a forward cone. As M -> 0, x_+ -> E and x_- -> E/(1+2E/m), the
+      note's eqs (24)-(25).
+    evidence:
+      - work/check_xpm.py (sections 1-7; ends in ALL ASSERTIONS PASSED)
+      - work/check_xpm.log
+      - reports/explicaciones_es.pdf section 2
+      - reports/report_cross_section_es.pdf eq (5)
+      - apuntes/Dark_Photon_cross_section-1.pdf eq (18)-(25)
+    numbers: [xpm_costheta_residual, E_backward_M0.5, theta_max_deg_E3.0_M0.5, theta_max_deg_E3.0_M1.0,
+              x_at_threshold_M0.1, x_at_threshold_M0.5, x_at_threshold_M1.0,
+              xrange_E3_M0.1, xrange_E3_M0.5, xrange_E3_M1.0, note_xminus_E3, min_xminus_over_pole_all]
+
+
+  - id: wp-production-new-grid-spike
+    statement: >
+      In mycodes/DP3_Danilov.C, where only the *_new_f kinematics were adopted, the Fig. 1 curves spike as
+      w' -> mA' because the new grid starts at w' = mA' while the integrand is still eq (50) (ds_dwp_f) and the
+      domain is still Rw_f. Eq (50) contains cos^2(theta) explicitly, and with the corrected exact cos theta,
+      cos ~ 1/|k'| = 1/sqrt(w'^2-mA'^2), so eq (50) has a simple pole at w' = mA' (fitted exponent -1.000 at
+      w = 3 MeV). Rw_f does not protect that region: invwpmin_f returns +inf for w' >= me/2, so the photon range
+      becomes all of [w', wmax]; for mA' = 1 MeV the exact domain is empty below min_w x_-(w) = 1.2547 MeV while
+      Rw_f returns [w', 10] MeV. The old grid started at mA'/2, below the mass, where the corrected cos_theta_f
+      is NaN and Rw_f's guard fired, so the pole was never sampled. Inside the exact domain |cos theta| <= 1 by
+      construction, so ds_dwp_new_f + Rw_new_f + wp_production_new_f together show no spike.
+    evidence:
+      - work/check_wp_production_spike.py (sections 1-5; ends in ALL ASSERTIONS PASSED)
+      - work/check_wp_production_spike.log
+      - mycodes/DP3_Danilov.C (user's tree: wp_production_f = the new grid, Rw_f and ds_dwp_f still the old ones)
+      - mycodes/DP3_Danilov_new.C (Rw_new_f, ds_dwp_new_f, wp_production_new_f)
+    numbers: [ds50_slope_wp_to_mAp_M0.1, ds50_slope_wp_to_mAp_M0.5, ds50_slope_wp_to_mAp_M1.0,
+              ds50_growth_M0.1, ds50_growth_M1.0, domain_width_ratio_M0.1, domain_width_ratio_M0.5,
+              domain_width_ratio_M1.0, max_abs_cos_in_exact_domain_M0.1,
+              spike_ratio_per_decade_asymptotic_M0.1, spike_ratio_per_decade_asymptotic_M0.5,
+              spike_ratio_per_decade_asymptotic_M1.0]
+
+figures:
+  - file: mycodes/cFig1_new.png
+    produced_by: mycodes/DP3_Danilov_new.C::DP3_Danilov_new (block show_plot_DPproduction)
+    shows: >
+      Park Fig 1 style dN_A'/dE_A' at 1 GW, eps=1 for mA' = 0.1, 0.5, 1 MeV: original functions (solid/dotted black-blue)
+      vs new exact cross section and range (dotted blue/red). The original curves start at mA'/2 and have the pole at
+      mA'^2/2me; the new ones start at min x_- and are smooth.
+    from_scratch: the new C++ functions (transcription of work/check_cross_section.py formulas)
+    from_library: ROOT TGraph, NIST uranium file
+    choices: ["y range widened to 1e16-1e22", "new curves keep Park's sigma_C as sigma_tot (NIST incoherent / 92)", "same_norm_for_old = true: the old curves use eq (50) with the per-electron normalisation so the comparison isolates the cross section"]
+    supports: [dp3-two-normalisation-factors-cancelled, spanish-notes-final-dsigma-wrong]
+  - file: mycodes/cSk_new.png
+    produced_by: mycodes/DP3_Danilov_new.C::DP3_Danilov_new (block cSk)
+    shows: >
+      95% CL exclusion eps vs mA' for TEXONO and the Skipper-CCD projections, original (solid with markers) and with
+      the new functions (dotted, same colours). Danilov flags A, B, D as in the original.
+    from_scratch: the new C++ functions
+    from_library: ROOT
+    choices: ["wpsize = 10 and n = 200 kept from the original", "Z_per_atom_new = true", "same_norm_for_old = true"]
+    supports: [dp3-two-normalisation-factors-cancelled]
+  - file: reports/ampliacion_del_reporte.pdf
+    produced_by: reports/ampliacion_del_reporte.tex (latexmk -pdf); not a figure, a written answer in Spanish
+    shows: why the note's threshold error does not enter eq (50) directly, where it does enter, and how much it matters
+    from_scratch: text
+    from_library: LaTeX
+    choices: []
+    supports: [note-range-error-irrelevant-in-texono-window]
+  - file: work/fig_dsigma_dx_E3.pdf
+    produced_by: work/figures_cross_section.py::fig_dsigma_dx
+    shows: >
+      eps^-2 dsigma/dE_A' at E_gamma = 3 MeV for M = 0.1, 0.5, 1 MeV: exact (black) vs the note's eq (50) (red
+      dashed) over the range the note claims; grey bands mark the region outside the exact [x_-, x_+]. The note
+      agrees with the exact curve only for M=0.1 MeV away from the edges; at M=1 MeV it has a pole inside its range.
+    from_scratch: exact kinematics, exact F, transcription of the note's formula
+    from_library: numpy, matplotlib, (hbar c)^2 conversion constant
+    choices: ["y-axis clipped at 1.6 x max(exact) so the note's pole does not flatten the plot", "E_gamma = 3 MeV (lower edge of the TEXONO window)"]
+    supports: [spanish-notes-final-dsigma-wrong, exact-tree-level-cross-section]
+  - file: work/fig_sigma_total.pdf
+    produced_by: work/figures_cross_section.py::fig_sigma_total
+    shows: >
+      Total production cross section per electron (eps=1) vs photon energy for M = 0, 0.1, 0.5, 1 MeV, exact
+      (solid) and note 1's integrand integrated over the exact range (dashed); the M=0 curve is Klein-Nishina.
+    from_scratch: exact dsigma/dx and quadrature over [x_-, x_+]
+    from_library: scipy.integrate.quad, matplotlib
+    choices: ["note 1 integrated over the exact range, not its own, because over its own range the integral diverges at M=1 MeV"]
+    supports: [mass-suppression-of-compton-like-production, spanish-notes-final-dsigma-wrong]
+  - file: work/fig_longitudinal_fraction.pdf
+    produced_by: work/figures_cross_section.py::fig_long_fraction
+    shows: >
+      Longitudinal fraction sigma_L/sigma_tot of Compton-produced A' vs photon energy for M = 0.1, 0.3, 0.5, 1 MeV,
+      from the explicit longitudinal polarization vector; it is 1% at 0.1 MeV and 10-25% at 0.5-1 MeV.
+    from_scratch: explicit polarization vectors and amplitude
+    from_library: scipy.integrate.quad, matplotlib
+    choices: ["40 energy points per mass starting at 1.02 E_th"]
+    supports: [two-thirds-is-unpolarized-average]
+  - file: work/fig_dN_dE_two_models.pdf
+    produced_by: work/figures_cross_section.py::fig_spectra_two_models
+    shows: >
+      Left: dN_A'/dE_A' at a 1 GW reactor (Park spectrum, eps=1) for model A (Compton-like, Park eq 1 with exact
+      cross section) and model B (oscillation, P=eps^2, E_X=E_gamma) for M=0.1, 0.5, 1 MeV; right: A' per second
+      with 3<=E_A'<=8 MeV vs mass for both. B is 7.7x A in the window; A ~ B below 0.5 MeV.
+    from_scratch: the fold of model A with exact support; model B is the spectrum with a cutoff
+    from_library: scipy quad, brentq, matplotlib
+    choices: ["photon energies up to 40 MeV", "sigma_tot = sigma_KN in model A (Park's choice)", "hard cutoff E>M in model B", "window integral split at 5 MeV for quad"]
+    supports: [two-mechanisms-differ-in-window, park-figure1-tail-is-the-photon-spectrum]
+  - file: reports/explicaciones_es.pdf
+    produced_by: reports/explicaciones_es.tex (latexmk -pdf); not a figure, a living Q&A document in Spanish
+    shows: >
+      One section per question the user asks about the cross-section corrections. Section 1: why the mA' = 1 MeV
+      curve of the Fig 1 reproduction breaks (the u-channel pole, and that the |k'| ~ w' approximation supplies the
+      range rather than the pole). Grows as new questions arrive.
+    from_scratch: text and tables; the numbers come from work/check_cross_section.py
+    from_library: LaTeX
+    choices: ["Spanish, unlike the .md files, because the user asked for it explicitly", "one section per question, with table of contents, so it can be extended"]
+    supports: [note-discontinuity-is-the-range-not-the-formula]
+  - file: reports/report_cross_section_en.pdf
+    produced_by: reports/report_cross_section_en.tex (latexmk -pdf); not a figure, the human report in English
+    shows: the lecture-style write-up of all claims above
+    from_scratch: text
+    from_library: LaTeX
+    choices: []
+    supports: []
+  - file: reports/report_cross_section_es.pdf
+    produced_by: reports/report_cross_section_es.tex (latexmk -pdf); not a figure, the human report in Spanish
+    shows: the same write-up in Spanish
+    from_scratch: text
+    from_library: LaTeX
+    choices: []
+    supports: []
+  - file: apuntes/report_darkphoton_v3_en.pdf
+    produced_by: handed in by the user (mtime after session start); not produced in this session
+    shows: the v3 TEXONO oscillation calculation under review
+    from_scratch: nothing
+    from_library: nothing
+    choices: []
+    supports: []
+  - file: mycodes/DP3_Danilov.C.bak_20260922
+    produced_by: cp of mycodes/DP3_Danilov.C before swapping h c for hbar c on line 647/648; not a figure
+    shows: the state of the macro before the 2026-09-22 edit
+    from_scratch: nothing
+    from_library: nothing
+    choices: []
+    supports: [dp3-two-normalisation-factors-cancelled]
+  - file: reports/report_cross_section_es0.pdf
+    produced_by: user copy of reports/report_cross_section_es.pdf (identical bytes, made 2026-09-21 15:44, not produced by the agent)
+    shows: the Spanish report as of 14:23, kept as a backup before the next revision
+    from_scratch: nothing
+    from_library: nothing
+    choices: []
+    supports: []

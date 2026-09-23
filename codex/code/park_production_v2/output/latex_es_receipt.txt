@@ -1,0 +1,18 @@
+note: using only cached resource files
+note: Running TeX ...
+warning: code/park_production_v2/lecture.tex:353: Underfull \hbox (badness 2443) in paragraph at lines 352--353
+warning: code/park_production_v2/lecture.tex:353: Underfull \hbox (badness 3895) in paragraph at lines 352--353
+warning: code/park_production_v2/lecture.tex:354: Underfull \hbox (badness 3449) in paragraph at lines 353--354
+warning: code/park_production_v2/lecture.tex:354: Underfull \hbox (badness 1163) in paragraph at lines 353--354
+warning: code/park_production_v2/lecture.tex:355: Underfull \hbox (badness 2903) in paragraph at lines 354--355
+note: Rerunning TeX because "report_park_production_v2_es.out" changed ...
+warning: code/park_production_v2/lecture.tex:353: Underfull \hbox (badness 2443) in paragraph at lines 352--353
+warning: code/park_production_v2/lecture.tex:353: Underfull \hbox (badness 3895) in paragraph at lines 352--353
+warning: code/park_production_v2/lecture.tex:354: Underfull \hbox (badness 3449) in paragraph at lines 353--354
+warning: code/park_production_v2/lecture.tex:354: Underfull \hbox (badness 1163) in paragraph at lines 353--354
+warning: code/park_production_v2/lecture.tex:355: Underfull \hbox (badness 2903) in paragraph at lines 354--355
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `report_park_production_v2_es.log` (13.7958984375 KiB)
+note: Writing `report_park_production_v2_es.pdf` (156.7626953125 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)

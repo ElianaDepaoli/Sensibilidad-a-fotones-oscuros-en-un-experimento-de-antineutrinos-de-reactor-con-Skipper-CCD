@@ -1,0 +1,281 @@
+{
+  "regions": {
+    "0.1": {
+      "central": {
+        "bin_count": 136,
+        "energy_low_MeV": 1.800029896544443,
+        "energy_high_MeV": 3.189994003800409,
+        "baseline": {
+          "median_relative_error": 0.04206476440158968,
+          "median_percent": 4.206476440158968,
+          "maximum_relative_error": 0.21702037167109145,
+          "fraction_above_10percent": 0.11764705882352941
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.04206476440158968,
+          "median_percent": 4.206476440158968,
+          "maximum_relative_error": 0.21702037167109145,
+          "fraction_above_10percent": 0.11764705882352941
+        },
+        "conditional": {
+          "median_relative_error": 0.04242800484328535,
+          "median_percent": 4.242800484328535,
+          "maximum_relative_error": 0.22189104878034716,
+          "fraction_above_10percent": 0.125
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.04242800484328535,
+          "median_percent": 4.242800484328535,
+          "maximum_relative_error": 0.22189104878034716,
+          "fraction_above_10percent": 0.125
+        }
+      },
+      "below1": {
+        "bin_count": 83,
+        "energy_low_MeV": 0.1600042226757682,
+        "energy_high_MeV": 0.9900239284960229,
+        "baseline": {
+          "median_relative_error": 0.5875149476278936,
+          "median_percent": 58.751494762789356,
+          "maximum_relative_error": 1.0,
+          "fraction_above_10percent": 0.9518072289156626
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.019091977415325312,
+          "median_percent": 1.9091977415325312,
+          "maximum_relative_error": 0.055782159081150584,
+          "fraction_above_10percent": 0.0
+        },
+        "conditional": {
+          "median_relative_error": 0.5837686672357884,
+          "median_percent": 58.376866723578836,
+          "maximum_relative_error": 1.0,
+          "fraction_above_10percent": 0.9518072289156626
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.007948842579617366,
+          "median_percent": 0.7948842579617366,
+          "maximum_relative_error": 0.034042174156770466,
+          "fraction_above_10percent": 0.0
+        }
+      },
+      "available": {
+        "bin_count": 343,
+        "energy_low_MeV": 0.1600042226757682,
+        "energy_high_MeV": 3.700014075585896,
+        "baseline": {
+          "median_relative_error": 0.0532693834297695,
+          "median_percent": 5.32693834297695,
+          "maximum_relative_error": 1.0,
+          "fraction_above_10percent": 0.3469387755102041
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.025469974856247468,
+          "median_percent": 2.546997485624747,
+          "maximum_relative_error": 0.3581911118408756,
+          "fraction_above_10percent": 0.11661807580174927
+        },
+        "conditional": {
+          "median_relative_error": 0.051267041873220176,
+          "median_percent": 5.126704187322018,
+          "maximum_relative_error": 1.0,
+          "fraction_above_10percent": 0.3469387755102041
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.023783843208192268,
+          "median_percent": 2.378384320819227,
+          "maximum_relative_error": 0.3634458762336976,
+          "fraction_above_10percent": 0.11661807580174927
+        }
+      }
+    },
+    "0.5": {
+      "central": {
+        "bin_count": 135,
+        "energy_low_MeV": 1.800029896544443,
+        "energy_high_MeV": 3.179987163065662,
+        "baseline": {
+          "median_relative_error": 0.11614446737015105,
+          "median_percent": 11.614446737015104,
+          "maximum_relative_error": 0.23700734502125975,
+          "fraction_above_10percent": 0.6
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.11614446737015105,
+          "median_percent": 11.614446737015104,
+          "maximum_relative_error": 0.23700734502125975,
+          "fraction_above_10percent": 0.6
+        },
+        "conditional": {
+          "median_relative_error": 0.0466043061395387,
+          "median_percent": 4.66043061395387,
+          "maximum_relative_error": 0.23751058595127006,
+          "fraction_above_10percent": 0.17037037037037037
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.0466043061395387,
+          "median_percent": 4.66043061395387,
+          "maximum_relative_error": 0.23751058595127006,
+          "fraction_above_10percent": 0.17037037037037037
+        }
+      },
+      "below1": {
+        "bin_count": 49,
+        "energy_low_MeV": 0.5000175944823696,
+        "energy_high_MeV": 0.9900239284960229,
+        "baseline": {
+          "median_relative_error": 0.495673028623725,
+          "median_percent": 49.5673028623725,
+          "maximum_relative_error": 0.6516026584153243,
+          "fraction_above_10percent": 1.0
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.30483090131169777,
+          "median_percent": 30.483090131169778,
+          "maximum_relative_error": 0.4577473232100002,
+          "fraction_above_10percent": 1.0
+        },
+        "conditional": {
+          "median_relative_error": 0.34505385400079447,
+          "median_percent": 34.50538540007945,
+          "maximum_relative_error": 0.5506146314206939,
+          "fraction_above_10percent": 0.7959183673469388
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.00785258991180282,
+          "median_percent": 0.7852589911802821,
+          "maximum_relative_error": 0.03710114516248353,
+          "fraction_above_10percent": 0.0
+        }
+      },
+      "available": {
+        "bin_count": 309,
+        "energy_low_MeV": 0.5000175944823696,
+        "energy_high_MeV": 3.940068801463863,
+        "baseline": {
+          "median_relative_error": 0.1529568971597104,
+          "median_percent": 15.29568971597104,
+          "maximum_relative_error": 0.6516026584153243,
+          "fraction_above_10percent": 0.7734627831715211
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.1529568971597104,
+          "median_percent": 15.29568971597104,
+          "maximum_relative_error": 0.4577473232100002,
+          "fraction_above_10percent": 0.7734627831715211
+        },
+        "conditional": {
+          "median_relative_error": 0.04640222096449009,
+          "median_percent": 4.640222096449009,
+          "maximum_relative_error": 0.5506146314206939,
+          "fraction_above_10percent": 0.2783171521035599
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.027580878269778175,
+          "median_percent": 2.7580878269778175,
+          "maximum_relative_error": 0.42249051401148896,
+          "fraction_above_10percent": 0.15210355987055016
+        }
+      }
+    },
+    "1.0": {
+      "central": {
+        "bin_count": 138,
+        "energy_low_MeV": 1.800029896544443,
+        "energy_high_MeV": 3.189994003800408,
+        "baseline": {
+          "median_relative_error": 0.37873004494221274,
+          "median_percent": 37.87300449422128,
+          "maximum_relative_error": 0.5508905269250836,
+          "fraction_above_10percent": 1.0
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.37873004494221274,
+          "median_percent": 37.87300449422128,
+          "maximum_relative_error": 0.5508905269250836,
+          "fraction_above_10percent": 1.0
+        },
+        "conditional": {
+          "median_relative_error": 0.01076030180450227,
+          "median_percent": 1.076030180450227,
+          "maximum_relative_error": 0.05845045734651699,
+          "fraction_above_10percent": 0.0
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.01076030180450227,
+          "median_percent": 1.076030180450227,
+          "maximum_relative_error": 0.05845045734651699,
+          "fraction_above_10percent": 0.0
+        }
+      },
+      "available": {
+        "bin_count": 253,
+        "energy_low_MeV": 1.280002984024208,
+        "energy_high_MeV": 3.860013906678864,
+        "baseline": {
+          "median_relative_error": 0.37020285030971345,
+          "median_percent": 37.020285030971344,
+          "maximum_relative_error": 0.6369837651380832,
+          "fraction_above_10percent": 1.0
+        },
+        "low_cutoff": {
+          "median_relative_error": 0.37020285030971345,
+          "median_percent": 37.020285030971344,
+          "maximum_relative_error": 0.6369837651380832,
+          "fraction_above_10percent": 1.0
+        },
+        "conditional": {
+          "median_relative_error": 0.011911176324885364,
+          "median_percent": 1.1911176324885364,
+          "maximum_relative_error": 0.10381743181356429,
+          "fraction_above_10percent": 0.007905138339920948
+        },
+        "conditional_low_cutoff": {
+          "median_relative_error": 0.011911176324885364,
+          "median_percent": 1.1911176324885364,
+          "maximum_relative_error": 0.10381743181356429,
+          "fraction_above_10percent": 0.007905138339920948
+        }
+      }
+    }
+  },
+  "conditional_limit": {
+    "events_coefficient": 3.282785170616659e+21,
+    "epsilon_limit": 1.565499370399367e-05
+  },
+  "finite_mass_checks": [
+    {
+      "mass_MeV": 0.001,
+      "events_coefficient": 3.282783995034982e+21,
+      "node_relative_difference": 2.109423746787797e-13,
+      "order_relative_difference": 2.86992651865603e-13
+    },
+    {
+      "mass_MeV": 0.1,
+      "events_coefficient": 3.284140006624141e+21,
+      "node_relative_difference": 2.117195307960174e-13,
+      "order_relative_difference": 8.468337142630844e-12
+    },
+    {
+      "mass_MeV": 0.5,
+      "events_coefficient": 3.334024963325638e+21,
+      "node_relative_difference": 2.119415754009424e-13,
+      "order_relative_difference": 1.665845218434825e-07
+    },
+    {
+      "mass_MeV": 1.0,
+      "events_coefficient": 3.671567161418558e+21,
+      "node_relative_difference": 2.114974861910923e-13,
+      "order_relative_difference": 3.562469401030555e-06
+    }
+  ],
+  "choices": {
+    "gamma_low_diagnostic_MeV": 0.2,
+    "central_low_MeV": 1.8,
+    "central_high_MeV": 3.2,
+    "diagnostic_tolerance": 0.1,
+    "massless_tolerance": 1e-08,
+    "small_mass_rate_tolerance": 1e-05,
+    "bin_quadrature_nodes": 8
+  }
+}

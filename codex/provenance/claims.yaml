@@ -1,0 +1,1198 @@
+claims:
+- id: park-production-v2-provenance
+  statement: The fresh ROOT/C++ production calculation derives and checks the dark-photon Compton-like cross section, compares the TEXONO source spectra with Park Figure 1, and records the remaining reproduction failure.
+  evidence:
+  - code/park_production_v2/production.cpp::Checks
+  - code/park_production_v2/reports.cpp::Provenance
+  - code/park_production_v2/output/run_receipt.txt
+  - report_park_production_v2_agent.html
+  numbers: []
+- id: darkphoton-v3-redo
+  statement: >
+    The corrected ROOT run passes independent cross-section and bounded event-limit checks;
+    every exported curve has finite visible points and survives until canvas export.
+    The figures compare published source data with independent predictions and do not
+    establish complete numerical reproduction of Park or Danilov.
+  evidence:
+  - code/darkphoton_v3/redo.cpp::Checks,CheckGraph,Save,Figure1,Limits
+  - code/darkphoton_v3/output/run_receipt.txt
+  - code/darkphoton_v3/output/danilov_digitized.csv
+  - papers/darkphoton_v3/danilov2019.pdf::Eqs.5,6,9 and Fig.1
+  numbers: [v3_redo_limits, v3_redo_inputs, v3_redo_domains]
+- id: conventional-channel
+  statement: 'Conventional reactor searches produce visible kinetically mixed dark
+    photons from MeV photons and detect them through inverse Compton-like scattering;
+    the simplest event rate scales approximately as epsilon to the fourth power.
+
+    '
+  evidence:
+  - papers_reactor_dark_photon/01_park_2017.pdf::Eqs. 1-7
+  - papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf::Eqs. 1-9
+  numbers:
+  - visible_rate_epsilon_power
+  - reactor_gamma_min_mev
+  - reactor_gamma_max_mev
+- id: park-limits-disputed
+  statement: 'Park reported sub-MeV NEOS and TEXONO limits, but the later oscillation
+    and efficiency reanalysis found the NEOS treatment too optimistic and reactor
+    sensitivity suppressed below about 0.1 eV.
+
+    '
+  evidence:
+  - papers_reactor_dark_photon/01_park_2017.pdf::NEOS and TEXONO analysis
+  - papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf::discussion and
+    conclusion
+  numbers:
+  - park_mass_max_mev
+  - park_neos_epsilon
+  - park_texono_epsilon
+  - neos_window_low_mev
+  - neos_window_high_mev
+  - texono_window_low_mev
+  - texono_window_high_mev
+  - danss_projection_epsilon
+  - dgg_low_mass_eV
+  - confidence_standard_percent
+- id: portal-distinct
+  statement: 'The CONUS, MINER, RENO, and NEOS dark-axion-portal projections constrain
+    a different coupling plane and must not be merged with epsilon-only kinetic-mixing
+    limits.
+
+    '
+  evidence:
+  - papers_reactor_dark_photon/03_deniverville_lee_lee_2021.pdf::Table I and Fig.
+    4
+  numbers:
+  - portal_neos_cut_mev
+  - confidence_standard_percent
+- id: tao-systematics
+  statement: 'The JUNO-TAO projection is background-systematics limited and reports
+    weaker baseline sensitivity than the disputed NEOS projection.
+
+    '
+  evidence:
+  - papers_reactor_dark_photon/04_smirnov_et_al_2022.pdf::Section V and Figs. 3-4
+  numbers:
+  - tao_window_low_mev
+  - tao_window_high_mev
+  - tao_days
+  - tao_background_systematic_percent
+  - tao_coupling_sensitivity
+  - tao_optimization_factor
+  - confidence_standard_percent
+- id: scattering-dispute
+  statement: 'The large multiple-scattering enhancement claimed in 2024 is disputed
+    by a 2025 GEANT-based analysis, which finds a smaller energy-dependent enhancement
+    and a mixing-limit correction below 30 percent.
+
+    '
+  evidence:
+  - papers_reactor_dark_photon/05_du_liu_wang_wu_2024.pdf::Sections VI-VIII
+  - papers_reactor_dark_photon/07_demidov_gorbunov_polonski_2025.pdf::abstract and
+    Section 5
+  numbers:
+  - du_production_factor
+  - pcge_window_low_kev
+  - pcge_window_high_kev
+  - rebuttal_enhancement_high_energy
+  - rebuttal_high_energy_mev
+  - rebuttal_enhancement_low_energy
+  - rebuttal_low_energy_mev
+  - rebuttal_limit_change_percent
+- id: neon-direct-search
+  statement: 'NEON directly compared reactor-on and reactor-off keV spectra and found
+    no light-dark-matter signal in an invisible-dark-photon-decay model.
+
+    '
+  evidence:
+  - papers_reactor_dark_photon/06_neon_2025.pdf::abstract, analysis, and Fig. 3
+  numbers:
+  - neon_roi_low_kev
+  - neon_roi_high_kev
+  - neon_dm_mass_low_kev
+  - neon_dm_mass_high_kev
+  - neon_sigma_e_cm2
+  - neon_benchmark_mass_kev
+  - neon_mass_ratio
+  - confidence_neon_percent
+- id: deexcitation-extension
+  statement: 'The 2026 TEXONO recast uses neutron-capture de-excitation lines to extend
+    the claimed visible-dark-photon mass reach beyond conventional Compton-like production.
+
+    '
+  evidence:
+  - papers_reactor_dark_photon/08_lou_wu_2026.pdf::Table I and Sections IV-V
+  numbers:
+  - deexcitation_mass_low_mev
+  - deexcitation_mass_high_mev
+  - line_u238_low_mev
+  - line_u238_high_mev
+  - line_b10_low_mev
+  - line_b10_high_mev
+  - texono_window_low_mev
+  - texono_window_high_mev
+  - confidence_standard_percent
+- id: park-impl-cross-sections
+  statement: The two tree-level cross sections were derived from Dirac traces; symbolic
+    photon limits, explicit gamma matrices, Ward identities, and finite-mass reference-production
+    integrals pass.
+  evidence:
+  - code/park_texono/derive.py::derive
+  - code/park_texono/derive.py::check_explicit_matrices
+  - code/park_texono/park_texono.cpp::Tests
+  - papers/park_reproduction/reference15.pdf::Appendix A.1-A.3
+  - papers/park_reproduction/reference20.pdf::Eqs. 11-13
+  numbers: []
+- id: park-impl-limit-failure
+  statement: Independent integration using Park source normalization and exact free-electron
+    kinematics does not reproduce the printed TEXONO limit. The diagnostic prompt-flux/literal-bound
+    coincidence does not establish the original implementation.
+  evidence:
+  - code/park_texono/park_texono.cpp::Results
+  - code/park_texono/output/results.json
+  - papers/park_reproduction/park2017.pdf::Eq. 7 and TEXONO paragraph
+  numbers:
+  - park_impl_electron_count
+  - park_impl_N95
+  - park_impl_coefficient_eps4
+  - park_impl_epsilon_limit
+  - park_impl_paper_epsilon_limit
+  - park_impl_epsilon_printed_bound
+  - park_impl_epsilon_prompt_flux
+  - park_impl_epsilon_prompt_flux_printed_bound
+  - park_impl_events_at_paper_epsilon
+  - park_impl_epsilon_mass_01
+  - park_impl_epsilon_mass_05
+  - park_impl_epsilon_mass_1
+  - park_impl_photon_integral_above_1
+  - park_impl_prompt_flux_quoted
+  - park_impl_flux_ratio
+  - park_impl_epsilon_flux_factor
+  - park_impl_decay_prefactor_from_eq4_m
+  - park_impl_decay_prefactor_printed_m
+  - park_impl_decay_length_E3_M01_epslimit_m
+  - park_impl_quadrature_relative_difference
+  - park_impl_integration_order_relative_difference
+  - park_impl_implicit_acceptance_to_match
+  - park_impl_input_power_MW
+  - park_impl_input_baseline_m
+  - park_impl_input_mass_kg
+  - park_impl_input_days
+  - park_impl_input_Z
+  - park_impl_input_A
+  - park_impl_input_roi_low
+  - park_impl_input_roi_high
+  - park_impl_input_observed
+  - park_impl_input_background
+  - park_impl_input_sigma_events
+  - park_impl_input_cl_multiplier
+  - park_impl_input_efficiency
+  - park_impl_input_gamma_low
+  - park_impl_input_gamma_high
+  - park_impl_input_reference_limit
+  - park_impl_input_quadrature
+  - park_impl_fig1_residual_0.1
+  - park_impl_fig1_percent_0.1
+  - park_impl_fig1_residual_0.5
+  - park_impl_fig1_percent_0.5
+  - park_impl_fig1_residual_1
+  - park_impl_fig1_percent_1
+  - park_impl_material_0.1_E_MeV
+  - park_impl_material_0.1_KN_cm2_g
+  - park_impl_material_0.1_total_cm2_g
+  - park_impl_material_0.1_KN_fraction_total
+  - park_impl_material_0.1_Thomson_over_KN
+  - park_impl_material_0.2_E_MeV
+  - park_impl_material_0.2_KN_cm2_g
+  - park_impl_material_0.2_total_cm2_g
+  - park_impl_material_0.2_KN_fraction_total
+  - park_impl_material_0.2_Thomson_over_KN
+  - park_impl_material_0.3_E_MeV
+  - park_impl_material_0.3_KN_cm2_g
+  - park_impl_material_0.3_total_cm2_g
+  - park_impl_material_0.3_KN_fraction_total
+  - park_impl_material_0.3_Thomson_over_KN
+  - park_impl_material_0.5_E_MeV
+  - park_impl_material_0.5_KN_cm2_g
+  - park_impl_material_0.5_total_cm2_g
+  - park_impl_material_0.5_KN_fraction_total
+  - park_impl_material_0.5_Thomson_over_KN
+  - park_impl_material_0.8_E_MeV
+  - park_impl_material_0.8_KN_cm2_g
+  - park_impl_material_0.8_total_cm2_g
+  - park_impl_material_0.8_KN_fraction_total
+  - park_impl_material_0.8_Thomson_over_KN
+  - park_impl_material_1.0_E_MeV
+  - park_impl_material_1.0_KN_cm2_g
+  - park_impl_material_1.0_total_cm2_g
+  - park_impl_material_1.0_KN_fraction_total
+  - park_impl_material_1.0_Thomson_over_KN
+  - park_impl_material_1.5_E_MeV
+  - park_impl_material_1.5_KN_cm2_g
+  - park_impl_material_1.5_total_cm2_g
+  - park_impl_material_1.5_KN_fraction_total
+  - park_impl_material_1.5_Thomson_over_KN
+  - park_impl_material_2.0_E_MeV
+  - park_impl_material_2.0_KN_cm2_g
+  - park_impl_material_2.0_total_cm2_g
+  - park_impl_material_2.0_KN_fraction_total
+  - park_impl_material_2.0_Thomson_over_KN
+  - park_impl_material_3.0_E_MeV
+  - park_impl_material_3.0_KN_cm2_g
+  - park_impl_material_3.0_total_cm2_g
+  - park_impl_material_3.0_KN_fraction_total
+  - park_impl_material_3.0_Thomson_over_KN
+  - park_impl_material_4.0_E_MeV
+  - park_impl_material_4.0_KN_cm2_g
+  - park_impl_material_4.0_total_cm2_g
+  - park_impl_material_4.0_KN_fraction_total
+  - park_impl_material_4.0_Thomson_over_KN
+  - park_impl_material_5.0_E_MeV
+  - park_impl_material_5.0_KN_cm2_g
+  - park_impl_material_5.0_total_cm2_g
+  - park_impl_material_5.0_KN_fraction_total
+  - park_impl_material_5.0_Thomson_over_KN
+  - park_impl_material_6.0_E_MeV
+  - park_impl_material_6.0_KN_cm2_g
+  - park_impl_material_6.0_total_cm2_g
+  - park_impl_material_6.0_KN_fraction_total
+  - park_impl_material_6.0_Thomson_over_KN
+  - park_impl_material_8.0_E_MeV
+  - park_impl_material_8.0_KN_cm2_g
+  - park_impl_material_8.0_total_cm2_g
+  - park_impl_material_8.0_KN_fraction_total
+  - park_impl_material_8.0_Thomson_over_KN
+  - park_impl_material_10.0_E_MeV
+  - park_impl_material_10.0_KN_cm2_g
+  - park_impl_material_10.0_total_cm2_g
+  - park_impl_material_10.0_KN_fraction_total
+  - park_impl_material_10.0_Thomson_over_KN
+  - park_impl_electron_mass_MeV
+  - park_impl_alpha_inverse
+  - park_impl_hbarc_MeV_cm
+  - park_impl_Avogadro
+  - park_impl_gamma_normalization_MW
+  - park_impl_gamma_scale_MeV
+  - park_impl_uranium_Z_over_A
+  - park_impl_three_gamma_width_coefficient
+  - park_impl_paper_flux_above1
+  - park_impl_paper_N95_rounded
+  - park_impl_figure1_tolerance
+  - park_impl_figure1_comparison_low_MeV
+  - park_impl_figure1_comparison_high_MeV
+  - park_impl_comparison_mass_MeV
+  - park_impl_gamma_tail_test_MeV
+  - park_impl_figure2_mass_low_eV
+  - park_impl_figure2_mass_high_eV
+  - park_impl_quadrature_relative_tolerance
+  - park_impl_order_relative_tolerance
+  - park_impl_paper_limit_tolerance
+  - park_impl_decay_benchmark_E_MeV
+  - park_impl_decay_benchmark_mass_MeV
+  - park_impl_elapsed_wall_minutes
+- id: park-impl-figure-failure
+  statement: The original Figure 1 vector paths were extracted and compared without
+    normalization fitting. The full finite-mass figure fails the selected local residual
+    criterion; only the low-mass central interval passes.
+  evidence:
+  - code/park_texono/inspect_sources.py::extract_figure1
+  - code/park_texono/park_texono.cpp::CompareFigure1
+  - code/park_texono/output/figure1_status.json
+  numbers: []
+- id: park-impl-material
+  statement: Free-electron Klein-Nishina cannot stand in for precision total uranium
+    attenuation in the TEXONO energy range; the diagnostic is not incorporated into
+    Park event rates.
+  evidence:
+  - code/park_texono/park_texono.cpp::MaterialDiagnostic
+  - code/park_texono/nist_uranium.csv
+  - https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z92.html
+  numbers: []
+- id: park-impl-environment
+  statement: The calculation ran with the requested ROOT and compiler; the existing
+    marimo environment was found under /home/eliana/.marimo and used for the figure
+    notebook.
+  evidence:
+  - code/park_texono/output/run_receipt.txt
+  - code/park_texono/output/figures.html
+  numbers: []
+- id: park-continuation-normalization
+  statement: A conditional-production normalization and lower gamma cutoff reduce
+    Figure 1 residuals but change the stated equation; they do not establish the author
+    implementation or resolve the TEXONO limit. Finite-mass rate convergence checks
+    pass.
+  evidence:
+  - code/park_texono/continuation.C
+  - code/park_texono/continuation_report.py::summarize
+  - code/park_texono/output/continuation/run_receipt.txt
+  - papers/park_reproduction/park2017.pdf::Figure 1 and Eqs. 1-3
+  numbers:
+  - park_continuation_summary_regions_0.1_central_bin_count
+  - park_continuation_summary_regions_0.1_central_energy_low_MeV
+  - park_continuation_summary_regions_0.1_central_energy_high_MeV
+  - park_continuation_summary_regions_0.1_central_baseline_median_relative_error
+  - park_continuation_summary_regions_0.1_central_baseline_median_percent
+  - park_continuation_summary_regions_0.1_central_baseline_maximum_relative_error
+  - park_continuation_summary_regions_0.1_central_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_central_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.1_central_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.1_central_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.1_central_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_central_conditional_median_relative_error
+  - park_continuation_summary_regions_0.1_central_conditional_median_percent
+  - park_continuation_summary_regions_0.1_central_conditional_maximum_relative_error
+  - park_continuation_summary_regions_0.1_central_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_central_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.1_central_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.1_central_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.1_central_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_below1_bin_count
+  - park_continuation_summary_regions_0.1_below1_energy_low_MeV
+  - park_continuation_summary_regions_0.1_below1_energy_high_MeV
+  - park_continuation_summary_regions_0.1_below1_baseline_median_relative_error
+  - park_continuation_summary_regions_0.1_below1_baseline_median_percent
+  - park_continuation_summary_regions_0.1_below1_baseline_maximum_relative_error
+  - park_continuation_summary_regions_0.1_below1_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_below1_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.1_below1_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.1_below1_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.1_below1_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_below1_conditional_median_relative_error
+  - park_continuation_summary_regions_0.1_below1_conditional_median_percent
+  - park_continuation_summary_regions_0.1_below1_conditional_maximum_relative_error
+  - park_continuation_summary_regions_0.1_below1_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_below1_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.1_below1_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.1_below1_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.1_below1_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_available_bin_count
+  - park_continuation_summary_regions_0.1_available_energy_low_MeV
+  - park_continuation_summary_regions_0.1_available_energy_high_MeV
+  - park_continuation_summary_regions_0.1_available_baseline_median_relative_error
+  - park_continuation_summary_regions_0.1_available_baseline_median_percent
+  - park_continuation_summary_regions_0.1_available_baseline_maximum_relative_error
+  - park_continuation_summary_regions_0.1_available_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_available_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.1_available_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.1_available_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.1_available_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_available_conditional_median_relative_error
+  - park_continuation_summary_regions_0.1_available_conditional_median_percent
+  - park_continuation_summary_regions_0.1_available_conditional_maximum_relative_error
+  - park_continuation_summary_regions_0.1_available_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_0.1_available_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.1_available_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.1_available_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.1_available_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_central_bin_count
+  - park_continuation_summary_regions_0.5_central_energy_low_MeV
+  - park_continuation_summary_regions_0.5_central_energy_high_MeV
+  - park_continuation_summary_regions_0.5_central_baseline_median_relative_error
+  - park_continuation_summary_regions_0.5_central_baseline_median_percent
+  - park_continuation_summary_regions_0.5_central_baseline_maximum_relative_error
+  - park_continuation_summary_regions_0.5_central_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_central_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.5_central_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.5_central_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.5_central_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_central_conditional_median_relative_error
+  - park_continuation_summary_regions_0.5_central_conditional_median_percent
+  - park_continuation_summary_regions_0.5_central_conditional_maximum_relative_error
+  - park_continuation_summary_regions_0.5_central_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_central_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.5_central_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.5_central_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.5_central_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_below1_bin_count
+  - park_continuation_summary_regions_0.5_below1_energy_low_MeV
+  - park_continuation_summary_regions_0.5_below1_energy_high_MeV
+  - park_continuation_summary_regions_0.5_below1_baseline_median_relative_error
+  - park_continuation_summary_regions_0.5_below1_baseline_median_percent
+  - park_continuation_summary_regions_0.5_below1_baseline_maximum_relative_error
+  - park_continuation_summary_regions_0.5_below1_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_below1_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.5_below1_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.5_below1_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.5_below1_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_below1_conditional_median_relative_error
+  - park_continuation_summary_regions_0.5_below1_conditional_median_percent
+  - park_continuation_summary_regions_0.5_below1_conditional_maximum_relative_error
+  - park_continuation_summary_regions_0.5_below1_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_below1_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.5_below1_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.5_below1_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.5_below1_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_available_bin_count
+  - park_continuation_summary_regions_0.5_available_energy_low_MeV
+  - park_continuation_summary_regions_0.5_available_energy_high_MeV
+  - park_continuation_summary_regions_0.5_available_baseline_median_relative_error
+  - park_continuation_summary_regions_0.5_available_baseline_median_percent
+  - park_continuation_summary_regions_0.5_available_baseline_maximum_relative_error
+  - park_continuation_summary_regions_0.5_available_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_available_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.5_available_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.5_available_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.5_available_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_available_conditional_median_relative_error
+  - park_continuation_summary_regions_0.5_available_conditional_median_percent
+  - park_continuation_summary_regions_0.5_available_conditional_maximum_relative_error
+  - park_continuation_summary_regions_0.5_available_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_0.5_available_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_0.5_available_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_0.5_available_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_0.5_available_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_central_bin_count
+  - park_continuation_summary_regions_1.0_central_energy_low_MeV
+  - park_continuation_summary_regions_1.0_central_energy_high_MeV
+  - park_continuation_summary_regions_1.0_central_baseline_median_relative_error
+  - park_continuation_summary_regions_1.0_central_baseline_median_percent
+  - park_continuation_summary_regions_1.0_central_baseline_maximum_relative_error
+  - park_continuation_summary_regions_1.0_central_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_central_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_1.0_central_low_cutoff_median_percent
+  - park_continuation_summary_regions_1.0_central_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_1.0_central_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_central_conditional_median_relative_error
+  - park_continuation_summary_regions_1.0_central_conditional_median_percent
+  - park_continuation_summary_regions_1.0_central_conditional_maximum_relative_error
+  - park_continuation_summary_regions_1.0_central_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_central_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_1.0_central_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_1.0_central_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_1.0_central_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_available_bin_count
+  - park_continuation_summary_regions_1.0_available_energy_low_MeV
+  - park_continuation_summary_regions_1.0_available_energy_high_MeV
+  - park_continuation_summary_regions_1.0_available_baseline_median_relative_error
+  - park_continuation_summary_regions_1.0_available_baseline_median_percent
+  - park_continuation_summary_regions_1.0_available_baseline_maximum_relative_error
+  - park_continuation_summary_regions_1.0_available_baseline_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_available_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_1.0_available_low_cutoff_median_percent
+  - park_continuation_summary_regions_1.0_available_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_1.0_available_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_available_conditional_median_relative_error
+  - park_continuation_summary_regions_1.0_available_conditional_median_percent
+  - park_continuation_summary_regions_1.0_available_conditional_maximum_relative_error
+  - park_continuation_summary_regions_1.0_available_conditional_fraction_above_10percent
+  - park_continuation_summary_regions_1.0_available_conditional_low_cutoff_median_relative_error
+  - park_continuation_summary_regions_1.0_available_conditional_low_cutoff_median_percent
+  - park_continuation_summary_regions_1.0_available_conditional_low_cutoff_maximum_relative_error
+  - park_continuation_summary_regions_1.0_available_conditional_low_cutoff_fraction_above_10percent
+  - park_continuation_summary_conditional_limit_events_coefficient
+  - park_continuation_summary_conditional_limit_epsilon_limit
+  - park_continuation_summary_finite_mass_checks_0_mass_MeV
+  - park_continuation_summary_finite_mass_checks_0_events_coefficient
+  - park_continuation_summary_finite_mass_checks_0_node_relative_difference
+  - park_continuation_summary_finite_mass_checks_0_order_relative_difference
+  - park_continuation_summary_finite_mass_checks_1_mass_MeV
+  - park_continuation_summary_finite_mass_checks_1_events_coefficient
+  - park_continuation_summary_finite_mass_checks_1_node_relative_difference
+  - park_continuation_summary_finite_mass_checks_1_order_relative_difference
+  - park_continuation_summary_finite_mass_checks_2_mass_MeV
+  - park_continuation_summary_finite_mass_checks_2_events_coefficient
+  - park_continuation_summary_finite_mass_checks_2_node_relative_difference
+  - park_continuation_summary_finite_mass_checks_2_order_relative_difference
+  - park_continuation_summary_finite_mass_checks_3_mass_MeV
+  - park_continuation_summary_finite_mass_checks_3_events_coefficient
+  - park_continuation_summary_finite_mass_checks_3_node_relative_difference
+  - park_continuation_summary_finite_mass_checks_3_order_relative_difference
+  - park_continuation_summary_choices_gamma_low_diagnostic_MeV
+  - park_continuation_summary_choices_central_low_MeV
+  - park_continuation_summary_choices_central_high_MeV
+  - park_continuation_summary_choices_diagnostic_tolerance
+  - park_continuation_summary_choices_massless_tolerance
+  - park_continuation_summary_choices_small_mass_rate_tolerance
+  - park_continuation_summary_choices_bin_quadrature_nodes
+  - park_continuation_diagnostic_elapsed_seconds
+figures:
+- file: papers_reactor_dark_photon/01_park_2017.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/1705.02470
+  shows: 'The complete four-page source paper, including the reactor dark-photon flux
+    and the original NEOS and TEXONO exclusion plot.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Author-supplied arXiv PDF downloaded without modification; SHA-256
+    is recorded in the manifest.
+  choices:
+  - Used the arXiv author manuscript because it is openly accessible and matches the
+    seed paper's published result.
+  supports:
+  - conventional-channel
+  - park-limits-disputed
+- file: papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/1804.10777
+  shows: 'The complete five-page source paper, including the corrected TEXONO contour
+    and the in-medium oscillation treatment.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Author-supplied arXiv PDF downloaded without modification; SHA-256
+    is recorded in the manifest.
+  choices:
+  - Used the final arXiv version corresponding to the published Physical Review Letters
+    analysis.
+  supports:
+  - conventional-channel
+  - park-limits-disputed
+- file: papers_reactor_dark_photon/03_deniverville_lee_lee_2021.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/2011.03276
+  shows: 'The complete dark-axion-portal study, including experimental configurations
+    and projected sensitivity contours for four reactor experiments.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Author-supplied arXiv PDF downloaded without modification; SHA-256
+    is recorded in the manifest.
+  choices:
+  - Included because it is a related reactor dark-photon production study, while labeling
+    its coupling plane as distinct.
+  supports:
+  - portal-distinct
+- file: papers_reactor_dark_photon/04_smirnov_et_al_2022.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/2109.04276
+  shows: 'The complete JUNO-TAO study, including detector assumptions, energy spectra,
+    and projected light-boson sensitivity curves.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Author-supplied arXiv PDF downloaded without modification; SHA-256
+    is recorded in the manifest.
+  choices:
+  - Included because it quantifies the background-systematic limitation and reassesses
+    the earlier NEOS projection.
+  supports:
+  - tao-systematics
+- file: papers_reactor_dark_photon/05_du_liu_wang_wu_2024.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/2309.00231
+  shows: 'The complete multiple-scattering analysis, including conversion-probability
+    spectra and revised TEXONO CsI and PCGe contours.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Author-supplied arXiv PDF downloaded without modification; SHA-256
+    is recorded in the manifest.
+  choices:
+  - Preserved because its claimed enhancement is central to the later published disagreement.
+  supports:
+  - scattering-dispute
+- file: papers_reactor_dark_photon/06_neon_2025.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/2407.16194
+  shows: 'The complete NEON collaboration paper, including reactor-on/off spectra
+    and exclusion curves for light dark matter and its dark-photon interpretation.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Collaboration arXiv PDF downloaded without modification; SHA-256 is
+    recorded in the manifest.
+  choices:
+  - Included as the direct collaboration data analysis, while keeping its invisible-decay
+    model separate from visible-dark-photon recasts.
+  supports:
+  - neon-direct-search
+- file: papers_reactor_dark_photon/07_demidov_gorbunov_polonski_2025.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/2512.17652
+  shows: 'The complete rebuttal, including analytic photon-transport spectra, the
+    enhancement factor, and the GEANT comparison.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Author-supplied arXiv PDF downloaded without modification; SHA-256
+    is recorded in the manifest.
+  choices:
+  - Included because it directly tests and revises the multiple-scattering claim made
+    in the 2024 paper.
+  supports:
+  - scattering-dispute
+- file: papers_reactor_dark_photon/08_lou_wu_2026.pdf
+  produced_by: source acquisition::curl from https://arxiv.org/pdf/2606.08487
+  shows: 'The complete nuclear-de-excitation study, including selected transition
+    lines, event-rate components, and the extended TEXONO constraint plot.
+
+    '
+  from_scratch: No figure or page in this PDF was produced in this project.
+  from_library: Author-supplied arXiv PDF downloaded without modification; SHA-256
+    is recorded in the manifest.
+  choices:
+  - Used version two, the latest arXiv version available during the search.
+  supports:
+  - deexcitation-extension
+- file: code/park_texono/output/compton_validity.pdf
+  produced_by: code/park_texono/park_texono.cpp::MaterialDiagnostic
+  shows: Photon energy versus mass attenuation in uranium; free-electron KN compared
+    to NIST total.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-material
+- file: code/park_texono/output/compton_validity.svg
+  produced_by: code/park_texono/park_texono.cpp::MaterialDiagnostic
+  shows: Photon energy versus mass attenuation in uranium; free-electron KN compared
+    to NIST total.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-material
+- file: code/park_texono/output/cross_sections.pdf
+  produced_by: code/park_texono/park_texono.cpp::SaveCrossSections
+  shows: Incident energy versus production and detection cross sections per electron
+    with mixing factored out.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/cross_sections.svg
+  produced_by: code/park_texono/park_texono.cpp::SaveCrossSections
+  shows: Incident energy versus production and detection cross sections per electron
+    with mixing factored out.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/figure1.pdf
+  produced_by: code/park_texono/park_texono.cpp::SaveFigure1
+  shows: Dark-photon energy in MeV versus source rate per MeV-second at the paper
+    reference power and stripped mixing.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/figure1.svg
+  produced_by: code/park_texono/park_texono.cpp::SaveFigure1
+  shows: Dark-photon energy in MeV versus source rate per MeV-second at the paper
+    reference power and stripped mixing.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/figure1_comparison.pdf
+  produced_by: code/park_texono/park_texono.cpp::CompareFigure1
+  shows: Calculated source spectra and original PDF curve coordinates on the same
+    axes.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/figure1_comparison.svg
+  produced_by: code/park_texono/park_texono.cpp::CompareFigure1
+  shows: Calculated source spectra and original PDF curve coordinates on the same
+    axes.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/figure2_texono.pdf
+  produced_by: code/park_texono/park_texono.cpp::SaveFigure2
+  shows: 'Log dark-photon mass versus log epsilon: calculated TEXONO result and reported
+    reference line; disagreement is explicit.'
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/figure2_texono.svg
+  produced_by: code/park_texono/park_texono.cpp::SaveFigure2
+  shows: 'Log dark-photon mass versus log epsilon: calculated TEXONO result and reported
+    reference line; disagreement is explicit.'
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-limit-failure
+  - park-impl-figure-failure
+- file: code/park_texono/output/park_page2.png
+  produced_by: pdftocairo / pdftoppm::render supplied Park PDF
+  shows: Preserved source document or rendered original paper page. This is not a
+    new calculation or a reproduced figure.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-figure-failure
+- file: code/park_texono/output/park_page2.svg
+  produced_by: pdftocairo / pdftoppm::render supplied Park PDF
+  shows: Preserved source document or rendered original paper page. This is not a
+    new calculation or a reproduced figure.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-figure-failure
+- file: papers/park_reproduction/park2017.pdf
+  produced_by: local source preservation::copy pre-existing PDF without modification
+  shows: Preserved source document or rendered original paper page. This is not a
+    new calculation or a reproduced figure.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-figure-failure
+- file: papers/park_reproduction/reference15.pdf
+  produced_by: local source preservation::copy pre-existing PDF without modification
+  shows: Preserved source document or rendered original paper page. This is not a
+    new calculation or a reproduced figure.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-figure-failure
+- file: papers/park_reproduction/reference20.pdf
+  produced_by: local source preservation::copy pre-existing PDF without modification
+  shows: Preserved source document or rendered original paper page. This is not a
+    new calculation or a reproduced figure.
+  from_scratch: None for source PDFs; our QED calculation for ROOT curves. See producing
+    function.
+  from_library: ROOT graphics for calculated plots; Poppler for source rendering.
+  choices:
+  - Keep original source data distinct from calculated curves; disclose all failed
+    comparisons.
+  supports:
+  - park-impl-cross-sections
+  - park-impl-figure-failure
+- file: code/park_texono/output/continuation/figure1_diagnostic_preview.png
+  produced_by: code/park_texono/continuation.C::PlotComparison; pdftoppm::PDF preview
+  shows: 'Dark-photon energy versus source rate: original PDF bin heights, unchanged
+    baseline, and conditional-normalization/lower-cutoff hypothesis.'
+  from_scratch: Bin averages from reused tree-level amplitudes and a diagnostic source
+    denominator.
+  from_library: ROOT quadrature and graphics; Poppler PDF-path extraction and preview
+    rendering.
+  choices:
+  - Separate mass panels; same axes and units as the original; no fitted scale; clipped
+    PDF bins are not complete source data.
+  supports:
+  - park-continuation-normalization
+- file: code/park_texono/output/continuation/figure1_diagnostic.pdf
+  produced_by: code/park_texono/continuation.C::PlotComparison
+  shows: 'Dark-photon energy versus source rate: original PDF bin heights, unchanged
+    baseline, and conditional-normalization/lower-cutoff hypothesis.'
+  from_scratch: Bin averages from reused tree-level amplitudes and a diagnostic source
+    denominator.
+  from_library: ROOT quadrature and graphics; Poppler PDF-path extraction and preview
+    rendering.
+  choices:
+  - Separate mass panels; same axes and units as the original; no fitted scale; clipped
+    PDF bins are not complete source data.
+  supports:
+  - park-continuation-normalization
+- file: code/park_texono/output/continuation/figure1_diagnostic.svg
+  produced_by: code/park_texono/continuation.C::PlotComparison
+  shows: 'Dark-photon energy versus source rate: original PDF bin heights, unchanged
+    baseline, and conditional-normalization/lower-cutoff hypothesis.'
+  from_scratch: Bin averages from reused tree-level amplitudes and a diagnostic source
+    denominator.
+  from_library: ROOT quadrature and graphics; Poppler PDF-path extraction and preview
+    rendering.
+  choices:
+  - Separate mass panels; same axes and units as the original; no fitted scale; clipped
+    PDF bins are not complete source data.
+  supports:
+  - park-continuation-normalization
+- file: code/park_production_v2/output/compton_validity.pdf
+  produced_by: code/park_production_v2/production.cpp::Material
+  shows: Free-electron Klein-Nishina attenuation compared with NIST total uranium attenuation.
+  from_scratch: The free-electron proxy and comparison are calculated in the new ROOT/C++ implementation.
+  from_library: ROOT graphics; NIST uranium table retained in papers/park_production_v2/nist_uranium.html.
+  choices:
+  - Keep the material comparison diagnostic; do not feed it into Park's baseline source rate.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/compton_validity.svg
+  produced_by: code/park_production_v2/production.cpp::Material
+  shows: Free-electron Klein-Nishina attenuation compared with NIST total uranium attenuation.
+  from_scratch: The free-electron proxy and comparison are calculated in the new ROOT/C++ implementation.
+  from_library: ROOT graphics; NIST uranium table retained in papers/park_production_v2/nist_uranium.html.
+  choices:
+  - Keep the material comparison diagnostic; do not feed it into Park's baseline source rate.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/cross_section.pdf
+  produced_by: code/park_production_v2/production.cpp::PlotCrossSection
+  shows: Total dark-photon production cross section per free electron versus incident photon energy for four masses.
+  from_scratch: Derived two-diagram invariant trace and analytic total.
+  from_library: ROOT quadrature and graphics.
+  choices:
+  - Factor out epsilon squared and retain free-electron tree-level production.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/cross_section.svg
+  produced_by: code/park_production_v2/production.cpp::PlotCrossSection
+  shows: Total dark-photon production cross section per free electron versus incident photon energy for four masses.
+  from_scratch: Derived two-diagram invariant trace and analytic total.
+  from_library: ROOT quadrature and graphics.
+  choices:
+  - Factor out epsilon squared and retain free-electron tree-level production.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/figure1_comparison.pdf
+  produced_by: code/park_production_v2/production.cpp::PlotSpectra
+  shows: Calculated reactor dark-photon spectra overlaid with horizontal segments extracted from Park Figure 1.
+  from_scratch: Source convolution using the new production cross section.
+  from_library: ROOT quadrature and graphics; Poppler SVG extraction of the supplied PDF.
+  choices:
+  - Compare bin averages without fitting a normalization; disclose the finite-mass mismatch.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/figure1_comparison.svg
+  produced_by: code/park_production_v2/production.cpp::PlotSpectra
+  shows: Calculated reactor dark-photon spectra overlaid with horizontal segments extracted from Park Figure 1.
+  from_scratch: Source convolution using the new production cross section.
+  from_library: ROOT quadrature and graphics; Poppler SVG extraction of the supplied PDF.
+  choices:
+  - Compare bin averages without fitting a normalization; disclose the finite-mass mismatch.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/lecture_en_p4.png
+  produced_by: pdftoppm::render report_park_production_v2_en.pdf page 4
+  shows: Raster preview of the English lecture's compact cross-section formula and analytic total.
+  from_scratch: Preview only; the equations are generated from the ROOT/C++ results and LaTeX source.
+  from_library: Poppler PDF rendering.
+  choices:
+  - Use a page preview to check readable formula layout.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/lecture_en_p7.png
+  produced_by: pdftoppm::render report_park_production_v2_en.pdf page 7
+  shows: Raster preview of the English lecture's Figure 1 comparison and residual table.
+  from_scratch: Preview only; plot and table originate from the ROOT/C++ run.
+  from_library: Poppler PDF rendering.
+  choices:
+  - Use a page preview to check readable axes and table layout.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/lecture_es_p1.png
+  produced_by: pdftoppm::render report_park_production_v2_es.pdf page 1
+  shows: Raster preview of the Spanish lecture title, abstract and starting formulas.
+  from_scratch: Preview only; the lecture content is translated LaTeX.
+  from_library: Poppler PDF rendering.
+  choices:
+  - Use a page preview to check Spanish text and equation layout.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/lecture_es_p8.png
+  produced_by: pdftoppm::render report_park_production_v2_es.pdf page 8
+  shows: Raster preview of the Spanish lecture's Compton-validity section.
+  from_scratch: Preview only; the physical comparison originates from ROOT/C++.
+  from_library: Poppler PDF rendering.
+  choices:
+  - Use a page preview to check Spanish text and plot layout.
+  supports:
+  - park-production-v2-provenance
+- file: code/park_production_v2/output/paper_page2.svg
+  produced_by: pdftocairo -f 2 -l 2 -svg papers_init/park2017.pdf
+  shows: Original supplied Park paper page containing Figure 1, retained for vector-coordinate extraction.
+  from_scratch: No new scientific curve; this is a source rendering.
+  from_library: Poppler PDF-to-SVG conversion.
+  choices:
+  - Preserve source coordinates and distinguish them from calculated curves.
+  supports:
+  - park-production-v2-provenance
+- file: papers/park_production_v2/park2017.pdf
+  produced_by: local source preservation from papers_init/park2017.pdf
+  shows: Supplied Park 2017 source paper used for Figure 1 and source-spectrum equations.
+  from_scratch: None; source artifact.
+  from_library: Local PDF copy.
+  choices:
+  - Keep the source local for reproducible citation and hash it separately.
+  supports:
+  - park-production-v2-provenance
+- file: papers/park_production_v2/reference15.pdf
+  produced_by: local source acquisition from the cited Reference 15 PDF
+  shows: Reference 15 source used only as an independent total-cross-section check.
+  from_scratch: None; source artifact.
+  from_library: Local PDF copy.
+  choices:
+  - Do not use the reference formula as the derivation kernel.
+  supports:
+  - park-production-v2-provenance
+- file: report_park_production_v2_en.pdf
+  produced_by: code/park_production_v2/lecture.tex compiled with task-local Tectonic
+  shows: English physics lecture containing the derivation, checks, source convolution, figure comparison and validity limits.
+  from_scratch: Lecture content and displayed equations describe the new ROOT/C++ calculation.
+  from_library: LaTeX/Tectonic typesetting and ROOT-generated PDF plots.
+  choices:
+  - State unavailable token and reasoning metadata instead of estimating it.
+  supports:
+  - park-production-v2-provenance
+- file: report_park_production_v2_es.pdf
+  produced_by: code/park_production_v2/lecture.tex compiled with task-local Tectonic
+  shows: Spanish physics lecture containing the derivation, checks, source convolution, figure comparison and validity limits.
+  from_scratch: Lecture content and displayed equations describe the new ROOT/C++ calculation.
+  from_library: LaTeX/Tectonic typesetting and ROOT-generated PDF plots.
+  choices:
+  - State unavailable token and reasoning metadata instead of estimating it.
+  supports:
+  - park-production-v2-provenance
+- file: "code/darkphoton_v3/output/lecture_es-6.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-1.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-3.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/report_darkphoton_v3_en.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_medium.png"
+  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
+  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
+  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
+  from_library: "ROOT graph drawing and image export."
+  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-5.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/danilov_page3.png"
+  produced_by: "pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf"
+  shows: "Source page for Danilov TEXONO vector digitization and visual axis calibration."
+  from_scratch: "No new physics; exact vector path selection and axis transform are implemented in redo.cpp::DanilovPoints."
+  from_library: "Poppler source rendering."
+  choices: ["Deduplicate identical embedded vector paths.","Use actual PDF coordinates rather than an analytic imitation of the curve."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure2_texono_medium.png"
+  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
+  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
+  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
+  from_library: "ROOT integration and graphics; published curves are external reference evidence."
+  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-4.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure2_texono_medium.svg"
+  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
+  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
+  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
+  from_library: "ROOT integration and graphics; published curves are external reference evidence."
+  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/danilov_page3.svg"
+  produced_by: "pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf"
+  shows: "Source page for Danilov TEXONO vector digitization and visual axis calibration."
+  from_scratch: "No new physics; exact vector path selection and axis transform are implemented in redo.cpp::DanilovPoints."
+  from_library: "Poppler source rendering."
+  choices: ["Deduplicate identical embedded vector paths.","Use actual PDF coordinates rather than an analytic imitation of the curve."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_medium.svg"
+  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
+  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
+  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
+  from_library: "ROOT graph drawing and image export."
+  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-3.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_medium.pdf"
+  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
+  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
+  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
+  from_library: "ROOT graph drawing and image export."
+  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_comparison.svg"
+  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
+  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
+  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
+  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
+  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_comparison.png"
+  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
+  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
+  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
+  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
+  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure1_comparison.pdf"
+  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
+  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
+  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
+  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
+  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-2.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-5.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-2.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_en-4.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/lecture_es-1.png"
+  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
+  shows: "Full report page preview used to inspect text and embedded nonempty figures."
+  from_scratch: "No new physical data; visual validation of the final report."
+  from_library: "Poppler rendering."
+  choices: ["Inspect every page of both language reports."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/figure2_texono_medium.pdf"
+  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
+  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
+  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
+  from_library: "ROOT integration and graphics; published curves are external reference evidence."
+  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
+  supports: [darkphoton-v3-redo]
+- file: "code/darkphoton_v3/output/report_darkphoton_v3_es.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "report_darkphoton_v3_en.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "report_darkphoton_v3_es.pdf"
+  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
+  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
+  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
+  from_library: "LaTeX/Tectonic typesetting."
+  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
+  supports: [darkphoton-v3-redo]
+- file: "papers/darkphoton_v3/park2017.pdf"
+  produced_by: "local source preservation::copy supplied project PDF"
+  shows: "Local reference PDF supporting the equations and published comparison."
+  from_scratch: "None; reference artifact."
+  from_library: "Local PDF copy."
+  choices: ["Cite local sources and preserve the original scientific inputs."]
+  supports: [darkphoton-v3-redo]
+- file: "papers/darkphoton_v3/danilov2019.pdf"
+  produced_by: "local source preservation::copy supplied project PDF"
+  shows: "Local reference PDF supporting the equations and published comparison."
+  from_scratch: "None; reference artifact."
+  from_library: "Local PDF copy."
+  choices: ["Cite local sources and preserve the original scientific inputs."]
+  supports: [darkphoton-v3-redo]
+- file: "papers/darkphoton_v3/reference15.pdf"
+  produced_by: "local source preservation::copy supplied project PDF"
+  shows: "Local reference PDF supporting the equations and published comparison."
+  from_scratch: "None; reference artifact."
+  from_library: "Local PDF copy."
+  choices: ["Cite local sources and preserve the original scientific inputs."]
+  supports: [darkphoton-v3-redo]

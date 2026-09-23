@@ -1,0 +1,6 @@
+model=GPT-6
+reasoning_effort=not_exposed
+tokens_used=not_exposed
+ROOT=6.36.000
+compiler=13.3.0
+calculation_runtime_seconds=1.1309

@@ -1,0 +1,356 @@
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,hyperref}
+\ifspanish
+\renewcommand{\abstractname}{Resumen}
+\renewcommand{\refname}{Referencias}
+\renewcommand{\figurename}{Figura}
+\fi
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\newcommand{\both}[2]{\ifspanish #2\else #1\fi}
+\newcommand{\slsh}[1]{\not\!#1}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\dd}{\mathrm{d}}
+\input{code/park_production_v2/output/numbers.tex}
+\title{\both{Dark-photon production by Compton scattering}{Producción de fotones oscuros por dispersión Compton}\\[4pt]
+\large\both{A derivation and a test of Park's Figure 1}{Derivación y comparación con la figura 1 de Park}}
+\author{\both{Independent ROOT/C++ calculation}{Cálculo independiente en ROOT/C++}}
+\date{\both{17 September 2026}{17 de septiembre de 2026}}
+\begin{document}
+\maketitle
+\begin{abstract}
+\both{We derive the unpolarized tree-level cross section for a real photon scattering on an electron at rest to produce a massive dark photon. The derivation starts with the two electron-exchange diagrams. An exact polynomial trace calculation and independent Dirac matrices check the result. We fold the cross section with Park's reactor spectrum and compare against coordinates extracted afresh from the supplied PDF. The calculation passes the cross-section checks but does not reproduce the full published figure. No later correction is included.}
+{Derivamos la sección eficaz no polarizada, a nivel árbol, de un fotón real que se dispersa en un electrón en reposo y produce un fotón oscuro masivo. Partimos de los dos diagramas de intercambio de electrones. Verificamos el resultado mediante trazas polinómicas exactas y matrices de Dirac independientes. Integramos la sección eficaz con el espectro del reactor de Park y comparamos con coordenadas extraídas de nuevo del PDF suministrado. El cálculo pasa las verificaciones de la sección eficaz, pero no reproduce la figura publicada completa. No se incluyen correcciones posteriores.}
+\end{abstract}
+
+\section{\both{Question, assumptions and background formulas}{Pregunta, hipótesis y fórmulas de partida}}
+\both{The process and notation are}{El proceso y la notación son}
+\begin{equation}
+\gamma(k)+e^-(p)\longrightarrow A'(q)+e^-(p'),\qquad m=m_e,\quad M=m_{A'}.
+\end{equation}
+\both{We use the metric and interaction}{Usamos la métrica y la interacción}
+\begin{equation}
+g_{\mu\nu}=\operatorname{diag}(1,-1,-1,-1),\qquad
+\mathcal L_{\rm int}=-e\bar\psi\gamma^\mu\psi A_\mu-\epsilon e\bar\psi\gamma^\mu\psi A'_\mu,
+\quad e^2=4\pi\alpha.
+\end{equation}
+\both{The electron is free and initially at rest. We average over its two spins and the two incident photon polarizations, and sum over all final states. We work to leading order in the coupling and set natural units in the derivation. Binding, transport, in-medium mixing, detector response, and later corrections are outside this calculation.}
+{El electrón es libre y está inicialmente en reposo. Promediamos sobre sus dos espines y las dos polarizaciones del fotón incidente, y sumamos sobre los estados finales. Trabajamos al orden dominante en el acoplamiento y usamos unidades naturales en la derivación. Las ligaduras atómicas, el transporte, la mezcla en el medio, la respuesta del detector y las correcciones posteriores quedan fuera del cálculo.}
+
+\both{Background formulas used, rather than derived here, are the QED vertex, electron propagator, spin completeness and two-body phase space:}
+{Las fórmulas de partida que usamos, sin derivarlas aquí, son el vértice de QED, el propagador del electrón, la completitud de espines y el espacio de fases de dos cuerpos:}
+\begin{align}
+V^\mu_\gamma&=-ie\gamma^\mu,&V^\nu_{A'}&=-i\epsilon e\gamma^\nu,&
+S_F(r)&=\frac{i(\slsh r+m)}{r^2-m^2+i0},\\
+\sum_su_s(p)\bar u_s(p)&=\slsh p+m,&
+\frac{\dd\sigma}{\dd t}&=\frac{\overline{|\mathcal M|^2}}{16\pi(s-m^2)^2}.
+\end{align}
+\both{Reference 15 is not needed to derive the differential or total cross section. We use its vector-boson result only as an independent numerical check, with its coupling identified as shown below. Park supplies the empirical reactor spectrum and the figure to be tested. No detection reference is needed for this production-only task.}
+{La referencia 15 no es necesaria para derivar la sección eficaz diferencial ni la total. Usamos su resultado para bosones vectoriales sólo como verificación numérica independiente, con la identificación de acoplamientos indicada más adelante. Park aporta el espectro empírico del reactor y la figura que se compara. Esta tarea de producción no requiere una referencia de detección.}
+
+\section{\both{Kinematics and the production threshold}{Cinemática y umbral de producción}}
+\both{In the laboratory define the incident photon energy and the outgoing dark-photon energy by}{En el laboratorio definimos las energías del fotón incidente y del fotón oscuro saliente mediante}
+\begin{equation}
+p=(m,\mathbf0),\quad k=(E,0,0,E),\quad q^0=x,\quad
+Q=|\mathbf q|=\sqrt{x^2-M^2}.
+\end{equation}
+\begin{align}
+s&=(p+k)^2=m^2+2mE,&u&=(p-q)^2=m^2+M^2-2mx,\\
+t&=(k-q)^2=2m(x-E),&s+t+u&=2m^2+M^2.
+\end{align}
+\both{At threshold both final particles are at rest relative to each other in the centre-of-mass frame. Therefore}{En el umbral, ambas partículas finales están en reposo relativo en el centro de masa. Por lo tanto}
+\begin{equation}
+s\geq(m+M)^2\quad\Longrightarrow\quad
+\boxed{E_{\rm th}=M+\frac{M^2}{2m}}.
+\end{equation}
+\both{The threshold is not merely the dark-photon rest energy. For the plotted masses it is}{El umbral no es simplemente la energía en reposo del fotón oscuro. Para las masas de la figura vale}
+\begin{center}\input{code/park_production_v2/output/threshold_table.tex}\end{center}
+\both{Introduce the Källén function and centre-of-mass quantities}{Introducimos la función de Källén y las magnitudes del centro de masa}
+\begin{align}
+\lambda(s,m^2,M^2)&=[s-(m+M)^2][s-(m-M)^2],\\
+q_*^0&=\frac{s+M^2-m^2}{2\sqrt{s}},&
+q_*&=\frac{\sqrt{\lambda(s,m^2,M^2)}}{2\sqrt{s}},&
+k_*&=\frac{s-m^2}{2\sqrt{s}}.
+\end{align}
+\both{Boosting along the beam gives}{La transformación al laboratorio, en la dirección del haz, da}
+\begin{align}
+x&=\gamma(q_*^0+\beta q_*\cos\theta_*),&
+\beta&=\frac E{E+m},&\gamma&=\frac{E+m}{\sqrt s},\\
+\boxed{x_\pm(E,M)}&=\boxed{\frac{(E+m)(s+M^2-m^2)\pm E\sqrt{\lambda(s,m^2,M^2)}}{2s}}.
+\end{align}
+\both{The cross section is zero outside these endpoints. The final electron has total energy}{La sección eficaz es cero fuera de estos extremos. La energía total del electrón final es}
+\begin{equation}
+E_{e'}=m+E-x.
+\end{equation}
+
+\section{\both{The two amplitudes and current conservation}{Las dos amplitudes y la conservación de la corriente}}
+\both{The intermediate electron momenta are}{Los momentos de los electrones intermedios son}
+\begin{equation}
+r_s=p+k,\qquad r_u=p-q,\qquad a=s-m^2,\qquad b=u-m^2.
+\end{equation}
+\both{Ignoring an irrelevant common phase, the sum of the two diagrams is}{Omitiendo una fase global irrelevante, la suma de los dos diagramas es}
+\begin{align}
+\mathcal M&=\epsilon e^2\,\bar u(p')\Gamma^{\nu\mu}u(p)\,
+\varepsilon_\mu(k)\xi^*_\nu(q),\\
+\Gamma^{\nu\mu}&=
+\gamma^\nu\frac{\slsh r_s+m}{a}\gamma^\mu
++\gamma^\mu\frac{\slsh r_u+m}{b}\gamma^\nu.
+\label{eq:vertex}
+\end{align}
+\both{Both diagrams are required. Contracting with the incident momentum uses}{Se necesitan ambos diagramas. Para contraer con el momento incidente usamos}
+\begin{align}
+\slsh k&=(\slsh r_s-m)-(\slsh p-m),\\
+\slsh k&=(\slsh p'-m)-(\slsh r_u-m),\\
+(\slsh r-m)(\slsh r+m)&=r^2-m^2.
+\end{align}
+\both{The on-shell Dirac equations then make the first term give the electron current and the second its negative:}{Las ecuaciones de Dirac en la capa de masa hacen que el primer término dé la corriente del electrón y el segundo su opuesto:}
+\begin{equation}
+k_\mu\bar u(p')\Gamma^{\nu\mu}u(p)
+=\bar u(p')\gamma^\nu u(p)-\bar u(p')\gamma^\nu u(p)=0.
+\end{equation}
+\both{For the outgoing momentum use}{Para el momento saliente usamos}
+\begin{equation}
+\slsh q=\slsh r_s-\slsh p'=\slsh p-\slsh r_u
+\quad\Longrightarrow\quad
+q_\nu\bar u(p')\Gamma^{\nu\mu}u(p)=0.
+\end{equation}
+\both{The polarization sums can therefore be contracted as}{Por lo tanto, las sumas de polarizaciones pueden contraerse como}
+\begin{align}
+\sum_{\lambda}\varepsilon_\mu\varepsilon^*_{\mu'}&\longrightarrow-g_{\mu\mu'},\\
+\sum_{\lambda'}\xi^*_{\nu}\xi_{\nu'}&=-g_{\nu\nu'}+\frac{q_\nu q_{\nu'}}{M^2}
+\longrightarrow-g_{\nu\nu'}.
+\end{align}
+\both{This does not mean the physical longitudinal polarization is dropped. Its contribution is included by the covariant sum after the Ward identity is used. The independent matrix calculation explicitly sums all three massive-vector polarizations and checks equality. There is no average over final polarizations and no production factor of two-thirds.}
+{Esto no significa que se descarte la polarización longitudinal física. La suma covariante la incluye una vez usada la identidad de Ward. El cálculo matricial independiente suma explícitamente las tres polarizaciones del vector masivo y comprueba la igualdad. No se promedian las polarizaciones finales ni aparece un factor de dos tercios en producción.}
+
+\section{\both{Evaluating the spin trace}{Evaluación de la traza de espines}}
+\both{The factor from averaging initial states is}{El factor de promedio sobre los estados iniciales es}
+\begin{equation}
+\frac{1}{2s_e+1}\frac{1}{N_{\gamma,\rm pol}}=\frac12\frac12=\frac14.
+\end{equation}
+\begin{align}
+\overline{|\mathcal M|^2}&=\epsilon^2 e^4 F,\\
+F&=\frac14 g_{\mu\mu'}g_{\nu\nu'}
+\Tr\left[(\slsh p'+m)\Gamma^{\nu\mu}(\slsh p+m)
+\overline\Gamma^{\nu'\mu'}\right],\qquad
+\overline\Gamma=\gamma^0\Gamma^\dagger\gamma^0.
+\end{align}
+\both{Here the denominators remain inside the vertex. To show the trace reduction explicitly, let}{Los denominadores siguen dentro del vértice. Para mostrar explícitamente la reducción de la traza, definimos}
+\begin{equation}
+c=m^2,\quad d=M^2,\qquad
+F=\frac14\left(\frac{T_{ss}}{a^2}+\frac{T_{uu}}{b^2}
++\frac{T_{su}+T_{us}}{ab}\right).
+\end{equation}
+\both{For example, the first term is}{Por ejemplo, el primer término es}
+\begin{equation}
+T_{ss}=\Tr\left[(\slsh p'+m)\gamma^\nu(\slsh r_s+m)\gamma^\mu
+(\slsh p+m)\gamma_\mu(\slsh r_s+m)\gamma_\nu\right].
+\end{equation}
+\both{The Dirac algebra reduces all contractions to scalar products:}{El álgebra de Dirac reduce todas las contracciones a productos escalares:}
+\begin{align}
+\Tr(\gamma^\alpha\gamma^\beta)&=4g^{\alpha\beta},\\
+\Tr(\gamma^\alpha\gamma^\beta\gamma^\rho\gamma^\sigma)
+&=4(g^{\alpha\beta}g^{\rho\sigma}-g^{\alpha\rho}g^{\beta\sigma}+g^{\alpha\sigma}g^{\beta\rho}),\\
+p^2&=c,&k^2&=0,&q^2&=d,\\
+p\cdot k&=\frac a2,&p\cdot q&=\frac{d-b}{2},&k\cdot q&=\frac{a+b}{2}.
+\end{align}
+\both{Longer even traces follow by pairing the first gamma matrix with each subsequent one, with alternating signs. Odd traces vanish. Expanding the four spinor/propagator factors gives}{Las trazas pares más largas se obtienen emparejando la primera matriz gamma con cada una de las siguientes, con signos alternados. Las trazas impares se anulan. Al expandir los cuatro factores de espinores y propagadores resulta}
+\input{code/park_production_v2/output/trace_terms.tex}
+\both{Combining the terms gives the compact result}{Al combinar los términos se obtiene el resultado compacto}
+\begin{equation}
+\boxed{F=-2\left(\frac ab+\frac ba\right)
++4(2c+d)\left[\frac1a+\frac1b+c\left(\frac1a+\frac1b\right)^2-\frac d{ab}\right].}
+\label{eq:F}
+\end{equation}
+\both{This formula was derived in the new C++ code. It was not imported from a prior implementation or fitted to the figure. The program represents polynomials by their powers of the four invariants. The small dyadic rational coefficients are represented exactly in binary arithmetic. It asserts exact polynomial equality for the compact form, the interference terms, crossing, and the photon limit. Independent complex Dirac matrices provide a separate numerical check.}
+{Esta fórmula se derivó en el nuevo código C++. No se importó de una implementación anterior ni se ajustó a la figura. El programa representa los polinomios mediante las potencias de los cuatro invariantes. Los pequeños coeficientes racionales diádicos se representan exactamente en aritmética binaria. Comprueba la igualdad polinómica exacta para la forma compacta, los términos de interferencia, el cruce y el límite de fotón. Las matrices complejas de Dirac aportan una verificación numérica independiente.}
+
+\section{\both{Differential and total cross sections}{Secciones eficaces diferencial y total}}
+\both{The laboratory Jacobian and invariant flux give}{El jacobiano de laboratorio y el flujo invariante dan}
+\begin{align}
+\frac{\dd t}{\dd x}&=2m,&s-m^2&=2mE,\\
+\boxed{\frac{\dd\sigma_{\rm prod}}{\dd x}}
+&=\boxed{\frac{\epsilon^2 e^4}{32\pi mE^2}F(a,b,c,d)},&
+a&=2mE,\quad b=M^2-2mx.
+\end{align}
+\both{For numerical results in centimetres, multiply by the squared conversion constant. The differential cross section then has units of area per energy:}{Para obtener resultados numéricos en centímetros multiplicamos por el cuadrado de la constante de conversión. La sección eficaz diferencial queda en unidades de área por energía:}
+\begin{equation}
+\hbar c=1.973269804\times10^{-11}\ {\rm MeV\,cm},\qquad
+\frac{\dd\sigma}{\dd x}\ \left[\frac{{\rm cm}^2}{\rm MeV}\right].
+\end{equation}
+\both{The integration can also be done analytically. With the incident energy fixed, define}{La integración también puede hacerse analíticamente. Con la energía incidente fija, definimos}
+\begin{align}
+H&=2c+d,\\
+G(b)&=-\frac{b^2}{a}+4H\left(\frac1a+\frac{c}{a^2}\right)b
++\left[-2a+4H\left(1+\frac{2c-d}{a}\right)\right]\ln\frac{|b|}{a}
+-\frac{4Hc}{b},\\
+\frac{\dd G}{\dd b}&=F,\qquad b_\pm=M^2-2mx_\pm,\\
+\boxed{\sigma_{\rm prod}}&=\boxed{\frac{\epsilon^2 e^4(\hbar c)^2}{64\pi m^2E^2}
+\left[G(b_-)-G(b_+)\right]}.
+\end{align}
+\both{The sign follows from the fact that the invariant decreases as the outgoing energy increases. The code verifies the primitive's derivative as an exact polynomial identity and compares the total against direct quadrature and Reference 15.}
+{El signo se debe a que el invariante disminuye cuando aumenta la energía saliente. El código verifica la derivada de la primitiva como identidad polinómica exacta y compara la sección total con la integración numérica directa y con la referencia 15.}
+\begin{figure}[htbp]\centering
+\includegraphics[width=.9\linewidth]{code/park_production_v2/output/cross_section.pdf}
+\caption{\both{Derived total production cross sections per free electron, with the squared mixing factored out. The massless curve is Klein--Nishina.}{Secciones eficaces totales de producción por electrón libre, con el cuadrado de la mezcla extraído como factor. La curva sin masa es Klein--Nishina.}}
+\end{figure}
+
+\section{\both{Two independent limits and reference checks}{Dos verificaciones independientes: límite de fotón y referencia}}
+\subsection{\both{The photon limit}{El límite de fotón}}
+\both{When the produced vector is massless, the scattering-angle relation and trace become}{Cuando el vector producido no tiene masa, la relación angular y la traza se reducen a}
+\begin{align}
+x&=\frac{E}{1+(E/m)(1-\cos\theta)},\\
+F\big|_{M=0}&=2\left[\frac Ex+\frac xE-\sin^2\theta\right].
+\end{align}
+\both{For a real final photon, setting the squared mixing coefficient to unity recovers Klein--Nishina. Its total is}{Para un fotón real en el estado final, tomar el coeficiente de mezcla cuadrado igual a la unidad recupera Klein--Nishina. Su sección eficaz total es}
+\begin{align}
+\sigma_{\rm KN}(E)=2\pi r_e^2\bigg[&\frac{1+y}{y^2}\left(\frac{2(1+y)}{1+2y}-\frac{\ln(1+2y)}y\right)
++\frac{\ln(1+2y)}{2y}-\frac{1+3y}{(1+2y)^2}\bigg],\\
+y&=\frac Em,\qquad r_e=\frac{\alpha\hbar c}{m}.
+\end{align}
+\subsection{\both{Reference 15}{La referencia 15}}
+\both{Gondolo and Raffelt's Appendix uses the following independent total formula for its vector branch, after identifying the coupling:}{El apéndice de Gondolo y Raffelt da la siguiente fórmula total independiente para el caso vectorial, una vez identificado el acoplamiento:}
+\begin{align}
+g_{\chi ee}&=\epsilon e,\qquad
+\sigma_{15}=\frac{\alpha g_{\chi ee}^2}{8s}\frac{q_*}{k_*}
+\left[A+B\frac{\sqrt{s}}{q_*}\ln\frac{2q_*^0 E_{e*}+2q_*k_*-M^2}{2q_*^0 E_{e*}-2q_*k_*-M^2}\right](\hbar c)^2,\\
+E_{e*}&=\frac{s+m^2}{2\sqrt s},\\
+A&=2+\frac{2(m^2-M^2)}s+\frac{16(M^2+2m^2)s}{(s-m^2)^2},\\
+B&=2-\frac{4(M^2+2m^2)}{s-m^2}-\frac{4(4m^4-M^4)}{(s-m^2)^2}.
+\end{align}
+\both{This is a borrowed check, not a step in the derivation. The maximum relative difference on the tested grid is}{Ésta es una verificación tomada de la literatura, no un paso de la derivación. La máxima diferencia relativa en la grilla comprobada es}
+\begin{equation}\delta_{15}=\ReferenceError,\qquad \delta_{\rm KN}=\KNError.
+\end{equation}
+\both{These are numerical consistency errors, not experimental uncertainties or global bounds outside the tested grid.}{Son errores de consistencia numérica, no incertidumbres experimentales ni cotas globales fuera de la grilla comprobada.}
+
+\section{\both{From one photon to a reactor spectrum}{De un fotón al espectro del reactor}}
+\both{Park's empirical photon spectrum is a supplied input:}{El espectro empírico de fotones de Park es un dato de entrada:}
+\begin{equation}
+S_\gamma(E)=\frac{\dd\dot N_\gamma}{\dd E}
+=0.58\times10^{18}\left(\frac{P}{\rm MW}\right)
+\exp\left[-\frac{E}{0.91\ {\rm MeV}}\right]\ {\rm s}^{-1}{\rm MeV}^{-1}.
+\end{equation}
+\both{It is not derived from fission physics here. Its stated domain starts near the following energy; the text then restricts the study to incident and detected energies above the larger value:}
+{Aquí no se deriva a partir de la física de fisión. Su dominio declarado empieza cerca de la siguiente energía; luego el texto restringe el estudio a energías incidentes y detectadas por encima del valor mayor:}
+\begin{equation}
+E_{\rm spectrum}\gtrsim0.2\ {\rm MeV},\qquad E_{\rm study}>1\ {\rm MeV}.
+\end{equation}
+\both{We use the stated study cutoff as the baseline and also compute the lower-cutoff alternative, since the figure itself displays dark photons below that study energy. The target is the production spectrum at the reactor, not a detector count. Park's single-interaction source equation is}{Usamos el corte declarado para el estudio como cálculo principal y evaluamos también el corte menor, porque la figura muestra fotones oscuros por debajo de aquella energía. Calculamos el espectro producido en el reactor, no el número de eventos en un detector. La ecuación de fuente de Park para una sola interacción es}
+\begin{equation}
+\boxed{\frac{\dd\dot N_{A'}}{\dd x}=\int_{E_L}^{E_U}
+S_\gamma(E)\frac{1}{\sigma_{\rm KN}(E)}\frac{\dd\sigma_{\rm prod}(E,x)}{\dd x}\,\dd E.}
+\label{eq:source}
+\end{equation}
+\both{The numerator and denominator are both per electron. Multiplying both by the same atomic electron count cancels it. This is why the free-electron baseline does not depend on the atomic number. It does not imply that real photon transport is material independent.}
+{El numerador y el denominador están expresados por electrón. Multiplicar ambos por el mismo número de electrones atómicos lo cancela. Por eso el cálculo principal de electrones libres no depende del número atómico. Esto no implica que el transporte real de fotones sea independiente del material.}
+
+\both{The exact incident-energy support follows from the laboratory angle:}{El soporte exacto de energía incidente se obtiene del ángulo de laboratorio:}
+\begin{align}
+\cos\theta&=\frac{(x-m)E+mx-M^2/2}{EQ},\qquad Q=\sqrt{x^2-M^2},\\
+E_L&=\max\left(E_{\rm cut},E_{\rm th},\frac{mx-M^2/2}{m-x+Q}\right),\\
+E_U&=\begin{cases}
+\min\left(E_{\max},\dfrac{mx-M^2/2}{m-x-Q}\right),&m-x-Q>0,\\
+E_{\max},&m-x-Q\leq0.
+\end{cases}
+\end{align}
+\both{There is no contribution if the positive-angle denominator is nonpositive or the interval is empty. For this mass range the numerator in these bounds is positive. We integrate to the cutoff below and check the larger one for convergence:}
+{No hay contribución si el denominador del extremo inferior es no positivo o si el intervalo es vacío. Para este rango de masas, el numerador de estos límites es positivo. Integramos hasta el corte indicado y comprobamos la convergencia con el mayor:}
+\begin{equation}
+E_{\max}=40\ {\rm MeV},\qquad E_{\max}^{\rm test}=60\ {\rm MeV}.
+\end{equation}
+\both{The reproduced photon integral at the reference reactor power is}{La integral de fotones reproducida a la potencia de referencia es}
+\begin{equation}
+P=1\ {m GW},\qquad \int_{1\,\rm MeV}^{\infty}S_\gamma(E)\dd E
+=\PhotonIntegral\ {\rm s}^{-1},
+\end{equation}
+\both{which agrees with the rounded number printed by Park. The plotted choice of mixing is a convention for the leading coefficient, not a controlled prediction at strong mixing.}
+{que coincide con el número redondeado de Park. La elección de mezcla usada en la figura es una convención para mostrar el coeficiente dominante, no una predicción controlada para mezcla fuerte.}
+\begin{equation}
+\epsilon=1\quad\hbox{\both{means plotting the coefficient of}{significa graficar el coeficiente de}}\quad\epsilon^2.
+\end{equation}
+
+\section{\both{Comparison with Figure 1}{Comparación con la figura 1}}
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{code/park_production_v2/output/figure1_comparison.pdf}
+\caption{\both{Solid: the new tree-level calculation with Park's stated source equation. Dotted: coordinates extracted from the supplied Figure 1, not computed data. The axes and rate units match the original.}{Líneas continuas: nuevo cálculo a nivel árbol con la ecuación de fuente declarada por Park. Líneas punteadas: coordenadas extraídas de la figura 1 suministrada, no datos calculados. Los ejes y las unidades de tasa coinciden con el original.}}
+\end{figure}
+\both{We extract horizontal staircase segments from the original PDF vector paths. Each is compared once with the predicted mean over that segment's energy interval. We do not compare both sides of a vertical step as independent data. No normalization is fitted.}
+{Extraemos segmentos horizontales de las curvas escalonadas vectoriales del PDF original. Cada uno se compara una sola vez con la predicción media en su intervalo de energía. No tratamos ambos extremos de un escalón vertical como datos independientes. No se ajusta ninguna normalización.}
+\begin{equation}
+\overline S_i=\frac{1}{x_{i+1}-x_i}\int_{x_i}^{x_{i+1}}\frac{\dd\dot N_{A'}}{\dd x}\dd x,
+\qquad r_i=\left|\frac{\overline S_i}{S_i^{\rm PDF}}-1\right|.
+\end{equation}
+\both{The central comparison avoids the threshold and the noisy tail. Its selected interval and diagnostic tolerance are}{La comparación central evita el umbral y la cola ruidosa. El intervalo elegido y la tolerancia de diagnóstico son}
+\begin{equation}1.8\leq x/{\rm MeV}\leq3.2,\qquad \operatorname{median}(r_i)<0.10.
+\end{equation}
+\begin{center}\input{code/park_production_v2/output/residual_table.tex}\end{center}
+\both{The tolerance is our stated diagnostic choice, not an uncertainty published by Park. The smallest mass passes this central-interval criterion, while the other masses do not. A central-interval pass cannot certify the complete curve. The lower source cutoff improves the low-energy part of the lightest curve, but cannot change the central interval.}
+{La tolerancia es una elección explícita de diagnóstico, no una incertidumbre publicada por Park. La masa menor pasa el criterio del intervalo central; las otras no. Pasar ese criterio no certifica la curva completa. El corte menor de la fuente mejora la parte de baja energía de la curva más liviana, pero no puede cambiar el intervalo central.}
+
+\textbf{\both{The full Figure 1 is not reproduced.}{La figura 1 completa no está reproducida.}}
+\both{The source-equation calculation and the original figure disagree despite the independent cross-section checks. The source PDF has no original event sample, generator settings, or bin covariance. Those omissions prevent identifying the author's implementation from the plot alone. Any explanation based on an undocumented generation or normalization choice remains a hypothesis. No such choice has been fitted or substituted into this calculation.}
+{El cálculo de la ecuación de fuente y la figura original discrepan a pesar de las verificaciones independientes de la sección eficaz. El PDF no aporta la muestra original de eventos, la configuración del generador ni la covarianza de los bins. Esas ausencias impiden identificar la implementación del autor sólo a partir de la figura. Una explicación basada en una elección no documentada de generación o normalización sigue siendo una hipótesis. No se ajustó ni se sustituyó tal elección en este cálculo.}
+
+\section{\both{When a classical Compton total is not allowed}{Cuándo no se puede usar una sección total clásica de Compton}}
+\subsection{\both{Thomson is a low-energy limit}{Thomson es un límite de baja energía}}
+\both{The classical Thomson total is}{La sección total clásica de Thomson es}
+\begin{equation}
+\sigma_T=\frac{8\pi}{3}r_e^2,\qquad
+\sigma_{\rm KN}=\sigma_T\left[1-2\frac Em+\frac{26}{5}\left(\frac Em\right)^2+\cdots\right].
+\end{equation}
+\both{It requires incident energies much smaller than the electron mass. With a chosen relative-error criterion, the numerical boundary is}{Requiere energías incidentes mucho menores que la masa del electrón. Para el siguiente criterio de error relativo, el límite numérico es}
+\begin{equation}
+\frac{\sigma_T}{\sigma_{\rm KN}(E)}-1<0.05
+\quad\Longleftrightarrow\quad E\lesssim\ThomsonBoundary\ {\rm keV}
+\end{equation}
+\both{on the low-energy branch. Thomson must not replace Klein--Nishina in the reactor energy range used here.}
+{en la rama de baja energía. Thomson no puede reemplazar a Klein--Nishina en el rango de energías del reactor usado aquí.}
+\subsection{\both{Klein--Nishina is one channel, not total material attenuation}{Klein--Nishina es un canal, no la atenuación total del material}}
+\both{The relativistic free-electron formula remains valid for the Compton channel in its stated approximation. A material also permits photoelectric absorption, coherent scattering and pair production. Atomic binding matters near shell energies. Pair production in a nuclear field opens at approximately}{La fórmula relativista para electrones libres sigue siendo válida para el canal Compton dentro de su aproximación. Un material también permite absorción fotoeléctrica, dispersión coherente y producción de pares. La ligadura atómica importa cerca de las energías de las capas. La producción de pares en el campo nuclear se abre aproximadamente en}
+\begin{equation}E_\gamma\geq2m_e=1.021997900\ {\rm MeV}.
+\end{equation}
+\both{This is a threshold, not a statement that pair production dominates immediately. There is no universal energy boundary at which Compton equals the total material cross section. As a concrete check, we compare the following proxy with the NIST uranium total:}
+{Éste es un umbral, no una afirmación de que la producción de pares domina inmediatamente. No existe un límite universal de energía en el que Compton sea igual a la sección total del material. Como verificación concreta, comparamos la siguiente aproximación con la atenuación total de uranio de NIST:}
+\begin{equation}
+\left(\frac\mu\rho\right)_{\rm KN}=N_A\frac ZA\sigma_{\rm KN},\qquad Z=92,\quad A=238.02891\ {\rm g\,mol}^{-1}.
+\end{equation}
+\begin{center}\input{code/park_production_v2/output/material_table.tex}\end{center}
+\both{Over the tabulated sample, the free-electron Compton proxy never reaches the precision criterion below. We retain Park's denominator for the figure test, but do not endorse it as precision total attenuation. The NIST comparison is a diagnostic; it does not modify the source spectrum.}
+{En los puntos tabulados, la aproximación Compton de electrones libres nunca alcanza el siguiente criterio de precisión. Conservamos el denominador de Park para comparar la figura, pero no lo presentamos como una atenuación total precisa. La comparación con NIST es un diagnóstico y no modifica el espectro de la fuente.}
+\begin{equation}
+0.1\leq E/{\rm MeV}\leq10,\qquad
+\left|\frac{(\mu/\rho)_{\rm KN}}{(\mu/\rho)_{\rm NIST}}-1\right|<0.10.
+\end{equation}
+\begin{figure}[htbp]\centering
+\includegraphics[width=.9\linewidth]{code/park_production_v2/output/compton_validity.pdf}
+\caption{\both{Free-electron Compton proxy versus the total uranium attenuation from NIST. The material dependence is missing from a Compton-only denominator.}{Aproximación Compton de electrones libres frente a la atenuación total de uranio de NIST. Un denominador que sólo incluye Compton omite esta dependencia del material.}}
+\end{figure}
+
+\section{\both{Implementation, checks and limits of the result}{Implementación, verificaciones y límites del resultado}}
+\both{All new calculation, extraction and reporting utilities are C++ using ROOT. The executable was compiled with the requested environment. LaTeX produces the lecture PDFs. There is no Python component. The code is separated into named functions for the trace, kinematics, cross sections, source convolution, PDF extraction, comparison and reports.}
+{Todas las nuevas herramientas de cálculo, extracción y generación de informes están escritas en C++ y usan ROOT. El ejecutable se compiló con el entorno solicitado. LaTeX produce los PDF de estas notas. No hay un componente Python. El código separa en funciones la traza, la cinemática, las secciones eficaces, la integral de fuente, la extracción del PDF, la comparación y los informes.}
+
+\both{The source configuration exposes thermal power, spectrum normalization and slope, incident-energy bounds, and quadrature order. A different measured source can replace the photon-spectrum function. Background, exposure, detector mass, region of interest and target composition belong to a subsequent detection calculation; they do not change the production cross section. For a later electron target the bookkeeping factor would be}{La configuración de fuente expone la potencia térmica, la normalización y la pendiente del espectro, los límites de energía incidente y el orden de cuadratura. Otra fuente medida puede reemplazar la función del espectro de fotones. El fondo, la exposición, la masa del detector, la región de interés y la composición del blanco pertenecen a un cálculo posterior de detección; no cambian la sección eficaz de producción. Para un blanco electrónico posterior, el factor de conteo sería}
+\begin{equation}
+N_e=m_{\rm det}[{\rm g}]\,N_A\frac ZA.
+\end{equation}
+\both{No detection model or acceptance has been invented to make those parameters enter this production-only result.}
+{No se inventó un modelo de detección ni una aceptación para introducir esos parámetros en este resultado de producción.}
+
+\both{Checks actually run: exact polynomial identities; Clifford algebra; independent complex-matrix traces and physical polarizations; both Ward identities on an on-shell grid; analytic totals versus quadrature and Reference 15; Klein--Nishina; source-node doubling and upper-tail extension; the printed photon integral; and direct PDF-bin comparisons. The tested source-node difference is}{Verificaciones ejecutadas: identidades polinómicas exactas; álgebra de Clifford; trazas matriciales complejas y polarizaciones físicas independientes; ambas identidades de Ward en una grilla en la capa de masa; secciones totales analíticas frente a cuadratura y referencia 15; Klein--Nishina; duplicación de nodos y extensión de la cola de la fuente; integral de fotones publicada; y comparación directa con los bins del PDF. La diferencia comprobada al duplicar nodos es}
+\begin{equation}\delta_{\rm nodes}=\NodeError.
+\end{equation}
+\both{Reversing the source integration order, by first choosing the incident photon and then integrating over the centre-of-mass-derived outgoing support, also agrees in the tested energy bins. This checks the source-convolution support independently of the outgoing-energy-first calculation.}
+{Invertir el orden de integración de la fuente, eligiendo primero el fotón incidente e integrando luego sobre el soporte saliente obtenido del centro de masa, también da el mismo resultado en los intervalos comprobados. Esto verifica el soporte de la integral de fuente independientemente del cálculo que integra primero sobre la energía saliente.}
+\both{Not checked: the empirical reactor spectrum against its original measurement, reactor transport, bound-electron effects, loop corrections, the author's unpublished generator and event statistics. The matrix Ward tests sample physical points; the report also provides their analytic proof. Numerical tests do not establish accuracy outside the tested domain. The full published Figure 1 remains unreproduced.}
+{No se verificaron: el espectro empírico del reactor frente a su medición original, el transporte en el reactor, los efectos de electrones ligados, las correcciones de lazo, el generador no publicado del autor ni su estadística de eventos. Las pruebas matriciales de Ward muestrean puntos físicos; el informe también da su demostración analítica. Las pruebas numéricas no establecen la precisión fuera del dominio comprobado. La figura 1 publicada completa sigue sin reproducirse.}
+
+\begin{thebibliography}{9}
+\bibitem{park}H. K. Park, \emph{Detecting Dark Photons with Reactor Neutrino Experiments}, Phys. Rev. Lett. 119, 081801 (2017). \href{https://doi.org/10.1103/PhysRevLett.119.081801}{doi:10.1103/PhysRevLett.119.081801}. \both{Local source}{Fuente local}: \texttt{papers/park\_production\_v2/park2017.pdf}.
+\bibitem{ref15}P. Gondolo and G. G. Raffelt, \emph{Solar neutrino limit on axions and keV-mass bosons}, Phys. Rev. D 79, 107301 (2009), Appendix. \href{https://arxiv.org/abs/0807.2926}{arXiv:0807.2926}. \both{Local source}{Fuente local}: \texttt{papers/park\_production\_v2/reference15.pdf}.
+\bibitem{nist}NIST, \emph{X-Ray Mass Attenuation Coefficients: Uranium}. \url{https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z92.html}. \both{Downloaded source retained locally}{Fuente descargada conservada localmente}.
+\bibitem{root}ROOT, \emph{Numerical integration reference, version 6.36}. \url{https://root.cern.ch/doc/v636/classROOT_1_1Math_1_1GaussLegendreIntegrator.html}.
+\end{thebibliography}
+\end{document}

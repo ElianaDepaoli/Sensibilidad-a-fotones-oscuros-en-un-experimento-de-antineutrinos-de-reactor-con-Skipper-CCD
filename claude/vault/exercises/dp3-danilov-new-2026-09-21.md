@@ -1,0 +1,11 @@
+# Applying the cross-section corrections to mycodes/DP3_Danilov.C (21 Sep 2026)
+**Attempted.** Copy `DP3_Danilov_new.C`; new functions `cos_theta_new_f`, `Eth_new_f`, `F_new_f`, `ds_dwp_new_f`, `wpmin/wpmax_new_f`, `wp_new_f`, `wp_production_new_f`, `Rw_new_f`, `differential_number_DP_new`, `dNAp_dEAp_new_f`, `epsilon95_new_f`; new dotted curves on `cSk` and `cFig1`. Details: `mycodes/README_DP3_Danilov_new.md`.
+**Came out.** Start-up checks match `work/check_cross_section.py` to 5 digits. Two code bugs found on the way: h c instead of ħc (σ ×39.5) and per-atom NIST σ_tot against per-electron dσ (×1/92); net Nobs ×2.3, ε₉₅ ×0.81. `x_-(ω)` is not monotonic → `Rw_new_f` scans. λ must be clamped ≥0 near threshold for eV masses. See [[dark-compton-cross-section]], [[apuntes-spanish-notes]].
+**Correction (22 Sep 2026).** The h c -> hbar c swap was applied to the original too (lines 647/648, backup `DP3_Danilov.C.bak_20260922`), at the user's request. Established why h c had looked right: it was cancelling the missing Z_U = 92 (39.5 vs 92, net 2.33), so the Fig 1 maxima and eps_95 matched Park by accident. With both fixed the agreement holds for the right reasons (max 1.24e21 vs Park ~1e21; eps_95 1.73e-5 vs 2.1e-5). The `Ne` in `Nobs()` is the *detector's* electron count (Park eq 7) and does not supply the reactor-side Z of eq (1). Added `*_oldxs_f` (eq 50 + per-electron normalisation) so the two figures compare cross-section shapes rather than normalisations (`same_norm_for_old`).
+**Confirmed (22 Sep 2026).** The Z_U division was applied to the original in `differential_number_DP`; it gives eps_95 = 1.71205e-5 at mA' = 1.0155e-4 MeV, matching `epsilon95_oldxs_f` to five digits.
+**Not checked.** Detection side (`dNApabsorbed_dEAp_f`), Danilov flags, Skipper background model, the coarse `wpsize=10` grid.
+
+## Run receipt
+- date: 2026-09-21, command: `cd mycodes && root -l -b -q DP3_Danilov_new.C > run_new.log`
+- environment: ROOT 6.36.000, Linux 6.8
+- output: `mycodes/run_new.log` (banner: `ds_dwp_new_f(me,1,3,2,1) = 3.7145e-26`, `Eth = 1.97848`, `x_- = 1.33587`, `x_+ = 2.95485`; Fig1 at 2 MeV `1.94905e+19`), `mycodes/cFig1_new.png`, `mycodes/cSk_new.png`; wall time 4.7 s

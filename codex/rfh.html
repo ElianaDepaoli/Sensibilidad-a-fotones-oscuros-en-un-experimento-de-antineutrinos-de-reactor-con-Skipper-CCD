@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark-Photon Follow-Up</title>
+  <style>
+    :root { --ink:#171717; --muted:#62666a; --line:#d9dcdf; --wash:#f4f5f6; --accent:#075f64; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:#fff; font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header, main { width:min(920px,calc(100% - 36px)); margin:auto; }
+    header { padding:52px 0 22px; border-bottom:2px solid var(--ink); }
+    h1 { margin:0; font-size:clamp(2.3rem,7vw,4.8rem); line-height:1; letter-spacing:-.045em; }
+    h2 { margin:52px 0 12px; font-size:1.8rem; }
+    h3 { margin:30px 0 8px; font-size:1.15rem; }
+    p { margin:9px 0; max-width:760px; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    nav { display:flex; gap:18px; margin-top:18px; }
+    .bottom { font-size:1.25rem; max-width:790px; }
+    .box { margin:18px 0; padding:16px 18px; background:var(--wash); border-left:4px solid var(--ink); }
+    ol, ul { padding-left:24px; }
+    li { margin:8px 0; }
+    table { width:100%; border-collapse:collapse; margin:14px 0; font-size:.94rem; }
+    th,td { padding:10px; border:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { background:var(--wash); }
+    .lang { padding-bottom:54px; }
+    #es { border-top:3px solid var(--ink); }
+    @media (max-width:700px) { table { display:block; overflow-x:auto; } }
+    @media print { nav { display:none; } body { font-size:11pt; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Dark-Photon Follow-Up</h1>
+  <nav><a href="#en">English</a><a href="#es">Español</a><a href="report.html">Full report</a><a href="dark_photon_papers/manifest.tsv">Paper list</a></nav>
+</header>
+
+<main>
+  <section id="en" class="lang" lang="en">
+    <h2>English</h2>
+    <p class="bottom">There is no single dark-photon limit. Pick the model first. Then compare experiments that use the same assumptions.</p>
+
+    <h3>Use this split</h3>
+    <table>
+      <thead><tr><th>Target</th><th>Main mass scale</th><th>Start with</th></tr></thead>
+      <tbody>
+        <tr><td>Massless dark photon / millicharged matter</td><td>Massless mediator; matter mass is separate</td><td><a href="dark_photon_papers/01_fabbrichesi_2020_dark_photon_review.pdf">2020 review</a></td></tr>
+        <tr><td>Ultralight dark-photon dark matter</td><td>Below eV; wave searches dominate</td><td><a href="dark_photon_papers/27_caputo_essig_2026_perspective.pdf">2026 perspective</a>, <a href="dark_photon_papers/26_nasduck_2026_magnetometry.pdf">NASDUCK′</a></td></tr>
+        <tr><td>Visible massive dark photon</td><td>Mostly MeV–GeV</td><td><a href="dark_photon_papers/02_graham_2021_accelerator_review.pdf">accelerator review</a>, <a href="dark_photon_papers/10_babar_2014_visible.pdf">BaBar</a>, <a href="dark_photon_papers/15_faser_2023_dark_photon.pdf">FASER</a></td></tr>
+        <tr><td>Invisible mediator to light dark matter</td><td>Mostly MeV–GeV</td><td><a href="dark_photon_papers/13_na64_2016_invisible.pdf">NA64</a>, <a href="dark_photon_papers/11_babar_2017_invisible.pdf">BaBar invisible</a>, <a href="dark_photon_papers/22_ldmx_2018_design.pdf">LDMX</a></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Fix these choices before calculating</h3>
+    <ol>
+      <li>Massless or massive A′.</li>
+      <li>Dark-Higgs or Stückelberg mass.</li>
+      <li>A′ is dark matter, a mediator, or both.</li>
+      <li>Visible or invisible decay. For invisible decay, set m<sub>χ</sub>, α<sub>D</sub>, χ spin, and m<sub>A′</sub>/m<sub>χ</sub>.</li>
+      <li>Mass interval. Do not call beam energy the dark-photon mass.</li>
+      <li>Observed exclusion or future sensitivity.</li>
+      <li>Confidence level and astrophysical assumptions.</li>
+    </ol>
+
+    <h3>Recommended project path</h3>
+    <ol>
+      <li>Use the minimal massive vector portal as the baseline.</li>
+      <li>Make two plots: visible A′ in (m<sub>A′</sub>, ε) and invisible thermal dark matter in (m<sub>χ</sub>, y).</li>
+      <li>Keep ultralight A′ dark matter in a separate plot. Its halo, polarization, and production assumptions are different.</li>
+      <li>Reproduce one published exclusion before projecting a new detector. Start with a result whose likelihood inputs or public data are available.</li>
+      <li>Add source terms one at a time: electron bremsstrahlung, meson decay, proton bremsstrahlung, or halo conversion.</li>
+      <li>Show assumptions beside every curve.</li>
+    </ol>
+
+    <div class="box"><strong>Do not merge these curves blindly.</strong> ε and ε² are different axes. The thermal variable y includes α<sub>D</sub> and a mass ratio. DPDM limits assume a local halo density and polarization. Stellar and supernova limits depend on plasma and source models.</div>
+
+    <h3>Questions the next analysis must answer</h3>
+    <ul>
+      <li>Which mass decade is the project designed to probe?</li>
+      <li>What produces the A′: a beam, a star, the early Universe, or the Galactic halo?</li>
+      <li>What observable reaches the detector?</li>
+      <li>Which published experiment gives the closest validation case?</li>
+      <li>Which assumptions dominate the uncertainty?</li>
+    </ul>
+
+    <h3>Files</h3>
+    <ul>
+      <li><a href="report.html">report.html</a>: theory, mass/energy map, sources, experimental table, caveats, references.</li>
+      <li><a href="dark_photon_papers/">dark_photon_papers/</a>: 28 local PDFs.</li>
+      <li><a href="dark_photon_papers/manifest.tsv">manifest.tsv</a>: arXiv ID, category, title, reason for inclusion.</li>
+    </ul>
+  </section>
+
+  <section id="es" class="lang" lang="es">
+    <h2>Español</h2>
+    <p class="bottom">No existe un único límite para el fotón oscuro. Primero elegí el modelo. Después compará experimentos con los mismos supuestos.</p>
+
+    <h3>Usá esta división</h3>
+    <table>
+      <thead><tr><th>Objetivo</th><th>Escala de masa principal</th><th>Lectura inicial</th></tr></thead>
+      <tbody>
+        <tr><td>Fotón oscuro sin masa / materia con minicarga</td><td>El mediador no tiene masa; la masa de la materia es otro parámetro</td><td><a href="dark_photon_papers/01_fabbrichesi_2020_dark_photon_review.pdf">revisión de 2020</a></td></tr>
+        <tr><td>Materia oscura ultraliviana de fotones oscuros</td><td>Menor que eV; dominan las búsquedas ondulatorias</td><td><a href="dark_photon_papers/27_caputo_essig_2026_perspective.pdf">perspectiva de 2026</a>, <a href="dark_photon_papers/26_nasduck_2026_magnetometry.pdf">NASDUCK′</a></td></tr>
+        <tr><td>Fotón oscuro masivo con decaimiento visible</td><td>Principalmente MeV–GeV</td><td><a href="dark_photon_papers/02_graham_2021_accelerator_review.pdf">revisión de aceleradores</a>, <a href="dark_photon_papers/10_babar_2014_visible.pdf">BaBar</a>, <a href="dark_photon_papers/15_faser_2023_dark_photon.pdf">FASER</a></td></tr>
+        <tr><td>Mediador invisible hacia materia oscura liviana</td><td>Principalmente MeV–GeV</td><td><a href="dark_photon_papers/13_na64_2016_invisible.pdf">NA64</a>, <a href="dark_photon_papers/11_babar_2017_invisible.pdf">BaBar invisible</a>, <a href="dark_photon_papers/22_ldmx_2018_design.pdf">LDMX</a></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Fijá estas decisiones antes de calcular</h3>
+    <ol>
+      <li>A′ sin masa o masivo.</li>
+      <li>Masa generada por Higgs oscuro o por Stückelberg.</li>
+      <li>A′ es materia oscura, mediador, o ambas cosas.</li>
+      <li>Decaimiento visible o invisible. Para el caso invisible, fijá m<sub>χ</sub>, α<sub>D</sub>, el espín de χ y m<sub>A′</sub>/m<sub>χ</sub>.</li>
+      <li>Intervalo de masa. No confundas la energía del haz con la masa del fotón oscuro.</li>
+      <li>Exclusión observada o sensibilidad futura.</li>
+      <li>Nivel de confianza y supuestos astrofísicos.</li>
+    </ol>
+
+    <h3>Camino recomendado para el proyecto</h3>
+    <ol>
+      <li>Usá el portal vectorial masivo mínimo como línea de base.</li>
+      <li>Hacé dos gráficos: A′ visible en (m<sub>A′</sub>, ε) y materia oscura térmica invisible en (m<sub>χ</sub>, y).</li>
+      <li>Dejá la materia oscura ultraliviana A′ en otro gráfico. Los supuestos sobre halo, polarización y producción son distintos.</li>
+      <li>Reproducí una exclusión publicada antes de proyectar un detector nuevo. Elegí un resultado con datos públicos o entradas de verosimilitud disponibles.</li>
+      <li>Agregá una fuente por vez: bremsstrahlung de electrones, decaimiento de mesones, bremsstrahlung de protones o conversión del halo.</li>
+      <li>Mostrá los supuestos junto a cada curva.</li>
+    </ol>
+
+    <div class="box"><strong>No combines las curvas sin revisar el modelo.</strong> ε y ε² son ejes distintos. La variable térmica y contiene α<sub>D</sub> y una razón de masas. Los límites de DPDM suponen densidad local del halo y polarización. Los límites estelares y de supernovas dependen del plasma y del modelo de la fuente.</div>
+
+    <h3>Preguntas para el próximo análisis</h3>
+    <ul>
+      <li>¿Qué década de masa busca cubrir el proyecto?</li>
+      <li>¿Qué produce el A′: un haz, una estrella, el Universo temprano o el halo galáctico?</li>
+      <li>¿Qué observable llega al detector?</li>
+      <li>¿Qué experimento publicado sirve como validación más cercana?</li>
+      <li>¿Qué supuestos dominan la incertidumbre?</li>
+    </ul>
+
+    <h3>Archivos</h3>
+    <ul>
+      <li><a href="report.html">report.html</a>: teoría, mapa de masa y energía, fuentes, tabla experimental, advertencias y referencias.</li>
+      <li><a href="dark_photon_papers/">dark_photon_papers/</a>: 28 PDF locales.</li>
+      <li><a href="dark_photon_papers/manifest.tsv">manifest.tsv</a>: identificador arXiv, categoría, título y motivo de selección.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

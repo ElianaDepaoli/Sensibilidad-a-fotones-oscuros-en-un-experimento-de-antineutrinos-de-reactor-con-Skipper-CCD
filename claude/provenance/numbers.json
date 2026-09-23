@@ -1,0 +1,878 @@
+{
+ "max_rel_dev_matrix_vs_v2_F": {
+  "value": 2.0239365738916604e-13,
+  "statement": "Max |ratio-1| between the explicit-Dirac-matrix squared amplitude and v2 report eq (36) over 60 random on-shell points",
+  "produced_by": "work/check_cross_section.py::main (section 1)",
+  "from_scratch": "Dirac matrices, polarization vectors, lab kinematics, trace by matrix multiplication",
+  "from_library": "numpy for linear algebra",
+  "choices": [
+   "60 random points with M in [0.05,1.5] MeV, E<=10 MeV, seed 20260921",
+   "tolerance 1e-9 in the assert"
+  ]
+ },
+ "max_rel_dev_matrix_vs_deNiverville": {
+  "value": 2.0239365738916604e-13,
+  "statement": "Same comparison against deNiverville-Lee-Lee eq (18)-(20), normalised by (eps e^2)^2",
+  "produced_by": "work/check_cross_section.py::main (section 1)",
+  "from_scratch": "as above; transcription of A,B from the paper",
+  "from_library": "numpy",
+  "choices": [
+   "identified their |M|^2 = 32 pi^2 alpha^2 eps^2 (A+B)/(...) as the spin-averaged quantity; the ratio came out 1, which fixes the normalisation"
+  ]
+ },
+ "max_rel_dev_exact_vs_smirnov": {
+  "value": 8.881784197001252e-16,
+  "statement": "Max |ratio-1| between dsigma/dx from eq (F) and Smirnov et al eq (3) with Z=1, g_X=eps e, dE_X = -E dx_S",
+  "produced_by": "work/check_cross_section.py::main (section 1)",
+  "from_scratch": "the Jacobian dx_S/dE_X = -1/E and the identification x_S=(a+b)/a",
+  "from_library": "numpy",
+  "choices": [
+   "Z=1 (per electron)"
+  ]
+ },
+ "max_rel_dev_explicit_pol_vs_covariant": {
+  "value": 2.0394796962364126e-13,
+  "statement": "Max |ratio-1| between the explicit 3-polarization sum and the covariant -g contraction (numerical Ward identity)",
+  "produced_by": "work/check_cross_section.py::main (section 1)",
+  "from_scratch": "both contractions",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "apuntes_M2_rel_dev_min": {
+  "value": -0.38953186197036316,
+  "statement": "Min of (notes' |M|^2 eq (40)/(41)) / (exact F) - 1 over 60 random points",
+  "produced_by": "work/check_cross_section.py::main (section 2)",
+  "from_scratch": "transcription of the notes' formula with s,u = propagator denominators",
+  "from_library": "numpy",
+  "choices": [
+   "read the notes' s,u as the propagator denominators, as their eq (23)/(41) says"
+  ]
+ },
+ "apuntes_M2_rel_dev_max": {
+  "value": 0.32717036025656565,
+  "statement": "Max of the same ratio minus 1",
+  "produced_by": "work/check_cross_section.py::main (section 2)",
+  "from_scratch": "as above",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "Eth_M1MeV": {
+  "value": 1.9784755917795918,
+  "statement": "Production threshold E_th = M + M^2/2m for M = 1 MeV, in MeV",
+  "produced_by": "work/check_cross_section.py::main (section 3)",
+  "from_scratch": "threshold from s >= (m+M)^2",
+  "from_library": "none",
+  "choices": [
+   "m_e = 0.51099895 MeV"
+  ]
+ },
+ "xrange_exact_E3_M1": {
+  "value": [
+   1.3358687944835432,
+   2.954847187075254
+  ],
+  "statement": "Exact [x_-, x_+] of the A' lab energy at E=3 MeV, M=1 MeV",
+  "produced_by": "work/check_cross_section.py::x_pm",
+  "from_scratch": "CM momentum boosted to the lab",
+  "from_library": "numpy sqrt",
+  "choices": []
+ },
+ "xrange_doc1_E3_M1": {
+  "value": [
+   0.3122403897792058,
+   3.0
+  ],
+  "statement": "Note 1's claimed range eqs (24)-(25) at E=3, M=1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 3)",
+  "from_scratch": "transcription",
+  "from_library": "none",
+  "choices": []
+ },
+ "costheta_exact_E3_x2_M1": {
+  "value": 0.9601336997349418,
+  "statement": "Exact cos(theta) at E=3, x=2, M=1 MeV",
+  "produced_by": "work/check_cross_section.py::cos_theta",
+  "from_scratch": "from (p+k-q)^2 = m^2 with |q| = sqrt(x^2-M^2)",
+  "from_library": "none",
+  "choices": []
+ },
+ "costheta_doc1_E3_x2_M1": {
+  "value": 0.831500175,
+  "statement": "Note 1 eq (20) cos(theta) at the same point (|q| ~ x approximation)",
+  "produced_by": "work/check_cross_section.py::main (section 3)",
+  "from_scratch": "transcription",
+  "from_library": "none",
+  "choices": []
+ },
+ "doc1_over_exact_E3_M1_max": {
+  "value": 2.3625822436371187,
+  "statement": "Max of note 1 eq (50) / exact dsigma/dx over 7 points of the exact range at E=3, M=1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "transcription of eq (50); exact formula",
+  "from_library": "numpy",
+  "choices": [
+   "7 equally spaced points, 1e-4 MeV inside the endpoints"
+  ]
+ },
+ "doc1_over_exact_E3_M01_min": {
+  "value": 0.951471792242749,
+  "statement": "Min of note 1 eq (50) / exact at E=3, M=0.1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "as above",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "doc1_over_exact_E3_M01_max": {
+  "value": 1.995813867464364,
+  "statement": "Max of note 1 eq (50) / exact at E=3, M=0.1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "as above",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "doc1_over_exact_E3_M1_min": {
+  "value": 0.47434996463416995,
+  "statement": "Min of note 1 eq (50) / exact at E=3, M=1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "as above",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "sigma_doc1_over_exact_E3_M0.1": {
+  "value": 1.0051957582511957,
+  "statement": "Note 1 eq (50) integrated over the EXACT range divided by the exact total, E=3 MeV, M=0.1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "both integrands",
+  "from_library": "scipy.integrate.quad",
+  "choices": [
+   "integrated over the exact range, not the note's own range, because the note's integrand has a pole at x = M^2/2m inside the note's range for M=1 MeV"
+  ]
+ },
+ "sigma_doc1_over_exact_E3_M0.5": {
+  "value": 1.0720748226851333,
+  "statement": "Note 1 eq (50) integrated over the EXACT range divided by the exact total, E=3 MeV, M=0.5 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "both integrands",
+  "from_library": "scipy.integrate.quad",
+  "choices": [
+   "integrated over the exact range, not the note's own range, because the note's integrand has a pole at x = M^2/2m inside the note's range for M=1 MeV"
+  ]
+ },
+ "sigma_doc1_over_exact_E3_M1.0": {
+  "value": 1.35801235498388,
+  "statement": "Note 1 eq (50) integrated over the EXACT range divided by the exact total, E=3 MeV, M=1.0 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "both integrands",
+  "from_library": "scipy.integrate.quad",
+  "choices": [
+   "integrated over the exact range, not the note's own range, because the note's integrand has a pole at x = M^2/2m inside the note's range for M=1 MeV"
+  ]
+ },
+ "doc1_pole_inside_own_range_M1": {
+  "value": true,
+  "statement": "Whether the pole u-m^2=0 (x=M^2/2m=0.978 MeV) lies inside note 1's own range at E=3, M=1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 4)",
+  "from_scratch": "comparison of endpoints",
+  "from_library": "none",
+  "choices": []
+ },
+ "long_frac_E3.0_M0.1": {
+  "value": 0.009744425325189671,
+  "statement": "Longitudinal fraction sigma_L/sigma_tot of Compton-produced A' (E3.0, M0.1 MeV)",
+  "produced_by": "work/check_cross_section.py::F_numeric / main (section 6)",
+  "from_scratch": "explicit longitudinal polarization vector xi_L=(Q, x qhat)/M contracted into the amplitude",
+  "from_library": "scipy quad over [x_-,x_+]",
+  "choices": []
+ },
+ "long_frac_E3.0_M0.5": {
+  "value": 0.19513216674689704,
+  "statement": "Longitudinal fraction sigma_L/sigma_tot of Compton-produced A' (E3.0, M0.5 MeV)",
+  "produced_by": "work/check_cross_section.py::F_numeric / main (section 6)",
+  "from_scratch": "explicit longitudinal polarization vector xi_L=(Q, x qhat)/M contracted into the amplitude",
+  "from_library": "scipy quad over [x_-,x_+]",
+  "choices": []
+ },
+ "long_frac_E3.0_M1.0": {
+  "value": 0.0783414681668657,
+  "statement": "Longitudinal fraction sigma_L/sigma_tot of Compton-produced A' (E3.0, M1.0 MeV)",
+  "produced_by": "work/check_cross_section.py::F_numeric / main (section 6)",
+  "from_scratch": "explicit longitudinal polarization vector xi_L=(Q, x qhat)/M contracted into the amplitude",
+  "from_library": "scipy quad over [x_-,x_+]",
+  "choices": []
+ },
+ "long_frac_E8.0_M1.0": {
+  "value": 0.21067856652275282,
+  "statement": "Longitudinal fraction sigma_L/sigma_tot of Compton-produced A' (E8.0, M1.0 MeV)",
+  "produced_by": "work/check_cross_section.py::F_numeric / main (section 6)",
+  "from_scratch": "explicit longitudinal polarization vector xi_L=(Q, x qhat)/M contracted into the amplitude",
+  "from_library": "scipy quad over [x_-,x_+]",
+  "choices": []
+ },
+ "inverse_T_over_KN_E3.0_M0.01": {
+  "value": 0.9999897765693635,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_T_over_KN_E3.0_M0.01)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "inverse_unpol_over_KN_E3.0_M0.01": {
+  "value": 0.6666712918706769,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_unpol_over_KN_E3.0_M0.01)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "inverse_T_over_KN_E3.0_M0.5": {
+  "value": 0.9822742846552857,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_T_over_KN_E3.0_M0.5)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "inverse_L_over_KN_E3.0_M0.5": {
+  "value": 0.0833306167513698,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_L_over_KN_E3.0_M0.5)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "inverse_T_over_KN_E8.0_M1.0": {
+  "value": 0.9559908033409827,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_T_over_KN_E8.0_M1.0)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "inverse_L_over_KN_E8.0_M1.0": {
+  "value": 0.08006585399911015,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_L_over_KN_E8.0_M1.0)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "inverse_L_over_KN_E3.0_M1.0": {
+  "value": 0.31348751476274905,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_L_over_KN_E3.0_M1.0)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "inverse_T_over_KN_E3.0_M1.0": {
+  "value": 0.9986916286677032,
+  "statement": "sigma(A' e -> gamma e)/(eps^2 sigma_KN) for the polarization state and (E_A', M) in the key (inverse_T_over_KN_E3.0_M1.0)",
+  "produced_by": "work/check_cross_section.py::inverse_sigma",
+  "from_scratch": "crossed amplitude with explicit A' polarization, CM angular integration, boost to lab",
+  "from_library": "scipy quad, numpy",
+  "choices": [
+   "dsigma/dOmega* = |M|^2/(64 pi^2 s) (k*/q*) recalled",
+   "unpolarized = average over 3 polarizations"
+  ]
+ },
+ "sigma_exact_over_KN_E3_M0.1": {
+  "value": 0.9950832975681293,
+  "statement": "Exact total sigma(gamma e -> A' e)/(eps^2 sigma_KN) at E=3 MeV, M=0.1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 7)",
+  "from_scratch": "exact dsigma/dx integrated over [x_-,x_+]",
+  "from_library": "scipy quad",
+  "choices": []
+ },
+ "sigma_exact_over_KN_E3_M0.5": {
+  "value": 0.8857951965159333,
+  "statement": "Exact total sigma(gamma e -> A' e)/(eps^2 sigma_KN) at E=3 MeV, M=0.5 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 7)",
+  "from_scratch": "exact dsigma/dx integrated over [x_-,x_+]",
+  "from_library": "scipy quad",
+  "choices": []
+ },
+ "sigma_exact_over_KN_E3_M1.0": {
+  "value": 0.609024973390643,
+  "statement": "Exact total sigma(gamma e -> A' e)/(eps^2 sigma_KN) at E=3 MeV, M=1.0 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 7)",
+  "from_scratch": "exact dsigma/dx integrated over [x_-,x_+]",
+  "from_library": "scipy quad",
+  "choices": []
+ },
+ "N_window_A_M0.1": {
+  "value": 2.534499470038575e+18,
+  "statement": "A' per second with 3<=x<=8 MeV from Park eq (1) with sigma_tot=sigma_KN, exact cross section, Park spectrum, 1 GW, eps=1, M=0.1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 8)",
+  "from_scratch": "the double integral, order swapped to integrate x inside",
+  "from_library": "scipy quad",
+  "choices": [
+   "photon energies integrated up to 40 MeV (spectrum negligible beyond)",
+   "sigma_tot = sigma_KN as Park does, to compare Park's formula as written"
+  ]
+ },
+ "N_window_B": {
+  "value": 1.9450958965959696e+19,
+  "statement": "Photons (= A' at eps=1, P=eps^2, E_X=E_gamma) per second with 3<=E<=8 MeV, Park spectrum, 1 GW",
+  "produced_by": "work/check_cross_section.py::main (section 8)",
+  "from_scratch": "integral of the spectrum",
+  "from_library": "scipy quad",
+  "choices": [
+   "Danilov eq (6) in the limit m_X >> m_gamma, m_X^2 >> E Gamma"
+  ]
+ },
+ "ratio_A_over_B_M0.1": {
+  "value": 0.13030203161058002,
+  "statement": "Ratio of the two previous numbers (Compton-like channel / direct-oscillation channel in the 3-8 MeV window)",
+  "produced_by": "work/check_cross_section.py::main (section 8)",
+  "from_scratch": "division",
+  "from_library": "none",
+  "choices": []
+ },
+ "ratio_A_over_B_M1.0": {
+  "value": 0.13209148485708289,
+  "statement": "Same ratio for M=1 MeV",
+  "produced_by": "work/check_cross_section.py::main (section 8)",
+  "from_scratch": "division",
+  "from_library": "none",
+  "choices": []
+ },
+ "Ngamma_above_1MeV_1GW": {
+  "value": 1.758825293230549e+20,
+  "statement": "Integral of Park's eq (3) spectrum above 1 MeV at 1 GW, per second (Park prints 1.76e20)",
+  "produced_by": "work/check_cross_section.py::main (section 8)",
+  "from_scratch": "integral",
+  "from_library": "scipy quad",
+  "choices": []
+ },
+ "dNdx_A_M0.1_x1.0": {
+  "value": 0.10809108770630337,
+  "statement": "Model A (Park eq 1, sigma_tot=sigma_KN, exact cross section) dN/dE_A' at E_A'=1.0 MeV, M=0.1 MeV, 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_compton",
+  "from_scratch": "the fold with the exact kinematic support [E_L(x), E_U(x)]",
+  "from_library": "scipy quad, brentq",
+  "choices": [
+   "photon energies up to 40 MeV",
+   "sigma_tot = sigma_KN as Park does"
+  ]
+ },
+ "dNdx_B_x1.0": {
+  "value": 0.1932775047506098,
+  "statement": "Model B (Danilov eq 6, P=eps^2, E_X=E_gamma) dN/dE at 1.0 MeV = S_gamma(1.0), 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_oscillation",
+  "from_scratch": "nothing; the spectrum evaluated",
+  "from_library": "numpy exp",
+  "choices": [
+   "hard cutoff E > M"
+  ]
+ },
+ "dNdx_A_M0.1_x2.0": {
+  "value": 0.01706805621197273,
+  "statement": "Model A (Park eq 1, sigma_tot=sigma_KN, exact cross section) dN/dE_A' at E_A'=2.0 MeV, M=0.1 MeV, 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_compton",
+  "from_scratch": "the fold with the exact kinematic support [E_L(x), E_U(x)]",
+  "from_library": "scipy quad, brentq",
+  "choices": [
+   "photon energies up to 40 MeV",
+   "sigma_tot = sigma_KN as Park does"
+  ]
+ },
+ "dNdx_B_x2.0": {
+  "value": 0.0644072307631414,
+  "statement": "Model B (Danilov eq 6, P=eps^2, E_X=E_gamma) dN/dE at 2.0 MeV = S_gamma(2.0), 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_oscillation",
+  "from_scratch": "nothing; the spectrum evaluated",
+  "from_library": "numpy exp",
+  "choices": [
+   "hard cutoff E > M"
+  ]
+ },
+ "dNdx_A_M0.1_x3.0": {
+  "value": 0.003598040358822205,
+  "statement": "Model A (Park eq 1, sigma_tot=sigma_KN, exact cross section) dN/dE_A' at E_A'=3.0 MeV, M=0.1 MeV, 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_compton",
+  "from_scratch": "the fold with the exact kinematic support [E_L(x), E_U(x)]",
+  "from_library": "scipy quad, brentq",
+  "choices": [
+   "photon energies up to 40 MeV",
+   "sigma_tot = sigma_KN as Park does"
+  ]
+ },
+ "dNdx_B_x3.0": {
+  "value": 0.021462877327235657,
+  "statement": "Model B (Danilov eq 6, P=eps^2, E_X=E_gamma) dN/dE at 3.0 MeV = S_gamma(3.0), 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_oscillation",
+  "from_scratch": "nothing; the spectrum evaluated",
+  "from_library": "numpy exp",
+  "choices": [
+   "hard cutoff E > M"
+  ]
+ },
+ "dNdx_A_M0.1_x4.0": {
+  "value": 0.0008610185523192454,
+  "statement": "Model A (Park eq 1, sigma_tot=sigma_KN, exact cross section) dN/dE_A' at E_A'=4.0 MeV, M=0.1 MeV, 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_compton",
+  "from_scratch": "the fold with the exact kinematic support [E_L(x), E_U(x)]",
+  "from_library": "scipy quad, brentq",
+  "choices": [
+   "photon energies up to 40 MeV",
+   "sigma_tot = sigma_KN as Park does"
+  ]
+ },
+ "dNdx_B_x4.0": {
+  "value": 0.007152226507890598,
+  "statement": "Model B (Danilov eq 6, P=eps^2, E_X=E_gamma) dN/dE at 4.0 MeV = S_gamma(4.0), 1 GW, eps=1, in 1e21/MeV/s",
+  "produced_by": "work/check_cross_section.py::dN_dx_oscillation",
+  "from_scratch": "nothing; the spectrum evaluated",
+  "from_library": "numpy exp",
+  "choices": [
+   "hard cutoff E > M"
+  ]
+ },
+ "park_fig1_by_eye_x2": {
+  "value": 0.065,
+  "statement": "Park 2017 Fig 1, M=0.1 MeV curve at E_A'=2 MeV, read by eye from the raster, 1e21/MeV/s, +-30%",
+  "produced_by": "work/check_cross_section.py::main (section 9, constant park_fig1_by_eye)",
+  "from_scratch": "eye reading of papers_reactor_dark_photon/01_park_2017.pdf page 2",
+  "from_library": "pdftoppm rendering",
+  "choices": [
+   "+-30% reading error assumed"
+  ]
+ },
+ "NA_tot_over_Ngamma": {
+  "value": 0.9991174842166093,
+  "statement": "Integral over E_A' > 0.02 MeV of model A (M=1 keV) divided by the number of photons above 0.02 MeV: normalisation check of the fold",
+  "produced_by": "work/check_cross_section.py::main (section 9)",
+  "from_scratch": "the fold",
+  "from_library": "scipy quad",
+  "choices": [
+   "x integration split at 0.3 and 1 MeV; M=1 keV as the massless limit"
+  ]
+ },
+ "eq50_fold_over_exact_window_M0.1": {
+  "value": 1.0537234108825901,
+  "statement": "A' per second in 3-8 MeV from the note's eq (50) on the note's range, divided by the exact fold, M=0.1 MeV, Park spectrum, sigma_tot=sigma_KN",
+  "produced_by": "work/check_eq50_fold.py::dN_note",
+  "from_scratch": "the fold with the note's range inverted to a lower limit in omega",
+  "from_library": "scipy quad",
+  "choices": [
+   "photon energies up to 40 MeV",
+   "window integral split at 5 MeV"
+  ]
+ },
+ "frac_photons_below_threshold_M0.1": {
+  "value": 0.01069487776488415,
+  "statement": "Fraction of Park-spectrum photons with M < omega < E_th among those above M, M=0.1 MeV",
+  "produced_by": "work/check_eq50_fold.py (module level)",
+  "from_scratch": "the two integrals of the spectrum",
+  "from_library": "scipy quad",
+  "choices": []
+ },
+ "eq50_fold_over_exact_window_M0.5": {
+  "value": 1.460276415615222,
+  "statement": "A' per second in 3-8 MeV from the note's eq (50) on the note's range, divided by the exact fold, M=0.5 MeV, Park spectrum, sigma_tot=sigma_KN",
+  "produced_by": "work/check_eq50_fold.py::dN_note",
+  "from_scratch": "the fold with the note's range inverted to a lower limit in omega",
+  "from_library": "scipy quad",
+  "choices": [
+   "photon energies up to 40 MeV",
+   "window integral split at 5 MeV"
+  ]
+ },
+ "frac_photons_below_threshold_M0.5": {
+  "value": 0.2357130533914078,
+  "statement": "Fraction of Park-spectrum photons with M < omega < E_th among those above M, M=0.5 MeV",
+  "produced_by": "work/check_eq50_fold.py (module level)",
+  "from_scratch": "the two integrals of the spectrum",
+  "from_library": "scipy quad",
+  "choices": []
+ },
+ "eq50_fold_over_exact_window_M1.0": {
+  "value": 1.9883397143946646,
+  "statement": "A' per second in 3-8 MeV from the note's eq (50) on the note's range, divided by the exact fold, M=1.0 MeV, Park spectrum, sigma_tot=sigma_KN",
+  "produced_by": "work/check_eq50_fold.py::dN_note",
+  "from_scratch": "the fold with the note's range inverted to a lower limit in omega",
+  "from_library": "scipy quad",
+  "choices": [
+   "photon energies up to 40 MeV",
+   "window integral split at 5 MeV"
+  ]
+ },
+ "frac_photons_below_threshold_M1.0": {
+  "value": 0.6587868429685201,
+  "statement": "Fraction of Park-spectrum photons with M < omega < E_th among those above M, M=1.0 MeV",
+  "produced_by": "work/check_eq50_fold.py (module level)",
+  "from_scratch": "the two integrals of the spectrum",
+  "from_library": "scipy quad",
+  "choices": []
+ },
+ "dp3_hc_over_hbarc_squared": {
+  "value": 39.4784,
+  "statement": "(h c / hbar c)^2: factor by which DP3_Danilov.C::ds_dwp_f overestimates the cross section by using h c = 1.239842e-10 cm MeV instead of hbar c = 1.973269804e-11 cm MeV",
+  "produced_by": "mycodes/DP3_Danilov_new.C::DP3_Danilov_new (banner)",
+  "from_scratch": "the ratio",
+  "from_library": "none",
+  "choices": []
+ },
+ "dp3_fig1_new_at_2MeV_M0.1": {
+  "value": 1.94905e+19,
+  "statement": "dN_A'/dE_A' at E_A' = 2.0007 MeV, mA' = 0.1 MeV, 1 GW, eps = 1 from the new functions with NIST incoherent sigma per electron (python with sigma_KN: 1.71e19)",
+  "produced_by": "mycodes/DP3_Danilov_new.C::dNAp_dEAp_new_f",
+  "from_scratch": "the fold",
+  "from_library": "ROOT 6.36, NIST XCOM uranium file",
+  "choices": [
+   "sigma_tot = NIST incoherent (Compton) per atom / 92, Park's choice of sigma_C as sigma_tot kept"
+  ]
+ },
+ "dp3_sigma_nist_over_KN_1MeV": {
+  "value": 91.14,
+  "statement": "Ratio of the NIST incoherent uranium cross section (from Uranium-photon_cross_section_Nist_gov.txt via tot_cs_f) to the per-electron Klein-Nishina cross section at 1 MeV; it equals Z_U = 92, proving the NIST column is per atom",
+  "produced_by": "mycodes/DP3_Danilov_new.C::tot_cs_f and ::sigma_KN_cm2 (debug macro, run 2026-09-22)",
+  "from_scratch": "the comparison",
+  "from_library": "ROOT 6.36, NIST XCOM file",
+  "choices": [
+   "compared at 1,2,3,5,8 MeV; the ratio rises from 91.1 to 92.2 as binding corrections fade"
+  ]
+ },
+ "dp3_fig1_max_orig_hc_noZ_M0.1": {
+  "value": 6.981e+20,
+  "statement": "Maximum of dN_A'/dE_A' (1 GW, eps=1, mA'=0.1 MeV) with the original code: h c and no Z factor [MeV^-1 s^-1]",
+  "produced_by": "mycodes/DP3_Danilov_new.C::dNAp_dEAp_f (debug macro, run 2026-09-22)",
+  "from_scratch": "nothing; the original functions",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "wpsize=300 for a smooth curve"
+  ]
+ },
+ "dp3_fig1_max_new_hbarc_Z_M0.1": {
+  "value": 1.241e+21,
+  "statement": "Maximum of dN_A'/dE_A' (1 GW, eps=1, mA'=0.1 MeV) with hbar c, the Z_U factor and the exact cross section [MeV^-1 s^-1]; Park's Fig 1 peaks at ~1e21",
+  "produced_by": "mycodes/DP3_Danilov_new.C::dNAp_dEAp_new_f",
+  "from_scratch": "the new functions",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "wpsize=300"
+  ]
+ },
+ "dp3_eps95_texono_hbarc_noZ": {
+  "value": 5.30229e-05,
+  "statement": "TEXONO eps_95 at mA' = 1.0155e-4 MeV from the original functions after swapping h c for hbar c, without the Z factor (Park publishes 2.1e-5)",
+  "produced_by": "mycodes/DP3_Danilov.C::epsilon95_f (run_orig_hbarc.log)",
+  "from_scratch": "nothing; the original code with the corrected constant",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "DANILOV_A, B, D all on as in the file"
+  ]
+ },
+ "dp3_eps95_texono_new": {
+  "value": 1.7337e-05,
+  "statement": "TEXONO eps_95 at mA' = 1.0155e-4 MeV with hbar c, Z_U and the exact cross section",
+  "produced_by": "mycodes/DP3_Danilov_new.C::epsilon95_new_f (run_new.log)",
+  "from_scratch": "the new functions",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "DANILOV_A, B, D all on"
+  ]
+ },
+ "dp3_eps95_texono_eq50_Z": {
+  "value": 1.7121e-05,
+  "statement": "TEXONO eps_95 at mA' = 1.0155e-4 MeV with hbar c, Z_U and the note's eq (50): isolates the cross-section formula from the normalisation; independently reproduced as 1.71205e-5 by the user's own DP3_Danilov.C after applying the Z_U division in differential_number_DP (22/09/2026)",
+  "produced_by": "mycodes/DP3_Danilov_new.C::epsilon95_oldxs_f (debug macro) and mycodes/DP3_Danilov.C::epsilon95_f after the user's Z_U edit",
+  "from_scratch": "the oldxs functions",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "DANILOV_A, B, D all on"
+  ]
+ },
+ "u_pole_position_M1": {
+  "value": 0.97848,
+  "statement": "Position of the u-channel propagator pole, w' = mA'^2/(2 me), for mA' = 1 MeV [MeV]: where b = u - me^2 = 0",
+  "produced_by": "work/check_cross_section.py (dsig_dx_apuntes / dsig_dx_exact denominators)",
+  "from_scratch": "the algebra",
+  "from_library": "none",
+  "choices": []
+ },
+ "note_dsdx_at_pole_E3_M1": {
+  "value": -0.005355,
+  "statement": "dsigma/dw' from the note's eq (50) at the pole w' = 0.978 MeV, Eg = 3 MeV, mA' = 1 MeV, eps = 1 [MeV^-3, eps stripped]: negative, hence the gap then spike on a log axis",
+  "produced_by": "work/check_cross_section.py::dsig_dx_apuntes (interactive run 2026-09-22)",
+  "from_scratch": "transcription of eq (50)",
+  "from_library": "numpy",
+  "choices": [
+   "evaluated at the grid point nearest the pole; the value itself is not meaningful, only its sign and magnitude"
+  ]
+ },
+ "exact_dsdx_at_pole_E3_M1": {
+  "value": 122.4,
+  "statement": "dsigma/dw' from the exact formula at the same forbidden point: it diverges too, proving the pole is in the propagator and not in the |k'| ~ w' approximation",
+  "produced_by": "work/check_cross_section.py::dsig_dx_exact (interactive run 2026-09-22)",
+  "from_scratch": "the exact formula",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "min_xminus_over_pole_M1": {
+  "value": 1.2621,
+  "statement": "min over Eg of x_-(Eg) divided by the pole position mA'^2/2me, for mA' = 1 MeV: above 1, so the pole is always outside the physical range",
+  "produced_by": "work/check_cross_section.py::x_pm (interactive run 2026-09-22)",
+  "from_scratch": "the minimisation",
+  "from_library": "numpy, scan of 4000 photon energies up to 200 MeV",
+  "choices": [
+   "scanned Eg from threshold to 200 MeV; checked for mA' = 0.05 to 1 MeV, ratio 20.5 down to 1.26"
+  ]
+ },
+ "xpm_costheta_residual": {
+  "value": 2.398648946133619e-09,
+  "statement": "Max |cos(theta)(x_pm) -/+ 1| over 296 (E,M) points: the endpoints of eq (5) are exactly the cos = +-1 configurations",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "both routes to x_pm and the exact cos(theta) relation",
+  "from_library": "numpy; sympy for the symbolic identities",
+  "choices": [
+   "M in {0.01,0.1,0.5,1.0,1.4} MeV, E in [1.001,60] MeV above threshold, 60 points per mass",
+   "tolerance 1e-7: the residual peaks near E_b(M=0.5)=11.86 MeV by cancellation in |k'|"
+  ]
+ },
+ "E_backward_M0.5": {
+  "value": 11.86472117793067,
+  "statement": "Photon energy above which x_- is backward emission for M=0.5 MeV: E_b = M(2m-M)/(2(m-M)). Below it the A' is confined to a forward cone",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "the criterion beta*_A' > beta_cm reduced to 2E(m-M) > M(2m-M) with sympy",
+  "from_library": "sympy",
+  "choices": [
+   "m = 0.51099895 MeV"
+  ]
+ },
+ "theta_max_deg_E3.0_M0.5": {
+  "value": 67.38068668174503,
+  "statement": "Half-angle of the forward emission cone at E=3 MeV (0.5 MeV A' mass), in degrees",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "minimum of the exact cos(theta) over [x_-,x_+]",
+  "from_library": "numpy",
+  "choices": [
+   "grid of 2e5 points in x; the minimum is interior, so this is the cone edge, not an endpoint"
+  ]
+ },
+ "theta_max_deg_E3.0_M1.0": {
+  "value": 17.41264560231181,
+  "statement": "Half-angle of the forward emission cone at E=3 MeV (1.0 MeV A' mass), in degrees",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "minimum of the exact cos(theta) over [x_-,x_+]",
+  "from_library": "numpy",
+  "choices": [
+   "grid of 2e5 points in x; the minimum is interior, so this is the cone edge, not an endpoint"
+  ]
+ },
+ "x_at_threshold_M0.1": {
+  "value": 0.10160143579916067,
+  "statement": "A' lab energy at threshold for M=0.1 MeV, where x_- = x_+ = M(E_th+m)/(m+M) (A' at rest in the CM)",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "eq (5) evaluated at lambda = 0; the closed form checked symbolically",
+  "from_library": "sympy, numpy",
+  "choices": []
+ },
+ "xrange_E3_M0.1": {
+  "value": [
+   0.2460026736987678,
+   2.9999972715948457
+  ],
+  "statement": "Exact [x_-, x_+] at E=3 MeV for M=0.1 MeV",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "eq (5)",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "x_at_threshold_M0.5": {
+  "value": 0.6209788145872592,
+  "statement": "A' lab energy at threshold for M=0.5 MeV, where x_- = x_+ = M(E_th+m)/(m+M) (A' at rest in the CM)",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "eq (5) evaluated at lambda = 0; the closed form checked symbolically",
+  "from_library": "sympy, numpy",
+  "choices": []
+ },
+ "xrange_E3_M0.5": {
+  "value": [
+   0.5011438039087829,
+   2.998120635024875
+  ],
+  "statement": "Exact [x_-, x_+] at E=3 MeV for M=0.5 MeV",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "eq (5)",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "x_at_threshold_M1.0": {
+  "value": 1.647568677516018,
+  "statement": "A' lab energy at threshold for M=1.0 MeV, where x_- = x_+ = M(E_th+m)/(m+M) (A' at rest in the CM)",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "eq (5) evaluated at lambda = 0; the closed form checked symbolically",
+  "from_library": "sympy, numpy",
+  "choices": []
+ },
+ "xrange_E3_M1.0": {
+  "value": [
+   1.3358687944835432,
+   2.954847187075254
+  ],
+  "statement": "Exact [x_-, x_+] at E=3 MeV for M=1.0 MeV",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "eq (5)",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "note_xminus_E3": {
+  "value": 0.2354472580586117,
+  "statement": "Lower end of the Spanish note's range at E=3 MeV, E/(1+2E/m), which is the M->0 limit of x_- and is M-independent",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "the note's eq (25); the M->0 limit of eq (5) checked with sympy.limit",
+  "from_library": "sympy",
+  "choices": []
+ },
+ "min_xminus_over_pole_all": {
+  "value": 1.1370404588061305,
+  "statement": "Minimum of x_-/(M^2/2m) over M<=1.4 MeV and E<=60 MeV: the u-channel pole never enters the exact range",
+  "produced_by": "work/check_xpm.py::main",
+  "from_scratch": "eq (5) and the pole location b = 0",
+  "from_library": "numpy",
+  "choices": [
+   "7 masses up to 1.4 MeV, 4000 photon energies per mass up to 60 MeV; a scan, not a proof"
+  ]
+ },
+ "ds50_slope_wp_to_mAp_M0.1": {
+  "value": -0.9999999501399587,
+  "statement": "Log-log exponent of eq (50) (with the exact cos theta) as w' -> mA' at w=3 MeV, M=0.1 MeV: -1, a simple pole",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "eq (50) of the Spanish note re-implemented in python, fed the corrected cos_theta_f",
+  "from_library": "numpy",
+  "choices": [
+   "slope from delta_frac 1e-8 vs 1e-9, where cos^2 dominates the bracket"
+  ]
+ },
+ "ds50_growth_M0.1": {
+  "value": 974.804380576521,
+  "statement": "Factor by which eq (50) grows between w'=1.01 mA' and w'=1.0001 mA' at w=3 MeV, M=0.1 MeV",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "same",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "domain_width_ratio_M0.1": {
+  "value": 0.015374220653832524,
+  "statement": "Width of the exact photon-energy domain {w: x_-(w) <= w' <= x_+(w)} over the width of the old Rw_f domain, at w' = 1.0001 mA', M=0.1 MeV (0 = the exact domain is empty)",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "x_pm and invwpmin_f",
+  "from_library": "numpy",
+  "choices": [
+   "wmax = 10 MeV as in the macro",
+   "200000-point scan in w"
+  ]
+ },
+ "spike_ratio_per_decade_asymptotic_M0.1": {
+  "value": 9.999766658994313,
+  "statement": "Factor by which the first grid point of wp_production_new_f grows when delta_frac is divided by 10 (1e-7 -> 1e-8), M=0.1 MeV: ~10, i.e. the height of the spike is set by delta_frac, not by physics",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "eq (50) evaluated at the grid's first point",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "ds50_slope_wp_to_mAp_M0.5": {
+  "value": -0.9999899050190293,
+  "statement": "Log-log exponent of eq (50) (with the exact cos theta) as w' -> mA' at w=3 MeV, M=0.5 MeV: -1, a simple pole",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "eq (50) of the Spanish note re-implemented in python, fed the corrected cos_theta_f",
+  "from_library": "numpy",
+  "choices": [
+   "slope from delta_frac 1e-8 vs 1e-9, where cos^2 dominates the bracket"
+  ]
+ },
+ "ds50_growth_M0.5": {
+  "value": 38.73362210367482,
+  "statement": "Factor by which eq (50) grows between w'=1.01 mA' and w'=1.0001 mA' at w=3 MeV, M=0.5 MeV",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "same",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "domain_width_ratio_M0.5": {
+  "value": 0.2901835320072332,
+  "statement": "Width of the exact photon-energy domain {w: x_-(w) <= w' <= x_+(w)} over the width of the old Rw_f domain, at w' = 1.0001 mA', M=0.5 MeV (0 = the exact domain is empty)",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "x_pm and invwpmin_f",
+  "from_library": "numpy",
+  "choices": [
+   "wmax = 10 MeV as in the macro",
+   "200000-point scan in w"
+  ]
+ },
+ "spike_ratio_per_decade_asymptotic_M0.5": {
+  "value": 9.95622677798092,
+  "statement": "Factor by which the first grid point of wp_production_new_f grows when delta_frac is divided by 10 (1e-7 -> 1e-8), M=0.5 MeV: ~10, i.e. the height of the spike is set by delta_frac, not by physics",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "eq (50) evaluated at the grid's first point",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "ds50_slope_wp_to_mAp_M1.0": {
+  "value": -0.9999997646203633,
+  "statement": "Log-log exponent of eq (50) (with the exact cos theta) as w' -> mA' at w=3 MeV, M=1.0 MeV: -1, a simple pole",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "eq (50) of the Spanish note re-implemented in python, fed the corrected cos_theta_f",
+  "from_library": "numpy",
+  "choices": [
+   "slope from delta_frac 1e-8 vs 1e-9, where cos^2 dominates the bracket"
+  ]
+ },
+ "ds50_growth_M1.0": {
+  "value": 699.2246317546943,
+  "statement": "Factor by which eq (50) grows between w'=1.01 mA' and w'=1.0001 mA' at w=3 MeV, M=1.0 MeV",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "same",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "domain_width_ratio_M1.0": {
+  "value": 0.0,
+  "statement": "Width of the exact photon-energy domain {w: x_-(w) <= w' <= x_+(w)} over the width of the old Rw_f domain, at w' = 1.0001 mA', M=1.0 MeV (0 = the exact domain is empty)",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "x_pm and invwpmin_f",
+  "from_library": "numpy",
+  "choices": [
+   "wmax = 10 MeV as in the macro",
+   "200000-point scan in w"
+  ]
+ },
+ "spike_ratio_per_decade_asymptotic_M1.0": {
+  "value": 9.999596366600946,
+  "statement": "Factor by which the first grid point of wp_production_new_f grows when delta_frac is divided by 10 (1e-7 -> 1e-8), M=1.0 MeV: ~10, i.e. the height of the spike is set by delta_frac, not by physics",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "eq (50) evaluated at the grid's first point",
+  "from_library": "numpy",
+  "choices": []
+ },
+ "max_abs_cos_in_exact_domain_M0.1": {
+  "value": 0.9640545027168609,
+  "statement": "Max |cos theta| over the exact photon-energy domain at w' = 1.0001 mA', mA' = 0.1 MeV: <= 1, so eq (50) cannot blow up if the domain is the exact one",
+  "produced_by": "work/check_wp_production_spike.py::main",
+  "from_scratch": "the exact cos theta relation and x_pm",
+  "from_library": "numpy",
+  "choices": []
+ }
+}

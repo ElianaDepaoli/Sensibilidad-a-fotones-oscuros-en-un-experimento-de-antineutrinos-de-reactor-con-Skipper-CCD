@@ -1,0 +1,16 @@
+note: using only cached resource files
+note: Running TeX ...
+warning: code/park_production_v2/lecture.tex:348: Underfull \hbox (badness 2443) in paragraph at lines 347--348
+warning: code/park_production_v2/lecture.tex:348: Underfull \hbox (badness 3492) in paragraph at lines 347--348
+warning: code/park_production_v2/lecture.tex:349: Underfull \hbox (badness 3449) in paragraph at lines 348--349
+warning: code/park_production_v2/lecture.tex:349: Underfull \hbox (badness 1043) in paragraph at lines 348--349
+note: Rerunning TeX because "report_park_production_v2_en.aux" changed ...
+warning: code/park_production_v2/lecture.tex:348: Underfull \hbox (badness 2443) in paragraph at lines 347--348
+warning: code/park_production_v2/lecture.tex:348: Underfull \hbox (badness 3492) in paragraph at lines 347--348
+warning: code/park_production_v2/lecture.tex:349: Underfull \hbox (badness 3449) in paragraph at lines 348--349
+warning: code/park_production_v2/lecture.tex:349: Underfull \hbox (badness 1043) in paragraph at lines 348--349
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `report_park_production_v2_en.log` (13.5810546875 KiB)
+note: Writing `report_park_production_v2_en.pdf` (156.134765625 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)

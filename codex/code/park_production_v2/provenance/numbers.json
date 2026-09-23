@@ -1,0 +1,1894 @@
+{
+  "Avogadro_per_mol": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: Avogadro_per_mol",
+    "value": 6.02214076e+23
+  },
+  "Thomson_5percent_boundary_keV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "reports.cpp::ThomsonBoundary",
+    "statement": "Thomson/KN minus one equals 0.05",
+    "value": 12.970301559640172
+  },
+  "Thomson_error_criterion": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: Thomson_error_criterion",
+    "value": 0.05
+  },
+  "alpha_inverse": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: alpha_inverse",
+    "value": 137.035999084
+  },
+  "alternative_cutoff_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: alternative_cutoff_MeV",
+    "value": 0.2
+  },
+  "bin_nodes": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: bin_nodes",
+    "value": 12.0
+  },
+  "calibration_x0_pt": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: calibration_x0_pt",
+    "value": 380.16015625
+  },
+  "calibration_x_per_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: calibration_x_per_MeV",
+    "value": 35.5224609375
+  },
+  "calibration_y_per_decade": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: calibration_y_per_decade",
+    "value": 31.28125
+  },
+  "calibration_y_rate1_pt": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: calibration_y_rate1_pt",
+    "value": 64.36328125
+  },
+  "central_high_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: central_high_MeV",
+    "value": 3.2
+  },
+  "central_low_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: central_low_MeV",
+    "value": 1.8
+  },
+  "central_max_percent_M_0.1": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "production.cpp::PlotSpectra; reports.cpp::Tables",
+    "statement": "Maximum bin residual percent",
+    "value": 21.71722090934314
+  },
+  "central_max_percent_M_0.5": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "production.cpp::PlotSpectra; reports.cpp::Tables",
+    "statement": "Maximum bin residual percent",
+    "value": 23.69337379821652
+  },
+  "central_max_percent_M_1": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "production.cpp::PlotSpectra; reports.cpp::Tables",
+    "statement": "Maximum bin residual percent",
+    "value": 55.08667459779078
+  },
+  "central_median_percent_M_0.1": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "production.cpp::PlotSpectra; reports.cpp::Tables",
+    "statement": "Median bin residual percent",
+    "value": 4.149675245048989
+  },
+  "central_median_percent_M_0.5": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "production.cpp::PlotSpectra; reports.cpp::Tables",
+    "statement": "Median bin residual percent",
+    "value": 11.55512029188234
+  },
+  "central_median_percent_M_1": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "production.cpp::PlotSpectra; reports.cpp::Tables",
+    "statement": "Median bin residual percent",
+    "value": 37.85470863404808
+  },
+  "checks_0_value": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/checks.csv",
+    "statement": "checks row 0 value",
+    "value": 7.061018436615996e-14
+  },
+  "checks_1_value": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/checks.csv",
+    "statement": "checks row 1 value",
+    "value": 7.205347429817266e-14
+  },
+  "checks_2_value": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/checks.csv",
+    "statement": "checks row 2 value",
+    "value": 1.800781745942004e-13
+  },
+  "checks_3_value": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/checks.csv",
+    "statement": "checks row 3 value",
+    "value": 1.199040866595169e-14
+  },
+  "checks_4_value": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/checks.csv",
+    "statement": "checks row 4 value",
+    "value": 1.75882529323055e+20
+  },
+  "comparison_summary_0_baseline_max_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 0 baseline_max_relative_error",
+    "value": 1.0
+  },
+  "comparison_summary_0_baseline_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 0 baseline_median_relative_error",
+    "value": 0.05430794954167206
+  },
+  "comparison_summary_0_bin_count": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 0 bin_count",
+    "value": 346.0
+  },
+  "comparison_summary_0_lower_cutoff_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 0 lower_cutoff_median_relative_error",
+    "value": 0.02566120424065477
+  },
+  "comparison_summary_0_mass_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 0 mass_MeV",
+    "value": 0.1
+  },
+  "comparison_summary_1_baseline_max_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 1 baseline_max_relative_error",
+    "value": 0.2171722090934314
+  },
+  "comparison_summary_1_baseline_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 1 baseline_median_relative_error",
+    "value": 0.04149675245048989
+  },
+  "comparison_summary_1_bin_count": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 1 bin_count",
+    "value": 137.0
+  },
+  "comparison_summary_1_lower_cutoff_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 1 lower_cutoff_median_relative_error",
+    "value": 0.04149675245048989
+  },
+  "comparison_summary_1_mass_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 1 mass_MeV",
+    "value": 0.1
+  },
+  "comparison_summary_2_baseline_max_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 2 baseline_max_relative_error",
+    "value": 0.6516007044113867
+  },
+  "comparison_summary_2_baseline_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 2 baseline_median_relative_error",
+    "value": 0.1528382800922558
+  },
+  "comparison_summary_2_bin_count": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 2 bin_count",
+    "value": 308.0
+  },
+  "comparison_summary_2_lower_cutoff_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 2 lower_cutoff_median_relative_error",
+    "value": 0.1528382800922558
+  },
+  "comparison_summary_2_mass_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 2 mass_MeV",
+    "value": 0.5
+  },
+  "comparison_summary_3_baseline_max_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 3 baseline_max_relative_error",
+    "value": 0.2369337379821652
+  },
+  "comparison_summary_3_baseline_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 3 baseline_median_relative_error",
+    "value": 0.1155512029188234
+  },
+  "comparison_summary_3_bin_count": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 3 bin_count",
+    "value": 136.0
+  },
+  "comparison_summary_3_lower_cutoff_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 3 lower_cutoff_median_relative_error",
+    "value": 0.1155512029188234
+  },
+  "comparison_summary_3_mass_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 3 mass_MeV",
+    "value": 0.5
+  },
+  "comparison_summary_4_baseline_max_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 4 baseline_max_relative_error",
+    "value": 0.6369687009507703
+  },
+  "comparison_summary_4_baseline_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 4 baseline_median_relative_error",
+    "value": 0.3701450901233875
+  },
+  "comparison_summary_4_bin_count": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 4 bin_count",
+    "value": 253.0
+  },
+  "comparison_summary_4_lower_cutoff_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 4 lower_cutoff_median_relative_error",
+    "value": 0.3701450901233875
+  },
+  "comparison_summary_4_mass_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 4 mass_MeV",
+    "value": 1.0
+  },
+  "comparison_summary_5_baseline_max_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 5 baseline_max_relative_error",
+    "value": 0.5508667459779079
+  },
+  "comparison_summary_5_baseline_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 5 baseline_median_relative_error",
+    "value": 0.3785470863404808
+  },
+  "comparison_summary_5_bin_count": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 5 bin_count",
+    "value": 139.0
+  },
+  "comparison_summary_5_lower_cutoff_median_relative_error": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 5 lower_cutoff_median_relative_error",
+    "value": 0.3785470863404808
+  },
+  "comparison_summary_5_mass_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/comparison_summary.csv",
+    "statement": "comparison_summary row 5 mass_MeV",
+    "value": 1.0
+  },
+  "elapsed_seconds": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "reports.cpp::Runtime",
+    "statement": "Wall time since first recorded environment check",
+    "value": 2724.0
+  },
+  "electron_mass_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: electron_mass_MeV",
+    "value": 0.51099895
+  },
+  "fine_nodes": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: fine_nodes",
+    "value": 192.0
+  },
+  "gamma_cutoff_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: gamma_cutoff_MeV",
+    "value": 1.0
+  },
+  "gamma_max_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: gamma_max_MeV",
+    "value": 40.0
+  },
+  "gamma_normalization": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: gamma_normalization",
+    "value": 5.8e+17
+  },
+  "gamma_scale_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: gamma_scale_MeV",
+    "value": 0.91
+  },
+  "gamma_tail_check_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: gamma_tail_check_MeV",
+    "value": 60.0
+  },
+  "hbarc_MeV_cm": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: hbarc_MeV_cm",
+    "value": 1.973269804e-11
+  },
+  "material_0_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 0 KN_cm2_g",
+    "value": 0.1146923161650167
+  },
+  "material_0_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 0 KN_fraction",
+    "value": 0.05869616999233197
+  },
+  "material_0_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 0 Thomson_over_KN",
+    "value": 1.350071867129623
+  },
+  "material_0_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 0 energy_MeV",
+    "value": 0.1
+  },
+  "material_0_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 0 total_cm2_g",
+    "value": 1.954
+  },
+  "material_10_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 10 KN_cm2_g",
+    "value": 0.04916082309842458
+  },
+  "material_10_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 10 KN_fraction",
+    "value": 0.622604142583898
+  },
+  "material_10_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 10 Thomson_over_KN",
+    "value": 3.149720848251769
+  },
+  "material_10_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 10 energy_MeV",
+    "value": 1.0
+  },
+  "material_10_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 10 total_cm2_g",
+    "value": 0.07896
+  },
+  "material_11_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 11 KN_cm2_g",
+    "value": 0.04394967519312782
+  },
+  "material_11_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 11 KN_fraction",
+    "value": 0.6899478052296361
+  },
+  "material_11_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 11 Thomson_over_KN",
+    "value": 3.523185751655725
+  },
+  "material_11_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 11 energy_MeV",
+    "value": 1.25
+  },
+  "material_11_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 11 total_cm2_g",
+    "value": 0.0637
+  },
+  "material_12_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 12 KN_cm2_g",
+    "value": 0.03993616468661758
+  },
+  "material_12_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 12 KN_fraction",
+    "value": 0.7148051671132554
+  },
+  "material_12_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 12 Thomson_over_KN",
+    "value": 3.877259387459711
+  },
+  "material_12_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 12 energy_MeV",
+    "value": 1.5
+  },
+  "material_12_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 12 total_cm2_g",
+    "value": 0.05587
+  },
+  "material_13_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 13 KN_cm2_g",
+    "value": 0.03406657314385213
+  },
+  "material_13_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 13 KN_fraction",
+    "value": 0.6983717331663004
+  },
+  "material_13_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 13 Thomson_over_KN",
+    "value": 4.545302187469035
+  },
+  "material_13_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 13 energy_MeV",
+    "value": 2.0
+  },
+  "material_13_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 13 total_cm2_g",
+    "value": 0.04878
+  },
+  "material_14_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 14 KN_cm2_g",
+    "value": 0.02678867951785959
+  },
+  "material_14_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 14 KN_fraction",
+    "value": 0.6023989097787179
+  },
+  "material_14_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 14 Thomson_over_KN",
+    "value": 5.780160583394704
+  },
+  "material_14_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 14 energy_MeV",
+    "value": 3.0
+  },
+  "material_14_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 14 total_cm2_g",
+    "value": 0.04447
+  },
+  "material_15_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 15 KN_cm2_g",
+    "value": 0.02233893709222395
+  },
+  "material_15_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 15 KN_fraction",
+    "value": 0.5086278937209461
+  },
+  "material_15_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 15 Thomson_over_KN",
+    "value": 6.93152359000218
+  },
+  "material_15_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 15 energy_MeV",
+    "value": 4.0
+  },
+  "material_15_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 15 total_cm2_g",
+    "value": 0.04392
+  },
+  "material_16_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 16 KN_cm2_g",
+    "value": 0.01928776911310629
+  },
+  "material_16_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 16 KN_fraction",
+    "value": 0.4321704932356328
+  },
+  "material_16_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 16 Thomson_over_KN",
+    "value": 8.02803416622751
+  },
+  "material_16_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 16 energy_MeV",
+    "value": 5.0
+  },
+  "material_16_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 16 total_cm2_g",
+    "value": 0.04463
+  },
+  "material_17_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 17 KN_cm2_g",
+    "value": 0.01704496635374577
+  },
+  "material_17_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 17 KN_fraction",
+    "value": 0.3719172235161634
+  },
+  "material_17_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 17 Thomson_over_KN",
+    "value": 9.084375188355656
+  },
+  "material_17_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 17 energy_MeV",
+    "value": 6.0
+  },
+  "material_17_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 17 total_cm2_g",
+    "value": 0.04583
+  },
+  "material_18_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 18 KN_cm2_g",
+    "value": 0.01393862558915802
+  },
+  "material_18_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 18 KN_fraction",
+    "value": 0.2856861157851613
+  },
+  "material_18_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 18 Thomson_over_KN",
+    "value": 11.10890513844977
+  },
+  "material_18_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 18 energy_MeV",
+    "value": 8.0
+  },
+  "material_18_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 18 total_cm2_g",
+    "value": 0.04879
+  },
+  "material_19_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 19 KN_cm2_g",
+    "value": 0.01186808232922275
+  },
+  "material_19_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 19 KN_fraction",
+    "value": 0.2284520178868671
+  },
+  "material_19_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 19 Thomson_over_KN",
+    "value": 13.04699993941362
+  },
+  "material_19_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 19 energy_MeV",
+    "value": 10.0
+  },
+  "material_19_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 19 total_cm2_g",
+    "value": 0.05195
+  },
+  "material_1_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 1 KN_cm2_g",
+    "value": 0.1107377929984029
+  },
+  "material_1_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 1 KN_fraction",
+    "value": 0.08036124310479169
+  },
+  "material_1_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 1 Thomson_over_KN",
+    "value": 1.398283867121663
+  },
+  "material_1_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 1 energy_MeV",
+    "value": 0.115606
+  },
+  "material_1_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 1 total_cm2_g",
+    "value": 1.378
+  },
+  "material_2_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 2 KN_cm2_g",
+    "value": 0.1107377929984029
+  },
+  "material_2_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 2 KN_fraction",
+    "value": 0.02263188084986776
+  },
+  "material_2_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 2 Thomson_over_KN",
+    "value": 1.398283867121663
+  },
+  "material_2_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 2 energy_MeV",
+    "value": 0.115606
+  },
+  "material_2_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 2 total_cm2_g",
+    "value": 4.893
+  },
+  "material_3_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 3 KN_cm2_g",
+    "value": 0.1032537666742752
+  },
+  "material_3_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 3 KN_fraction",
+    "value": 0.03985093271874766
+  },
+  "material_3_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 3 Thomson_over_KN",
+    "value": 1.499634099730163
+  },
+  "material_3_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 3 energy_MeV",
+    "value": 0.15
+  },
+  "material_3_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 3 total_cm2_g",
+    "value": 2.591
+  },
+  "material_4_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 4 KN_cm2_g",
+    "value": 0.09461300657914998
+  },
+  "material_4_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 4 KN_fraction",
+    "value": 0.07289137640920645
+  },
+  "material_4_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 4 Thomson_over_KN",
+    "value": 1.636591786149284
+  },
+  "material_4_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 4 energy_MeV",
+    "value": 0.2
+  },
+  "material_4_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 4 total_cm2_g",
+    "value": 1.298
+  },
+  "material_5_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 5 KN_cm2_g",
+    "value": 0.0822691967739974
+  },
+  "material_5_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 5 KN_fraction",
+    "value": 0.1584537688251106
+  },
+  "material_5_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 5 Thomson_over_KN",
+    "value": 1.882148793256066
+  },
+  "material_5_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 5 energy_MeV",
+    "value": 0.3
+  },
+  "material_5_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 5 total_cm2_g",
+    "value": 0.5192
+  },
+  "material_6_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 6 KN_cm2_g",
+    "value": 0.07371045197447049
+  },
+  "material_6_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 6 KN_fraction",
+    "value": 0.2522602736977087
+  },
+  "material_6_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 6 Thomson_over_KN",
+    "value": 2.10069081497363
+  },
+  "material_6_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 6 energy_MeV",
+    "value": 0.4
+  },
+  "material_6_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 6 total_cm2_g",
+    "value": 0.2922
+  },
+  "material_7_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 7 KN_cm2_g",
+    "value": 0.06730645654696492
+  },
+  "material_7_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 7 KN_fraction",
+    "value": 0.3406197193672314
+  },
+  "material_7_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 7 Thomson_over_KN",
+    "value": 2.30056486961662
+  },
+  "material_7_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 7 energy_MeV",
+    "value": 0.5
+  },
+  "material_7_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 7 total_cm2_g",
+    "value": 0.1976
+  },
+  "material_8_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 8 KN_cm2_g",
+    "value": 0.06226275756975448
+  },
+  "material_8_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 8 KN_fraction",
+    "value": 0.4178708561728489
+  },
+  "material_8_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 8 Thomson_over_KN",
+    "value": 2.486925980701237
+  },
+  "material_8_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 8 energy_MeV",
+    "value": 0.6
+  },
+  "material_8_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 8 total_cm2_g",
+    "value": 0.149
+  },
+  "material_9_KN_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 9 KN_cm2_g",
+    "value": 0.05468931641131759
+  },
+  "material_9_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 9 KN_fraction",
+    "value": 0.5382806733397401
+  },
+  "material_9_Thomson_over_KN": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 9 Thomson_over_KN",
+    "value": 2.831318429101471
+  },
+  "material_9_energy_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 9 energy_MeV",
+    "value": 0.8
+  },
+  "material_9_total_cm2_g": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "output/material.csv",
+    "statement": "material row 9 total_cm2_g",
+    "value": 0.1016
+  },
+  "material_max_KN_fraction": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "reports.cpp::Tables",
+    "statement": "Largest KN proxy fraction among sampled uranium energies",
+    "value": 0.7148051671132554
+  },
+  "pair_threshold_MeV": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: pair_threshold_MeV",
+    "value": 1.0219979
+  },
+  "quadrature_nodes": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: quadrature_nodes",
+    "value": 96.0
+  },
+  "reference_power_MW": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: reference_power_MW",
+    "value": 1000.0
+  },
+  "relative_comparison_tolerance": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: relative_comparison_tolerance",
+    "value": 0.1
+  },
+  "threshold_M_0.1": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx::Threshold",
+    "statement": "Production threshold in MeV",
+    "value": 0.10978475591779592
+  },
+  "threshold_M_0.5": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx::Threshold",
+    "statement": "Production threshold in MeV",
+    "value": 0.744618897944898
+  },
+  "threshold_M_1.0": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx::Threshold",
+    "statement": "Production threshold in MeV",
+    "value": 1.9784755917795918
+  },
+  "uranium_A_g_mol": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: uranium_A_g_mol",
+    "value": 238.02891
+  },
+  "uranium_Z": {
+    "choices": [
+      "Stationary free electrons and tree level; Park spectrum and Compton-only source denominator retained; no later correction or fitted normalization.",
+      "Figure comparisons use fresh horizontal PDF segments and bin averages; residual tolerance is a diagnostic choice, not a statistical uncertainty."
+    ],
+    "from_library": "ROOT quadrature, XML reader and graphics; C++ standard library; nlohmann JSON serialization.",
+    "from_scratch": "New C++ invariant-trace algebra, phase space, source integration and comparison; empirical inputs and constants are supplied, not new measurements.",
+    "produced_by": "physics.hxx; production.cpp; reports.cpp::Provenance",
+    "statement": "Explicit constant or diagnostic convention: uranium_Z",
+    "value": 92.0
+  }
+}

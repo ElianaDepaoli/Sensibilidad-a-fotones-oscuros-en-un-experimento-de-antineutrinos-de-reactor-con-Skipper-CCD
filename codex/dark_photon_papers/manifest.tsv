@@ -1,0 +1,29 @@
+file	arxiv_id	category	title	why_included
+01_fabbrichesi_2020_dark_photon_review.pdf	2005.01515	review	The Dark Photon	Broad theory and experiment review; massive and massless cases.
+02_graham_2021_accelerator_review.pdf	2104.10280	review	Searches for dark photons at accelerators	Focused accelerator-search review and constraint map.
+03_essig_2013_dark_sectors_snowmass.pdf	1311.0029	review	Dark Sectors and New, Light, Weakly-Coupled Particles	Foundational community review of light dark sectors.
+04_bjorken_2009_fixed_target_theory.pdf	0906.0580	theory	New Fixed-Target Experiments to Search for Dark Gauge Forces	Production, decay, and fixed-target search scaling.
+05_arias_2012_wispy_cold_dark_matter.pdf	1201.5902	theory	WISPy Cold Dark Matter	Non-thermal hidden-photon dark-matter production and search concepts.
+06_graham_2016_vector_dm_inflation.pdf	1504.02102	theory	Vector Dark Matter from Inflationary Fluctuations	Inflationary production of ultralight vector dark matter.
+07_an_2013_stellar_constraints.pdf	1302.3884	astrophysics	New stellar constraints on dark photons	Longitudinal-mode stellar emission and cooling limits.
+08_redondo_2013_solar_constraints.pdf	1305.2920	astrophysics	Solar constraints on hidden photons re-visited	Solar production and a quantitative low-mass mixing bound.
+09_chang_2017_sn1987a.pdf	1611.03864	astrophysics	Revisiting Supernova 1987A Constraints on Dark Photons	Supernova production, trapping, and systematic uncertainties.
+10_babar_2014_visible.pdf	1406.2980	exclusion	Search for a dark photon in e+e- collisions at BABAR	Representative visible-decay collider exclusion.
+11_babar_2017_invisible.pdf	1702.03327	exclusion	Search for Invisible Decays of a Dark Photon Produced in e+e- Collisions at BaBar	Representative invisible-decay collider exclusion.
+12_na48_2015_pi0.pdf	1504.00607	exclusion	Search for the dark photon in pi0 decays	Rare-meson visible-decay exclusion.
+13_na64_2016_invisible.pdf	1610.02988	exclusion	Search for invisible decays of sub-GeV dark photons in missing-energy events at the CERN SPS	Missing-energy fixed-target exclusion.
+14_lhcb_2017_dimuon.pdf	1710.02867	exclusion	Search for dark photons produced in 13 TeV pp collisions	Prompt and displaced dimuon exclusions.
+15_faser_2023_dark_photon.pdf	2308.05587	exclusion	Search for Dark Photons with the FASER detector at the LHC	Far-forward long-lived dark-photon exclusion.
+16_dark_srf_2023_lsw.pdf	2301.11512	exclusion	New Exclusion Limit for Dark Photons from an SRF Cavity-Based Search	Laboratory light-shining-through-wall exclusion at sub-meV mass.
+17_dixit_2020_qubit.pdf	2008.12231	exclusion	Searching for Dark Matter with a Superconducting Qubit	Quantum-limited narrowband dark-photon dark-matter exclusion.
+18_cervantes_2022_srf_haloscope.pdf	2208.03183	exclusion	Deepest sensitivity to wavelike dark photon dark matter with superconducting radio frequency cavities	Strong narrowband microwave dark-photon dark-matter exclusion.
+19_admx_orpheus_2022.pdf	2204.09475	exclusion	ADMX-Orpheus First Search for 70 micro-eV Dark Photon Dark Matter	Tunable dielectric haloscope result.
+20_dosue_rr_2022.pdf	2205.03679	exclusion	Search for Dark Photon Dark Matter in the Mass Range 74--110 micro-eV with a Cryogenic Millimeter-Wave Receiver	Broadband metallic-surface conversion result.
+21_gigabread_2023.pdf	2310.13891	exclusion	First Results from a Broadband Search for Dark Photon Dark Matter in the 44 to 52 micro-eV Range with a Coaxial Dish Antenna	Broadband dish-antenna exclusion.
+22_ldmx_2018_design.pdf	1808.05219	projection	Light Dark Matter eXperiment (LDMX)	Detailed missing-momentum sensitivity study.
+23_darkquest_2022.pdf	2203.08322	projection	DarkQuest: A dark sector upgrade to SpinQuest at the 120 GeV Fermilab Main Injector	Visible MeV--GeV proton fixed-target sensitivity.
+24_belle2_2022_long_lived.pdf	2202.03452	projection	Belle II sensitivity to long-lived dark photons	Displaced visible-decay sensitivity study.
+25_jiang_2024_sensor_network.pdf	2305.00890	exclusion	Long-baseline quantum sensor network as dark matter haloscope	Broadband feV--peV terrestrial dark-photon dark-matter exclusion. PDF not redistributed here (35 MB); get it from arXiv:2305.00890.
+26_nasduck_2026_magnetometry.pdf	2602.22308	exclusion	NASDUCK': Laboratory Limits on Ultralight Dark-Photon Dark Matter with Null-Axis Magnetometry	Current laboratory limits in the 4e-12--2e-9 eV range.
+27_caputo_essig_2026_perspective.pdf	2603.08430	review	The Dark Photon: a 2026 Perspective	Current synthesis of theory, laboratory, astrophysical, and cosmological probes.
+28_ldmx_2026_long_lived_sensitivity.pdf	2604.14359	projection	Expected Sensitivity of the Light Dark Matter eXperiment to Long-Lived Dark Photons and Axion-Like Particles	Current detailed simulated sensitivity for visibly decaying long-lived dark photons.

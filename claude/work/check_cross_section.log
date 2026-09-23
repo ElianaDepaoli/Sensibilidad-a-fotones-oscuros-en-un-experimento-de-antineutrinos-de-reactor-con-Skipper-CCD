@@ -1,0 +1,64 @@
+== 1. explicit-matrix |M|^2 vs published formulas at random on-shell points ==
+   max |ratio-1| vs ward    : 2.04e-13
+   max |ratio-1| vs v2      : 2.02e-13
+   max |ratio-1| vs deNiv   : 2.02e-13
+   max |ratio-1| vs smirnov : 8.88e-16
+   PASS: explicit-polarization sum == covariant (-g) sum: Ward identity holds numerically
+   PASS: v2 eq(36), deNiverville eq(18-20) and Smirnov eq(3) are the same cross section
+== 2. the Spanish notes' |M|^2 (eq 40/41) against the same points ==
+   ratio apuntes/exact - 1 : min -0.390, max +0.327
+   PASS (sympy): at M=0, exact - apuntes = 8 m^2 (1/a+1/b) + 8 m^4 (1/a+1/b)^2  -> the notes drop the m_e terms of Klein-Nishina
+   PASS (sympy): exact F at M=0 == 2[w'/w + w/w' - sin^2] (Klein-Nishina) with the Compton relation
+== 3. kinematics claimed in the notes ==
+   threshold E_th = M + M^2/2m : {0.1: 0.109785, 0.5: 0.744619, 1.0: 1.978476}    (notes say 'omega -> m_A'')
+   E=3 MeV, M=1 MeV: exact x in [1.3359,2.9548] ; doc1 [0.3122,3.0000] ; doc2 [0.2296,2.2622]
+   PASS (sympy): doc1 eq(19) solves its eq(18); doc2 eq(20) does NOT solve the same equation (and doc2 eq(19) has the sign of M^2 flipped)
+   E=3, x=2, M=1: cos(theta) exact 0.9601, doc1 eq(20) 0.8315
+== 4. the notes' final dsigma/domega' (doc1 eq 50 / doc2 eq 54) against the exact one ==
+   E=3 MeV M=0.1: doc1/exact in [0.951,1.996] ; doc2/exact in [0.948,1.989]
+   E=3 MeV M=0.5: doc1/exact in [0.491,2.140] ; doc2/exact in [0.454,1.978]
+   E=3 MeV M=1.0: doc1/exact in [0.474,2.363] ; doc2/exact in [0.358,1.782]
+   E=3 MeV M=0.1: sigma_doc1(over exact range)/sigma_exact = 1.005; pole u-m^2=0 at E_A'=0.010 inside doc1's own range: False
+   E=3 MeV M=0.5: sigma_doc1(over exact range)/sigma_exact = 1.072; pole u-m^2=0 at E_A'=0.245 inside doc1's own range: False
+   E=3 MeV M=1.0: sigma_doc1(over exact range)/sigma_exact = 1.358; pole u-m^2=0 at E_A'=0.978 inside doc1's own range: True
+== 5. totals ==
+   PASS: quadrature of exact dsigma/dx at M->0 == Klein-Nishina total (E = 1, 3, 8 MeV)
+   PASS (sympy): v2 eq(41) primitive satisfies dG/db = F
+   doc1 eq(52): integral of its integrand - its printed result = 0
+   doc1 eq(52) vs KN eq(53): relative difference at kappa=0.1,0.5,2 = [0.0, -0.0, -0.0]
+   y=E/m=200: KN exact/asymptotic = 0.9942; doc2 eq(64)/KN exact = 0.6157
+== 6. polarization of the produced A' and the 2/3 detection factor ==
+   longitudinal fraction of produced A' over the random sample: max 4.212e-01
+   E=3.0 M=0.1: sigma_L/sigma_tot = 0.0097
+   E=3.0 M=0.5: sigma_L/sigma_tot = 0.1951
+   E=3.0 M=1.0: sigma_L/sigma_tot = 0.0783
+   E=8.0 M=1.0: sigma_L/sigma_tot = 0.2107
+   E_A'=3.0 M=0.01: sigma_T/sigma_KN = 0.99999, sigma_unpol/sigma_KN = 0.66667, sigma_L/sigma_KN = 3.43e-05
+   E_A'=3.0 M=0.1: sigma_T/sigma_KN = 0.99899, sigma_unpol/sigma_KN = 0.66714, sigma_L/sigma_KN = 3.43e-03
+   E_A'=5.0 M=0.1: sigma_T/sigma_KN = 0.99916, sigma_unpol/sigma_KN = 0.66665, sigma_L/sigma_KN = 1.61e-03
+   PASS: transverse A' -> sigma_KN (factor 1); unpolarized A' -> (2/3) sigma_KN. The 2/3 is the unpolarized average.
+   polarization-resolved detection factors at the masses where the produced A' is not purely transverse:
+   E_A'=3.0 M=0.5: sigma_T/sigma_KN = 0.9823, sigma_L/sigma_KN = 0.0833, unpolarized/sigma_KN = 0.6826
+   E_A'=5.0 M=0.5: sigma_T/sigma_KN = 0.9819, sigma_L/sigma_KN = 0.0397, unpolarized/sigma_KN = 0.6678
+   E_A'=8.0 M=0.5: sigma_T/sigma_KN = 0.9858, sigma_L/sigma_KN = 0.0205, unpolarized/sigma_KN = 0.6640
+   E_A'=3.0 M=1.0: sigma_T/sigma_KN = 0.9987, sigma_L/sigma_KN = 0.3135, unpolarized/sigma_KN = 0.7703
+   E_A'=5.0 M=1.0: sigma_T/sigma_KN = 0.9570, sigma_L/sigma_KN = 0.1525, unpolarized/sigma_KN = 0.6888
+   E_A'=8.0 M=1.0: sigma_T/sigma_KN = 0.9560, sigma_L/sigma_KN = 0.0801, unpolarized/sigma_KN = 0.6640
+== 7. Park's approximation dsigma/dE_A' ~ eps^2 dsigma_C/dE_r (eq 2) ==
+   E=3 MeV M=0.1: sigma_exact/sigma_KN = 0.9951
+   E=3 MeV M=0.5: sigma_exact/sigma_KN = 0.8858
+   E=3 MeV M=1.0: sigma_exact/sigma_KN = 0.6090
+== 8. approach A (Compton-like, Park eq 1 with sigma_tot = sigma_KN) vs approach B (oscillation, Danilov eq 6 with E_X = E_gamma) ==
+   M=0.1 MeV, 1 GW, eps=1, A' energies in [3,8] MeV: approach A = 2.534e+18 /s ; approach B = 1.945e+19 /s ; ratio A/B = 0.130
+   M=0.5 MeV, 1 GW, eps=1, A' energies in [3,8] MeV: approach A = 2.538e+18 /s ; approach B = 1.945e+19 /s ; ratio A/B = 0.130
+   M=1.0 MeV, 1 GW, eps=1, A' energies in [3,8] MeV: approach A = 2.569e+18 /s ; approach B = 1.945e+19 /s ; ratio A/B = 0.132
+   check: integral of Park's spectrum above 1 MeV at 1 GW = 1.7588e+20 /s (Park prints 1.76e20)
+== 9. dN/dE_A' at the reactor (1 GW, eps=1): model A vs model B vs Park's Figure 1 read by eye ==
+   x=1.0 MeV: A (eq 1, exact sigma) = 0.1081 ; B (= S_gamma) = 0.1933 ; Park Fig 1 ~ 0.400 ; Park/A = 3.7, Park/B = 2.07
+   x=2.0 MeV: A (eq 1, exact sigma) = 0.0171 ; B (= S_gamma) = 0.0644 ; Park Fig 1 ~ 0.065 ; Park/A = 3.8, Park/B = 1.01
+   x=3.0 MeV: A (eq 1, exact sigma) = 0.0036 ; B (= S_gamma) = 0.0215 ; Park Fig 1 ~ 0.022 ; Park/A = 6.1, Park/B = 1.03
+   x=4.0 MeV: A (eq 1, exact sigma) = 0.0009 ; B (= S_gamma) = 0.0072 ; Park Fig 1 ~ 0.007 ; Park/A = 8.1, Park/B = 0.98
+   sanity: flat-KN bounds at x=2: [0.0088, 0.0246] contain A = 0.0171: True
+   Park's Fig 1 tail is the photon spectrum S_gamma(E), not the Compton-like convolution of his eq (1)
+   integral of A over x>0.02 MeV (M=1 keV) = 5.1587e+20 /s ; photons above 0.02 MeV = 5.1633e+20 /s ; ratio 0.9991
+ALL ASSERTIONS PASSED

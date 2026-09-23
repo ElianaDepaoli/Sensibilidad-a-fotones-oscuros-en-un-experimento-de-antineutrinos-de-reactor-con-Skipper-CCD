@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Park / TEXONO: follow-up</title><style>body{margin:0;background:#f7f6f2;color:#172331;font:17px/1.55 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:40px 25px 80px}h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1}h2{margin-top:2em;border-bottom:1px solid #bbb}h3{margin-top:1.5em}a{color:#145a80}table{border-collapse:collapse;width:100%;font-size:.91rem}td,th{border:1px solid #ccc;padding:9px;text-align:left;vertical-align:top}th{background:#e6edf1}pre{overflow:auto;background:#eaf0f3;padding:15px;font-size:.8rem}code{font-size:.9em}.note{background:#fff1d9;border-left:5px solid #b77715;padding:16px}.pass{color:#126849}.fail{color:#a12d2d}.figure img{width:100%;max-height:650px}figcaption{font-size:.88rem;color:#475669}.meta{font-size:.88rem;color:#536473}.equation{padding:12px;background:#fff;overflow:auto}.scroll{overflow-x:auto}li{margin:.3em 0}</style></head><body><main><h1>Park / TEXONO: follow-up</h1><aside id="continuation-update" class="note"><strong>Continuation:</strong>
+    A conditional production normalization and a lower source cutoff closely track the Figure 1 curves.
+    This is a hypothesis about an undocumented implementation choice; it changes the stated equation.
+    The TEXONO limit remains unreproduced.
+    <a href="report_park_texono_continuation.html">New diagnostics, plot and run receipt</a>.</aside><p>The requested ROOT/C++ calculation is implemented. The cross-section checks pass.
+    Park’s published TEXONO limit is not reproduced.</p>
+    <p>The direct result is ε₉₅=1.5655e-05; the paper prints 2.1e-05.
+    The original Figure 1 also differs from the finite-mass calculation.</p>
+    <ul><li>Production and detection were derived from the QED diagrams. Reference 15 checks the production integral;
+    Reference 20 checks the detection amplitudes and phase space.</li>
+    <li>Park’s 2/3 detection factor is retained. No Danilov or later correction is used.</li>
+    <li>Park’s printed lower outgoing-photon bound differs from Compton kinematics. Testing both bounds exposes part of the discrepancy.</li>
+    <li>Using the quoted prompt-photon normalization and the literal bound gives 2.113492e-05.
+    This is a diagnostic coincidence; the author's actual normalization remains unverified.</li>
+    <li>Thomson is unsuitable for MeV photons. Klein–Nishina is valid for free-electron scattering, but does not equal total attenuation in reactor material.</li></ul>
+    <p>The next useful input is Park’s original rate code, including the source normalization and detector integration limits.
+    Until then, treat the unexplained normalization as a hypothesis.</p>
+    <p><a href="report_park_texono_human.html">Derivation, figures and checks</a> · <a href="report_park_texono_agent.html">Technical handoff</a> ·
+    <a href="code/park_texono/output/figures.html">Notebook export</a> · <a href="rfh_park_texono_es.html">Español</a>.</p><footer><h2>Execution record</h2><p>Model: GPT-6 (reported by the session).
+    Reasoning effort: not exposed. Exact token usage: not exposed; no estimate is substituted.
+    Elapsed wall time to this report build: 21.15 minutes, including the interruption and approval waits.
+    Start: 2026-09-17T15:45:41+00:00; report build: 2026-09-17T16:06:50.125460+00:00.</p>
+    <p>ROOT 6.36.000; g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0.
+    Existing notebook environment: /home/eliana/.marimo/bin/python (marimo 0.24.0).
+    No packages were installed in the base environment.</p></footer></main></body></html>

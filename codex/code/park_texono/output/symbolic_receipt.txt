@@ -1,0 +1,4 @@
+PASS: exact explicit Dirac matrices agree; both Ward identities vanish on shell
+PASS: interference traces agree; photon limit equals Klein-Nishina exactly
+PASS: s/u symmetry and external electron mass shell
+F(s,u)= -2*(2*M2**2*m**4 - 2*M2**2*m**2*s - 2*M2**2*m**2*u + 2*M2**2*s*u - 2*M2*m**4*s - 2*M2*m**4*u + 8*M2*m**2*s*u - 2*M2*s**2*u - 2*M2*s*u**2 - 6*m**8 + 3*m**4*s**2 + 14*m**4*s*u + 3*m**4*u**2 - m**2*s**3 - 7*m**2*s**2*u - 7*m**2*s*u**2 - m**2*u**3 + s**3*u + s*u**3)/((-m**2 + s)**2*(-m**2 + u)**2)

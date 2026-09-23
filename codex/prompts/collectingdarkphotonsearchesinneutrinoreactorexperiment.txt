@@ -1,0 +1,20 @@
+What is query:
+Dark photon searches in neutrino reactor experiments: energy ranges, production mechanism. 
+Experiments that calculated sensitivity and exclution limits. Summary of experimental strategy and claims.
+
+How, strategy:
+First read paper in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/papers_init/
+Go through out the web, search in scientific related papers. Related papers = in its reference list, quotations of it, similar issue. 
+
+What is expected as outcome:
+New folder in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/ containing reliable papers
+A report*.html both for you and for human to follow-up
+A rfh*.html for human. Produce a version in english language and reasonable translation in spanish. 
+
+Rules for human report:
+Stay simple, avoid useless connectors. Don't be polite. Use human speak, not machine.
+
+Rules for you: 
+add a skill*.md with the skills you need to adjust to these and the following requierements within this session.
+
+Interpret * contextually

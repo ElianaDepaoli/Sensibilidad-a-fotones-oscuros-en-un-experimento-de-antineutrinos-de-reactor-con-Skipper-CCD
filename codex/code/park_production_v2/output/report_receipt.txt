@@ -1,0 +1,1 @@
+PASS: generated LaTeX tables, ROOT/C++ HTML handoff, isolated provenance and vault receipt

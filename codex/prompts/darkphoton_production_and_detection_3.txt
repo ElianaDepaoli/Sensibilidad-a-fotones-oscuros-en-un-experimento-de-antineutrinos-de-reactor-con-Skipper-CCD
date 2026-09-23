@@ -1,0 +1,32 @@
+What is query:
+Check and improve your derivation and implementation of the cross section production of dark photons via Compton-like process inside this project. Inspect report_park_production_v2_agent.html and report_park_production_v2_en.pdf
+Recalculate figure 1 and 2 (only TEXONO) in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/papers_init/
+In figure 2, compare Park and Danilov results with yours.
+
+Goal:
+95% CL exclusion upper limit in the parameter plane (mX , epsilon) of the hidden photon model from TEXONO experiment.
+
+How, strategy:
+Incorporate medium γ↔A′ oscillations introduced in "Constraints on hidden photons produced in nuclear reactors" (2019, Danilov, Demidov and Gorbunov).
+Decide weather you need to use Reference 15 and others or do it from first principles. Report the formulas you'll use.
+Be explicit in wich energy region is valid each approximation you make.
+Code to implement the cross section production and detection and the exclusion limit.
+
+What is expected as outcome:
+A report*.html for you to follow-up. At the end of the report inform model and reasoning effort, time to resolve the task, tokens used. 
+A report*.pdf for human gathering the detail cross section calculation, the plots and claims. Produce both an english and spanish. Must have the structure of a physics lecture.
+
+Rules for human report:
+Stay simple and direct. Don't be polite, make claims without hesitations. Use human speak, not machine. Clarity, intelligible, readable is a goal.
+All the formulas in latex format.
+
+Rules for you: 
+add a skill*.md with the skills you need to adjust to these and the following requierements within this session.
+
+Rules for coding:
+use ROOT 6.36.000 With C++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Structure every calculation inside a function. Provide them with comments for human.
+Use ROOT documentation and forums.
+Make easy to use for a different experiment with a different background, ROI, exposure, detector mass, A, Z.
+
+Interpret * contextually

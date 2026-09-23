@@ -1,0 +1,648 @@
+                                           PHYSICAL REVIEW D 92, 095014 (2015)
+                                   MeV-scale dark matter deep underground
+                                 Eder Izaguirre,1 Gordan Krnjaic,1 and Maxim Pospelov1,2
+                        1
+                         Perimeter Institute for Theoretical Physics, Waterloo, Ontario N2L 2Y5, Canada
+                                 2
+                                  Department of Physics and Astronomy, University of Victoria,
+                                           Victoria, British Columbia V8P 5C2, Canada
+                                    (Received 5 August 2015; published 10 November 2015)
+                We demonstrate that current and planned underground neutrino experiments could offer a powerful
+             probe of few-MeV dark matter when combined with a nearby high-intensity low-to-medium energy
+             electron accelerator. This experimental setup, an underground beam-dump experiment, is capable of
+             decisively testing the thermal freeze-out mechanism for several natural dark matter scenarios in this mass
+             range. We present the sensitivity reach in terms of the mass-coupling parameter space of existing and
+             planned detectors, such as Super-K and SNOþ, in conjunction with a hypothetical 100-MeV energy
+             accelerator. This setup can also greatly extend the sensitivity of direct searches for new light weakly
+             coupled force carriers independent of their connection to dark matter.
+
+             DOI: 10.1103/PhysRevD.92.095014                                           PACS numbers: 95.35.+d, 12.38.Qk
+
+
+
+                   I. INTRODUCTION                                  beam—which is capable of sharply testing the thermal
+                                                                    origin scenario below ∼ a few 10’s of MeV in DM mass. In
+   The existence of dark matter (DM) is clear evidence
+                                                                    particular, the electron beam impinges on a fixed target or
+of physics beyond the Standard Model (SM) and has
+                                                                    beam dump to produce a dark force carrier A0, which can
+inspired a major experimental effort to uncover its particle
+                                                                    decay either visibly to eþ e− or to DM particles. If the A0
+nature. If DM achieves thermal equilibrium with the SM in
+the early Universe, its present-day abundance can arise
+from DM annihilation with characteristic cross section
+σv ∼ 3 × 10−26 cm3 =s. Alternatively if its abundance at late
+times is set by a primordial particle-antiparticle asymmetry, a
+thermal origin requires at least as large of an annihilation
+rate to avoid cosmological overproduction. For either
+scenario, this requirement sets a predictive target of oppor-
+tunity to search for many of the simplest light-DM models.
+   Current and planned direct and indirect detection, and
+collider experiments will cover a vast subset of DM masses
+motivated by the thermal origin paradigm. However,
+significant gaps remain in our current search strategies
+for low-mass DM. Indeed, the MeV-to-GeV DM mass
+window remains an elusive blind spot in the current search
+effort [1], despite the existence of viable models [2–8]—
+including those invoked to explain the excess 511-keV
+photon line from the galactic bulge [9] with MeV-scale DM
+annihilation into electron-positron pairs [3,4]. Recent
+progress in our understanding of the status of MeV-scale
+DM has come from a combination of reinterpretation of
+surface-level proton-beam neutrino experiments results
+[10–13], rare meson decays [14–18], electron beam-dump              FIG. 1 (color online). Schematic diagram of the proposed setup:
+experiments [19–22], B factories [19,23], precision mea-            a high-intensity electron accelerator is placed in the vicinity of a
+surements [5,19,24], the cosmic microwave background                large, underground neutrino detector. The electron beam im-
+                                                                    pinges on a fixed target or beam dump to produce a dark force
+(CMB) [25–29], and DM-electron scattering in direct
+                                                                    carrier A0, which can decay either visibly to eþ e− or to DM
+detection experiments [30].                                         particles. If the A0 decays visibly and is long-lived, it can enter the
+   In this paper we propose a powerful new setup depicted           detector and directly deposit a large electromagnetic signal. If the
+schematically in Fig. 1—the combination of a large under-           A0 decays invisibly to DM, the daughter particles inherit forward-
+ground detector such as those housed in neutrino facilities         peaked kinematics and scatter in the detector inducing observable
+and a low-energy (10–100 MeV) but high-intensity electron           target-particle recoils.
+
+
+
+1550-7998=2015=92(9)=095014(10)                              095014-1                                © 2015 American Physical Society
+EDER IZAGUIRRE, GORDAN KRNJAIC, AND MAXIM POSPELOV                                          PHYSICAL REVIEW D 92, 095014 (2015)
+                                                                                           þ −
+decays visibly and is long-lived, it can enter the detector           through χ χ̄ → e e annihilation, which proceeds via a
+and directly deposit a large electromagnetic signal. If the A0        virtual s-channel A0 exchange and depends on both DM and
+decays invisibly to DM, the daughter particles inherit                SM couplings to the mediator.1 This latter scenario is
+forward-peaked kinematics and scatter in the detector                 predictive: since dark sector couplings are bounded by
+inducing observable target-particle recoils. While our                perturbativity, sufficient experimental sensitivity to the SM-
+proposal requires a substantial investment in an accelerator          mediator coupling can discoverer or decisively rule out this
+and beam dump deep underground, it can significantly                  class of direct-annihilation models.
+surpass the sensitivity of all other existing efforts in this            The leading s-wave annihilation cross section for Dirac
+mass range. This concept complements the DAEδALUS                     DM is given by
+light-DM proposal [31] involving an underground proton
+beam as well as other underground accelerator concepts                                16πααD m2χ ð1 þ m2e =2m2χ Þ qﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+                                                                                                                              2 =m2 ;
+                                                                                                                                       ﬃ
+                                                                               σv ¼                                1  −    m          χ      ð3Þ
+                                                                                           ðm2A0 − 4m2χ Þ2
+                                                                                                                              e
+[32–34] with different physics goals.
+   For concreteness, we consider light DM that interacts
+with the visible sector through a kinetically mixed [35]              while for the scalar case the annihilation is p wave
+massive dark photon A0 [36]. Since light DM requires a
+                                                                                                                   qﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+comparably light mediator to avoid overclosure, this start-                    8π ϵ2 ααD m2φ v2 ð1 þ m2e =2m2φ Þ
+                                                                      σv ¼                                          1 − m2e =m2φ ;           ð4Þ
+ing point loses no essential generality and our results are                     3        ðm2A0 − 4m2φ Þ2
+qualitatively similar for different mediators. The most
+general renormalizable Lagrangian for this dark sector                and, hence, suppressed at late times (e.g. during CMB last
+contains                                                              scattering). Here αD ¼ ðg0 Þ2 =ð4πÞ and v is the relative
+                                                                      velocity between annihilating particles. These expressions
+                   ϵY 0       m2 0
+            LD ⊃     Fμν Bμν þ A A0μ A0μ þ LDM ;               ð1Þ    are approximately valid for the inelastic variations of each
+                   2           2                                      scenario in the limit where the mass splitting between
+where A0 is the dark photon that mediates an Abelian Uð1ÞD            annihilation partners is small compared to their mass.
+force, F0μν ¼ ∂ ½μ; A0ν and Bμν ¼ ∂ ½μ; Bν are the dark and         Equating this annihilation rate to ∼1 pb × c gives an
+                                                                      important relation among the parameters of the model that
+hypercharge field strength tensors, and mχ;A0 are the
+                                                                      ensures the correct cosmological abundance.
+appropriate dark sector masses. After electroweak sym-                   This class of models can easily be adapted to cover a wide
+metry breaking, diagonalizing the gauge boson mass                    range of variations that can arise in a generic dark sector with
+matrices induces a kinetic mixing with the photon field               a thermal history. Beyond the spin of the DM and mediator,
+strength ϵ ≡ ϵY cos θW , where θW is the weak mixing angle.           we can classify the dominant dark species by its present-day
+The DM Lagrangian contains a fermionic or bosonic MeV-                abundance (particle-antiparticle symmetric vs asymmetric)
+scale DM particle charged under Uð1ÞD,                                and the nature of its coupling to the mediator (elastic vs
+               (                                                      inelastic). Since the experimental setup we advocate in this
+                   χ̄ðiD − mχ Þχ;        fermionic DM;                paper (direct accelerator production and downstream scat-
+       LDM ¼                                              ð2Þ
+                   jDμ φj2 − m2φ φ φ; bosonic DM;                    tering) is largely insensitive to these differences, we regard
+                                                                      our approach as a convenient simplified model; the sensi-
+where Dμ ¼ ∂ μ þ ig0 A0μ is the covariant derivative. These           tivity of this approach can be mapped onto most thermal DM
+simplest realizations of LD assume a Dirac fermion or                 scenarios in the low-mass range.
+complex scalar DM states, but the model can readily be                   In comparing these scenarios against the thermal relic
+generalized to the “split” states of Majorana/pseudo-Dirac            target, it is useful to adopt the ansatz introduced in [8] and
+fermions or real scalars, in which case A0 can couple off             define the dimensionless interaction strength
+diagonally (inelastically) to the different mass eigenstates                                                 
+and mχðφÞ should be understood as a matrix acting on the                                          2
+                                                                                                        mχ=φ 4
+                                                                                             y ≡ ϵ αD           :                  ð5Þ
+split states. Moreover, each variation above can be particle/                                            mA0
+antiparticle asymmetric, which allows for weaker bounds
+from late-time annihilations into the CMB than the sym-               Up to small additive corrections, in the minimal Lagrangian
+metric case [26].                                                     from Eq. (1), and in the limit m0A ≫ mχ=φ the DM
+   One of the most important questions for such a model is            annihilation rate is given by hσvi ≈ my2 . Thus, for a fixed
+                                                                                                                      χ=φ
+the hierarchy of masses in LD . If mA0 < mχ=φ , the mediator          mχ=φ , setting the annihilation rate to the required value for
+is the lightest state in the dark sector, so it will decay into
+SM particles. In this regime, the annihilation process that                1
+                                                                         In a certain region of parameter space, the mA0 > mχ scenario
+sets the relic density is t channel (e.g. χ χ̄ → A0 A0 ) and, thus,   can still achieve the observed relic abundance through χ χ̄ → A0 A0
+independent of the mediator’s coupling to the SM.                     annihilation in the “forbidden” channel [37], but this possibility is
+However, if mA0 > mχðφÞ , then the relic density is achieved          beyond the scope of our work.
+
+
+
+                                                                095014-2
+MEV-SCALE DARK MATTER DEEP UNDERGROUND                                                 PHYSICAL REVIEW D 92, 095014 (2015)
+obtaining DM’s present abundance, gives a unique y that                    running at mA currents combined with a large
+satisfies this requirement. Thus, plotting y vs mχ=φ invar-                neutrino detector offers a significant improvement
+iantly presents the thermal target under variations of ϵ; αD               in luminosity compared to previous experiments.
+or the mass ratio mχ=φ =mA0 and allows different experi-               (6) Finally, the proposed light-DM search scheme does
+ments to be compared against this target. Some experi-                     not interfere with other physics goals of large
+ments, like direct detection, allow for unambiguous                        underground detectors. Moreover, for some facili-
+comparison with the thermal target since the DM SM                         ties, a project of this scope and ambition may offer
+nonrelativistic scattering cross section is typically propor-              an entirely novel physics program—especially for
+tional to y. However, other constraints depend only on a                   detectors whose main physics goals have already
+subset of the parameters that constitute y (e.g. collider                  been met (as is the case for most solar neutrino
+production) so it is necessary to make conservative                        detectors).
+assumptions about the other parameters for a robust                    For the remainder of this paper we narrow our scope to
+comparison with the thermal target—for a discussion                 simple models in Eq. (1), in which DM communicates with
+see Sec. V.                                                         the SM through the vector portal. In Sec. II we discuss the
+   For any DM search involving accelerator production and           production and detection of a lightly coupled new particle
+downstream detection, the signal yield is proportional to           at underground facilities; Sec. III discusses the potential
+the number of DM particles produced and the combined                promising facilities for realizing the proposal in this paper;
+probability that the DM reaches the detector and scatters off       in Sec. IV we discuss the main backgrounds for such an
+a stationary target inside. If the mediator (A0 ) can kine-         experimental setup; in Sec. V we discuss existing exper-
+matically decay to DM then the signal yield scales as               imental constraints on this parameter space and the pro-
+                                                                    jected sensitivity of our setup for various detectors; finally
+                                                                    in Sec. VI we offer some concluding remarks.
+       Signal ∝ POT × ðPGeom Acc Þ × ðN Atoms in det Þ;      ð6Þ
+
+where POT stands for the number of particles on target,                     II. PRODUCTION AND DETECTION
+PGeom Acc . is the probability that the produced DM path                         A. Invisibly decaying mediator
+crosses the geometry of the detector, and N Atoms in det . is the
+                                                                       In this section we follow a well-established routine for
+number of target particles inside such a detector. The
+                                                                    calculating the elastic scattering of light-DM χ produced
+ideal light-DM beam-dump experiment seeks to maximize
+                                                                    from the decay of on-shell mediators A0 [19,20]. The
+the product of these factors, while minimizing back-
+                                                                    production of mediators occurs via radiative emission from
+ground rates.                                                       electron-nucleus scattering, Z þ e− → Z þ e− þ A0 , and is
+   Our proposal, which pairs a high-intensity low-energy
+                                                                    calculable with a minimum of uncertainty, by standard
+electron-beam accelerator with a large underground detec-           QED methods. For the results in Sec. V we calculate the
+tor, Fig. 1, has several key features that maximize signal          production of DM at a fixed target using a modified
+and reduce potential backgrounds:                                   version of MADGRAPH [38] from Ref. [39], which includes
+   (1) The next generation of deep underground neutrino             electron-nucleus scattering with form factors obtained
+        detectors are among the largest detectors ever built        from Ref. [40].
+        or proposed.                                                   The prompt decay of A0 mediators to light DM, A0 → χ χ̄,
+   (2) Underground facilities, typically situated inside a          creates a flux of (semi-)relativistic χ particles that subtends
+        mine at a few water-equivalent km underground,
+                                                                    the detector volume. For invisibly decaying mediators, the
+        boast enormous overburdens, which exponentially
+                                                                    signal consists of detector particle recoils induced by A0
+        suppress cosmic and other environmental back-
+                                                                    daughter particles—e.g. χe → χe mediated by virtual A0
+        grounds.
+                                                                    exchange. The scattering yield for this process is
+   (3) An electron beam can be advantageous over a proton
+        beam for probing MeV-scale new physics since                                           Z E
+                                                                                N A0 ne ε X
+                                                                                        N  s
+        beam-related backgrounds are significantly sup-                                              0        dσ S
+                                                                         YS ¼                            dE        ðE Þl ΘðθD − θi Þ; ð7Þ
+        pressed compared to the latter, as the production                         N s i¼1       Ec            dER i i
+        of neutrinos and neutrons is significantly less in the
+        electron beam case.                                         where E0 is the e− beam energy, Ec is the recoil “cut”
+   (4) For DM masses small compared to the beam energy,             threshold, N A0 is the total number of A0 produced, Ei is the
+        radiative production in electron-nucleus collisions is      daughter DM energy, ER is the target’s recoil energy, ne is
+        extremely forward peaked and offers excellent               the target (electron) number density, and li is the DM path
+        (order-one) geometric acceptance for fixed targets          length through the detector. For our signals of interest,
+        placed in the vicinity of large neutrino detectors.         typically ER ≳ 10 MeV, the detection efficiency ε is of
+   (5) A high-intensity electron beam—e.g. a continuous             order one. The theta function enforces geometric accep-
+        wave (CW) beam at existing facilities—capable of            tance by admitting only particles whose angle θi with
+
+
+                                                              095014-3
+EDER IZAGUIRRE, GORDAN KRNJAIC, AND MAXIM POSPELOV                                               PHYSICAL REVIEW D 92, 095014 (2015)
+respect to the beam line falls inside θD , the angle subtended                           2
+                                                                                       ϵe
+                                                                                               ūðpR Þγ μ ðpT − pγ þ me Þγ ν uðpT ÞεAμ εγν ;
+                                                                                                                                      0
+                                                                             At ¼
+by the detector. We have presented this rate as an average                          ðt − m2e Þ
+over N s simulated Monte Carlo events of A0 production and
+decay in the target. The nature of the scattering cross                                                                                        ð12Þ
+section can vary depending on energy and detection
+methods. For most large neutrino detectors, the dominant
+                                                                                       ϵe2
+                                                                                              ūðpR Þγ μ ðpT þ pA0 þ me Þγ ν uðpT ÞεAν εγμ ;
+                                                                                                                                      0
+signal is from electron recoils. Assuming Dirac fermion                      As ¼          2
+DM, the recoil spectrum is                                                          ðs − me Þ
+                                                                                                                                               ð13Þ
+            dσ S αD ϵ2 8πα2 me ð1 − ER =Ei Þ
+                ¼     ×                      ;                        ð8Þ
+            dER   α     ðm2A0 þ 2me ER Þ2                                    where pT=R are the four-momenta of the target/recoil e− ,
+                                                                                                                0
+                                                                             pA0 is the A0 four-momentum, and εA ;γ are gauge boson
+in the Ei ≫ mχ limit; a parametrically similar expression                    polarization vectors.
+can be obtained for inelastic or scalar DM variations [20].
+Other signatures may include elastic and quasielastic
+scattering of χ on nucleons, and nuclear elastic recoils.                                    III. SUITABLE FACILITIES
+For the inelastic-DM scenario, the process χ 1 e → χ 2 e is                     The experimental strategy that we propose relies on
+well approximated by the above formula in the limit where                    production of light DM by an electron beam impinging on a
+the mass splitting is small compared to the incident DM                      target or beam dump. Further detection downstream is
+energy.                                                                      realized at a large detector. The advantage of this approach
+                                                                             is that it permits use of an existing or planned detector. We
+                 B. Visibly decaying mediator                                now discuss existing and upcoming detecting facilities
+                                                                             which could be suitable to meet the physics targets outlined
+   For the visibly decaying mediator (mA0 < 2mχ ), the                       in this paper.
+signal consists of both decays and absorptions. For a
+simulated population of N A0 mediator particles, the total
+yield is Y ¼ Y A þ Y D , where the effective absorption (A)                         A. Large water-based Čerenkov detectors
+and decay (D) contributions are
+                                                                                                  1. Super-Kamiokande
+                            Z E
+       N A0 ne ε X
+                 Ns   Γd
+                                                                                The Super-Kamiokande (Super-K) detector [41] in the
+                     − i          0        dσ A
+YA ¼                e cγi             dE        ðE Þl ΘðθD − θi Þ;           Kamioka Mine in Japan contains a 50,000-ton water
+         N s i¼1             Ec            dE i i                            Čerenkov detector, at a depth of 2700 mwe. It was designed
+       N A0 ε X                                                              to measure neutrino rates from different sources such as
+             N s   Γd         Γl
+                  − i        − i
+YD ¼             e cγi ð1 − e cγi ÞΘðθD − θi Þ:                       ð9Þ    those from astrophysics and the atmosphere, and for proton
+        N s i¼1                                                              decay. It consists of a welded stainless-steel tank 39 m in
+                                                                             diameter, it stands 42 m tall, and is sensitive to electron
+Unlike in Eq. (7), here Ei =θi are now the A0 energy/angle of                recoils above 4.5 MeV. An important feature of this type of
+the ith A0 produced in the simulation, γ i ¼ ð1 − v2 Þ−1=2 is                detector is directional sensitivity, which can be used to
+the A0 boost factor, di is the path traveled between target                  further suppress environmental backgrounds. Super-K is
+and detector, and the visible A0 width is                                    the largest among the existing detectors suitable for our
+                                                                             proposal. It currently hosts a very low-power medical-type
+                                      qﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+             ϵ2 αmA0                                                         electron linac for calibration purposes [42].
+        Γ¼           ð1 þ 2m2e =m2A0 Þ 1 − 4m2e =m2A0 :              ð10Þ
+                3π
+                                                                                                  2. Hyper-Kamiokande
+The absorption cross section for the A0 e → γe process with
+                                                                                The next large water Čerenkov detector at Kamioka
+a stationary detector electron is
+                                                                             Mine is the Hyper-Kamiokande project [43] intended to
+                                                                             also measure neutrino rates, look for proton decay, in
+                       dσ A  m hjAj2 i
+                            ¼ e 2 ;                                 ð11Þ    addition to being the far detector for a long-baseline
+                       dER 32πjp j s                                         neutrino oscillation experiment using neutrinos originated
+                                                                             from the upgraded J-PARC. Its design is based on the same
+where ER is the electron recoil energy, s ¼ ðme þ Ei Þ2 ,                    detection technology that Super-K featured. It has a 40 ×
+jp j2 ¼ ½ðs − m2e − m2A0 Þ2 − 4m2e m2A0 =4s is the CM three-               54 × 250 m3 detector volume, with a fiducial volume ∼20
+momentum in the lab frame, and the absorption amplitude                      times greater than that of Super-K, located at a depth of
+A ¼ As þ At is a sum of s- and t-channel amplitudes                          1750 mwe.
+
+
+                                                                       095014-4
+MEV-SCALE DARK MATTER DEEP UNDERGROUND                                            PHYSICAL REVIEW D 92, 095014 (2015)
+          B. Large liquid scintillator detectors                         C. Large-scale dark matter detectors
+                                                                                 and 0ν2β detectors
+                        1. Borexino
+                                                                   All of the detectors described above have over 100 tons
+   The Borexino detector is located in the Gran Sasso           (sometimes several kilotons) of detecting material. It is also
+Laboratory in Italy, under 3800 mwe and contains a large        worth noting that underground facilities often house very
+volume liquid scintillator in a 8.5 m diameter vessel [44].     large, Oð1 tonÞ, detectors aimed at the direct dark matter
+The detector registers energy depositions (mainly γ events      detection and/or neutrinoless double-beta decay processes.
+and electron recoils, and with some quenching factor            These include XENON1T [50], LUX [51], DEAP-3600
+penalty it can also observe proton recoils) and offers good     [52], the future LZ experiment [53]—all devoted to DM
+energy resolution with a low threshold (∼200 keV), which        direct detection for > 10-GeV masses—as well as other
+allowed Borexino to measure different components in the         experiments such as e.g. EXO [54] and CUORE [55] that
+solar neutrino flux. It is currently being considered as a      take aim at 0ν2β. Although the active mass in such
+short-baseline detector for neutrinos emitted from an           detectors is smaller than neutrino detectors, some of them
+                                                                have remarkably low-energy thresholds, and are capable of
+intense radioactive source [45].
+                                                                detecting coherent scattering on nuclei. This coherence
+                                                                typically adds another enhancement factor of Z ∼ Oð50Þ,
+                        2. Kamland                              compared to incoherent scattering on electrons, which
+  The Kamland detector is located in Kamioka Mine, a            helps to offset their small mass. In many of the underground
+13-m sphere filled with liquid scintillator. It has played an   facilities these detectors coexist with large neutrino detec-
+important role in the precision determination of neutrino       tors, and therefore it may be possible to perform an
+mass splitting and mixing [46]. It currently has been           accelerator-based search for light DM using multiple
+reprofiled as a tool to search for the neutrinoless double-     detectors hosted in the same laboratory.
+beta decay [47].
+                                                                     IV. BACKGROUNDS FOR UNDERGROUND
+                         3. SNOþ                                           ACCELERATOR BEAM-DUMP
+                                                                                  SEARCHES
+   SNOþ, the upgraded Sudbury Neutrino Observatory
+(SNO) is a 12 m diameter liquid scintillator situated at           One of the advantages of the experimental setup pro-
+≈6000 mwe [48]. The detector features a significant light-      posed in Sec. II is the clean environment that the under-
+yield upgrade over its predecessor, and chief amongst its       ground facilities offer. In this section we discuss the
+current science goals are neutrino-flux measurements            relevant backgrounds that give rise to SM muons and
+from the pp, CNO cycle, from supernovae, in addition            neutrinos, which can mimic the signal from light-DM
+to searching for neutrinoless double-beta decay. SNOþ           scattering off electrons. We split the discussion into
+energy thresholds are expected to be near 200 keV.              beam-related backgrounds arising from reactions in the
+                                                                target or dump and environmental backgrounds arising
+                                                                from ambient radioactivity and cosmic rays traversing the
+                         4. JUNO
+                                                                detector.
+   The Jiangmen Underground Neutrino Observatory                   We first discuss beam-related backgrounds. For the
+(JUNO) is a multipurpose neutrino oscillation experiment        proposal in this study which relies on an electron beam
+[49] situated 700 m underground and currently under             running at an energy below mπ, beam-related backgrounds
+construction, with data taking expected to commence in          may arise from a few sources. Direct production of
+2020. The detector itself is a 35.5 m diameter liquid           neutrinos in reactions due to weak neutral or charged
+scintillator embedded in a water pool which will also serve     currents, eN → eN ν̄ν and eN → νe N 0 þ X, followed by
+as a Čerenkov muon veto.                                        neutrino scattering in a detector, νN → νN 0 þ X or
+                                                                νe → νe, is small. Indeed, the production cross section
+                         5. DUNE                                is ≈fb=nucleon [56], giving only up to 105 –106 neutrinos
+                                                                with Eν ∼ beam energy produced in one year’s running and
+  Another interesting opportunity may arise from the            assuming an aluminum beam dump. For a neutrino to fake
+DUNE (LBNF) project. A detector containing 40 kton              the DM signal, it needs to subsequently scatter in the
+of liquid argon is planned to be built at the Sanford           detector situated behind the dump. The probability for a
+Underground Research Facility (SURF), at a depth of             neutrino to scatter off an electron in the detector is given by
+4300 mwe. While the main goal of this detector will be          σ νe→νe nD lD , where nD and lD are the number density and
+observing long-baseline neutrino oscillations, it can also be   longitudinal length of the detector. The scattering cross
+used in conjunction with a linac at SURF.                       section scales as G2F Eν me . Even if the neutrino produced in
+
+
+
+
+                                                          095014-5
+EDER IZAGUIRRE, GORDAN KRNJAIC, AND MAXIM POSPELOV                                 PHYSICAL REVIEW D 92, 095014 (2015)
+the target carries most of the beam energy, the event rate           V. PROJECTED SENSITIVITY AND RESULTS
+from this type of background will be well below the
+                                                                   We now turn our attention to the existing constraints on
+atmospheric neutrino background.
+                                                                DM in the (1–100)-MeV mass range for the class of models
+   A more serious source of beam-related backgrounds is
+                                                                in Eq. (1). One of the strongest limits for DM masses below
+the spallation of nucleons by the electron beam. This may
+                                                                mπ comes from a reinterpretation of results from surface-
+lead to a neutron scattering background and to GF -
+                                                                level neutrino experiments, in particular, LSND’s meas-
+unsuppressed production of neutrinos by resulting βðþÞ          urement of neutrino-electron neutral current scattering [58]
+emitters. The inelastic cross sections of electrons on nuclei   and recast by [11]. Production of DM in such a setup
+can reach ∼mb range, and therefore, the number of               proceeds from protons impinging on a fixed target. The
+produced neutrons and neutrinos will significantly exceed       latter gives rise to mesons in the final state, primarily π 0 ’s
+the direct production discussed in the previous paragraph.      which consequently can decay to either a DM pair or to a
+However, extra neutrons produced this way will be inter-        mediator via π 0 → γ χ̄χ=φφ or π 0 → γA0, and finally with
+cepted by some meters of rock separating the production         decay of the A0 into a DM pair. Once produced, DM
+point from the detector. The neutrino energies will be          detection proceeds analogously to neutrinos, with DM
+limited to Eν ≲ 5 MeV, typical for β processes, and can be      traveling through a near or far detector that is sensitive
+removed by a simple recoil-energy cut. Therefore, both          to the scattering process χT → χT. Here T could be a
+types of backgrounds are reducible. Moreover, a judicial        nucleus, nucleon, or an electron. The results above use the
+choice of beam-dump material can reduce this contamina-         electron-scattering channel. A proposal for further running
+tion even further, so we conclude that the beam-related         at MiniBoone could further improve the constraints at
+backgrounds for the experimental setup we advocate for are      neutrino experiments for higher-mass DM [59].
+negligible.                                                        In the context of DM searches, one of the main
+   The nature of the accelerator beam plays a crucial role in   limitations of neutrino factories is that neutrinos can be
+whether environmental backgrounds are important or not.         a background to the DM signal. In contrast, electron beams
+The highest-intensity beams may only be attained by using       do not suffer from this limitation [19]. In fact, for an
+a CW beam. In that scenario, given the Oð1Þ duty cycles         electron beam with energy of 100 MeV, neutrinos origi-
+common to a CW beam, using timing to reduce cosmic-             nating from muons or pions are no longer kinematically
+related backgrounds is not an available handle, unlike at a     accessible. One of the strongest constraints on light DM
+pulsed beam. Nevertheless, environmental backgrounds            comes in fact from E137 in a manner analogous to neutrino
+can still be reduced to a negligible level through a            experiments [21] where DM production in the target
+combination of existing techniques. We base the following       proceeds via eN → eNA0 =χ̄χ=φφ . E137 sets a constraint
+feasibility argument on the lessons learned from the results    on DM from the nonobservation of anomalous electron-
+by the Borexino Collaboration. First, the radiated massive      recoil events in a detector ∼300 m downstream of the
+A0 from the reaction eN → eNA0 will carry most of the           target.
+beam energy. Assuming a 100-MeV electron beam, this                Another relevant constraint to the parameter space that
+means that one could use a high electron recoil-energy          we focus on is that from B factories. In particular, BABAR’s
+threshold in the detector. In particular, an ER > 5 MeV         search for untagged ϒð3SÞ decays to γ þ invisible [60] was
+threshold would eliminate all radiogenic backgrounds that       reinterpreted by Refs. [19,23] to place limits on DM where
+Borexino has encountered thus far. This still leaves cosmic     the DM could be produced in the reaction eþ e− → γA0 (and
+ray muons, cosmogenic neutrons, and solar neutrinos             similarly for off-shell production of DM). Kaon decays,
+originating from the 8 B → 8 Be þ eþ þ νe reaction in the       and in particular the missing energy mode K þ → π þ νν̄ also
+Sun as a potential source of contamination for a light-DM       impose some constraints on the parameter space of the
+scattering signal. However, these could be significantly        model via K þ → π þ χ̄χ=φφ .
+reduced through a combination of shielding, fiducializa-           While standard nuclear direct detection experiments are
+tion, timing veto following activity in the detector (for       not sensitive to DM masses near the MeV scale, electron
+stopped muons), and directionality, as was attained in          scattering does constrain masses this light. While these
+Ref. [57] (see Fig. 5). We note that while scintillation-       searches are background limited, they still set a
+technology detectors are calorimetric in nature, all of the     conservative limit. In particular, Ref. [30] reinterprets
+scintillator-based detectors that we discuss in this article    XENON10 electron data to set strong limits.
+feature a water Čerenkov component surrounding the main            Other constraints on the kinetic mixing scenario can be
+scintillator volume. Moreover, spatial information on the       derived from LEP which accurately measured the Z boson
+recorded events is achieved through photon time-of-flight       mass. If the kinetic mixing parameter is too large it can
+information from the photomultipliers. In Sec. V we             induce an unobserved shift in mZ , which constrains ϵ ≲
+conservatively adopt a 10-MeV energy threshold, and             10−2 [61].
+assume a background-free experimental setup for our                In Figs. 2 and 3 we present the expected sensitivity of the
+sensitivity estimates.                                          combination of a 100-MeV electron beam impinging on a
+
+
+                                                          095014-6
+MEV-SCALE DARK MATTER DEEP UNDERGROUND                                                   PHYSICAL REVIEW D 92, 095014 (2015)
+
+
+
+
+FIG. 2 (color online). Sensitivity production for 1024 electrons with 100-MeV energies impinging on an aluminum target positioned
+10 m near the SNOþ and Super-K detectors. We conservatively assume thresholds of ER > 10 MeV for which the backgrounds are
+negligible. The CMB and direct detection constraints assume χ=φ constitutes all of the dark matter and regions above the relic curve
+correspond to parameter space for which each scenario can accommodate a subdominant fraction of the total DM (note that for
+subdominant DM, the CMB, and direct detection bounds would also weaken). For the pseudo-Dirac scenario the relic curve was
+computed assuming only a small mass splitting (100 keV < Δ < mχ=φ ) between the states that couple to the A0 so standard freeze-out is
+largely unaffected, but scattering at direct detection experiments is kinematically inaccessible. Since kaon, monophoton, and beam-
+dump constraints do not scale as y, we conservatively adopt αD ¼ 0.5 and mA0 =mχ=φ ¼ 3 to not overstate these bounds; the plotted
+arrows show how the constraint moves when the product αD ðmχ =mA0 Þ4 is reduced by a factor of 10. The dotted LSND × SIDM curve
+denotes where the LSND bound shifts if αD is chosen to satisfy the bound on DM self-interactions σ self =mχ ≲ 0.1 cm2 =g instead of the
+nominal αD ¼ 0.5 which is conservative in other regions of parameter space. Note that for scalar inelastic DM, the key difference
+relative to the right panel is that the Xenon10 region disappears as the scattering can be turned off.
+
+
+beam dump situated ≈10 m from a large underground                    values of αD overstate the sensitivity of collider experi-
+detector, such as that of the SNOþ and Super-K experi-               ments, whose sensitivity largely depends on ϵ only. Smaller
+ments. These results are plotted as a function of the DM             values for mχ=φ =mA0 similarly overstate their sensitivity.
+mass and the variable y ¼ αD ϵ2 ðm4χ =mA0 Þ4 which, up to            Note that Bullet-cluster constraints on DM self-interactions
+small additive corrections, is proportional to the annihila-         [62,63] set an upper bound on αD and therefore on y, which
+tion rate. With this ansatz, the thermal relic target is             we include in Fig. 2.
+invariant on the y vs mχ plane and we do not need to                    Figure 2 considers two scenarios: scalar thermal relic
+assume any particular values of individual inputs for a              DM (right) and Majorana-like (or pseudo-Dirac) DM (left)
+robust comparison with experiment.                                   with a mass splitting2 Δ ≳ 100 keV. The latter scenario is
+   However, some constraints on ϵ (e.g. from LEP or kaon             not subject to constraints from direct detection—because
+decays) do not depend on αD or on the mass ratio mχ =mA0 .           the upscatter is kinematically forbidden at tree level—or
+Thus, we must make conservative assumptions for these                from the CMB because the annihilation is exponentially
+inputs in order to construct y for these bounds. For the             suppressed when the heavier, unstable annihilation partner
+predictive regime of interest, mA0 > 2mχ , the thermal relic         is depopulated before last scattering. For scalar thermal
+annihilation rate is proportional to ϵ2 αD m2χ =m4A0 , so we         relic DM, the minimal symmetric realization is cosmologi-
+choose both αD and the ratio mχ =mA0 to be Oð1Þ, which               cally viable because the p-wave annihilation rate is sharply
+reveals the maximum parameter space on the y vs mχ plane;            redshifted at the epoch of recombination, thereby greatly
+                                                                     alleviating the CMB bound.
+it is always trivially easy to overstate these bounds by
+choosing smaller values of these quantities, which shifts the
+y contours for collider and kaon bounds downwards by a                   2
+large amount, so this approach is the most conservative. In              For MeV-scale DM, the splitting can be much smaller
+                                                                     ∼OðkeVÞ to shut off direct detection bounds, but a larger splitting
+particular, we will conservatively adopt αD ¼ 0.5 and                may be necessary in order to sufficiently depopulate the excited
+mχ=φ =mA0 ¼ 1=3 to not overstate the bounds of experi-               state before CMB freeze-out [64], so we conservatively adopt
+ments that do not scale simply with y. For example, smaller          100 keV.
+
+
+
+                                                              095014-7
+EDER IZAGUIRRE, GORDAN KRNJAIC, AND MAXIM POSPELOV                                                            PHYSICAL REVIEW D 92, 095014 (2015)
+                                      Asymmetric Dirac Fermion DM
+           10 4
+                     LEP
+           10 5
+           10 6      BaBar
+           10 7
+ m mA' 4
+
+
+
+
+           10 8                              XENON 10
+
+           10 9
+           10 10     LSND
+                                                                    B
+    D
+
+
+
+
+                                                               CM
+           10 11
+                                                                        sure
+ 2
+
+
+
+
+           10 12                                                rclo
+                            SIDM                             Ove
+                     LSND x
+  y
+
+
+
+
+           10 13
+           10 14     SNO
+           10 15             Supe
+                                 rK
+                     JUNO
+                16
+           10
+                     1                            10                           102
+                                              m    MeV
+
+FIG. 3 (color online). Same parametrization and conventions as                             FIG. 4 (color online). Constraints and projections for the visibly
+Fig. 2, but for asymmetric Dirac fermion DM; the symmetric                                 decaying A0 → eþ e− scenario. The shaded region represents
+version of this scenario is ruled out by the CMB. Note that the                            existing bounds from beam dump and accelerator searches taken
+relic line has been replaced with the lower bound from the CMB.                            from [66]. The red curve is the ten event yield projection for the
+Since the residual antiparticle density in the early Universe scales                       same Super-K setup described above, but deriving a signal yield
+as nχ̄ ∼ expð−σvÞ, a larger annihilation rate exponentially weak-                          from both visible decays and A0 absorption. Comparable projec-
+ens the CMB constraint. Unlike Fig. 2, all unshaded points are                             tions are obtained for other detectors considered above. The
+consistent with achieving the full DM abundance. For scalar                                dashed blue curve represents projections for future visibly
+asymmetric DM (not shown), the plot is similar, only the CMB                               decaying A0 searches reviewed in [66] and the dashed black
+bound is weaker and the “overclosure” curve is shifted upwards                             region represents model-dependent interpretations of supernova
+to match the “relic density” curve in Fig. 2 (right).                                      observations. If additional interactions allow the A0 to thermalize
+                                                                                           with (heavier) DM states also produced during the explosion,
+                                                                                           the energy loss bounds can be alleviated—see discussion
+   In Fig. 3 we show a similar plot for asymmetric Dirac                                   in Sec. V.
+fermion DM coupled to a dark photon. Unlike the particle-
+symmetric Dirac scenario (not shown), which is ruled out                                   thus greatly improving the reach of previous beam-dump
+by the CMB for DM masses below 10 GeV [25,27–29,65],                                       constraints. Although this region is naively excluded by
+this variant remains viable because annihilations at early                                 theorists’ interpretations of the supernova cooling bounds
+times exponentially deplete the antiparticle density before                                from SN-1987a, this constraint is model dependent, so we
+last scattering so the energy injected into the CMB at late                                present it as a dashed black line in Fig. 4. For example, if in
+times is reduced. Since the antiparticle density scales as                                 addition to A0 there is an additional mediator A00 and light-
+nχ̄ ∼ expð−σvÞ ∝ expð−yÞ, larger values of y are less                                      DM χ that are fully thermalized during the SN explosion,
+constrained, so the CMB imposes a lower bound on y                                         the A0 − χ interaction can also keep A0 thermalized and
+for this class of models. In setting this limit, we demand                                 quench the energy loss through A0 emission. Therefore, the
+that σv=mχ ∼ 10−28 cm3 =s=GeV [28] while fixing the                                        sensitivity reach to visible decays adds value to the
+observed DM abundance at late times [26].                                                  proposed setup.
+   The projected reach of the proposed setup is quite
+significant. For DM lighter than 10’s of MeV, our proposed
+                                                                                                                 VI. DISCUSSION
+production and rescattering search can exceed the LSND
+reach by many orders of magnitude and completely cover                                        This paper proposes a new experimental setup to probe
+all viable thermal scenarios whose freeze-out abundance is                                 MeV-scale DM. The powerful combination of a low-energy
+set by χ χ̄ðφφ Þ → eþ e− annihilation. Only a dedicated                                   high-intensity electron beam situated near a large-scale
+missing momentum fixed-target scheme, Ref. [22], can                                       detector underground can be complementary to existing
+offer more sensitivity since the yield for that setup scales as                            proposals using electron direct detection [30,67], fixed-
+ϵ2 instead of ϵ4 .                                                                         target missing momentum [22] and future B factories [23]
+   Finally, for completeness we also include the constraints                               (for similar proposals using proton beams underground see
+on the visibly decaying A0 scenario in Fig. 4. We observe                                  Refs. [31,34]). In particular, it is capable of surpassing the
+that the proposed setup would be the most sensitive direct                                 sensitivity of LSND, a surface-level neutrino detector
+probe of this parameter space, via the reaction A0 → ll,                                   benefiting from a high-intensity proton beam, and
+
+
+                                                                                     095014-8
+MEV-SCALE DARK MATTER DEEP UNDERGROUND                                                    PHYSICAL REVIEW D 92, 095014 (2015)
+decisively probing thermal DM lighter than ∼10’s of MeV                                ACKNOWLEDGMENTS
+in some of the simplest light-DM scenarios. Given that
+                                                                        We thank Philip Schuster and Natalia Toro for helpful
+many underground detectors have already achieved their
+                                                                      conversations. The Perimeter Institute for Theoretical
+original physics goals, a light-DM search via accelerator
+                                                                      Physics is supported by the Government of Canada through
+production may add an exciting new application to these
+                                                                      Industry Canada and by the Province of Ontario.
+facilities.
+
+
+
+
+ [1] P. Cushman, C. Galbiati, D. McKinsey, H. Robertson, T.           [26] T. Lin, H.-B. Yu, and K. M. Zurek, Phys. Rev. D 85, 063503
+     Tait et al., arXiv:1310.8327.                                         (2012).
+ [2] C. Boehm, T. Ensslin, and J. Silk, J. Phys. G 30, 279 (2004).    [27] S. Galli, F. Iocco, G. Bertone, and A. Melchiorri, Phys. Rev.
+ [3] C. Boehm and P. Fayet, Nucl. Phys. B683, 219 (2004).                  D 84, 027302 (2011).
+ [4] M. Pospelov, A. Ritz, and M. B. Voloshin, Phys. Lett. B          [28] M. S. Madhavacheril, N. Sehgal, and T. R. Slatyer, Phys.
+     662, 53 (2008).                                                       Rev. D 89, 103508 (2014).
+ [5] M. Pospelov, Phys. Rev. D 80, 095002 (2009).                     [29] P. Ade et al. (Planck Collaboration), Astron. Astrophys.
+ [6] N. Arkani-Hamed, D. P. Finkbeiner, T. R. Slatyer, and N.              571, A16 (2014).
+     Weiner, Phys. Rev. D 79, 015014 (2009).                          [30] R. Essig, A. Manalaysay, J. Mardon, P. Sorensen, and T.
+ [7] M. Pospelov and A. Ritz, Phys. Lett. B 671, 391 (2009).               Volansky, Phys. Rev. Lett. 109, 021301 (2012).
+ [8] E. Izaguirre, G. Krnjaic, P. Schuster, and N. Toro,              [31] Y. Kahn, G. Krnjaic, J. Thaler, and M. Toups, Phys. Rev. D
+     arXiv:1505.00011.                                                     91, 055006 (2015).
+ [9] P. Jean, J. Knoedlseder, V. Lonjou, M. Allain, J.-P. Roques      [32] J. M. Conrad, M. H. Shaevitz, I. Shimizu, J. Spitz, M.
+     et al., Astron. Astrophys. 407, L55 (2003).                           Toups, and L. Winslow, Phys. Rev. D 89, 072010 (2014).
+[10] B. Batell, M. Pospelov, and A. Ritz, Phys. Rev. D 80,            [33] C. Aberle, A. Adelmann, J. Alonso, W. Barletta, R. Barlow
+     095024 (2009).                                                        et al., arXiv:1307.2949.
+[11] P. deNiverville, M. Pospelov, and A. Ritz, Phys. Rev. D 84,      [34] E. Izaguirre, G. Krnjaic, and M. Pospelov, Phys. Lett. B 740,
+     075020 (2011).                                                        61 (2015).
+[12] P. deNiverville, D. McKeen, and A. Ritz, Phys. Rev. D 86,        [35] B. Holdom, Phys. Lett. 166B, 196 (1986).
+     035022 (2012).                                                   [36] L. Okun, Sov. Phys. JETP 56, 502 (1982).
+[13] P. deNiverville, M. Pospelov, and A. Ritz,                       [37] R. T. D’Agnolo and J. T. Ruderman, Phys. Rev. Lett. 115,
+     arXiv:1505.07805 [Phys. Rev. D (to be published)].                    061301 (2015).
+[14] C. Bird, P. Jackson, R. V. Kowalewski, and M. Pospelov,          [38] J. Alwall, R. Frederix, S. Frixione, V. Hirschi, F. Maltoni, O.
+     Phys. Rev. Lett. 93, 201803 (2004).                                   Mattelaer, H.-S. Shao, T. Stelzer, P. Torrielli, and M. Zaro,
+[15] M. Ablikim et al. (BES Collaboration), Phys. Rev. Lett. 100,          J. High Energy Phys. 07 (2014) 079.
+     192001 (2008).                                                   [39] R. Essig, P. Schuster, N. Toro, and B. Wojtsekhowski,
+[16] S. Adler et al. (E787 Collaboration), Phys. Rev. D 70,                J. High Energy Phys. 02 (2011) 009.
+     037102 (2004).                                                   [40] Y.-S. Tsai, Rev. Mod. Phys. 46, 815 (1974).
+[17] A. Artamonov et al. (BNL-E949 Collaboration), Phys. Rev.         [41] Y. Fukuda et al. (Super-Kamiokande Collaboration), Nucl.
+     D 79, 092004 (2009).                                                  Instrum. Methods Phys. Res., Sect. A 501, 418 (2003).
+[18] M. J. Dolan, C. McCabe, F. Kahlhoefer, and K. Schmidt-           [42] M. Nakahata et al. (Super-Kamiokande Collaboration),
+     Hoberg, J. High Energy Phys. 03 (2015) 171.                           Nucl. Instrum. Methods Phys. Res., Sect. A 421, 113
+[19] E. Izaguirre, G. Krnjaic, P. Schuster, and N. Toro, Phys. Rev.        (1999).
+     D 88, 114015 (2013).                                             [43] K. Abe, T. Abe, H. Aihara, Y. Fukuda, Y. Hayato et al.,
+[20] E. Izaguirre, G. Krnjaic, P. Schuster, and N. Toro, Phys. Rev.        arXiv:1109.3262.
+     D 90, 014052 (2014).                                             [44] G. Alimonti et al. (Borexino Collaboration), Nucl. Instrum.
+[21] B. Batell, R. Essig, and Z. Surujon, Phys. Rev. Lett. 113,            Methods Phys. Res., Sect. A 600, 568 (2009).
+     171802 (2014).                                                   [45] G. Bellini et al. (Borexino Collaboration), J. High Energy
+[22] E. Izaguirre, G. Krnjaic, P. Schuster, and N. Toro, Phys. Rev.        Phys. 08 (2013) 038.
+     D 91, 094026 (2015).                                             [46] K. Eguchi et al. (KamLAND Collaboration), Phys. Rev.
+[23] R. Essig, J. Mardon, M. Papucci, T. Volansky, and Y.-M.               Lett. 90, 021802 (2003).
+     Zhong, J. High Energy Phys. 11 (2013) 167.                       [47] A. Gando et al. (KamLAND-Zen Collaboration), Phys. Rev.
+[24] G. Giudice, P. Paradisi, and M. Passera, J. High Energy               Lett. 110, 062502 (2013).
+     Phys. 11 (2012) 113.                                             [48] M. C. Chen (SNOþ Collaboration), arXiv:0810.3694.
+[25] D. P. Finkbeiner, S. Galli, T. Lin, and T. R. Slatyer, Phys.     [49] M. He (JUNO Collaboration), Nucl. Part. Phys. Proc. 265,
+     Rev. D 85, 043522 (2012).                                             111 (2015).
+
+
+
+
+                                                                095014-9
+EDER IZAGUIRRE, GORDAN KRNJAIC, AND MAXIM POSPELOV                                      PHYSICAL REVIEW D 92, 095014 (2015)
+[50] E. Aprile (XENON1T Collaboration), Springer Proc. Phys.         [58] L. Auerbach et al. (LSND Collaboration), Phys. Rev. D 63,
+     148, 93 (2013).                                                      112001 (2001).
+[51] D. Akerib et al. (LUX Collaboration), Phys. Rev. Lett. 112,     [59] R. Dharmapalan et al. (MiniBooNE Collaboration),
+     091303 (2014).                                                       arXiv:1211.2258.
+[52] P. A. Amaudruz, M. Batygov, B. Beltran, J. Bonatt, M.           [60] B. Aubert et al. (BABAR Collaboration), arXiv:0808.0017.
+     Boulay et al., arXiv:1410.7673.                                 [61] A. Hook, E. Izaguirre, and J. G. Wacker, Adv. High Energy
+[53] D. Malling, D. Akerib, H. Araujo, X. Bai, S. Bedikian et al.,        Phys. 2011, 1 (2011).
+     arXiv:1110.0103.                                                [62] J. Miralda-Escude, Astrophys. J. 564, 60 (2002).
+[54] M. Auger et al. (EXO Collaboration), Phys. Rev. Lett. 109,      [63] R. Bionta, G. Blewitt, C. Bratton, D. Casper, A. Ciocio
+     032505 (2012).                                                       et al., Phys. Rev. Lett. 58, 1494 (1987).
+[55] D. Artusa et al. (CUORE Collaboration), Adv. High Energy        [64] M. Gonzalez and N. Toro (to be published).
+     Phys. 2015, 1 (2015).                                           [65] S. Galli, F. Iocco, G. Bertone, and A. Melchiorri, Phys. Rev.
+[56] K. Olive et al. (Particle Data Group), Chin. Phys. C 38,             D 80, 023505 (2009).
+     090001 (2014).                                                  [66] R. Essig, J. A. Jaros, W. Wester, P. H. Adrian, S. Andreas
+[57] G. Bellini et al. (Borexino Collaboration), Phys. Rev. D 85,         et al., arXiv:1311.0029.
+     092003 (2012).                                                  [67] Y. Hochberg, Y. Zhao, and K. M. Zurek, arXiv:1504.07237.
+
+
+
+
+                                                               095014-10
+

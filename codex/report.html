@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark-Photon Theory, Sources, Energy Scales, and Experimental Reach</title>
+  <style>
+    :root { --ink:#171717; --muted:#5f6368; --line:#d7d9dc; --wash:#f5f6f7; --accent:#075f64; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:#fff; font:16px/1.58 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header, main, footer { width:min(1180px, calc(100% - 40px)); margin:auto; }
+    header { padding:58px 0 24px; border-bottom:2px solid var(--ink); }
+    h1 { max-width:920px; margin:0; font-size:clamp(2rem,5vw,4.3rem); line-height:1.03; letter-spacing:-.045em; }
+    h2 { margin:58px 0 14px; font-size:1.75rem; letter-spacing:-.02em; }
+    h3 { margin:32px 0 8px; font-size:1.12rem; }
+    p { max-width:850px; margin:10px 0; }
+    nav { display:flex; flex-wrap:wrap; gap:8px 18px; padding:18px 0 2px; }
+    a { color:var(--accent); text-underline-offset:2px; }
+    nav a { font-size:.92rem; font-weight:650; text-decoration:none; }
+    .lede { max-width:900px; font-size:1.18rem; }
+    .note { margin:18px 0; padding:14px 18px; border-left:4px solid var(--accent); background:var(--wash); max-width:900px; }
+    .formula { overflow:auto; margin:16px 0; padding:15px 18px; border:1px solid var(--line); background:#fafafa; font-family:"Cambria Math",serif; font-size:1.08rem; }
+    .table-wrap { overflow-x:auto; margin:16px 0 26px; }
+    table { width:100%; border-collapse:collapse; font-size:.91rem; }
+    th, td { padding:10px 11px; border:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { background:#ebedef; font-weight:750; }
+    tbody tr:nth-child(even) { background:#fafafa; }
+    ul, ol { max-width:900px; }
+    li { margin:6px 0; }
+    sup a { text-decoration:none; font-weight:700; }
+    .tag { display:inline-block; padding:1px 6px; border:1px solid; font-size:.76rem; font-weight:700; letter-spacing:.03em; text-transform:uppercase; white-space:nowrap; }
+    .status-result { border-color:#316b42; color:#245332; }
+    .status-projection { border-color:#8b6a16; color:#6c510d; }
+    .small { color:var(--muted); font-size:.88rem; }
+    .refs { padding-left:24px; }
+    .refs li { margin:10px 0; }
+    footer { margin-top:60px; padding:24px 0 50px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
+    @media print { nav { display:none; } a { color:inherit; } header,main,footer { width:100%; } body { font-size:11pt; } h2 { break-after:avoid; } table { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Dark-Photon Theory, Sources, Energy Scales, and Experimental Reach</h1>
+  <nav aria-label="Report sections">
+    <a href="#findings">Findings</a><a href="#definitions">Definitions</a><a href="#taxonomy">Theory</a>
+    <a href="#scales">Mass and energy</a><a href="#sources">Sources</a><a href="#experiments">Experiments</a>
+    <a href="#caveats">Caveats</a><a href="#library">Paper library</a><a href="#references">References</a>
+  </nav>
+</header>
+
+<main>
+  <section id="findings">
+    <h2>Core findings</h2>
+    <p class="lede">“Dark photon” does not name one experimental target. It covers a hidden U(1) gauge boson whose observable behavior changes with its mass, mass-generation mechanism, dark-sector spectrum, production history, and kinetic mixing with the ordinary photon. A single exclusion curve is therefore meaningful only after its assumptions are stated.</p>
+    <ul>
+      <li>The minimal massive model has two portal parameters, dark-photon mass <i>m</i><sub>A′</sub> and kinetic mixing ε. Invisible decays add at least a dark-matter mass <i>m</i><sub>χ</sub> and dark coupling α<sub>D</sub>.</li>
+      <li>The main theory split is massless versus massive. Massive models split again by dark-Higgs versus Stückelberg mass generation and by visible, invisible, or cosmologically stable decays.<sup><a href="#ref-2">2</a>,<a href="#ref-3">3</a></sup></li>
+      <li>The search landscape spans at least 20 orders of magnitude in mass: ultralight wave dark matter below 10<sup>−12</sup> eV, resonant radio/microwave searches around μeV, stellar and direct-absorption probes through eV–keV, and accelerator searches from MeV to tens of GeV.</li>
+      <li>Mass is not beam energy. A 20 MeV dark photon can be produced with a 100 GeV electron beam or in 13.6 TeV proton collisions. Mass fixes thresholds and lifetime; laboratory energy fixes boost, acceptance, and decay location.</li>
+      <li>Representative null results reach ε≈10<sup>−16</sup> at isolated μeV masses for dark-photon dark matter, ε≈10<sup>−12</sup>–10<sup>−9</sup> in selected ultralight laboratory bands, ε≈10<sup>−5</sup>–10<sup>−4</sup> for long-lived MeV dark photons, and ε≈10<sup>−4</sup>–10<sup>−3</sup> for prompt visible MeV–GeV searches. These numbers cannot be compared without matching the underlying assumptions.</li>
+      <li>No accepted discovery exists. Published results are exclusions or projections. The minimal dark-photon explanation of the muon anomalous magnetic moment is strongly constrained by complementary visible and invisible searches.<sup><a href="#ref-12">12</a>,<a href="#ref-13">13</a>,<a href="#ref-15">15</a></sup></li>
+    </ul>
+    <div class="note"><strong>Scope.</strong> Literature checked through 11 September 2026. The report prioritizes the canonical kinetically mixed vector portal. Gauged B−L, L<sub>μ</sub>−L<sub>τ</sub>, baryonic vectors, mirror photons, and composite dark vectors are adjacent models, not interchangeable with the minimal electromagnetic-current dark photon.</div>
+  </section>
+
+  <section id="definitions">
+    <h2>Definitions and parameters</h2>
+    <p>A compact low-energy Lagrangian for the canonical massive dark photon is</p>
+    <div class="formula">ℒ ⊃ −¼F<sub>μν</sub>F<sup>μν</sup> − ¼F′<sub>μν</sub>F′<sup>μν</sup> − (ε/2)F<sub>μν</sub>F′<sup>μν</sup> + ½m<sub>A′</sub><sup>2</sup>A′<sub>μ</sub>A′<sup>μ</sup> + eJ<sub>EM</sub><sup>μ</sup>A<sub>μ</sub>.</div>
+    <p>After diagonalizing the kinetic terms, a massive A′ couples approximately as εeA′<sub>μ</sub>J<sub>EM</sub><sup>μ</sup>. Holdom identified the renormalizable mixing between two Abelian gauge fields and its connection to shifted effective charges.<sup><a href="#ref-1">1</a></sup> The coupling can arise from heavy particles charged under both U(1) groups. Loop expectations are model dependent; very small ε is technically possible.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Symbol</th><th>Meaning</th><th>Why it matters</th></tr></thead>
+      <tbody>
+        <tr><td>m<sub>A′</sub></td><td>Dark-photon rest mass</td><td>Sets oscillation frequency, thresholds, lifetime, and accessible production modes.</td></tr>
+        <tr><td>ε or χ</td><td>Photon–dark-photon kinetic mixing</td><td>Controls production and coupling to electric charge. Literature uses both symbols.</td></tr>
+        <tr><td>α<sub>D</sub>=g<sub>D</sub><sup>2</sup>/4π</td><td>Dark-sector fine-structure constant</td><td>Controls A′ coupling to dark-sector states and invisible decay width.</td></tr>
+        <tr><td>m<sub>χ</sub></td><td>Dark-matter or other invisible-state mass</td><td>A′→χχ opens when m<sub>A′</sub>&gt;2m<sub>χ</sub>.</td></tr>
+        <tr><td>y=ε<sup>2</sup>α<sub>D</sub>(m<sub>χ</sub>/m<sub>A′</sub>)<sup>4</sup></td><td>Thermal-target variable in common light-DM benchmarks</td><td>Useful for comparing accelerator reach with freeze-out, but only after fixing spin, mass ratio, and cosmology.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="taxonomy">
+    <h2>Theory taxonomy</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Kind</th><th>Defining physics</th><th>Typical signature</th><th>Main qualification</th></tr></thead>
+      <tbody>
+        <tr><td>Massless dark photon</td><td>Unbroken U(1)<sub>D</sub>. With dark-charged matter, field redefinitions expose effective millicharges.</td><td>Millicharged-particle production, scattering, cosmology, long-range dark forces.</td><td>Kinetic mixing alone is not an observable second photon if no suitable dark-sector charges exist.</td></tr>
+        <tr><td>Massive, visible</td><td>Dark Higgs or Stückelberg mass; A′ is the lightest accessible dark state.</td><td>Narrow e<sup>+</sup>e<sup>−</sup>, μ<sup>+</sup>μ<sup>−</sup>, or hadronic resonance; prompt or displaced.</td><td>Visible branching ratios change across lepton and hadron thresholds.</td></tr>
+        <tr><td>Massive, invisible mediator</td><td>Lighter χ states exist and α<sub>D</sub> dominates over ε<sup>2</sup>α.</td><td>Missing energy/momentum; downstream χ scattering.</td><td>Limits depend on α<sub>D</sub>, m<sub>χ</sub>/m<sub>A′</sub>, χ spin, and decay assumptions.</td></tr>
+        <tr><td>Dark-photon dark matter</td><td>A′ itself is long-lived, nonrelativistic, and constitutes some or all of the halo.</td><td>Coherent oscillating electric/magnetic field, resonant conversion, absorption, or surface emission.</td><td>Reach assumes a local density, velocity distribution, and polarization model.<sup><a href="#ref-7">7</a>,<a href="#ref-8">8</a></sup></td></tr>
+        <tr><td>Thermal vector-portal dark matter</td><td>A′ mediates freeze-out between χ and the Standard Model.</td><td>Invisible A′ production or χ scattering.</td><td>“Thermal target” is a family of curves, not a model-independent line.</td></tr>
+        <tr><td>Nonminimal dark sector</td><td>Inelastic states, dark Higgs, dark showers, composite vectors, or extra portals.</td><td>Displaced vertices, semi-visible jets, cascades, mixed visible/missing final states.</td><td>Minimal ε–m<sub>A′</sub> exclusions may not apply directly.</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Mass generation</h3>
+    <p>A dark Higgs gives A′ a mass through spontaneous symmetry breaking and predicts at least one additional scalar. A Stückelberg construction can generate a gauge-invariant mass without a light radial Higgs in the low-energy spectrum. Both lead to a massive vector portal, but their ultraviolet consistency and early-Universe behavior can differ.<sup><a href="#ref-3">3</a></sup></p>
+    <h3>Decay regimes</h3>
+    <p>The electron-pair threshold at 2m<sub>e</sub>≈1.022 MeV is a structural boundary. Above it, visible A′→e<sup>+</sup>e<sup>−</sup> is allowed. Muon and hadron channels open at higher masses. If m<sub>A′</sub>&gt;2m<sub>χ</sub> and the dark coupling is large enough, invisible decay can dominate. Below the e<sup>+</sup>e<sup>−</sup> threshold, a minimal A′ is extremely long-lived and stellar, cosmological, oscillation, or absorption probes become central.<sup><a href="#ref-2">2</a></sup></p>
+  </section>
+
+  <section id="scales">
+    <h2>Mass and energy map</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Dark-photon mass</th><th>Equivalent frequency / scale</th><th>Dominant concepts</th><th>Representative probes</th></tr></thead>
+      <tbody>
+        <tr><td>10<sup>−22</sup>–10<sup>−15</sup> eV</td><td>nHz–sub-Hz</td><td>Coherent ultralight field; structure formation and gravitational/precision effects</td><td>Cosmology, pulsar timing, equivalence/force tests; production model is critical.</td></tr>
+        <tr><td>4.1×10<sup>−15</sup>–2.1×10<sup>−12</sup> eV</td><td>1–500 Hz</td><td>Macroscopic coherence</td><td>Long-baseline atomic-magnetometer network.<sup><a href="#ref-24">24</a></sup></td></tr>
+        <tr><td>4×10<sup>−12</sup>–2×10<sup>−9</sup> eV</td><td>1–500 kHz</td><td>Shield-enhanced electromagnetic response</td><td>NASDUCK′ null-axis magnetometry.<sup><a href="#ref-25">25</a></sup></td></tr>
+        <tr><td>2×10<sup>−7</sup>–6×10<sup>−6</sup> eV</td><td>50 MHz–1.4 GHz</td><td>Photon–A′ oscillation; wave dark matter</td><td>SRF light-shining-through-wall and resonant cavities.<sup><a href="#ref-18">18</a></sup></td></tr>
+        <tr><td>5–110 μeV</td><td>1.3–26.5 GHz</td><td>Virialized halo field</td><td>SRF haloscopes, qubits, ADMX-Orpheus, DOSUE-RR, GigaBREAD.<sup><a href="#ref-19">19</a>–<a href="#ref-23">23</a></sup></td></tr>
+        <tr><td>meV–eV</td><td>THz–optical</td><td>Surface conversion, absorption, stellar emission</td><td>Dish antennas, optical sensors, solar and red-giant cooling.</td></tr>
+        <tr><td>eV–keV</td><td>Optical–X-ray</td><td>Absorption/ionization; solar and cosmic production</td><td>Semiconductors, xenon, stellar evolution, X-ray observations.</td></tr>
+        <tr><td>1–100 MeV</td><td>Nuclear/meson scale</td><td>e<sup>+</sup>e<sup>−</sup> threshold, meson decay, bremsstrahlung; often long-lived at small ε</td><td>NA48/2, beam dumps, NA64, HPS, FASER, DarkQuest.</td></tr>
+        <tr><td>0.1–10 GeV</td><td>Fixed-target and flavor-factory scale</td><td>Leptonic/hadronic resonances or invisible decays</td><td>BaBar, KLOE, BESIII, Belle II, LHCb, LDMX.</td></tr>
+        <tr><td>10–70+ GeV</td><td>Electroweak/collider scale</td><td>Drell–Yan, Higgs/Z decays, dilepton resonances</td><td>LHCb, ATLAS/CMS, electroweak precision fits.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small">Frequency conversion uses E=hν: 1 eV corresponds to about 241.8 THz. For nonrelativistic halo A′, signal energy is approximately m<sub>A′</sub>c<sup>2</sup>; for accelerator production, E<sub>A′</sub> can be many orders of magnitude larger than m<sub>A′</sub>c<sup>2</sup>.</p>
+  </section>
+
+  <section id="sources">
+    <h2>Dark-photon sources and production mechanisms</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Source</th><th>Mechanism</th><th>Characteristic energy</th><th>What is constrained or detected</th></tr></thead>
+      <tbody>
+        <tr><td>Quantum vacuum / heavy portal matter</td><td>Loops of particles charged under U(1)<sub>Y</sub> or electromagnetism and U(1)<sub>D</sub> generate kinetic mixing.</td><td>Set by mediator masses in the ultraviolet theory</td><td>Motivates ε; does not itself produce a detectable flux.<sup><a href="#ref-1">1</a>,<a href="#ref-3">3</a></sup></td></tr>
+        <tr><td>Early Universe</td><td>Misalignment, inflationary fluctuations, freeze-in, thermal processes, decays of other fields</td><td>From Hubble-scale production to thermal plasma energies</td><td>Relic abundance, isocurvature, CMB distortions, structure formation.<sup><a href="#ref-7">7</a>,<a href="#ref-8">8</a></sup></td></tr>
+        <tr><td>Galactic halo</td><td>Nonrelativistic dark-photon dark matter</td><td>E≈m<sub>A′</sub>; fractional linewidth typically O(10<sup>−6</sup>)</td><td>Coherent field, resonant conversion, absorption, dish emission.</td></tr>
+        <tr><td>Sun and ordinary stars</td><td>In-medium photon conversion and plasma emission; longitudinal modes dominate important low-mass regimes</td><td>Related to local plasma frequencies and stellar temperatures</td><td>Extra energy loss and possible solar flux. Solar bound χ&lt;4×10<sup>−12</sup>(eV/m) below roughly 3 eV in the cited analysis.<sup><a href="#ref-9">9</a>,<a href="#ref-10">10</a></sup></td></tr>
+        <tr><td>Core-collapse supernovae</td><td>Nucleon bremsstrahlung and in-medium processes; free streaming at small coupling, trapping at larger coupling</td><td>Typically tens of MeV</td><td>Duration/energy of the SN1987A neutrino burst. Nuclear and proto-neutron-star modeling produce order-unity systematic shifts.<sup><a href="#ref-11">11</a></sup></td></tr>
+        <tr><td>Electron/positron fixed targets</td><td>Dark bremsstrahlung eZ→eZA′ or annihilation e<sup>+</sup>e<sup>−</sup>→γA′</td><td>Hundreds of MeV to 100 GeV beam energy</td><td>Visible resonance/displacement or missing energy/momentum.<sup><a href="#ref-6">6</a>,<a href="#ref-15">15</a></sup></td></tr>
+        <tr><td>Proton targets and colliders</td><td>π<sup>0</sup>, η and heavier-meson decays; proton bremsstrahlung; partonic production</td><td>GeV–TeV projectile or collision energy</td><td>Long-lived decays downstream, dilepton resonances, missing signatures.<sup><a href="#ref-17">17</a>,<a href="#ref-27">27</a></sup></td></tr>
+        <tr><td>Photon sources</td><td>γ↔A′ oscillation across a wall; longitudinal-mode enhancement in suitable cavities</td><td>RF, microwave, optical</td><td>Model-minimal laboratory mixing limit independent of a dark-matter halo.<sup><a href="#ref-18">18</a></sup></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="experiments">
+    <h2>Experiments: exclusions and calculated sensitivity</h2>
+    <p>The table selects representative results and proposals. “Result” means analyzed data and a reported exclusion. “Projection” means simulated or estimated reach. Quoted values reproduce the cited paper’s abstract or headline result and should not be interpolated beyond the stated mass interval.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Experiment / paper</th><th>Production or source</th><th>Mass range</th><th>Signature</th><th>Headline reach</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>BaBar visible</td><td>e<sup>+</sup>e<sup>−</sup>→γA′ at ≈10.58 GeV collider energy</td><td>0.02–10.2 GeV</td><td>Narrow e<sup>+</sup>e<sup>−</sup>/μ<sup>+</sup>μ<sup>−</sup> resonance</td><td>90% CL ε limits at roughly 10<sup>−4</sup>–10<sup>−3</sup>.<sup><a href="#ref-12">12</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>BaBar invisible</td><td>e<sup>+</sup>e<sup>−</sup>→γA′</td><td>m<sub>A′</sub>≤8 GeV</td><td>Single photon plus missing energy</td><td>90% CL coupling limits; excludes the minimal invisible-A′ muon-g−2 interpretation in its scanned region.<sup><a href="#ref-13">13</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>NA48/2</td><td>π<sup>0</sup>→γA′</td><td>9–70 MeV</td><td>A′→e<sup>+</sup>e<sup>−</sup> mass peak</td><td>At publication, stronger ε<sup>2</sup> limits than previous searches in this interval.<sup><a href="#ref-14">14</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>NA64 electron mode</td><td>100 GeV e<sup>−</sup> dark bremsstrahlung</td><td>Sub-GeV; first result emphasized &lt;100 MeV</td><td>Large missing energy in active target</td><td>First direct result excluded invisible A′ below 100 MeV as the muon-g−2 explanation.<sup><a href="#ref-15">15</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>LHCb</td><td>13 TeV pp collisions</td><td>Near 2m<sub>μ</sub>–70 GeV prompt; 214–350 MeV displaced</td><td>Prompt or displaced μ<sup>+</sup>μ<sup>−</sup></td><td>90% CL ε limits; first displaced-vertex sensitivity in this channel.<sup><a href="#ref-16">16</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>FASER</td><td>Forward mesons/bremsstrahlung from 13.6 TeV pp collisions</td><td>≈17–70 MeV</td><td>Long-lived A′→e<sup>+</sup>e<sup>−</sup></td><td>No events in 27 fb<sup>−1</sup>; ε≈2×10<sup>−5</sup>–10<sup>−4</sup> excluded over stated masses.<sup><a href="#ref-17">17</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>Dark SRF</td><td>1.3 GHz light shining through wall</td><td>2.1×10<sup>−7</sup>–5.7×10<sup>−6</sup> eV</td><td>Regenerated RF field</td><td>ε down to 1.6×10<sup>−9</sup>; best reported bounds in that band at publication.<sup><a href="#ref-18">18</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>Superconducting qubit</td><td>Local halo DPDM in microwave cavity</td><td>24.86 μeV narrow band</td><td>Repeated photon-number measurement</td><td>ε≤1.68×10<sup>−15</sup> near 6.011 GHz.<sup><a href="#ref-19">19</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>SRF haloscope</td><td>Local halo DPDM</td><td>5.35 μeV narrow band</td><td>Microwave power excess</td><td>Excluded χ&gt;1.5×10<sup>−16</sup> at the target mass.<sup><a href="#ref-20">20</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>ADMX-Orpheus</td><td>Local halo DPDM</td><td>65.5–69.3 μeV</td><td>Tunable dielectrically loaded cavity</td><td>90% CL exclusion across 15.8–16.8 GHz; polarization assumptions are reported separately.<sup><a href="#ref-21">21</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>DOSUE-RR</td><td>DPDM conversion at metal surface</td><td>74–110 μeV</td><td>18–26.5 GHz photons</td><td>95% CL χ&lt;(0.3–2.0)×10<sup>−10</sup>.<sup><a href="#ref-22">22</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>GigaBREAD</td><td>DPDM conversion on coaxial dish</td><td>44–52 μeV</td><td>10.7–12.5 GHz broadband power</td><td>90% CL exclusion around χ≳10<sup>−12</sup>, with frequency-dependent structure.<sup><a href="#ref-23">23</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>Long-baseline sensor network</td><td>Halo DPDM-induced correlated fields</td><td>4.1 feV–2.1 peV</td><td>Cross-correlation of 15 atomic magnetometers over 1700 km</td><td>Strongest terrestrial constraints in that band at publication.<sup><a href="#ref-24">24</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>NASDUCK′</td><td>Halo DPDM in conducting shield</td><td>4×10<sup>−12</sup>–2×10<sup>−9</sup> eV</td><td>Three-axis null-reference magnetometry</td><td>Improves previous laboratory bounds by as much as three orders of magnitude.<sup><a href="#ref-25">25</a></sup></td><td><span class="tag status-result">Result</span></td></tr>
+        <tr><td>LDMX missing momentum</td><td>Multi-GeV electron fixed target</td><td>Sub-GeV mediator/DM focus</td><td>Large recoil-electron momentum loss with vetoes</td><td>Initial design projects orders-of-magnitude coupling improvement and thermal-target coverage for benchmark models.<sup><a href="#ref-26">26</a></sup></td><td><span class="tag status-projection">Projection</span></td></tr>
+        <tr><td>DarkQuest</td><td>120 GeV proton fixed target</td><td>MeV–GeV</td><td>Visible displaced dark-sector decays</td><td>Projected leading reach for several long-lived visible benchmarks.<sup><a href="#ref-27">27</a></sup></td><td><span class="tag status-projection">Projection</span></td></tr>
+        <tr><td>Belle II long-lived A′</td><td>e<sup>+</sup>e<sup>−</sup> collisions</td><td>MeV–GeV study-dependent range</td><td>Hard photon plus displaced charged pair</td><td>Projected coverage of regions inaccessible to other running/proposed facilities under the study assumptions.<sup><a href="#ref-28">28</a></sup></td><td><span class="tag status-projection">Projection</span></td></tr>
+        <tr><td>LDMX long-lived A′</td><td>Electron fixed target</td><td>Sub-GeV</td><td>Visible displaced decay in a detailed Geant4 study</td><td>2026 projection competitive with currently running experiments, complementary to missing momentum.<sup><a href="#ref-29">29</a></sup></td><td><span class="tag status-projection">Projection</span></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="caveats">
+    <h2>How to read sensitivity and exclusion limits</h2>
+    <ol>
+      <li><strong>Check the model.</strong> A visible A′ limit usually assumes no open dark decay. An invisible limit requires a branching-ratio assumption. A DPDM limit assumes A′ is a specified fraction of local dark matter.</li>
+      <li><strong>Check the axes.</strong> ε, ε<sup>2</sup>, χ, and y appear in different plots. Taking a square root or applying a benchmark transformation can change the visual comparison by orders of magnitude.</li>
+      <li><strong>Check confidence level.</strong> Results commonly quote 90% or 95% CL. Expected sensitivity is not observed exclusion.</li>
+      <li><strong>Check lifetime and boost.</strong> For visible A′ decays, production often scales as ε<sup>2</sup>, while decay length grows roughly as 1/(ε<sup>2</sup>m<sub>A′</sub>) away from thresholds. Acceptance can therefore form a band rather than a simple upper limit.</li>
+      <li><strong>Check medium effects.</strong> Stellar and supernova production depends on plasma mixing, longitudinal modes, opacity, and thermal profiles. SN1987A bounds carry significant modeling uncertainty.<sup><a href="#ref-9">9</a>–<a href="#ref-11">11</a></sup></li>
+      <li><strong>Check halo and polarization assumptions.</strong> Cavity and antenna limits depend on local density and the projection of the dark electric field onto the apparatus. Random and fixed polarization cases need separate treatment.</li>
+      <li><strong>Check theory consistency.</strong> A Proca field used as an effective description does not by itself specify a viable early-Universe production mechanism or ultraviolet completion.<sup><a href="#ref-3">3</a></sup></li>
+    </ol>
+    <h3>Evidence gaps</h3>
+    <ul>
+      <li>There is no universal, assumption-free exclusion envelope across the entire mass range.</li>
+      <li>Ultralight direct searches often cover narrow frequency bands with exceptional ε reach; broad coverage remains incomplete.</li>
+      <li>Supernova bounds remain less controlled than laboratory limits because the source is unique and the core microphysics is uncertain.</li>
+      <li>Invisible thermal-target comparisons should be regenerated for the exact χ spin, mass ratio, α<sub>D</sub>, and cosmological history used in a project.</li>
+      <li>Projected facilities must be labeled separately from operating experiments and published null results.</li>
+    </ul>
+  </section>
+
+  <section id="library">
+    <h2>Curated local paper library</h2>
+    <p>The folder <a href="dark_photon_papers/">dark_photon_papers/</a> contains the cited foundational papers, reviews, representative experimental exclusions, and sensitivity studies. The machine-readable <a href="dark_photon_papers/manifest.tsv">manifest.tsv</a> records arXiv ID, category, title, and selection reason. The first reading sequence is:</p>
+    <ol>
+      <li><a href="dark_photon_papers/27_caputo_essig_2026_perspective.pdf">Caputo &amp; Essig (2026)</a> for the current map.</li>
+      <li><a href="dark_photon_papers/01_fabbrichesi_2020_dark_photon_review.pdf">Fabbrichesi, Gabrielli &amp; Lanfranchi (2020)</a> for massless/massive theory and detailed phenomenology.</li>
+      <li><a href="dark_photon_papers/02_graham_2021_accelerator_review.pdf">Graham, Hearty &amp; Williams (2021)</a> for accelerator methods.</li>
+      <li><a href="dark_photon_papers/07_an_2013_stellar_constraints.pdf">An, Pospelov &amp; Pradler (2013)</a> and <a href="dark_photon_papers/09_chang_2017_sn1987a.pdf">Chang, Essig &amp; McDermott (2017)</a> for astrophysical limits.</li>
+      <li><a href="dark_photon_papers/17_dixit_2020_qubit.pdf">Dixit et al. (2020)</a>, <a href="dark_photon_papers/18_cervantes_2022_srf_haloscope.pdf">Cervantes et al. (2024)</a>, and <a href="dark_photon_papers/26_nasduck_2026_magnetometry.pdf">NASDUCK′ (2026)</a> for ultralight direct detection.</li>
+    </ol>
+  </section>
+
+  <section id="references">
+    <h2>Sources and references</h2>
+    <ol class="refs">
+      <li id="ref-1">B. Holdom, “<a href="https://doi.org/10.1016/0370-2693(86)91377-8">Two U(1)'s and epsilon charge shifts</a>,” <i>Physics Letters B</i> 166 (1986) 196–198.</li>
+      <li id="ref-2">M. Fabbrichesi, E. Gabrielli, G. Lanfranchi, “<a href="https://arxiv.org/abs/2005.01515">The Dark Photon</a>,” SpringerBriefs in Physics (2020). Local: <a href="dark_photon_papers/01_fabbrichesi_2020_dark_photon_review.pdf">PDF</a>.</li>
+      <li id="ref-3">A. Caputo, R. Essig, “<a href="https://arxiv.org/abs/2603.08430">The Dark Photon: a 2026 Perspective</a>” (2026). Local: <a href="dark_photon_papers/27_caputo_essig_2026_perspective.pdf">PDF</a>.</li>
+      <li id="ref-4">M. Graham, C. Hearty, M. Williams, “<a href="https://arxiv.org/abs/2104.10280">Searches for dark photons at accelerators</a>,” <i>Annual Review of Nuclear and Particle Science</i> 71 (2021) 37–58. Local: <a href="dark_photon_papers/02_graham_2021_accelerator_review.pdf">PDF</a>.</li>
+      <li id="ref-5">R. Essig et al., “<a href="https://arxiv.org/abs/1311.0029">Dark Sectors and New, Light, Weakly-Coupled Particles</a>” (2013). Local: <a href="dark_photon_papers/03_essig_2013_dark_sectors_snowmass.pdf">PDF</a>.</li>
+      <li id="ref-6">J. D. Bjorken, R. Essig, P. Schuster, N. Toro, “<a href="https://arxiv.org/abs/0906.0580">New Fixed-Target Experiments to Search for Dark Gauge Forces</a>,” <i>Physical Review D</i> 80, 075018 (2009). Local: <a href="dark_photon_papers/04_bjorken_2009_fixed_target_theory.pdf">PDF</a>.</li>
+      <li id="ref-7">P. Arias et al., “<a href="https://arxiv.org/abs/1201.5902">WISPy Cold Dark Matter</a>,” <i>JCAP</i> 06 (2012) 013. Local: <a href="dark_photon_papers/05_arias_2012_wispy_cold_dark_matter.pdf">PDF</a>.</li>
+      <li id="ref-8">P. W. Graham, J. Mardon, S. Rajendran, “<a href="https://arxiv.org/abs/1504.02102">Vector Dark Matter from Inflationary Fluctuations</a>,” <i>Physical Review D</i> 93, 103520 (2016). Local: <a href="dark_photon_papers/06_graham_2016_vector_dm_inflation.pdf">PDF</a>.</li>
+      <li id="ref-9">H. An, M. Pospelov, J. Pradler, “<a href="https://arxiv.org/abs/1302.3884">New stellar constraints on dark photons</a>,” <i>Physics Letters B</i> 725 (2013) 190–195. Local: <a href="dark_photon_papers/07_an_2013_stellar_constraints.pdf">PDF</a>.</li>
+      <li id="ref-10">J. Redondo, G. Raffelt, “<a href="https://arxiv.org/abs/1305.2920">Solar constraints on hidden photons re-visited</a>,” <i>JCAP</i> 08 (2013) 034. Local: <a href="dark_photon_papers/08_redondo_2013_solar_constraints.pdf">PDF</a>.</li>
+      <li id="ref-11">J. H. Chang, R. Essig, S. D. McDermott, “<a href="https://arxiv.org/abs/1611.03864">Revisiting Supernova 1987A Constraints on Dark Photons</a>,” <i>JHEP</i> 01 (2017) 107. Local: <a href="dark_photon_papers/09_chang_2017_sn1987a.pdf">PDF</a>.</li>
+      <li id="ref-12">BaBar Collaboration, “<a href="https://arxiv.org/abs/1406.2980">Search for a dark photon in e+e− collisions at BABAR</a>,” <i>Physical Review Letters</i> 113, 201801 (2014). Local: <a href="dark_photon_papers/10_babar_2014_visible.pdf">PDF</a>.</li>
+      <li id="ref-13">BaBar Collaboration, “<a href="https://arxiv.org/abs/1702.03327">Search for Invisible Decays of a Dark Photon Produced in e+e− Collisions at BaBar</a>,” <i>Physical Review Letters</i> 119, 131804 (2017). Local: <a href="dark_photon_papers/11_babar_2017_invisible.pdf">PDF</a>.</li>
+      <li id="ref-14">NA48/2 Collaboration, “<a href="https://arxiv.org/abs/1504.00607">Search for the dark photon in π0 decays</a>,” <i>Physics Letters B</i> 746 (2015) 178–185. Local: <a href="dark_photon_papers/12_na48_2015_pi0.pdf">PDF</a>.</li>
+      <li id="ref-15">NA64 Collaboration, “<a href="https://arxiv.org/abs/1610.02988">Search for invisible decays of sub-GeV dark photons in missing-energy events at the CERN SPS</a>,” <i>Physical Review Letters</i> 118, 011802 (2017). Local: <a href="dark_photon_papers/13_na64_2016_invisible.pdf">PDF</a>.</li>
+      <li id="ref-16">LHCb Collaboration, “<a href="https://arxiv.org/abs/1710.02867">Search for dark photons produced in 13 TeV pp collisions</a>,” <i>Physical Review Letters</i> 120, 061801 (2018). Local: <a href="dark_photon_papers/14_lhcb_2017_dimuon.pdf">PDF</a>.</li>
+      <li id="ref-17">FASER Collaboration, “<a href="https://arxiv.org/abs/2308.05587">Search for Dark Photons with the FASER detector at the LHC</a>,” <i>Physics Letters B</i> 848, 138378 (2024). Local: <a href="dark_photon_papers/15_faser_2023_dark_photon.pdf">PDF</a>.</li>
+      <li id="ref-18">A. Romanenko et al., “<a href="https://arxiv.org/abs/2301.11512">New Exclusion Limit for Dark Photons from an SRF Cavity-Based Search (Dark SRF)</a>,” <i>Physical Review Letters</i> 130, 261801 (2023). Local: <a href="dark_photon_papers/16_dark_srf_2023_lsw.pdf">PDF</a>.</li>
+      <li id="ref-19">A. V. Dixit et al., “<a href="https://arxiv.org/abs/2008.12231">Searching for Dark Matter with a Superconducting Qubit</a>,” <i>Physical Review Letters</i> 126, 141302 (2021). Local: <a href="dark_photon_papers/17_dixit_2020_qubit.pdf">PDF</a>.</li>
+      <li id="ref-20">R. Cervantes et al., “<a href="https://arxiv.org/abs/2208.03183">Deepest sensitivity to wavelike dark photon dark matter with superconducting radio frequency cavities</a>,” <i>Physical Review D</i> 110, 043022 (2024). Local: <a href="dark_photon_papers/18_cervantes_2022_srf_haloscope.pdf">PDF</a>.</li>
+      <li id="ref-21">R. Cervantes et al., “<a href="https://arxiv.org/abs/2204.09475">ADMX-Orpheus First Search for 70 μeV Dark Photon Dark Matter</a>,” <i>Physical Review D</i> 106, 102002 (2022). Local: <a href="dark_photon_papers/19_admx_orpheus_2022.pdf">PDF</a>.</li>
+      <li id="ref-22">S. Kotaka et al., “<a href="https://arxiv.org/abs/2205.03679">Search for Dark Photon Dark Matter in the Mass Range 74–110 μeV with a Cryogenic Millimeter-Wave Receiver</a>,” <i>Physical Review Letters</i> 130, 071805 (2023). Local: <a href="dark_photon_papers/20_dosue_rr_2022.pdf">PDF</a>.</li>
+      <li id="ref-23">S. Knirck et al., “<a href="https://arxiv.org/abs/2310.13891">First Results from a Broadband Search for Dark Photon Dark Matter in the 44 to 52 μeV Range with a Coaxial Dish Antenna</a>,” <i>Physical Review Letters</i> 132, 131004 (2024). Local: <a href="dark_photon_papers/21_gigabread_2023.pdf">PDF</a>.</li>
+      <li id="ref-24">M. Jiang et al., “<a href="https://arxiv.org/abs/2305.00890">Long-baseline quantum sensor network as dark matter haloscope</a>,” <i>Nature Communications</i> 15, 3331 (2024). Local: <a href="dark_photon_papers/25_jiang_2024_sensor_network.pdf">PDF</a>.</li>
+      <li id="ref-25">J. Barir et al., “<a href="https://arxiv.org/abs/2602.22308">NASDUCK′: Laboratory Limits on Ultralight Dark-Photon Dark Matter with Null-Axis Magnetometry</a>” (2026). Local: <a href="dark_photon_papers/26_nasduck_2026_magnetometry.pdf">PDF</a>.</li>
+      <li id="ref-26">LDMX Collaboration, “<a href="https://arxiv.org/abs/1808.05219">Light Dark Matter eXperiment (LDMX)</a>” (2018). Local: <a href="dark_photon_papers/22_ldmx_2018_design.pdf">PDF</a>.</li>
+      <li id="ref-27">A. Apyan et al., “<a href="https://arxiv.org/abs/2203.08322">DarkQuest: A dark sector upgrade to SpinQuest at the 120 GeV Fermilab Main Injector</a>” (2022). Local: <a href="dark_photon_papers/23_darkquest_2022.pdf">PDF</a>.</li>
+      <li id="ref-28">T. Ferber, C. Garcia-Cely, K. Schmidt-Hoberg, “<a href="https://arxiv.org/abs/2202.03452">Belle II sensitivity to long-lived dark photons</a>,” <i>Physics Letters B</i> 833, 137373 (2022). Local: <a href="dark_photon_papers/24_belle2_2022_long_lived.pdf">PDF</a>.</li>
+      <li id="ref-29">LDMX Collaboration, “<a href="https://arxiv.org/abs/2604.14359">Expected Sensitivity of the Light Dark Matter eXperiment to Long-Lived Dark Photons and Axion-Like Particles</a>,” <i>JHEP</i> 08 (2026) 062. Local: <a href="dark_photon_papers/28_ldmx_2026_long_lived_sensitivity.pdf">PDF</a>.</li>
+    </ol>
+  </section>
+</main>
+
+<footer>
+  Independent literature synthesis. Numerical limits remain subordinate to the likelihoods, confidence levels, and assumptions in the cited papers.
+</footer>
+</body>
+</html>

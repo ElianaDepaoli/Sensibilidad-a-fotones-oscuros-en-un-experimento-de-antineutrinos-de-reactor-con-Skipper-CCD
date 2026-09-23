@@ -1,0 +1,93 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noquoting,es-nodecimaldot]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue!60!black]{hyperref}
+\newcommand{\Ap}{A'}
+\newcommand{\eps}{\epsilon}
+\newcommand{\dd}{\mathrm{d}}
+\title{Ampliación del informe: el umbral, el rango y la ecuación (50) del apunte}
+\author{E.~L.~De Paoli\\[2pt]\small escrito con asistencia de agentes (Claude Opus 5)}
+\date{21 de septiembre de 2026}
+\begin{document}
+\maketitle
+
+\section{Qué es el umbral}
+El umbral es la energía \emph{mínima del fotón incidente}, $E_\gamma$, para que $\gamma e^-\to \Ap e^-$ sea posible. No es la
+energía máxima del fotón oscuro; esa es $x_+$, otra cantidad. En el centro de masa el mínimo es producir el $\Ap$ y el
+electrón final en reposo relativo, $\sqrt s=m_e+M$. Con el electrón blanco en reposo, $s=m_e^2+2m_eE_\gamma$, así que
+\begin{equation}
+E_{\rm th}=M+\frac{M^2}{2m_e}.
+\end{equation}
+El término $M^2/2m_e$ es retroceso: el sistema final tiene que llevarse el impulso $\vec k$ del fotón, y eso cuesta energía
+cinética que crece con $M$. Para $M=1$~MeV vale $0.98$~MeV: el umbral es $1.98$~MeV. Para $M=0.1$~MeV vale $0.01$~MeV y
+no se nota.
+
+\section{Dónde está el error en el apunte, y dónde no}
+El apunte escribe ``umbral: $\omega\to m_{\Ap}$'' sólo en el Cuadro~1 de la sección 8.2. Ese cuadro no se usa en ninguna
+ecuación que conduzca a la (50). Tu observación es correcta: \textbf{el umbral ingenuo del Cuadro~1 no entra en el
+cálculo de (50) ni en el del número de fotones oscuros.}
+
+El mismo error entra por otro lado: por el rango de integración, ecs.~(24)--(25),
+\begin{equation}
+\omega'\in\Big[\frac{m_e\omega+M^2/2}{2\omega+m_e},\;\omega\Big],
+\label{eq:rango}
+\end{equation}
+que sí se usa cuando (50) se integra sobre $\omega'$ o se convoluciona con el espectro del reactor. El extremo superior
+$\omega'_{\max}=\omega$ es el que está mal: para $M\neq0$ el $\Ap$ nunca se lleva toda la energía del fotón. El rango
+exacto es
+\begin{equation}
+x_\pm=\frac{(E_\gamma+m_e)(s+M^2-m_e^2)\pm E_\gamma\sqrt{[s-(m_e+M)^2][s-(m_e-M)^2]}}{2s},
+\end{equation}
+y el umbral está adentro de esta fórmula: la raíz se anula exactamente en $E_\gamma=E_{\rm th}$, donde $x_+=x_-$. El
+rango \eqref{eq:rango} del apunte, en cambio, es no vacío para todo $\omega\ge M/2$, y si además se pide $\omega'\ge M$
+queda $\omega\ge M$: el umbral ingenuo del Cuadro~1 es lo que la ec.~\eqref{eq:rango} implica. Son el mismo error, escrito
+dos veces; la copia del Cuadro~1 es inocua, la de la ec.~\eqref{eq:rango} no.
+
+\section{Cuánto pesa cada error cuando se calcula el número de fotones oscuros}
+Convolucioné la ec.~(50) del apunte, integrada sobre el rango \eqref{eq:rango} del apunte, con el espectro de Park a 1~GW y
+$\eps=1$ (ecuación de fuente de Park con $\sigma_{\rm tot}=\sigma_{\rm KN}$), y lo mismo con la sección eficaz exacta sobre
+$[x_-,x_+]$. Script: \texttt{work/check\_eq50\_fold.py}.
+
+\begin{center}\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+$M$ [MeV] & fotones con $M<\omega<E_{\rm th}$ & \multicolumn{2}{c}{$\dd N/\dd E_{\Ap}$ apunte/exacto} & $N_{\Ap}$(3--8 MeV) apunte/exacto\\
+ & & 3~MeV & 5~MeV & \\
+\midrule
+0.1 & 1.1\% & 1.06 & 1.05 & 1.05\\
+0.5 & 23.6\% & 1.48 & 1.43 & 1.46\\
+1.0 & 65.9\% & 2.05 & 1.90 & 1.99\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Lectura:
+\begin{itemize}
+\item En la ventana 3--8~MeV \textbf{el error de umbral/rango no pesa}. Un $\Ap$ de $E_{\Ap}\ge3$~MeV sólo puede venir de
+un fotón con $\omega\ge3$~MeV, y todos esos están sobre el umbral para $M\le1$~MeV. El extremo superior $\omega'_{\max}=\omega$
+en vez de $x_+$ cambia el límite inferior de $\omega$ de $3$ a $3.05$~MeV: nada.
+\item Lo que pesa en la ventana es \textbf{la fórmula (50) misma}: factor $1.05$, $1.46$, $1.99$ para $M=0.1$, $0.5$,
+$1$~MeV. Eso viene del $|\mathcal M|^2$ de la ec.~(40) (que descarta los términos en $m_e^2$) y del jacobiano sin masa.
+Es el error que hay que corregir para usar (50) en TEXONO.
+\item El error de rango pesa \textbf{a baja energía del $\Ap$}. Para $M=1$~MeV, el 66\% de los fotones por encima de $1$~MeV
+está por debajo del umbral verdadero y el apunte los deja producir $\Ap$; además, para $E_{\Ap}$ entre $0.31$ y $1.34$~MeV la
+(50) integra sobre una región cinemáticamente prohibida que contiene el polo $\omega'=M^2/2m_e=0.978$~MeV. En
+$E_{\Ap}=1$~MeV el exacto da cero y el apunte da $1.5\times10^{21}$~MeV$^{-1}$s$^{-1}$. Para un detector con umbral bajo
+(el PCGe de TEXONO, 0.3--12~keV de retroceso, que ve $\Ap$ de cualquier energía) esto sí importa.
+\end{itemize}
+
+\section{Corrección mínima para usar (50)}
+Dos reemplazos y (50) queda bien: el corchete $[\ldots]$ por $F(a,b,c,d)/2$ con
+$F=-2(a/b+b/a)+4(2c+d)[(1/a+1/b)+c(1/a+1/b)^2-d/(ab)]$, $a=2m_e\omega$, $b=M^2-2m_e\omega'$, $c=m_e^2$, $d=M^2$, y
+el prefactor $\frac{\pi\eps^2\alpha^2}{m_e\omega^2}(1+\frac{M^2}{2m_e\omega})$ por $\frac{\pi\eps^2\alpha^2}{m_e\omega^2}$;
+es decir, $\dd\sigma/\dd\omega'=\eps^2e^4F/(32\pi m_e\omega^2)$. Y el rango \eqref{eq:rango} por $[x_-,x_+]$. Con eso el
+umbral sale solo y el polo queda afuera para todo $M<2m_e$.
+
+\medskip\noindent\small\sloppy Recibo: 21/09/2026, \texttt{work/.venv/bin/python work/check\_eq50\_fold.py}; salida en
+\texttt{work/check\_eq50\_fold.log} y \texttt{work/check\_eq50\_fold\_out.json}.
+\end{document}
