@@ -16,15 +16,15 @@ codex/    worked with Codex
 
 Each tree keeps the same internal layout:
 
-| directory | contents |
-|---|---|
-| `vault/` | one short page per paper, per exercise, per concept. **Start at `claude/vault/status.md`** |
-| `work/`, `code/` | scripts and checks; every derivation is verified with `sympy` or against a published formula |
-| `reports/`, `report_*` | LaTeX write-ups (EN + ES) and the agent-facing HTML report per task |
-| `provenance/` | `numbers.json` and `claims.yaml`: what each number asserts, what produced it, what was written from scratch and what came from a library. A Stop hook refuses to end a session that produced a figure or a number without a record |
-| `papers_reactor_dark_photon/`, `dark_photon_papers/`, `papers/` | the bibliography actually used, with its manifest |
-| `prompts/` | the task prompts, verbatim |
-| `.claude/`, `.codex/`, `AGENTS.md` | the working agreement, hooks and skills the agents ran under |
+| directory                                                       | contents                                                                                                                                                                                                                           |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `vault/`                                                        | one short page per paper, per exercise, per concept. **Start at `claude/vault/status.md`**                                                                                                                                         |
+| `work/`, `code/`                                                | scripts and checks; every derivation is verified with `sympy` or against a published formula                                                                                                                                       |
+| `reports/`, `report_*`                                          | LaTeX write-ups (EN + ES) and the agent-facing HTML report per task                                                                                                                                                                |
+| `provenance/`                                                   | `numbers.json` and `claims.yaml`: what each number asserts, what produced it, what was written from scratch and what came from a library. A Stop hook refuses to end a session that produced a figure or a number without a record |
+| `papers_reactor_dark_photon/`, `dark_photon_papers/`, `papers/` | the bibliography actually used, with its manifest                                                                                                                                                                                  |
+| `prompts/`                                                      | the task prompts, verbatim                                                                                                                                                                                                         |
+| `.claude/`, `.codex/`, `AGENTS.md`                              | the working agreement, hooks and skills the agents ran under                                                                                                                                                                       |
 
 ## Main results so far
 
