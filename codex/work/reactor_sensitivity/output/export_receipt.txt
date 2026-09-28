@@ -1,0 +1,5 @@
+The first run compiled both PDFs, then marimo failed because the sandbox blocked its local socket. With explicit escalation approval, reran:
+
+`PYTHONDONTWRITEBYTECODE=1 /home/eliana/.marimo/bin/marimo export html work/reactor_sensitivity/figures.py -o work/reactor_sensitivity/output/figures.html`
+
+Actual output: empty stdout/stderr; exit code 0. Both PDFs were rendered with `pdftoppm -scale-to 850 -png` and every page was visually inspected. No missing plots or clipped equations observed. TeX logs contain underfull boxes, but no overfull boxes or undefined references.

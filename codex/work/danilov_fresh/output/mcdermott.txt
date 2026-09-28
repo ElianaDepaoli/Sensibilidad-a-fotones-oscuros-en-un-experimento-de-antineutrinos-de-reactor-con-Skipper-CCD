@@ -1,0 +1,386 @@
+                                                                                                                                         ACFI-T17-08, YITP-SB-17-14
+
+                                                               Dark Photon Decay Beyond The Euler-Heisenberg Limit
+
+                                                                 Samuel D. McDermott,1 Hiren H. Patel,2 and Harikrishnan Ramani1
+                                                                   1
+                                                                      C. N. Yang Institute for Theoretical Physics, Stony Brook, NY 11794
+                                                                  2
+                                                                      Amherst Center for Fundamental Interactions, Department of Physics,
+                                                                              University of Massachusetts, Amherst, MA 01003
+                                                                                             (Dated: May 3, 2017)
+                                                        We calculate the exact width for a dark photon decaying to three photons at one loop order for dark
+                                                      photon masses m0 below the e+ e− production threshold of 2me . We find substantial deviations from
+                                                      previous results derived from the lowest order Euler-Heisenberg effective Lagrangian in the range
+                                                      me . m0 ≤ 2me , where higher order terms in the derivative expansion are nonnegligible. This mass
+                                                      range is precisely where the three photon decay takes place on cosmologically relevant timescales.
+                                                      Our improved analysis opens a window for dark photons in the range 850 KeV . m0 ≤ 2me ,
+                                                      10−5 .  . 10−4 .
+arXiv:1705.00619v1 [hep-ph] 1 May 2017
+
+
+
+
+                                                          I.   INTRODUCTION                               that comprises a non-negligible cosmological density in
+                                                                                                          the early universe [18]. Interestingly, a small region in
+                                            Matter with no Standard Model gauge charges may be            parameter space at  ≃ 10−4 and 850 KeV . m0 ≤ 2me
+                                         charged under an abelian gauge group of its own. The             is reopened so that a dark photon with these properties
+                                         corresponding “dark photon” is an ingredient of many             is allowed by all model-independent considerations.
+                                         compelling extensions to the Standard Model [1, 2]. A
+                                         new gauge boson of this type may kinetically mix with
+                                         the Standard Model photon [3] via a gauge invariant                II.   CORRECTIONS TO EULER-HEISENBERG
+                                                                               0                                         LAGRANGIAN(S)
+                                         dimension-four operator Omix = −Fµν    F µν /2, where F 0
+                                         is the field strength of the dark photon A0 and F is the
+                                         field strength of the Standard Model photon A. This op-             The Euler-Heisenberg Lagrangian is the low-energy ef-
+                                         erator induces a coupling of the dark photon with the            fective Lagrangian that is matched to quantum electro-
+                                         electromagnetic current                                          dynamics at energies below the electron mass [23]. This
+                                                                                                          Lagrangian predicts gauge boson self-couplings that do
+                                                                          µ
+                                                                L = A0µ JEM                       (1)    not exist at higher energies, leading to “nonlinear” pho-
+                                                                                                          ton interactions [27]. In general, we may construct an
+                                         proportional to the kinetic mixing parameter . Most             Euler-Heisenberg-like Lagrangian for any (product of)
+                                         searches for the dark photon rely on the observation of          gauge theories after the lightest charged particles have
+                                         the products of its decay after it has been produced in          been integrated out. Gauge bosons with bifundamental
+                                         low-energy terrestrial experiments [4–16], although some         matter acquire any contact interactions that are the rem-
+                                         search strategies are sensitive even to invisibly decaying       nant of charge-conserving interactions of box diagrams of
+                                         or effectively stable dark photons [17–21].                      heavy matter, as shown in Fig. 1.
+                                            We are interested in the visible decays of low-mass dark         The Euler-Heisenberg Lagrangian contains interac-
+                                         photons. Below the e+ e− threshold, the dominant decay           tions of arbitrarily many (even) numbers of photons. In
+                                         channel is A0 → γγγ. [The weak decay A0 → ν ν̄ is ef-            four dimensions, the term involving four photons is [24]
+                                         fectively suppressed by (m0 /mW ± )4 ∼ 10−21 (m0 /me )4 ,
+                                                                                                                          α2
+                                                                                                                                                            2 
+                                         while decay to two photons is forbidden by the Landau-                                         µν 2   7         µν
+                                                                                                              LEH, 4γ =         (F µν F   )  +    F µν F̃         . (2)
+                                         Yang theorem.] The three photon decay width was pre-                            90m4                  4
+                                         viously estimated from the Euler-Heisenberg effective ac-        This famously allows the computation of a cross section
+                                         tion [22], which we discuss shortly below. But since the         for light-by-light scattering [25]. Replacing one of the
+                                         Euler-Heisenberg effective action provides only the lead-        four photons with a dark photon will give us the La-
+                                         ing term in the derivative expansion with a small param-         grangian for the process that we are interested in. Ac-
+                                         eter given by kγ2 /m2e , the derived decay width is expected     counting for the reduced symmetry and inserting a factor
+                                         to be valid provided m0  me . For characteristic ener-           for the electron coupling to the dark photon, we find
+                                         gies close to the electron mass, as expected for a decay-        that Eq. (2) generalizes to
+                                         ing dark photon of mass in the range me . m0 . 2me ,
+                                         this approximation breaks down, requiring a more exact                             α2    0
+                                         treatment.                                                          LEH, dark =        14Fµν F νλ Fλρ F ρµ −
+                                                                                                                           45m4                             (3)
+                                            In this work, we improve the estimate for the A0 → γγγ                                             0    µν
+                                                                                                                                         − 5Fµν F Fαβ F αβ
+                                                                                                                                                            ,
+                                         decay width by evaluating it in quantum electrodynam-
+                                         ics at one-loop order exactly, obtaining a result valid for      in agreement with [22].
+                                         all dark photon masses below the e+ e− threshold. Ulti-             However, the Lagrangians in Eqs. (2) and (3) do not
+                                         mately, we will investigate the bounds for a dark photon         produce the full gauge boson scattering cross sections
+                                                                                                                                         2
+
+
+
+
+                                                                         FIG. 2. Three of six Feynman diagrams contributing to the
+FIG. 1. The dynamics of an abelian gauge theory below all                dark photon decay amplitude at one loop order. The parti-
+charged particle masses includes gauge boson self-scattering.            cle in the loop is an electron. The three other diagrams are
+At leading order, this is governed by the Euler-Heisenberg               obtained by reversing the electron flow.
+Lagrangian.
+
+
+                                                                         For four-photon interactions, the first two subleading La-
+for arbitrary energies. This is well known for QED: the                  grangian terms containing two and four derivatives have
+cross section for light-by-light scattering was obtained                 in fact been obtained by a matching calculation using
+by Karplus and Neuman [26] and was fully explored by                     the full QED scattering cross section [28]. By calculat-
+de Tollis and collaborators [27]. There, they reproduced                 ing in QED, [28] found that corrections to light-by-light
+the m−8    scaling predicted by the Euler-Heisenberg La-                 scattering are an order of magnitude when each incoming
+       e
+grangian at small energy transfer, but found that this                   photon energy equals me . The corrections to the three
+deviated from the full result close to the electron mass.                photon decay will naı̈vely be larger for a dark photon
+   The reason the Euler-Heisenberg Lagrangian fails close                just below the electron positron pair production thresh-
+to the electron mass is because it is the first term in                  old: the incoming energy is large compared to me , while
+an expansion in derivatives on the field strength. Al-                   the energy of the outgoing legs is not small compared to
+though the Euler-Heisenberg Lagrangian is a nonpertur-                   me , since in general ωγ ∼ O(m0 /3).
+bative object that contains infinitely many terms, each
+term includes 2n products of field strength tensors, for
+integer n ≥ 2, with 4(n−1) powers of m in the denomina-
+tor of each term. No additional terms with more deriva-                              III.    DARK PHOTON DECAY
+tives appear in this expansion. Thus, the Lagrangians
+obtained from the Euler-Heisenberg Lagrangian, such as                     We now calculate the dark photon partial width
+the Lagrangians in Eqs. (2) and (3) as well as those with                A0 (k 0 ) → γ(k1 )γ(k2 )γ(k3 ) exactly at one loop order in
+additional photon fields, are only the leading terms of                  quantum electrodynamics. Three of the six diagrams
+the 2n photon interaction in the m → ∞ limit. Each                       contributing to the decay amplitude are shown in Fig. 2.
+of these leading terms receive O(1) corrections when the                 By charge conjugation invariance, the other three dia-
+components of ∂α Fµν /m are comparable to those of Fµν .                 grams with opposite electron flow are equal in value to
+Higher derivative terms fill out the exact effective the-                these diagrams. Denoting the amplitude as
+ory at energies comparable to the loop particle mass.
+Infinitely many derivatives are needed to get the exact
+result, indicating a nonlocality at small distances.                             iM = iAµνρσ (k 0 )µ ∗ (k1 )ν ∗ (k2 )ρ ∗ (k3 )σ ,   (4)
+   Of course, the full theory that completes the Euler-
+Heisenberg Lagrangian is known, and this nonlocality is                  where the (ki ) are the polarization four-vectors of the
+resolved by the electron mass. (Henceforth we will spe-                  external photons, the Feynman amplitude for the dark
+cialize to the QED case, with an electron in the loop.)                  photon decay derived from Eq. (1) is
+
+
+
+                                                                                                                     0
+                                  "Z
+               µνρσ           4         d4 p Tr[γ µ (p
+                                                     / + me )γ ν (p
+                                                                  / + k/1 + me )γ ρ (p
+                                                                                     / + k/1 + k/2 + me )γ σ (p
+                                                                                                              / + k/ + me )]
+            iA        = 2e
+                                       (2π) 4   [p + me ][(p + k1 ) + me ][(p + k1 + k2 ) + me ][(p + k 0 )2 − m2e ]
+                                                   2     2           2      2                 2      2
+
+                                                                                                                0
+                             d4 p Tr[γ µ (p
+                                          / + me )γ ρ (p
+                                                       / + k/2 + me )γ ν (p
+                                                                          / + k/1 + k/2 + me )γ σ (p
+                                                                                                   / + k/ + me )]
+                            Z
+                        +
+                            (2π) 4   [p + me ][(p + k2 ) + me ][(p + k1 + k2 ) + me ][(p + k 0 )2 − m2e ]
+                                        2     2           2      2                 2      2
+                                                                                0                         0
+                                                                                                                  #
+                             d4 p Tr[γ µ (p
+                                          / + me )γ ν (p
+                                                       / + k/1 + me )γ σ (p
+                                                                          / + k/ − k/2 + me )γ ρ (p/ + k/ + me )]
+                          Z
+                        +                                                                                           .                   (5)
+                            (2π)4    [p2 + m2e ][(p + k1 )2 + m2e ][(p + k 0 − k2 )2 + m2e ][(p + k 0 )2 − m2e ]
+
+
+
+We evaluate the amplitude and decay width using the al-                  implemented in Package-X [30]. We have checked that
+gebraic reduction method of Passarino and Veltman [29]                   the total amplitude is free of ultraviolet divergences and
+                                                                                                                                                        3
+
+                                           me                                   2me        small compared to the electron mass, e.g. m212 , m213 or
+                                                                                           m223  m2e ) the kinematic Gram determinant becomes
+                             exact                                                         small and the Passarino-Veltman reduction formula be-
+             102             (m0 /me )12                                                   comes invalid. We circumvent this problem in Package-
+                             (m0 /me )10                                                   X by evaluating the amplitudes with sufficient working
+                             (m0 /me )8                                                    precision to achieve a numerically stable result through-
+                             (m0 /me )6                                                    out the entire physical region. With sufficient run time,
+                                                                                           we can attain any desired precision even arbitrarily close
+ Γγγγ /ΓEH
+
+
+
+
+                             (m0 /me )4
+                             (m0 /me )2                                                    to m0 = 2me . We show the exact evaluation of the decay
+                  1          (m0 /me )0                                                    width in Fig. 3. We provide a supplemental file contain-
+             10
+                                                                                           ing the data points we used to generate the black line.
+                                                                                              By differentiating the Passarino-Veltman functions
+                                                                                           arising in the covariant decomposition of the amplitude
+                                                                                           in Eq. (5), we may also obtain an analytic representation
+                                                                                           of the partial width as a series in inverse electron mass:
+                                                                                                                          ∞
+                                                                                                                   "             02 k #
+             100
+                                                                                                                         X        m
+                                                                                                       Γγγγ = ΓEH 1 +        ck            ,      (9)
+                                                                                                                                  m2e
+                  0.2           0.4                 0.6           0.8          1.0                                           k=1
+                                                0
+                                              m [MeV]                                      which we expect to converge out to the onset of physical
+                                                                                           threshold at m02 /m2e = 4. We confirm that the leading
+FIG. 3. Dark photon decay width to three photons in units of                               term ΓEH is determined by the amplitude in the Euler-
+the width obtained in the Euler-Heisenberg limit. We show                                  Heisenberg limit derived from Eq. (3),
+corrections including terms up to sixth order in the variable                                                                      2  m0 9
+m02 /m2e as well as the exact correction (in black).                                                    172 αEM
+                                                                                                              4
+                                                                                                                    m09       −1
+                                                                                              ΓEH =                      ≃ 1s                      ,
+                                                                                                      11664000 π 3 m8e            0.003     me
+                                                                                                                                                  (10)
+                                                                                           in agreement with [22]. In the context of the Euler-
+that the amplitude is transverse to all external momenta                                   Heinsberg effective theory discussed in the previous sec-
+                                                                                           tion, the remaining terms in Eq. (9) arise from correc-
+  kµ0 Aµνρσ = k1ν Aµνρσ = k2ρ Aµνρσ = k3σ Aµνρσ = 0 , (6)                                  tions to the Euler-Heisenberg effective action involving
+                                                                                           derivatives of the field strength tensors. We give the first
+as required by the abelian Ward identity. After the al-
+                                                                                           six coefficients ck in Tab. I, and in Fig. 3 we plot the
+gebraic reduction to scalar functions, we square the am-
+                                                                                           corresponding corrections to the partial width.
+plitude, sum over final photon polarizations, and average
+                                                                                              As the dark photon mass approaches the electron pair
+over the initial dark photon polarization using the com-
+                                                                                           production threshold, each term supplies a correction
+pleteness relation valid for transverse amplitudes
+                                                                                           that is individually larger than the width in the Euler-
+              2         1 µνρσ ∗ µ̇ν̇ ρ̇σ̇                                                 Heisenberg limit. We demonstrate this in the third col-
+     |M| =                A   (A )         ×                                               umn of Tab. I. Thus, although the sixth order correction
+                        3
+                         
+                                kµ0 kµ̇0
+                                                                                          gives an acceptable approximation to the exact width
+                       × −gµµ̇ + 02 (−gν ν̇ )(−gρρ̇ )(−gσσ̇ )                        (7)   up to m0 ≃ 800 KeV, as shown in Fig. 3, asymptoti-
+                                 m                                                         cally many terms are required for an accurate estimate
+                        1 µνρσ ∗
+                      = A     (A )µνρσ .
+                        3
+                                                                                                                         ck           c k × 4k
+We obtain the dark photon decay width by integrating                                                         c1          335
+                                                                                                                                         1.88
+                                                                                                                         714
+over the three body phase space in terms of the Dalitz                                                       c2        128,941
+                                                                                                                                         2.46
+variables m212 = (k1 + k2 )2 and m213 = (k1 + k3 )2 ,                                                                  839,664
+                                                                                                                       44,787
+                                                                                                             c3       1,026,256
+                                                                                                                                       2.79
+                                      Z m02                 Z m02 −m212                                             1,249,649,333
+                        1     1 1                                                    2                       c4    108,064,756,800
+                                                                                                                                       5.92
+Γγγγ =                                              dm212                 dm213 |M| ,                                36,494,147
+                      (2π)3 32m03 6       0                  0                                               c5    12,382,420,050
+                                                                                                                                       3.02
+                                                       (8)                                                   c6      867,635,449
+                                                                                                                                       2.20
+                                                                                                                  1,614,300,688,000
+where the factor of 1/6 accounts for identical final state
+particles.
+   There are two potential sources of numerical insta-                                     TABLE I. Series coefficients of the large electron mass expan-
+bility in the numerical evaluation of the decay ampli-                                     sion of the dark photon decay A0 → γγγ given in Eq. (9). The
+tude. If the dark photon mass is much smaller than                                         final column represents the correction to the decay width due
+the electron mass m02  m2e , or on the boundary of the                                    to each term at the threshold value of m02 /m2e = 4 relative to
+phase space (where a final state invariant mass becomes                                    the Euler-Heisenberg estimate Eq. (10).
+                                                                                                                      4
+
+of the partial width for m0 ≃ 2me . At threshold, we         expansion rate and adversely affect sensitive BBN pro-
+find that the dark photon partial width is over two or-      cesses. However, corresponding negative contributions
+ders of magnitude larger than the width in the Euler-        to the radiation budget could come from slightly heavier
+Heisenberg limit. This means that the dark photon life-      particles coupled to electric charge [33] (which plausibly
+time is drastically shorter in this mass range than previ-   exist in a complete model of the dark sector) or from the
+ously appreciated. This has important phenomenological       post-BBN decay of the dark photon. This renders the
+consequences, which we discuss next.                         counting of additional degrees of freedom model depen-
+                                                             dent for the scenario considered. Finding a UV-complete
+                                                             model necessary to avoid all of the bounds discussed here
+   IV.   UPDATED CONSTRAINTS ON DARK                         is a compelling goal for future work.
+          PHOTON MASS BELOW 2me                                 We point out an open window free of all constraints
+                                                             where 10−5 .  . 10−4 and 850 KeV . m0 ≤ 2me .
+   A dark photon with kinetic mixing parameter larger        This is precisely the mass range where subleading correc-
+than around  & 10−12 can be in thermal equilibrium at       tions to the Euler-Heisenberg-like Lagrangian are large.
+some point in the early universe, and can thus play the      Our exact computation of the decay width is crucial to
+role of cosmological dark matter or otherwise affect the     revealing this window: using the leading order Euler-
+evolution of the early universe [18, 19]. If the dark pho-   Heisenberg-like Lagrangian, one would conclude that
+ton mass satisfies m0 ≤ 2me , the dark photon is quite       dark photons of this mass have lifetimes longer than one
+long-lived because the decay to three photons is loop-       second, leading to entropy injection after BBN and rul-
+mediated, contains four factors of αEM , and must go into    ing out all mixing angles below  . 0.003 × (m0 /me )−9/2
+three body phase space, as in Eqs. (8) and (10). Thus,       [21]. However, because threshold corrections increase the
+dark photons with mass m0 ≤ 2me generically have long        width by up to two orders of magnitude, we find that dark
+lifetimes, modulated by the kinetic mixing factor . The     photons in this mass range decay well before BBN.
+decay to three photons can happen late enough to alter          This window remains open because a dark photon in
+Standard Model physics in epochs where the thermal his-      this window is weakly coupled enough that it does not
+tory of the universe is well established. In this section,   affect the anomalous magnetic moment of the electron
+we describe the effects of such a long-lived dark photon,    [31, 34] but strongly coupled enough that it is effectively
+and we detail the bounds from considerations of this kind    trapped inside the proto-neutron star during the deto-
+of late-decaying particle.                                   nation of Supernova 1987A: using the most conservative
+   Dark photon decays should not occur between the time      models of the core collapse process, we find that a dark
+of heavy element nucleosynthesis (BBN) and the for-          photon in this parameter space does not carry out more
+mation of the cosmic microwave background radiation          energy than is released in Standard Model neutrinos [21].
+(CMB), because the additional entropy injection would        About half of the parameter space is ruled out assuming
+conflict with the observed agreement between the baryon      the “fiducial” analytical profile, however [21].
+to photon ratio at BBN and the CMB. Decays from the             This range is potentially constrained by considerations
+time of formation of CMB through the cosmological dark       of the SLAC millicharge experiment [35], which is sensi-
+ages are ruled out by limits on the µ and y distortions of   tive to any light dark matter that can scatter off nuclei.
+the CMB blackbody spectrum. Decays after the epoch           In the near future, this window will also be subject to
+of reionization until the present time are forbidden by      searches performed by new beam dump experiments that
+limits on the amount of diffuse extragalactic background     will be sensitive to any particle that can escape the beam
+light. For m0 ≤ 2me , we can then rule out lifetimes         as missing energy [36, 37]. As a complementary tech-
+                                                             nique, it is possible that improvements of the measure-
+                   1 s ≤ Γγγγ ≤ TUniv ,              (11)    ment of the anomalous magnetic moment of the electron
+                                                             will soon be sufficiently improved to constrain this win-
+where TUniv is the age of the universe. The bounds on        dow of parameter space [38]. Thus, this exciting window
+the background light are conservatively obtained from        for new physics will be comprehensively and complemen-
+saturating observations of the high-latitude flux of X-ray   tarily probed in a variety of upcoming experiments.
+photons, as in [32]. We illustrate the ramifications for
+the dark photon parameter space in Fig. 4.
+   We mention that in this work we neglect possible                         ACKNOWLEDGMENTS
+bounds from degree of freedom counting in the early uni-
+verse. For the mixing angles considered here, the dark          We thank Zackaria Chacko, Rouven Essig, Marat
+photon will be resonantly produced in the early universe     Freytsis, Susan Gardner, and Jakub Scholtz for discus-
+and may remain in kinetic equilibrium until after the time   sions. SDM is supported by NSF-PHY-1316617. H.R. is
+of neutrino decoupling [18], potentially adding to the ra-   supported in part by NSF CAREER award NSF-PHY-
+diation budget of the universe. This could speed up the      1056833 and NSF award NSF-PHY-1620628.
+                                                                                                                           5
+
+
+
+
+                                                                       (g − 2)e
+                    10−4
+
+
+
+                      
+
+
+
+
+                                                                                               beam dumps
+                                           late time decays
+                                              (this work)
+
+
+
+
+                                        SN1987A
+                                        (robust)
+                    10−5
+                          0.85              0.90                0.95              1.00                  1.05
+                                                       m0 [MeV]
+FIG. 4. Constraints on the dark photon parameter space. In the blue region the lifetime of the dark photon to decay to
+three photons exceeds one second. There is an open a window near 10−5 .  . 10−4 and 850 KeV . m0 . 1 MeV. We also
+show constraints from SN1987A using the “robust” results from [21], constraints from the anomalous magnetic moment of
+the electron [31], constraints from beam dump experiments [1], and the results from the lifetime only using the leading-order
+Euler-Heisenberg-like width (dashed blue).
+
+
+
+
+ [1] R. Essig et al., in Proceedings, 2013 Community Summer      [10] B. Aubert et al. (BaBar), in Proceedings, 24th Inter-
+     Study on the Future of U.S. Particle Physics: Snowmass           national Symposium on Lepton-Photon Interactions at
+     on the Mississippi (CSS2013): Minneapolis, MN, USA,              High Energy (LP09): Hamburg, Germany, August 17-22,
+     July 29-August 6, 2013 (2013) arXiv:1311.0029 [hep-ph].          2009 (2009) arXiv:0908.2821 [hep-ex].
+ [2] J. Alexander et al. (2016) arXiv:1608.08632 [hep-ph].       [11] M. Freytsis, G. Ovanesyan, and J. Thaler, JHEP 01,
+ [3] B. Holdom, Phys. Lett. B166, 196 (1986).                         111 (2010), arXiv:0909.2862 [hep-ph].
+ [4] B. Batell, M. Pospelov, and A. Ritz, Phys. Rev. D79,        [12] R. Essig, P. Schuster, N. Toro, and B. Wojtsekhowski,
+     115008 (2009), arXiv:0903.0363 [hep-ph].                         JHEP 02, 009 (2011), arXiv:1001.2557 [hep-ph].
+ [5] R. Essig, P. Schuster, and N. Toro, Phys. Rev. D80,         [13] R. Essig, R. Harnik, J. Kaplan, and N. Toro, Phys. Rev.
+     015003 (2009), arXiv:0903.3941 [hep-ph].                         D82, 113008 (2010), arXiv:1008.0636 [hep-ph].
+ [6] M. Reece and L.-T. Wang, JHEP 07, 051 (2009),               [14] H. Merkel et al. (A1), Phys. Rev. Lett. 106, 251802
+     arXiv:0904.1743 [hep-ph].                                        (2011), arXiv:1101.4091 [nucl-ex].
+ [7] F. Bossi, in KLOE-2 Physics Workshop ’09 Frascati,          [15] S. Abrahamyan et al. (APEX), Phys. Rev. Lett. 107,
+     Italy, April 9-10, 2009 (2009) arXiv:0904.3815 [hep-ex].         191804 (2011), arXiv:1108.2750 [hep-ex].
+ [8] J. D. Bjorken, R. Essig, P. Schuster, and N. Toro, Phys.    [16] F. Archilli et al. (KLOE-2), Phys. Lett. B706, 251
+     Rev. D80, 075018 (2009), arXiv:0906.0580 [hep-ph].               (2012), arXiv:1110.0411 [hep-ex].
+ [9] B. Batell, M. Pospelov, and A. Ritz, Phys. Rev. D80,        [17] B. Aubert et al. (BaBar), in Proceedings, 34th Inter-
+     095024 (2009), arXiv:0906.5614 [hep-ph].                         national Conference on High Energy Physics (ICHEP
+                                                                                                                     6
+
+     2008): Philadelphia, Pennsylvania, July 30-August 5,      [28] D. A. Dicus, C. Kao, and W. W. Repko, Phys. Rev.
+     2008 (2008) arXiv:0808.0017 [hep-ex].                          D57, 2443 (1998), arXiv:hep-ph/9709415 [hep-ph].
+[18] J. Redondo and M. Postma, JCAP 0902, 005 (2009),          [29] G. Passarino and M. J. G. Veltman, Nucl. Phys. B160,
+     arXiv:0811.0326 [hep-ph].                                      151 (1979).
+[19] A. E. Nelson and J. Scholtz, Phys. Rev. D84, 103501       [30] H. H. Patel, Comput. Phys. Commun. 197, 276 (2015),
+     (2011), arXiv:1105.2812 [hep-ph].                              arXiv:1503.01469 [hep-ph].
+[20] H. An, M. Pospelov, and J. Pradler, Phys. Lett. B725,     [31] M. Pospelov, Phys. Rev. D80, 095002 (2009),
+     190 (2013), arXiv:1302.3884 [hep-ph].                          arXiv:0811.1030 [hep-ph].
+[21] J. H. Chang, R. Essig, and S. D. McDermott, JHEP 01,      [32] R. Essig, E. Kuflik, S. D. McDermott, T. Volansky, and
+     107 (2017), arXiv:1611.03864 [hep-ph].                         K. M. Zurek, JHEP 11, 193 (2013), arXiv:1309.4091
+[22] M. Pospelov, A. Ritz, and M. B. Voloshin, Phys. Rev.           [hep-ph].
+     D78, 115012 (2008), arXiv:0807.3279 [hep-ph].             [33] C. Boehm, M. J. Dolan, and C. McCabe, JCAP 1308,
+[23] W. Heisenberg and H. Euler, Z. Phys. 98, 714 (1936),           041 (2013), arXiv:1303.6270 [hep-ph].
+     arXiv:physics/0605038 [physics].                          [34] R. Essig, J. Mardon, M. Papucci, T. Volansky, and Y.-M.
+[24] A. Ritz and R. Delbourgo, Int. J. Mod. Phys. A11, 253          Zhong, JHEP 11, 167 (2013), arXiv:1309.5084 [hep-ph].
+     (1996), arXiv:hep-th/9503160 [hep-th].                    [35] R. Essig and Z. Vallari, Private communication.
+[25] H. Euler and B. Kockel, Naturwiss. 23, 246 (1935).        [36] M. Battaglieri et al. (BDX), (2014), arXiv:1406.3028
+[26] R. Karplus and M. Neuman, Phys. Rev. 83, 776 (1951).           [physics.ins-det].
+[27] V. Costantini, B. De Tollis, and G. Pistoni, Nuovo Cim.   [37] https://confluence.slac.stanford.edu/display/MME/Light+Dark+Ma
+     A2, 733 (1971).                                           [38] S. Gardner, Private communication.
+

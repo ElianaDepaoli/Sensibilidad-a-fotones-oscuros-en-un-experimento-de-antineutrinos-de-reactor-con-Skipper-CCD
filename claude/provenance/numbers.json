@@ -874,5 +874,226 @@
   "from_scratch": "the exact cos theta relation and x_pm",
   "from_library": "numpy",
   "choices": []
+ },
+ "excl_plateau_human_flags_off": {
+  "value": 1.259e-05,
+  "statement": "TEXONO eps_95 plateau from DP3_Danilov.C with DANILOV_A/B/D all false (note eq. 50, Park-like)",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov.C (the user's macro, run unchanged on a temporary copy by work/exclusion_comparison/run.sh + dump_cSk.C); only the dump of the cSk canvas graphs is new",
+  "from_library": "ROOT 6.36 TGraph/TLegend",
+  "choices": [
+   "flags set as globals before calling DP3_Danilov(), instead of editing the macro",
+   "benchmark mass 1e-4 MeV = plateau"
+  ]
+ },
+ "excl_plateau_human_flags_on": {
+  "value": 1.712e-05,
+  "statement": "TEXONO eps_95 plateau from DP3_Danilov.C with DANILOV_A, B, D all true (the macro's default)",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov.C (the user's macro, run unchanged on a temporary copy by work/exclusion_comparison/run.sh + dump_cSk.C)",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "default flags of the macro"
+  ]
+ },
+ "excl_plateau_new_flags_off": {
+  "value": 1.275e-05,
+  "statement": "TEXONO eps_95 plateau from DP3_Danilov_new.C exact-sigma curve, DANILOV flags off",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov_new.C (Claude's *_new_f functions, exact cross section and range), run unchanged on a temporary copy",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "the 'exact' legend entry (gTEX2_new) is used, not the oldxs curve"
+  ]
+ },
+ "excl_plateau_new_flags_on": {
+  "value": 1.734e-05,
+  "statement": "TEXONO eps_95 plateau from DP3_Danilov_new.C exact-sigma curve, DANILOV A+B+D on",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov_new.C (Claude's *_new_f functions, exact cross section and range), run unchanged on a temporary copy",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "the 'exact' legend entry (gTEX2_new)"
+  ]
+ },
+ "excl_1MeV_human_flags_on": {
+  "value": 2.071e-05,
+  "statement": "TEXONO eps_95 at m_A' = 1 MeV, DP3_Danilov.C, A+B+D on",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov.C (the user's macro, run unchanged on a temporary copy by work/exclusion_comparison/run.sh + dump_cSk.C)",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "grid point m_A' = 1 MeV exactly"
+  ]
+ },
+ "excl_1MeV_new_flags_on": {
+  "value": 2.443e-05,
+  "statement": "TEXONO eps_95 at m_A' = 1 MeV, DP3_Danilov_new.C exact sigma, A+B+D on",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov_new.C (Claude's *_new_f functions, exact cross section and range), run unchanged on a temporary copy",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "grid point m_A' = 1 MeV exactly"
+  ]
+ },
+ "excl_1MeV_new_flags_off": {
+  "value": 1.727e-05,
+  "statement": "TEXONO eps_95 at m_A' = 1 MeV, DP3_Danilov_new.C exact sigma, flags off",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov_new.C (Claude's *_new_f functions, exact cross section and range), run unchanged on a temporary copy",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "grid point m_A' = 1 MeV exactly"
+  ]
+ },
+ "excl_1MeV_human_flags_off": {
+  "value": 1.465e-05,
+  "statement": "TEXONO eps_95 at m_A' = 1 MeV, DP3_Danilov.C, flags off",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "mycodes/DP3_Danilov.C (the user's macro, run unchanged on a temporary copy by work/exclusion_comparison/run.sh + dump_cSk.C)",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "grid point m_A' = 1 MeV exactly"
+  ]
+ },
+ "excl_plateau_codex_park_texono": {
+  "value": 1.565e-05,
+  "statement": "TEXONO eps_95 plateau, Codex code/park_texono (output/figure2.csv, column epsilon_limit)",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "Nothing: read verbatim from the Codex CSV copied into work/exclusion_comparison/data/",
+  "from_library": "Codex's own C++ code (not run here)",
+  "choices": [
+   "column epsilon_limit, the Codex headline"
+  ]
+ },
+ "excl_plateau_codex_reactor_sensitivity_vac": {
+  "value": 2.446e-05,
+  "statement": "TEXONO eps_95 plateau, Codex work/reactor_sensitivity (limits.csv, column vacuum_no_decay)",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "Nothing: read verbatim from the Codex CSV copied into work/exclusion_comparison/data/",
+  "from_library": "Codex's own C++ code (not run here)",
+  "choices": [
+   "vacuum_no_decay column; medium_with_decay has mostly nan rows and is not drawn"
+  ]
+ },
+ "excl_plateau_codex_v3": {
+  "value": 1.281e-05,
+  "statement": "TEXONO eps_95 at m_A' = 1e-4 MeV, Codex code/darkphoton_v3 (texono_limit.csv, epsilon95)",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "Nothing: read verbatim from the Codex CSV copied into work/exclusion_comparison/data/",
+  "from_library": "Codex's own C++ code (not run here)",
+  "choices": [
+   "nan rows (no_limit_below_epsilon_max) skipped"
+  ]
+ },
+ "excl_plateau_codex_danilov_fresh": {
+  "value": 1.283e-05,
+  "statement": "TEXONO eps_95 at m_A' = 1e-4 MeV, Codex work/danilov_fresh (exclusion.csv, epsilon95)",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "Nothing: read verbatim from the Codex CSV copied into work/exclusion_comparison/data/",
+  "from_library": "Codex's own C++ code (not run here)",
+  "choices": [
+   "headline column epsilon95; nan rows (outside_small_mixing) skipped"
+  ]
+ },
+ "excl_plateau_danilov_digitized": {
+  "value": 3.466e-05,
+  "statement": "Danilov et al. 2019 TEXONO plateau as digitized by Codex (code/darkphoton_v3/output/danilov_digitized.csv; the curve is held flat above 20.6 eV)",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (value at the grid point nearest m_A' = 1e-4 MeV)",
+  "from_scratch": "Nothing: read verbatim from the Codex CSV copied into work/exclusion_comparison/data/",
+  "from_library": "Codex digitization of Danilov Fig. 1",
+  "choices": [
+   "taken as is; digitization accuracy not checked here"
+  ]
+ },
+ "excl_park_published": {
+  "value": 2.1e-05,
+  "statement": "Park 2017 TEXONO limit eps < 2.1e-5 for m_A' < 1 MeV, as printed in the abstract and text",
+  "produced_by": "papers_reactor_dark_photon/01_park_2017.pdf (abstract; text after eq. 8)",
+  "from_scratch": "nothing",
+  "from_library": "nothing",
+  "choices": [
+   "drawn as a flat line from 1e-7 to 1 MeV, as Fig. 2 of the paper shows it flat there"
+  ]
+ },
+ "excl_conv_plateau_human_off": {
+  "value": 1.496e-05,
+  "statement": "TEXONO eps_95 plateau (m=1e-4 MeV), DP3_Danilov.C flags off, wpsize=200",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (run.sh, wpsize=200 block)",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "wpsize=200 chosen after the 200->400 change was 0.5%"
+  ]
+ },
+ "excl_conv_1MeV_human_off": {
+  "value": 1.291e-05,
+  "statement": "TEXONO eps_95 at 1 MeV, DP3_Danilov.C flags off, wpsize=200",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (run.sh, wpsize=200 block)",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": []
+ },
+ "excl_conv_plateau_human_on": {
+  "value": 2.034e-05,
+  "statement": "TEXONO eps_95 plateau, DP3_Danilov.C A+B+D on, wpsize=200",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (run.sh, wpsize=200 block)",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": []
+ },
+ "excl_conv_plateau_new_off": {
+  "value": 1.513e-05,
+  "statement": "TEXONO eps_95 plateau, DP3_Danilov_new.C exact sigma, flags off, wpsize=200",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (run.sh, wpsize=200 block)",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": []
+ },
+ "excl_conv_1MeV_new_off": {
+  "value": 1.525e-05,
+  "statement": "TEXONO eps_95 at 1 MeV, DP3_Danilov_new.C exact sigma, flags off, wpsize=200",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (run.sh, wpsize=200 block)",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": []
+ },
+ "excl_conv_plateau_new_on": {
+  "value": 2.057e-05,
+  "statement": "TEXONO eps_95 plateau, DP3_Danilov_new.C exact sigma, A+B+D on, wpsize=200",
+  "produced_by": "work/exclusion_comparison/exclusion_comparison.C::table_row (run.sh, wpsize=200 block)",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": []
+ },
+ "excl_conv_plateau_human_off_wp400": {
+  "value": 1.504e-05,
+  "statement": "TEXONO eps_95 plateau, DP3_Danilov.C flags off, wpsize=400 (convergence check only)",
+  "produced_by": "work/exclusion_comparison/dump_cSk.C with wpsize=400, run by hand on 2026-09-28",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "one-off run, not in run.sh (it takes several minutes); receipt in vault/exercises/exclusion-comparison-2026-09-28.md"
+  ]
+ },
+ "excl_conv_plateau_new_off_wp400": {
+  "value": 1.521e-05,
+  "statement": "TEXONO eps_95 plateau, DP3_Danilov_new.C exact, flags off, wpsize=400 (convergence check only)",
+  "produced_by": "work/exclusion_comparison/dump_cSk.C with wpsize=400, run by hand on 2026-09-28",
+  "from_scratch": "dump_cSk.C sets wpsize=200 as a global before calling the user's macro; the physics is the macro's",
+  "from_library": "ROOT 6.36",
+  "choices": [
+   "one-off run, not in run.sh"
+  ]
+ },
+ "park_rescaled_by_B": {
+  "value": 3.286677618153903e-05,
+  "statement": "Park's 2.1e-5 times 6^(1/4) (anti-Compton efficiency 1/6 alone); compare with Danilov's digitized plateau 3.466e-5",
+  "produced_by": "arithmetic in reports/final_summary_en.tex, item 4 of section 4",
+  "from_scratch": "the product",
+  "from_library": "nothing",
+  "choices": [
+   "B only, not A: Danilov calls the 2/3 factor irrelevant"
+  ]
  }
 }

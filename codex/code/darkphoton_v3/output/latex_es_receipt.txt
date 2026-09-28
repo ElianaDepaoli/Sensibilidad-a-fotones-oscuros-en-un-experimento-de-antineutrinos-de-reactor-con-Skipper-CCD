@@ -2,11 +2,11 @@ note: using only cached resource files
 note: Running TeX ...
 warning: code/darkphoton_v3/lecture_redo.tex:87: Underfull \hbox (badness 10000) in paragraph at lines 86--87
 warning: code/darkphoton_v3/lecture_redo.tex:88: Underfull \hbox (badness 1622) in paragraph at lines 87--88
-note: Rerunning TeX because "report_darkphoton_v3_es.out" changed ...
+note: Rerunning TeX because "report_darkphoton_v3_es.aux" changed ...
 warning: code/darkphoton_v3/lecture_redo.tex:87: Underfull \hbox (badness 10000) in paragraph at lines 86--87
 warning: code/darkphoton_v3/lecture_redo.tex:88: Underfull \hbox (badness 1622) in paragraph at lines 87--88
 warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
 note: Running xdvipdfmx ...
-note: Writing `report_darkphoton_v3_es.pdf` (142.03125 KiB)
 note: Writing `report_darkphoton_v3_es.log` (12.302734375 KiB)
+note: Writing `report_darkphoton_v3_es.pdf` (142.03125 KiB)
 note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)

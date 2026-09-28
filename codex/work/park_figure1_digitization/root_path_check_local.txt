@@ -1,0 +1,8 @@
+
+Processing plot_park_figure1.C...
+PASS: spectrum column 2: 349 visible bins plotted
+PASS: spectrum column 3: 315 visible bins plotted
+PASS: spectrum column 4: 255 visible bins plotted
+Info in <TCanvas::Print>: png file /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/work/park_figure1_digitization/park_figure1_root.png has been created
+Info in <TCanvas::Print>: pdf file /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/work/park_figure1_digitization/park_figure1_root.pdf has been created
+ROOT 6.36.000: plotted text data only; missing bins remain gaps.

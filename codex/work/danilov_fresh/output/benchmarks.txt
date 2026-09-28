@@ -1,0 +1,12 @@
+mass_eV=1 epsilon95=0.00533433975797247 including_decays=0.00533433975797247
+mass_eV=10 epsilon95=4.01106377463082e-05 including_decays=4.01106377463082e-05
+mass_eV=1000 epsilon95=1.33627026744523e-05 including_decays=1.33627026744523e-05
+mass_eV=100000 epsilon95=1.33712258245481e-05 including_decays=1.3371225824547e-05
+mass_eV=999000 epsilon95=1.34482298944863e-05 including_decays=1.29767003199455e-05
+selected_cap=196.172274871318
+preselection_cap=1177.03364922791
+fiducial_kg_days=29882
+max_decay_optical_depth=1.083887932723e-08
+max_relative_boundary_shift_from_decay=2.18581885924607e-09
+paper_algebraic_rescaling=2.96412165583192e-05
+fresh_plateau=1.33627026744523e-05

@@ -1,0 +1,16 @@
+{
+  "source_sha256": "e9f6ce1c27c5ea51b485bd2fe790512bda232cd781677252461ef28a1437c40e",
+  "rows": 430,
+  "columns": 4,
+  "visible_samples_by_mass_MeV": {
+    "1.0": 255,
+    "0.1": 349,
+    "0.5": 315
+  },
+  "axis_calibration": {
+    "x0": 380.16,
+    "x4": 522.25,
+    "y_one": 64.363,
+    "decade": 31.282
+  }
+}

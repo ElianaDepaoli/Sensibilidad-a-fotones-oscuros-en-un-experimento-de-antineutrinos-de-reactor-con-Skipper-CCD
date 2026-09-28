@@ -1,0 +1,4 @@
+PASS: fresh covariant trace equals compact F; Klein-Nishina differential identity; s/u symmetry
+PASS: Hamiltonian discriminant including epsilon^4; damped-amplitude primitive; thick-source probability
+PASS: absorption longitudinal trace derived; vanishes in the massless limit
+F_L = 8*d*(a*b - 4*a*m**2 + 2*d*m**2 - 8*m**4)*(a**2*b + a**2*m**2 + a*b**2 - a*b*d + 2*a*b*m**2 + b**2*m**2)/(a**2*b**2*(a**2 - 2*a*d + d**2 - 4*d*m**2))

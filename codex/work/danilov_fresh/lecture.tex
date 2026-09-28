@@ -1,0 +1,191 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}\setlength{\emergencystretch}{3em}
+\newcommand{\B}[2]{\ifspanish#2\else#1\fi}
+\newcommand{\dd}{\mathrm d}\newcommand{\slsh}[1]{\not\!#1}
+\ifspanish\renewcommand{\figurename}{Figura}\renewcommand{\refname}{Referencias}\fi
+\input{work/danilov_fresh/output/results_macros.tex}
+\title{\B{TEXONO sensitivity to transverse hidden photons}{Sensibilidad de TEXONO a fotones ocultos transversales}\\\large\B{A fresh calculation guided by Danilov et al.}{Cálculo nuevo guiado por Danilov y colaboradores}}
+\author{\B{Derivation, ROOT/C++ calculation and source audit}{Derivación, cálculo ROOT/C++ y revisión de fuentes}}
+\date{2026-09-25}
+\begin{document}\maketitle
+
+\section{\B{Result and meaning of the limit}{Resultado y significado del límite}}
+\B{For the homogeneous-medium benchmark of Danilov et al.\cite{danilov}, the fresh calculation gives a one-sided Gaussian upper boundary $\epsilon_{95}=\Plateau$ at $M=1\,\mathrm{keV}$, using transverse absorption, the original fiducial exposure and an assumed photon selection efficiency $\eta_A=1/6$. This is a conditional reinterpretation of TEXONO, not a collaboration-calibrated exclusion. The full mass dependence is plotted below. The material resonance is omitted; a missing boundary at very low mass means that the crossing lies outside the small-mixing domain scanned here.}
+{Para el medio homogéneo de referencia de Danilov y colaboradores\cite{danilov}, el cálculo nuevo da un borde superior gaussiano unilateral $\epsilon_{95}=\Plateau$ a $M=1\,\mathrm{keV}$, con absorción transversal, exposición fiducial original y eficiencia supuesta $\eta_A=1/6$. Es una reinterpretación condicional de TEXONO, no una exclusión calibrada por la colaboración. La dependencia con la masa aparece más adelante. Se omite la resonancia material; la ausencia de un borde a masa muy baja indica que el cruce queda fuera del dominio de mezcla pequeña explorado.}
+
+\B{Danilov's source mechanism is coherent conversion of ordinary photons into the sterile component while the ordinary component is attenuated in the reactor. It preserves energy. It replaces the Compton-convolved source in this calculation; it is not multiplied by that source. Compton scattering still provides a detector interaction, and its production analogue is derived below as a separate microscopic check.}
+{La fuente de Danilov es la conversión coherente de fotones ordinarios en la componente estéril mientras la componente ordinaria se atenúa en el reactor. Conserva la energía. Reemplaza aquí a la fuente convolucionada por Compton; no se multiplica por ella. La dispersión Compton sigue aportando una interacción en el detector, y su análogo de producción se deriva abajo como control microscópico separado.}
+
+\section{\B{Model, inputs and scope of the derivation}{Modelo, entradas y alcance de la derivación}}
+\begin{equation}
+\mathcal L=-\frac14F_{\mu\nu}F^{\mu\nu}-\frac14X_{\mu\nu}X^{\mu\nu}
+-\frac\epsilon2 F_{\mu\nu}X^{\mu\nu}+\frac{M^2}{2}X_\mu X^\mu-eA_\mu J^\mu_{\rm em}.
+\end{equation}
+\B{There are no lighter hidden particles and hence no invisible decay channel. The tree-level scattering amplitudes, polarization traces, phase space, homogeneous conversion amplitude and event integral are derived and implemented anew. QED Feynman rules and standard phase-space identities are starting identities. The reactor photon spectrum and experimental information are measured or published inputs. The exact one-loop three-photon enhancement is a downloaded numerical input, not a new loop calculation. No previous project code, curves or numerical results are imported.}
+{No hay partículas ocultas más livianas y, por tanto, no hay canal invisible de decaimiento. Las amplitudes de dispersión a nivel árbol, trazas de polarización, espacio de fases, amplitud de conversión homogénea e integral de eventos se derivan e implementan de nuevo. Las reglas de Feynman de QED y el espacio de fases estándar son identidades de partida. El espectro gamma del reactor y la información experimental son entradas medidas o publicadas. La corrección exacta a un lazo del decaimiento a tres fotones es una entrada numérica descargada, no un cálculo nuevo del lazo. No se importa código, curvas ni resultados numéricos anteriores del proyecto.}
+
+\B{The reactor source is the spectrum quoted by Danilov from FRJ-1, valid above $0.2\,\mathrm{MeV}$:}
+{La fuente del reactor es el espectro FRJ-1 citado por Danilov, válido por encima de $0.2\,\mathrm{MeV}$:}
+\begin{equation}
+ Q_\gamma(E)=0.58\times10^{18}\frac{P_{\rm th}}{\mathrm{MW}}
+ e^{-E/(0.91\,\mathrm{MeV})}\quad[\mathrm{s}^{-1}\mathrm{MeV}^{-1}].
+\end{equation}
+\B{This is an empirical source normalization, not a source derived from nuclear transition strengths. The original FRJ-1 annual report was located, but its server returned an HTML challenge instead of the PDF; the spectrum is therefore taken from Danilov. A reactor-specific spectral uncertainty is not available.}
+{Es una normalización empírica de la fuente, no una fuente derivada de intensidades de transiciones nucleares. Se localizó el informe anual original de FRJ-1, pero el servidor devolvió una página de verificación HTML en vez del PDF; el espectro se toma entonces de Danilov. No se dispone de una incertidumbre espectral específica del reactor.}
+
+\section{\B{Production by conversion in an absorbing medium}{Producción por conversión en un medio absorbente}}
+\B{Set $X=S-\epsilon A$ at leading order. For either transverse polarization the propagation equation is $i\partial_z\Psi=H\Psi$, with}
+{Se define $X=S-\epsilon A$ al orden dominante. Para cada polarización transversal, $i\partial_z\Psi=H\Psi$, con}
+\begin{equation}
+ H=\frac1{2E}\begin{pmatrix}m_\gamma^2+\epsilon^2M^2-iE\Gamma&-\epsilon M^2\\-\epsilon M^2&M^2\end{pmatrix},
+ \qquad m_\gamma^2=\frac{4\pi\alpha n_e}{m_e}.
+\end{equation}
+\B{Here $\Gamma^{-1}$ is the intensity attenuation length: an unmixed photon amplitude falls as $e^{-\Gamma z/2}$. This convention agrees with the denominator of Danilov Eq. (6) and Redondo Eqs. (2.5)--(2.10)\cite{redondo}. Using $-i\Gamma$ in the Hamiltonian while calling $\Gamma^{-1}$ the intensity length would introduce a factor-four error in the damping term. Natural units are used inside these equations.}
+{Aquí $\Gamma^{-1}$ es la longitud de atenuación de intensidad: la amplitud de un fotón sin mezcla cae como $e^{-\Gamma z/2}$. Esta convención coincide con el denominador de la Ec. (6) de Danilov y las Ecs. (2.5)--(2.10) de Redondo\cite{redondo}. Usar $-i\Gamma$ en el hamiltoniano y llamar $\Gamma^{-1}$ longitud de intensidad introduciría un factor cuatro en el término de amortiguamiento. Estas ecuaciones usan unidades naturales.}
+\begin{align}
+ \delta&=\frac{m_\gamma^2-M^2}{2E},\qquad g=\frac{\epsilon M^2}{2E},\\
+ \mathcal A_{A\to S}(L)&=g\int_0^L e^{i\delta z-\Gamma z/2}\dd z
+ =g\frac{e^{(i\delta-\Gamma/2)L}-1}{i\delta-\Gamma/2},\\
+ P_{A\to S}(L)&=\frac{\epsilon^2M^4}{(M^2-m_\gamma^2)^2+E^2\Gamma^2}
+ [1+e^{-\Gamma L}-2e^{-\Gamma L/2}\cos(\delta L)],\\
+ P_R(E)&\xrightarrow{\Gamma L\gg1}\frac{\epsilon^2M^4}{(M^2-m_R^2)^2+E^2\Gamma_R^2}
+ \equiv\epsilon^2 C_R(E,M),\qquad Q_X(E)=Q_\gamma(E)P_R(E).
+\end{align}
+\B{The last expression is the leading small-mixing form of Danilov's probability. The discriminant of the displayed real mass matrix is}
+{La última expresión es la probabilidad de Danilov al orden dominante en mezcla pequeña. El discriminante de la matriz real de masas escrita arriba es}
+\begin{equation}
+ (\Delta m^2)^2=(M^2-m_\gamma^2)^2+2\epsilon^2M^2(M^2+m_\gamma^2)+\epsilon^4M^4.
+\end{equation}
+\B{Danilov retains the term quadratic in mixing. The numerical calculation uses the leading denominator and requires $\epsilon M^2/|M^2-m_{R,D}^2|<0.1$. It also requires $|M^2-m_{R,D}^2|>10E_{\max}\Gamma_{R,D}$, so that the unmodeled narrow resonance is excluded and detector damping is subdominant. The benchmark has $m_R=m_D=20\,\mathrm{eV}$ and attenuation lengths of $10\,\mathrm{cm}$; the detector length here only defines the resonance diagnostic. The paper's higher-density range is illustrated separately with $60\,\mathrm{eV}$. These plasma masses are benchmark inputs, not a composition model of CsI.}
+{Danilov retiene el término cuadrático en la mezcla. El cálculo usa el denominador dominante y exige $\epsilon M^2/|M^2-m_{R,D}^2|<0.1$. También exige $|M^2-m_{R,D}^2|>10E_{\max}\Gamma_{R,D}$: excluye así la resonancia estrecha no modelada y mantiene subdominante el amortiguamiento del detector. El caso de referencia usa $m_R=m_D=20\,\mathrm{eV}$ y longitudes de atenuación de $10\,\mathrm{cm}$; en el detector esta longitud sólo define el diagnóstico de resonancia. Se ilustra por separado el extremo de mayor densidad del artículo con $60\,\mathrm{eV}$. Estas masas de plasma son entradas de referencia, no un modelo composicional de CsI.}
+
+\B{There is no area-valued production cross section for this coherent one-particle conversion. The appropriate quantity is $P_R$ per produced photon, or $Q_X$ per unit energy and time. Replacing it by a fictitious two-body cross section would mix distinct descriptions. In the heavy limit $C_R\to1$; at small mass $C_R\sim M^4/m_R^4$. No secondary reactor Compton cascade is added.}
+{Esta conversión coherente de una partícula no tiene una sección eficaz de producción con unidades de área. La cantidad apropiada es $P_R$ por fotón producido, o $Q_X$ por unidad de energía y tiempo. Reemplazarla por una sección ficticia de dos cuerpos mezclaría descripciones distintas. En el límite pesado $C_R\to1$; a masa baja $C_R\sim M^4/m_R^4$. No se agrega una cascada Compton secundaria en el reactor.}
+\begin{figure}[htbp]\centering\includegraphics[width=.86\linewidth]{work/danilov_fresh/output/oscillation_source.pdf}\caption{\B{Newly calculated oscillation source, with mixing squared removed.}{Fuente por oscilaciones calculada de nuevo, dividida por la mezcla al cuadrado.}}\end{figure}
+
+\section{\B{Compton production from the two QED diagrams}{Producción Compton a partir de los dos diagramas QED}}
+\begin{align}
+\gamma(k)+e(p)&\to X(q)+e(p'),\quad p^2=p'^2=m^2,\ k^2=0,\ q^2=M^2,\quad m=m_e,\\
+\mathcal M&=\epsilon e^2\bar u(p')\mathcal V^{\nu\mu}u(p)\xi^*_{\nu}\varepsilon_\mu,\\
+\mathcal V^{\nu\mu}&=\gamma^\nu\frac{\slsh p+\slsh k+m}{s-m^2}\gamma^\mu+
+ \gamma^\mu\frac{\slsh p-\slsh q+m}{u-m^2}\gamma^\nu.
+\end{align}
+\B{Contracting either external momentum into the sum of diagrams and using $(\slsh p-m)u=0$ cancels the two terms. Current conservation therefore removes the $q_\mu q_\nu/M^2$ term in the complete massive polarization sum. It does not mean that a physical longitudinal state is absent at finite mass. Expanding the spin trace and using the Clifford algebra gives}
+{Al contraer cualquiera de los momentos externos con la suma y usar $(\slsh p-m)u=0$, los dos términos se cancelan. La conservación de corriente elimina así el término $q_\mu q_\nu/M^2$ de la suma completa de polarizaciones masivas. No significa que el estado longitudinal físico esté ausente a masa finita. Al expandir la traza de espines y usar el álgebra de Clifford se obtiene}
+\begin{align}
+\overline{|\mathcal M|^2}&=\epsilon^2e^4 F(a,b,c,d),\quad a=s-m^2,\ b=u-m^2,\ c=m^2,\ d=M^2,\\
+F&=-2\left(\frac ab+\frac ba\right)+4(2c+d)
+ \left[\frac1a+\frac1b+c\left(\frac1a+\frac1b\right)^2-\frac d{ab}\right].
+\end{align}
+\B{The initial average is over two electron spins and two photon polarizations. The derivation program contracts the gamma traces symbolically; an independent C++ calculation sums physical polarization vectors and checks the same expression.}
+{El promedio inicial cubre dos espines electrónicos y dos polarizaciones del fotón. El programa de derivación contrae simbólicamente las trazas gamma; un cálculo C++ independiente suma vectores de polarización físicos y verifica la misma expresión.}
+\begin{align}
+ E_{\gamma,\rm th}&=M+\frac{M^2}{2m},\quad s=m^2+2mE_\gamma,\quad
+ \lambda=[s-(m+M)^2][s-(m-M)^2],\\
+ E_X^\pm&=\frac{(E_\gamma+m)(s+M^2-m^2)\pm E_\gamma\sqrt\lambda}{2s},\\
+ \frac{\dd\sigma_{\rm prod}}{\dd E_X}&=\frac{\epsilon^2 e^4(\hbar c)^2}{32\pi m E_\gamma^2}F,
+ \qquad E_X^-\le E_X\le E_X^+.
+\end{align}
+\B{Outside this support the cross section is zero. The Jacobian follows from $t=-2m(E_\gamma-E_X)$ and $\dd\sigma/\dd t=\overline{|\mathcal M|^2}/[16\pi(s-m^2)^2]$. The implementation integrates in the center-of-mass angle instead:}
+{La sección se anula fuera de este soporte. El jacobiano se obtiene de $t=-2m(E_\gamma-E_X)$ y $\dd\sigma/\dd t=\overline{|\mathcal M|^2}/[16\pi(s-m^2)^2]$. La implementación integra en cambio en el ángulo del centro de masa:}
+\begin{equation}
+\frac{\dd\sigma}{\dd\cos\theta_*}=\frac{(\hbar c)^2}{32\pi s}\frac{p_f^*}{p_i^*}\overline{|\mathcal M|^2}.
+\end{equation}
+
+\section{\B{Absorption with the produced polarization density matrix}{Absorción con la matriz de polarización producida}}
+\B{An unpolarized ordinary-photon source gives $\rho_X=\mathrm{diag}(1/2,1/2,0)$ in the helicity basis under the transverse conversion model. The incoming population must therefore be averaged over two transverse states, not three vector states. Longitudinal nuclear emission is a different source, suppressed by current conservation at high energy; it is not supplied by the transverse Hamiltonian. Its relative parametric size is $M^2/E^2$, not a measured branching fraction.}
+{Una fuente de fotones ordinarios no polarizados da $\rho_X=\mathrm{diag}(1/2,1/2,0)$ en la base de helicidad dentro del modelo de conversión transversal. La población incidente se promedia entonces sobre dos estados transversales, no sobre tres estados vectoriales. La emisión nuclear longitudinal es otra fuente, suprimida por conservación de corriente a alta energía; no está incluida en el hamiltoniano transversal. Su tamaño paramétrico relativo es $M^2/E^2$, no una fracción de emisión medida.}
+
+\B{For $X(q)+e(p)\to\gamma(k)+e(p')$, use the same two diagrams with the vector roles exchanged. Let $E=q^0$, $w=k^0$, $p_X=\sqrt{E^2-M^2}$, and define}
+{Para $X(q)+e(p)\to\gamma(k)+e(p')$ se usan los mismos dos diagramas intercambiando los roles vectoriales. Sean $E=q^0$, $w=k^0$, $p_X=\sqrt{E^2-M^2}$, y}
+\begin{equation}
+a=M^2+2mE,\quad b=-2mw,\quad c=m^2,\quad d=M^2,\quad s=m^2+a.
+\end{equation}
+\B{The longitudinal trace, averaged over the electron spin but for a single incoming longitudinal vector, is derived independently as}
+{La traza longitudinal, promediada sobre el espín electrónico pero para un único vector longitudinal incidente, se deriva independientemente como}
+\begin{align}
+D&=(a-d)^2-4cd,\quad U=ab-4ac+2cd-8c^2,\\
+V&=a^2b+a^2c+ab^2-abd+2abc+b^2c,\\
+ F_L&=\frac{8dUV}{a^2b^2D},\qquad F_T=F-\frac12F_L,\qquad F_{\rm unpol}=\frac{2F_T+F_L}{3}=\frac23F.
+\end{align}
+\B{This follows by inserting $\xi_L=(p_X,0,0,E)/M$ into the electron trace and summing the outgoing photon states. The code uses the Ward-equivalent vector $\xi_L-q/M$ to avoid cancellation of large $E/M$ terms. The remaining transverse sum follows from completeness. SymPy verifies $F_L\to0$ at $M\to0$, and numerical physical vectors independently verify the full finite-mass expression.}
+{Se obtiene insertando $\xi_L=(p_X,0,0,E)/M$ en la traza electrónica y sumando los estados del fotón saliente. El código usa el vector equivalente por Ward $\xi_L-q/M$ para evitar cancelaciones entre términos grandes $E/M$. La suma transversal restante se obtiene por completitud. SymPy verifica $F_L\to0$ cuando $M\to0$, y los vectores físicos verifican numéricamente la expresión completa a masa finita.}
+\begin{align}
+w_\pm&=\frac{(s-m^2)(E+m\pm p_X)}{2s},\\
+\frac{\dd\sigma_T^{\rm vac}}{\dd w}&=\frac{\epsilon^2e^4(\hbar c)^2}{32\pi m p_X^2}F_T,\qquad
+\frac{\dd\sigma_L^{\rm vac}}{\dd w}=\frac{\epsilon^2e^4(\hbar c)^2}{32\pi m p_X^2}F_L,\\
+\sigma_T^{\rm vac}&\xrightarrow{M\to0}\epsilon^2\sigma_{\rm KN},\qquad
+\sigma_{\rm unpol}^{\rm vac}\xrightarrow{M\to0}\frac23\epsilon^2\sigma_{\rm KN}.
+\end{align}
+\B{For the propagating mostly hidden mode in detector matter, the photon admixture is $\epsilon M^2/(M^2-m_D^2)$ away from resonance. Thus the bulk interaction cross section in the Danilov approximation is}
+{Para el modo propagante mayormente oculto dentro del detector, la componente fotónica es $\epsilon M^2/(M^2-m_D^2)$ lejos de resonancia. La sección de interacción en el volumen, dentro de la aproximación de Danilov, es}
+\begin{equation}
+\sigma_A^{\rm med}(E,M)=\epsilon^2 C_D(M)\,\widehat\sigma_T(E,M),\quad
+C_D=\frac{M^4}{(M^2-m_D^2)^2},\quad \widehat\sigma_T=\sigma_T^{\rm vac}/\epsilon^2.
+\end{equation}
+\B{Danilov Eq. (9) supplies the squared admixture. It is not the total probability for a count; the target electrons, cross section and selection must still be included. This is a bulk, weak-mixing approximation. Boundary transients and inhomogeneous material require a transport calculation.}
+{La Ec. (9) de Danilov aporta la componente fotónica al cuadrado. No es la probabilidad total de registrar un evento: aún deben incluirse electrones blanco, sección eficaz y selección. Es una aproximación de volumen y mezcla pequeña. Los transitorios de frontera y la materia no homogénea requieren transporte.}
+\begin{figure}[htbp]\centering\includegraphics[width=.86\linewidth]{work/danilov_fresh/output/polarized_cross_sections.pdf}\caption{\B{Fresh, polarization-resolved production and absorption. These are vacuum microscopic cross sections, not an extra reactor source.}{Producción y absorción nuevas, separadas por polarización. Son secciones microscópicas en vacío, no una fuente adicional del reactor.}}\end{figure}
+
+\section{\B{Decay: survival and counts inside the detector}{Decaimiento: supervivencia y eventos dentro del detector}}
+\B{Izaguirre et al.\cite{izaguirre} separate absorption after propagation from decay within the detector. Their electron-pair channel is closed for $M<1\,\mathrm{MeV}<2m_e$. With no lighter dark particles, the leading allowed electromagnetic channel is $X\to3\gamma$. We use the Euler--Heisenberg width multiplied by the published full-loop enhancement of McDermott et al.\cite{decay}:}
+{Izaguirre y colaboradores\cite{izaguirre} separan la absorción después de la propagación del decaimiento dentro del detector. Su canal a pares electrónicos está cerrado para $M<1\,\mathrm{MeV}<2m_e$. Sin partículas oscuras más livianas, el canal electromagnético dominante permitido es $X\to3\gamma$. Se usa el ancho de Euler--Heisenberg multiplicado por la corrección publicada del lazo completo de McDermott y colaboradores\cite{decay}:}
+\begin{align}
+\Gamma_{3\gamma}&=\frac{17\epsilon^2\alpha^4}{11664000\pi^3}\frac{M^9}{m_e^8}\,f(M),\\
+\ell(E)&=\frac{\hbar c\sqrt{E^2-M^2}}{M\Gamma_{3\gamma}},\quad S(E)=e^{-R/\ell(E)},\\
+P_{\rm decay\ in\ chord}&=S(E)[1-e^{-L/\ell(E)}].
+\end{align}
+\B{The tabulated $f(M)$ is interpolated logarithmically; below its first mass point the published low-mass series is used. No extrapolation beyond its upper endpoint is allowed. Rotational invariance makes the total rest-frame decay width independent of initial spin orientation; polarization still affects angular acceptance, which is not inferred from that width.}
+{Se interpola logarítmicamente la tabla de $f(M)$; debajo de su primera masa se usa la serie de masa baja publicada. No se permite extrapolar más allá del extremo superior. La invariancia rotacional hace que el ancho total en reposo no dependa de la orientación inicial del espín; la polarización sí afecta la aceptación angular, que no se deduce del ancho.}
+\B{At the absorption-only boundary, the largest propagation exponent is $\MaxTau$. This makes loss over the baseline negligible. It does not prove that detector decays are negligible compared with absorption. In the thin-signal and point-source limit, integrating detector chords gives $\int\dd A\,L=V$, so both terms can be included without choosing an arbitrary chord:}
+{En el borde calculado sólo con absorción, el mayor exponente de propagación es $\MaxTau$. La pérdida en el trayecto es despreciable. Esto no demuestra que los decaimientos dentro del detector sean despreciables frente a la absorción. En el límite de señal ópticamente delgada y fuente puntual, integrar cuerdas del detector da $\int\dd A\,L=V$, por lo que ambos términos se incluyen sin elegir una cuerda arbitraria:}
+\begin{equation}
+N=\frac{T}{4\pi R^2}\int_{E_{\min}}^{E_{\max}}\dd E\,Q_\gamma(E)P_R(E)S(E)
+\left[\eta_A N_e\sigma_A^{\rm med}(E)+\eta_D\frac{V}{\ell(E)}\right].
+\end{equation}
+\B{Here $N_e=M_{\rm det}[\mathrm{kg}]10^3N_AZ/A$, $V=M_{\rm det}[\mathrm{kg}]10^3/\rho$, and the CsI density is $4.51\,\mathrm{g\,cm^{-3}}$ from NIST. Full energy containment gives $E_{\rm vis}=E$. The main bound sets $\eta_D=0$ because TEXONO has not published the three-photon signal acceptance. A second curve shows $\eta_D=\eta_A$ as an explicit response hypothesis. It strengthens the upper-mass sensitivity and must not be presented as measured efficiency.}
+{Aquí $N_e=M_{\rm det}[\mathrm{kg}]10^3N_AZ/A$, $V=M_{\rm det}[\mathrm{kg}]10^3/\rho$, y la densidad de CsI es $4.51\,\mathrm{g\,cm^{-3}}$ según NIST. Con contención completa $E_{\rm vis}=E$. El límite principal fija $\eta_D=0$ porque TEXONO no publicó la aceptación de una señal de tres fotones. Otra curva usa $\eta_D=\eta_A$ como hipótesis explícita de respuesta. Mejora la sensibilidad a masas altas y no debe presentarse como eficiencia medida.}
+\begin{figure}[htbp]\centering\includegraphics[width=.78\linewidth]{work/danilov_fresh/output/decay_enhancement.pdf}\caption{\B{Published loop enhancement, freshly interpolated. The loop amplitude is not rederived here.}{Corrección publicada del lazo, interpolada de nuevo. La amplitud a un lazo no se deriva aquí.}}\end{figure}
+
+\section{\B{TEXONO inputs, statistics and the exclusion plane}{Entradas TEXONO, estadística y plano de exclusión}}
+\B{The original TEXONO paper\cite{texono} gives a fiducial reactor-ON exposure of $29882\,\mathrm{kg\,day}$ and a $3$--$8\,\mathrm{MeV}$ window. The code represents this as $187\,\mathrm{kg}$ times the corresponding effective live time. The baseline is $28\,\mathrm m$ and thermal power $2.9\,\mathrm{GW}$. CsI has $Z=55+53=108$ electrons per formula unit and $A=259.8099219\,\mathrm{g\,mol^{-1}}$; the tiny Tl doping is neglected.}
+{El artículo original de TEXONO\cite{texono} da una exposición fiducial con reactor encendido de $29882\,\mathrm{kg}\,\text{día}$ y una ventana de $3$--$8\,\mathrm{MeV}$. El código la representa como $187\,\mathrm{kg}$ por el tiempo efectivo correspondiente. La distancia es $28\,\mathrm m$ y la potencia térmica $2.9\,\mathrm{GW}$. CsI tiene $Z=55+53=108$ electrones por unidad química y $A=259.8099219\,\mathrm{g\,mol^{-1}}$; se desprecia el pequeño dopaje de Tl.}
+\B{Danilov quotes an excess $30.7\pm100.6$ events. The one-sided Gaussian construction used here is}
+{Danilov cita un exceso de $30.7\pm100.6$ eventos. La construcción gaussiana unilateral usada aquí es}
+\begin{equation}
+N_{95}=30.7+\Phi^{-1}(0.95)100.6=\SelectedCap,\qquad N(M,\epsilon_{95})=N_{95}.
+\end{equation}
+\B{Using $1.64$ rather than the full Gaussian quantile gives Danilov's rounded $195.7$ events. Their $1174.1$ preselection cap comes from the assumed anti-Compton suppression of about six. We keep the selected-event cap and put $1/6$ in $\eta_A$, avoiding a second application of the same correction. TEXONO Table III measures background survival $0.16$ under the multi-hit veto; it does not calibrate hidden-photon signal acceptance. The Gaussian construction has no profiling of a new detector response or spectral nuisance model.}
+{Usar $1.64$ en vez del cuantil gaussiano completo da los $195.7$ eventos redondeados de Danilov. Su límite previo a selección de $1174.1$ proviene de la supresión anti-Compton supuesta de aproximadamente seis. Se conserva el límite de eventos seleccionados y se coloca $1/6$ en $\eta_A$, sin aplicar dos veces la corrección. La Tabla III de TEXONO mide una supervivencia del fondo de $0.16$ bajo el veto multiseñal; no calibra la aceptación de fotones ocultos. La construcción gaussiana no perfila una nueva respuesta del detector ni incertidumbres espectrales.}
+\B{Away from resonance and with negligible baseline decay, $N=K(M)\epsilon^4$. Therefore $\epsilon_{95}=(N_{95}/K)^{1/4}$. At low mass, the two medium factors yield $K\propto M^8$ and $\epsilon_{95}\propto M^{-2}$. The C++ solver includes survival and solves the full integral; the scaling is tested independently. Larger mixings are excluded only within the stated weak-mixing and transparent-signal regime.}
+{Lejos de resonancia y con decaimiento despreciable en el trayecto, $N=K(M)\epsilon^4$. Entonces $\epsilon_{95}=(N_{95}/K)^{1/4}$. A masa baja, los dos factores del medio dan $K\propto M^8$ y $\epsilon_{95}\propto M^{-2}$. El código incluye supervivencia y resuelve la integral completa; la ley de escala se verifica por separado. Mezclas mayores quedan excluidas sólo dentro del régimen declarado de mezcla pequeña y señal transparente.}
+\input{work/danilov_fresh/output/benchmark_table.tex}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{work/danilov_fresh/output/texono_exclusion.pdf}\caption{\B{Fresh conditional boundaries. Curves split across excluded resonance intervals. The mass scan stops below 1 MeV. The upper-mass source still uses a relativistic approximation.}{Bordes condicionales nuevos. Las curvas se interrumpen en las resonancias excluidas. El barrido de masa termina debajo de 1 MeV. La fuente a masas altas aún usa una aproximación relativista.}}\end{figure}
+
+\section{\B{Comparison, validity and what is not established}{Comparación, validez y lo que no está establecido}}
+\B{A direct rescaling of Park's printed $2.1\times10^{-5}$ bound\cite{park}, by the event-cap change and Danilov's transverse $3/2$ rate correction, gives $\PaperRescale$. The independent source integral gives $\Plateau$ on the plateau. This comparison fails a ten-percent reproduction criterion. It is not repaired by fitting the source normalization. Danilov describes a recalculation of Park; the stated energy-preserving source and the earlier Compton convolution are different prescriptions. The result here is a fresh implementation of the explicit source probability and photon spectrum, not a numerical reproduction of the published curve.}
+{El reescalado directo del límite impreso de Park, $2.1\times10^{-5}$\cite{park}, por el cambio de límite de eventos y la corrección transversal $3/2$ de Danilov, da $\PaperRescale$. La integral independiente de la fuente da $\Plateau$ en la meseta. La comparación falla un criterio de reproducción del diez por ciento. No se corrige ajustando la normalización. Danilov describe un recálculo de Park; la fuente que conserva energía y la convolución Compton son prescripciones diferentes. El resultado aquí implementa de nuevo la probabilidad de producción y el espectro escritos explícitamente; no reproduce numéricamente la curva publicada.}
+
+\B{Exact finite-mass two-body kinematics is used for scattering throughout $0<M<1\,\mathrm{MeV}$. The coherent production Hamiltonian assumes $M/E\ll1$. At the endpoint and the bottom of the ROI, $(M/E)^2$ can reach about $0.11$. This is an expansion parameter, not a calibrated error bar: nuclear transition multipoles and longitudinal emission have not been reconstructed. Below $0.1\,\mathrm{MeV}$ the same parameter is at most about $0.0011$. Atomic binding is negligible relative to the MeV energies for the free-electron approximation, but material attenuation, photon escape and selection need detector transport. The plotted $20\,\mathrm{eV}$ benchmark is retained to follow Danilov; actual CsI and reactor profiles can change the low-mass result.}
+{Se usa cinemática exacta de dos cuerpos con masa finita para la dispersión en $0<M<1\,\mathrm{MeV}$. El hamiltoniano de producción coherente supone $M/E\ll1$. En el extremo superior y al inicio de la ROI, $(M/E)^2$ puede llegar a aproximadamente $0.11$. Es un parámetro de expansión, no una barra de error calibrada: no se reconstruyen multipolos nucleares ni emisión longitudinal. Debajo de $0.1\,\mathrm{MeV}$ el mismo parámetro es como máximo aproximadamente $0.0011$. La ligadura atómica es pequeña frente a energías MeV en la aproximación de electrón libre, pero atenuación material, escape de fotones y selección requieren transporte. Se conserva el caso $20\,\mathrm{eV}$ para seguir a Danilov; los perfiles reales de CsI y del reactor pueden cambiar el resultado a masa baja.}
+
+\B{Checked: symbolic total and longitudinal traces; both Ward identities; massless Klein--Nishina limits; massive detailed balance; doubled angular and energy quadrature; the rounded Danilov count cap; published decay-table knots; and closure of every reported event boundary. Not established: the full TEXONO likelihood, energy-dependent acceptance for either channel, material profiles and resonances, secondary reactor transport, longitudinal nuclear production and the exact massive nuclear-source correction. These limitations prevent presenting the curve as a detector-validated experimental exclusion.}
+{Verificado: trazas simbólicas total y longitudinal; ambas identidades de Ward; límites Klein--Nishina sin masa; balance detallado masivo; doble cuadratura angular y energética; límite redondeado de eventos de Danilov; nodos de la tabla publicada de decaimiento; cierre de cada borde de eventos. No establecido: verosimilitud completa de TEXONO, aceptación dependiente de energía para ambos canales, perfiles y resonancias materiales, transporte secundario en el reactor, producción nuclear longitudinal y corrección exacta por masa en la fuente nuclear. Estas limitaciones impiden presentar la curva como una exclusión experimental validada con el detector.}
+
+\section{\B{Reusing the calculation}{Reutilización del cálculo}}
+\B{Run \texttt{bash work/danilov\_fresh/run.sh}. Edit \texttt{experiment.conf}: power, distance, exposure, mass, $Z/A$, density, ROI, separate absorption/decay efficiencies, medium parameters and the event cap. A negative cap requests the Gaussian excess/error construction; otherwise an externally justified positive cap is used. For a different background likelihood, supply its limit rather than treating a raw count as Gaussian. The present sub-MeV scan requires $E_{\min}>1\,\mathrm{MeV}$ and $\epsilon\le0.01$. Lower-energy detectors require atomic response and a revised source model. All physical calculations are named C++ functions; SymPy supplies independent algebra and marimo displays the freshly generated ROOT figures.}
+{Ejecutar \texttt{bash work/danilov\_fresh/run.sh}. Editar \texttt{experiment.conf}: potencia, distancia, exposición, masa, $Z/A$, densidad, ROI, eficiencias separadas de absorción y decaimiento, parámetros materiales y límite de eventos. Un límite negativo pide la construcción gaussiana con exceso/error; en otro caso se usa un límite positivo justificado externamente. Para otra verosimilitud del fondo, proporcionar su límite en vez de tratar un conteo crudo como gaussiano. El barrido sub-MeV actual exige $E_{\min}>1\,\mathrm{MeV}$ y $\epsilon\le0.01$. Detectores de menor energía requieren respuesta atómica y otra fuente. Los cálculos físicos están en funciones C++; SymPy aporta álgebra independiente y marimo presenta los gráficos ROOT nuevos.}
+
+\begin{thebibliography}{9}
+\bibitem{danilov} M. Danilov, S. Demidov, D. Gorbunov, arXiv:1804.10777v2, PRL 122, 041801 (2019), Eqs. (2), (5), (6), (9), TEXONO discussion.
+\bibitem{redondo} J. Redondo, arXiv:1501.07292, JCAP 07 (2015) 024, Sec. 2.2--2.3. New corpus addition.
+\bibitem{polarization} J. Redondo, G. Raffelt, arXiv:1305.2920; H. An, M. Pospelov, J. Pradler, arXiv:1302.3884. Polarization and in-medium mixing; corpus PDFs retained as sources.
+\bibitem{texono} M. Deniz et al., arXiv:0911.1597, PRD 81, 072001 (2010), Tables II--III and Sec. VII. New corpus addition.
+\bibitem{izaguirre} E. Izaguirre, G. Krnjaic, M. Pospelov, arXiv:1507.02681, PRD 92, 095014 (2015), Eqs. (9), (11)--(13).
+\bibitem{decay} S. McDermott, H. Patel, H. Ramani, arXiv:1705.00619, PRD 97, 073005 (2018), Eqs. (9)--(10), Table I, ancillary \texttt{enhancement.txt}. New corpus addition.
+\bibitem{park} H. Park, arXiv:1705.02470, PRL 119, 081801 (2017); printed TEXONO bound used only for comparison.
+\end{thebibliography}
+\B{All cited PDFs and the downloaded decay table are in \texttt{papers/danilov\_fresh/}. NIST CsI composition/density is archived there as \texttt{nist\_csi.html}.}{Todos los PDF citados y la tabla de decaimiento descargada están en \texttt{papers/danilov\_fresh/}. La composición/densidad NIST de CsI se archiva allí como \texttt{nist\_csi.html}.}
+\end{document}

@@ -1,0 +1,11 @@
+PASS: decay scaling, zero-distance/mixing survival, analytic and missing roots, doubled vacuum quadrature, medium zero-decay comparison
+VISIBLE medium survival: 12 points
+VISIBLE medium survival: 23 points
+Info in <TCanvas::Print>: pdf file output/conditional_limits.pdf has been created
+Info in <TCanvas::Print>: SVG file output/conditional_limits.svg has been created
+Info in <TCanvas::Print>: png file output/conditional_limits.png has been created
+maximum_EH_optical_depth_at_vacuum_limit = 1.09746078459e-11
+PASS: every reported boundary closes the configured event cap
+UNCHECKED: exact three-photon loop near threshold; detector response; full Park Figure 2 compilation; published normalization discrepancy
+ROOT 6.36.000; compiler 13.3.0
+compute_seconds = 0.893734288

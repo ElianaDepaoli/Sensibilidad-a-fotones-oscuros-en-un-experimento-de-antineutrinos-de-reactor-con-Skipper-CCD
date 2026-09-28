@@ -1,0 +1,12 @@
+{
+  "combined-graph-count": {
+    "value": 21,
+    "statement": "Number of original TGraph objects, including disconnected digitized segments, retained in the combined macro.",
+    "produced_by": "work/combine_figure1/build.py; work/combine_figure1/check.C::check",
+    "from_scratch": "Count graph constructors in the supplied macros; verify runtime graph count and exact point preservation in ROOT.",
+    "from_library": "Python re; ROOT graph accessors.",
+    "choices": [
+      "Count disconnected segments as separate TGraph objects, not as separate physical curves."
+    ]
+  }
+}

@@ -37,6 +37,11 @@ Each tree keeps the same internal layout:
 - `claude/reports/explicaciones_es.pdf` is a living Q&A document (in Spanish, by request): one
   section per question, each ending in an explicit verification and a statement of what was *not*
   checked.
+- **Final summary** (in Spanish): `claude/reports/final_summary_es.pdf`. It says what was done by the
+  agents alone and what was done on the author's own code, and puts every TEXONO 95% CL limit of the project
+  on one plot (`claude/work/exclusion_comparison/texono_exclusion_all.pdf`). Once the cross section and the
+  integration grid are corrected, the author's macro and Codex's independent code agree to 3%
+  (eps_95 ~ 1.5e-5). Neither reproduces Park's 2.1e-5.
 
 ## What is deliberately not in this repository
 

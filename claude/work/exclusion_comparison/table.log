@@ -1,0 +1,20 @@
+
+Processing exclusion_comparison.C...
+Info in <TCanvas::Print>: eps file texono_exclusion_all.eps has been created
+Info in <TCanvas::Print>: png file texono_exclusion_all.png has been created
+
+eps95 at m_A' [MeV] =                    1e-6       1e-4       1e-2        0.1        0.5        1.0
+Park 2017 published                           -          -          -          -          -  2.100e-05
+Danilov 2019 digitized                1.264e-02          -          -          -          -  3.466e-05
+DP3_Danilov.C off                     1.259e-05  1.259e-05  1.263e-05  1.288e-05  1.352e-05  1.465e-05
+DP3_Danilov.C A+B+D                   7.107e-03  1.712e-05  1.787e-05  1.822e-05  1.912e-05  2.071e-05
+DP3_Danilov_new.C exact off           1.275e-05  1.275e-05  1.279e-05  1.317e-05  1.493e-05  1.727e-05
+DP3_Danilov_new.C exact A+B+D         7.196e-03  1.734e-05  1.809e-05  1.862e-05  2.112e-05  2.443e-05
+DP3_Danilov.C off wp200               1.496e-05  1.496e-05  1.500e-05  1.495e-05  1.380e-05  1.291e-05
+DP3_Danilov.C A+B+D wp200             8.442e-03  2.034e-05  2.122e-05  2.114e-05  1.952e-05  1.825e-05
+DP3_Danilov_new.C exact off wp200     1.513e-05  1.513e-05  1.517e-05  1.526e-05  1.524e-05  1.525e-05
+DP3_Danilov_new.C exact ABD wp200     8.538e-03  2.057e-05  2.146e-05  2.158e-05  2.156e-05  2.157e-05
+Codex park_texono                     1.565e-05  1.565e-05  1.565e-05          -  1.562e-05  1.522e-05
+Codex reactor_sensitivity vac         2.446e-05  2.446e-05  2.446e-05  2.445e-05  2.438e-05  2.378e-05
+Codex darkphoton_v3                   5.178e-03  1.281e-05  1.336e-05          -          -          -
+Codex danilov_fresh                   5.334e-03  1.283e-05  1.337e-05  1.337e-05  1.343e-05  1.345e-05

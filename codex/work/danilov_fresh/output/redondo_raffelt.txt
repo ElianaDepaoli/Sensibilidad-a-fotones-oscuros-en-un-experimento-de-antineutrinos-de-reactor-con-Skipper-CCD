@@ -1,0 +1,899 @@
+                                                                                                                      MPP-2013-110
+
+
+
+
+                                         Solar constraints on hidden photons
+                                         re-visited
+arXiv:1305.2920v1 [hep-ph] 13 May 2013
+
+
+
+
+                                         Javier Redondoa,b and Georg Raffelta
+                                         a Arnold Sommerfeld Center, Ludwig-Maximilians-Universität, Theresienstr. 37,
+
+                                          80333 München, Germany
+                                         b Max-Planck-Institut für Physik (Werner-Heisenberg-Institut), Föhringer Ring 6,
+
+                                          80805 München, Germany
+                                          E-mail: redondo@mpp.mpg.de
+
+                                         Abstract. We re-examine solar emission of hidden photons γ 0 (mass m) caused by kinetic
+                                         γ–γ 0 mixing. We calculate the emission rate with thermal field theory methods and with a
+                                         kinetic equation that includes γ–γ 0 “flavor oscillations” and γ absorption and emission by the
+                                         thermal medium. In the resonant case both methods yield identical emission rates which, in
+                                         the longitudinal channel, are enhanced by a factor ωP2 /m2 (plasma frequency ωP ) in agreement
+                                         with An, Pospelov and Pradler (2013). The Sun must not emit more energy in a “dark
+                                         channel” than allowed by solar neutrino measurements, i.e., not more than 10% of its photon
+                                         luminosity. Together with the revised emission rate, this conservative requirement implies
+                                         χ < 4 × 10−12 (eV/m) for the kinetic mixing parameter. This is the most restrictive stellar
+                                         limit below m ∼ 3 eV, whereas for larger masses the transverse channel dominates together
+                                         with limits from other stars. A recent analysis of XENON10 data marginally improves
+                                         the solar limit, leaving open the opportunity to detect solar hidden photons with future
+                                         large-scale dark matter experiments. Detecting low-mass hidden photons with the ALPS-II
+                                         photon-regeneration experiment also remains possible.
+Contents
+
+1 Introduction                                                                               1
+
+2 Thermal field theory derivation                                                            3
+
+3 Kinetic Approach                                                                           4
+
+4 Emission from the Sun                                                                      7
+  4.1 Resonant emission                                                                      7
+  4.2 Off-resonance production                                                               9
+  4.3 Solar spectrum                                                                         9
+  4.4 Direct detection of solar HPs                                                         11
+
+5 Other stars                                                                               12
+
+6 Production in the Early Universe                                                          13
+
+7 Conclusions                                                                               14
+
+8 Acknowledgements                                                                          14
+
+
+1   Introduction
+
+At the low-energy frontier of particle physics [1], the existence of hidden photons (HPs) is an
+intriguing hypothesis. These particles would have a small mass m and would be completely
+sterile except for kinetic mixing with normal photons, described by a dimensionless parameter
+χ. The Lagrangian describing the coupled system is
+
+                        1         1           m2         χ
+                   L = − Aµν Aµν − Bµν B µν +    Bµ B µ − Aµν B µν ,                      (1.1)
+                        4         4           2          2
+where A and B are the photon and HP fields.
+     Ongoing experimental searches look for photon appearance from putative HP sources.
+This includes photon regeneration experiments, beam dump experiments or searches for solar
+HPs. The usual requirement that stars should not lose excessive amounts of energy in dark
+channels also leads to restrictive limits [2–6]. HP production in the early universe can be
+quite efficient despite the small couplings, which makes them excellent candidates for dark
+matter [7–10] and dark radiation [11] in different parameter ranges. A recent review echoes
+the various phenomenological aspects of HP models [12].
+     Returning to stars, it is a peculiarity of HP emission that it depends on density and
+temperature such that, for small masses, the most restrictive limit arises from the Sun,
+whereas usually globular cluster stars, white dwarfs, or neutron stars are more constraining.
+     One way of looking at HP production in a hot medium is γ–γ 0 oscillations in conjunc-
+tion with γ absorption and emission, similar to the production of sterile neutrinos in the
+early universe by active-sterile oscillations. In the stellar plasma, both transverse (T) and
+longitudinal (L) electromagnetic excitations exist, and both mix with the corresponding HP
+
+
+
+
+                                            –1–
+polarizations. In a nonrelativistic plasma, L-plasmons have the approximate dispersion re-
+lation ω = ωP (plasma frequency) which to lowest order in the small electron velocity does
+not depend on photon wavenumber k, whereas HPs obey ω 2 = m2 + k 2 . Hence, for any
+value of ωP , i.e., at any location in the Sun, there is a population of L-plasmons with the HP
+wavenumber k 2 = ω 2 − m2 , leading to maximal γ–γ 0 mixing and thus to resonant emission.
+This peculiarity of the L dispersion relation makes the L channel important.
+      As a consequence of the unusual dispersion relation, it is also important to include the
+non-trivial wave-function renormalization factor in processes with external L-plasmons, cor-
+responding to the correct residue factor of the L-plasmon propagator. In the first calculation
+of neutrino emission by plasmon decay [13], γ → ν ν̄, a superfluous factor K 2 /ω 2 was included
+for L-plasmon decay [14, 15]. Here, K = (ωP , k) is the four-momentum of the decaying plas-
+mon. Such incorrect residue factors can easily sneak in, depending on the choice of gauge
+used in the calculation. Plasmon decay was later extended to relativistic plasmas [16, 17],
+and once more this factor has crept in (see the remark after Eq. A9 in Ref. [18]). These
+errors had no practical consequences because, after phase-space integration, the modification
+was not dramatic and the L-plasmon channel was subdominant anyway.
+      A similar error in the first calculation of HP emission by one of us [5] once more leads to
+the same spurious factor K 2 /ω 2 , but this time with drastic consequences [6]. This is because
+here K 2 = m2 for the emitted HP so that the emission rate was underestimated by a factor
+m2 /ωP2 . With ωP ∼ 0.3 keV in the Sun, the correction factor is huge for very low-mass HPs.
+      While it would be enough to re-scale the previous results with this factor, another aspect
+of the enhanced emission rate is HP production with keV energies that may be accessible
+in detectors, but do not correspond to propagating L-plasmons in the Sun. The oscillation
+mechanism is then not an adequate description. Instead, one may think of the emission, for
+example, as bremsstrahlung with the electromagnetic field mediating between the electrons
+and hidden photons in the form of an off-shell propagator [6]. This calculation includes, as
+a special case, the on-shell production and must reproduce the results from the oscillation
+approach.
+      This “propagator approach” simplifies even further if one uses thermal field theory from
+the start. The calculation of the emission rate then reduces to the almost trivial exercise of
+reading the expression for the HP thermal self-energy from the Lagrangian Eq. (1.1). The
+role of the residue factor also becomes immediately obvious.
+      For on-shell photon–HP conversion, the essential physics is that thermal plasmons oscil-
+late into HPs, collisions with the medium absorb the photon component, destroy the coher-
+ence of the mixed state, and in this way produce a population of sterile states that escape. In
+the “propagator treatment,” oscillations never appear explicitly and one may wonder about
+its range of validity.
+      The physics of flavor oscillations combined with collisions is captured in a simple Boltz-
+mann collision equation originally devised for neutrinos [19]. To make connection between
+the different approaches we also derive HP emission in this picture. In the end we find iden-
+tical results for the physical circumstances at hand. The crucial condition under which both
+approaches reconcile is the average flavor conversion between collisions being small. This can
+happen in two radically different situations: if the mixing angle is small or, even for a large
+mixing angle, the collisions happen so fast that oscillations do not get far between collisions
+(strong damping or quantum-Zeno regime). Both conditions are satisfied if the active-sterile
+“mixing energy” is small compared to the interaction rate of the active quanta. In our case,
+the mixing energy in the L-channel is 21 χm. This quantity is extremely small compared
+
+
+
+
+                                             –2–
+with the relevant L-plasmon absorption rate: we are deeply in the “allowed regime” for the
+thermal field theory treatment.
+
+2   Thermal field theory derivation
+
+To study the photon–HP system described by the Lagrangian Eq. (1.1), usually the non-
+orthogonal fields A and B are redefined by Bµ = Sµ − χAµ to introduce the sterile field Sµ .
+The mixing is thus shifted from the kinetic term to a matrix of mass-squares that mixes the
+flavors S and A and we find
+                            1         1           m2
+                       L = − Aµν Aµν − Sµν S µν +    (Sµ − χAµ )2 .                         (2.1)
+                            4         4           2
+We are interested in small χ and derive our formulas perturbatively in χ. S quanta are
+produced at order χ2 , while distinguishing between B and S introduces corrections of order
+χ4 so that in practice we may identify S with B.
+     To obtain the HP emission rate we first observe that the emission rate by a thermal
+medium for any particle is closely related to the imaginary part of its self-energy Π in the
+medium. In particular [20]
+                                        Im Π = −ω Γ ,                                  (2.2)
+where Γ is the rate by which the particle distribution approaches thermal equilibrium. We also
+consider the absorption rate Γabs (inverse mean free path) and the spontaneous production
+rate Γprod . Detailed balancing reveals Γprod = e−ω/T Γabs . Moreover, for bosons Γ = Γabs −
+Γprod = (eω/T − 1) Γprod . The desired thermal production rate is thus found to be
+
+                                                    Im Π
+                                    Γprod = −                .                              (2.3)
+                                                ω (eω/T − 1)
+
+      We thus seek the imaginary part of the HP self-energy in the medium. At order χ2 it
+is given by the graph of Fig. 1 after truncating the external lines. The crosses symbolize the
+mixing vertex, the internal double line is the thermal photon propagator. Without further
+ado we find the HP self-energy for a given polarization state to be
+                                                        1
+                           ΠS (K) = m2 + χm2                        χm2 ,                   (2.4)
+                                                  K2 − Π    A (K)
+
+where we use Lorentz gauge and K = (ω, k) is the four-momentum of the external HP. It
+fulfills K 2 = Re ΠS = m2 up to corrections of order χ2 , which disappear in the m → 0
+limit as seen in Eq. (2.4). The real part of the photon self-energy can be taken from the
+literature. For the imaginary part we can use Eq. (2.2) with ΓA derived from electron-nucleus
+bremsstrahlung emission or other processes. The HP production rate thus follows directly
+from that for ordinary photons.
+
+
+
+
+Figure 1. Self-energy for hidden photons (curly lines) in a thermal medium by mixing with thermal
+photons of the medium (double line).
+
+
+
+
+                                             –3–
+        In a nonrelativistic plasma, one finds to lowest order in the small electron velocity
+
+                                                                  K2 2
+                               Re ΠT = ωP2      and    Re ΠL =      ω .                              (2.5)
+                                                                  ω2 P
+The plasma frequency is ωP2 = 4πα ne /me with ne the electron density. Corrections from
+the electron velocity are of order T /me . With T < 1.3 keV in the Sun, this is negligible.
+The corresponding dispersion relations are ω 2 − k 2 = ωP2 for T-plasmons which therefore
+behave exactly like particles with mass ωP . L-plasmons obey ω 2 = ωP2 , independently of
+wavenumber.
+     For the L-channel we note that in the denominator K 2 = ZL−1 ω 2 where we define
+ZL = ω 2 /K 2 so that overall
+                                                            ZL
+                              Im ΠSL = χ2 m4 Im                         .                            (2.6)
+                                                          2
+                                                   ω 2 − ωP − iZL Im ΠA
+                                                                      L
+
+We recognize ZL as the residue factor chosen to obtain the canonical pole structure. With
+K 2 = m2 we have ZL = ω 2 /m2 , explaining the enhanced L-emission noted in Ref. [6].
+     The residue factor can be √ interpreted as renormalizing√“charges” to which the propa-
+gator is attached, here χ → ZL χ. This is analogous to ZL renormalizing the electron
+charge in plasmon decay. In the spirit of Eq. (2.2) we must interpret −ZL ImΠL /ω as the
+damping rate of L quanta, which we denote as ΓL . On the pole of the propagator this is the
+physical damping rate of on-shell L-plasmons. It therefore involves ZL , now renormalizing
+the electron charge, for example in bremsstrahlung emission.1
+     Collecting all factors, we find the HP production rate in the L-channel to be [6]
+
+                                         χ2 m2            ω 2 ΓL
+                              Γprod
+                               S    =                                    .                           (2.7)
+                                        eω/T − 1 (ω 2 − ωP2 )2 + (ωΓL )2
+
+Plasmons are weakly damped (ΓL  ωP ) so that for ω ∼ ωP this is a narrow resonance
+which, for the purpose of phase-space integration, is a delta function
+
+                                              χ2 m2 π
+                                   Γprod
+                                    S    ∼              δ(ω − ωP ) .                                 (2.8)
+                                             eω/T − 1 2
+Remarkably, for resonant longitudinal HP emission, we do not need any production rate.
+However, Eq. (2.7) is valid for any ω and thus can be used to compute the emission rate for
+ω far away from the resonance. In this case one needs ΓL (ω) = ΓL (K)|K 2 =m2 explicitly.
+
+3       Kinetic Approach
+
+Deriving the HP emission-rate in the above form is quick and elegant, but at first glance
+its equivalence to the flavor oscillation approach may not be entirely obvious. Therefore, we
+derive the emission rate based on a kinetic equation usually employed in neutrino physics.
+      We begin with the equation of motion for the mixed fields, which is in Fourier space [5]
+
+                                          π(ω, k) −χm2
+                                                       
+                              2     2                      A
+                             ω −k −             2   2          = 0,                     (3.1)
+                                          −χm      m       S
+    1
+    In the original HP emission calculation [5], ZL was correctly included in the damping-rate calculation,
+but it was overlooked that χ should have been renormalized as well.
+
+
+
+
+                                                  –4–
+where A and S are the field amplitudes. We use the notation π(K) = Re Π(K) for the
+real part of the polarization function which gives us the dispersion relation by virtue of
+ω 2 − k 2 = π(ω, k). These equations apply separately to the L and T polarizations.
+      Oscillating particles are not in propagation eigenstates and thus do not have simultane-
+ously fixed energy and momentum. We here consider evolution in time and thus use quanta
+of fixed common momentum k. For simplicity we assume relativistic states so that ω ≈ k.
+      For the T case we expand ω 2 − k 2 = (ω − k)(ω + k) ≈ (ω − k)2k. After linearizing the
+equation, we reverse the time Fourier transform, i.e., ω → i∂t and find the usual “Schrödinger
+equation” for flavor oscillations
+                                                          
+                                     A(t)      ωA µ       A(t)
+                                i∂t         =                    .                        (3.2)
+                                      S(t)      µ ωS      S(t)
+
+Here ωA,S are the energies of A and S quanta following from the dispersion relation for
+assumed momentum k ≈ ω and µ = −χm2 /2k is a “mixing energy.”
+      For L-modes the situation is more complicated because the polarization function given
+in Eq. (2.5) is not simply an effective mass but rather πL (ω, k) = ωP2 /ZL with ZL = ω 2 /K 2 .
+The Klein-Gordon equation is explicitly
+
+                            (ω − ωP2 ) ZL−1 (K) −χm2
+                           2                             
+                                                            A
+                                                                = 0.                      (3.3)
+                                   −χm2        ω 2 − ωS2    S
+                                             √                √
+It is brought to canonical form by A → A/ ZL and χ → χ ZL so that
+                                 2
+                                  ω − ωP2 −χmω
+                                                    
+                                                      A
+                                                          = 0.                            (3.4)
+                                  −χmω ω 2 − ωS2       S
+
+Linearizing it we recover an oscillation equation of the form Eq. (3.2)  √ with ωA = ωP , ωS =
+   2     2 1/2
+(m + k ) , and µ = −χm/2. The mixing energy is enhanced by ZL in full analogy to
+the propagator approach.2
+     The key ingredient for HP production is that flavor oscillations described by this equa-
+tion are interrupted by collisions and we must understand the evolution of the ensemble, not
+of individual particles. Therefore, the adequate description is in terms of density matrices.
+For a fixed momentum k, P   the free evolution is described by a Hamiltonian for two coupled
+harmonic oscillators, H = i,j=A,S a†i Ωij aj . Here a†i and ai are the creation and annihilation
+operators, respectively, of quanta with flavor i and
+                                                     1             
+                               ωA µ       ωA + ωS        2 ∆ω    µ
+                        Ω=              =           +                   ,                  (3.5)
+                                µ ωS           2           µ − 12 ∆ω
+
+where ∆ω = ωA − ωS . The “mixing energy” µ is assumed to be small compared to the
+diagonal elements, causing only a small overall energy modification.
+     In a kinetic approach, the evolution of the fields A and S is described by the expectation
+values of field bilinears. In the simplest case, the matrix of occupation numbers ρij = ha†j ai i
+captures all relevant information. The field A is assumed to interact with the external medium
+   2                                                             2
+     In the original treatment [5], the on-shell value πL = ωP     − k2 was inserted in Eq. (3.1), representing
+the correct
+      √     dispersion  relation.  However, in this case the external “charge” χ should have been renormalized
+with ZL . This error was at least partly caused by the presentation of πL (ω, k) in Refs. [21, 22] which is
+only correct on-shell, i.e., for ω and k connected by the dispersion relation. The renormalization factors were
+separately provided.
+
+
+
+
+                                                    –5–
+by an interaction linear in A, i.e., the medium can absorb or emit A-quanta, but will not
+scatter them between different momenta. In this case the evolution of different momentum
+modes is not coupled and the equation of motion for a single momentum mode is [19]
+
+                         ρ̇ = −i [Ω, ρ] + 21 {Gprod , 1 ± ρ} − 21 {Gabs , ρ} ,              (3.6)
+
+where {·, ·} is an anticommutator. The positive sign applies to bosons (Bose stimulation),
+whereas the negative sign applies to fermions (Pauli blocking). We have defined the matrices
+                                                                
+                                  Γprod 0                    Γabs 0
+                        Gprod =              and Gabs =              ,                 (3.7)
+                                    0 0                       0 0
+
+where Γprod and Γabs are the production and absorption rates of A-quanta with momentum
+k by the medium. In thermal equilibrium they obey Γprod = e−ωA /T Γabs . The commutator
+part describes flavor oscillations and is equivalent to the earlier Schrödinger equation.
+      In thermal equilibrium and ignoring flavor oscillations, the S-particles will not be excited
+at all, whereas the A-particles are thermally occupied according to fT = (eωA /T ± 1)−1 , the
+negative sign applying to bosons, the positive one to fermions. We then describe a non-
+equilibrium situation by its deviation from equilibrium in the form
+                                                       
+                                                   fT 0
+                                  ρ = ρT + δρ =           + δρ .                             (3.8)
+                                                    0 0
+
+The collision term vanishes for ρT and we are left with
+
+                                    ρ̇ = −i [Ω, ρ] − 12 {G, δρ} ,                           (3.9)
+
+where G = diag(Γ, 0). The damping rate is Γ = Γabs ± Γprod = (1 ± e−ωA /T )Γabs . The
+negative sign is for bosons, i.e., the distribution function approaches equilibrium with the
+difference between the “spontaneous” absorption and emission rates as mentioned earlier,
+whereas for fermions (positive sign) it is the sum.
+      We next write the ρ matrix in terms of occupation number components explicitly
+                                                      
+                                               hA g
+                                       δρ =              ,                            (3.10)
+                                                g ∗ hS
+
+leading to the equations of motion
+
+                         ḣA = −ΓhA − 2µ Im(g)                                             (3.11)
+                         ḣS = 2µ Im(g)                                                    (3.12)
+                                    1
+                                                 
+                           ġ = −   2 Γ + i ∆ω       g + iµ (fT + hA − hS ) .              (3.13)
+
+In the absence of damping (Γ = 0), these equations describe flavor oscillation, in the absence
+of mixing (µ = 0), the approach of A to thermal equilibrium.
+      When Γ  µ the damping rate is much larger than the oscillation frequency when
+mixing is maximal for ∆ω = 0. In other words, on resonance we are in the strong damping
+regime (quantum Zeno regime), where decoherence between the mixed species is faster than
+oscillations. When ∆ω is sufficiently large, this is no longer the case, but then mixing becomes
+small. Thus our solution will never stray far from thermal equilibrium, i.e. |hA |  fT and
+|hS |  fT .
+
+
+
+
+                                                –6–
+                                                                                    1
+                                                                                                 
+      In this limit, Eq. (3.13) is a closed equation of motion of the form ġ = −   2 Γ + i ∆ω       g+
+iµfT . With the initial condition g(0) = 0 it has the solution
+
+                                          1 − e−(i ∆ω+Γ/2)t
+                                 g(t) =                     µfT .                           (3.14)
+                                             ∆ω − iΓ/2
+After an initial transient it approaches the steady-state solution
+                                           ∆ω + iΓ/2
+                                   g∞ =                 µfT .                               (3.15)
+                                          (∆ω)2 + Γ2 /4
+
+We can now insert this solution into Eq. (3.12), providing us with the steady-state production
+rate of S quanta,
+                                          Γ µ2               1
+                            ḣS =            2     2     ω  /T
+                                                                  .                     (3.16)
+                                  (ωA − ωS ) + Γ /4 e     A    ±1
+The only assumption has been that µ is small compared with Γ. Therefore, this solution
+also applies when many oscillations take place between collisions as long as the oscillation
+amplitude is small. While oscillations show up in our original transient solution when at t = 0
+the ensemble had been set up in a pure flavor, they disappear in the steady-state solution
+which describes the average of the entire ensemble, not individual particles.
+     We now specialize to the production of longitudinal HPs from the mixing with L-
+plasmons. Therefore, ωA = ωP , Γ = ΓL (damping rate for on-shell L-plasmons) and mixing
+energy µ = −χm/2. For ω = ωS near ωP this result is identical with Eq. (2.7). However, it is
+based on the flavor evolution of on-shell L-plasmons and is not applicable for ω very different
+from ωP .
+
+4     Emission from the Sun
+
+4.1    Resonant emission
+We are here mostly interested in low-mass HPs with m  ωP . Moreover, all over the solar
+interior we have ΓL (ωP )  ωP and so the HP production is narrowly concentrated around
+ω = ωP and we may approximate the emission rate as the delta-function of Eq. (2.7). Under
+this approximation the energy-loss rate per unit volume is
+
+                              χ2 m2 ωP3            2
+                                            2 2 T ωP         α T ne
+                      Q=     ω /T
+                                        ∼ χ  m       = χ2 m2        .                        (4.1)
+                            e P − 1 4π           4π           me
+The approximate expression derives from expanding the exponential because L-plasmons are
+highly occupied (in the solar interior ωP /T does not exceed 0.23), causing perhaps a 10%
+overall error.
+     Integrating the emission rate over the standard solar model AGSS09ph [23] (without
+expanding the exponential in the emission-rate formula), we find for the HP luminosity in
+the L-channel                                       m 2
+                               LSL = 5.7 × 1021 χ2          L .                             (4.2)
+                                                     eV
+     This exotic energy loss is constrained by our relatively precise knowledge of the Sun.
+The most direct indicators of the properties of the solar interior are the solar neutrino fluxes,
+and in particular the boron neutrino flux which is especially sensitive to temperature. It has
+been measured to be Φmeas
+                        B8   = 5.00(1 ± 0.03) × 109 /cm2 s (see Table 2 of Ref. [24]). The
+
+
+
+
+                                               –7–
+                                       8
+
+
+
+                                       7
+
+
+                    FB8 @106 cm2 sD   6
+                                               High-Z
+
+
+                                       5       Measurements
+
+                                               Low-Z
+                                       4
+
+
+
+                                       3
+                                           0     1         2      3            4   5   6
+
+                                                           Χ m @10-12 eVD
+Figure 2. Solar 8 B neutrino flux. Yellow band: Measurements. Red band: Expectation in the
+presence of longitudinal HP emission for a solar model with new opacities (low Z). Green band: Same
+for old opacities (high Z). The vertical line corresponds to LSL < 0.1 L (our adopted limit).
+
+
+presence of some exotic energy loss Lx requires a larger nuclear generation rate and thus an
+enhanced neutrino flux. It is given to good accuracy by [25, 26]
+                                                 ΦxB8 = Φ0B0 (1 + Lx /L )4.6 ,               (4.3)
+where Φ0B0 is the flux computed from a solar model unperturbed by exotic losses. In Fig. 2
+we show the theoretical expectations for ΦxB0 for two solar models.
+     The low-Z model (red band) is based on the latest studies of the solar chemical com-
+position [27], which revealed a lower metallicity (lower opacity and thus lower central solar
+temperature) than previously assumed. It is in slight tension with helioseismology, so for
+comparison we also show the the high-Z model (green band), i.e., the earlier standard solar
+model, that fits better helioseismological data. The widths of the bands represent other un-
+certainties as taken from Table 2 of Ref. [24]. This “solar opacity problem” for the moment
+remains unresolved. Conceivably, the correct abundance of CNO elements in the inner Sun
+can be determined by future solar neutrino measurements. Ironically, the measured boron
+neutrino flux (yellow band) lies exactly in the overlap region of the nominal error ranges of
+the two cases.
+     Figure 2 suggests χ < 3 × 10−12 eV/m as a limit. Of course, the solar prediction is
+dominated by systematic issues and an interpretation of the nominal uncertainties in the
+form of meaningful confidence levels is not available. Therefore, we follow Ref. [26] and
+adopt the requirement LSL < 0.1 L , providing our nominal limit
+                                                                        eV
+                                                        χ < 4 × 10−12      .                 (4.4)
+                                                                        m
+
+
+
+                                                               –8–
+It is shown as a vertical line in Fig. 2. By present evidence, this is a conservative constraint.
+Conceivably it could be improved in future if the solar opacity problem can be convincingly
+settled.
+
+4.2   Off-resonance production
+Since the L-channel dominates HP emission in at least some range of masses, one may wonder
+if laboratory experiments could be sensitive to this flux, again caused by HP-photon mixing.
+These might be more sensitive in the X-ray regime of some keV rather than the sub-keV
+energies produced by on-shell L-plasmon conversion. Therefore, we compute the expected L-
+HP spectral flux at Earth for energies above the solar plasma frequency, i.e., for ω & 0.3 keV.
+This will also help us evaluate the solar constraint for HP masses above 0.3 keV.
+      For this purpose we need the explicit damping rate for L-plasmons which is dominated
+by inverse bremsstrahlung at low energies and Thomson scattering at high energies. We find
+explicitly                                                       r
+                         64π 2 α3 ne Z Z 2 nZ  ω  8πα2 ne            ωP2
+                                    P
+                   ΓL =      √                F        +           1 −     ,               (4.5)
+                                      3/2
+                            3 2π T me ω 3          T       3m2e         ω2
+where nZ is the density of nuclei of charge Z (in the Sun essentially protons and alpha
+particles) and
+                                       Z ∞            Z √x2 +w+x
+                                                    2                t3 dt
+                    F (w) = (1 − e−w )    dx x e−x √               2      2 2
+                                                                              .            (4.6)
+                                        0               x2 +w−x (t + y )
+               √
+Here, y = ks / 2me T with ks a screening scale, i.e., we model screening by representing
+the interaction between electrons and nuclei as a Yukawa potential. This approach neglects
+various other corrections, notably Sommerfeld enhancement, Pauli blocking for partially de-
+generate electrons and electron-electron bremsstrahlung, which is small in the nonrelativistic
+limit because of the equal mass of the colliding particles. We also ignore free-bound and
+bound-bound transitions. Overall we estimate the strike on ΓL to be at most some 20%.
+     In the energy range of interest, screening reduces the emission rate at most by a few
+tens of percent and is partially compensated by other neglected effects. If we ignore screening
+entirely (y = 0), our result agrees with Ref. [6]. In this limit we find analytically
+
+                                 F (w) = K0 (w/2) sinh(w/2) ,                               (4.7)
+
+where K0 is a modified Bessel function of the second kind.
+     It is now straightforward to express the energy-loss rate in terms of ΓL and integrate
+over the solar model AGSS09ph [23] for different HP masses. Imposing the earlier constraint
+LHP < 0.1L for the L-channel leads to the constraints marked “Sun-L” in Fig. 3.
+     For T-modes, exactly the same expressions pertain for ΓT to lowest order in the electron
+velocity, in good agreement with Ref. [5]. Integrating over the same solar model and imposing
+the same constraint leads to the limits marked “Sun-T” in Fig. 3.
+
+4.3   Solar spectrum
+For laboratory detection of solar HPs we need the spectral number flux at Earth. The number
+of HPs emitted in the Sun per unit volume and time is
+
+                                                d3 k prod
+                                           Z
+                                    dN
+                                         =          Γ     ,                            (4.8)
+                                   dV dt       (2π)3 S
+
+
+
+
+                                             –9–
+              -4
+                                                            Spectroscopy
+                                     ALPS
+                     Coulomb
+              -6
+
+
+
+
+                                        CA
+                     CMB
+
+
+
+
+                                          ST
+              -8                   Sun-L
+
+
+
+
+                                                                                        HP-> 3Γ + Cosmology
+    Log10 Χ
+
+
+
+
+                     ALPS-IIb
+                                                                    Sun-T
+                      prospect
+              -10
+
+                                   Xenon10
+              -12
+                                                                                HB
+
+              -14                                                               RG
+
+
+                    -6      -4          -2              0              2        4                        6
+                                               Log10 m @eVD
+Figure 3. Bounds on hidden photons. The solar energy-loss constraints in the L and T channels
+as well as the bounds based on horizontal branch (HB) stars and red giants (RG) were derived here.
+We also show the CAST [5] and recent XENON10 [28] limits on solar HPs (see also [29, 30]) as well
+as limits from modifications of Coulomb’s law [31], distortions of the CMB spectrum [11], the ALPS
+photon-regeneration experiment [32], atomic spectroscopy [33] and from decays of relic dark matter
+HPs [7, 8]. Also shown are prospects for the ALPS-II experiment [34].
+
+
+whereas the spectral flux at Earth is
+                                          Z R               √
+                           dΦ      1                   2ω       ω 2 − m2 prod
+                              =                 dr r                    ΓS .                                  (4.9)
+                           dω   (1 AU)2    0                    2π 2
+
+We have performed this integral in the m → 0 limit by using the solar model AGSS09ph [23]
+and obtain the flux shown in Fig. 4. We have included a screening correction to bremsstrahlung
+based on the Debye scale including both electrons and ions, causing a barely visible modifi-
+cation on the scale of this plot.
+     The emission is dominated by energies below the maximum solar ωP ∼ 0.3 keV where
+the production is resonant. The energy dependence of this resonant flux can be explored by
+
+
+
+
+                                               – 10 –
+                                       1039
+                                       1038
+
+
+
+
+                                  D
+                                       1037
+
+
+
+                 dΩ Χ m keV cm2 s
+                                       1036
+                            1          1035
+                                       1034
+                   @ 2 2
+                 dΦ eV2
+
+
+                                       1033
+                                       1032
+                                       1031
+                                       1030
+                                       1029
+                                              1      10          102         103    104
+                                                              Ω@eVD
+Figure
+p         4. Flux at Earth of L-HPs in the limit m → 0. For non-zero masses multiply with
+  1 − m2 /ω 2 . The dashed line is the resonant flux based on the analytic arguments described in
+the text.
+
+using Eq. (2.8) to perform the r integration. Thus using Γprod
+                                                          S    ∝ δ[ω − ωP (r)] yields
+                                                                        −1
+                                      dΦ    χ2 m2 rω2 Tω d log ωP2 (r)
+                                         ≈                                    ,           (4.10)
+                                      dω   (1 AU)2 2π 2       dr       r=r(ω)
+
+where rω and Tω are the values of the radius and temperature where ωP = ω. We have
+plotted this contribution as a dashed line in Fig. 4. Low energies correspond to emission
+regions near the solar surface whereas ω → 0.3 keV corresponds to the solar center. The
+analytical formula describes well the numerical results, including the break at ω ∼ 10 eV,
+which originates from the electron density dropping much faster near the surface.
+     Energies ω & 0.3 keV cannot be produced resonantly and the flux reduces considerably.
+An approximation formula for the flux at Earth in this range is
+                                      dΦ
+                                         = χ2 m2 5.7 × 1033 cm−2 s−1 keV−1
+                                      dω                        
+                                                       0.002
+                                           × 1+                    ω −4 e−ω/1.7 ,         (4.11)
+                                                   (ω − 0.28)1.8
+where m is in eV and ω in keV. The accuracy is better than 10% for 0.3 keV < ω < 11 keV.
+The strong suppression at high energies comes from the suppression of the mixing by medium
+effects and the ω −3 dependence of the bremsstrahlung rate. Above a few keV, the spectrum
+is exponentially suppressed.
+
+4.4   Direct detection of solar HPs
+The solar HP flux may be detectable in laboratory experiments. In the T-channel, the CAST
+experiment provides the most restrictive limit for sub-eV mass HPs (yellow region in Fig. 3).
+
+
+
+
+                                                        – 11 –
+However, the T-channel flux is maximum at eV energies where the most sensitive CAST
+detectors are blind. Experiments aiming at ∼ eV HPs have already been performed by
+CAST [35], SUMICO [29] or are taking data (SHIPS [36]) but their constraining power is
+limited until a solid estimate of the low energy T-channel flux is available (see also [37, 38]).
+      In the L-channel, large-scale dark matter detectors can be sensitive by virtue of the
+inverse processes that produce HPs in the Sun [28]. At present, only the XENON10 ex-
+periment appears to have any meaningful sensitivity. According to Ref. [28], the absence
+of excess counts above background implies a limit χ < 3 × 10−12 eV/m, identical with the
+solar energy-loss limit suggested by our Fig. 2 and slightly more restrictive than our adopted
+conservative limit. In other words, dark matter detectors are only beginning to probe so-
+lar HPs, leaving open the possibility that future larger-scale instruments could actually find
+solar HPs.
+
+5   Other stars
+
+To compare the impact of L-HP emission on stars other than the Sun, it is easier to compare
+the usual energy-loss rate per unit mass. We first focus on small HP masses for which
+some analytical insight can be provided. The mass density is ρ and the electron density is
+approximately ne = Ye ρ/mp , where Ye is the number of electrons per baryon (1 for hydrogen,
+0.5 for helium, carbon, and oxygen). For small m, Eq. (4.1) leads to
+
+                                       Q          α
+                                  ε=     ∼ χ2 m2       Ye T .                               (5.1)
+                                       ρ         me mp
+
+Essentially ε depends only on temperature T .
+       Besides the Sun, one may consider HP emission from the non-degenerate helium-burning
+cores of horizontal-branch (HB) stars in globular clusters that usually provide more restrictive
+constraints than the Sun, for example on axion emission. In the Sun, a typical T is 1 keV, in
+the cores of HB stars 8 keV. (Helium burns at higher temperature than hydrogen.) Ye = 0.5 in
+HB-star cores, in the Sun more like 0.8. In the Sun, the average nuclear energy generation rate
+is around 2 erg g−1 s−1 , whereas in the helium-burning HB core it is around 80 erg g−1 s−1 .
+In both cases, energy loss into a “dark channel” is constrained to be less than some 10% of
+εnuc . In other words, the constraint on HP emission from the Sun would be roughly a factor
+of 10 more restrictive. This unusual result arises from HP not depending on density at all
+and on temperature only linearly.
+       However, for HP masses exceeding a few keV, the emission from the Sun is thermally
+suppressed, providing a window where HB stars still provide a useful limit. We have computed
+the HP luminosity (in L and T modes) of a typical HB star (see Fig. 2.4 of Ref. [22], taken
+from Ref. [42]) for different HP masses. Imposing the HP luminosity to be smaller than 10%,
+we obtain the constraint “HB” shown in Fig. 3.
+       For yet larger HP masses, the higher density of more evolved stars allows for resonant
+production. Red-giant stars before He ignition probably provide an opportunity because in
+their degenerate core the plasma frequency reaches ωP ∼ 20 keV at T ∼ 8.6 keV. Imposing
+that the energy-loss rate in L-HPs is smaller than 10 erg g−1 s−1 as suggested in [22, 39–41]
+we obtain from Eq. (4.1) the exclusion region “RG” depicted in red in Fig. 3.
+       For HP masses larger than 20 keV, we would need well studied stars denser than RG
+cores before Helium ignition to produce HPs resonantly, but no standard argument seems to
+be available.
+
+
+
+
+                                             – 12 –
+6   Production in the Early Universe
+In the low-mass region, the production of L HPs in the Sun overshadows the production of
+T modes. It is reasonable to ask whether this is also the case for the relic HPs produced in
+the big bang, where L-modes were neglected in previous works [7, 8, 11], at least partially
+due to the mentioned error in the solar L-emission rate [5]. An, Pospelov and Pradler have
+already argued that L-modes are not copiously produced in the early universe [6] and we
+agree with their arguments. Still, it is instructive to provide a simple quantitative estimate.
+Since HPs with m > 2me decay very efficiently into three photons, they require extremely
+small χ-values to be cosmologically stable and we prefer to focus on m < 2me .
+     The production of relic L-HPs follows neatly from our derivations above. In particular,
+Eq. (2.7) holds because the Hubble expansion is slow and thermal equilibrium is always a
+good approximation. We define the usual comoving momentum as kc = ka, with a = a(t)
+the scale factor. The phase-space distribution of relic L HPs is given by integrating in time
+the production rate as                    Z      t0
+                                f (kc ) =             Γprod
+                                                       S    (ω, kc /a) dt ,               (6.1)
+                                             0
+           p
+where ω = (kc /a)2 + m2 .
+     When T & me , electrons and positrons are relativistic and ΠA has to be modified.
+However, even in this case it has similar properties: Re Π = m2γ ≃ ωP2 and Im Π  Re Π.
+The exact form is not relevant. The production of HPs with a given present-day momentum
+kc is dominated by the resonance, i.e., when ω = mγ ≃ ωP and the ambient on-shell L-
+plasmons can oscillate into L-HPs. This simplifies the calculation, providing
+                                                          π m2 T
+                                  fL (kc ) ≈ χ2                                           (6.2)
+                                                        j(T ) ω 2 H res
+where we have used exp(ω/T ) ∼ ω/T . The Hubble factor is H = a−1 da/dt and j(T ) =
+d log ωP2 /d log a ∼ O(1) [8]. On the RHS, ω, H and T have to be evaluated at the resonance.
+      The frequency dependence is ∼ T /ω 2 H, which strongly decreases with ω (earlier res-
+onances). Momenta with k < m convert when ωP = ω ≃ m and go through the resonance
+almost simultaneously. These HPs are thus created non-relativistically and constitute a form
+of dark matter. (They decouple after the resonance if their mixing is small such that indeed
+only the resonance produces them efficiently.)
+      The analogous relic density of transverse HPs is [8]
+                                               m2 T
+                                                           
+                                        2 π             1
+                            fT (kc ) ≈ χ                           .                    (6.3)
+                                         j(T ) HT ω eω/T − 1 m=ωP
+They feature an almost thermal spectrum and are produced resonantly when ωP = m, i.e.,
+almost simultaneously with L-modes. The abundance involves the evaluation of H, T, j at
+the same moment as L-modes so we can express our results as a ratio of densities,
+                                            nL   1 m
+                                               ≃ 2     .                                  (6.4)
+                                            nT  π Tres
+This ratio is always small because m = ωP is suppressed with respect to T at least by
+the electron charge. We conclude that the dark matter or dark radiation in L-modes is
+always smaller than in T-modes. As anticipated, the earlier DM estimates based on T-modes
+alone [8] do not change significantly for m < 2me .
+
+
+
+
+                                                  – 13 –
+7   Conclusions
+
+We have revisited solar emission of hidden photons. A previous calculation by one of us [5]
+had missed a crucial wave-function renormalization factor as correctly pointed out by An,
+Pospelov and Pradler [6]. We have derived the emission rate in terms of the imaginary part
+of the in-medium HP self-energy in the spirit of thermal field theory, similar to the approach
+chosen in Ref. [6], and using a kinetic approach, closer to the picture of active-sterile flavor
+oscillations with collisions, similar to the original approach of Ref. [5]. In the resonant
+case, where ambient on-shell L-plasmons convert to L-HPs, both results are identical. For
+HP energies ω exceeding the plasma frequency, resonant production is not possible and one
+needs the thermal field theory approach.
+      We have updated several stellar energy-loss and cosmological limits, but the only tan-
+gible change occurs for m < 3 eV where the most restrictive limit among all astrophysical
+arguments arises from solar L-mode emission. The measured 8 B neutrino flux tightly con-
+strains the solar interior temperature and therefore the allowed range of invisible energy
+losses Lx . Based on a generous upper limit of Lx < 0.1 L we have derived a new limit on
+the kinetic mixing parameter given in Eq. (4.4) and shown in Fig. 3 marked “Sun-L.”
+      In future, large-scale dark-matter detectors may be able to find solar HPs which cause
+ionization by bound-free transitions in the detector material. At present, only XENON10
+is marginally sensitive to the solar flux and provides a constraint similar to the one derived
+from the solar neutrino flux [28]. Therefore, future large-scale dark matter detectors have the
+opportunity to detect solar HPs—any increase in sensitivity explores uncharted territory in
+parameter space. Likewise, the photon regeneration experiment ALPS-II, a pure laboratory
+approach, will explore a region of low-mass HP parameter range that is apparently not
+accessible by any other method.
+
+8   Acknowledgements
+
+We thank Alexander Kartavtsev for informative discussions about thermal field theory. We
+acknowledge partial support by the Deutsche Forschungsgemeinschaft through grant No.
+EXC 153 and by the European Union through the Initial Training Network “Invisibles,”
+grant No. PITN-GA-2011-28944. J.R. acknowledges support by the Alexander von Humboldt
+Foundation.
+
+References
+ [1] J. Jaeckel and A. Ringwald, Ann. Rev. Nucl. Part. Sci. 60, 405 (2010), arXiv:1002.0329.
+ [2] L. B. Okun, Sov. Phys. JETP 56, 502 (1982) [Zh. Eksp. Teor. Fiz. 83, 892 (1982)].
+ [3] V. V. Popov and O. V. Vasil’ev, Europhys. Lett. 15, 7 (1991).
+ [4] V. Popov, Turkish Journal of Physics 23, 943 (1999).
+ [5] J. Redondo, JCAP 0807, 008 (2008), arXiv:0801.1527.
+ [6] H. An, M. Pospelov and J. Pradler, arXiv:1302.3884.
+ [7] M. Pospelov, A. Ritz and M. B. Voloshin, Phys. Rev. D 78, 115012 (2008), arXiv:0807.3279.
+ [8] J. Redondo and M. Postma, JCAP 0902, 005 (2009), arXiv:0811.0326.
+ [9] A. E. Nelson and J. Scholtz, Phys. Rev. D 84, 103501 (2011), arXiv:1105.2812.
+
+
+
+
+                                             – 14 –
+[10] P. Arias, D. Cadamuro, M. Goodsell, J. Jaeckel, J. Redondo and A. Ringwald, JCAP 1206,
+     013 (2012), arXiv:1201.5902.
+[11] J. Jaeckel, J. Redondo and A. Ringwald, Phys. Rev. Lett. 101, 131801 (2008), arXiv:0804.4157.
+[12] J. Jaeckel, arXiv:1303.1821.
+[13] J. B. Adams, M. A. Ruderman and C. -H. Woo, Phys. Rev. 129, 1383 (1963).
+[14] V. N. Tsytovich, JETP 45, 1183 (1963) [Sov. Phys. JETP 18, 816 (1964)].
+[15] M. H. Zaidi, Nuovo Cim. A, 40, 502 (1965).
+[16] E. Braaten, Phys. Rev. Lett. 66, 1655 (1991).
+[17] N. Itoh, H. Mutoh, A. Hikita and Y. Kohyama, Astrophys. J. 395, 622 (1992); Erratum ibid.
+     404, 418 (1993).
+[18] E. Braaten and D. Segel Phys. Rev. D 48, 1478 (1993), hep-ph/9302213.
+[19] G. Sigl and G. Raffelt, Nucl. Phys. B 406, 423 (1993).
+[20] H. A. Weldon, Phys. Rev. D 28, 2007 (1983).
+[21] M. Haft, G. Raffelt and A. Weiss, Astrophys. J. 425, 222 (1994); Erratum ibid. 438, 1017
+     (1995), astro-ph/9309014.
+[22] G. G. Raffelt, Stars as Laboratories for Fundamental Physics (University of Chicago Press
+     1996).
+[23] A. Serenelli, S. Basu, J. W. Ferguson and M. Asplund, Astrophys. J. 705 L123 (2009),
+     arXiv:0909.2668.
+[24] W. C. Haxton, R. G. Hamish Robertson and A. M. Serenelli, Annu. Rev. Astr. Astrophys. 51,
+     in press (2013), arXiv:1208.5723.
+[25] H. Schlattl, A. Weiss and G. Raffelt, Astropart. Phys. 10, 353 (1999), hep-ph/9807476.
+[26] P. Gondolo and G. Raffelt, Phys. Rev. D 79, 107301 (2009), arXiv:0807.2926.
+[27] M. Asplund, N. Grevesse, A. J. Sauval and P. Scott, Ann. Rev. Astron. Astrophys. 47, 481
+     (2009), arXiv:0909.0948.
+[28] H. An, M. Pospelov and J. Pradler, arXiv:1304.3461.
+[29] T. Mizumoto, R. Ohta, T. Horie, J. Suzuki, Y. Inoue and M. Minowa, arXiv:1302.1000.
+[30] R. Horvat, D. Kekez, M. Krčmar, Z. Krečak and A. Ljubičić, Phys. Lett. B 721, 220 (2013),
+     arXiv:1210.1043.
+[31] D. F. Bartlett, P. E. Goldhagen and E. A. Phillips, Phys. Rev. D 2, 483 (1970).
+[32] K. Ehret et al., Phys. Lett. B 689, 149 (2010), arXiv:1004.1313.
+[33] J. Jaeckel and S. Roy, Phys. Rev. D 82, 125020 (2010), arXiv:1008.3536.
+[34] R. Bähre et al., arXiv:1302.5647.
+[35] G. Cantatore et al. [CAST Collaboration], Nucl. Instrum. Meth. A 617 (2010) 502.
+[36] M. Schwarz, et al., arXiv:1111.5797.
+[37] S. N. Gninenko and J. Redondo, Phys. Lett. B 664, 180 (2008), arXiv:0804.3736.
+[38] J. Redondo, arXiv:1202.4932.
+[39] G. G. Raffelt, Astrophys. J. 365, 559 (1990).
+[40] G. Raffelt and A. Weiss, Phys. Rev. D 51, 1495 (1995), hep-ph/9410205.
+[41] M. Catelan, J. A. de Freitas Pacheco and J. E. Horvath, Astrophys. J. 461, 231 (1996),
+
+
+
+
+                                              – 15 –
+    astro-ph/9509062.
+[42] D. Dearborn, G. Raffelt, P. Salati, J. Silk and A. Bouquet, Astrophys. J. 354, 568 (1990).
+
+
+
+
+                                              – 16 –
+

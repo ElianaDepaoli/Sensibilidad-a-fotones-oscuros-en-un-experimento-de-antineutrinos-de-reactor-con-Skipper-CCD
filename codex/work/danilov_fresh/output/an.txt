@@ -1,0 +1,729 @@
+                                                                                                                    PI-PARTPHYS-318
+
+
+
+
+                                                       New stellar constraints on dark photons
+arXiv:1302.3884v3 [hep-ph] 20 Aug 2013
+
+
+
+
+                                                             Haipeng An (a) , Maxim Pospelov (a,b) and Josef Pradler (c)
+                                              (a)
+                                                    Perimeter Institute for Theoretical Physics, Waterloo, ON, N2L 2Y5, Canada
+                                                         (b)
+                                                               Department of Physics and Astronomy, University of Victoria,
+                                                                            Victoria, BC, V8P 1A1 Canada
+                                                       (c)
+                                                             Department of Physics and Astronomy, Johns Hopkins University,
+                                                                             Baltimore, MD, 21210 USA
+
+
+                                                                                      Abstract
+                                             We consider the stellar production of vector states V within the minimal model of ”dark
+                                         photons”. We show that when the Stückelberg mass of the dark vector becomes smaller than
+                                         plasma frequency, the emission rate is dominated by the production of the longitudinal modes
+                                         of V , and scales as κ2 m2V , where κ and mV are the mixing angle with the photon and the
+                                         mass of the dark state. This is in contrast with widespread assertions in the literature that
+                                         the emission rate decouples as the forth power of the mass. We derive ensuing constraints
+                                         on the (κ, mV ) parameter space by calculating the cooling rates for the Sun and horizontal
+                                         branch stars. We find that stellar bounds for mV < 10 eV are significantly strengthened, to
+                                         the extent that all current ”light-shining-through-wall” experiments find themselves within
+                                         deeply excluded regions.
+1   Introduction
+
+The Standard Model of particles and fields (SM) can be naturally extended by relatively light
+neutral states. Almost all possible ways of connecting such states to the SM have been ex-
+plored, and several of such ways stand out as the most economical/natural. One of the most
+attractive possibilities is the so-called ”hypercharge portal”, or ”kinetic mixing” portal that
+at low energy connects the electromagnetic current with another massive photon-like state
+[1]. This model has been under intense scrutiny in the last few years, both experimentally
+and observationally. The interest to this model is fueled by attractive (yet speculative) pos-
+sibilities: the dark vector can be a promising mediator of the dark matter-SM interaction [2],
+or form super-weakly interacting dark matter itself [3, 4]. Dark vectors were proposed as a
+possible solution to the muon g − 2 discrepancy [5], and have been searched for (so far with
+negative results), both at high energy and in medium energy high-intensity particle physics
+experiments.
+    The region of small vector masses, mV < eV, can also be very interesting. On the
+theoretical side, there are speculations of dark photons contributing to dark matter (via an
+initial condensate-like state) [6] and dark radiation [7]. But perhaps more importantly, there
+are some hopes for the terrestrial detection of dark photons. So, far several avenues have
+been proposed: one can attempt observing a ”visible-dark-visible” oscillation chain in ”light-
+shining-through-wall” experiments (LSW) [8]. The quanta of dark photons emitted from the
+Sun can be searched for with ”helioscopes” [9], neutrino- [10] and dark matter experiments
+[11, 12]. Some of these exciting possibilities have been summarized in the recent review [13].
+We will refer to all proposals and experiments aimed at detection of dark vectors, produced
+astrophysically or in the laboratory, as direct searches.
+    At the same time, it is well-known that for many light (mV < keV) and weakly-coupled
+exotic particles the astrophysical constraints are often far stronger than direct laboratory
+constraints [14]. The astrophysical constraints are very important for the dark vectors as
+well, as they determine a surviving fraction of the parameter space that can be explored in
+direct searches. The most important limits to recon with are the constraints on the emission
+of dark vectors from solar luminosity, from the horizontal branch stars, neutron star and
+supernovae cooling rates.
+   To date, the only in-depth analysis of astrophysical bounds on sub-keV dark vectors
+was performed by Redondo in [9], where the production of longitudinal modes of the dark
+photon is treated incorrectly. We trace the mistake traced to a wrong use of the in-medium
+polarization effects for longitudinal modes. In this paper we re-assess these bounds, provide
+correct calculations for the dark photon emission rates, and strengthen the astrophysical
+bounds in the LSW region by as much as ten orders of magnitude. Our findings significantly
+reduce the parameter space available for the direct searches and affect or completely change
+the conclusions of many papers written on this subject. In a separate forthcoming publication
+we will address new limits imposed by the most advanced WIMP detectors on the solar
+emission of dark vectors [15].
+   This paper is organized as follows. The next section introduces the minimal model of
+the dark vector, and explains the main scaling of its production rate with mV . Section 3
+
+
+                                              1
+contains technicalities of the in-medium production of the dark vector. Section 4 contains
+practical formulae for the stellar emission rates, in application to the Sun and horizontal
+branch stars, and sets the constraints on the mass-mixing parameter space. We reach our
+conclusions in section 5.
+
+
+2    Dark photon production, in vacuum and in a medium
+
+The minimal model of ”dark vectors” extends the SM gauge group SU(3)c × SU(2)L × U(1)Y
+                                                                                      Y
+by an Abelian factor U(1)V . Kinetic mixing of the hypercharge field strength Fµν       with
+the field strength Vµν of U(1)V links the SM to the new physics sector, while SM fields are
+assumed to be neutral under U(1)V . We are interested in processes far below the electroweak
+energy scale, for which the relevant low-energy Lagrangian takes the form
+                        1 2   1 2   κ          m2
+                   L = − Fµν − Vµν − Fµν V µν + V Vµ V µ + eJem
+                                                             µ
+                                                                Aµ .                         (1)
+                        4     4     2           2
+Here Fµν = ∂µ Aν − ∂ν Aµ is the photon field strength and Vµ is the “hidden photon” (also
+known as ”dark vector”, ”secluded vector”, ”dark photon” etc—an equivalent set of names).
+The coupling of Aµ and Vµ is regulated by the kinetic mixing parameter κ, redefined in an
+appropriate way to absorb the dependence on weak mixing angle. For all calculations in this
+                                                                                         µ
+paper we use κ  1, and consider only leading order terms in the mixing angle. Finally Jem
+is the usual electromagnetic current with electric charge e < 0.
+    It is important to comment on the origin of mV in (1). The simplest possibility is that mV
+is a Stückelberg-type mass. Because of the conservation of the Abelian vector current, mV
+remains protected against sensitivity to UV scales, and such a model is technically natural
+even with very small mV . An alternative generic possibility is a new scalar field(s) charged
+under U(1)V that develops a vacuum expectation value that Higgses the hidden group. This
+introduces a new interaction term of the physical hidden Higgs with vectors, g 0 mV h0 Vµ2 , as
+well as h0 self-interaction (see e.g. [16]). It is well understood that in the limit of mV and
+mh0 small compared to all energy scales in the problem, the production of dark sector states
+is dominated by the dark Higgsstrahlung [3, 16], or equivalently, by the pair-production of
+the U(1)V -charged Higgs scalar fields. Importantly, this process is insensitive to the actual
+mass of mV in the small mass limit, and schematically
+
+                                 RateSM →V +h0 ∝ α0 κ2 (mV )0 ,                              (2)
+
+where we show only the dependence on dark sector parameters, leaving the SM part of the
+V + h0 production process completely general; α0 = (g 0 )2 /(4π) is the square of the coupling of
+dark Higgs to Vµ . For sub-keV dark vectors and Higgses, all previously derived constraints
+on ”millicharged particles” apply [17], and limit the κg 0 combination to be below ∼ 10−13 .
+The technical reason for not having any small mV suppression of the rate (2) despite the
+interaction term g 0 mV h0 Vµ2 being proportional to mV is of course tied to the production of
+the longitudinal modes of V in V + h0 final state.
+   The models with the hard (i.e. Stückelberg) mass mV behave differently as the production
+rate of dark vectors has to decouple in the small mV limit. The easiest way to see this is to
+
+                                               2
+                               f
+
+
+                                                        X
+                                              A                 V
+                               i
+Figure 1: Illustration of the dark photon emission process by the electromagnetic current.
+
+restrict the interaction terms in (1) to on-shell Vµ , using ∂µ V µ = 0 and to leading order in
+κ, ∂µ V µν = −m2V V ν , so that
+                  κ                   on−shell V
+          Lint = − Fµν V µν + eJem
+                                µ
+                                   Aµ −−−−−−→ Lint = −κm2V Aµ V µ + eJem
+                                                                      µ
+                                                                         Aµ .                (3)
+                  2
+This expression is of course explicitly gauge invariant under Aµ → Aµ + ∂µ χ due to the
+current conservation and on-shellness of Vµ conditions:
+                                        µ
+                                    ∂µ Jem = 0;       ∂µ V µ = 0.                            (4)
+
+    The appearance of m2V in the coupling of Vµ and Aµ shows that two sectors are decoupled
+in mV = 0 limit. The most important question in considering the production of Vµ states
+is the scaling of the production rate with mV , in vacuum and inside a medium. The exist-
+ing literature on the subject [9] and its subsequent follow-up papers claim that in-medium
+production decouples as Rate SM →V ∝ κ2 m4V in the small mV limit. This inference is wrong.
+    To demonstrate our point we consider a generic production process i → f + V due to
+(3), where i, f are any initial, final states of the SM particles. A schematic drawing of
+such a process is shown in Fig. 1. Without loss of generality we assume that V is emitted
+in z-direction, so that its four-momentum kµ is given by (ω, 0, 0, |~k|), with ω 2 − ~k 2 = m2V .
+Moreover, we assume that the energy of the emitted V is much larger than its rest mass, ω 
+mV . Three polarization states can be emitted: two transverse states VT with polarization
+vectors T = (0, 1, 0, 0, ) and (0, 0, 1, 0), and one longitudinal mode VL with polarization
+vector L = m−1    ~                           2              µ
+               V (|k|, 0, 0, ω). In all cases µ = −1 and µ k = 0.
+    We include a boundary-free medium via some conducting plasma, characterized by the
+plasma frequency ωp . We consider two regimes, [almost] vacuum: ωp  mV  ω, and
+in-medium: mV  ωp  ω. The choice of |~k|, ω  ωp is not essential, and we consider all
+ranges of ω in the next section. The matrix element for the production process induced by
+(3) is given by
+                        Mi→f +VT (L) = κm2V [eJemµ ]f i hAµ , Aν i Tν (L) ,          (5)
+where hAµ , Aν i stands for the photon propagator with input momentum kµ , and [eJem µ
+                                                                                       ]f i is
+the matrix element of the electromagnetic current. We disregard various mV -independent
+phase factors and normalizations, as our goal in this section is to only consistently follow
+the powers of mV .
+
+                                                  3
+   For convenience, we fix the photon gauge to be Coulomb, ∇i Ai = 0, but same results
+can be obtained in other gauge, of course. The photon propagator for the production of the
+transverse modes is given by (see, e.g. [18]):
+
+                            δjl⊥           δjl⊥              m−2
+                                                           
+                                                       ⊥       V   at mV  ωp ,
+        hAj , Al i =                   = 2        −→ δjl ×      −2                     (6)
+                     ω 2 − |~k|2 − ωp2  mV − ωp 2            −ωp at mV  ωp ,
+
+where δjl⊥ is the projector onto transverse modes. Because of the existence of two different
+regimes for the transverse modes of the photon, the amplitude of the V T production is
+mV -independent in vacuum, and m2V -suppressed in medium.
+   The production of the longitudinal modes in Coulomb gauge is mediated by the hA0 , A0 i
+part of the propagator. If k ≃ ω  ωp , this propagator is unaffected by the medium [18],
+                                                        1
+                                       hA0 , A0 i =         .                              (7)
+                                                      |~k|2
+The difference in the behavior of the two parts of the photon propagator can be readily
+understood. While the propagating transverse modes of the photon are close to mass shell,
+and plasma effects can affect them easily no matter how large ω is, the non-propagating
+piece hA0 , A0 i cannot be changed in a causal manner if |~k| is larger than e.g. the inverse
+distance between particles in the plasma. Plugging the expression (7) for the propagator
+together with the explicit form of Lµ into (5), we arrive at the conclusion that the amplitude
+for the production of the longitudinal mode is proportional to the first power of mV .
+   Collecting all relevant factors in one expression, we get the all-important mV scalings for
+the production of both transverse and longitudinal modes:
+                                   2
+                                      κ          in vacuum, mV  ωp ,
+                  Rate SM →VT ∝                                                            (8)
+                                     κ2 m4V ωp−4 in medium, mV  ωp .
+
+Performing the same estimate for the production of the longitudinal mode, (and keeping
+ω  ωp ) we get
+
+                Rate SM →VL ∝ κ2 m2V ω −2 , both in vacuum and in medium.                  (9)
+
+Notice the quadratic, and not quartic dependence on the dark photon mass in (9), in contrast
+with conclusions of Ref. [9]. The mV -scaling of the production rate for the transverse modes,
+Eq. (8), is of course a well-known result in the “dark photon” literature. It exhibits m4V
+decoupling at small mV , but as it turns out, this was incorrectly extended to the production
+of the longitudinal modes. (Thus we also learn that “nature does not like to skip an order,”
+and compared to the Higgsed case of an O(m0V )-rate (2) the emission of Stückelberg vectors
+occurs in lowest possible O(m2V ) order.) We also note in passing that for some processes,
+only the production of of the longitudinal modes of Vµ is actually possible. A well-studied
+process is the K + → π + V decay [5], which is fobidden for the transverse modes, but has the
+expected m2V scaling at small mV for the longitudinal modes.
+   The correct scaling (9) will bring about momentous change in all estimates of stellar
+cooling rates. For the favorite LSW region with mV ∼ 10−3 eV, one should expect that the
+
+                                               4
+previous literature underestimates the solar cooling rates by as much as m2V /ωp2 ∼ 10−10 ,
+and correspondingly, one expects the tightening of the constraints by the same large factor,
+once the production of the longitudinal mode of the dark vector is treated correctly. In the
+two subsequent sections we perform this analysis in some detail.
+    In closing this section, it is important to realize that the m2V -scaling of the SM → VL
+rate derived in Eq. (9) is not going to change if one abandons the ω  ωp approximation.
+Indeed, in the Coulomb gauge the only ”sources” of mV (at small mV ) in the entire problem
+are the coupling in the Lagrangian and the expression for L . Therefore, the counting of
+powers of mV is the same, and the m2V scaling is preserved even when the medium effects
+significantly modify the propagator (7) at ω ∼ ωp . At the same time, these effects will affect
+the normalization of m2V in (9), and in order to derive an accurate expression for the rate,
+we have to go through a more detailed account of in-medium effects in the next section.
+
+
+3    Plasma production rate of dark photons
+
+Inside a medium, the propagation of the electromagnetic field is determined by the electro-
+magnetic polarization tensor Πµν = e2 hJem
+                                        µ     ν
+                                           , Jem               µ
+                                                 i. Due to kµ Jem = 0 where k = (ω, ~k) is the
+four-momentum flow inside the polarization tensor, Πµν can be parameterized as
+                                       X µ ν                µ ν
+                            Πµν = ΠT       T i T i + ΠL L L ,                         (10)
+                                          i=1,2
+
+where T,L are the transverse and longitudinal polarization vectors of a vector boson with
+momentum k. In particular,
+                                              1                 ~k
+                                  L = q               (|~k|, ω ) .                             (11)
+                                           ω 2 − |~k|2         |~k|
+
+    In the Coulomb gauge, the propagator of the electromagnetic field can be written as
+                                                           kikj
+                                                                
+                         i   j               1          ij
+                      hA , A i =                       δ −         ,
+                                    ω 2 − |~k|2 − ΠT        ~k 2
+                                             1
+                      hA0 , A0 i =             ~2
+                                                      ,                               (12)
+                                    |~k|2 − |k| ΠLω 2 −|~k|2
+
+where L0 = |~k|/ kµ k µ has been used. Notice that while the definition of ΠT is usually
+                  p
+
+uniform across the literature, the definition of ΠL varies, and e.g. in Ref. [18] it is defined
+                              ~k|2
+                         = ω2|−|
+               Ref. [18]                this work
+differently, ΠL                  ~k|2 ΠL          . With the explicit expression of the photon propa-
+gator, the matrix element for the dark photon emission in Eq. (5) can further be written
+as
+                                                       κm2
+                               Mi→f +VT = − 2 V [eJem             µ
+                                                                    ]f i Tµ ,
+                                                     mV − ΠT
+                                                     κm2V m2V       0
+                               Mi→f +VL =            2
+                                                                 [eJem  ]f i L0 .               (13)
+                                                             ~
+                                                    mV − ΠL |k|2
+
+
+                                                    5
+                        µ
+Using the condition kµ Jem = 0 and Eq. (11), it is easy to show that
+
+                                        0 L         |~k|2 µ L
+                                       Jem 0 = −        J  .                               (14)
+                                                    m2V em µ
+Therefore, Eq. (13) can be further simplified to
+                                                  κm2V
+                           Mi→f +VT,L = −                [eJ µ ]f i T,L .                   (15)
+                                               m2V − ΠT,L em µ
+The general expression for Re ΠT and Re ΠL can be found in Ref. [18]. Thus we find that the
+emission of dark vectors is given by the vacuum matrix element for the emission of massive
+             µ
+photons, [eJem ]f i T,L
+                     µ , with fiducial photon mass mγ = mV and multiplied by the effective
+mixing angles, defined according to,
+                                               κ2 m4V
+                          κ2T,L =                                   .                        (16)
+                                    (m2V − Re ΠT,L )2 + (Im ΠT,L )2
+
+    At finite temperature T 6= 0, the imaginary parts of ΠT,L are related to the rates at which
+the respective distribution functions approach equilibrium [19]. Detailed balance equation
+allows this to be expressed exclusively in terms of the absorption rate ΓabsT (L) of in-medium
+transverse (longitudinal) massive photons,
+
+                       Im ΠT,L (ω, |~k|) = −ω 1 − e−ω/T Γabs        ~
+                                                         
+                                                           T,L (ω, |k|) .                  (17)
+
+    One should note that the on-shell condition of the outgoing dark photon imposes the re-
+lation ω 2 = |~k|2 +m2V . Therefore, in this sense, Γabs
+                                                     T,L can be understood as the absorption rate
+of the transverse and longitudinal mode of dark photon as if it couples to the electromagnetic
+current with the same coupling constant as the photon field.
+                                                                                        prod
+   It will be convenient to express Γabs
+                                     T (L) in terms of a differential production rate dΓT,L /(dωdV )
+per frequency interval and volume. To this end we write a Boltzmann-type equation for the
+photon distribution function dnT,L /dω,
+
+                            dnT,L   dΓprod
+                                      T,L   gT,L      dnT,L abs
+                                  =                 −      Γ .                               (18)
+                            dωdt    dωdV 1 − e −ω/T    dω T,L
+Using detailed balancing and noting that the equilibrium dark photon distribution is given
+by dnT,L /dω = gT,L ω|~k|/(2π 2 )/(eω/T − 1), where gT = 2 and gL = 1, are the degeneracies for
+the transverse and longitudinal modes respectively, this yields,
+                                                      prod
+                                               2π 2 dΓT,L ω/T
+                                      Γabs
+                                       T,L =              e   .                              (19)
+                                               ω|~k| dωdV
+
+    Therefore, according to Eqs. (15), (16), we conclude that the differential production rate
+of transverse and longitudinal modes of dark vectors, dΓprod,V
+                                                          T,L  /(dωdV ), can be written as
+                                      prod,V
+                                    dΓT,L       2
+                                                    dΓprod
+                                                      T,L
+                                             = κT,L        .                                 (20)
+                                     dωdV           dωdV
+                                                  6
+  Current conservation demands that both Re ΠL and Im ΠL are proportional to m2V .
+Therefore, κ2L will remain mV -independent in the small mV limit as can be seen from (16)
+when expressed as
+                                               κ2
+                              κ2L =           2        2 ,                       (21)
+                                         Re ΠL      Im ΠL
+                                      1 − m2      + m2
+                                                   V          V
+
+From Eqs. (16) and (21) it is obvious that in the region m2V  Re ΠT , κ2T scales as m4V ,
+                                            prod
+whereas κ2L scales as m0V . However, Γabs
+                                      L , ΓL     scale as m2V due to the current conservation.
+Therefore, the production rate of the transverse modes is suppressed by m4V in the small
+mV limit whereas the production rate of the longitudinal mode is only suppressed by m2V ,
+in agreement with our qualitative discussion in the previous section. To avoid confusion we
+would like to stress again that Γabs
+                                 L describes the damping of the longitudinal photon modes,
+and not what one would call plasmons. The damping of plasmons will be m2V -independent,
+and can be obtained from Γabs L upon the appropriate rescaling. From Eq. (16) one can see
+       prod,V
+that ΓT,L reaches resonance at m2V = ReΠT,L , and can be written as
+                       dΓprod,V
+                                           p
+                         T,L         κ2 m4V ω 2 − m2V
+                                   =                    δ(m2V − ReΠT,L ) ,                (22)
+                        dωdV           2π(eω/T − 1)
+                                  res
+which is independent of the details of the production processes.
+   The resonant production can be understood as a thermal bath of photons which slowly
+transits into dark photons. The transition amplitude for this can written as
+                                                        −1/2
+                                         2      ∂ReΠT,L
+                           MT,L = −κmV 1 −                      ,                 (23)
+                                                  ∂ω 2
+                                            −1/2
+where the factor (1 − ∂ReΠT,L /∂ω 2 )     comes from the wave function renormalization of
+the photon field due to the thermal correction. Therefore, the transition rate for a single
+transverse photon or longitudinal plasmon with four-momentum k = (ω, |~k|) can be written
+as
+                                 Z                    −1
+                       trans   1      2 4      ∂ReΠT,L
+                     ΓT,L =         κ mV 1 −               dΦ1 ,                       (24)
+                              2ω                  ∂ω 2
+                                        3
+where dΦ1 = (2π)4 δ 4 (k − p) 2p0d(2π)
+                                     p
+                                       3 is the one particle phase space, and p is the four-
+
+momentum of the outgoing dark photon satisfying the on shell condition p2 = m2V . One
+finds,
+                                        πκ2 m4V
+                     Γtrans
+                       T,L   =                           δ(ω 2 − |~k|2 − m2V ) .                   (25)
+                                ω|1 − ∂ReΠT,L /∂ω 2 |
+Therefore, the production rate of dark photon can be written as
+       dΓprod,V          d3 k
+                    Z
+         T,L                       1
+                 =                       Γtrans
+         dV            (2π) e 3 ω/T  − 1 T,L
+                    Z ~ ~2
+                       |k|d|k|      κ2 m4V δ(ω 2 − |~k|2 − m2V )
+                 =
+                          4πω (eω/T − 1)|1 − ∂ReΠT,L /∂ω 2 |
+                             Z ~ ~2
+                                |k|d|k|                             κ2 m4V δ(ω 2 − |~k|2 − m2V )
+                    Z
+                 =     dω  2
+                                         δ(ω 2 − |~k|2 − ReΠT,L )                                , (26)
+                                  4πω                                       (eω/T − 1)
+
+                                                       7
+                     10-4
+                             Coulomb      ALPS
+
+                     10-6
+
+                                          ALPS
+                                          next generation
+                     10-8
+                 Κ
+
+
+
+                     10-10
+
+
+                     10-12
+
+
+                     10-14
+
+                        10-6     10-4      10-2        100     102       104
+                                              mV HeVL
+
+Figure 2: Upper limits on the kinetic mixing parameter κ vs. the mass of the dark photon mV .
+The solid blue and red curves are the total constraints on the dark photon parameter space
+from the sun (blue) and horizontal branch stars (red). The dashed curves show constraints
+from retaining only the longitudinal resonance contributions. For comparison, the dot-dashed
+curve shows the upper limit by considering only the contribution from transverse modes and
+the dotted curve shows the constraint from the CAST experiment by only considering the
+contribution from the transverse mode [9]. The current bounds from the latest result of
+the LSW experiment by the ALPS collaboration [25] is shown in gray, accompanied by the
+potential reach (yellow region) of the next generation of LSW experiments [26].
+
+where the on shell conditions for the transverse photon and longitudinal plasmon are used
+in the last step. Upon integration over |~k|2 we reproduce Eq. (22).
+   Finally, for a finite size thermal system, the radiation power into the dark photons can
+be written as                                                        !
+                              Z    Z              prod          prod
+                                             ωdΓ             ωdΓ
+                        P = dV        dω κ2T      T
+                                                       + κ2L    L
+                                                                       ,               (27)
+                                              dωdV            dωdV
+In the next section, we use (27) to calculate the V -emission rate as a function of mV .
+
+
+
+
+                                              8
+4    Solar luminosity and horizontal branch stars constraints on dark
+     vectors
+
+Inside the sun, the electrons are non-relativistic and non-degenerate. In this limit, the leading
+order terms in a T /me expansion of Re ΠT,L can be written as
+                                                                   !
+                                                               ~
+                                                              |k|2
+                           Re ΠT = ωp2 , Re ΠL = ωp2 1 − 2           ,                       (28)
+                                                               ω
+
+and the plasma frequency is given by
+
+                                              e2 ne   4παne
+                                      ωp2 =         =       ,                                  (29)
+                                               me      me
+where ne is the number density of electrons.
+    The production rate of the transverse modes is thoroughly calculated in Ref. [9], which
+we have checked and agree with. As already mentioned multiple times, the production of
+longitudinal modes is treated incorrectly in [9]. We believe that one can trace the error to
+  Ref. [9]
+ΠL         defined as ωp2 − |~k|2 in Eq. (8) of Ref. [9]. This is unphysical, as ΠL generated by the
+plasma must vanish in the ne → 0 limit. We can only speculate that this error crept in from
+an inaccurate translation of the results from Ref. [18] obtained in the Coulomb gauge to a
+generic covariant gauge.
+    The production rate of the longitudinal modes has contributions both from bremsstrahlung
+and from Compton scattering. Inside the Sun and a horizontal branch stars the bremsstrahlung
+processes are dominant. In the non-relativistic and non-degenerate limit the cross section
+for the bremsstrahlung process to produce the longitudinal massive photons at kµ2 = m2V can
+be written as
+                                          p                 p
+                 dσ          χ2 Z 2 e6 m2V ω 2 − m2V     v + v 2 − 2ω/me
+                          =                          log    p               ,           (30)
+                 dω brem         3(2π)3 m2e ω 4 v 2      v − v 2 − 2ω/me
+
+where v is the velocity of the incoming electron. Then, appropriately averaging over the
+electron energy distribution, the production rate (i.e. the production rate of longitudinal
+dark vectors, when multiplied by the κ2L factor) can be written as
+
+               dΓprod
+                                                            r        r 
+                             X 8Z 2 α3 ne nZ m2 q             8me       ω
+                 L                 i        i   V    2    2
+                           =            2       4
+                                                   ω − mV          f        ,          (31)
+               dV dω          i
+                                     3me      ω                πT      T
+                       brem
+
+where nZi is the number density of ions of charge −Zi e, and
+                                Z ∞                   √
+                                           −x2     x + x 2 − a2
+                        f (a) =      dx xe     log    √         .                              (32)
+                                 a                 x − x 2 − a2
+In principle, inside the plasma, Eq. (30) should be modified to take into account the Debye
+screening effect characterized by the Debye screening length λ2D ≡ T /(e2 ne ). However,
+
+                                                  9
+inside the sun, a numerical study shows that the square of the typical momentum transfer of
+electrons |~q|2 ∼ me T is much larger than 1/λ2D , and therefore this effect is of little importance
+for our level of rigour.
+    Substituting the explicit form of Re ΠT,L into the resonant condition m2V = ReΠT,L dis-
+cussed in Sec. 3, we observe that the production rate of the transverse mode and longitudinal
+modes of dark vectors reach a resonance at mV = ωp and ω = ωp , respectively. Therefore,
+for mV  ωp the longitudinal mode of dark photon can be produced on resonance at any
+temperature. The resonant contribution to the radiation power per unit volume and per
+unit frequency can be written as
+                               dPL     1 κ2 m2V ωp3
+                                    ≈               × δ(ω − ωp ) ,                             (33)
+                              dV dω   4π eωp /T − 1
+which is independent of the details of the production processes. Therefore, the resonant
+contribution to power emitted into longitudinal dark vectors can be written as
+                                                        ωp3 (r)
+                                          Z R
+                                     2 2
+                          P |res ≈ κ mV        r2 dr ωp (r)/T    .                  (34)
+                                           0        e         −1
+where R is the radius of the sun. The corresponding results in Ref. [9] contain an additional
+factor of 2/π × m2V /ωp2 under the integral, which we argue is wrong.
+    We use the standard solar model BP05(OP) [20] to calculate the total power radiated
+into dark photons. Consistency of this model with observations, requires this additional
+”dark radiating power” be smaller than the actual measured solar luminosity [21, 22], which
+is L = 3.83 × 1026 Watt. This sets the limit on the parameter space of the model, that
+we plot in Fig. 2. The solid blue curve shows the resulting constraint, and everything above
+this curve is excluded. For comparison, we also show the breakdown of the constraint by
+different contributions. The dashed blue curve shows the constraint resulting from retaining
+only the resonant contribution in the longitudinal modes. We can see that in the small mV
+region (mV < 0.1 eV), the dark radiation is indeed dominated by the longitudinal resonance
+contribution where the constraint can be simplified as
+                                       mV
+                                   κ×      < 1.4 × 10−11 .                              (35)
+                                        eV
+   The dot-dashed brown curve shows the constraint by considering only the contribution
+from the transverse mode, which coincides with the solid blue curve in the large mV region,
+mV > 10 eV, where we are also in agreement with [9]. However, in the small mV region,
+the emission of T -modes gives only a subdominant contribution, and indeed the solid blue
+curve positions itself much below the brown dot-dashed curve. Therefore, our paper greatly
+improves the bounds on dark photons below the mass range of a few eV.
+   For the horizontal branch stars, we set the constraint by requiring that energy loss into
+dark photons should not exceed the nuclear energy generation rate. Thus, the radiation
+power into dark photons in the nuclear reaction region of the horizontal branch stars should
+not exceed 10−5 Watt gram−1 [21, 23]. The average temperature and density of the nuclear
+reaction region of horizontal branch stars can be estimated as
+                             THB = 108 K ,    ρHB = 104 gram/cm3 .                             (36)
+
+                                                10
+In this region, the electron gas can still be viewed as non-relativistic and non-degenerate [24].
+The solid red curve in Fig. 2 shows the upper limit on κ by requiring the dark radiation
+power is smaller than the nuclear reaction power. The dashed red curve shows the upper
+limit by considering only the resonant longitudinal contribution. One can see that in the
+region mV < 100 eV, the radiation is dominated by the longitudinal mode. The spike at
+mV ≈ 2 keV is caused by the resonant production of the transverse modes which appears at
+m2V = ωp2 . Overall, we find that the solar luminosity provides a somewhat stronger constraint
+for all masses below several 100 eV.
+
+
+5    Summary and Discussions
+
+We have shown that the production rates of massive dark vectors V with the Stückelberg
+mass mV , coupled to the SM via the kinetic mixing portal, scales as m2V at small mV due
+to the emission of the longitudinal modes of V . This drastically change the strength of the
+stellar constraints in the small mV region. Thus, for the first time, and despite the large
+abundance of literature on dark photons, our paper sets correct stellar constraints on the
+dark photon parameter space in the whole mass range below a few eV. This turns out to
+be a region of special interest for LSW experiments. In Fig. 2, we show that even the most
+advanced ones (ALPS) [25] find themselves inside a deeply excluded region. Recalling that
+the signal of dark photons in LSW experiments scales as κ4 , a two order of magnitude gap in κ
+at mV ∼ 0.01 eV between stellar constraints and LSW region translates into a required eight
+orders of magnitude improvement in sensitivity before LSW experiments become competitive
+with stellar bounds. Indeed, a large part of the sensitivity region for the next generation of
+LSW experiments, deemed reachable in Ref. [26], is also excluded.
+    We conclude with several additional remarks pertaining to light dark photons:
+
+    • The correct scaling with mV , the m2V -behaviour, is important not only for the produc-
+      tion, but also for the detection of dark photons in the laboratory environment. Taking
+      an example of dark matter detectors, made of some material with refractive index n,
+      one can expect that in the region m2V  ω 2 |1 − n|, the absorption of the transverse
+      mode scales as m4V , whereas the absorption of the longitudinal mode scales as m2V .
+      Therefore, in this region one expect that the longitudinal mode will dominate the ob-
+      served signal. The details of setting constraints on the solar dark photons with the use
+      of the most sensitive low-energy threshold dark matter detectors will be addressed in
+      our next paper [15].
+
+    • It has to be emphasized that in this paper we assume that, once produced, the dark
+      photon freely escapes the stellar interior. It is possible that for large values of mixing
+      angles, the energy loss process is quenched because of absorption. Determining whether
+      such ”islands” actually exist deep inside the excluded region, and if so whether they
+      survive other constraints goes outside the scope of the present paper.
+
+    • Stellar constraints derived in this paper have implications for the “dark CMB” [7]. We
+      do not expect that the emission of the longitudinal modes in processes like γT + e →
+
+                                               11
+     VL +e in the primordial plasma will drastically change the estimates for the total energy
+     density locked in V modes, because of the very small value for ne /nγ ≃ 6 × 10−10 . The
+     combination of our new stellar constraints derived in this paper, and the constraints
+     from spectral distortions of the normal CMB in the very small mV region prevents
+     generating large deviations of the effective number of relativistic degrees of freedom
+     Nef f from its standard model value.
+   • Finally, we can go back to the picture of the “Higgsed” dark photon production, Eq.
+     (2), and ask the question of whether one can avoid strong constraints on κ by choosing
+     very small α0 , and by having the solar interior restore the symmetry in U(1)V sector, so
+     that mV = 0 inside the sun. The symmetry restoration may occur for κωp > mV , which
+     can have an overlap with the LSW regions of interest. Such an unusual ”chameleonic”
+     scenario deserves a special analysis.
+
+  Acknowledgements Research at the Perimeter Institute is supported in part by the
+Government of Canada through NSERC and by the Province of Ontario through MEDT.
+
+
+References
+
+ [1] B. Holdom, Phys. Lett. B 166, 196 (1986). L. B. Okun, Sov. Phys. JETP 56, 502 (1982)
+     [Zh. Eksp. Teor. Fiz. 83, 892 (1982)].
+ [2] C. Boehm and P. Fayet, Nucl. Phys. B 683, 219 (2004) [hep-ph/0305261]; M. Pospelov,
+     A. Ritz and M. B. Voloshin, Phys. Lett. B 662, 53 (2008) [arXiv:0711.4866 [hep-ph]];
+     N. Arkani-Hamed, D. P. Finkbeiner, T. R. Slatyer and N. Weiner, Phys. Rev. D 79,
+     015014 (2009) [arXiv:0810.0713 [hep-ph]]; R. Foot, Phys. Rev. D 78, 043529 (2008)
+     [arXiv:0804.4518 [hep-ph]]; M. Pospelov and A. Ritz, Phys. Lett. B 671, 391 (2009)
+     [arXiv:0810.1502 [hep-ph]]; H. An, S. -L. Chen, R. N. Mohapatra and Y. Zhang, JHEP
+     1003, 124 (2010) [arXiv:0911.4463 [hep-ph]]; H. An, S. -L. Chen, R. N. Mohapatra,
+     S. Nussinov and Y. Zhang, Phys. Rev. D 82, 023533 (2010) [arXiv:1004.3296 [hep-
+     ph]]. S. Andreas, M. D. Goodsell and A. Ringwald, Phys. Rev. D 87, 025007 (2013)
+     [arXiv:1109.2869 [hep-ph]].
+ [3] M. Pospelov, A. Ritz and M. B. Voloshin, Phys. Rev. D 78, 115012 (2008)
+     [arXiv:0807.3279 [hep-ph]].
+ [4] J. Redondo and M. Postma, JCAP 0902, 005 (2009) [arXiv:0811.0326 [hep-ph]].
+ [5] M. Pospelov, Phys. Rev. D 80, 095002 (2009) [arXiv:0811.1030 [hep-ph]].
+ [6] F. Piazza and M. Pospelov, Phys. Rev. D 82, 043533 (2010) [arXiv:1003.2313 [hep-ph]];
+     A. E. Nelson and J. Scholtz, Phys. Rev. D 84, 103501 (2011) [arXiv:1105.2812 [hep-ph]];
+     P. Arias, D. Cadamuro, M. Goodsell, J. Jaeckel, J. Redondo and A. Ringwald, JCAP
+     1206, 013 (2012) [arXiv:1201.5902 [hep-ph]].
+ [7] J. Jaeckel, J. Redondo and A. Ringwald, Phys. Rev. Lett. 101, 131801 (2008)
+     [arXiv:0804.4157 [astro-ph]].
+
+                                             12
+ [8] M. Ahlers, H. Gies, J. Jaeckel, J. Redondo and A. Ringwald, Phys. Rev. D 77, 095001
+     (2008) [arXiv:0711.4991 [hep-ph]].
+
+ [9] J. Redondo, JCAP 0807, 008 (2008) [arXiv:0801.1527 [hep-ph]].
+
+[10] S. N. Gninenko and J. Redondo, Phys. Lett. B 664, 180 (2008) [arXiv:0804.3736 [hep-
+     ex]].
+
+[11] M. Pospelov, talk at Moriond 2012 meeting, La Thuile, Italy, March 2012; talk at
+     Dark2012 workshop, Frascati
+
+[12] R. Horvat, D. Kekez, M. Krcmar, Z. Krecak and A. Ljubicic, arXiv:1210.1043 [hep-ex].
+
+[13] J. Jaeckel and A. Ringwald, Ann. Rev. Nucl. Part. Sci. 60, 405 (2010) [arXiv:1002.0329
+     [hep-ph]]; J. Jaeckel, Frascati Phys. Ser. 56, 172 [arXiv:1303.1821 [hep-ph]].
+
+[14] G. G. Raffelt, The astrophysics of neutrinos, axions, and other weakly interacting par-
+     ticles,” Chicago, USA: Univ. Pr. (1996) 664 p
+
+[15] H. An, M. Pospelov, and J. Pradler, forthcoming paper.
+
+[16] B. Batell, M. Pospelov and A. Ritz, Phys. Rev. D 79, 115008 (2009) [arXiv:0903.0363
+     [hep-ph]].
+
+[17] S. Davidson, B. Campbell and D. C. Bailey, Phys. Rev. D 43, 2314 (1991); S. Davidson,
+     S. Hannestad and G. Raffelt, JHEP 0005, 003 (2000) [hep-ph/0001179].
+
+[18] E. Braaten and D. Segel, Phys. Rev. D 48, 1478 (1993) [hep-ph/9302213].
+
+[19] H. A. Weldon, Phys. Rev. D 28, 2007 (1983).
+
+[20] J. N. Bahcall, A. M. Serenelli and S. Basu, Astrophys. J. 621, L85 (2005) [astro-
+     ph/0412440].
+
+[21] J. A. Frieman, S. Dimopoulos and M. S. Turner, Phys. Rev. D 36, 2201 (1987).
+
+[22] G. G. Raffelt and G. D. Starkman, Phys. Rev. D 40, 942 (1989).
+
+[23] G. G. Raffelt and D. S. P. Dearborn, Phys. Rev. D 37, 549 (1988).
+
+[24] J. A. Grifols, E. Masso and S. Peris, Mod. Phys. Lett. A 4, 311 (1989).
+
+[25] K. Ehret, M. Frede, S. Ghazaryan, M. Hildebrandt, E. -A. Knabbe, D. Kracht, A. Lind-
+     ner and J. List et al., Phys. Lett. B 689, 149 (2010) [arXiv:1004.1313 [hep-ex]].
+
+[26] J. Redondo and A. Ringwald, Contemp. Phys. 52, 211 (2011) [arXiv:1011.3741 [hep-
+     ph]].
+
+
+
+
+                                            13
+

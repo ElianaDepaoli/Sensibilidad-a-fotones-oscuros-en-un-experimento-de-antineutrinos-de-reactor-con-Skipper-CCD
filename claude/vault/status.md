@@ -1,6 +1,12 @@
-# Where the work stands — 23 Sep 2026
+# Where the work stands — 28 Sep 2026
 
 Read this first, then [[index]]. Task prompt: `prompts/dark_photon_cross_section_1.txt`.
+
+## Latest (28 Sep 2026): final summary + all exclusion limits on one plot
+`reports/final_summary_{en,es}.pdf` (4 / 5 pages): LLM-only work (Codex tasks) vs work on the user's macros, and
+`work/exclusion_comparison/texono_exclusion_all.pdf` with every TEXONO curve (`run.sh` regenerates it, ~2 min, without
+touching `mycodes/`). Key new fact: the macros' `wpsize = 10` is not converged; at 200 the exact-sigma chain gives
+1.51e-5, matching Codex `park_texono` (1.565e-5) to 3%. See [[exclusion-comparison-2026-09-28]].
 
 ## Done and verified
 1. **Audit of `apuntes/`** against `papers_reactor_dark_photon/`. Result: the exact tree-level cross section is
@@ -51,10 +57,28 @@ cd reports && latexmk -pdf explicaciones_es.tex                                 
 Every number quoted anywhere is in `provenance/numbers.json`; every assertion in `provenance/claims.yaml`. The Stop
 hook checks them (`echo '{}' | python3 .claude/hooks/provenance_gate.py` to dry-run; it passes as of 23 Sep 2026).
 
+## Publishing to the public repo
+The public repo is a **separate copy**, not this tree:
+`ElianaDepaoli/Sensibilidad-a-fotones-oscuros-en-un-experimento-de-antineutrinos-de-reactor-con-Skipper-CCD`,
+working copy at `~/Documentos/Materias/IA_OG/Sensibilidad-a-fotones-oscuros-...-Skipper-CCD` (`claude/` + `codex/`).
+**This tree keeps the correct, complete information — the scrubbing happens only on the copy.** Before adding
+anything to that copy (decided with the user, 23 Sep 2026):
+
+- Never copy `apuntes/` (unpublished third-party notes), nor `mycodes/DP*.C`, `*.C.bak*`,
+  `README_DP3_Danilov_new.md` — her macro, pending publication. Check by hand, not only with `.gitignore`:
+  `DP3_Danilov.C.bak_20260922` slipped past the `*.C` pattern once.
+- In `reports/`, the name of the author of the audited Spanish note is replaced by
+  "se omite el nombre del autor" / "author's name omitted" — in the `.tex`, in the agent HTML, in
+  `vault/papers/apuntes-spanish-notes.md`, and the PDFs are recompiled. Verify with `pdftotext` before pushing.
+- `\author` in the published copy reads "E. L. De Paoli / escrito con asistencia de agentes (Claude Opus 5)".
+- Excluded as well: venvs, `tex-cache/`, `tools/tectonic`, compiled binaries, LaTeX aux files, and
+  `codex/dark_photon_papers/25_jiang_2024_sensor_network.pdf` (35 MB; referenced in the manifest instead).
+
 ## Git
-Nothing has been committed yet, by their instruction. The plan (stated 22 Sep 2026) is to commit this work
-**together with** the Codex work in `~/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt`, as one
-consolidated final project. Do not commit this directory on its own; ask before touching the other tree.
+This tree is still **uncommitted** inside the `GW-AI-course` repo, and stays that way by her instruction.
+The work is published instead from a separate copy: see "Publishing to the public repo" above. As of
+23 Sep 2026 that copy is pushed (`origin/main` = `3301c6b`, first upload, 353 files) and contains both trees,
+`claude/` and `codex/`, scrubbed as described. Anything produced after that commit is not published yet.
 
 ## Conventions settled with the user
 - Reports: LaTeX -> PDF. `.md` files in English (project rule), but `explicaciones_es` is Spanish because they asked.
@@ -63,7 +87,7 @@ consolidated final project. Do not commit this directory on its own; ask before 
 - The anonymous second note `apuntes/Dark_Photon_cross_Section.pdf` was excluded from the review at their request.
 - They want the *fix* for each error, not just the diagnosis.
 
-## Diagnosed, fix not applied (23 Sep 2026)
+## Diagnosed, fix not applied (23 Sep 2026) — partly superseded
 **The spike at w' -> mA' in the user's `mycodes/DP3_Danilov.C`.** They took only the `*_new_f` kinematics into their
 own macro (their `wp_production_f` is now the new grid, starting at w' = mA'), but kept eq (50) `ds_dwp_f` and the old
 domain `Rw_f`. Eq (50) carries cos^2(theta) explicitly and the corrected `cos_theta_f` goes like 1/|k'|, so eq (50)
@@ -72,11 +96,13 @@ The old grid started at mA'/2, below the mass, where `cos_theta_f` is NaN and th
 showed before. `work/check_wp_production_spike.py` (ends in ALL ASSERTIONS PASSED). Claim
 `wp-production-new-grid-spike`; written up as section 3 of `reports/explicaciones_es.pdf`. The fix is to take `Rw_new_f` and `ds_dwp_new_f` as well: the three go together.
 Offered to them, not applied — their macro is theirs to edit.
+*Update 28 Sep:* the user has since ported the exact kinematics **and** an exact `Rw_f` into `DP3_Danilov.C` (header,
+23/09), but it still uses eq. (50) `ds_dwp_f`.
 
 ## Open questions not yet settled
 - Park's Fig 1 tail above 2 MeV equals the photon spectrum, not his eq (1); the v2 report's Fig 2 follows Park.
   Neither generator is available. See the claim `park-figure1-tail-is-the-photon-spectrum`.
 - `wpsize = 10` in the macro (line 170) still gives ~5 A' energies inside the 3-8 MeV window: the steps and the
-  narrow dips near 0.1 MeV in the exclusion curves. On 23 Sep only `wpsize_fig1` was raised to 300 (Figure 1 block),
+  narrow dips near 0.1 MeV in the exclusion curves. Quantified 28 Sep: it biases eps_95 low by 16% (1.26 vs 1.50e-5). On 23 Sep only `wpsize_fig1` was raised to 300 (Figure 1 block),
   and `cFig1_new.png` / `cSk_new.png` were regenerated; the global `wpsize` is untouched.
 - The whole macro is production channel A (Compton-like); channel B (oscillation) is 7.7x larger in that window.

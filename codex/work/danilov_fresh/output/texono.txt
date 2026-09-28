@@ -1,0 +1,1416 @@
+                                                                                                                                                   AS-TEXONO/09-04
+
+                                            Measurement of ν̄e -Electron Scattering Cross-Section with a CsI(Tl) Scintillating
+                                                      Crystal Array at the Kuo-Sheng Nuclear Power Reactor
+                                           M. Deniz,1, 2 S.T. Lin,1 V. Singh,1, 3 J. Li,1, 4, 5 H.T. Wong,1, ∗ S. Bilmis,1, 2 C.Y. Chang,1, 6 H.M. Chang,1
+                                          W.C. Chang,1 C.P. Chen,1 M.H. Chou,1 K.J. Dong,7 J.M. Fang,8 C.H. Hu,9 G.C. Jon,1 W.S. Kuo,9 W.P. Lai,1
+                                               F.S. Lee,1 S.C. Lee,1 H.B. Li,1 H.Y Liao,1 C.W. Lin,1 F.K. Lin,1 S.K. Lin,1 Y. Liu,1, 4 J.F. Qiu,1, 4
+                                             M. Serin,2 H.Y. Sheng,1, 4 L. Singh,1, 3 R.F. Su,8 W.S. Tong,9 J.J. Wang,1 P.L. Wang,1, 4 S.C. Wu,1, 10
+                                           S.W. Yang,1 C.X. Yu,11 Q. Yue,5 M. Zeyrek,2 D.X. Zhao,1, 4 Z.Y. Zhou,7 Y.F. Zhu,1, 5 and B.A. Zhuang1, 4
+                                                                                     (TEXONO Collaboration)
+                                                                      1
+                                                                          Institute of Physics, Academia Sinica, Taipei 11529, Taiwan.
+                                                              2
+                                                                Department of Physics, Middle East Technical University, Ankara 06531, Turkey.
+                                                                 3
+                                                                   Department of Physics, Banaras Hindu University, Varanasi 221005, India.
+arXiv:0911.1597v2 [hep-ex] 7 Apr 2010
+
+
+
+
+                                                          4
+                                                             Institute of High Energy Physics, Chinese Academy of Science, Beijing 100039, China.
+                                                             5
+                                                                Department of Engineering Physics, Tsing Hua University, Beijing 100084, China.
+                                                              6
+                                                                Department of Physics, University of Maryland, College Park MD 20742, U.S.A.
+                                                            7
+                                                               Department of Nuclear Physics, Institute of Atomic Energy, Beijing 102413, China.
+                                                          8
+                                                              Kuo-Sheng Nuclear Power Station, Taiwan Power Company, Kuo-Sheng 207, Taiwan.
+                                                                        9
+                                                                          Institute of Nuclear Energy Research, Lung-Tan 325, Taiwan.
+                                                                                  10
+                                                                                     National Instruments, Taipei 106, Taiwan.
+                                                                     11
+                                                                        Department of Physics, Nankai University, Tianjin 300071, China.
+                                                                                            (Dated: October 22, 2018)
+                                                        The ν̄e − e− elastic scattering cross-section was measured with a CsI(Tl) scintillating crystal
+                                                      array having a total mass of 187 kg. The detector was exposed to an average reactor ν̄e flux of
+                                                      6.4 × 1012 cm−2 s−1 at the Kuo-Sheng Nuclear Power Station. The experimental design, concep-
+                                                      tual merits, detector hardware, data analysis and background understanding of the experiment are
+                                                      presented. Using 29882/7369 kg-days of Reactor ON/OFF data, the Standard Model (SM) elec-
+                                                      troweak interaction was probed at the squared 4-momentum transfer range of Q2 ∼ 3 × 10−6 GeV2 .
+                                                      The ratio of experimental to SM cross-sections of ξ = [1.08 ± 0.21(stat) ± 0.16(sys)] was mea-
+                                                      sured. Constraints on the electroweak parameters (gV , gA ) were placed, corresponding to a weak
+                                                      mixing angle measurement of sin2 θW = 0.251 ± 0.031(stat ) ± 0.024(sys ). Destructive interference
+                                                      in the SM ν̄e −e process was verified. Bounds on anomalous neutrino electromagnetic properties
+                                                      were placed: neutrino magnetic moment at µν̄e < 2.2 × 10−10 µB and the neutrino charge radius at
+                                                      −2.1 × 10−32 cm2 < hr2ν̄e i < 3.3 × 10−32 cm2 , both at 90% confidence level.
+
+                                                      PACS numbers: 14.60.Lm, 13.15.+g, 25.30.Pt.
+
+
+                                                         I.       INTRODUCTION                           sions on event reconstruction, background understanding
+                                                                                                         and suppression, as well as experimental systematic ef-
+                                                                                                         fects. Section VII shows results on the Standard Model
+                                           The compelling evidence of neutrino oscillations from
+                                                                                                         (SM) electroweak physics [2] as well as constraints on
+                                        the solar, atmospheric as well as long baseline acceler-
+                                                                                                         possible neutrino electromagnetic interactions.
+                                        ator and reactor neutrino measurements implies finite
+                                        neutrino masses and mixings [1]. Their physical origin
+                                        and experimental consequences are not fully understood.             II.   NEUTRINO-ELECTRON SCATTERING
+                                        Experimental studies on the neutrino properties and in-
+                                        teractions are crucial because they can shed light to these
+                                        fundamental questions and may provide hints or con-                Neutrino-electron scattering has been studied with sev-
+                                        straints to models on new physics.                               eral generations of experiments at the accelerator using
+                                                                                                         mostly muon-neutrinos νµ (ν̄µ ) [3, 4]. It is a pure lep-
+                                           We report a study of neutrino-electron scattering us-         tonic process and therefore provides a clean test to SM.
+                                        ing reactor neutrinos at the Kuo-Sheng Nuclear Power             The typical squared 4-momentum transfer was Q2 ∼
+                                        Station with a CsI(Tl) scintillating crystal array. The          10−2 GeV2 and the electroweak angle sin2 θW was probed
+                                        cross-section formulae are summarized in Section II. The         to an accuracy of ±3.6%.
+                                        conceptual design, hardware construction and perfor-               Using electron-neutrinos as probe, the interaction
+                                        mance are presented in Section III, followed by discus-
+                                                                                                                         νe (ν̄e ) + e− → νe (ν̄e ) + e−       (1)
+                                                                                                         has been studied at medium energy accelerators [5, 6]
+                                        ∗ Corresponding Author:htwong@phys.sinica.edu.tw; Tel:+886-2-    as well as at the power reactors [7–10]. It is also an
+                                        2789-9682; FAX:+886-2-2788-9828.                                 important channel in the detection of solar neutrinos [11]
+                                                                                                                                    2
+
+
+TABLE I: Summary of published νe − and ν̄e − e scattering cross-section and sin2 θW measurements. Unavailable entries are
+denoted by “N/A”.
+Experiment                       Eν (MeV)        T (MeV)   Events [14]         Published Cross-Section              sin2 θW
+Accelerator νe :
+ LAMPF [5]                      7 < Eν < 50       7−50         236               [10.0 ± 1.5 ± 0.9] · Eν        0.249 ± 0.063
+                                                                                      ×10−45 cm2
+ LSND [6]                      20 < Eν < 50       20−50        191               [10.1 ± 1.1 ± 1.0] · Eν        0.248 ± 0.051
+                                                                                      ×10−45 cm2
+Reactor ν̄e :
+ Savannah River
+                               1.5 < Eν < 8.0    1.5−3.0       381                 [0.87 ± 0.25] · σV −A
+                                                                                                                }   0.29±0.05
+                               3.0 < Eν < 8.0    3.0−4.5        77                 [1.70 ± 0.44] · σV −A
+  Original [7]         {
+                               1.5 < Eν < 8.0    1.5−3.0       N/A                  [1.35 ± 0.4] · σSM
+                                                                                                                    }   N/A
+                               3.0 < Eν < 8.0    3.0−4.5       N/A                   [2.0 ± 0.5] · σSM
+ Re-analysis [13]          {
+ Krasnoyarsk [8]               3.2 < Eν < 8.0    3.2−5.2       N/A                      [4.5 ± 2.4]                 0.22+0.7
+                                                                                                                        −0.8
+                                                                                   ×10−46 cm2 /fission
+ Rovno [9]                     0.6 < Eν < 8.0    0.6−2.0       41                      [1.26 ± 0.62]                    N/A
+                                                                                   ×10−44 cm2 /fission
+ MUNU [10]                     0.7 < Eν < 8.0    0.7−2.0       68               [1.07 ± 0.34] events/day             N/A
+ TEXONO (This Work)            3.0 < Eν < 8.0    3.0−8.0   414±80±61           [1.08 ± 0.21 ± 0.16] · σSM    0.251 ± 0.031 ± 0.024
+
+
+
+      ν¯e        ν¯e                                                              A.    Electroweak Parameters
+                               ν¯e                   ν¯e
+                                                                  The SM differential cross-section in the laboratory
+                                            W−                 frame for νµ (ν̄µ )−e elastic scattering, where only NC is
+   NC        Z0        +                                       involved, is given by [2, 3];
+
+                                e−          CC       e−
+                                                                          
+                                                                              dσ [−]
+                                                                                        
+                                                                                               G2F me
+                                                                                 ( νµ e)     =         · [ (gV ± gA )2
+                                                                              dT          SM      2π
+     e−          e−                                                                                                    2
+                                                                                                            2        T
+                                                                                             + (gV ∓ gA ) 1 −
+FIG. 1: Interactions of ν̄e with electron via the SM-allowed                                                         Eν
+charged current (CC) and neutral current (NC) channels.                                                       m e T
+There is in addition interference effect between them.                                       − (gV2 − gA
+                                                                                                       2
+                                                                                                          )         ] ,            (2)
+                                                                                                              Eν2
+
+                                                               where GF is the Fermi coupling constant, T is the ki-
+                                                               netic energy of the recoil electron, Eν is the incident
+where the SM νe −e scattering cross-section was used to        neutrino energy and gV , gA are, respectively, the vector
+extract neutrino oscillation parameters. This process is       and axial-vector coupling constants. The upper(lower)
+among the few of the SM interactions which proceed via         sign refers to the interactions with νµ (ν̄µ ). For νe (ν̄e )−e
+charged current (CC), neutral current (NC) as well as          scattering, all CC, NC and Int are involved [12], and the
+their interference (Int) [12], as illustrated schematically    cross-section can be obtained by making the replacement
+in Figure 1. The interference effect in νe −e scattering is    gV,A → (gV,A + 1). In the case of ν̄e −e which is relevant
+the origin of matter oscillation of solar neutrinos in the     for reactor neutrinos,
+interior of the Sun [1].
+   The experimental results on νe − and ν̄e − e scattering                                G2 me
+                                                                                  
+                                                                         dσ                                    2
+are summarized in Table I. Neutrino-electron scattering                     (ν̄e e)     = F      · [ (gV − gA )
+                                                                         dT          SM     2π
+was first observed with reactor reactors in the Savannah                                                           2
+River experiment [7]. Re-analysis of the data by a later                                                2        T
+                                                                                        + (gV + gA + 2) 1 −
+work [13] with improved input on the reactor neutrino                                                            Eν
+spectra and electroweak parameters gave cross-sections                                                              me T
+which were about 2σ higher than the SM values. The                                      − (gV − gA )(gV + gA + 2) 2 ]. (3)
+                                                                                                                    Eν
+discrepancies were interpreted as hints of anomalous neu-
+trino interactions. Other subsequent experiments [8–10]        The SM assignments to the coupling constants are:
+focused on the searches of neutrino magnetic moments
+at low recoil energy such that their sensitivities to SM                       1                                         1
+physics were limited.                                                    gV = − + 2 sin2 θW            and     gA = −          ,   (4)
+                                                                               2                                         2
+                                                                                                                           3
+
+where sin2 θW is the weak mixing angle. The SM differ-          of the three components normalized to Rexpt = 1 are in
+ential cross-section expressed in terms of sin2 θW is ac-       the ratios of
+cordingly:
+                                                                                             (0.77 : 0.92 : 0.69) for ν̄e − e
+                                                                 (RCC : RN C : RInt ) ∼ {
+                    G2 me                                                                    (1.77 : 0.16 : 0.93) for νe − e .
+           
+  dσ
+     (ν̄e e)     = F        ·                                                                                            (10)
+  dT          SM      2π
+                                 "            2          #    The stronger NC component in ν̄e −e scattering is the
+                         2     2            T        me T       physical basis of the sensitivity enhancement in the
+                 { 4 (sin θW ) 1 + 1 −            −
+                                            Eν        Eν2       derivation of sin2 θW .
+                               "        2         #              The SM was tested and sin2 θW was precisely measured
+                                      T        me T             in the high energy (Q2 > GeV2 ) region with accelerator
+                 + 4 sin2 θW      1−        −
+                                      Eν       2Eν2             experiments on e+ e− , polarized ep and νN deep inelas-
+                             2                                tic processes, and in the low energy (Q2 < 10−6 GeV2 )
+                          T
+                 + 1−             } .                     (5)   region with measurements on atomic parity violation [2].
+                         Eν                                     Among them, the sin2 θW derived from the NuTeV ex-
+                                                                periment on νN deep inelastic scattering [15] was 3σ
+  The observables in an experiment are the event rates          higher than SM prediction, though the interpretations
+(Rexpt ). The SM predicted rate, expressed in unit of           were complicated by strong interaction effects [2]. De-
+kg−1 day−1 , can be written as                                  structive interference according to SM prediction has
+                    Z Z
+                           dσ     dφ                            been demonstrated by accelerator νe −e scattering exper-
+   RSM (ν) = ρe           [ ]SM       dEν dT , (6)              iments [5, 6].
+                     T Eν  dT    dE ν
+                                                                   The objective of this work is to bridge the Q2 gap in
+where ρe is the electron number density per kg of target        probing SM electroweak physics with reactor ν̄e −e inter-
+mass, and dφν /dEν denotes the neutrino spectrum.               actions. In particular, the interference effects are studied
+                                                                in this unique system. This would complement the preci-
+  Results of this work are reported in several schemes
+                                                                sion data obtained at accelerator at higher Q2 . The mea-
+using Rexpt . Firstly, the cross-section ratio
+                                                                surements would place constraints on various anomalous
+                           Rexpt (ν)                            neutrino interactions such as those discussed in the next
+                      ξ=                                (7)     section.
+                           RSM (ν)
+
+can be used to probe new physics in a model-independent
+way. Alternatively, taking SM electroweak interactions                B.    Neutrino Electromagnetic Properties
+but allowing the parameters to assume any values, the
+allowed ranges of (gV , gA ) as well as sin2 θW can be de-          The neutrino electromagnetic interactions [17] provide
+rived from Rexpt , following Eqs. 3&5, respectively.            natural extensions to SM. The relevant parameters are
+   To study the interference effects, the measured rate         hr2ν̄e i [14], usually called the “neutrino charge radius”,
+can be expressed as                                             and neutrino magnetic moments (µν ) [18] which describe
+                                                                possible neutrino interactions with matter via the ex-
+            Rexpt = RCC + RN C + η · RInt .             (8)     change of virtual photons without and with the change
+                                                                of its helicity, respectively.
+The CC−NC interference for νe (ν̄e )−e is destructive in
+                                                                    Interpretations of hrν̄2e i remain controversial.     A
+SM, or equivalently η(SM ) = −1. Possible deviations in
+                                                                straight-forward definition has been shown to be gauge-
+the sign and magnitude of the interference effects (η) can
+                                                                dependent and hence hr2ν̄e i is unphysical [19]. However,
+be probed.
+                                                                there are recent attempts to define a physical observ-
+  It follows from Eqs. 5&6 and the analogous formu-             able with hr2ν̄e i [20], which give a predicted value of
+lae for νe −e that, under realistic experimental configu-
+                                                                hr2νe i = 0.4 × 10−32 cm2 with the SM framework. We
+rations, the projected accuracies on sin2 θW (denoted by
+                                                                adopt in this article the more general interpretation that
+∆[sin2 θW ]) are related to the experimental uncertainties
+                                                                hr2ν̄e i parametrizes contributions to non-standard interac-
+in ξ (denoted by ∆[ξ]) by:
+                                                                tions in neutrino scattering [21].
+                             0.15 · ∆[ξ(ν̄e e)]                     Changes to the SM cross-sections due to hrν̄2e i can be
+           ∆[sin2 θW ] ∼ {                              (9)     obtained from Eq. 5 via the replacement [13]:
+                             0.35 · ∆[ξ(νe e)]
+                                                                                               √
+for reactor ν̄e −e (this work) and accelerator νe −e [5, 6]                  2          2       2παem 2
+                                                                           sin θW → sin θW + (       )hrν̄e i ,         (11)
+experiments, respectively. Accordingly, the studies of re-                                       3GF
+actor ν̄e −e are expected to improve on the sensitivities of
+sin2 θW and (gV , gA ) at the same experimental accuracies      where αem is the fine structure constant.
+as those from νe −e measurements. The relative strength           Contributions of µν can be described by an additional
+                                                                                                                             4
+
+                                                                displayed in Figure 3. It has been demonstrated through
+                                                                ν̄e −proton measurements that the integrated ν̄e -flux for
+                                                                Eν > 1.8 MeV [25] and ν̄e -spectra for Eν > 3 MeV [26]
+                                                                agreed with calculations to better than <3% and <5%,
+                                                                respectively.
+
+
+
+
+FIG. 2: Schematic layout of the Kuo-Sheng Neutrino Labo-
+ratory together with the reactor core and building.
+
+
+
+term to Eqs. 3&5:
+                    πα2em µ2ν 1 − T /Eν
+                                     
+            dσ
+                  =                       .             (12)
+            dT µν     m2e         T
+
+The SM prediction of µν for massive Dirac neutrinos             FIG. 3: Total ν̄e spectrum at typical power reactor operation.
+is extremely small (3.2 × 10−19 µB where µB is the
+Bohr magneton). However, various models with Ma-
+jorana neutrinos can give rise to µν at the range of               The laboratory is equipped with a 50-ton shielding
+(10−10 − 10−13 ) µB relevant to experiments and astro-          structure depicted schematically in Figure 4, consisting
+physics [18]. The most sensitive direct laboratory lim-         of, from outside in, 2.5 cm thick plastic scintillator panels
+its on µν come from high-purity germanium detectors             with photo-multiplier tubes (PMTs) readout for cosmic-
+at about 10 keV threshold with reactor ν̄e [16, 22]. At         ray veto, 15 cm of lead, 5 cm of stainless steel support
+this low recoil energy, the µν contributions at the present     structures, 25 cm of boron-loaded polyethylene and 5 cm
+limit are orders of magnitude larger than those due to SM       of Oxygen Free High Conductivity (OFHC) copper. The
+ν̄e −e cross-sections.                                          inner target volume with a dimension of 100×80×75 cm3
+                                                                allows different detectors for various physics topics to be
+                                                                placed. Data were taken with a CsI(Tl) scintillating crys-
+           III.   EXPERIMENTAL SET-UP                           tal array during data acquisition (DAQ) periods II−V.
+                                                                Each period consisted of both reactor ON and OFF data
+    A.   Laboratory Facilities and Neutrino Flux                taking.
+
+   A research program on low energy neutrino physics [23]
+is being pursued by the TEXONO Collaboration at the
+Kuo-Sheng Neutrino Laboratory (KSNL), which is lo-
+cated at a distance of 28 m from Core #1 of the Kuo-
+Sheng Nuclear Power Station in Taiwan. A schematic di-
+agram is depicted in Figure 2. The site is at the ground
+floor of the reactor building at a depth of 10 m below
+ground level, with an overburden of about 30 meter-
+water-equivalence. The nominal thermal power out-
+put is 2.9 GW. The standard operation includes about
+18 months of Reactor ON periods separated by 50 days
+of Reactor outage OFF periods when typically one-third
+of the fuel elements are replaced.
+   A summary of the key information on the four data
+taking periods reported in this article is given in Table II.   FIG. 4: The shielding design of KSNL. Similar structures ap-
+The evaluation of the reactor neutrino flux and spectra         ply to the back and front walls. Detectors and inner shieldings
+was discussed in details in Refs. [16, 24]. The average ν̄e -   were placed in the inner target volume.
+flux at KSNL is 6.4×1012 cm−2 s−1 . A typical spectrum is
+                                                                                                                              5
+
+
+TABLE II: Summary of the key information of the four data taking periods. The period numbering follows the same scheme
+as in Ref [16] .
+                   Data Taking          Reactor ON     Reactor OFF      DAQ          DAQ          Average ν̄e      Fiducial
+Period            Calender Time          Live Time      Live Time     Live Time    Threshold          Flux          Mass
+                                           (days)         (days)         (%)        (keV)       (1012 cm−2 s−1 )     (kg)
+II            Feb. 2003 - Oct. 2003          95.2           48.4         88.8        100              6.27           43.5
+III           Sept. 2004 - Oct. 2005         192            36.6         93.4        500              6.50           40.5
+IV            Mar. 2006 - May 2007          204.9           43.5         88.0        500              6.44            51
+V             June 2007 - Feb. 2008         132.8           27.6         91.9        500              6.29            57
+Combined      Feb. 2003 - Feb. 2008         624.9          156.1         90.4         −               6.39            −
+
+
+
+                                                                      and F and contributing to only about 0.13% by
+                                                                      mass. There were no protons, such that possible
+                                                                      neutrino-induced background from ν̄e −p was elim-
+                                                                      inated. The cross-section of this interaction is >102
+                                                                      times higher than that of ν̄e −e. This background
+                                                                      could not be suppressed with Reactor ON/OFF
+                                                                      comparisons, and could be a potential problem with
+                                                                      the Savannah River experiment [7] where plastic
+                                                                      scintillators were adopted as target.
+                                                                 (ii) Completely Active Fiducial Volume: The ab-
+                                                                       sence of detector housing allowed a fiducial volume
+                                                                       which was totally active. The probability of back-
+                                                                       ground events to be completely measured was en-
+                                                                       hanced, and this was beneficial to background un-
+                                                                       derstanding and suppression.
+                                                                 (iii) Complete Three-Dimensional Reconstruction:
+                                                                       Each CsI(Tl) crystal module consisted of a
+                                                                       hexagonal-shaped cross-section with 2 cm side
+                                                                       and a length of 40 cm, giving a modular mass of
+                                                                       1.87 kg. Scintillation photons were read out by
+FIG. 5: Schematic drawing of the CsI(Tl) scintillating crystal         PMTs at both ends. The sum and difference of
+array. Light output is recorded by PMTs at both ends.                  the two signals provided the energy and position
+                                                                       information, respectively. A three-dimensional
+                                                                       reconstruction of the events was achieved. These
+         B.   Conceptual Design and Motivations
+                                                                       information greatly enhanced the capabilities of
+                                                                       background diagnostics and evaluation. In partic-
+                                                                       ular, background induced by ambient radiations
+   The merits of scintillating crystal detectors in generic            was suppressed by rejecting events at the outer
+low background low energy experiments have been dis-                   modules or close to the PMTs. The high atomic
+cussed [27]. This experiment adopted CsI(Tl) crystal                   number for Cs and I (Z=51 and 53, respectively)
+scintillator packed in a compact array as both target and              allowed efficient attenuation and therefore compact
+detector. A schematic layout is given in Figure 5. Several             detector geometry.
+detector characteristics and design features were incorpo-
+rated [28] which contributed to the improvement in the           (iv) Large Mass and Expandable Detector: This
+experimental sensitivities:                                           experiment was based on a modular CsI(Tl)
+                                                                      crystal array with a total mass of 187 kg. Such
+(i) Proton-Free Target Region: The CsI(Tl) crystal                    detector approach with similar target mass scale
+     is only weakly hygroscopic and does not require a                was also adopted in cold dark matter searches
+     hermetic container to seal it from ambient humidity              in the KIMS experiment [29]. The design can
+     (in contrast to NaI(Tl) crystal). The crystal is also            be easily expanded to ton-scale experiments and
+     mechanically stable and self-supporting. Therefore,              beyond.
+     the target region was made up almost entirely of
+     CsI(Tl) (equal amount of Cs and I, with 0.15% ad-           (v) Pulse Shape Discrimination: The light emission
+     mixture of Tl). The other materials were the small               profiles of CsI(Tl) offered excellent pulse shape dis-
+     amount of teflon wrapping sheets, made up of C                   crimination (PSD) between γ/e events from those
+                                                                                                                                                 6
+
+      due to α-particles and nuclear recoils [30, 31]. This
+
+
+
+
+                                                                 Amplitute (Normalized)
+                                                                                           1                                       e/γ
+      allowed precise measurements of the internal con-                                                                            α / recoils
+                                                                                          0.8
+      taminations for background suppression and diag-
+                                                                                          0.6
+      nostics.
+                                                                                          0.4
+(vi) Focus at High Energy Events: The reactor ν̄e -                                       0.2
+     spectra below 2 MeV has large uncertainties [24],
+                                                                                           0
+     while ambient background dominate below the nat-                                           -4   -2   0   2   4   6   8   10       12
+     ural radioactivity end-point of 2.6 MeV. Accord-                                                                              Time (µs)
+     ingly, only events with T > 3 MeV were studied as
+     potential ν̄e −e candidates. The low energy events       FIG. 6: Averaged pulse shapes due to 5.4 MeV α-particles and
+     were still recorded and analyzed for the purposes        γ-rays of 662 keV. Nuclear recoils, as measured with scatter-
+     of calibrations and background diagnostics.              ing with a neutron beam, give rise the same pulse shapes as
+                                                              the α-events [30].
+
+      C.   Detector Construction and Readout
+
+   As depicted in Figure 5, the scintillating CsI(Tl) crys-      A special feature of the DAQ system was the recording
+tal detector modules were packed into a matrix array,         of any events delayed as much as 500 µs after the initial
+with minimal inactive dead space due to the teflon wrap-      trigger. The delay time was measured with 1 µs resolu-
+ping sheets. The configurations varied between the dif-       tion. This allowed measurement of delayed-coincidence
+ferent DAQ periods, but the operation conditions were         events due to internal radioactivity, which in turn was
+kept uniform and stable within one period. Therefore,         crucial to background diagnostics and suppression. The
+each DAQ period can be taken as an independent exper-         DAQ output was zero-suppressed, such that only those
+iment. At the end of data taking, a 12 × 9 array was          CsI(Tl) channels having signals within (-5 µs, 500 µs)
+deployed giving a total mass of 187 kg. Fiducial volume       relative to the trigger instant were recorded.
+was defined to be the inner crystals with a separation of        The DAQ dead time was accurately measured by the
+>4 cm from the PMTs at both ends. The fiducial masses         random trigger (RT) events generated at 0.1 Hz uncorre-
+for individual periods are given in Table II.                 lated with the rest of the hardware. The typical trigger
+   There were two types of crystal modules [30] from two      rate for the CsI(Tl) array was 20−30 Hz, corresponding
+production batches: (a) single crystal with 40 cm length      to 8−12% of DAQ dead time. Data were taken with the
+were used as target placed in the central region, while (b)   germanium system in parallel in Periods II−IV, but the
+two pieces of 20 cm long crystals optically glued together    additional contributions to the DAQ dead time were only
+were placed in the outer layers as active veto. The light     minor.
+output was read out at both ends of the crystal modules
+by custom designed PMTs with low-activity glass and
+diameter of 29 mm. The target array was housed inside
+a OFHC copper box of thickness 2.5 mm. Additional
+copper shielding blocks were placed on top of the box                                           D.    Detector Performance
+to fill up the inner target volume of Figure 4. The box
+was flushed with dry nitrogen to purge the radioactive
+radon gas. The CsI(Tl) array shared the target volume           The intrinsic performance of the CsI(Tl) crystal mod-
+and the downstream DAQ systems with germanium de-             ules were discussed in details in Ref. [30]. The energy and
+tectors for magnetic moment studies [16] and dark matter      position resolutions on individual module measured with
+searches [32].                                                a 137 Cs γ-source at 662 keV were 4% and <1 cm root-
+   The electronics and DAQ systems were described in          mean-square (RMS), respectively. The averaged pulse
+Ref. [33]. The DAQ system was VME-based running on            shapes for γ/e events and α-particles in CsI(Tl) are dis-
+LINUX operating system. The PMT signals were fed              played in Figure 6. Separation of γ/α at >99% was
+to custom-built shaping amplifiers whose output were          achieved by PSD down to 100 keV electron-equivalence
+recorded by Flash Analog-to-Digital Converter (FADC)          energy.
+modules at a clock rate of 20 MHz and 8-bit dynamic              The FADC has a hardware dynamic range of only 8-bit.
+range. The DAQ trigger was generated by discrimina-           Software algorithm was devised to correct the saturated
+tor set at threshold of 100 keV for P-II and 500 keV for      pulse shapes [34]. The effective range was extended by 4
+P-III,IV,V, much lower than the relevant signal region.       more bits without affecting the performance parameters
+Signals from all sub-dominant channels with energy de-        like energy resolution and PSD. The CsI(Tl) output for
+positions & 10 keV, as well as the PMT signals from the       the current measurements typically saturated at about
+veto-panel system and various control parameters, were        2 MeV, so that the events with energy <10 MeV relevant
+also recorded.                                                to the analysis were well-reconstructed.
+                                                                                                                                                                               7
+
+                    40
+
+   QR (Arb. Unit)
+
+
+
+
+                                                                                                    Normalized Unit
+                                                                 ●- (QL,QR) non-saturated                              1                     137
+
+
+
+
+                                 m
+                                                                 ∆ - QR saturated only                                                            Cs
+
+
+
+
+                             Z=0c
+                    35                                                                                                                       40
+                                                                 ❏ - QL saturated only                                                            K
+                                                                 ✳ - (QL,QR) saturated
+                    30                                                                                                0.8
+
+
+                    25
+                                                             Region of                                                0.6
+                                                             Interest
+                    20
+
+
+                    15                                                                                                0.4
+
+
+                    10
+
+                                                                                       cm                             0.2
+                    5
+                                                                           Z = 40
+
+                                                                           208
+                    0
+                                                                                 Tl
+                                                                                                                       0
+                         0    5           10          15   20        25    30         35    40                         -20   -10   0   10   20         30   40    50      60
+                                           137              40              QL (Arb. Unit)                                                                  Z-Position (cm)
+                                                 Cs              K
+
+FIG. 7: Typical QL versus QR distribution for H1(CRV)                                            FIG. 8: The longitudinal Z-position distributions for events
+events showing the background events of natural sources. Dif-                                    at energy corresponding to γ-lines of 137 Cs (solid histogram)
+ferent colors denote whether the PMT signals are saturated                                       and 40 K (dotted histogram).
+at their FADC readout or not. Additional software routines
+were devised to provide correct energy information for satu-
+rated events.
+                                                                                                 performed with in situ data, typically once every week.
+                                                                                                    The longitudinal Z-position for the ith crystal module
+                                                                                                 is given by:
+                               IV.         DATA ANALYSIS                                                               
+                                                                                                                         βi · Q R − Q L
+                                                                                                                                        
+                                                                                                                 Z ∝                      ,           (13)
+                                                                                                                         βi · Q R + Q L
+                                     A.      Light Collection
+                                                                                                 where βi ’s are parameters to absorb the residual dif-
+                                                                                                 ference in response between the left and right readout.
+   The raw input to subsequent analysis were the light                                           The values of βi ’s were obtained by requiring that the
+output (denoted by QL and QR ) derived by summing                                                662 keV γ-line from 137 Cs background must be uniformly
+the pedestal-subtracted FADC signals from the PMTs                                               distributed along the length of the crystals. The pro-
+on both ends of the CsI(Tl) modules. Depicted in Fig-                                            portional constants were derived by fixing the two edges
+ure 7 is a typical normalized QL versus QR distribution.                                         of the distributions to be at 0 cm and 40 cm. Typi-
+The selected events were those having signals only in one                                        cal Z-position distributions for events at 662 keV and
+crystal (H1), with “cosmic-ray veto” (CRV) imposed and                                           1461 keV evaluated through this prescription are shown
+software correction applied to the saturated pulses [34].                                        in Figure 8. The RMS resolution is 1.3 cm at 3 MeV
+The different color schemes denote the status on pulse                                           electron-equivalence, based on measurements with α-α
+saturation of the two PMTs.                                                                      cascade events [35].
+   Three bands along the increasing energy axis are                                                 The energy is described by:
+conspicuous, corresponding to background due to γ-                                                                                p
+rays from 137 Cs (662 keV), 40 K (1461 keV) and 208 Tl                                                     E = ai + bi · e−αi Z · QL × QR .          (14)
+(2614 keV). These lines were important for in situ cal-
+                                                                                                 The parameters αi ’s take into account possible differ-
+ibration as well as background diagnostics. The sharp
+                                                                                                 ences in the attenuation of light transmission along both
+reduction of background beyond the 208 Tl energy − the
+                                                                                                 directions, and were fixed by requiring the derived values
+signal region of this measurement − is very distinct. The
+                                                                                                 of E for the γ-lines were constant and independent of Z.
+enhanced event rates at both edges indicate that most
+                                                                                                 The calibration constants (ai , bi ) were evaluated by a lin-
+background sources were external to the detector.
+                                                                                                 ear fit to the γ-lines. The reconstructed energy spectra
+                                                                                                 are depicted in Figure 9, indicating RMS resolutions of
+                                                                                                 5.8%, 5.2% and 4.0% at 137 Cs, 40 K and 208 Tl γ-peaks,
+                             B.       Event Reconstruction                                       respectively. A scatter plot of the reconstructed (E,Z)
+                                                                                                 values for a typical crystal is shown in Figure 10. The
+  The objectives of event reconstruction were to provide                                         reconstructed energy of the various bands matched well
+measurements on energy (E) and longitudinal position                                             to the corresponding γ-lines within the fiducial volume
+(Z) using QL and QR . The calibration procedures were                                            (4 cm < Z < 36 cm).
+                                                                                                                                                                                                                          8
+
+                                 4
+
+  Rexpt(day kg [10 keV] )
+                            10
+  -1
+
+
+
+
+                                                                               Rexpt(day kg [100 keV] )
+                                                                                                                                                            TABLE III: Summary of the suppression and signal efficiency
+
+
+
+
+                                                                               -1
+                                                                                                                                      .... CRV-Tag
+                                                                                                               -1                      All Vetos
+                                 3
+                                           137
+                                             Cs                                                           10                                                factors of successive selection cuts within the 3−8 MeV energy
+                            10                                                                                                    63
+                                                                                                                                       Cu                   range.
+  -1
+
+
+
+                                                       40
+                                                            K                                                  -2
+
+
+
+
+                                                                               -1
+                                                                                                          10
+  -1
+
+
+
+
+                            10 2
+                                                                                                                                                            Event Selection                 Background          Signal
+
+
+
+
+                                                                               -1
+                                                                                                               -3
+                                                                                                                                                                                            Suppression        Efficiency
+                                                                    208                                   10                                                Raw Data                            1.0                1.0
+                                                                      Tl
+                            10
+                                                                                                               -4
+                                                                                                                                                            Cosmic Ray Veto (CRV)              0.06               0.93
+                                                                                                          10
+                                                                                                                3    5     7     9      11 13 15
+                                                                                                                                                            Multi-Hit Veto (MHV)               0.16               0.99
+                             1                                                                                                        Energy (MeV)          Pulse Shape
+                                                                                                                                                             Discrimination (PSD)               0.34             > 0.99
+                            10
+                                 -1                                                                                                                         Z-position Cut                      0.36              0.80
+                                                 Raw Data                                                                                                   Combined                           0.0011             0.77
+                                 -2              CRV
+                            10                   MHV
+                                                 PSD
+                                 -3
+                            10                   Z-Pos Cut                                                                                                  PSD. The CRV and MHV suppressed cosmic-induced
+                                                                                                                                                            background and multiple Compton scattering events
+                            10
+                                 -4
+                                                                                                                                                            from ambient γ-rays, respectively. The selected sample
+                                  0          1000           2000     3000                         4000              5000       6000         7000     8000
+                                                                                                                                     Energy (keV)           is denoted by H1(CRV) in subsequent discussions. The α
+                                                                                                                                                            and delay-cascade events from internal radioactivity [35],
+FIG. 9: The measured energy spectra at various stages of                                                                                                    as well as convoluted events in accidental coincidence,
+the analysis showing the effects of successive selection cuts.                                                                                              were identified by PSD. To minimize background due to
+                                                                                                                                                            ambient γ-rays, an internal fiducial volume was defined.
+                                                                                                                                                            Events at the outermost layers of the crystal array were
+                                                                                                                                                            rejected, and a Z-position cut of 4 cm from both ends
+    Energy (keV)
+
+
+
+
+                            3000                                                                                                                            was applied to the target (inner) crystals.
+                                      208
+                                            Tl                                                                                                                 The various parameters in the calibration and selec-
+                                                                                                                                                            tion procedures were measured before the detector were
+                            2500                                                                                                                            assembled on site. Typically, about 10% of the in situ
+                                                                                                                                                            data samples uniformly distributed within a DAQ period
+                                                                                                                                                            were used to provide the fine adjustments. Once ob-
+                            2000
+                                                                                                                                                            tained, the optimal parameters were applied universally
+                                                                                                                                                            to the rest of the data set. The energy spectra at the suc-
+                                      40
+                            1500       K                                                                                                                    cessive stages of candidate event selection are depicted in
+                                                                                                                                                            Figure 9.
+                                                                                                                                                               A summary of the background suppression and signal
+                            1000                                                                                                                            efficiency factors of the cuts in the energy range of inter-
+                                      137
+                                            Cs                                                                                                              est (3−8 MeV) are summarized in Table III. The signal
+                                                                                                                                                            efficiencies were derived from the survival fractions of RT
+                             500                                                                                                                            events for the CRV and MHV cuts, and with the multi-
+                                                                                                                                                            hit Compton events for the PSD cut. The Z-position ef-
+                                                                                                                                                            ficiency corresponds to a 4 cm cut at both ends and were
+                                 0
+                                 -20             -10            0         10                              20         30          40           50       60   accounted for in the definition of the fiducial volume.
+                                                                                                                                 Z-Position (cm)
+
+FIG. 10: Energy versus Z-position scatter plot of recon-
+structed events. The prominent γ-lines matching the various                                                                                                                   V.    BACKGROUND
+bands are identified.
+                                                                                                                                                               The candidate event selection procedures of Sec-
+                                                                                                                                                            tion IV C resulted in a signal-to-background ratio of
+                                                                                                                                                            about 1/30 at 3 MeV. The information on multiplicity,
+                                                       C.           Event Selection                                                                         energy, position, cascade event timing and α/γ identifi-
+                                                                                                                                                            cation available for every event allowed the residual back-
+   Neutrino-induced interactions like ν̄e −e are of ex-                                                                                                     ground to be understood, analyzed and suppressed. In
+tremely small cross-section and therefore manifest them-                                                                                                    addition, the Reactor ON/OFF comparisons provided an
+selves as “single-hit” (H1) events in only one crystal mod-                                                                                                 independent handle to the background. These measure-
+ule uncorrelated to the rest of the system. The H1 events                                                                                                   ments were combined to improve the background evalu-
+were selected from raw data through selection criteria                                                                                                      ation which in turn enhanced the experimental sensitiv-
+with CRV, “anti-Compton” multi-hit veto (MHV), and                                                                                                          ities.
+                                                                                                                                         9
+
+  A.   Background Understanding and Diagnostics
+                                                                                         208
+                                                                                              Tl Single Escape
+   Several diagnostic tools which contribute to the quan-
+titative understanding of the background are discussed in                                          134
+this section. For completeness, all prominent background                                             Cs
+channels are presented, though many of those are below
+                                                                                                          60
+the physics analysis threshold of 3 MeV.                                                                       Co   208
+                                                                                                                      Tl
+                                                                                                                    Multi-Hit
+
+
+
+                 1.   Intrinsic Background
+                                                                                                                            208
+                                                                                                                              Tl
+   Measurements of intrinsic radiopurity in the CsI(Tl)                                                                   Compton Edge
+crystal with in situ data were discussed in details in
+Ref. [35].
+   The isotope 137 Cs is produced artificially as fission
+waste from power reactors and atomic weapon tests. Ce-                                  137               40                  208
+sium salts are soluble and can easily contaminate the raw                                 Cs               K                      Tl
+materials which produce CsI. The 137 Cs contaminations
+                                                                FIG. 11: Scatter plot of H2 events after cosmic-ray veto in
+was measured to be (1.7 ± 0.3) × 10−17 g/g, and were            0−3 MeV, showing bands on 60 Co, 134 Cs and 208 Tl single-
+uniform across the length of the crystals, as depicted in       escape, as well as the correlated γ’s from 208 Tl.
+Figure 8.
+   The cascade events provided measurements on
+the naturally-occurring 238 U, 232 Th and 235 U
+series,     which      were     (0.82 ± 0.02) × 10−12 g/g,                     3.     Cosmic Ray Tagging Efficiency
+(2.23 ± 0.06) × 10 −12
+                       g/g     and      < 4.9 × 10−14 g/g,
+respectively, assuming secular equilibrium.       The β-           The cosmic-ray tagging efficiency (ǫµ ) is the probabil-
+decays of 208 Tl followed by γ’s in coincidence could in        ity that the cosmic-ray induced events actually produce
+principle lead to background in the signal region. From         a “cosmic-ray tag” (CRT). The inefficiency (1 − ǫµ ) was
+the measured level of 228 Th in the target, the contribu-       due to incomplete geometrical coverage and the light col-
+tion of this background at 3−5 MeV was evaluated to             lection deficiencies of the large-area scintillator panels.
+be only . 11% of the expected ν̄e −e signals.                      High energy events above the end-point of (n,γ) energy
+   In addition, trace admixtures of the fission daugh-          scale of about 8 MeV are all cosmic-ray induced. These
+ter 129 I and of the naturally-occurring 40 K in the raw        events provided a clean sample for ǫµ to be measured.
+CsI powder were measured with accelerator mass spec-            For improved experimental control, three-hit events (H3)
+trometry techniques to be < 1.3 × 10−13 g/g and <               between 8−14 MeV were selected, and ǫµ is given by
+2 × 10−10 g/g, respectively [36]. Neutron capture on
+133
+    Cs produced 134 Cs at the level of ∼ 5 × 10−20 g/g, as
+                                                                                                       
+                                                                                             H3(CRT)
+                                                                                   ǫµ =                   .             (15)
+measured with the in situ two-hit background discussed                                       H3(Total)
+in Section V A 4.
+                                                                The ǫµ averaged over all the DAQ periods was measured
+                                                                to be 92%, while the variations among periods were less
+                                                                than 1%.
+                 2.   Ambient Radioactivity
+
+
+   The H1 spectra of Figure 9 show several γ-lines, the                   4.        Diagnostics of Two-Hit Background
+most prominent ones were those from 137 Cs, 40 K and
+208                                                                Multi-hit events were unrelated to neutrino interac-
+    Tl. The background dropped by several orders of
+magnitude beyond the natural radioactivity end-point            tions and therefore provided unambiguous diagnostics to
+of 2.6 MeV. The cut-off at 8 MeV corresponded to the            the background sources. Displayed in Figure 11 is a scat-
+end-point of γ-rays emissions following neutron capture.        ter plot of two-hit (H2) events after CRV cut. Several
+The lines are crucial for energy calibration, system stabil-    features were noted which revealed the nature and loca-
+ity monitoring, and background diagnostics. Apart from          tions of the dominant background sources, discussed as
+137
+    Cs which is an intrinsic radioactivity, the other sources   follows:
+are external to the CsI(Tl) target. Distributions of the
+Z-position were heavily attenuated from the edge of the         (i) 208 Tl Induced Pair Production: The single es-
+crystals, as illustrated for the case of 40 K in Figure 8.            cape peak following pair production of the 208 Tl
+                                                                                                                                                                     10
+
+                                                                                                  -1
+      2614 keV γ’s can be identified. The Z-position dis-                                    10
+
+
+
+
+                                                                  Event Rate (day kg MeV )
+                                                                 -1
+      tribution of these events confirmed that the sources
+      were external to the target. As discussed in Sec-
+                                                                                                                                         H3PP (CRV) Data       ❘
+                                                                                                                                                               ●
+
+
+
+
+                                                                 -1
+                                                                                                                                         H3PP (CRV; µ)         ❏
+      tion V B, pair production events are crucial for
+
+
+
+
+                                                                 -1
+      background evaluation because of their distinctive                                                                                 H3PP (CRV; µ)
+                                                                                                                                                    ⁄          ▼
+
+      topologies.
+
+(ii) 60 Co Contaminations: It was established that the
+      dominant reactor-induced radioactivity in KSNL
+      was 60 Co which existed as dust in the laboratory
+      area [16]. Their contributions varied between DAQ
+                                                                                                  -2
+      periods due to different levels of contaminations                                      10
+      during hardware installation. Events due to the
+      correlated γ’s at energy 1173 keV and 1332 keV
+      from 60 Co can be located in Figure 11. They were
+      uniformly distributed along the Z-position, signify-
+      ing that some 60 Co dust got into the target volume
+      between crystals during installation. The measured                                               3   3.5   4   4.5   5   5.5   6    6.5   7    7.5   8       8.5
+      contamination level is 3×10−20 kg−1 . However, the                                                                                            Energy (MeV)
+      total energy of the 60 Co lines is below the 3−5 MeV
+      signal region relevant to this measurement.              FIG. 12: Three-hit pair production spectra for CRV events,
+                                                               and further differentiating into the cosmic-ray related and un-
+(iii) Neutron Capture Induced 134 Cs: Trace                    related components. After scaling with the known pair pro-
+      amount of 134 Cs (τ1/2 = 2.05 yr ; Q = 2.06 MeV)         duction cross-sections, these spectra provide the in situ γ-ray
+      was produced by neutron capture on 133 Cs within         background at the detector.
+      the CsI(Tl) target. It decays via β-emission to-
+      gether with two γ’s of energy 605 keV and 796 keV
+      in coincidence. These events were tagged in the          back-to-back to the third one. These samples have dis-
+      H2 plot in Figure 11. The intensity distribution is      tinctive topology not contaminated by other background
+      uniform over the length of the crystals, verifying       channels. Coupled with the known energy dependence of
+      the sources were internal. The measured contami-         the pair production cross-section, these samples provided
+      nation level is 5 × 10−20 g/g. The Q-value is below      measurements of the in situ γ-spectra, and therefore were
+      the physics analysis threshold and hence these           crucial for subsequent background evaluation.
+      decays would not contribute to the background of            The H3PP spectrum for CRV events are displayed in
+      this measurement.                                        Figure 12. This was produced by the γ-ray background
+                                                               whose contributions to the H1(CRV) signals were eval-
+(iv) Cascade γ-rays from 208 Tl: Decays of 208 Tl are
+                                                               uated. There were two components to this high energy
+     characterized by several γ-rays emitted in cascade.
+                                                               γ-ray background:
+     Coincidences of γ-rays at 510, 583 and 860 keV with
+     the prominent line of 2614 keV can be identified in       (i) cosmic-ray induced events with missing CR-tags,
+     the H2 scatter plot of Figure 11. The evaluation                whose rates are given by
+     of the contributions of this channel to H1 events is                                         
+     crucial to background suppression, and is addressed                                 (1 − ǫµ )
+                                                                   H3PP (CRV; µ) =                   H3PP (CRT) , (16)
+     in Section V B 1.                                                                      ǫµ
+
+(v) Neutron Capture on 63 Cu: The main shielding                                             where ǫµ is the cosmic-ray tagging efficiency mea-
+     materials in the vicinity of the target were OFHC                                       sured with Eq. 15, and
+     copper. Neutron (n,γ) capture on 63 Cu has rela-
+                                                               (ii) ambient radioactivity unrelated to cosmic-rays,
+     tively large cross-section (4.5 b), giving rise to high
+                                                                     which can be evaluated with
+     energy γ’s at 7637 keV and 7916 keV. These were
+     observed in H1 spectrum shown in the inset of Fig-           H3PP (CRV; րµ) = H3PP (CRV) − H3PP (CRV; µ) ,
+     ure 9.                                                                                                   (17)
+                                                                    also depicted in Figure 12.
+
+            5.   Pair Production Event Samples
+                                                                                                           B.    Background Evaluation
+  Pair production background manifested themselves
+mostly as three-hit events (H3PP ). They were selected           The experiment focused on the 3 MeV < T < 8 MeV
+by requiring two crystals each having 511 keV of energy        energy range as the physics analysis window. The ν̄e −e
+                                                                                                                                                                                                                                                    11
+
+                              1
+
+
+
+
+                                                                                                                  Event Rate (kg day MeV )
+  Event Rate (day kg MeV )
+
+
+
+
+                                                                                                                 -1
+  -1                                                                                                 ❘
+
+
+
+
+                                                                                                                                                                                                                                Tl Peak (day kg )
+                                                                                   H1 (CRV) Data●                                                                          ●       Data
+
+
+
+
+                                                                                                                                                                                                                               -1
+                                                                                                                                             0.9                                                                        22.5
+                                                                                   H1 (CRV; µ)       ❏
+                                                                                                                                                                                   Simulation (Normalized)
+
+
+
+
+                                                                                                                                                                                                                               -1
+                                                                                                                 -1
+                                                                                        T=E         ▼
+  -1
+
+
+
+                                                                                  ⁄  T < Eγ
+                                                                         H1 (CRV; µ)                                                         0.8                                                                        20
+                                                                                       
+                                                                                                                                                                                   H1(CRV; Tlγ )
+                                                                                                γ
+                                                                                                     ∆
+
+
+
+
+                                                                                                                 -1
+  -1
+
+
+
+
+                                                                                  208
+                                  -1                                                  Tl Cascade                                                                               208
+                             10                                                             208                                              0.7                                   Tl Peak Prediction                   17.5
+                                                                                  Intrinsic Tl
+                                                                                  SM (ν− - e)
+                                                                                          e
+
+
+
+
+                                                                                                                                                                                                                               208
+                                                                                                                                             0.6                                                                        15
+
+
+                                                                                                                                             0.5                                                                        12.5
+                                  -2
+                             10
+                                                                                                                                             0.4                                                                        10
+
+
+                                                                                                                                             0.3                                                                        7.5
+
+
+                                  -3                                                                                                         0.2                                                                        5
+                             10
+                                                                                                                                             0.1                                                                        2.5
+
+
+                                                                                                                                              0
+                                                                                                                                                        1    2   3   4    5    6     7    8     9   10   11   12
+                                  -4                                                                                                                                                                          208
+                             10                                                                                                              H1(CRV; Tlγ )               Crystal Distance (D)                      Tl Peak
+                                       3   3.5   4   4.5   5   5.5   6    6.5     7     7.5      8       8.5
+                                                                                      Energy (MeV)             FIG. 14: Comparison of measured H2 correlated events with
+                                                                                                               simulation results on the cascade γ-rays due to 208 T l de-
+FIG. 13: Measured H1 spectrum and the different background                                                     cays. The entry H1(CRV; Tlγ ) denotes the predicted H1 back-
+channels evaluated in Section V B. The SM ν̄e −e contribu-                                                     ground produced by two γ’s depositing all energy only in the
+tions are overlaid.                                                                                            same crystal. The measured strength of the 208 Tl peak pro-
+                                                                                                               vided consistency cross-checks to the simulations.
+
+
+signal region is expected to be at 3−5 MeV due to rapid
+decrease of the reactor ν̄e -spectra.
+                                                                                                                  The measured H2 distribution of ETl (1) ⊕ ETl (2, 3, 4)
+    The background diagnostics in Section V A demon-
+                                                                                                               as a function of distance between the two crystals (D)
+strated that convoluted γ-rays from 208 Tl, cosmic-ray
+                                                                                                               was displayed in Figure 14. The simulation results are
+events with missing CRV tags, as well as ambient high
+                                                                                                               overlaid, the normalization of which was fixed by best-fit
+energy photons could contribute to the H1 background
+                                                                                                               to the H2 distribution for events with separation more
+[H1(BKG)]. The experimental design allowed quantita-
+                                                                                                               than one crystal (D>1). Excellent agreement with the
+tive measurement of these background which resulted in
+                                                                                                               strength of the ETl (1) single-γ H1 peak at 2614 keV was
+the extraction of the ν̄e −e signal events with good accu-
+                                                                                                               demonstrated. It served as important consistency check
+racy.
+                                                                                                               and tools for systematic studies. The data point at D=1
+    The evaluation of the various background channels is
+                                                                                                               denotes H2 events with hits from adjacent crystals. The
+discussed in the following sub-sections. Their contribu-
+                                                                                                               measured intensity was significantly larger than the ex-
+tions are depicted in Figure 13, where the expected SM
+                                                                                                               pected contributions from correlated γ’s due to 208 Tl.
+ν̄e −e spectrum is overlaid for comparison.
+                                                                                                               The excess was attributed to multiple Compton scatter-
+                                                                                                               ings at adjacent crystals from a single high energy pho-
+                                                                                                               ton. This was reproduced in simulations studying H2
+                                            1.   Cascade γ-Rays from 208 Tl                                    events with single photons.
+                                                                                                                  The entry at D=0, denoted by H1(CRV; Tlγ ), corre-
+   Decays of 208 Tl are followed by emissions of γ-rays                                                        sponds to the prediction of the H1 events having the
+in coincidence, having energy ETl (1, 2, 3, 4)= 2614.5,                                                        two γ’s depositing energy exclusively in the same crys-
+860.56, 583.2 and 510.8 keV, and at intensity ratios of 99,                                                    tal. It was adopted for subsequent background subtrac-
+12.8, 86.2 and 25% per 208 Tl-decay, respectively. Two-                                                        tion. The relative intensities to the 2614 keV reference
+fold coincidence manifested as H2 events were identified                                                       peak, expressed as ratios of [ETl (1) ⊕ ETl (N)] /ETl (1) in
+in the scatter plot of Figure 11. Events with both γ-                                                          H1-events, are 0.13%, 0.33%, and 0.16%, for N=2,3,4,
+rays hitting and depositing all energy in the same crystal                                                     respectively.
+would become H1 background to the ν̄e −e signals.
+   The probabilities were studied by full simulations with
+GEANT software packages [37], incorporating realistic
+angular correlations and branching ratios for the 208 Tl
+                                                                                                                                                   2.       Cosmic-Ray Induced Background
+decays [38]. The sources were located at the PMTs
+and their voltage dividers, which were the only mate-
+rials other than OFHC copper and teflon in the vicinity                                                          Once the cosmic-ray tagging efficiency (ǫµ ) was mea-
+of the target.                                                                                                 sured with Eq. 15, the comic-ray induced H1 background
+                                                                                                                        12
+
+with missing CR tags was derived using
+                                                             TABLE IV: Summary of the sources of systematic errors
+                                                             [δsys (Source)] and their contributions to the measurement un-
+                                  
+                         (1 − ǫµ )
+        H1(CRV; µ) =                 H1(CRT) ,       (18)    certainties [∆sys (ξ)]. The various components to the signal
+                            ǫµ
+                                                             strength are summed, while those to the background subtrac-
+similar to the H3PP channel in Eq. 16.                       tion are averaged.
+                                                             Sources                              δsys (Source)   ∆sys (ξ)
+                                                             Signal Strength :
+             3.    Ambient γ-Ray Background                    Φν Evaluation                          <3%           <0.03
+                                                               Efficiencies for Neutrino Events      <1.3%         <0.013
+  This background channel H1(CRV; ր    µ) is due to ambi-      Fiducial Target Mass                   <4%           <0.04
+ent high energy photons emitted mostly through thermal       ∗ Combined (Signal)                       −           <0.052
+neutron capture by the surrounding materials. This was       Background Subtraction :
+derived directly through the H3PP (CRV; ր µ) spectrum of       Reactor OFF Measurement               < 0.4%         <0.06
+                                                               Background Evaluation
+Figure 12. The sharp cut-off at ∼8 MeV indicates the            ⊙H1(CRV; Tlγ )                        <3%           <0.08
+dominance of (n,γ) processes.                                   ⊙H1(CRV; µ) + H1(CRV; ր    µ)         < 1%          <0.17
+  The background can be further divided into two cate-            Net                                  −            <0.19
+gories, according to the different methods of evaluation.    ∗ Combined (Background)                   −            <0.15
+                                                             Total                                                  <0.16
+(i) Full Energy Deposition (T = Eγ ): The          γ-rays
+     lose all its energy within a single crystal through
+     multiple Compton scatterings or pair production
+     with both annihilation photons fully absorbed.          with partial energy deposition which contributed at the
+     The rate is given by                                    .0.5% level of H1(BKG).
+                                                              The H1(CRV; Tlγ ) channel was important only in the
+                      H3PP (CRV; ր
+                                 µ)                          3−3.5 MeV energy bin. The other two channels due to
+  H1(CRV; ր µ) =                      · H1(CRT) . (19)       high energy γ interactions were dominant over the entire
+                       H3PP (CRT)
+                                                             energy range of interest. Their combined contributions
+     The evaluation of H3PP (CRV; ր
+                                  µ) followed from           were simplified by Eqs. 16,17,18&19, to become:
+     Eq. 17.                                                                                           
+                                                                                            H3PP (CRV)
+(ii) Partial Energy Deposition (T < Eγ ): The am-            H1(CRV; µ)+H1(CRV; ր    µ) =                 ·H1(CRT) .
+                                                                                            H3PP (CRT)
+      bient γ’s could undergo single Compton scattering                                                           (21)
+      after which the outgoing photons left the detector     That is, the dominant contribution to H1(BKG) was re-
+      without further interactions. Only a fraction of the   lated to the H3PP sample through a simple ratio of events
+      incident energy would be deposited in a single crys-   with and without CR-tags.
+      tal. This background channel was studied with full-
+      scale simulations using the in situ cosmic-unrelated
+      H3PP (CRV; ր µ) spectrum of Figure 12 for flux nor-           VI.   SYSTEMATIC UNCERTAINTIES
+      malization. For consistency check, the strength of
+      the H1 full energy (T = Eγ ) spectra of Figure 13         A summary of the sources of systematic errors
+      was successfully reproduced. The contribution by       [δsys (Source)] and their contributions to the measured
+      this channel to H1(BKG) at 3−5 MeV was only            ξ-ratio [∆sys (ξ)] is given in Table IV. An uncertainty of
+      .5% of the expected SM ν̄e −e signals.                 3% was adopted for the evaluation of the high energy
+                                                             reactor ν̄e -spectra. The signal efficiencies for the selec-
+                                                             tion procedures discussed in Section IV C were accurately
+                  4.   Combined Evaluation
+                                                             measured with high statistics using the RT events. The
+                                                             fiducial mass uncertainties originated from the Z-position
+  It can be derived from Figure 13 that &99% of the          resolution of 1.3 cm.
+H1(CRV) events can be accounted for by the ν̄e −e signals       The systematic effects on background evaluation were
+as well as the three dominant background channels, such      studied with event samples unrelated to neutrino interac-
+that:                                                        tions accumulated over all DAQ periods. These include
+                                                             data from the Reactor OFF periods as well as those with
+     H1(CRV) = H1(ν̄e − e) + H1(BKG) ;
+                                                             energy above the 8 MeV end-point of the reactor neu-
+      H1(BKG) ∼
+              =                              (20)            trino spectra. Individual methods were demonstrated to
+        H1(CRV; Tlγ )+H1(CRV; µ) + H1(CRV; ր
+                                           µ) ,              be able to account for the neutrino-unrelated background
+                                                             to certain accuracy levels, which were in turn assigned as
+where the three contributions are given by Fig. 14 and       the systematic uncertainties of those methods.
+Eqs. 18&19, respectively. The sub-dominant terms in-
+clude intrinsic radiopurity and ambient γ-ray background     (i) Reactor ON/OFF Comparison: The intensity of
+                                                                                                                                                                                   13
+
+                                                                                                                            (a)
+TABLE V: Stability levels (δ± ) of the various neutrino-                                0.5
+
+
+
+
+                                                               (Rmeas− Rave)/Rave
+unrelated channels.                                                                     0.4
+                                                                                        0.3
+Channels/Period       χ2 /dof                 δ± (%)                                    0.2
+208                                                                                     0.1
+    Tl Intensity :
+                                                                                         -0
+         II           19/13                    0.85                                    -0.1
+        III           38/43                    0.61                                    -0.2
+        IV            33/27                    0.81                                    -0.3
+                                                                                       -0.4
+         V             8.4/8                   0.91                                    -0.5
+Reactor OFF 3−8 MeV H1(CRV) Rates :                                                           0     25        50           75       100        125       150      175        200
+                                                                                                                                                                Time (days)
+         II           15/14                    3.18
+        III           11/11                    3.51                                                                         (b)
+        IV             8.1/8                   3.60
+
+
+
+
+                                                               (Rmeas− Rpred)/Rmeas
+                                                                                                                                              208
+                                                                                          1                                     ■ OFF Tl BKG (3-3.5MeV)
+         V             7.2/5                   3.22                                    0.75
+                                                                                                                                     208
+                                                                                                                                ▲ OFF Tl Peak Intensity
+                                                                                                                                     208
+                                                                                                                                ❍ ON    Tl Peak Intensity
+    Combined             −                    < 0.4%                                    0.5
+                                                                                       0.25
+                                                                                          0
+                                                                                      -0.25
+     the 208 Tl γ-line allowed the stability of the hard-                              -0.5
+                                                                                                    P-II               P-III                  P-IV              P-V
+     ware systems to be monitored and demonstrated                                    -0.75
+                                                                                         -1
+     to good statistical accuracies. The window within                                     0            2          4            6              8          10            12
+     3−8 MeV at the Reactor OFF periods consisted ex-                                                                                                             Data Set
+     clusively of background and provided an additional                                                                     (c)
+     monitor. The stability of the measured intensities
+
+                                                               (Rmeas− Rpred)/Rmeas
+                                                                                      0.4
+     of the 208 Tl γ-line at 2614 keV in Period III rel-
+     ative to the whole-period average is illustrated in                              0.2
+
+     Figure 15a. Summary of all results are tabulated                                   0
+     in Table V. The good reduced-χ2 (χ2 /dof) indi-                                  -0.2
+     cate the data were stable within individual peri-
+                                                                                      -0.4                  OFF H1                                   ON+OFF H1
+     ods. The hardware instability level demonstrated
+     with the combined data is < 0.4%.                                                -0.6
+                                                                                               3    4        5         6        7         8          9     10         11     12
+(ii) 208 Tl Induced γ-Ray Cascade Background:                                                                                                             Energy (MeV)
+      The simulation software and the normalizations
+      discussed in Section V B 1 were cross-checked by       FIG. 15:    Data from which the systematic uncertainties
+      applying them to compare with the measured in-         were derived: (a) stability of the 208 Tl peak intensities
+      tensities of the 2614 keV γ-line following 208 Tl      in Period III; (b) comparisons of 208 Tl intensities evalu-
+      decays for all periods, and with the H1 events         ated by simulations with measured background on neutrino-
+      at 3−5 MeV for only Reactor OFF. The rela-             unrelated data samples, and (c) comparisons of the evaluated
+                                                             H1(CRV; µ) + H1(CRV; ր  µ) background channels with mea-
+      tive deviations between the measured and pre-
+                                                             sured background on neutrino-unrelated data samples.
+      dicted rates [(Rmeas − Rpred )/Rmeas ] are depicted
+      in Figure 15b, showing consistency with zero [=
+      (−0.013 ± 0.029) at χ2 /dof = 6/11]. The fitting er-
+      ror of 3% represents an upper bound of the system-
+      atic uncertainties to the H1(CRV; Tlγ ) background     to the ν̄e −e cross-section measurement were then de-
+      component.                                             rived. The various δsys (Source) terms were imposed on
+                                                             the data, and the changes introduced on ξ were the cor-
+(iii) Dominant              H1(CRV; µ) + H1(CRV; ր     µ)    responding systematic uncertainties ∆sys (ξ) listed in Ta-
+      Background:           The evaluations of the           ble IV.
+      H1(CRV; µ) + H1(CRV; ր    µ) combined contributions
+      in Eq. 21 were cross-checked with measurements
+      on neutrino-unrelated samples at 3−8 MeV from
+      the Reactor OFF periods and at 8−12 MeV from
+      both ON/OFF periods. The relative deviations                                                 VII.       PHYSICS RESULTS
+      [(Rmeas − Rpred )/Rmeas ] were consistent with zero
+      [= (0.0021 ± 0.0081) at χ2 /dof = 14.5/16], as
+      illustrated in Figure 15c for the combined data set.     Intermediate results of the experiment were previously
+      The fitting error of 1% represents an upper bound      reported [39]. The final physics results presented in this
+      of the systematic uncertainties.                       section are based on the complete data set, and include
+                                                             contributions from systematic uncertainties, as well as
+  The contributions of the individual systematic effects     improvements in the background evaluation.
+                                                                                                                                                                         14
+
+                        A.   Formulation                                                                                            (a)
+                                                                                                        0.015
+
+
+
+
+                                                                            Event Rate (kg day MeV )
+                                                                       -1
+  The experimentally measured rates for neutrino events
+
+
+
+
+                                                                       -1
+[Rexpt (ν)] in Eq. 7 are given by:                                                                       0.01
+
+
+
+
+                                                                       -1
+           Rexpt (ν) = RH1 (ON) − RH1 (BKG) ,                (22)
+                                                                                                        0.005
+where RH1 (ON) is the measured H1(CRV) spectra for
+Reactor ON data, and RH1 (BKG) is the background de-
+rived from the statistical average of two different mea-                                                   0
+surements: (1) Reactor OFF data, and (2) sum of the
+dominant and sub-dominant background contributions to
+                                                                                                       -0.005
+H1(BKG) in both the Reactor ON and OFF periods, the
+derivations of which are discussed in Section V B 4.
+   Data from the four independent DAQ periods were
+                                                                                                        -0.01
+used, combining to give a total of 29882(7369) kg-day
+of fiducial mass exposure during Reactor ON(OFF), re-
+spectively. The adopted analysis window is 3−8 MeV                                                     -0.015
+                                                                                                                3   3.5   4   4.5   5     5.5   6   6.5    7   7.5   8
+spread out uniformly over Nbin = 10 energy bins.                                                                                                          Energy (MeV)
+                                                                                                                                    (b)
+                                                                                                         0.02
+
+
+
+
+                                                                      Rexpt (day kg MeV )
+                                                                     -1
+                       B.    Cross-Section
+                                                                                                       0.0175                                       SM
+                                                                     -1
+  The cross-section ratio ξ defined in Eq. 7 was derived
+with a minimum-χ2 fit, defined by
+                                                                     -1                                 0.015                                       Best-Fit
+                                                                                                       0.0125
+            N bin
+                      [ Rexpt (i) − ξ · RSM (i) ]2
+            X                                       
+       2
+     χ =                                                 ,   (23)                                        0.01
+            i=1
+                               ∆stat (i)2
+                                                                                                       0.0075
+where RSM (i) and Rexpt (i) are SM-expected and mea-
+sured event rates at ith bin, respectively, and ∆stat (i) is                                            0.005
+
+the corresponding statistical error of the measurement.                                                0.0025
+  As cross-check, identical procedures were applied to
+the combined Reactor OFF data [RH1 (OFF)], in which                                                        0
+case only the predicted background was subtracted to
+                                                                                               -0.0025
+provide the residual spectrum displayed in Figure 16a.
+Best-fit with Eq. 23 gave                                                                              -0.005
+                                                                                                                3   3.5   4   4.5   5     5.5   6   6.5    7   7.5   8
+                                                                                                                                                          Energy (MeV)
+                  ξ(OFF) = 0.03 ± 0.36(stat)                 (24)
+
+at χ2 /dof=10.3/9, demonstrating good overall system-               FIG.      16:           (a)     The      residual    spectrum
+atic control of the background subtraction procedures.              [RH1 (OFF) − Rpred (OFF)]      with     combined       Reactor
+   Combining all Reactor ON and OFF data from all pe-               OFF data.      The best-fit to SM effects is consistent
+                                                                    with ξ = 0.         (b) The combined residual spectrum
+riods and adopting the systematic uncertainties listed in
+                                                                    [Rexpt (ν) = RH1 (ON) − RH1 (BKG)] in the 3 − 8 MeV
+Table IV, the ratio                                                 energy region. The blue and red lines correspond to the SM
+                                                                    expectations and to the best-fit of the data, respectively.
+            ξ = 1.08 ± 0.21(stat) ± 0.16(sys)                (25)
+
+at χ2 /dof=8.7/9 was derived following Eq. 23. The mea-
+sured ν̄e −e cross-section was consistent with the SM pre-
+diction.                                                            based on the various schemes in Section V B, result-
+   The residual and best-fit spectra are depicted in Fig-           ing in (57±27±8) signal events. The total ν̄e -e sample
+ure 16b. The ξ ratios derived from individual peri-                 strength from all four periods combined corresponds to
+ods as well as with background subtraction by differ-               [414 ± 80(stat) ± 61(sys)] events.
+ent methods are tabulated in Table VI. As illustrations                The consistent distributions of the best-fit values and
+using Period II Reactor ON data, the raw sample con-                their errors in Table VI together with the appropriate
+sisted of about 1.94 × 106 events. The analysis pro-                range of the χ2 /dof values indicate robustness of the anal-
+cedures of Section IV C selected 2074 counts. A back-               ysis procedures. These results represent a probe to SM
+ground estimate of (2016±17±8) events was subtracted                at Q2 ∼ (3 × 10−6 ) GeV2 and improve over those from
+                                                                                                                                                                                15
+
+                                                                                                               0.01
+
+
+
+
+                                                                              Rexpt− RCC− RNC (kg day MeV )
+                                                                              -1
+TABLE VI: Summary of the measured values of ξ and χ2 /dof
+over individual DAQ periods, as well as with the different
+
+
+
+
+                                                                              -1
+background subtraction schemes in the total data set.                                                         0.005
+
+
+
+
+                                                                              -1
+                                       ξ                        χ2 /dof
+Individual Period :
+                                                                                                                   0
+  II                          1.15 ± 0.55 ± 0.17                8.5/9
+  III                         1.03 ± 0.43 ± 0.20                8.3/9
+  IV                          1.18 ± 0.36 ± 0.19                7.3/9
+  V                           0.97 ± 0.42 ± 0.20                9.9/9                                         -0.005
+All Periods Background Subtraction :                                                                                                               η = −1 (SM)
+  Measurement Reactor OFF 1.25 ± 0.43 ± 0.08                     7.4/9
+  Evaluation Reactor OFF      1.33 ± 0.37 ± 0.22                 6.9/9                                         -0.01                              --- η=1
+  Evaluation Reactor ON       0.78 ± 0.33 ± 0.20                10.3/9                                                                            ….. η = 0
+Combined                      1.08 ± 0.21 ± 0.16                 8.7/9
+                                                                                                              -0.015
+
+                                         gA
+                                                                                                                       3     3.5   4   4.5   5   5.5   6   6.5    7   7.5   8
+                                                                                                                                                                 Energy (MeV)
+                                   0.4
+          LSND                                                              FIG. 18: The measurement of interference term from best-fit
+                                   0.2                                      to the data in the 3−8 MeV energy range. The solid line
+                                                                            corresponds to the SM expectation of η = −1.
+
+                                     -0                          gV
+  -1    -0.8   -0.6       -0.4   -0.2   -0    0.2   0.4   0.6
+                                                                            at χ2 /dof=8.7/9, in excellent agreement with the SM
+                                  -0.2          TEXONO                      value of sin2 θW (SM ) = 0.23867 ± 0.00016 at this low
+                                               (This Work)                  Q2 (< 10−4 GeV2 ) range [40]. The combined uncertainty
+                                  -0.4                                      of ±0.039 from this measurement is less than that from
+                                                         sin θW
+                                                                 2
+                                                                            the LSND accelerator νe −e experiment of ±0.051. The
+                      0           -0.6
+                                                      0.5                   improvement is due to the enhancement factors favoring
+                                                                            ν̄e −e processes, as indicated in Eq. 9.
+                                                                                The interference term was probed using Eq. 8. The
+                                  -0.8
+                                                                            best-fit value of the sign-parameter η is
+
+                                    -1
+                                                                                                                           η = −0.92 ± 0.30(stat) ± 0.24(sys)               (27)
+                                                                            at χ2 /dof=8.8/9.       The residual spectrum showing
+FIG. 17: Best-fit results in (gV , gA ) space and in the sin2 θW            (Rexpt − RCC − RNC ) is displayed in Figure 18, with the
+axis from this experiment on ν̄e −e and the LSND experiment                 expected spectra for η = 0, ±1 overlaid. The results veri-
+on νe −e. The allowed regions are defined by their correspond-              fied destructive interference in the SM ν̄e −e interactions.
+ing statistical uncertainties.
+
+                                                                                                              D.           Neutrino Electromagnetic Properties
+previous reactor neutrino experiments [7–10].
+                                                                              To include possible effects due to µν and hrν̄2e i, the
+                                                                            expression of Eq. 22 was modified to
+               C.         Electroweak Parameters
+                                                                             R(µν ; hrν̄2e i) = RH1 (ON)−[RSM (ν)+RH1 (BKG)] . (28)
+   The constraints on the coupling constants (gV , gA )                        The non-standard interaction parameter hr2ν̄e i as de-
+were derived by a minimum-χ2 two-parameter fit on                           fined in Eq. 11 was measured to be
+Eq. 3, with a formulation similar to that of Eq. 23. The
+allowed regions are presented in Figure 17. Results from                     hrν̄2e i = [0.61 ± 1.30(stat) ± 1.01(sys)] × 10−32 cm2 (29)
+the accelerator experiment with νe [6] are overlaid. The
+                                                                            at χ2 /dof=8.7/9. This can be translated to bounds of
+complementarity of the νe −e and ν̄e −e processes is read-
+ily seen.                                                                     − 2.1 × 10−32 cm2 < hrν̄2e i < 3.3 × 10−32 cm2 (30)
+   The weak mixing angle was derived with best-fit on
+Eq. 5, giving                                                               at 90% confidence level, an improvement over the current
+                                                                            limits by the LSND experiment with νe −e [6]: −2.97 ×
+       sin2 θW = 0.251 ± 0.031(stat) ± 0.024(sys)                    (26)   10−32 cm2 < hr2ν̄e i < 4.14 × 10−32 cm2 .
+                                                                                                                            16
+
+                                                                  tens of tons of mass have been constructed, such that the
+TABLE VII: Projected statistical sensitivities on ξ and
+                                                                  target mass is easily expandable. As shown in Figure 13,
+sin2 θW under various realistically achievable improvement to
+the experiment.                                                   the dominant background above 3 MeV were all exter-
+                                                                  nal to the target scintillator. Accordingly, they will be
+Improvement                      ∆stat (ξ) ∆stat [sin2 θW ]       attenuated effectively through self-shielding in a target
+This Work                          0.21        0.031              with bigger mass. The incorporated features listed in Ta-
+Improved Feature :                                                ble VII correspond to 10 times increase in data strength
+ A. ×10 Data Strength              0.07        0.010              and >10 times suppression in background. The statisti-
+ B. Background Reduction
+                                                                  cal accuracies can be improved to 1.5% and 0.9% for ξ
+   B1: >99% Cosmic-Ray Efficiency 0.12         0.018
+          1                                                       and sin2 θW , respectively.
+   B2: × 10 Reduction in
+       Ambient & 208 Tl γ’s        0.16        0.024                 As indicated in Table IV, the systematic errors on
+ ∗ With Both B1+B2                0.05         0.007              background subtraction are related to the actual back-
+All Features A+B1+B2 Combined     0.015       0.0022              ground level, such that they will also contribute to
+                                                                  ∆sys (ξ) at the . 2% level under the assumption of Ta-
+                                                                  ble VII. Modest improvement on the evaluation of re-
+                                                                  actor neutrino spectra will attain similar accuracy. To
+  Similarly, the best-fit value for µν 2 is                       eliminate the errors in fiducial mass, active light guides
+                                                                  with a different scintillating crystal can be coupled to
+  µν 2 = [0.42 ± 1.79(stat) ± 1.49(sys)] × 10−20 µ2B (31)
+                                                                  both ends of the CsI(Tl) target crystal. A good candi-
+at χ2 /dof=8.7/9, which corresponds to a limit of the ν̄e         date is the pure CsI crystal. The vast difference in the
+neutrino magnetic moment of                                       scintillation decay times (∼10 ns versus ∼1000 ns for CsI
+                                                                  and CsI(Tl), respectively) [30] makes the definition of an
+                   µν̄e < 2.2 × 10−10 µB                  (32)    inner target volume simple and exact using PSD tech-
+                                                                  niques.
+at 90% confidence level. This is, however, less stringent            The projected sensitivities of such experiments are sim-
+than the best published limit of µν̄e < 0.74 × 10−10 µB           ilar to those estimated with a large liquid scintillator tar-
+with germanium detector at 12 keV analysis thresh-                get [41], and can complement the sin2 θW measurements
+old [16].                                                         with the high energy accelerator experiments. In partic-
+                                                                  ular, these experiments can probe the anomalous NuTeV
+                                                                  results [15] at comparable sensitivities but with a differ-
+       VIII.    SUMMARY AND PROSPECTS                             ent neutrino interaction channel and at a low Q2 [42].
+
+   We report in this article an improved measurement
+of reactor ν̄e with the atomic electrons at the Q2 ∼
+10−6 GeV2 range. Complementary and comparable
+                                                                              IX.   ACKNOWLEDGMENTS
+sensitivities on the SM electroweak parameters were
+achieved as those measurements with accelerator νe at
+higher Q2 .                                                          The authors are indebted to the many colleagues who
+   The detector concept allowed complete three-                   made this experiment possible. The invaluable con-
+dimensional event reconstruction, with which we                   tributions by the technical staff of our institutes and
+demonstrated that the background above 3 MeV could                of the Kuo-Sheng Nuclear Power Station are gratefully
+be identified, studied and accounted for to the level of          acknowledged. The veto scintillators loan from the
+∼1% accuracy. The background understanding and sub-               CYGNUS Collaboration is much appreciated. We ap-
+traction enhanced the experimental sensitivities beyond           preciate comments from Prof. R. Shrock on neutrino
+the conventional Reactor ON−OFF comparisons.                      charge radius. This work is supported by fundings pro-
+   The sensitivities can be further enhanced. As illus-           vided by the National Science Council and the Academia
+trations, the projected improvement under various re-             Sinica, Taiwan under various contracts, the National Sci-
+alistically achievable assumptions are summarized in Ta-          ence Foundation, China, under contract 19975050, as well
+ble VII. Electromagnetic calorimeters using CsI(Tl) with          as TUBITAK, Turkey, under contract 108T502.
+
+
+
+
+ [1] B. Kayser, Phys. Lett. B 667, 163 (2008), and references          W.J. Marciano and Z. Parsa, J. Phys. G 29, 2629 (2003).
+     therein.                                                      [4] J. Dorenbosch et al., Z. Phys. C 41, 567 (1989); L.A.
+ [2] J. Erler and P. Langacker, Phys. Lett. B 667, 125 (2008),         Ahrens et al., Phys. Rev. D 41, 3297 (1990); P. Vilian
+     and references therein.                                           et al., Phys. Lett. B 335, 246 (1994).
+ [3] J. Panman, in Precision tests of the standard electroweak     [5] R.C. Allen et. al., Phys. Rev. D 47, 11 (1993).
+     model, ed. P. Langacker, 504-544, World Scientific (1995);    [6] L.B. Auerbach et. al., Phys. Rev. D 63, 112001 (2001).
+                                                                                                                             17
+
+ [7] F. Reines, H.S. Gurr, H.W. Sobel, Phys. Rev. Lett. 37,           and references therein.
+     315 (1976).                                                 [22] A.G. Beda et al., arXiv:hep-ex/0906.1926 (2009).
+ [8] G.S. Vidyakin et al., JETP Lett. 55, 206 (1992).            [23] H.T. Wong, Mod. Phys. Lett. A 19, 1207 (2004).
+ [9] A.I. Derbin et al., JETP Lett. 57, 796 (1993).              [24] H.B. Li and H.T. Wong, J. Phys. G: Nucl. Part. Phys.28,
+[10] C. Amsler et al., Nucl. Instr. and Meth. A 396, 115              1453 (2002).
+     (1997); Z. Daraktchieva et al., Phys. Lett. B 615, 081601   [25] Y. Declais et al., Phys. Lett. B 338, 383 (1994).
+     (2005).                                                     [26] B. Achkar et al., Phys. Lett. B 374, 243 (1996).
+[11] J.P. Cravens et al., Phys. Rev. D 78, 032002 (2008); B.     [27] H.T. Wong et al., Astroparticle Phys. 14, 141 (2000).
+     Aharmim et al. Phys. Rev. C 75, 045502 (2007).              [28] H.B. Li et al., Nucl. Instr. and Meth. A 459, 93 (2001).
+[12] B. Kayser et al., Phys. Rev. D 20, 87 (1979).               [29] H.S. Lee et al., Phys. Lett. B 633, 201 (2006).
+[13] P. Vogel and J. Engel, Phys. Rev. D 39, 3378 (1989).        [30] Y. Liu et al., Nucl. Instr. and Meth. A 482, 125 (2002).
+[14] J. Barranco et al., Phys.Lett.B 662, 431-435,(2008).        [31] S.C. Wu et al., Nucl. Instr. and Meth. A 523, 116 (2004).
+[15] G.P. Zeller et al., Phys. Rev. Lett. 88, 091802 (2002)      [32] S.T. Lin et al, Phys. Rev. D 79, 061101(R) (2009).
+     [Erratum-ibid. 90, 239902 (2003)].                          [33] W.P. Lai et al., Nucl. Instr. and Meth. A 465, 550 (2001).
+[16] H.B. Li et al., Phys. Rev. Lett. 90, 131802 (2003);         [34] Q. Yue et al., Nucl. Instr. and Meth. A 511, 408 (2003).
+     H.T. Wong et al., Phys. Rev. D 75, 012001 (2007), and       [35] Y.F. Zhu et al., Nucl. Instr. and Meth. A 557, 490
+     references therein.                                              (2006).
+[17] B. Kayser, Phys. Rev. D 26, 1662 (1982); J.F. Nieves,       [36] K.J. Dong et al., Nucl. Instr. and Meth. B 259, 271
+     Phys. Rev. D 26, 3152 (1982); R. Shrock, Nucl. Phys. B           (2007); K.J. Dong et al., Nucl. Instr. and Meth. A 582,
+     206, 359 (1982).                                                 381 (2007).
+[18] H.T. Wong, Nucl. Phys. B (Procs. Suppl.) 143, 205           [37] GEANT, Detector Description and Simulation Tool,
+     (2005); H.T. Wong and H.B. Li, Mod. Phys. Lett. A                CERN (1993).
+     20, 1103 (2005).                                            [38] L.C. Biedenharn and M.E. Rose, Rev. Mod. Phys. 25, 3
+[19] B.W. Lee and R.E. Shrock, Phys. Rev. D                           (1953).
+     16, 1444 (1977); K. Fujikawa and R. Shrock,                 [39] M. Deniz and H.T. Wong, arXiv:hep-ex/0810.0809
+     arXiv:hep-ph/0303188 (2003); K. Fujikawa and R.                  (2008); M. Deniz, H.T. Wong, and S.T. Lin, J. Phys.
+     Shrock, Phys. Rev. D 69, 013007 (2004).                          Conf. Ser. 203, 012099 (2010).
+[20] J. Bernabeu et al., Phys. Rev. D 62, 113012 (2000);         [40] J. Erler and M.J. Ramsey-Musolf, Phys. Rev. D 72,
+     J. Bernabeu, J. Papavassiliou and J. Vidal, Phys. Rev.           073003 (2005).
+     Lett. 89, 101802 (2002), [Erratum-ibid. 89, 229902          [41] J.M. Conrad, J.M. Link, and M.H. Shaevitz, Phys. Rev.
+     (2002)]; J. Bernabeu, J. Papavassiliou and J. Vidal,             D 71, 073013 (2005).
+     arXiv:hep-ph/0303202 (2003).                                [42] J.L. Rosner, Phys. Rev. D 70, 037301 (2004).
+[21] P. Vogel and A. Piepke, Phys. Lett. B 667, 522 (2008),
+

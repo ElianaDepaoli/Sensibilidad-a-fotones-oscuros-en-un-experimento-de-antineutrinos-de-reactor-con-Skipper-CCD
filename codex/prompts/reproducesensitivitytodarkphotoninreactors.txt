@@ -1,0 +1,56 @@
+What is query:
+95% CL exclusion upper limit in the parameter plane (mA' , epsilon) of the hidden photon model from TEXONO experiment.
+Derive the cross section production of dark photons. Derive the cross section absortion in a detector. Take into account possible oscillations (Danilov) and dark photon decay (Izaguirre). We search for dark photons candidates produce in nuclear reactor with masses lower than 1 MeV. 
+
+Strategy:
+To check your results, reproduce all figures in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/papers_init/
+Your reference is the entire corpus of papers you'll find in /home/eliana/Documentos/Materias/IA_OG/GW-AI-course/Proyecto_Final_DarkPhoton_gpt/
+If needed, search for more related papers.
+Code to implement the cross section production, absortion, exclusion limit.
+
+What is expected as outcome:
+A report*.html for you to follow-up. At the end of the report inform model and reasoning effort, time to resolve the task, tokens used. 
+A report*.pdf for human gathering the detail cross section calculations (both production and absortion), the plots and claims. Produce both an english and spanish.
+
+Rules for human report:
+Don't be polite, be assertive. Use human speak, not machine. Clarity, intelligible, readable, simple is a goal.
+All the formulas in latex format. The pdf must have the structure of a physics lecture
+Be explicit in which interactions you consider, what sorts of restrictions you take into account, validity energy and mass range.
+
+Rules for you: 
+add a skill*.md with the skills you need to adjust to these and the following requierements within this session.
+
+Rules for coding:
+use ROOT 6.36.000 With C++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Structure every calculation inside a function. Provide them with comments for human.
+Stay simple, use ROOT documentation and forums.
+Make easy to use for a different experiment with a different background, ROI, exposure, detector mass, A, Z.
+
+Interpret * contextually
+
+
+***********************************************************
+Using Danilov arXiv:1804.10777 as your guiding line, calculate the 95% CL exclusion upper limit in the parameter plane (mA' , epsilon) of the hidden photon model from TEXONO experiment. Check weather you need to add to the corpus some of its references and if so, download them.
+Start fresh, do not reuse your previews plots and calculations.
+Derive the cross section production of dark photons. Derive the cross section absortion in a detector. Take into account possible oscillations (Danilov) and dark photon decay (Izaguirre). Consider dark photon polarization. We search for dark photons candidates produce in nuclear reactor with masses lower than 1 MeV. Does Danilov propouse a different mechanism of production instead of Compton? Use it. Calculate all from scratch.
+
+What is expected as outcome:
+A report*.html for you to follow-up. At the end of the report inform model and reasoning effort, time to resolve the task, tokens used. 
+A report*.pdf for human gathering the detail cross section calculations (both production and absortion), the plots and claims. Produce both an english and spanish.
+
+Rules for human report:
+Don't be polite, be assertive. Use human speak, not machine. Clarity, intelligible, readable, simple is a goal.
+All the formulas in latex format. The pdf must have the structure of a physics lecture
+Be explicit in which interactions you consider, what sorts of restrictions you take into account, validity energy and mass range.
+
+Rules for you: 
+add a skill*.md with the skills you need to adjust to these and the following requierements within this session.
+
+Rules for coding:
+use ROOT 6.36.000 With C++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Structure every calculation inside a function. Provide them with comments for human.
+Stay simple, use ROOT documentation and forums.
+Make easy to use for a different experiment with a different background, ROI, exposure, detector mass, A, Z.
+
+Interpret * contextually
+

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "papers/danilov_fresh/danilov2019.pdf",
+    "url": "https://arxiv.org/abs/1804.10777",
+    "purpose": "Existing source PDF; guiding Hamiltonian, probabilities and TEXONO assumptions.",
+    "sha256": "d9cd052b44250073e2f8be34a407f46dfc8d9909b7f7a06f45b44e5ea06de450"
+  },
+  {
+    "file": "papers/danilov_fresh/redondo2015.pdf",
+    "url": "https://arxiv.org/abs/1501.07292",
+    "purpose": "New download; Danilov Ref. 6, damping convention and homogeneous-source amplitude.",
+    "sha256": "45b2a6c0962760a686e2cf9308a09b537cd5062ab505ca9ee1af687ca88d2b7f"
+  },
+  {
+    "file": "papers/danilov_fresh/texono2010.pdf",
+    "url": "https://arxiv.org/abs/0911.1597",
+    "purpose": "New download; Danilov Ref. 16, original exposure and event selection.",
+    "sha256": "88bcc45410ff874e67aeed27db32ecffc0d273de99a09d85cecbafe5af3ec800"
+  },
+  {
+    "file": "papers/danilov_fresh/an2013.pdf",
+    "url": "https://arxiv.org/abs/1302.3884",
+    "purpose": "Existing corpus PDF; Danilov Ref. 14, polarization and longitudinal source distinction.",
+    "sha256": "a7a954e1a89d06ba5d0a1012e884814a5a33e167d0ffd2ec931dff302a014bbe"
+  },
+  {
+    "file": "papers/danilov_fresh/redondo_raffelt2013.pdf",
+    "url": "https://arxiv.org/abs/1305.2920",
+    "purpose": "Existing corpus PDF; Danilov Ref. 8, medium polarization formalism.",
+    "sha256": "9f8591691f5cd452f81fe77dbc97367d7c139c517eda22fe314a6f20bd4dc53d"
+  },
+  {
+    "file": "papers/danilov_fresh/izaguirre2015.pdf",
+    "url": "https://arxiv.org/abs/1507.02681",
+    "purpose": "Existing source PDF; survival and decay-in-detector geometry, absorption amplitude.",
+    "sha256": "da71c80ce4a2c425a6994e3c9a2318990a25fc0a825ba89326fa730cb1d7c206"
+  },
+  {
+    "file": "papers/danilov_fresh/mcdermott2018.pdf",
+    "url": "https://arxiv.org/abs/1705.00619",
+    "purpose": "New download; full-loop decay correction below pair threshold.",
+    "sha256": "f81cfc6bff0af828d1a71b00c0828f45bdcc86b002414c6455067fb17c049763"
+  },
+  {
+    "file": "papers/danilov_fresh/decay_enhancement.txt",
+    "url": "https://arxiv.org/src/1705.00619",
+    "purpose": "New ancillary table; published numerical input, not calculated here.",
+    "sha256": "883a02811f5b436d6bfb3ebcc2da1ad5344f4b1842806ff5559beb9875f4557c"
+  },
+  {
+    "file": "papers/danilov_fresh/park2017.pdf",
+    "url": "https://arxiv.org/abs/1705.02470",
+    "purpose": "Existing source PDF; printed-bound comparison only.",
+    "sha256": "e9f6ce1c27c5ea51b485bd2fe790512bda232cd781677252461ef28a1437c40e"
+  },
+  {
+    "file": "papers/danilov_fresh/nist_csi.html",
+    "url": "https://physics.nist.gov/cgi-bin/Star/compos.pl?matno=141",
+    "purpose": "New material-data download; CsI density for decay volume.",
+    "sha256": "92d8fdc422cd4f9d8d97feba3afc395f241edc17a750c7a4f72b090ed652fc2b"
+  }
+]

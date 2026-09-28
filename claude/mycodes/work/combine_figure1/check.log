@@ -1,0 +1,8 @@
+
+Processing work/combine_figure1/check.C...
+cling::PHOptLevel: conflicting `#pragma cling optimize` directives: was already set to 0
+Ignoring higher value of 0
+Info in <TCanvas::Print>: png file combined_figure1.png has been created
+Info in <TCanvas::Print>: pdf file combined_figure1.pdf has been created
+PASS: original coordinates and colors preserved for every graph and segment.
+PASS: cFig1 solid, PARK dotted; legend labels linked to the correct graphs.

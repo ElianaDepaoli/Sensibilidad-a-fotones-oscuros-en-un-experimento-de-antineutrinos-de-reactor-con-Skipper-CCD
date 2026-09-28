@@ -1,0 +1,23 @@
+PASS: fresh polarized amplitudes, Ward identities, symbolic trace comparison, both KN limits, massive detailed balance, doubled angular quadrature
+PASS: Danilov low-mass coefficient and rounded event cap; published exact-loop enhancement knots; decay mixing scaling
+Info in <TCanvas::Print>: pdf file output/polarized_cross_sections.pdf has been created
+Info in <TCanvas::Print>: SVG file output/polarized_cross_sections.svg has been created
+Info in <TCanvas::Print>: png file output/polarized_cross_sections.png has been created
+Info in <TCanvas::Print>: pdf file output/oscillation_source.pdf has been created
+Info in <TCanvas::Print>: SVG file output/oscillation_source.svg has been created
+Info in <TCanvas::Print>: png file output/oscillation_source.png has been created
+Info in <TCanvas::Print>: pdf file output/texono_exclusion.pdf has been created
+Info in <TCanvas::Print>: SVG file output/texono_exclusion.svg has been created
+Info in <TCanvas::Print>: png file output/texono_exclusion.png has been created
+Info in <TCanvas::Print>: pdf file output/decay_enhancement.pdf has been created
+Info in <TCanvas::Print>: SVG file output/decay_enhancement.svg has been created
+Info in <TCanvas::Print>: png file output/decay_enhancement.png has been created
+selected_cap = 196.172274871
+fresh_plateau_epsilon95 = 1.33627026745e-05
+paper_rescaling_epsilon95 = 2.96412165583e-05
+max_decay_optical_depth = 1.08388793272e-08
+PUBLISHED NORMALIZATION COMPARISON: FAIL (no fitted factor)
+PASS: event-cap closure, doubled energy/angle quadrature, decay-volume scaling, monotonic-domain guard, epsilon-fourth-power check
+UNCHECKED: material profiles and resonance; full detector response; longitudinal nuclear emission; original likelihood; exact massive nuclear-source correction
+ROOT 6.36.000; C++ 13.3.0
+compute_seconds = 2.708228471

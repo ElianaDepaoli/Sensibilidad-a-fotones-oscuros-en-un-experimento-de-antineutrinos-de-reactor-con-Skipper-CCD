@@ -190,6 +190,41 @@ claims:
               spike_ratio_per_decade_asymptotic_M0.1, spike_ratio_per_decade_asymptotic_M0.5,
               spike_ratio_per_decade_asymptotic_M1.0]
 
+  - id: texono-exclusion-approaches-compared
+    statement: >
+      On the TEXONO plateau (m_A' ~ 1e-4 MeV) every approach of the project lands within a factor 2 of Park's
+      published 2.1e-5: the user's DP3_Danilov.C gives 1.26e-5 (flags off) and 1.71e-5 (Danilov A+B+D on), the
+      exact cross section of DP3_Danilov_new.C changes these by ~1% on the plateau and by up to 18% at 1 MeV;
+      the Codex from-scratch codes give 1.28e-5 to 2.45e-5. None reproduces the published Danilov plateau (3.5e-5
+      as digitized by Codex). Below m_gamma ~ 20 eV the in-medium suppression dominates all Danilov-type curves.
+    evidence:
+      - work/exclusion_comparison/exclusion_comparison.C::exclusion_comparison
+      - work/exclusion_comparison/run.sh (runs mycodes/DP3_Danilov.C and DP3_Danilov_new.C via dump_cSk.C)
+      - papers_reactor_dark_photon/01_park_2017.pdf abstract
+      - papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf Fig. 1
+    numbers: [excl_park_published, excl_plateau_human_flags_off, excl_plateau_human_flags_on, excl_plateau_new_flags_off, excl_plateau_new_flags_on, excl_1MeV_human_flags_on, excl_1MeV_new_flags_on, excl_1MeV_new_flags_off, excl_1MeV_human_flags_off, excl_plateau_codex_park_texono, excl_plateau_codex_reactor_sensitivity_vac, excl_plateau_codex_v3, excl_plateau_codex_danilov_fresh, excl_plateau_danilov_digitized]
+
+  - id: human-macro-grid-not-converged-agrees-with-codex
+    statement: >
+      The TEXONO limit of the user's DP3_Danilov.C is not converged in the E_A' grid at the default wpsize = 10: raising it to
+      200 moves the flags-off plateau from 1.26e-5 to 1.50e-5 (400 changes it by 0.5% more). With Claude's exact cross
+      section and the converged grid the macro gives 1.51e-5 on the plateau and 1.525e-5 at 1 MeV, within 3% and 0.3% of
+      Codex's independent park_texono (1.565e-5, 1.522e-5).
+    evidence:
+      - work/exclusion_comparison/run.sh (wpsize=200 block)
+      - work/exclusion_comparison/table.log
+      - vault/exercises/exclusion-comparison-2026-09-28.md (run receipt with the wpsize=40/100/400 values)
+    numbers: [excl_plateau_human_flags_off, excl_conv_plateau_human_off, excl_conv_plateau_human_off_wp400, excl_conv_plateau_new_off, excl_conv_plateau_new_off_wp400, excl_conv_1MeV_new_off, excl_conv_1MeV_human_off, excl_conv_plateau_human_on, excl_conv_plateau_new_on, excl_plateau_codex_park_texono]
+
+  - id: danilov-plateau-consistent-with-park-times-efficiency
+    statement: >
+      Above m_gamma ~ 20 eV, Danilov's published TEXONO line (3.47e-5 as digitized by Codex) is within 5% of Park's 2.1e-5
+      rescaled by the anti-Compton efficiency alone, 2.1e-5 * 6^(1/4) = 3.29e-5. A numerical observation, not a statement of the paper.
+    evidence:
+      - papers_reactor_dark_photon/02_danilov_demidov_gorbunov_2019.pdf (1174.1 events upper limit after the anti-Compton factor; Fig. 1)
+      - work/exclusion_comparison/data/codex_v3_danilov_digitized.csv
+    numbers: [park_rescaled_by_B, excl_plateau_danilov_digitized, excl_park_published]
+
 figures:
   - file: mycodes/cFig1_new.png
     produced_by: mycodes/DP3_Danilov_new.C::DP3_Danilov_new (block show_plot_DPproduction)
@@ -300,3 +335,39 @@ figures:
     from_library: nothing
     choices: []
     supports: []
+
+  - file: work/exclusion_comparison/texono_exclusion_all.pdf
+    produced_by: work/exclusion_comparison/exclusion_comparison.C::exclusion_comparison (after work/exclusion_comparison/run.sh)
+    shows: >
+      TEXONO 95% CL eps_95 vs m_A' [MeV], log-log, all approaches on one canvas: Park 2017 (published), Danilov 2019
+      (Codex digitization), DP3_Danilov.C and DP3_Danilov_new.C with Danilov flags off/on, and four Codex curves.
+      Solid = vacuum/Park-like, dashed = Danilov-type corrections. Bottom pad zooms on the plateau.
+    from_scratch: dump_cSk.C (reads the cSk canvas graphs by legend label), the CSV reader and the canvas layout
+    from_library: ROOT 6.36 (TCanvas, TPad, TGraph, TLegend); the curves themselves come from the user's macros and the Codex CSVs, unchanged
+    choices: ["the user's macros are run on a temporary copy with flags set as globals, so mycodes/ is untouched", "Park drawn as a flat 2.1e-5 line, not digitized", "Danilov curve taken from the Codex digitization, not re-digitized", "reactor_sensitivity medium_with_decay not drawn: mostly nan", "nan / non-positive rows skipped, no interpolation"]
+    supports: [texono-exclusion-approaches-compared]
+  - file: work/exclusion_comparison/texono_exclusion_all.png
+    produced_by: work/exclusion_comparison/exclusion_comparison.C::exclusion_comparison
+    shows: >
+      Same as texono_exclusion_all.pdf, raster version.
+    from_scratch: same as the pdf
+    from_library: ROOT 6.36
+    choices: []
+    supports: [texono-exclusion-approaches-compared]
+
+  - file: reports/final_summary_en.pdf
+    produced_by: reports/final_summary_en.tex (latexmk -pdf); not a figure, the 4-page human report in English
+    shows: >
+      What was done by LLM agents alone vs on the user's code, and the combined TEXONO exclusion plot with its table.
+    from_scratch: text and tables; every number comes from work/exclusion_comparison/table.log or the records above
+    from_library: LaTeX
+    choices: ["Track 1 = no human code used; Track 2 = the user's macros or the third-party note were the starting point", "the author of the audited note is not named"]
+    supports: [texono-exclusion-approaches-compared, human-macro-grid-not-converged-agrees-with-codex, danilov-plateau-consistent-with-park-times-efficiency]
+  - file: reports/final_summary_es.pdf
+    produced_by: reports/final_summary_es.tex (latexmk -pdf); not a figure, the same report in Spanish (5 pages)
+    shows: >
+      Same content as final_summary_en.pdf, in Spanish.
+    from_scratch: translation
+    from_library: LaTeX
+    choices: []
+    supports: [texono-exclusion-approaches-compared, human-macro-grid-not-converged-agrees-with-codex, danilov-plateau-consistent-with-park-times-efficiency]

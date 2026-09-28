@@ -1,0 +1,2924 @@
+                                          Prepared for submission to JCAP
+                                                                                                                        MPP-2014-33
+
+
+
+
+                                          Atlas of solar hidden photon emission
+arXiv:1501.07292v1 [hep-ph] 28 Jan 2015
+
+
+
+
+                                          Javier Redondo
+                                           Departamento de Fı́sica Teórica, Universidad de Zaragoza,
+                                           Pedro Cerbuna 12, E-50009, Zaragoza, España, and
+                                           Max-Planck-Institut für Physik, (Werner-Heisenberg-Institut)
+                                           Föhringer Ring 6, 80805 München, Germany
+                                           E-mail: redondo@mpp.mpg.de
+
+                                          Abstract.      Hidden photons, gauge bosons of a U(1) symmetry of a hidden sector, can
+                                          constitute the dark matter of the universe and a smoking gun for large volume compactifi-
+                                          cations of string theory. In the sub-eV mass range, a possible discovery experiment consists
+                                          on searching the copious flux of these particles emitted from the Sun in a helioscope setup à
+                                          la Sikivie. In this paper, we compute the flux of transversely polarised HPs from the Sun, a
+                                          necessary ingredient for interpreting such experiments. We provide a detailed exposition of
+                                          photon-HP oscillations in inhomogenous media, with special focus on resonance oscillations,
+                                          which play a leading role in many cases. The region of the Sun emitting HPs resonantly is
+                                          a thin spherical shell for which we justify an averaged-emission formula and which implies
+                                          a distinctive morphology of the angular distribution of HPs on Earth in many cases. Low
+                                          mass HPs with energies in the visible and IR have resonances very close to the photosphere
+                                          where the solar plasma is not fully ionised and requires building a detailed model of solar
+                                          refraction and absorption. We present results for a broad range of HP masses (from 0-1 keV)
+                                          and energies (from the IR to the X-ray range), the most complete atlas of solar HP emission
+                                          to date.
+Contents
+
+1 Introduction                                                                               1
+
+2 Photon↔HP oscillations and the solar HP flux                                               5
+  2.1 Hidden photons                                                                         5
+  2.2 Photon “flavor” oscillations                                                           5
+  2.3 Inhomogeneous medium                                                                   6
+  2.4 Resonances                                                                             8
+      2.4.1 Optically thick                                                                  8
+      2.4.2 Optically thin                                                                   8
+  2.5 Solar averaged emission of hidden photons                                             10
+      2.5.1 General aspects                                                                 10
+      2.5.2 Resonance domination                                                            11
+  2.6 Angular distribution of the signal                                                    14
+
+3 Refraction and absorption in the Sun                                                      15
+  3.1 Basics                                                                                15
+  3.2 A model for refraction and absorption in the Sun                                      17
+
+4 Solar hidden photon flux: Numerical results                                               25
+  4.1 Resonance region contribution                                                         25
+      4.1.1 The infrared rise                                                               27
+      4.1.2 Spectral lines and the UV region                                                28
+      4.1.3 Width of the resonance region                                                   29
+  4.2 Non-resonant contribution (bulk of the Sun)                                           30
+  4.3 3D dynamic solar surface emission                                                     34
+
+5 Summary and conclusions                                                                   39
+
+A Between thin and thick                                                                    40
+
+1   Introduction
+
+The existence of hidden photons (HP) [1]– hypothetical vector particles that mix kinetically
+very weakly with ordinary photons [2–4]– has attracted recently much attention [5] in the
+low energy frontier of particle physics [6]. Phenomenologically, they give rise to a number of
+puzzling (and yet unobserved) phenomena: distortions of the cosmic microwave background
+spectrum [7–11] and radio sources [12], deviations of the Coulomb law [13, 14] and distortions
+of planetary magnetic fields, atomic level shifts [15] and light-shining through walls [16–19].
+HPs can be also produced in the early universe contributing to the dark radiation [11, 20] or
+dark matter (DM) of the universe [21–27], in which case they can be searched in dark matter
+direct detection experiments [28] or through a small relic background of photons, which they
+produce because they are (slowly) decaying dark matter [21, 22]. When the HP mass is
+above twice the electron mass, their fast decay into two electrons precludes them from being
+directly accessible DM candidates but they have become the prototypical force mediator in
+
+
+
+
+                                            –1–
+particle models where DM is self-interacting [29], which has triggered enormous attention in
+the intensity frontier of particle physics [30]. These particles appear as gauge bosons of new
+U(1) symmetries, which are the simplest extensions of the standard model of particle physics
+and appear copiously in its most ambitious extension, string theory [31–44].
+      In a huge region of parameter space, the most powerful laboratory to constrain the HP
+properties is the Sun, see exclusion regions labelled Sun-L and Sun-T in Fig. 1. Photons inside
+of the Sun can oscillate into HPs and leave it unimpeded, draining energy very efficiently.
+Since this energy must come from nuclear reactions, the temperature of the solar core tends
+to be hotter in models with HP emission, with the consequently higher neutrino flux from
+nuclear reactions and distorted sound speed profile. The agreement between solar models and
+the observations of the flux of Boron neutrinos can be used to constrain the emission of low
+mass bosons [45] and in particular the HP and its parameters [46]. Even stronger constraints
+arise from a recent global fit of helioseismology data and neutrino fluxes with realistic solar
+models perturbed by HP emission [47]. It is intriguing that constraints from other stelar
+systems, which are stronger for axions, are not as strong for small mass HPs [21, 46, 48].
+      Very powerful constraints come from trying to detect the flux of solar HPs in Earth-
+bound experiments, which we generically call helioscopes. In the sub-keV mass range, the
+emission of HPs proceeds mostly through resonant oscillations [49] and is dominated by
+
+                         -4
+                                                                   Spectroscopy
+                                    CROWS        ALPS
+                               Co
+
+
+
+
+                         -6
+                               ulo
+                                mb
+
+
+
+
+                                                 CA S
+
+
+
+
+                                           CMB
+                                                  SH
+
+                                                   ST
+                                                     IP
+
+
+
+
+                         -8
+                                                 Xe
+
+
+
+
+                                                                                       HP-> 3Γ + Cosmology
+               Log10 Χ
+
+
+
+
+                                                  no
+
+
+
+
+                                     ALPS II
+                                                                      Sun-T
+                                                     n10
+
+
+
+
+                                     prospects
+                         -10
+                                                        Su
+                                                         n-
+                                                           L
+
+
+
+
+                         -12
+                                                                                  HB
+
+                         -14                                                  RG
+
+                                    -6      -4     -2          0         2        4                     6
+                                                   Log10 m @eVD
+
+Figure 1. Constraints on the kinetic mixing, χ, of hypothetical hidden photons with ordinary
+photons, as a function of the hidden photon mass. References are CMB [10, 11], Coulomb [14],
+ALPS [18], Spectroscopy [15], Sun-T, Sun-L, HB, RG [46–48], CAST [49], Xenon10 [50], SHIPS [66]
+and HP DM decay and cosmology [22]. Also shown are the prospects for the ALPS-IIb experiment [51].
+
+
+
+
+                                                    –2–
+longitudinally polarized HPs [46, 48]. The detection on Earth of longitudinal HPs can be done
+by measuring the low-energy ionization events in Dark Matter detectors such as XENON10,
+technique with which one obtains the most stringent laboratory constraints on HPs in this
+mass range [50].
+      The detection of transversely polarized HPs can be devised in the same way, first pro-
+posed and performed with the HPGe detector [52]. But a more efficient technique is to
+exploit the phenomenon of HP↔photon oscillations in vacuum [53], similarly to the way one
+looks for solar axions in the original helioscope experiment proposed by Sikivie [54]. Indeed,
+the results of the first axion helioscope by the BFRT collaboration [55] were used to set
+constraints on the flux of solar HPs in the keV range [56]. Also an experiment in the UV
+was performed [56, 57], although their results were not published. Later, a more detailed
+calculation of the keV range flux [49] was used to benefit from the constraints of the more
+powerful axion helioscope to date, the CERN Axion Solar Telescope CAST [58, 59].
+      However, it was noted that low mass transverse HPs are more efficiently produced near
+the surface and thus the flux peaks at lower energies [49] where CAST was not optimal1 .
+New experiments were then proposed to maximize the chances of a discovery [60, 61]. The
+CAST [62] and the SUMICO [63, 64] collaborations performed dedicated runs at low energies
+and the dedicated SHIPS experiment [65] releases these days their first results [65, 66]. The
+experiments consist on long light-tight vacuum pipes that track the Sun, where HPs from
+the Sun can oscillate into photons that can be detected at the far side. As detectors, they
+use photomultipliers sensitive to photon frequencies in the visible range. In this paper we
+calculate the solar flux of transversely polarised HPs at low energies, focusing on visible
+frequencies ω ∼ 1.5 − 3.5 eV. This ingredient is necessary to interpret the null searches of
+CAST, SUMICO and SHIPS and to estimate the size of plausible scaled-up versions that
+could compete with the results of DM detectors [50].
+      This calculation has already some history. The integrated flux was first estimated by
+Okun to constrain the HP flux with the solar luminosity [1]. Here, the photon mean-free-
+path in the Sun was roughly estimated by Thomson scattering. Later, Popop and Vasil’ev
+introduced the photon refraction term due to the plasma in the oscillation formula, used free-
+free transitions for the solar opacity and integrated over a solar model [68]. Popov used also
+this formalism in his 1999 paper [56] where he first discussed helioscopes for detecting the
+flux of HPs produced inside the Sun – reference [53] proposed searching for the solar HP flux
+due to oscillations of surface photons – but the flux itself was not shown. Much later, a more
+careful calculation introduced absorption (decoherence) in the oscillation probability [49] and
+a more detailed treatment of Thomson and free-free processes in the photon opacity. This
+work discussed the keV spectrum in some detail and also discussed the resonant production
+of longitudinally polarised HPs, which was underestimated due to a mistake in the residue of
+the plasmon propagators. This mistake was pointed out in a recent paper [48], which affected
+much of the low-mass parameter space, and that was corroborated in [46], where also the
+Sun-L and Sun-T constraints shown in Fig. 1 were carefully reevaluated. Now that the
+formalism is set, it is timely to consider the low and intermediate energy flux of transversely
+polarised HPs.
+      The main difficulty in computing the low energy flux is that for very low HP masses,
+the resonant photon-HP conversions in the Sun happen in a tiny shell very close to the
+photosphere. The solar plasma is not fully ionised in this region and one has to consider
+   1
+     Indeed, this fact was already implicit in the experimental sensitivities presented in [56] where the low-
+energy searches appear more advantageous at the lowest energies.
+
+
+
+
+                                                    –3–
+the role of neutral atoms and metallic donors in the index of refraction for it influences
+strongly the conversion probability. Indeed, the presence of neutral hydrogen is responsible
+for displacing the locus of the resonance slightly inwards to the Sun with respect to the case
+in which all the plasma would be considered to be ionised. First studies along this direction
+were taken already some time ago and first results were presented in [69, 70], which turn out
+to be quite accurate as order of magnitude estimates. In this paper, we ratify these estimates
+with a more detailed model of refraction in the Sun and exclude a possible strong influence
+of metals and excited states of hydrogen (with some caveats). Another complication is that,
+close to the photosphere, photons can travel a long distance before being absorbed, so long
+that the characteristics of the plasma change. In previous works, the photon-HP conversions
+where computed assuming that the solar plasma is homogenous in a mean-free-path but this
+is not the case close to the photosphere. Therefore, we also have to deal with the problem
+of photon-HP resonant oscillations in a non-homogenous plasma, which so far has not been
+discussed in this context. Perhaps, the most remarkable finding of this paper is that the total
+flux of HPs averaged over the region where resonant conversions happen is independent of
+this fact (as long as the resonance region is thin) and the previously used formulas for the
+Sun averaged HP emission are still correct (!). One last complication with the resonance
+emission is that near the surface, the Sun is not spherically symmetric. Inhomogeneities in
+the temperature and density of the plasma arise because the energy transport is convective
+and outgoing hot cells and incoming cool flows have differences in their index of refraction.
+The resonance region is no longer a perfect spherical cell, it becomes corrugated and time-
+dependent. Nevertheless, the techniques developed for a spherically symmetric Sun with
+an effective 1D atmosphere can be applied also in this case. We find that the volume of
+the resonance region is slightly increased due to corrugation and the spectrum somewhat
+distorted because the 3D temperature profiles are steeper close to the surface and shallower
+inside. The result is a moderate O(1) increase of the HP flux coming from inner resonances
+and a decrease of the outer ones.
+      But the resonance emission does not explain the HP spectrum in the whole energy range.
+Low mass HPs have resonance regions close to the solar surface where the temperature is
+O(eV) and emission of UV or X-ray energy HPs is exponentially suppressed. In these cases,
+the HP flux emitted from the bulk of the Sun dominates. At these energies, bound-bound
+and bound-free processes of helium and metals do contribute notably to the photon opacity
+and have to be included in the calculation. In this paper we use monochromatic opacities
+from the Opacity Project to compute this flux and find a significant contribution.
+      The plan of the paper is as follows. In section 2 we recall the physics of photon-HP
+oscillations in vacuum, homogenous and in homogenous plasmas and we derive the formulas
+useful for the resonant and non-resonant emission of HPs in the Sun. Section 3 is devoted to
+compute the ingredients needed to build a model for the refraction and absorption of photons
+in the solar plasma. In section 4 we present our results for the flux of transversely polarised
+HPs emitted from the Sun from the near infrared to the keV range, with an emphasis on the
+visible part of the spectrum. We first train the intuition of the reader treating the Sun as an
+spherically symmetric plasma and only later we discuss the implications of the convection-
+driven inhomogeneities close to the surface. Finally, in section 5 we use our results to set
+new constraints on the HP properties and speculate on future experimental searches for the
+transversely polarised HP flux. Note that henceforth we will refer exclusively to transversely
+polarised HPs merely as HPs for the sake of simplicity. When we speak about longitudinally
+polarised HPs we will do so explicitly.
+
+
+
+
+                                            –4–
+2       Photon↔HP oscillations and the solar HP flux
+2.1       Hidden photons
+Consider hidden photons as gauge bosons of a hidden U(1) gauge symmetry, i.e. a symmetry
+under which standard model particles do not transform. New particles or string excitations
+charged under the new U(1) and under the hypercharge of the standard model will generate
+kinetic mixing between the hidden photon and the hypercharge boson [2–4, 31–44] or, at
+energies below electroweak symmetry breaking, with the photon and Z boson. Typically,
+integrating out these mediator new physics, also introduces an extra infinite tower of new
+operators, which in contrast to the kinetic mixing, are generically suppressed by the energy
+scales of the new physics (usually particle masses). Neglecting these feeble interactions and
+Z mixing, at low energies the HP interacts with the standard model particles only though
+kinetic mixing with the ordinary photon. The lagrangian density describing this low energy
+theory is
+                      1           1            χ              1
+                L = − Fµν F µν − Xµν X µν − Fµν X µν + m2 Xµ X µ + j µ Aν ,                 (2.1)
+                      4           4             2             2
+where Aµ , Xµ are the photon and the HP fields, Fµν , Xµν their field strengths and j µ the ordi-
+nary electromagnetic current2 , which for the purposes of this paper we can take as −eψ̄e γ µ ψe
+(ψe the electron field). The HP mass can arise either from the Stückelberg mechanism
+(see [38, 42]) or from a hidden Higgs field developing a vacuum expectation value [71]. The
+latter case reduces to the former when the mass of the hidden Higgs field is much larger than
+the energies under consideration, but it is very different if the hidden Higgs is as light as the
+HP [50, 71]. In this paper we focus on the HP phenomenology, which is equivalent to the
+Stückelberg case or the heavy hidden Higgs case.
+      The Aµ and Xµ fields are non-orthogonal because of the kinetic mixing. The field
+redefinition
+                                       Xµ → Sµ − χA,                                        (2.2)
+diagonalises the kinetic part of the lagrangian, getting rid of the kinetic mixing,
+                        1          1          1
+                   L = − Fµν F µν − Sµν S µν + m2 (Sµ − χAµ )2 + j µ Aν + O(χ2 ).                        (2.3)
+                        4          4          2
+and reveals the interaction states Aµ (photon-like, the eigenstate interacting with the electric
+charge) and Sµ (sterile state that does not interact with the electric charge).
+
+2.2       Photon “flavor” oscillations
+The lagrangian (2.3) makes explicit that A, S are not propagation eigenstates in vacuum
+because of the non-diagonal mass term. The state radiated by electrons is pure photon-like
+(A) but, since it is not a propagation eigenstate, it will develop a S-component after some
+time and its magnitude is modulated by the time lapse. The picture is very much equivalent
+to neutrino oscillations: neutrinos produced in beta decay are produced in a flavour state
+(electron-flavor) and they oscillate into muon-flavor neutrinos, for example. In complete
+analogy with 2-flavor neutrino oscillations, the probability of finding a HP after a distance
+L from the photon production region is given by
+                                                        2 
+                                                 2   2 m L
+                               P (A → S) = (2χ) sin                                      (2.4)
+                                                          4ω
+    2
+        In this paper we always work in Lorentz-Heaviside natural units ~ = c = kB = 1 and α = e2 /4π.
+
+
+
+
+                                                      –5–
+where ω is the photon/HP energy and we have assumed that HP are relativistic ω  m. The
+role of the mixing angle in neutrino oscillations is played in this case by the kinetic mixing,
+χ. Since this has been already constrained to be very small, see Fig. 1, the probabilities of
+A → S transitions are minute and we always work at first order in χ. Since the difference
+between the states X and S is of order χ, we don’t need to distinguish between them. When
+we compute oscillation probabilities, we refer to both simply as HPs.
+      The situation changes in a medium because photons (the A state) refract and get ab-
+sorbed. The refraction and absorption properties in a linear medium can be casted in the
+form of an effective photon mass, which changes the definition of propagation states and thus
+alters the oscillation probability. This is again analogous to the case of neutrino oscillations,
+although in this context one speaks of “matter potential” instead of effective mass.
+      The probability of a photon of frequency ω to oscillate into a HP in a homogeneous
+absorbing medium has been computed in a number of papers in different frameworks: using
+the equations of motion in [49], Feyman diagrams and thermal propagators in [48] and thermal
+field theory in [46]. All these calculations lead to the same result in the small mixing regime,
+
+                                                     χ2 m4
+                                 P (γ → HP) ≃                     ,                            (2.5)
+                                                (Πr − m2 )2 + Π2i
+
+where the complex polarisation tensor Π = Πr + iΠi (photon self-energy in the medium)
+depends on ω and can be understood as an effective photon mass m2γ and an absorption
+coefficient Γ
+                                    Π ≡ m2γ + iωΓ,                               (2.6)
+which account for refraction and absorption (together with stimulated emission) of photons
+in the medium under consideration. Alternatively it can be expressed as a function of the
+complex index of refraction, N = n − iκ, Π = ω 2 (1 − N 2 ) ≃ 2ω 2 (1 − n) + i2ω 2 κ.
+
+2.3     Inhomogeneous medium
+In an inhomogeneous plasma, the probability amplitude of γ →HP conversion after a length
+L can be written as an integral over the putative photon trajectory r = r(l) as
+                                                         Z L
+                                             m2
+                          iA(γ → HP)(L) = iχ                   eiϕ(l)−τ (l)/2 dl               (2.7)
+                                             2ω           0
+
+where
+                             m2γ (r(l0 )) − m2 0
+                           Z l                                          Z l
+                    ϕ(l) =                    dl     ;        τ (l) =         Γ(r(l0 ))dl0 .   (2.8)
+                           0        2ω                                   0
+Here, ϕ is the the phase difference between the HP and photon waves integrated along the line
+of sight, in short, the number of γ →HP oscillations, and τ is essentially the optical depth.
+The physical interpretation of this formula is described in some detail in [19]. It is based on the
+perturbative expansion for photon-axion oscillations derived by Raffelt and Stodolsky [72]
+but applied onto the photon-HP system that was presented in [46] (kinetic approach of
+Sec. 3). At first order in χ, photons and HPs are propagation-eigenstates which can convert
+into each other with a a probability (amplitude) per unit length given by χm2 /2ω. The
+transition can happen after any length l between the photon source and the (hypothetical)
+HP detector. The integral over the path-length l reflects this fact. The eiϕ(l)/2 factor is
+the phase difference between the photon and HP waves accumulated up to the length l.
+
+
+
+
+                                              –6–
+Conversions after different lengths can interfere constructively or destructively. The factor
+e−τ (l)/2 reflects the absorption (and stimulated emission) of the photonic wave before reaching
+the conversion point at a distance l. See [19] for more details.
+       From (2.7) and (2.8), it is straightforward to derive the two formulas for the probability
+in homogeneous media shown before. In vacuum, we have m2γ , Γ → 0 and thus
+
+                                                    2
+                                                  2l L
+                                                                    2 
+                                             −i m       2           m
+          P (γ → HP)(L) = |A(γ → HP)(L)| = χe 2ω        = 4χ2 sin2     L ,
+                                                     0              4ω
+
+while for a homogenous medium
+                                                        i(m2    2        L 2
+                                                            γ −m )−ωΓ
+                                                                      l
+                                                 χm2 e         2ω
+             P (γ → HP)(L)        =                                      
+                                                 i(m2γ − m2 ) − ωΓ
+                                                                              0
+                                                                       (m2γ −m2 )L
+                                                                                         ΓL
+                                                                                                 
+                                            χ2 m2 1 + e−ΓL − 2 cos          2ω            e− 2
+                                  =                                                                   (2.9)
+                                                            (mγ − m ) + (ωΓ)2
+                                                              2    2 2
+
+                                 ΓL→∞                   χ2 m4
+                                 −−−−→                                    .                          (2.10)
+                                            (m2γ − m2 )2 + (ωΓ)2
+
+     This formula has to be a good approximation to media in which mγ , Γ change very little
+in an absorption length. The general formula (2.7) allows us to evaluate its limit of validity.
+Let us then consider a linearly changing medium,
+
+                                           Π(l) = Π0 + Π00 l + ...                                   (2.11)
+
+Expanding (2.7) up to linear order in the derivative we find
+
+                                      iχm2             2ωΠ0
+                                                                    
+                     A(L → ∞) ∼                1−               + ...                                (2.12)
+                                    Π0 − m 2        (Π0 − m2 )2
+
+so (2.5) is valid as long as
+                                               2ω|Π00 |
+                                                 2        1.                                      (2.13)
+                                        m2γ 0 − m2 + (ωΓ)2
+
+     Defining the mean-free-path as λ = Γ−1                                        2   2
+                                         0 and an oscillation length as λosc = ω/(mγ −m )
+the criterium reads approximately
+
+                                          2|Π00 |
+                                                  min{λ2 , λ2osc }  1                               (2.14)
+                                            ω
+                                      0
+                          m2 l     m2 l 2
+                                γ0
+     In this case ϕ(l) = 2ωγ + 4ω  , so the condition requires that ϕ is a linear function of
+l during a mean-free-path or an oscillation length, whatever it is smaller, up to corrections
+smaller than 1. The same of course, has to be satisfied by the optical depth function τ .
+     As it turns out, the condition (2.14) is satisfied almost in all the conditions of our
+interest because the typical length scale of an oscillation in the parameter range of our
+
+
+
+
+                                                     –7–
+interest is extremely small, due to the large values of m2γ in the solar interior. Even the
+vacuum oscillation length,
+                                                      −3    2
+                                                  ω   10 eV
+                             λosc,vac ∼ 0.01 km                                       (2.15)
+                                                2 eV    m
+is much smaller than the characteristic density and temperature scale heights in the Sun,
+hundreds of kilometers at the surface and much longer in the solar interior.
+
+2.4     Resonances
+2.4.1    Optically thick
+The only obvious exception to the validity of (2.5) happens in regions where m2γ ≃ m2 to
+good accuracy and the oscillation probability (2.5) is resonant. Close to a resonance, λosc
+grows very large and eventually larger than the mean-free-path (which is typically longer
+than λosc ). In the deep Sun, λ is extremely small and thus (2.14) is nevertheless satisfied.
+Resonances for which (2.14) holds can be called optically thick because their typical extent is
+                                                                −1
+                                                      dm2γ
+                                         ∆rthick ∼ ωΓ                ,                                 (2.16)
+                                                       dr
+
+and therefore (2.14) implies Γ∆r  1.
+      Thus, (2.5) is an excellent approximation for the solar conditions except for what we
+shall call optically-thin resonant regions (Π00 λ2 /ω  1). Fortunately, for these cases we can
+also also derive a simple analytical formula.
+
+2.4.2    Optically thin
+The mean free path λ grows increasingly large as we exit the Sun, so the criterion (2.13) is
+eventually violated. The effect is exacerbated by the fact that near the solar surface, the
+density decreases much faster than in the interior and therefore so does Π0 .
+     Consider (2.7) and focus on a photon trajectory r(l) which intersects a resonance, i.e.
+a point where m2γ (r(ls )) ≡ m2γ (ls ) = m2 . In this point dϕ/dl = ϕ0 = 0 and the integral has a
+saddle point, which typically gives the dominant contribution to the probability amplitude.
+A classical saddle point approximation gives
+                   m2 iϕ(ls )−τ (ls )/2 ∞ iϕ00 (ls )(l−ls )2 /2
+                                        Z
+         Asad ∼ χ     e                       e                                                         (2.17)
+                   2ω
+                                        s0                                          s
+                   m2 iϕ(ls )−τ (ls )/2     2πi                m2 iϕ(ls )−τ (ls )/2     4ωπi
+              ∼χ      e                            C(∆) = χ       e                               C(∆), (2.18)
+                   2ω                       00
+                                           ϕ (ls )             2ω                     m2γ 0 (ls )
+                                                                          p
+where prime denotes differentiation with respect to l, ∆ ≡ ls |ϕ00 | and C(∆) is a smooth
+step-like function ∼ Θ(∆), which can be better approximated as
+                                                                    2
+                                                                                    !
+                                  1 + sign(∆)                   ei∆ /2
+                     C(∆) ≈                        −√                                 .                 (2.19)
+                                          2            π(1 − i)∆ + 2sign(∆)
+
+The conversion probability can then be estimated as
+                                                    πχ2 m4 −τ (lr )
+                             P (γ → HP)sad ∼                     e  |C(∆)|2 .                          (2.20)
+                                                   ω|m2γ0 (ls )|
+
+
+
+                                                    –8–
+        The interpretation of this formula is very interesting. Most of the oscillations cancel
+out in the integral but there is a region of size (δl)2 ∼ (ϕ00 )−1 around ls where the phase has
+almost a constant value eiϕ(ls ) and the amplitude has decreased by a factor e−τ (ls )/2 . The
+saddle point approximation singles out this region around the resonance as the most impor-
+tant contribution to the amplitude. In the particle conversion language, the photon→HP
+conversions along the path interfere destructively due to the fast varying (but smooth) func-
+tion ϕ(l), except those happening in the region δl, which interfere constructively and thus
+dominate the probability.
+        Formula (2.20) is extremely simple and useful for our purposes. For the sake of com-
+pleteness let us briefly discuss its limitations. The formula implicitly assumes that the saddle
+point dominates the integral. However, it is clear that if we separate enough from the reso-
+nance, at some point the exponential suppression due to the optical depth τ (ls ) will suppress
+the contribution from the saddle point below the contribution from the first mean-free-paths.
+In other words, for sufficiently large ls we are so far away from the resonance that λosc is
+again small and the probability should again tend to formula (2.5) because (2.20) is expo-
+nentially suppressed at large distances. We expect a smooth transition between the two
+formulas. The situation is exemplified in Fig. 2 where we show examples of thin and thick
+resonance regions in the Sun. The left figure shows an example of photon→HP conversion
+probabilities around a thin resonance region. In this example, the photons originate at the
+given depth and move leftwards towards the solar surface. The red line shows a realistic
+approximation of the full result. In the deep Sun and far from the resonance it coincides
+with the homogenous approximation (2.5) (shown in blue) but as the production point gets
+closer, the contribution from the resonance region starts to dominate and grows exponen-
+tially (here the mean-free-path around the resonance is λ ∼ 300 m). Our probability formula
+(2.20) captures this exponential growth. Once the resonance is past, the probability returns
+quickly to the homogeneous result. The oscillations seen at the beginning of the exponential
+growth originate from interference of the local and saddle point contributions and they are
+never relevant as they tend to average out when frequency averaged or when the probability
+is integrated over some region of the Sun as when we compute the HP flux of the entire Sun.
+        In contrast, the right figure shows a thick resonance region where the criterion (2.14) is
+satisfied and photons oscillate into HPs before realising any inhomogeneity in their index of
+refraction or absorption (at the resonance centre λ ∼ 3 m).
+        Note finally that in order to use (2.20) for ∆ < 0 (ls < 0), i.e. for photons moving away
+from the resonance, we have to taylor a small modification. The required change is to use
+τ (ls ) = 0 for ls < 0 because the region expected to contribute to the integral is the closest
+to the photon emission, thus τ (ls ) → τ (ls )Θ(ls ). As ∆ becomes negative the photon path
+contains less and less of the maximal mixing region and the amplitude decreases as ∝ 1/∆.
+In this regime we can recover explicitly (2.5) in yet a different fashion. Aside from irrelevant
+phases we find
+                                                           2
+                                    πχ2 m4           1         πχ2 m4       1           χ2 m4
+      P (γ → HP)sad (∆ < 0) ≈                                =                       =              (2.21)
+                                   ω|m2γ0 (ls )| π(1 − i)∆     ω|m2γ0 | 2πls2 |ϕ00 |   |m2γ0 |2 ls2
+                                       χ2 m 4
+                               =                 ,                                                 (2.22)
+                                   (m2γ0 − m2 )2
+
+where for the last expression we have used the Taylor expansion of m2γ around the resonance
+                  0
+m2γ (l) = m2 + m2γ (ls )(l − ls ) + .... We obtain this expression because in this limit, most of
+
+
+
+
+                                                –9–
+                                       m=10-4 eV, Ω=2.3 eV                                         m=0.01 eV, Ω=2.5 eV
+                           2
+                       10
+
+                                                                                        105
+                       10
+
+
+
+
+                                                                        PHΓ®HPL@ Χ=1D
+      PHΓ®HPL@ Χ=1D
+
+
+
+                           1
+                                                                                        104
+                        -1
+                      10
+
+
+                      10-2
+                                                                                        103
+
+                      10-3
+
+
+                      10-4                                                              102                       0.660           0.670
+                               0.212       0.214   0.216     0.218                        0.645   0.650   0.655           0.665
+
+                                           depth @MmD                                                     depth @MmD
+
+Figure 2. Photon→HP oscillation probabilities as a function of the solar depth below the surface,
+zoomed into the resonance regions. LEFT: Example of an optically thin resonance. The red line
+shows the conversion probability of a photon originating at the given depth and moving in the radial
+outwards direction (leftwards in the plot, towards smaller depths). The black line is our approximation
+formula (2.20) and the blue line the homogeneous plasma approximation, (2.5). RIGHT: Example of
+an optically thick resonance region. The black line shows the homogeneous approximation (2.5) and
+the dashed the small corrections arising by taking into account inhomogeneities.
+
+
+
+the conversion probability comes from the first oscillation, as in the homogeneous case.
+
+2.5           Solar averaged emission of hidden photons
+2.5.1                 General aspects
+The emission rate of transversely polarised HPs of energy ω per unit volume at a given
+position, r0 , of an inhomogenous plasma in local thermal equilibrium (LTE) can be written
+as the photon production rate ΓP times the conversion probability P (γ → HP) [49] integrated
+over the different directions in which a photon can be produced,
+
+                                              d3 k
+                                           Z
+                            dN
+                                 (r0 ) = 2         ΓP (ω, r0 )P (ω, r(l)).            (2.23)
+                           dV dt             (2π)3
+
+Note that the conversion probability P = P (γ → HP) depends in principle upon the whole
+trajectory r(l) ∼ r0 + lk̂ and in particular on the direction of the momentum k. The
+photon production rate only depends on the creation point, as follows from our assumption
+of LTE. The factor of 2 accounts for the two transverse polarisations. In LTE, the photon
+production rate is related to the absorption rate ΓA by detailed balance, ΓP = e−ω/T ΓA , and
+the imaginary part of the self energy, Γ = ΓA − ΓP , so that
+
+                                                                               Γ(ω)
+                                                           ΓP (ω) =                           .                                           (2.24)
+                                                                       eω/T − 1
+with T = T (r) being a smoothly-varying plasma temperature.
+
+
+
+
+                                                                     – 10 –
+Figure 3. Geometry of the solar HP flux calculation. Photons created at position r(l = 0) with
+three-momentum k follow a trajectory r(l) (wavy line) towards the Earth and can be converted
+into collinear hidden photons (dashed line) after any length l. The solar plasma properties, such as
+temperature and density are function of the radial coordinate r = |r| or the depth d = RSun − r. The
+photon/HP trajectories depend on the azimuth angle θ, r(l) ∼ r0 + l cos θ.
+
+
+
+     The specific HP flux on Earth is the integral of the volume emission of the Sun divided
+by the surface of a sphere of radius the Sun-Earth distance, REarth ≃ 149.6 × 106 km,
+                                              Z
+                               dΦ        1               dN
+                                   =      2        dV          ,                      (2.25)
+                               dω    4πREarth sun      dV dωdt
+
+where we have used the HP dispersion relation ω 2 = |k|2 + m2 .
+     Let us now assume the Sun to be spherically symmetric and postpone the discussion
+on inhomogeneities. Then the probability P only depends on the radial position, r, and the
+azimuthal angle, θ, which defines the photon/HP trajectory, see Fig. 3. Integrating over the
+remaining angular variables we find
+                            √
+                      1 ω ω 2 − m2
+                                       Z           Z
+             dΦ                               2                Γ(r)
+                 = 2                        r   dr   d cos θ ω/T (r)    P (ω, r, θ).  (2.26)
+             dω     REarth     2π 2     sun                 e        −1
+
+In order to compute this integral, we need to know the functions Γ(ω, r), T (r) and P (ω, r, θ),
+for which we also need m2γ (ω, r). In Sec. 3 we describe how to build these expressions from a
+solar model and in Sec. 4 we perform the relevant computations to obtain the solar HP flux
+and discuss the results.
+
+2.5.2   Resonance domination
+It turns out that for values of ω in the visible range, the conversion probability is very peaked
+around a spherical shell located at radius r∗ defined by
+
+                                          m2γ (r∗ ) = m2                                     (2.27)
+
+where the photon-HP oscillations are resonantly enhanced. The emission from this region
+can easily dominate the emission from the rest of the Sun, making possible a humongous
+simplification of the calculations. Indeed we can perform analytically the remaining two
+integrals of (2.26) to obtain a surprisingly simple result. The derivation will take the rest of
+this section.
+
+
+
+
+                                              – 11 –
+     We have simple probability formulas which apply when the resonance region is optically
+thick or optically thin. The criterion we shall use to identify them is
+
+                                   1 dm2γ (r(l))
+                                                           Γ2 (r∗ ) (thick)                       (2.28)
+                                   ω     dl
+                                                     r∗
+
+                                   1 dm2γ (r(l))
+                                                           Γ2 (r∗ ) (thin)                        (2.29)
+                                   ω     dl
+                                                     r∗
+
+Note that the gradient depends on the azimuth of the trajectory
+
+                            dm2γ              dm2γ          dr   dm2γ
+                                          =                    ≃               cos θ,              (2.30)
+                             dl                dr           dl    dr
+                                   l=ls              r=r∗               r=r∗
+
+and thus resonances are thin or thick depending on cos θ. It is interesting thus to focus first
+on the r-integral, which we do in the following.
+
+Optically-thick resonance
+If the resonance is optically thick, the γ →HP conversion probability is well approximated
+by (2.5) and the r-integral is
+
+                                                                χ2 m4
+                             Z
+                                           Γ(r)
+                 I(θ)thick =       r2 dr ω/T (r)                                 ,   (2.31)
+                               sun      e        − 1 (m2γ (r) − m2 )2 + (ωΓ(r))2
+
+which actually does not depend on cos θ itself. In the resonance, the probability is enhanced
+by a factor m4 /(ωΓ)2 with respect to the vacuum case and much more if we compare it with
+very dense regions where m2γ (r)  m2 . Since usually we have m2γ  ωΓ, the integral so
+strongly peaked that we can approximate the Lorenzian shape of the probability by a Dirac
+delta to obtain
+                                                             −1
+                                      πr∗2   χ2 m4      dm2γ
+                          I(θ)thick ≈                             .                     (2.32)
+                                       ω eω/T (r∗ ) − 1 dr
+                                                                           r=r∗
+
+The explicit dependency on Γ drops out [46, 48, 49] and the resulting flux only depends upon
+our solar modelling through m2γ (ω, r) and T (r∗ ).
+
+Optically-thin resonance
+If the resonance is optically thin we can use (2.20) for the r-integral, which now depends
+explicitly on θ because of the cos θ factor in (2.30) and the optical depth to the resonance,
+                                                        Z r∗
+                                                     1
+                            τ (ls ) = τ (r, r∗ ) =           dr0 Γ(ω, r0 ).             (2.33)
+                                                   cos θ r
+The r-integral is
+                                                                           −1
+                                      Γ(ω, r) πχ2 m4 1              dm2γ
+                            Z
+               I(θ)thin =          r2 ω/T                                         e−τ (r,r∗ ) Θ.   (2.34)
+                             res     e    − 1 ω | cos θ|             dr
+                                                                           r=r∗
+
+where we have taken C(∆) = Θ(∆), which we write as Θ ≡ Θ ((r∗ − r) cos θ), ensuring that
+only photon trajectories that cross the resonance are included. If the photon is produced at
+
+
+
+
+                                                     – 12 –
+r < r∗ only trajectories with cos θ > 0 will cross the resonance, the opposite case being when
+r > r∗ . The integral is dominated by the region where the optical depth to the resonance
+is O(1), typically a few mean-fee-paths. Assuming that r and T do not change much in
+that narrow region we can substitute for the values at the resonance, r∗ , T∗ and perform the
+integral explicitly
+                Z
+                         dr
+                               Γ(ω, r)e−τ (r,r∗ ) Θ =                                             (2.35)
+                  res | cos θ|
+                    Z r∗                                         Z out
+                            dr           −τ (r,r∗ )                      dr
+          Θ(cos θ)              Γ(ω, r)e            + Θ(− cos θ)               Γ(ω, r)e−τ (r,r∗ ) (2.36)
+                      in cos θ                                    r∗   − cos θ
+         = Θ(cos θ) + Θ(− cos θ)(1 − e−τ∗ ) = 1 − Θ(− cos θ)e−τ∗                                 (2.37)
+
+where τ∗ is the optical depth of the resonance with respect to the surface. If the resonance
+lies deep enough inside the Sun (τ∗ ∼ 3 − 4 or so), HPs converted from photons travelling
+through it from the inside or from the outside contribute an equal amount to the total HP
+flux. If it lies close or in the photosphere, the amount of photons produced outside and
+traveling inwards decreases very much and we are left only with the HP converted from
+outgoing photons. Remarkably, again the resulting flux does not depend explicitly on Γ or
+other properties of the solar model other than T and m2γ . We have then
+                                                         −1
+                             πr2  χ2 m 4    dm2γ
+                   I(θ)thin ≈ ∗ ω/T (r )                        1 − Θ(− cos θ)e−τ∗
+                                                                                     
+                                                                                                 (2.38)
+                              ω e     ∗ − 1  dr
+                                                         r=r∗
+
+Remarkably, it is given by exactly the same expression than for the optically thick resonance
+(i.e. as long as τ∗ & 3 − 4).
+
+Master formula for resonance emission
+If we assume that the resonance region is either thick or thin or, more specifically, that the
+values of cos θ for which the resonance is neither are not quantitative relevant for the cos θ
+integral, the cos θ integral is trivial
+
+                                                                             e−τ∗
+                Z                        Z                                     
+                          d cos θIthick +       d cos θIthin = Ithick 1 − δθ        .     (2.39)
+                    thick                  thin                               2
+             R
+where δθ = thin d cos θΘ(− cos θ) corrects for the HPs produced from photons originated at
+r > r∗ which travel inwards the Sun. The 1 in the formula would be symmetric result, which
+is to be corrected when e−τ∗ is not negligible. In practice, δθ ≃ 1 for all practical purposes.
+      Our final formula for the HP emission from the entire resonance region is
+                                    √              −1 
+                           r∗2 χ2 m4 ω 2 − m2 dm2γ         e−τ∗
+                                                                
+                    dΦ
+                       ≈   2                            1−        .                              (2.40)
+                    dω   πREarth eω/T (r∗ ) − 1 dr          2
+                                                                r=r∗
+
+      The formula was already found in [46, 48, 49] under the assumption that the resonance
+region is optically thick (extremely good approximation in the solar interior, where these
+references were focused). In this paper we have shown explicitly that its validity extends to
+optically thin resonances and for the mixed case where the resonance region is optically thin
+for cos θ ∼ ±1 and thick for cos θ ∼ 0. For that, we needed to assume that the regions in
+
+
+
+
+                                                – 13 –
+θ for which the resonances are neither thick or thin do not change the behaviour. I have
+performed many explicit calculations and cross-checks that show that this is the case, but at
+the moment I have no general proof. However, in the simple case of constant r, T, Γ, dm2γ /dr
+in the resonance region (which is not a bad approximation in the Sun) one can perform
+analytically all the integrals and prove that there is no funny behaviour when the resonance
+is neither thin or thick. The calculation is shown in appendix A.
+
+2.6   Angular distribution of the signal
+The specific HP flux at earth (HPs per unit area, time, energy and stereoradian) along a line
+of sight intercepting the Sun is
+                                 √
+                                ω ω 2 − m2 ∞
+                                           Z
+                    dΦ(ω, ψ)                         Γ(ω, r)
+                             =        3
+                                                ds ω/T (r)    P (ω, r, θ(r)),         (2.41)
+                     dωdΩ          4π       0      e       −1
+where r = r(s) with s the line-of-sight distance from the Earth to the production point
+(dashed line in Fig. 3). Defining rmin = REarth sin ψ as the impact parameter of the trajectory
+we change the integration variable to the radial coordinate r
+                                √
+                              ω ω 2 − m2 ∞
+                                          Z
+                 dΦ(ω, ψ)                           2rdr        Γ
+                           ≈         3
+                                                q             ω/T
+                                                                     P (ω, r, θ).        (2.42)
+                  dωdΩ            4π       rmin          2
+                                                   r2 − rmin e    −1
+
+     If the trajectory intercepts the resonance region, the bulk of the emission can be readily
+evaluated by similar calculations which took us to (2.40). The key simplificationq is to use
+the optically thick resonance formula (2.5) for the probability because either r2 − rmin 2   is
+relatively constant during the integral (and then optically thin and thick resonances give the
+same result) or r∗ ∼ rmin and then cos θ ∼ 0 and (2.5) is justified again. Using r ∼ r∗ in
+the numerator and r2 − rmin ∼ (r∗ + rmin )(r − rmin ) in the denominator, the integral can be
+readily evaluated as
+                                   dΦ(ω, ψ)     dΦ       dX
+                                             ≃                                          (2.43)
+                                     dωdΩ       dΩ total dΩ
+where the angular distribution is given by
+                                  sp                             s
+                dX       1 REarth      (ψ∗ − ψ)2 + ∆ψ∗2 + ψ∗ − ψ     ψ∗
+                     ≃                             2      2
+                                                                                         (2.44)
+                dΩ      2π r∗            2[(ψ∗ − ψ) + ∆ψ∗ ]        ψ∗ + ψ
+
+where the angle at which ψ is tangential to the resonance shell is ψ∗ ≃ r∗ /REarth and the
+width, which we have assumed to be small, is given by
+                                                              −1
+                                   ∆rthick    ωΓ∗ dm2γ
+                             ∆ψ∗ ≃         =                       .                     (2.45)
+                                   REarth    REarth dr
+                                                              r∗
+
+Moving from the solar center outwards, the angular distribution grows as ψ → ψ0 and peaks
+at ψ∗ − ψ ≃ ∆ψ∗ , where the line-of-sight is tangential to the resonance shell and thus√benefits
+from more resonant emission, and then decrease extremely fast. The peak has a 1/ ψ − ψ∗
+behaviour and of course does not dominate the integral.
+     Since the resonance can be extremely sharp it might turn out that cannot be resolved
+by a telescope. In this case, the resonance will be broaden by the finite resolution of the
+
+
+
+
+                                            – 14 –
+apparatus. The angular integral of the resonance is independent of the resonance width as
+long as it is very small
+                                       Z ψ∗ +δ
+                                                   dX     √
+                          lim∆ψ∗ →0 2π         dψψ     ≈ 2 2δ                      (2.46)
+                                         ψ∗ −δ     dΩ
+so in practice one can use                 r            r
+                                 dX    1       REarth          1
+                                    ≃                              .                     (2.47)
+                                 dΩ   2π        r∗          ψ∗ − ψ
+
+3     Refraction and absorption in the Sun
+3.1    Basics
+In order to compute the solar HP emission, we need to model the refraction and absorption
+properties of light in the solar plasma. For the latter, very exhaustive studies exist since ab-
+sorption determines the radiative energy transfer inside of the Sun, which in turn determines
+the solar structure. We highlight the Opacity Project [73–76] and Los Alamos opacity code
+LEDCOP opacities [77–79]. To the best of our knowledge, no study of the refractive index
+throughout the solar plasma exists in the literature. In principle, the real part of the index
+of refraction can be obtained from the imaginary part with the Kramers-Kronig relation.
+Unfortunately, the existing data is often smoothed over frequencies and it is only available
+for a small number of density and temperature points. A rough interpolation would intro-
+duce large errors in the determination of the resonance region so we have to follow a different
+procedure.
+      We can calculate explicitly the most relevant contributions to refraction and absorption
+as a function of temperature, density and composition so that we have a very smooth map
+of them inside of the Sun (as smooth as the solar model we might use). These are the
+contributions from electrons either free or bound in H atoms. The effects of electrons bound in
+Helium and heavier atoms are subdominant for refraction, but can be relevant for absorption
+around frequencies corresponding to the strongest atomic transitions. This contribution is
+then taken from existing opacity calculations to avoid the extremely involved atomic physics.
+Indeed, we can use OP opacities tables, conveniently provided for each metal separately and
+thus allowing arbitrary mixtures.
+      The solar plasma consists on electrons (free or bound in ions) and nuclei, which being
+much heavier interact weaker with light than the former and can be neglected. Unbound
+(free) electrons contribute to the polarisation tensor with a simple term
+
+                                         4πα free    8πα2 free
+                               Πfree =      ne − i ω     n                                 (3.1)
+                                         me          3m2e e
+whose real and imaginary parts we recognise as the plasma frequency squared and the ab-
+sorption coefficient due to Thomson scattering.
+     Electrons bound in H atoms can be in first approximation modelled by a set of oscillators
+whose contribution of the polarisation tensor is
+                    4πα     X    X              ω2
+                                                             ω 2 − ωr2 − i ωγr
+                                                                               
+            Πbb =       nH0   Zn    fnn0 2    2  2         2
+                                                                                           (3.2)
+                    me      n     0
+                                        (ω − ωr ) + (ωγr )
+                                    n
+
+where nH0 is the number density of neutral H atoms, Zn the probability of finding the bound
+electron with principal quantum number n and the last sum is over resonant transitions
+
+
+
+
+                                             – 15 –
+n → n0 , which happen at frequencies ωr = Ry n12 − n102 . The oscillator strength fnn0 is
+                                                              
+
+summed over final states and orbital quantum numbers l and l0 = l ± 1 for electric dipole
+transitions. We neglect fine-structure corrections as we are not interested in fine details of
+the spectrum. The width of the resonance is given by the natural line width 2αωωr /3me .
+Impact broadening due to proton collisions through the Stark effect is taken into account
+in the quasi-static approximation by folding each resonance contribution with a Holtsmark
+distribution following [80]. We don’t consider collisional broadening from electron collisions
+nor Doppler broadening, which are not relevant at the level of accuracy required. Broadening
+is relevant close to the resonant transitions and in the wings of absorption lines for Γ, but
+not for m2γ . Note that free electrons behave as an additional bounded species with f = 1 and
+ωr = 0.
+      The above expressions account for the most important contributions to refraction but
+are not enough for absorption. The leading contribution to photon opacity in the deep Sun
+comes from photon absorption during electron-proton scattering, γ + e− + p+ → e− + p+ .
+In outer shells, also the photoelectric effect, γ + H∗ → e− + p+ , is important. Usually these
+reactions are known as free-free and bound-free processes, respectively. Their contribution
+to Πi can be casted in the following compact form
+
+                                 64π 2 α3
+                                          r
+                                             me       −ω/T
+                                                            
+               Πi,ff = ωΓff = ω                   1 − e       nfree
+                                                                e np Fff                 (3.3)
+                                 3m2e ω 3 2πT
+                                 8πme α5                 X        1
+              Πi,bf = ωΓbf = ω √            1 − e−ω/T nH0       Zn 5 Fbf Θ(ω − En )      (3.4)
+                                  3 3ω  3
+                                                             n
+                                                                    n
+                                            
+                            + ω 1 − e−ω/T nH− σ(γ + H− → H + e− )                        (3.5)
+
+where Fff , Fbf are thermally averaged Gaunt-like factors, introduced as corrections to the
+classical result which depend mildly on frequency and atomic details and can be found for
+instance in [81]. Close to the threshold Fbf ∼ 1 so we neglect it. As for Fff , for our pur-
+poses it is sufficient to consider the Born-Elwert approximation [82] with a simple screening
+prescription
+
+                                   2 √
+                                                      
+                                                           2πα
+                                                                  p me  Z √
+                      Z ∞
+                              xe−x     x2 + w 1 − exp   − √
+                                                            x2 +w    2T
+                                                                             x2 +w+x
+                                                                                        t3 dt
+    Fff (w = ω/T ) =       dx                                     me      √
+                                                1 − exp − 2πα                         2      2 2
+                                                                p     
+                        0       2        x                   x     2T       x2 +w−x (t + y )
+
+                  √                                                                            (3.6)
+where    y =  k     2m   T and  we  take  k  to be  the  Debye-screening    scale given  by   k 2
+                D      e                   D                                                   D =
+            2
+     P
+4πα α Qα nα /T where the sum extends to all charged particles (mostly electrons, protons
+and some He atoms). In the bound-free expression, En = Ry/n2 is the energy of the n-th
+energy level.
+      Despite its low density, the negative H ion, H− , plays an important role in the opacity
+near the photosphere at near IR and visible frequencies [83]. The photoionisation cross section
+of H− does not have a sharp edge at its ionisation threshold ω = E− = 0.75 eV because the
+electrons are ejected in a p-wave [83, 84] due to the neutrality of the H0 final state. Instead
+of the ∝ Θ(ω − En )/ω 3 behaviour of other contributions to Πbf one gets ∝ (ω − E− )3/2 /ω 3 .
+We have taken the photonization cross section from [85].
+      These contributions have associated refractive parts, which can be computed through
+the Kramers-Kronig relations, neglecting the ω dependence of the Gaunt factors. The bound-
+free contribution of H0 turns out to be of similar size to the bound-bound contributions and
+
+
+
+
+                                              – 16 –
+has to be included. Due to the low density and the smoothness of the threshold the refractive
+part associated with the photionization of H− turns out to be negligible. Neglecting the
+frequency dependence of Fbf we find
+
+                              8πme α5             1 ω2                Ee2
+                                          X                                  
+                        2
+               Πr,bf = mγbf ≃ √       nH0     Zn 5        − log                         (3.7)
+                               3 3ω 2       n
+                                                 n    Ee2         |E 2 − ω 2 |
+
+     Finally, we want to include the absorption coefficient due to metals. In principle, suit-
+able generalisation of the above formulas is possible and regularly performed for opacity
+calculations. For the scope of this paper it is enough to use monochromatic opacities present
+in the literature. We chose the detailed opacities of the Opacity Project from [76], which are
+available in tables for different temperatures and electron densities that can be interpolated
+at will. The absorption coefficient is tabulated for each element as an effective cross section
+that includes the contribution from scattering, bound-bound, bound-free and free-free reac-
+tions involving the element Z, σZ (ω) = ΓZ /nZ (1 − e−ω/T ) where nZ is the density of the
+corresponding nucleus. We thus build
+                                    X                      X
+                           Πi,Z = ω     ΓZ = ω(1 − e−ω/T )     σZ nZ .                    (3.8)
+                                     Z                       Z
+
+      The polarisation tensor Π is the sum of all the above contributions,
+
+                              Π = Πfree + Πbb + Πbf + Πff + ΠZ .                            (3.9)
+
+3.2   A model for refraction and absorption in the Sun
+The mass density ρ, chemical composition and temperature T as a function of solar radius
+can be taken from a standard solar model calculation. The state of the art on solar modelling
+is able to fit all available solar data from helioseismology and neutrino flux detectors with
+typical percent accuracy. Small discrepancies with observations still exist [86] after the recent
+revision of solar abundances of CNO species [87], which lowered slightly the opacity, but they
+do not compromise the degree of precision of our calculation. Interestingly, the authors of [88]
+proved that the existence of hidden photons cannot possibly influence the determination of
+the light elements in the Sun.
+      In this paper we make use of the Saclay seismic solar model [89, 90] available at [91]
+which has excellent detail in the outer layers of the Sun, our primary concern. The mass
+density and temperature profiles are shown in Fig. 4. For future reference, Fig. 5 shows the
+outer layers of the Sun in more detail as a function of the depth towards the solar core.
+      The surface chemical composition from [87] is shown in Fig. 6. Hydrogen is ∼ 10 times
+more abundant than helium, ∼ 1000 times more abundant than CNO elements and more
+than 104 than higher−Z elements. The composition is relatively constant in the solar interior
+but we take into account diffusion from the solar model AGSS09 [92], available at [93] (the
+solar model [89] does not provide the chemical abundance as a function of radius).
+      The most relevant atomic species is of course, hydrogen. As we will see further on, the
+resonance region for low mass HPs happens close to the photosphere but still in the solar
+interior. In this region the temperature is so low that He atoms are not ionised (their first
+ionisation energy is ∼ 25 eV) and their contribution to free-free transitions is negligible. Also,
+the main atomic transitions and ionisation thresholds lie in the far UV, and therefore do not
+affect visible light absorption. For the same reason, their contribution to refraction is also
+
+
+
+
+                                             – 17 –
+                                                                         103
+                   102
+
+
+                   10
+                                                                         102
+
+                    1
+    Ρ@gcm3D
+
+
+
+
+                                                               T@eVD
+                                                                         10
+               10-1
+
+
+               10-2
+                                                                           1
+                    -3
+               10
+
+
+               10-4 0.0       0.2   0.4      0.6   0.8   1.0
+                                                                       10-1 0.0       0.2       0.4       0.6       0.8       1.0
+
+                                        rRSun                                                   rRSun
+
+Figure 4. Mass density, ρ, and temperature, T , of the solar model of [89] as a function of the solar
+radial coordinate r measured in units of the solar radius, RSun = 0.6955 × 106 km.
+
+
+                   10-4                                                  3.0
+
+
+
+                                                                         2.5
+                   10-5
+
+                                                                         2.0
+        Ρ@gcm3D
+
+
+
+
+                         -6
+                   10
+                                                                 T@eVD
+
+
+
+
+                                                                         1.5
+
+
+                   10-7
+                                                                         1.0
+
+
+
+                   10-8                                                  0.5
+
+
+
+                                                                         0.0
+                              0     1        2     3      4                       0         1         2         3         4
+
+                                    depth @MmD                                              depth @MmD
+
+Figure 5. Mass density, ρ, and temperature, T , of the solar model of [89] as a function of the depth
+inside the solar surface measured in Megameters.
+
+
+
+negligible. Note from (3.2) that the contribution to Πr of far UV resonant frequencies in the
+visible is ∝ −nZ (ω/ωr )2 and therefore those of helium are much less important than those
+of hydrogen. Higher Z elements (often referred to as metals) are too scarce to compete with
+hydrogen in absorption in free-free collisions but contribute to bound-bound and bound-free
+absorption because they have resonant transitions in the visible and ionisation thresholds in
+the not-so-far-UV. The effects, if competitive with hydrogen have to be necessarily localised
+in frequency to very narrow intervals around the resonances and thresholds. Since we are
+interested in the continuum flux rather than a spectroscopically resolved spectrum we will
+neglect these contributions. The only effect in which metals have a leading role is to set the
+free electron density in the photospheric layers of the Sun where hydrogen is highly neutral.
+
+
+
+
+                                                         – 18 –
+         0.8                                                    1
+
+
+         0.7                                                 10-1
+
+                                                             10-2
+         0.6
+
+
+                                                             10-3
+
+
+
+
+                                                    nZ nH
+     X
+
+
+
+         0.5
+
+                                                             10-4
+         0.4
+                                                             10-5
+
+         0.3
+                                                             10-6
+
+         0.2                                                 10-7 0            10         20
+               0.0   0.2   0.4    0.6   0.8   1.0                         5         15         25
+
+                             rRSun                                           atomic number
+
+Figure 6. LEFT: Hydrogen mass fraction of the solar model of [89]. RIGHT: Chemical composition
+of the solar surface as function of the atomic number (number density of atoms of atomic number Z
+normalised to that of hydrogen).
+
+
+
+Only in this restricted sense we include metals in the solar refractive model.
+
+Partition functions and atomic ionisation
+The density of free electrons and of the 1s state of neutral hydrogen are the most influential
+factors that set the value of m2γ . Through this dependence, they determine the locus of the
+photon-HP resonant conversion region (and hence the temperature T of the emission), and
+also the size of the conversion region, which sets the absolute value of the flux. Thus, for
+our purposes it is of capital importance to have a robust estimate of these quantities. The
+occupation probabilities, Zn , and the neutral H fraction cannot be accurately estimated with
+the partition function of an ideal gas and the Saha ionization equation. The first requires
+an ad hoc cutt-off to the number of excited states, and we do not know a-priori if this is
+justified. Excited states could be very populated at large temperatures and contribute to
+m2γ as much as the 1s. The second is well known to fail at large densities and not too
+large temperatures, predicting too little ionisation, even in the solar centre!. Fortunately,
+the calculation of the ionisation equilibrium is a fundamental ingredient of the equation of
+state of astrophysical plasmas and radiative opacity, so a large body of literature exists on
+the matter. The problems of the divergence of the partition function and the Saha equation
+are both cured by include interactions between the plasma species, which alter the bound
+states when the density gets closer to atomic density. Here, we use the partition function of
+Hummer and Mihalas (HM) [94],
+                                       En               X          En
+                         Zn = 2n2 wn e T /Z̃ ; Z̃ =        2n2 wn e T ,                 (3.10)
+                                                                      n
+
+where the factors wn are called “occupation probabilities” and encode the non-ideality of the
+gas. The most relevant effect to be included are the perturbations on the atomic states by the
+slow-varying electric fields of the plasma ions (protons in our case). Bound states suffer Stark
+shifts in the binding energies which drive ionisation very efficiently. In particular, there is a
+
+
+
+
+                                              – 19 –
+certain critical field above which a given bound state is has a lifetime smaller than its orbit
+period and it effectively destroyed. These effective occupation probabilities thus measure the
+probability of the atoms to be in a perturbing field such that a given bound state does still
+exist. Using a Holtsmark probability distribution for the magnitude of the fields, they find
+                                                              !
+                                          Kn En2 4πnp −2/3
+                                                       
+                                wn = Q                                                   (3.11)
+                                          4Z α2      3
+
+where Q(x) is the cumulative of the Holtsmark distribution, np is the proton density and
+Kn = 16n2 (n + 7/6)/3(n + 1)2 (n2 + n + 1/2) for n ≥ 3 and Kn = 1 for n ≤ 3.
+      The Saclay solar model [89] uses the OPAL equation of state (EOS) of Rogers and Igle-
+sias [95], which is not based on the HM chemical picture but on the physical picture (see [96]
+for the derivation of occupation probabilities). The Opacity Project EOS is instead based
+on the much simpler HM picture and it has been shown to agree well with the OPAL [97].
+Therefore, by using the HM formalism we simplify much our calculations without the danger
+of large inconsistencies on the chosen solar model. Note finally, that the chemical picture of
+HM was designed in principle to be valid at the small densities relevant in stellar envelopes,
+ρ . 10−2 g/cm3 but it was found to be valid up to much denser regions, and in particular,
+the whole Sun [98]. An update of the micro-field distribution including particle correlations
+showed an excellent agreement with OPAL up to the solar centre [99], but for our purposes
+we do not need such levels of precision.
+      Following HM, the ionisation equilibrium is derived from the minimisation of the Helmholtz
+free-energy where every atomic state is treated as a different species. We consider the states
+of the hydrogen and helium and the first ionisation of metals. There are three states of H (H− ,
+H0 and H+ ≡ p, i.e protons), three of He (He0 , He+ and He++ ) and two for each metal. The
+effects of H bound states are only important in the surface, where excited states are scarce
+and therefore their correlations with the proton density irrelevant for the free energy. In this
+lucky situation, the minimisation of the free-energy, F , subject to the stoichiometric relations
+ ∂F    ∂F     ∂F                                                          +    −      0
+∂np + ∂ne = ∂n0H from chemical equilibrium in the ionisation reaction p + e ↔ H + γ leads
+to a Saha-like equation
+                                         Z̄ me T −3/2 E1s−αkD
+                                                 
+                                nH0
+                                       =                  e T      ,                       (3.12)
+                              np nfree
+                                  e      2    2π
+where we have defined the usual partition function normalised to the ground state energy
+Z̄ = eE1s /T Z̃ (recall that En > 0 in our convention) and the Debye correction involves
+the Debye screening scale defined before. The equations for H− , He and metal ionisation
+are completely analogous. The 2 Saha equations of H, the 2 of He and the one for each
+metal are to be solved self-consistently with the constraints given by the solar abundances
+(nH,total = nH+ + nH0 + nH− for H and nHe,total = nHe++ + nHe+ + nHe0 for He) and the
+expression of the free electron density
+                                                              X
+                        nfree
+                          e   = nH+ − nH− + 2nHe++ + nHe+ +       n Z+ .              (3.13)
+                                                                Z
+
+The resolution of this system outputs the required ion densities and bound-state probabilities
+Zn , which we show in Fig. 7.
+      Outside the photosphere, neutral H and He are the most abundant species. The free
+electron density has dropped much, although not as much as the proton density due to
+
+
+
+
+                                            – 20 –
+           1                                                 1020
+
+                                                             1019
+         10-1
+                                                             1018
+
+         10-2                                                1017                         He0
+                                                                       H0
+                                                             1016
+
+
+
+
+                                                  n @cm-3D
+         10-3
+                                                                                          He+
+    Zn
+
+
+
+                                                             1015
+         10-4                                                1014                                   H-
+
+         10-5                                                1013
+                                                                       e-free
+                                                               12
+                                                             10
+         10-6
+                                                             1011                                            He++
+                                                                       H+
+         10-7   0             10             20              1010 -1
+                      5              15                                         0     1         2        3      4
+
+                      Depth @MmD                                                    Depth @MmD
+
+Figure 7. LEFT: Probability of the bound (n=1,topmost) and excited states (n=2,3..,10, top to
+bottom) inside the solar plasma as function of depth inside the surface. RIGHT: Density of the
+different ionisation species relevant for this model of the solar refraction.
+
+the electrons donated by metals (mostly by Mg, C, Si and Fe). Across the surface (ρ ∼
+3×10−7 g/cm−3 ) the ionised species have a sharp rise due to the sharp rise of the temperature.
+The ionisation of H is around 90% around ρ ∼ 10−3 g/cm−3 and that of helium around
+ρ ∼ 10−2 g/cm−3 . Let us warn that the free electron density profile obtained by this whole
+procedure does not fit well with the one provided by the solar model [89] below ρ ∼ 10−6
+g/cm3 or so. Our calculations show a decrease of two orders of magnitude around ρ =
+3 × 10−7 g/cm3 , which is much milder in the solar model table provided in [91]. The reason
+is most likely that the available model used in [89] employs a basic Hopf atmosphere model,
+see [90]. The results of our calculation agree perfectly with the solar atmosphere model of
+Kurucz [103], which the authors of the Saclay solar models employ in the later publication [90]
+to improve the agreement with Helioseismological data. This constitutes a reassuring test of
+our calculations.
+
+Results
+We can now construct the functions m2γ (ω, r) and Γ(ω, r) that we require for computing the
+solar HP flux. We show some relevant plots of the dependence of m2γ (ω, t) on r and ω in Fig.
+8. In the upper plots we see the frequency dependence of the different contributions. Free
+electrons provide a frequency independent contribution (blue line) while atomic resonances
+at ωr give positive contributions for ω > ωr and negative for ω < ωr . Negative values are
+shown as dashed lines in the log-plot. The most notable line is the Ly-α at ω ∼ 10.2 eV
+although all the Lyman series has visible contributions. The value of m2γ is determined thus
+not only by the density but very importantly by the ionisation fraction. In the surface, i.e.
+just above the fast drop of density visible in Fig. 7 (ρ ∼ 3 × 10−7 g/cm3 ) most of the H
+is neutral and m2γ is negative in all the visible spectrum. Moving deeper in, at a density
+ρ ∼ 5 × 10−7 g/cm3 the ionisation fraction is already 10%. Since the neutral H contribution is
+∝ −ω 2 it becomes ineffective at low energies and such a small free electron density is able to
+make m2γ positive in the red part of the spectrum. As we move inside the Sun, the ionisation
+fraction increases and neutral H becomes scarce. The region of negative m2γ gets displaced
+deeper into the UV. At ρ = 8 × 10−5 g/cm3 it is only the ∼ 9 − 10.2 eV range.
+
+
+
+
+                                            – 21 –
+                10-2                                                                             10-1
+                          m2Γ @totalD                                                                        m2Γ @totalD
+                10-3      m2Γ @e-free D                                                          10-2        m2Γ @e-free D
+                          m2Γ @H 0 D                                                                         m2Γ @H 0 D
+                10-4                                                                             10-3
+    m2Γ @eV2D
+
+
+
+
+                                                                                     m2Γ @eV2D
+                10-5                                                                             10-4
+
+
+                10-6                           Ρ=3´10-7 gcm3                                    10-5
+
+
+                10-7                                                                             10-6                            Ρ=5´10-7 gcm3
+
+                10-8 0      2         4         6        8         10    12    14
+                                                                                                 10-7 0       2           4       6          8      10     12
+
+                                               Ω@eVD                                                                           Ω@eVD
+                10-1                                                                               10
+                            m2Γ @totalD                                                                      m2Γ @totalD
+                10-2        m2Γ @e-free D                                                             1      m2Γ @e-free D        Ρ=8´10-5 gcm3
+                            m2Γ @H 0 D                                                                       m2Γ @H 0 D
+                10-3                                                                             10-1
+    m2Γ @eV2D
+
+
+
+
+                                                                                     m2Γ @eV2D
+
+
+                10-4                                                                             10-2
+
+
+                10-5                                                                             10-3
+
+
+                10-6                                Ρ=3´10-6 gcm3                               10-4
+
+
+                10-7 0          2         4         6          8        10     12
+                                                                                                 10-5 0       2           4       6          8      10     12
+
+                                               Ω@eVD                                                                           Ω@eVD
+                  -3                                                                               -3
+                10                                                                               10
+                         m2Γ @totalD                                                                      m2Γ @totalD
+                10-4     m2Γ @e-free D                                                           10-4     m2Γ @e-free D
+                         m2Γ @H 0 D                                                                       m2Γ @H 0 D
+                10-5                                                                             10-5
+    m2Γ @eV2D
+
+
+
+
+                                                                                     m2Γ @eV2D
+
+
+
+
+                10-6                                                                             10-6
+
+
+                10-7                                               Ω=2 eV                        10-7                                            Ω=3 eV
+
+
+                10-8                                                                             10-8
+                            10-7                        10-6                  10-5                           10-7                     10-6                10-5
+
+                                              Ρ@gcm3D                                                                        Ρ@gcm3D
+
+Figure 8. The effective photon mass m2γ (ω, t) in the solar model built for this paper (black lines).
+The contribution from free electrons is shown in blue and that of neutral H (through bound-bound
+and bound-free transitions) as red. When m2γ (ω, t) is negative we have plotted −m2γ (ω, t) as a dashed
+line. Upper and middle plots show the energy dependence for four positions inside the Sun. Lower
+plots show the dependence on the solar interior position, labeled by the mass density, for photon
+energies of ω = 2, 3 eV (wavelength=616, 413 nm, respectively).
+
+
+
+                                                                              – 22 –
+      These trends can be seen in the lower plots of Fig. 8 where the dependence with the so-
+lar density is shown for a couple of frequencies. The positive free electron contribution drops
+suddenly at the photosphere with the ionisation fraction while the negative contribution from
+neutral H decreases softer and eventually dominates. Note that for these frequencies there
+is always a point in the Sun where m2γ = 0. Since the negative contribution is frequency
+dependent this point depends on frequency. This point will be very important for the discus-
+sion on photon-HP oscillation resonances. Note that as we consider smaller ω the neutral H
+contribution (red-dashed line) decreases as ω 2 and the point when it crosses the free electron
+(blue), i.e. the point where m2γ = 0 moves out of the Sun. Higher energies have m2γ = 0
+deeper in the solar interior because of their larger neutral H contribution. Interestingly, due
+to the sharp drop of the free electron density at ρ ∼ 3 × 10−7 g/cm3 a sizeable range of
+frequencies will have m2γ = 0 around that region.
+      The imaginary part of the self energy (the absorption coefficient up to a small correction)
+is shown in a few plots in Fig. 9. In general it agrees well in the range of interest with the
+calculations of the OP interpolations and crosschecks with the LEDCOP database [77–79] at
+the low densities relevant for this work.
+
+
+
+
+                                             – 23 –
+                  10-8
+                                               Ρ=3´10-7 gcm3
+                       -9                                                      10-6
+                  10
+                                                                                                                Ρ=5´10-7 gcm3
+                  10-10
+                                                                               10-7
+                       -11
+         G @eVD
+
+
+
+
+                                                                      G @eVD
+                  10
+
+                  10-12                                                        10-8
+
+
+                  10-13
+                                                                               10-9
+                       -14
+                  10
+
+                  10-15           1        2           3         4
+                                                                               10-10            1           2               3          4
+
+                                         Ω@eVD                                                            Ω@eVD
+                                                                               10-1
+
+                  10-4                                                                                      Ρ=8´10-5 gcm3
+                                               Ρ=3´10-6 gcm3
+                                                                               10-2
+                    -5
+                  10
+         G @eVD
+
+
+
+
+                                                                      G @eVD
+                                                                               10-3
+                  10-6
+
+
+                                                                               10-4
+                  10-7
+
+
+
+                  10-8            1        2           3         4
+                                                                               10-5 0       2        4      6          8        10    12
+
+                                         Ω@eVD                                                            Ω@eVD
+                  10-5                                                         10-5
+
+                  10-6       G@totalD                                          10-6       G@totalD
+                             Ge- free                                                     Ge- free
+                  10-7                                                         10-7
+                               Gbb                                                          Gbb
+                  10-8         Gbf                                             10-8         Gbf
+         G @eVD
+
+
+
+
+                                                                      G @eVD
+
+
+
+
+                  10-9
+                               Gff                                             10-9
+                                                                                            Gff
+
+                  10-10                               Ω=2 eV                   10-10                                       Ω=3 eV
+                    -11                                                             -11
+                  10                                                           10
+
+                    -12
+                  10                                                           10-12
+
+                  10-13                                                        10-13
+                              10-7             10-6            10-5                        10-7                 10-6                 10-5
+
+                                        Ρ@gcm3D                                                         Ρ@gcm3D
+
+Figure 9. Imaginary part of the self-energy divided by ω, i.e. our parameter Γ in the solar model built
+for this paper (black lines). The contribution from free-free absorption is shown in blue and bound-
+free and bound-bound absorption in red. Red dashed is the line for the H− bound-free contribution.
+Upper and middle plots show the energy dependence for four positions inside the Sun. Lower plots
+show the dependence on the solar interior position, labeled by the mass density, for photon energies
+of ω = 2, 3 eV (wavelength=616, 413 nm, respectively).
+
+
+
+
+                                                                – 24 –
+4          Solar hidden photon flux: Numerical results
+
+The model for refraction in the solar interior build in the last section allows us to compute
+the solar flux of HPs by direct integration of formula (2.7). This is a very time-consuming
+operation, which fortunately it is not necessary because the simple formula (2.5) is valid for
+most of the Sun, with the only exception of optically thin resonance regions where (2.20)
+can be used. The solar HP flux in the visible is dominated by resonant production, which
+we discuss in detail next. Later, we integrate (2.5) in the whole mass and energy range to
+compute the non-resonant contribution and present our atlas of solar HP emission. Finally,
+we estimate the corrections to the 1D solar models used by computing the emission from a
+3D time-dependent solar atmosphere model.
+
+4.1                  Resonance region contribution
+In section 2.5.2 we showed that the formula (2.40) provides an accurate description of HP
+flux from the resonance region. In order to evaluate this expression we need the position of
+the resonance as a function of the frequency and the HP mass, r∗ = r∗ (ω, m). We have solved
+numerically the equation m2 = m2γ (ω, r∗ ) and present in Fig. 10 our results. In the regions
+shown, the resonance moves to low densities with decreasing HP mass and photon/HP energy.
+The first trend is obvious from the equation m2 = m2γ (ω, r∗ ) because m2γ is proportional to
+the densities of charged particles. The second follows from the fact that, at low densities,
+m2γ has a positive contribution from free electrons and a negative one from neutral H which
+decreases with ω 2 . A decrease in the negative contribution has to be balanced by a decrease
+in the positive one, i.e. displacement towards lower densities where the free electrons become
+much more scarce.
+
+                     10-4                                                  10-4
+
+                                  m=0.1 eV
+    Ρ@r* D @gcm3D
+
+
+
+
+                                                          Ρ@r* D @gcm3D
+
+
+
+
+                     10-5                                                  10-5
+
+
+
+
+                                 m=10-2 eV
+                       -6
+                     10                                                    10-6
+
+                                 m=10-3 eV
+
+                               m=10-4 ,10-5 eV
+                     10-7                                                  10-7
+                        10-1             1           10                      10-5   10-4   10-3    10-2   10-1
+
+                                      Ω@eVD                                                m@eVD
+
+Figure 10. Solar density at the radial distance from the solar centre, r∗ , at which photon-HP conver-
+sions are resonant, m2 = m2γ (ω, r∗ ). LEFT: for different HP masses, 0.1, 10−2 , 10−3 , 10−4 , 10−5 eV up
+to down, as a function of the HP energy. RIGHT: for different energies, 6, 5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5
+eV up to down, as a function of the HP mass.
+
+
+
+
+                                                     – 25 –
+                                                                                                                        1037
+                               1038                   -4   -5
+                 @1cm2s eVD                        10 ,3´10 eV
+
+
+
+
+                                                                                                          @1cm2s eVD
+                                                                                                                                                         Ω@eVD= 0.5
+                                 37        3´10-4                                                                         36                                     1
+                               10                                                                                       10
+                                                                                                                                                                1.5
+                                               -3
+                                             10 eV                                                                                                               2
+                                                                                                                                                                2.5
+                                             3´10-3 eV                                                                                                           3
+                               1036
+                                                                                                                        1035                                    3.5
+                                             10-2 eV
+
+
+
+
+                                                                                           dΩ Χ 2 m4 @eVD
+  dΩ Χ 2 m4 @eVD
+
+
+
+
+                                                                                                                                                                 4
+                                                                                                                                                                 5
+
+
+
+
+                                                                                                   1
+                                             3´10-2 eV
+          1
+
+
+
+
+                                                                                                                                                                 6
+                               1035
+                                                                                                                        1034
+
+
+
+
+                                                                                           dF
+                                             0.1 eV
+  dF
+
+
+
+
+                               1034
+
+                                                                                                                        1033
+                                    10-1                          1                   10                                   10-5   10-4   10-3    10-2   10-1     1    10
+
+                                                                Ω@eVD                                                                           m@eVD
+
+Figure 11. Solar flux of hidden photons from the resonance region in HPs/cm2 s eV divided by the
+factor χ2 (m/eV)4 for illustration purposes. LEFT: for different HP masses as a function of the HP
+energy. RIGHT: for different energies, 6, 5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5 eV up to down, as a function of
+the HP mass.
+
+
+
+     The flux of HPs can then be easily computed from (2.40), which we repeat here for
+convenience
+                                    √               −1 
+                          r∗2 χ2 m4 ω 2 − m2 dm2γ             e−τ∗
+                                                                   
+                  dΦ
+                     ≈    2                              1−          ,           (4.1)
+                  dω   πREarth  eω/T (r∗ ) − 1  dr             2
+                                                                                                                               r=r∗
+
+Our results are shown in Fig. 11. In the frequency range shown, the flux peaks at low
+frequencies and decreases strongly with the mass (note that the fluxes in Fig. 11 are divided
+by m4 for the sake of illustration). Let√ us first comment        on the spectral shape. It is the
+                                           2
+result of the convolution of the factor ω − m /(e2    ω/T (r∗ ) − 1) and the derivative |dm2γ /dr|−1
+which gives the typical size of the resonant region. Both are larger at low energies. The first
+term is relatively√flat because, at the masses and frequencies shown, T (r∗ ) ∼ O(1) eV. Taking
+ω  m we have ω 2 − m2 /(eω/T (r∗ ) − 1) ∼ T (r∗ ). The exponentially suppressed regime only
+starts to be felt at the highest energies and the threshold at the largest masses. The second
+term can be understood if we write a very schematic model for m2γ at low energies as
+
+                                                                                                    ω2
+                                                                                                      
+                                                                            4πα
+                                                                      m2γ ∼     nt    Xe − (1 − Xe ) 2                                                                (4.2)
+                                                                            me                      ω0
+
+where nt is the total number density of H atoms, Xe = nfree e /nt is the ionisation fraction
+and ω0 ∼ 10.2 eV is the resonant frequency of the Ly−α transition. The first term is due to
+free electrons and the second to neutral H. The derivative with respect to the radius can be
+written as
+                       dm2γ    m2γ d log nt d log Xe           ω2
+                                                                
+                            ∼                +         Xe 1 + 2                         (4.3)
+                        dr      r    d log r   d log r         ω0
+nt is a relatively smooth decreasing function of the solar radius and Xe is essentially = 1 flat
+in the interior and drops exponentially fast near the surface (see Fig. 7 right). Resonances
+
+
+
+
+                                                                                     – 26 –
+happening in the deep Sun have d log Xe /d log r ∼ 0 and thus dm2γ /dr independent of ω. But
+for those happening near the surface, the d log Xe /d log r term dominates. In that region,
+the resonance condition m2γ = m2 is realised despite a large value of 4παnt /me > m2 by
+some degree of cancellation in the term Xe − (1 − Xe )ω 2 /ω02 so that Xe ∼ ω 2 /ω02 and the
+derivative becomes suppressed at low energies. The suppression is not proportional to ω 2
+because d log Xe /d log r is very sensitive to r∗ , which increases for lower ω but, nevertheless,
+the general trend of smaller dm2γ /dr and thus bigger fluxes remains.
+     Let us know shed some light on the dependence with the mass. At high masses, the reso-
+nances happen in the deep Sun and, according to (4.3), the derivative dm2γ /dr is proportional
+to m2γ ≃ m2 so the flux should go as m2 |d log nt /d log r|−1 , which when properly evaluated
+at the resonance point gives something ∝ m3 . This trend shows in the mass region 0.01 − 0.1
+eV in Fig. 11 (right) and it is only stopped at higher masses because we have focused in
+the ω ∼ O(eV) region and the kinematic threshold cuts the curves. At masses below 0.01
+eV the resonances approach increasingly the photosphere and they cannot go further. This
+is because, for all the frequencies shown there is a point where m2γ becomes 0. HP masses
+of arbitrarily small mass, will have their resonance arbitrarily close to that region, but not
+further. In that limit, dm2γ /dr will be the same for all small masses (although it depends on
+the energy, as we have already explained). This explains the flattening of the low mass flux
+below m ∼ 0.01 eV in Fig. 11 (right).
+
+4.1.1   The infrared rise
+If we consider sufficiently low energies and low masses the resonant region starts to move
+out of the photosphere out into the open atmosphere. In Fig. 10 this is seen to happen
+in the region m . 10−4 eV and ω < 0.4 eV. In this region, the photon mass m2γ decreases
+smoother than in the surface, (see the electron density at ρ ∼ 10−8 − 10−7 g/cm3 displayed
+in Fig. 7 (right)) and consequently the resonance region is larger (|dm2γ /dr| smaller) and the
+photon→HP probability gets boosted. For m = 10−4 eV, the flux at ω ∼ 0.2 eV seems to be
+more than two orders of magnitude stronger than at 2 eV. But it is not clear that we can claim
+these results to be true because our solar model for refraction is probably not very accurate
+here. There are a number of effects that can alter our calculation. Let us discuss some of
+them. First of all, where the rise starts depends very much on the precise determination of
+the profile of the free electron density. In the atmosphere, the contribution of metallic donors
+is crucial, and we have performed only a rough estimate. Second, even a small number of
+non-H atoms with resonances in the visible or IR could in principle contribute more than
+the UV resonances of H to the index of refraction here. These contributions are negative
+and push the resonances again deep into the solar interior where the gradient |dm2γ /dr| is
+larger and thus the flux smaller. A simple estimate tells us that this uncertainty grows very
+much at low energies. Imagine that every metal, but not He, contributes one electron with
+a resonant transition at frequency ωm , then in the far infrared
+                                               2                           2
+                                ω2        nZ ωLy−α 2
+                                       P                         
+          2         4πα X                                     −3 10.2 eV
+       mγ Z ∼ −              nZ 2 ∼              2
+                                                    mγ H ∼ 10                 m2γ H ,       (4.4)
+                    me          ωm      nH     ωm                    ωm
+where m2γ,H is the estimation of the H contribution through the Lyman series. For ωm in
+the visible, this effect is negligible but if there is considerable structure below 0.3 eV the
+effect would be similar to the H. This rough estimate, shown with the aim of highlighting
+the typical orders of magnitude is enough to rise a voice of warning towards the refraction
+model validity in the IR. In the atmosphere, the density of H molecules like H2 , CH, OH, is
+
+
+
+
+                                             – 27 –
+extremely small but they have absorption lines in the IR that one should in principle take
+into account. Another assumption which is prone to fail in the atmosphere is LTE, which
+we have used to compute all the abundancies and the radiation temperature. Finally, we
+will see that the spherically symmetric model fails to some extent to reproduce the true 3D
+behaviour of the solar surface. Due to these issues, in this paper we can make no claim of
+any rigour in the derivation of the IR flux produced in the solar atmosphere. Although it is
+clear that the typical flux grows if resonances happen in the shallower density profile of the
+atmosphere, the low energy limit of Fig. 11 have to be understood as order of magnitude
+estimates.
+
+4.1.2             Spectral lines and the UV region
+The results shown in Fig. 11 show only tiny spectral features, which prove that the role of
+atomic resonances in the visible is not crucial. Near a strong spectral line, the pattern of the
+flux is expected to change because, just below, the effective mass m2γ is more negative and
+above, more positive. Resonances are displaced towards the solar interior in the red part and
+towards the surface in the blue and consequently, the red part is more luminous that the blue
+part. An example, corresponding to the H-α line is shown3 in Fig. 12. Even around this
+important line, the effects are at the 10 percent level. We will see later that O(1) fluctuations
+in the position of resonances close to the photosphere and their associated fluxes arise due to
+convection so these effects are completely unobservable. One can also see that the spectral
+feature softens as the HP mass grows and the resonance region enters deeper into the Sun,
+where the line is broader.
+      The behaviour around other lines is qualitatively similar to H-α. Lines of the Lyman
+series give the most spectacular effects in the UV, shown in Fig. 13. The Ly-α line at 10.2
+eV is so strong that pushes the low mass HP resonances up to 5 Mm deep inside the Sun
+   3
+    The small feature inside in the flux probably corresponds to the broadening of line, which changes fast as
+a function of the rising proton density.
+
+
+                0.30                                                                                4.5
+                                                                                   @1035cm2s eVD
+
+
+
+
+                0.28
+
+
+                0.26                                                                                4.0
+   Depth @MmD
+
+
+
+
+                0.24
+
+
+                                                                                                    3.5
+                                                              dA dt dΩ Χ 2 m4 @eVD
+
+
+
+
+                0.22
+                                                                            1
+
+
+
+
+                0.20
+
+
+                0.18                                                                                3.0
+                                                                dF
+
+
+
+
+                0.16
+
+                       1.86   1.88    1.90   1.92   1.94                                                  1.86   1.88    1.90   1.92   1.94
+
+                                     Ω@eVD                                                                              Ω@eVD
+
+Figure 12. Position of the resonance and resonance HP flux for m = 10−4 , 10−3 , 10−2 eV (solid,
+dashed,dot-dashed lines) near the H-α spectral line (shown as a vertical line).
+
+
+
+
+                                                           – 28 –
+                           12
+
+
+                           10
+  Depth @MmD
+                                  8
+
+
+                                  6
+
+
+                                  4
+
+
+                                  2
+
+
+                                  0
+                                        9             10               11                   12         13              14
+
+                                                                                   Ω@eVD
+                 @1035cm2s eVD
+
+
+
+
+                                      10-2
+  dΩ Χ 2 m4 @eVD
+
+
+
+
+                                      10-3
+  dF      1
+
+
+
+
+                                             9             10               11               12         13             14
+
+                                                                                    Ω@eVD
+
+Figure 13.                Position of the resonance and resonance HP flux for m                    =
+10−3 , 10−2 , 0.1, 0.16, 0.25, 0.4, 0.63 eV (Black, blue, red, orange, green, purple, brown lines) in
+the spectral region of the Lyman series of absorption lines (shown as vertical lines from (1→2) to
+(1→10)).
+
+
+
+at ω ∼ 10 eV and expels them outside of the Sun in the 10.2 − 11 eV range. The other
+Lyman lines have similar effects, bring the resonances some Mm inside of the Sun at their
+red sides and expel them to the solar surface in the blue sides. The resonant flux in the
+UV varies very violently with energy, dropping by many orders of magnitude in the blue
+sides of lines. Indeed, in these dips the resonance flux becomes subdominant with respect to
+the non-resonance flux as we shall see in section 4.2. The situation softens progressively for
+increasing HP masses and it is very smooth above m ∼ 0.4 eV.
+
+4.1.3                                  Width of the resonance region
+If the resonance is optically thick, it follows from (2.31) that the FWHM of the resonance is
+                                                 dm2γ −1
+∆rthick ∼ ωΓ(r∗ )                                 dr r [49].    When it is optically thin, it is given by the mean-free-path
+                                                       ∗
+around the saddle point, ∆l ∼ 1/Γ(r∗ ) but since l ∼ ∆r/ cos θ, ∆rthin ∼ cos θ/Γ(r∗ ) it is
+azimuth dependent. We can then estimate the resonance width as
+                                                             
+                                                           −1 
+                                    cos θ            dm2γ
+                         ∆r ∼ max           , ωΓ(r∗ )           .                    (4.5)
+                                    Γ(r∗ )            dr     
+                                                                                                  r∗
+
+which is shown in Fig. 14 as a function of the HP energy. The red range around the resonance
+position represents ∆rthin for cos θ = ±1 and the turquoise region ∆rthick . In resonance
+
+
+
+
+                                                                                 – 29 –
+regions close to the solar surface, scale heights are very short and thus ∆rthick decreases
+while mean-free-paths become longer. These resonance regions are optically thin, except
+near strong absorption lines. Note that in these resonances, trajectories with cos θ ≃ 0 are
+thick because traveling in a direction perpendicular to the radial direction, the photon/HP
+sees the same properties of the Sun before being absorbed. So, in reality, the thickness of
+resonances in the red regions vary from the red to the turquoise range depending on cos θ.
+                                                                   −1/2
+The size of the saddle point region, δl ∼ |ϕ00 |−1/2 = dm2γ /dr2ω       , is smaller than 100
+meters in the region shown.
+      Deeper than about 0.4 Mm, all the resonances are optically thick. Comparison of Fig.
+14 with the temperature and density profile of Fig. 5 shows that that in general, resonances
+are extremely thin with respect to the temperature scale height, even around absorption
+lines or phoionisation thresholds. Assuming constant temperature and density within the
+resonances seems a reasonable approximation in this energy range.
+
+4.2   Non-resonant contribution (bulk of the Sun)
+So far we have focused on the resonance region and its contribution to the HP flux. We
+have advanced that it is the most relevant contribution in the visible range of energies. In
+this section we justify why this is so and then compute the non-resonant flux in the UV and
+above where it can dominate.
+      Consider the integral over the Sun that gives the total HP flux on Earth for a given HP
+energy, (2.26). The locally homogeneous plasma approximation, (2.5), is an extremely good
+approximation for the photon/HP conversion probability, except for optically thin regions,
+which however are so thin (like any optically thick) that do not make a difference in this
+discussion. Moreover, we know that once integrated over the Sun, the result is independent
+of the optical thickness of the resonance. After performing the now trivial cos θ integral, the
+HP flux in this approximation is
+                          √
+                    1 ω ω 2 − m2                                          χ2 m 4
+                                     Z
+           dΦ                                2       Γ(r)
+              = 2                          r   dr                                          . (4.6)
+           dω    REarth      π2        sun        eω/T (r) − 1 (m2γ (r) − m2 )2 + (ωΓ(r))2
+
+There are three qualitatively different regions in this integral. The most notable is the res-
+onance region, of typical size ∆r ∼ ωΓ|dm2γ /dr|−1  RSun where the conversion probability
+is maximal ∼ χ2 (m2 /ωΓ)2 because typically m2γ = m2  ωΓ (with exceptions being strong
+absorption lines, for which the resonance is proportionally wider).
+      Outside the resonance region, m2γ  m2 , the conversion probability is like in vacuum
+    2
+∼ χ , the region is bigger than the resonance region but temperatures and production rates
+are very small so that we shall not expect competitive rates from here.
+      Inside the resonance region r  r∗ we have m2γ  m2 and thus (m2γ )2 +(ωΓ)2  m4 and
+the conversion probability is suppressed with respect to the vacuum case ∼ O(χ2 ). However,
+this region has the typical size of the whole volume of the Sun, and the factor eω/TΓ −1 is
+larger because so are the temperature and the electron/proton densities that determine Γ.
+One could be tempted to think that, even if the probability is suppressed, the net flux is
+competitive with the resonance. What is stronger, the Γr2 /(eω/T − 1) enhancement or the
+(m2γ )2 + (ωΓ)2 suppression?
+      The situation at visible energies is depicted in Fig. 15, where we show examples of
+                                                                               dΦ
+the differential flux produced in the Sun as a function of the solar radius dωdr   . Indeed,
+the flux outside of the resonance falls extraordinarily fast and can be neglected. The HP
+
+
+
+
+                                             – 30 –
+               0.8
+
+                           width ´ 15                                                   widths ´ 10
+                                                                                                                                           14
+                                                                            3.0
+                                                                                                                                                                  m = 1.00 eV
+
+
+
+                                                                                                     m = 0.100 eV
+               0.6                                                                                                                         12
+
+                                                                            2.5
+
+
+
+
+                                                                                                     m = 0.056 eV                          10
+
+
+
+
+                                                                                                                              Depth @MmD
+  Depth @MmD
+
+
+
+
+                                                               Depth @MmD
+
+
+
+
+               0.4                                                          2.0
+                                                                                                                                                                  m = 0.56 eV
+
+
+                                                                                                                                            8
+
+
+                                                                                                     m = 0.032 eV
+                                                                            1.5
+
+               0.2
+
+                                                                                                                                            6                     m = 0.32 eV
+                                 m = 0.0100 eV
+                                                                                                     m = 0.018 eV
+                                     0.0056 eV
+                                     0.0032 eV
+                                                                            1.0
+                                     0.0018 eV                                                                                                                    m = 0.18 eV
+                                     0.0010 eV                                                                                              4
+
+               0.0
+                     1.0   1.5   2.0   2.5   3.0   3.5   4.0                      1.0   1.5    2.0    2.5   3.0   3.5   4.0                     1.0   1.5   2.0    2.5   3.0   3.5   4.0
+
+                                  Ω@eVD                                                         Ω@eVD                                                 widths ´ 10
+                                                                                                                                                          Ω@eVD
+Figure 14. Resonance region shown with the estimated width as a shadowed region around it in the
+visible energy range. The red and turquoise regions correspond to the optically thin and optically
+thick criteria.
+
+
+
+flux originating from the bulk Sun inside the resonance region drops dramatically below
+the resonance and then stabilises to a much smoother decreasing contribution. In the solar
+interior the refraction is dominated by free electrons (m2γ = 4παnfree
+                                                                  e /m      ) and the absorption
+                                    2  3 √         −ω/T   free      2  3
+                                                                         √e
+by free-free transitions (Γ ≃ 64π α me (1 − e           )ne np /(3me ω 2πT ) neglecting Ff f
+and screening) from which we can already see that the density dependences cancel out in
+Γ/m4γ (nfree
+          e   ∼ np ) and the resulting formula depends smoothly on the solar parameters. We
+
+
+
+
+                                                                                              – 31 –
+                                                     10-1     1       10       102                                                   10-1     1         10   102
+                                              1037                                                                          1037
+
+                             @1cm2s eV MmD
+
+
+
+
+                                                                                                           @1cm2s eV MmD
+                                              1036                                                                          1036
+
+                                              1035                                                                          1035
+
+                                              1034                                                                          1034
+       dΩ dDepth Χ 2 m4 @eVD
+
+
+
+
+                                                                                     dΩ dDepth Χ 2 m4 @eVD
+                                              1033                                                                          1033
+                      1
+
+
+
+
+                                                                                                    1
+                                              1032                                                                          1032
+
+                                              1031                                                                          1031
+          dF
+
+
+
+
+                                                                                        dF
+                                              1030                                                                          1030
+                                                     10-1     1       10       102                                                   10-1     1         10   102
+
+                                                            Depth @MmD                                                                      Depth @MmD
+
+Figure 15. Solar HP production rate as a function of the depth inside the solar surface. LEFT:
+As a function of energy for m = 10−3 eV. Curves are for ω = 1, 2, 3, 4 eV from left to right at the
+peak. The bump in the ω = 2 eV line corresponds to the H-α line, which is very close. RIGHT: As a
+function of HP mass for ω = 2.3 eV. Curves are for m = 10−4 , 10−3 , 10−2 , 0.1, 1 eV from left to right
+at the peak.
+
+
+
+find                                                                                                                         2
+                                                                                                                                   e−ω/T
+                                                                                     
+                                                       dΦ                   m 4                              r                                1
+                                                           ≈ 1.2 × 1032 χ2                                                         √        2 s eV Mm
+                                                                                                                                                               (4.7)
+                                                      dωdr                  eV                 RSun                                  Tω  cm
+where T, ω in this formula are in eV units. These estimates are shown as dashed lines in Fig.
+15 and fit very well the full formula at depths larger than 10 Mm. With RSun = 695 Mm,
+one could think that this contribution is comparable to the resonance contribution√for the
+highest HP masses (O(eV) in this context of visible energies), however, the factor of T ω in
+the denominator suppresses enough the contribution.
+      Finally, we have performed numerical integrations of (4.6) in the 1−104 eV energy range
+in a generous range of masses to compare with the resonance estimate presented before. The
+atlas of HP solar emission is presented in Fig. 16. For each HP energy and mass we show
+the full emission from the integral (4.6) (solid line) and the contribution from the resonance
+region estimated by (2.40) (dashed line). The solid lines are coloured-coded according to the
+contribution that dominates the overall flux: black where the resonance accounts more than
+60%, red when it is less than 40% and an interpolation in blue in between. The red colour
+reminds that these results depend on our model of Γ.
+      In the visible, the results agree notably well with the resonance contribution. Only
+above m > 0.1 eV the all Sun integration rises the prediction somehow, up to 40% in some
+cases. However, most of this extra flux probably comes from the tails of the resonance region,
+particularly the inner one where the temperature T and production rate ∝ Γ are larger and
+can rise somehow the flux. So this deviation has to be understood not as a contribution from
+the bulk of the Sun but as a correction to the thin-resonance condition that we have used.
+In conclusion, the resonance region dominates the production of solar HPs in the visible and
+provides a precise prediction independent on the uncertainties on Γ.
+
+
+
+
+                                                                              – 32 –
+                           40
+LogHΩ ddΩF Χ12 @1cm2sDL
+
+
+
+
+                           35
+
+
+
+
+                           30
+
+
+
+
+                           25
+
+
+
+
+                           20
+                                1   10                    102                 103                   104
+
+                                                    Ω@eVD
+Figure 16. Solar flux of transversely polarised HPs computed in this paper as a function of HP
+energy for different HP masses. The lowest six lines correspond to m = 10−3 , 3.16 × 10−3 , 10−2 , 3.16 ×
+10−2 , 10−1 , 0.316 eV from the bottom one up, and for the rest of the lines the mass is recognisable
+though the threshold, m = 1, 3.16, 10, 31.6, 100, 316, 103 eV. Note that we show the energy flux,
+i.e ω(dΦ/dω). The curves are coloured according to the most relevant contribution: black for the
+resonance region, red for the bulk of the Sun and blue wherever the ratio of the two is in the 40-60%
+range.
+
+
+
+     In the UV, the situation changes very much. For low mass HPs (below m ∼ 10 eV), if
+the resonance takes place, it does so in regions where the temperature is O(eV). The resonant
+production of this high energy HPs starts to be exponentially suppressed and thus the bulk
+contribution competes. In the near UV, below ω ∼10 eV the overwhelming number of atomic
+transitions of metals rises the resonance prediction. In the Lyman region (10-14 eV) we see
+
+
+
+
+                                                 – 33 –
+the structure advanced in section 4.1.2. In the blue part of the Lyman atomic transitions,
+the resonance is not possible and the flux is lower and dominated by the bulk (red dips),
+while in the red part there is still some resonance emission, which turns out to be of the same
+order than the bulk emission (probably also because the resonances are not thin). In the far
+UV the exponential suppression is huge and we only see the bulk emission. For instance, we
+can see the 1s-2p transition line of singly ionised helium at ω ∼ 40 eV and guess a multitude
+of smaller lines from metals. From ω ∼ 300 eV we see strong line emission in the soft X-ray
+region that decreases at 3 keV but shows up to 6-8 keV with the strongest Iron lines.
+     As we consider larger HP mass, the transition between resonance domination at low
+energies and bulk domination at the highest displaces towards higher energies because the
+resonance region is located deeper into the Sun and happens at higher temperatures. For
+instance, HPs with masses around and above 10 eV have resonance regions where the temper-
+ature is high enough to dominate the full emission up to ω ∼ 3 keV. Finally, above m ∼ 300
+eV, there is no resonance region in the Sun (298 eV is the highest photon effective mass in
+our solar model) and the HPs are always produced non-resonantly. These high mass HPs are
+produced mostly in the core, where most of the elements are fully ionised and therefore one
+does not see many atomic lines, with Iron being the obvious exception.
+
+4.3   3D dynamic solar surface emission
+So far we have assumed that the properties of the solar plasma, temperature, density and
+composition, are spherically symmetric. The solar interior is radiative and spherically sym-
+metric to a good enough precision but, from r ∼ 0.7RSun the outgoing energy transport
+becomes convective and inhomogeneities start to grow towards the solar surface. Energy is
+transported by hot upflows that expand progressively as they ascend, cool radiatively in the
+photosphere, and descend in a turbulent dense downflow. Hot diverging upflows bounded
+by cool lanes of downflows form the characteristic pattern of solar granules observed in the
+solar photosphere, see [104] for a review. The density and temperature profiles do not only
+depend on the solar radial coordinate. We have a full time-dependent 3D-problem.
+     Notwithstanding the complexity, the situation for the production of HPs has not changed
+much. HPs can be produced resonantly around a region where m2γ (ω, x) = m2 and for
+frequencies in the visible and low mass HPs, this region is in very close to the solar surface.
+When we considered the Sun as spherically symmetric, the resonance region was a perfect
+spherical shell. Now we consider the inhomogeities due to surface granulation and we expect
+to have a textured surface which displaces slightly out of a perfect sphere with the hot upflows
+(because ionisation is larger) and in with the downflows. Solar granules have a characteristic
+extent of the order of 1 Mm, and evolve in times of the order of 10 minutes. These magnitudes
+are very large compared with the width of the resonance region and therefore it is reasonable
+to assume that our resonant flux equation (2.40) still holds locally. Since now the resonance
+region is not perpendicular to the radial vector we have to substitute the derivative |dm2γ /dr|
+by the gradient |∇m2γ | and average over the surface. We thus propose
+                                             2
+                                            RSun
+                                                   Z
+                  dΦ       2 4
+                               p
+                                  2      2
+                                                        dS         1       1
+                       ≈ χ m ω −m            2             2                               (4.8)
+                  dω                       πREarth    4πRSun e  ω/T  − 1 |∇m2γ |
+where the integral is over the surface (or surfaces) where m2γ (x) = m2 . We have dropped the
+term involving e−τ∗ because resonances in the visible lie typically in the optically thick Sun.
+     We have made use of the 3D solar atmosphere model of [87] to estimate this 3D flux
+and compare it with the 1D idealisation shown before. The model covers a small 6Mm×6Mm
+
+
+
+
+                                            – 34 –
+patch of the surface, extends from -0.8 Mm to 0.5 Mm in depth and a period of 45 solar min,
+and thus gives a sensible description of the surface in length and time scales where granulation
+evolves. It was used to interpret the solar spectrum and determine atomic abundances from
+the shape and intensity of absorption lines. In general, the agreement between the fits
+and observations is excellent, which builds strong confidence in this model as a trustable
+description of the solar surface, at least in the line forming region. The model was used in
+[88] to assess the effect of HPs in the determination of solar abundances, which was found to
+be negligible. The model does not include magnetic fields and thus includes no sunspots or
+faculae. Since they are relatively scarce, we can neglect them.
+      A 2D time-slice of the situation is depicted in Fig. 17. We see the corrugated shape of
+the resonance locus for several HP masses (black lines) with a temperature background in
+colours. The function m2γ (ω, x) follows very closely the temperature because the ionisation
+fraction is most sensitive to it. HP masses below 10−3 eV have resonance regions which are
+indistinguishably close in the picture to the region where m2γ (ω, x) = 0.
+
+             0.5
+Depth @MmD
+
+
+
+
+             0.4
+                                                                                                        1
+             0.3                                                                                        0.9
+             0.2                                                                                        0.8
+                                                                                                        0.7
+             0.1                                                                                        0.6
+             0.0                                                                                        0.5
+                   0   1           2             3             4             5             6
+                                                                                               -6
+                                                                                               -4
+                                                                                                -2
+                                                                                                 0246
+                                             x @MmD
+             0.5
+Depth @MmD
+
+
+
+
+             0.4
+                                                                                                        1
+             0.3                                                                                        0.9
+             0.2                                                                                        0.8
+                                                                                                        0.7
+             0.1                                                                                        0.6
+             0.0                                                                                        0.5
+                   0   1           2             3             4             5             6
+                                                                                               -6
+                                                                                               -4
+                                                                                                -2
+                                                                                                 0246
+                                             x @MmD
+
+Figure 17. UP: 2D slice of the solar atmosphere model of [87] showing the temperature profile in
+eV as a function of depth and transverse extent along the solar surface (x). Superimposed are the
+resonance loci, m2γ (ω, x) = m2 , where photon→HP conversions are resonant for m = 10−4 , 10−3 , 3.2 ×
+10−3 , 4.5×10−3 , 5.5×10−3 eV from bottom to top. DOWN: For comparison we show the temperature
+profile of the spherically symmetric solar model of [89]. Note that the reference level to measure the
+depth is different in both cases.
+
+
+      We have estimated the integral (4.8) over a range of HP masses and energies and show
+our results in Fig. 18. Due to computational limitations, we have not integrated over the
+whole 3D model but just over one central 2D slice and then extrapolated the results to 3D.
+The procedure is as follows. For each of the 89 time-steps of the simulation we have a 2D
+(depth vs surface coordinate x) temperature and density map from which we can compute
+m2γ (d, x). For each HP mass and energy we find the line (or lines) where m2γ (d, x) = m2 .
+If we assume that the properties do not depend on the orthogonal surface coordinate y we
+
+
+
+
+                                               – 35 –
+would compute the flux simply as
+                                             *                                        +
+                                   2
+                                  RSun           XZ
+             dΦ        p                                   dl     1        1
+                ≈ χ2 m4 ω 2 − m2   2                           ω/T − 1 |∇m2 (d, x)|
+                                                                                          ,   (4.9)
+             dω                  πREarth               res X  e           γ
+                                               lines
+
+where X = 6 Mm and the brackets denote a time average However, in the real 3D calculation
+we have to correct for the corrugation in the coordinate y as well as the fact that the gradient
+will in general be larger than the 2D version. In these integrals, the number of points where
+the 2D-gradient is really low and thus the contribution to the integral is large is relatively
+scarce. These contributions are mostly suppressed by the third component of the gradient
+in the 3D case, but since they don’t contribute much already we simply neglect them and
+approximate (on average) the inverse 3D-gradient with the inverse 2D gradient. All in all,
+we use
+                                        *                                       +
+                                 R 2          X Z dl
+         dΦ          p                     Lt                 1         1
+             ≈ χ2 m 4 ω 2 − m 2    Sun
+                                                           ω/T − 1 |∇m2 (d, x)|
+                                                                                  .       (4.10)
+         dω                     πREarth X          res X e             γ
+                                             lines
+
+We remark that estimating the 3D flux by a x−average over radial profiles (i.e. 1D gradients)
+leads to very erroneous conclusions. The reason can be understood looking at Fig. 17.
+Around x ∼ 1 Mm there are regions where m2γ depends mostly on the depth x but not on d,
+the 1D gradient goes to zero in some cases and the flux would blow up. In the 2D calculation,
+the resonance width is much more controlled because there comparatively much less points
+where the 2D gradient goes to zero.
+      We show the time-averaged flux as a solid line and the 1 − σ contours due to time
+variability, which shall go to zero when a larger surface is integrated. The results are com-
+pared with the spherically symmetric estimate, shown as a dashed black line. Since the 3D
+simulation does not extend very deep in the Sun, we cannot cover the resonance region for
+the highest masses m > 5 × 10−3 eV in this study and our results stop around that mass.
+At large depths d & 0.5 Mm, the inhomogeneities are relatively small, variations shrink and
+the calculations seem to converge to the ∝ m3 trend observed in the 10−2 − 0.1 mass range
+derived before with the 1D averaged atmosphere. The last points of the 3D data lie typically
+a factor of ∼1.5 above the 1D calculations and we expect that the 3D and 1D lines converge
+before m ∼ 0.2 eV because resonances would happen deeper than 1 Mm where temperature
+and density fluctuations are small and 3D and 1D profiles should agree very well.
+      In general, the results agree well with our previous calculation in order of magnitude
+and trend but there are some O(1) differences. For HP masses in the meV, the flux is larger
+by a factor of a few and for smaller masses the flux is lower by a similar factor, although with
+some frequency dependence. Actually, there is a very simple interpretation of the differences.
+In general, 3D models of the solar surface have temperature profiles with are shallower in the
+solar interior and steeper in the outside when compared with the averaged 1D versions, see
+for instance Fig. 13 of [104] and compare our Fig. 17 up and down. This translates into the
+average profile for m2γ near the solar surface. Therefore, resonance regions which lie deeper
+in the Sun are larger and those lying outside are smaller than in the averaged 1D model used
+and the same translates into the HP fluxes. Since decreasing the mass and the frequency,
+the resonance region gets displaced towards the solar exterior, the HP fluxes are expected
+to decrease for low masses and low energies and increase for relatively high masses and high
+energies. This is precisely what we observe in Fig. 18. The 1D averaged profiles might
+be very useful for solar modelling but the formula for resonant HP emission (4.8) is highly
+
+
+
+
+                                            – 36 –
+non-linear in the temperature and density and thus it is clear that using them introduces new
+uncertainties. A precise determination of the solar HP flux below m ∼ 0.2 eV thus requires
+a full 3D model of the solar atmosphere.
+      Finally, note that the fluxes increase slightly also because, due to corrugation, the
+resonance region is larger. We estimate this effect to be at most 40%. The corrugation
+also influences the angular distribution of the flux, discussed in section 2.6. For HP masses
+below 0.02 eV, the resonance width ∆ψ∗ gets broadened on average to a value ∆ψ∗ ∼
+0.1Mm/REarth ≡ 0.14 arcseconds. This is of the same order than the widening of ∆ψ∗ that
+an experiment would see if measuring in the whole visible range at the same time because of
+the energy dependence of r∗ , see Fig. 14.
+
+
+
+
+                                           – 37 –
+                                             Ω @eVD=1.5                                                                                     Ω @eVD=2
+                                 1036                                                                                       1036
+                   @1cm2s eVD
+
+
+
+
+                                                                                                              @1cm2s eVD
+                                 1035                                                                                       1035
+    dΩ Χ 2 m4 @eVD
+
+
+
+
+                                                                                               dΩ Χ 2 m4 @eVD
+            1
+
+
+
+
+                                                                                                       1
+    dF
+
+
+
+
+                                                                                               dF
+                                 1034                                                                                       1034
+                                   10-4   10-3                                  10-2   10-1                                   10-4   10-3              10-2   10-1
+
+                                                 m@eVD                                                                                      m@eVD
+                                             Ω @eVD=2.5                                                                                     Ω @eVD=3
+                                 1036                                                                                       1036
+                   @1cm2s eVD
+
+
+
+
+                                                                                                              @1cm2s eVD
+
+
+
+                                 1035                                                                                       1035
+    dΩ Χ 2 m4 @eVD
+
+
+
+
+                                                                                               dΩ Χ 2 m4 @eVD
+            1
+
+
+
+
+                                                                                                       1
+    dF
+
+
+
+
+                                                                                               dF
+
+
+
+
+                                 1034                                                                                       1034
+                                   10-4   10-3                                  10-2   10-1                                   10-4   10-3              10-2   10-1
+
+                                                 m@eVD                                                                                      m@eVD
+                                                                                              Ω @eVD=3.5
+                                                                              1036
+                                                                @1cm2s eVD
+
+
+
+
+                                                                              1035
+                                                 dΩ Χ 2 m4 @eVD
+                                                 dF      1
+
+
+
+
+                                                                              1034
+                                                                                10-4   10-3                                   10-2   10-1
+
+                                                                                              m@eVD
+
+Figure 18. Flux of HPs in the 3D surface model of (4.8) computed from (4.8) (solid lines) compared
+with the result of the 1D model (dashed)
+
+
+
+
+                                                                                       – 38 –
+5   Summary and conclusions
+
+In this paper we have reviewed the phenomenon of photon↔HP oscillations in a plasma,
+focusing on a stellar hydrogen-dominated medium. We have shown how to build the polari-
+sation tensor (index of refraction) of such a plasma and we have performed calculations for a
+spherically symmetric standard solar model [89] and a 3D model of the solar atmosphere [87].
+The most complete atlas of transverse HP emission to date is presented in Fig. 16, and it is
+corrected at low energies and HP masses by the 3D calculations shown in Fig. 18. Tables
+with all the results are available and can be obtained by contacting with the author.
+      We have studied in depth resonant photon↔HP oscillations in the conditions relevant
+for the solar plasma, including the effects of inhomogeneities. We identified the regions of the
+Sun where resonant conversions take place integrated the HP production from these regions.
+At low energies and HP masses, this contribution dominates the flux. For this task we were
+helped by two facts that we have also discussed: 1) that resonance regions are very thin with
+respect to temperature and density scale heights inside of the Sun and 2) the integral of the
+HP production across a resonance region is independent of the value of the mean-free-path of
+photons around it, i.e. it is the same for optically thick and thin resonances (as long as the
+mean free path is non-zero and the temperature is reasonably constant across its width). The
+HP flux from resonance regions only, in the 1D and 3D models is presented in Fig. 11 and
+Fir. 18. In general the flux grows towards lower energies, until overcome by the production
+threshold. For very low masses, where the threshold is not of concern, our calculations are
+limited by ou solar refraction model. Here, resonances happen in the solar atmosphere, where
+atomic transitions of metals and molecules might be relevant but were not included. In the
+ultraviolet range, the flux is smaller and has a non-trivial energy dependence, cf. Fig. 13,
+which we have discussed at length. In the visible, the energy dependence is very smooth
+and the effects of hydrogen lines are small, cf. Fig. 12. Differences between the 1-D and
+3-D models have been found to be substantial, cf. Fig.18. Further refined work is necessary
+to improve the precision here, because our 3-D models did not extend much inside the Sun.
+Our calculations are uncertain by a factor of ∼ 2 below m ∼ 0.01 eV which decreases up to
+20% around m ∼ eV.
+      We have found the visible flux very similar to previous estimates [69, 70], which were
+however based on shaky grounds. The current calculation settles, to the authors knowledge,
+all the issues left previously undiscussed.
+      The computed HP flux at visible energies can be used to search for these particles with
+helioscopes in regions of parameter space where they might arise in string theories [38, 42]
+and even constitute the dark matter of the universe [24]. Such a future helioscope should
+be much more powerful than present-day CAST, SUMICO or SHIPS to be more sensitive
+than the solar precision constraint [47] or the absence of ionisation events in XENON10 [50],
+both based on the much larger flux of longitudinally polarised HPs from the Sun. Due to the
+relatively modest flux of transversely polarised HPs, the magnitude of such an experiment
+is considerably big, although perhaps not unrealistic. The International Axion Observatory
+(IAXO) [105] is a proposed axion helioscope that seems to fall in the required category, large
+aperture and low background [106], although it mainly aims at the X-ray energies relevant for
+axions and deploys a huge superconducting toroid, which would not be necessary to search
+for solar hidden photons.
+
+
+
+
+                                            – 39 –
+Acknowledgements
+
+The author is gratefully indebted to Pat Scott and Martin Asplund for making available their
+3D atmosphere model for the results of this paper. The input and inspiration from illumi-
+nating conversations with S. Troiksky, J. Jaeckel and G. Raffelt cannot be underestimated.
+Finally, it is a real pleasure to acknowledge the help of Davide Cadamuro during the early
+developments of this project. This work was supported by the the Alexander von Humboldt
+Foundation, Deutsche Forschungsgemeinschaft through grant No. EXC 153, the European
+Union through the Initial Training Network Invisibles, grant No. PITN-GA-2011-28944 and
+Spanish ministry of Economy and Competitively (where is the science?) through the Ramon
+y Cajal fellowship 2012-10597.
+
+A     Between thin and thick
+                                                                                                    0
+We start with (2.7) and expand m2γ around the resonance point m2γ = m2 + m2γ (r − r∗ ). Now
+consider the integral
+                    Z ∞
+            r 2 Γ∗
+  I(θ) = ω/T∗           drP (r, cos θ)
+          e ∗ − 1 −∞
+                    Z ∞    Z ∞                  20 2   2                                 2
+            r∗2 Γ∗                dr1 m2 i mγ (r1 −r4ω −2r   ∗ (r1 −r))
+                                                                        −
+                                                                           Γ∗ (r1 −r)
+       = ω/T            dr                  e            cos θ               2| cos θ|                            (A.1)
+          e ∗ − 1 −∞         r   cos θ 2ω
+                     2 2 Z ∞      Z ∞Z ∞                     20 2     2
+            r∗2 Γ∗    m                          dr1 dr2 i mγ (r1 −r4ω2 −2r     ∗ (r1 −r2 ))   Γ (r +r −2r)
+                                                                                             − ∗ 2|1 cos2θ|
+       = ω/T                     dr                       e                cos θ
+          e ∗ − 1 2ω         −∞       r     r    cos2 θ
+                     2 2 Z ∞      Z ∞Z ∞                      20 2      2
+            r∗2 Γ∗    m                          dx1 dx2 i mγ (x1 −x2 −2(r         ∗ −r)(x1 −x2 ))    Γ (x1 +x2 )
+                                                                                                   − ∗2| cos
+       = ω/T                     dr                        e                4ω cos θ                         θ|
+          e ∗ − 1 2ω         −∞       0     0     cos2 θ
+                                                    20 2 −x2 )                                     20
+                     2 2 Z ∞ Z ∞                                                                                 !
+            r∗2 Γ∗    m                dx1 dx2 i mγ4ω(xcos
+                                                        1    2     Γ∗ (x1 +x2 )
+                                                                − 2| cos θ|                   2m   γ
+       = ω/T                                2θ
+                                                e          θ                      2πδ                   (x1 − x2 )
+          e ∗ − 1 2ω         0    0     cos                                                  4ω cos   θ
+                     2 2        0    −1 Z
+           2πr∗2 Γ∗   m        m2γ            ∞
+                                                   dx1            Γ∗ x1
+       = ω/T                                         2
+                                                          − e− cos θ
+          e    ∗ − 1 2ω     2ω cos θ        0    cos θ
+               πr∗2 m4   20
+                            −1
+        =               mγ     .
+            eω/T∗ − 1 ω
+
+References
+ [1] L. B. Okun, Limits Of Electrodynamics: Paraphotons?, Sov. Phys. JETP 56 (1982) 502 [Zh.
+     Eksp. Teor. Fiz. 83 (1982) 892].
+ [2] B. Holdom, Two U(1)’s and Epsilon Charge Shifts, Phys. Lett. B 166 (1986) 196
+ [3] R. Foot and X. -G. He, Comment on Z Z-prime mixing in extended gauge theories, Phys. Lett.
+     B 267 (1991) 509
+ [4] R. Foot, H. Lew and R. R. Volkas, A Model with fundamental improper space-time symmetries,
+     Phys. Lett. B 272 (1991) 67
+ [5] J. Jaeckel, A force beyond the Standard Model - Status of the quest for hidden photons, Frascati
+     Phys. Ser. 56 (2012) 172, arXiv:1303.1821
+
+
+
+
+                                                       – 40 –
+ [6] J. Jaeckel and A. Ringwald, The Low-Energy Frontier of Particle Physics, Ann. Rev. Nucl.
+     Part. Sci. 60 (2010) 405, arXiv:1002.0329
+ [7] H. Georgi, P. H. Ginsparg and S. L. Glashow, Photon Oscillations and the Cosmic Background
+     Radiation, Nature 306 (1983) 765
+ [8] M. Axenides and R. H. Brandenberger, Primordial Fluctuations, Dark Matter, And Photon
+     Oscillations, Phys. Lett. B 134 (1984) 405
+ [9] H. P. Nordberg and G. F. Smoot, The Cosmic microwave background spectrum: An Analysis of
+     observations, Submitted to: Astrophys.J. astro-ph/9805123
+[10] A. Mirizzi, J. Redondo and G. Sigl, Microwave Background Constraints on Mixing of Photons
+     with Hidden Photons, JCAP 0903 (2009) 026, arXiv:0901.0014
+[11] J. Jaeckel, J. Redondo and A. Ringwald, Signatures of a hidden cosmic microwave background,
+     Phys. Rev. Lett. 101 (2008) 131801, arXiv:0804.4157
+[12] A. P. Lobanov, H. -S. Zechlin and D. Horns, Astrophysical searches for a hidden-photon signal
+     in the radio regime, Phys. Rev. D 87 (2013) 6 065004, arXiv:1211.6268
+[13] D. F. Bartlett, P. E. Goldhagen and E. A. Phillips, Experimental Test of Coulomb’s Law, Phys.
+     Rev. D 2 (1970) 483
+[14] E. R. Williams, J. E. Faller and H. A. Hill, New experimental test of Coulomb’s law: A
+     Laboratory upper limit on the photon rest mass, Phys. Rev. Lett. 26 (1971) 721
+[15] J. Jaeckel and S. Roy, Spectroscopy as a test of Coulomb’s law: A Probe of the hidden sector,
+     Phys. Rev. D 82 (2010) 125020, arXiv:1008.3536
+[16] M. Ahlers, H. Gies, J. Jaeckel, J. Redondo and A. Ringwald, Light from the hidden sector,
+     Phys. Rev. D 76 (2007) 115005, arXiv:0706.2836
+[17] M. Ahlers, H. Gies, J. Jaeckel, J. Redondo and A. Ringwald, Laser experiments explore the
+     hidden sector, Phys. Rev. D 77 (2008) 095001, arXiv:0711.4991
+[18] K. Ehret, M. Frede, S. Ghazaryan, M. Hildebrandt, E. -A. Knabbe, D. Kracht, A. Lindner and
+     J. List et al., New ALPS Results on Hidden-Sector Lightweights, Phys. Lett. B 689 (2010) 149,
+     arXiv:1004.1313
+[19] J. Redondo and A. Ringwald, Light shining through walls, Contemp. Phys. 52 (2011) 211,
+     arXiv:1011.3741
+[20] H. Vogel and J. Redondo, Dark Radiation constraints on minicharged particles in models with a
+     hidden photon, JCAP 1402 (2014) 029, arXiv:1311.2600
+[21] M. Pospelov, A. Ritz and M. B. Voloshin, Bosonic super-WIMPs as keV-scale dark matter,
+     Phys. Rev. D 78 (2008) 115012, arXiv:0807.3279
+[22] J. Redondo and M. Postma, Massive hidden photons as lukewarm dark matter, JCAP 0902
+     (2009) 005, arXiv:0811.0326
+[23] A. E. Nelson and J. Scholtz, Dark Light, Dark Matter and the Misalignment Mechanism, Phys.
+     Rev. D 84 (2011) 103501, arXiv:1105.2812
+[24] P. Arias, D. Cadamuro, M. Goodsell, J. Jaeckel, J. Redondo and A. Ringwald, WISPy Cold
+     Dark Matter, JCAP 1206 (2012) 013, arXiv:1201.5902
+[25] D. Horns, J. Jaeckel, A. Lindner, A. Lobanov, J. Redondo and A. Ringwald, Searching for
+     WISPy Cold Dark Matter with a Dish Antenna, JCAP 1304 (2013) 016, arXiv:1212.2970
+[26] J. Jaeckel and J. Redondo, An antenna for directional detection of WISPy dark matter, JCAP
+     1311 (2013) 016, arXiv:1307.7181
+[27] J. Jaeckel and J. Redondo, From Resonant to Broadband Searches for WISPy Cold Dark
+
+
+
+
+                                              – 41 –
+    Matter, Phys. Rev. D 88 (2013) 115002, arXiv:1308.1103
+[28] H. An, M. Pospelov, J. Pradler and A. Ritz, Direct Detection Constraints on Dark Photon
+     Dark Matter, arXiv:1412.8378
+[29] N. Arkani-Hamed, D. P. Finkbeiner, T. R. Slatyer and N. Weiner, A Theory of Dark Matter,
+     Phys. Rev. D 79 (2009) 015014, arXiv:0810.0713.
+[30] R. Essig, J. A. Jaros, W. Wester, P. H. Adrian, S. Andreas, T. Averett, O. Baker and B. Batell
+     et al., Dark Sectors and New, Light, Weakly-Coupled Particles, arXiv:1311.0029
+[31] K. R. Dienes, C. F. Kolda and J. March-Russell, Kinetic mixing and the supersymmetric gauge
+     hierarchy, Nucl. Phys. B 492 (1997) 104, hep-ph/9610479
+[32] A. Lukas and K. S. Stelle, Heterotic anomaly cancellation in five-dimensions, JHEP 0001
+     (2000) 010, hep-th/9911156
+[33] S. A. Abel and B. W. Schofield, Brane anti-brane kinetic mixing, millicharged particles and
+     SUSY breaking, Nucl. Phys. B 685 (2004) 150, hep-th/0311051
+[34] R. Blumenhagen, G. Honecker and T. Weigand, Loop-corrected compactifications of the
+     heterotic string with line bundles, JHEP 0506 (2005) 020, hep-th/0504232
+[35] S. A. Abel, J. Jaeckel, V. V. Khoze and A. Ringwald, Illuminating the Hidden Sector of String
+     Theory by Shining Light through a Magnetic Field, Phys. Lett. B 666 (2008) 66,
+     hep-ph/0608248
+[36] S. A. Abel, M. D. Goodsell, J. Jaeckel, V. V. Khoze and A. Ringwald, Kinetic Mixing of the
+     Photon with Hidden U(1)s in String Phenomenology, JHEP 0807 (2008) 124, arXiv:0803.1449
+[37] M. Goodsell, Light Hidden U(1)s from String Theory, Proceedings of the 5th Patras Workshop
+     on Axions, WIMPs and WISPs, 13-17 Jul 2009. Durham, UK,
+     http://www-library.desy.de/preparch/desy/proc/proc09-05.pdf, arXiv:0912.4206
+[38] M. Goodsell, J. Jaeckel, J. Redondo and A. Ringwald, Naturally Light Hidden Photons in
+     LARGE Volume String Compactifications, JHEP 0911 (2009) 027, arXiv:0909.0515
+[39] M. Goodsell and A. Ringwald, Light Hidden-Sector U(1)s in String Compactifications, Fortsch.
+     Phys. 58 (2010) 716, arXiv:1002.1840
+[40] J. J. Heckman and C. Vafa, An Exceptional Sector for F-theory GUTs, Phys. Rev. D 83 (2011)
+     026006, arXiv:1006.5459
+[41] M. Bullimore, J. P. Conlon and L. T. Witkowski, Kinetic mixing of U(1)s for local string
+     models, JHEP 1011 (2010) 142, arXiv:1009.2380
+[42] M. Cicoli, M. Goodsell, J. Jaeckel and A. Ringwald, Testing String Vacua in the Lab: From a
+     Hidden CMB to Dark Forces in Flux Compactifications, JHEP 1107 (2011) 114,
+     arXiv:1103.3705
+[43] M. Goodsell, S. Ramos-Sanchez and A. Ringwald, Kinetic Mixing of U(1)s in Heterotic
+     Orbifolds, JHEP 1201 (2012) 021, arXiv:1110.6901
+[44] M. Cicoli, M. Goodsell and A. Ringwald, The type IIB string axiverse and its low-energy
+     phenomenology, JHEP 1210 (2012) 146, arXiv:1206.0819
+[45] P. Gondolo and G. Raffelt, Solar neutrino limit on axions and keV-mass bosons, Phys. Rev. D
+     79 (2009) 107301, arXiv:0807.2926
+[46] J. Redondo and G. Raffelt, Solar constraints on hidden photons re-visited, JCAP 1308 (2013)
+     034, arXiv:1305.2920
+[47] N. Vinyoles, A. Serenelli, F. L. Villante, S. Basu, J. Redondo and J. Isern, New axion and
+     hidden photon constraints from a solar data global fit, arXiv:1501.01639
+
+
+
+
+                                              – 42 –
+[48] H. An, M. Pospelov and J. Pradler, New stellar constraints on dark photons, Phys. Lett. B 725
+     (2013) 190, arXiv:1302.3884
+[49] J. Redondo, Helioscope Bounds on Hidden Sector Photons, JCAP 0807 (2008) 008,
+     arXiv:0801.1527
+[50] H. An, M. Pospelov and J. Pradler, Dark Matter Detectors as Dark Photon Helioscopes, Phys.
+     Rev. Lett. 111 (2013) 041302, arXiv:1304.3461
+[51] R. Bähre, B. Döbrich, J. Dreyling-Eschweiler, S. Ghazaryan, R. Hodajerdi, D. Horns,
+     F. Januschek and E. -A. Knabbe et al., Any light particle search II: Technical Design Report,
+     JINST 8 (2013) T09001, arXiv:1302.5647
+[52] R. Horvat, D. Kekez, M. Krcmar, Z. Krecak and A. Ljubicic, Constraining solar hidden
+     photons using HPGe detector, Phys. Lett. B 721 (2013) 220, arXiv:1210.1043
+[53] O. Goncharenko and V. Popov, The Constraints on possible deviations from electrodynamics,
+     LIP-PHYS-93-03
+[54] P. Sikivie, Experimental Tests of the Invisible Axion, Phys. Rev. Lett. 51 (1983) 1415
+     [Erratum-ibid. 52 (1984) 695]
+[55] D. M. Lazarus, G. C. Smith, R. Cameron, A. C. Melissinos, G. Ruoso, Y. K. Semertzidis and
+     F. A. Nezrick, A Search for solar axions, Phys. Rev. Lett. 69 (1992) 2333
+[56] On the experimental search for photon mixing, V. Popov, Turkish Journal of Physics 23 (1999)
+     943
+[57] P. Baillon. Search for para-photons with DELPHI RICH, DELPHI Note 96-172 PHYS 661,
+     CERN, Geneva, Switzerland. http://delphiwww.cern.ch/pubxx/delnote/dn1996.html
+[58] K. Zioutas et al. [CAST Collaboration], First results from the CERN Axion Solar Telescope
+     (CAST), Phys. Rev. Lett. 94 (2005) 121301, hep-ex/0411033
+[59] S. Andriamonje et al. [CAST Collaboration], An Improved limit on the axion-photon coupling
+     from the CAST experiment, JCAP 0704 (2007) 010, hep-ex/0702006
+[60] S. N. Gninenko and J. Redondo, On search for eV hidden sector photons in Super-Kamiokande
+     and CAST experiments, Phys. Lett. B 664 (2008) 180, arXiv:0804.3736
+[61] S. Troitsky, Solar paraphotons, Proceedings of the 7th Patras Workshop on Axions, WIMPs
+     and WISPs. 26 Jun - 1 Jul 2011. Mykonos, Greece, arXiv:1112.5276
+[62] G. Cantatore et al. [CAST Collaboration], Search for low Energy solar Axions with CAST,
+     Proceedings of the 4th Patras Workshop on Axions, WIMPs and WISPs, 18-21 Jun 2008.
+     Hamburg, Germany, arXiv:0809.4581
+[63] T. Mizumoto, R. Ohta, T. Horie, J. Suzuki, Y. Inoue and M. Minowa, Experimental search for
+     solar hidden photons in the eV energy range using kinetic mixing with photons,” JCAP07
+     (2013) 013, arXiv:1302.1000.
+[64] Y. Inoue, T. Mizumoto, R. Ohta, T. Horie, J. ’y. Suzuki and M. Minowa, Search for Hidden
+     photons with Sumico, Proceedings of the 9th Patras Workshop on Axions, WIMPs & WISPs
+     (PATRAS13), 24-28 Jun 2013. Mainz, Germany, arXiv:1312.7245
+[65] http://www.hs.uni-hamburg.de/DE/Ins/Ships/experiment.html
+[66] M. Schwarz, E.-A. Knabbe, A. Lindner, J. Redondo, A. Ringwald, M. Schneide, J. Susol and
+     G. Wiedemann, Results from the Solar Hidden Photon Search (SHIPS), to be submitted
+[67] M. Schwarz, A. Lindner, J. Redondo, A. Ringwald, G. Wiedemann, A. Lindner, J. Redondo et
+     al., Solar Hidden Photon Search, Proceedings of the 7th Patras Workshop on Axions, WIMPs
+     and WISPs 26 Jun - 1 Jul 2011. Mykonos, Greece, arXiv:1111.5797
+[68] V. V. Popov and O. V. Vasil’ev, Deviations from electrodynamics: Sun and Laser, Europhys.
+
+
+
+
+                                              – 43 –
+    Lett. 15 (1991) 7
+[69] J. Redondo, The Sun in Hidden Photons, Proceedings of the 7th Patras Workshop on Axions,
+     WIMPs and WISPs. 26 Jun - 1 Jul 2011. Mykonos, Greece, arXiv:1202.4932
+[70] D. Cadamuro and J. Redondo, Hidden Photons from the Sun, Proceedings of the 6th Patras
+     Workshop on Axions, WIMPs and WISPs, 5-9 Jul 2010. Zurich, Switzerland, arXiv:1010.4689
+[71] M. Ahlers, J. Jaeckel, J. Redondo and A. Ringwald, Phys. Rev. D 78 (2008) 075005,
+     arXiv:0807.4143
+[72] G. Raffelt and L. Stodolsky, Mixing of the Photon with Low Mass Particles, Phys. Rev. D 37
+     (1988) 1237
+[73] http://cdsweb.u-strasbg.fr/topbase/
+[74] M. J. Seaton, Y. Yan, D. Mihalas and A. K. Pradhan. Opacities for stellar envelopes, Mon.
+     Not. Roy. Astron. Soc. 266 805 (1994), arXiv:0410744
+[75] N. R. Badnell, M. A. Bautista, K. Butler, F. Delahaye, C. Mendoza, P. Palmeri, C. J. Zeippen
+     and M. J. Seaton. Up-dated opacities from the Opacity Project, Mon. Not. Roy. Astron. Soc.
+     360, 458 (2005), arXiv:0410744
+[76] M. J. Seaton, OP data on CD for mean opacities and radiative accelerations, Mon. Not. Roy.
+     Astron. Soc. Lett. 362, L1-L3 (2005) astro-ph/0411010
+[77] http://aphysics2.lanl.gov/opacity/lanl/
+[78] N. H. Magee, A. L. Merts, J. J. Keady and D. P. Kilcrease, The Los Alamos LEDCOP code,
+     Los Alamos Report LA-UR-97-1038
+[79] J. Abdallah Jr. and R. E. H. Clark, TOPS: A Multigroup Opacity Code, Los Alamos Report
+     LA-10454
+[80] H. R. Griem, Stark broadening of higher hydrogen and hydrogen-like lines by electrons and ions
+     Astrophys. J. 132 (1960) 883
+[81] W. J. Karzas and R. Latter, Electron Radiative Transitions in a Coulomb Field, Astrophys. J.
+     Supp., 6 (1961) 167
+[82] G. Elwert, Verschärfte Berechnung von Intensität und Polarisation im kontinuerlichen
+     Röntgenspektrum, Ann. Phys. 34 (1939) 178
+[83] A. R. P. Rau, The Negative Ion of Hydrogen, Journal of Astrophysics and Astronomy, Vol. 17,
+     (1996) p. 113
+[84] T. Andersen, Atomic negative ions: structure, dynamics and collisions, Phys. Rep. 394 (2004)
+     157-313
+[85] T. Ohmura and H. Ohmura, Electron-hydrogen scattering at low energies, Phys. Rev. 118
+     (1960) 154
+[86] A. M. Serenelli, W. C. Haxton and C. Pena-Garay, Solar models with accretion. I. Application
+     to the solar abundance problem, Astrophys. J. 743 (2011) 24, arXiv:1104.1639
+[87] M. Asplund, N. Grevesse, A. J. Sauval and P. Scott, The chemical composition of the Sun,
+     Ann. Rev. Astron. Astrophys. 47 (2009) 481, arXiv:0909.0948
+[88] A. C. Vincent, P. Scott and R. Trampedach, Light bosons and photospheric solutions to the
+     solar abundance problem, Mon. Not. Roy. Astron. Soc. 432 (2013) 3332, arXiv:1206.4315
+[89] S. Turck-Chieze, S. Couvidat, R. A. Garcia, A. G. Kosovichev, A. H. Gabriel, G. Berthomieu,
+     J. Provost and A. S. Brun et al., Solar neutrino emission deduced from a seismic model,
+     Astrophys. J. 555 (2001) L69
+[90] S. Couvidat, S. Turck-Chieze and A. G. Kosovichev, Solar seismic models and the neutrino
+
+
+
+
+                                              – 44 –
+     predictions, Astrophys. J. 599 (2003) 1434
+[91] http://irfu.cea.fr/Sap/en/Phocea/Vie_des_labos/Ast/ast_visu.php?id_ast=1444
+[92] A. Serenelli, S. Basu, J. W. Ferguson and M. Asplund, New Solar Composition: The Problem
+     With Solar Models Revisited, Astrophys. J. 705, L123 (2009), arXiv:0909.2668
+[93] http://www.mpa-garching.mpg.de/~aldos/solar_main.html
+[94] D. G. Hummer and D. Mihalas, The equation of state for stellar envelopes. I - an occupation
+     probability formalism for the truncation of internal partition functions, Astrophys. J. 331
+     (1988) 794
+[95] C. A. Iglesias and F. J. Rogers, Updated Opal Opacities, Astrophys. J. 464 (1996) 943
+[96] F. J. Rogers, Occupation numbers for reacting plasmas - The role of the Planck-Larkin
+     partition function, Astrophys. J. 310 (1986) 723-728
+[97] R. Trampedach, W. Däppen and V. A. Baturin, A Synoptic Comparison of the
+     Mihalas-Hummer-Dppen and OPAL Equations of State, Astrophys. J. 646 (2006) 560,
+     arXiv:astro-ph/0604352
+[98] J. Christensen-Dalsgaard, W. Däppen, Y. Lebreton, Solar oscillation frequencies and the
+     equation of state, Nature 336 (1988) 634-638
+[99] A. Nayfonov, W. Dappen, D. G. Hummer and D. Mihalas, The mhd equation of state with
+     post-holtsmark microfield distributions, Astrophys. J. 526 (1999) 451-464, astro-ph/9901360
+[100] W. D. Kraeft, D. Kremp, W. Ebeling and G. Roepke, Quantum statistics of charged particle
+     systems, Akademie-Verlag Berlin (1986)
+[101] D. R. Inglis and E. Teller, Ionic Depression of Series Limits in Cne-Electron Spectra,
+     Astrophys. J. 90 (1939) 439
+[102] D. F. Gray, The observation and analysis of stellar photospheres, Cambridge University Press,
+     U.K. (1992) (second edition)
+[103] F. Castelli and R. L. Kurucz, New grids of ATLAS9 model atmospheres, Submitted to: IAU
+     Symp. astro-ph/0405087 See http://wwwuser.oats.inaf.it/castelli/grids.html
+[104] A, Nordlund, R. F. Stein and M. Asplund, Solar Surface Convection, Living Reviews in Solar
+     Physics, 6 (2009) http://www.livingreviews.org/lrsp-2009-2
+[105] E. Armengaud, F. T. Avignone, M. Betz, P. Brax, P. Brun, G. Cantatore, J. M. Carmona and
+     G. P. Carosi et al., Conceptual Design of the International Axion Observatory (IAXO), JINST
+     9 (2014) T05002, arXiv:1401.3233
+[106] I. G. Irastorza, F. T. Avignone, S. Caspi, J. M. Carmona, T. Dafni, M. Davenport,
+     A. Dudarev and G. Fanourakis et al., Towards a new generation axion helioscope, JCAP 1106
+     (2011) 013, arXiv:1103.5334
+[107] I. Shilon, A. Dudarev, H. Silva and H. H. J. ten Kate, Conceptual Design of a New Large
+     Superconducting Toroid for IAXO, the New International AXion Observatory, IEEE Trans.
+     Appl. Supercond. 23 (2013) 3, 4500604, arXiv:1212.4633
+[108] I. Shilon, A. Dudarev, H. Silva, U. Wagner and H. H. J. ten Kate, The Superconducting Toroid
+     for the New International AXion Observatory (IAXO), IEEE Trans. Appl. Supercond. 24
+     (2014) 3, 4500104, arXiv:1309.2117
+
+
+
+
+                                               – 45 –
+

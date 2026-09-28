@@ -1,6 +1,8 @@
 claims:
 - id: park-production-v2-provenance
-  statement: The fresh ROOT/C++ production calculation derives and checks the dark-photon Compton-like cross section, compares the TEXONO source spectra with Park Figure 1, and records the remaining reproduction failure.
+  statement: The fresh ROOT/C++ production calculation derives and checks the dark-photon
+    Compton-like cross section, compares the TEXONO source spectra with Park Figure
+    1, and records the remaining reproduction failure.
   evidence:
   - code/park_production_v2/production.cpp::Checks
   - code/park_production_v2/reports.cpp::Provenance
@@ -8,17 +10,21 @@ claims:
   - report_park_production_v2_agent.html
   numbers: []
 - id: darkphoton-v3-redo
-  statement: >
-    The corrected ROOT run passes independent cross-section and bounded event-limit checks;
-    every exported curve has finite visible points and survives until canvas export.
-    The figures compare published source data with independent predictions and do not
-    establish complete numerical reproduction of Park or Danilov.
+  statement: 'The corrected ROOT run passes independent cross-section and bounded
+    event-limit checks; every exported curve has finite visible points and survives
+    until canvas export. The figures compare published source data with independent
+    predictions and do not establish complete numerical reproduction of Park or Danilov.
+
+    '
   evidence:
   - code/darkphoton_v3/redo.cpp::Checks,CheckGraph,Save,Figure1,Limits
   - code/darkphoton_v3/output/run_receipt.txt
   - code/darkphoton_v3/output/danilov_digitized.csv
   - papers/darkphoton_v3/danilov2019.pdf::Eqs.5,6,9 and Fig.1
-  numbers: [v3_redo_limits, v3_redo_inputs, v3_redo_domains]
+  numbers:
+  - v3_redo_limits
+  - v3_redo_inputs
+  - v3_redo_domains
 - id: conventional-channel
   statement: 'Conventional reactor searches produce visible kinetically mixed dark
     photons from MeV photons and detect them through inverse Compton-like scattering;
@@ -505,6 +511,50 @@ claims:
   - park_continuation_summary_choices_small_mass_rate_tolerance
   - park_continuation_summary_choices_bin_quadrature_nodes
   - park_continuation_diagnostic_elapsed_seconds
+- id: park-figure1-plot-digitization
+  statement: The four-column text file contains samples extracted from the published
+    vector curves, without recalculating dark-photon production.
+  evidence:
+  - papers_init/park2017.pdf::Figure 1
+  - work/park_figure1_digitization/extract.py::extract
+  - work/park_figure1_digitization/receipt.json
+  numbers:
+  - park-figure1-plot-digitization
+- id: park-figure1-root-plot
+  statement: ROOT renders the digitized text spectra as histogram steps on a logarithmic
+    ordinate, leaving missing samples as gaps and performing no physics calculation.
+  evidence:
+  - work/park_figure1_digitization/plot_park_figure1.C::plot_park_figure1
+  - work/park_figure1_digitization/root_run_receipt.txt
+  numbers:
+  - park-figure1-plot-digitization
+- id: reactor-sensitivity-execution
+  statement: Decay-aware conditional boundaries satisfy their configured event caps.
+    Park figure reproduction remains incomplete; the width near threshold and detector
+    response are not validated.
+  evidence:
+  - work/reactor_sensitivity/sensitivity.cpp::Checks,Calculate
+  - work/reactor_sensitivity/output/run_receipt.txt
+  - code/park_texono/output/run_receipt.txt
+  - papers/park_reproduction/reference20.pdf::Eq.9
+  - papers/darkphoton_v3/park2017.pdf::Eq.4
+  numbers:
+  - reactor-sensitivity-execution
+- id: danilov-fresh-2026-09-25
+  statement: A fresh polarization-resolved calculation passes symbolic and numerical
+    consistency checks and produces conditional TEXONO boundaries. Its direct source
+    normalization does not reproduce a rescaling of the published bound; detector
+    response and resonance remain unvalidated.
+  evidence:
+  - work/danilov_fresh/verify_algebra.py::derive_trace,derive_absorption_polarization,derive_mixing
+  - work/danilov_fresh/calculate.cpp::PhysicsChecks,Limits
+  - work/danilov_fresh/output/algebra_receipt.txt
+  - work/danilov_fresh/output/run_receipt.txt
+  - papers/danilov_fresh/danilov2019.pdf::Eqs.6,9
+  - papers/danilov_fresh/texono2010.pdf::Tables II,III
+  - papers/danilov_fresh/mcdermott2018.pdf::Eqs.9,10 and ancillary table
+  numbers:
+  - danilov-fresh-2026-09-25
 figures:
 - file: papers_reactor_dark_photon/01_park_2017.pdf
   produced_by: source acquisition::curl from https://arxiv.org/pdf/1705.02470
@@ -860,25 +910,32 @@ figures:
   - park-continuation-normalization
 - file: code/park_production_v2/output/compton_validity.pdf
   produced_by: code/park_production_v2/production.cpp::Material
-  shows: Free-electron Klein-Nishina attenuation compared with NIST total uranium attenuation.
-  from_scratch: The free-electron proxy and comparison are calculated in the new ROOT/C++ implementation.
+  shows: Free-electron Klein-Nishina attenuation compared with NIST total uranium
+    attenuation.
+  from_scratch: The free-electron proxy and comparison are calculated in the new ROOT/C++
+    implementation.
   from_library: ROOT graphics; NIST uranium table retained in papers/park_production_v2/nist_uranium.html.
   choices:
-  - Keep the material comparison diagnostic; do not feed it into Park's baseline source rate.
+  - Keep the material comparison diagnostic; do not feed it into Park's baseline source
+    rate.
   supports:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/compton_validity.svg
   produced_by: code/park_production_v2/production.cpp::Material
-  shows: Free-electron Klein-Nishina attenuation compared with NIST total uranium attenuation.
-  from_scratch: The free-electron proxy and comparison are calculated in the new ROOT/C++ implementation.
+  shows: Free-electron Klein-Nishina attenuation compared with NIST total uranium
+    attenuation.
+  from_scratch: The free-electron proxy and comparison are calculated in the new ROOT/C++
+    implementation.
   from_library: ROOT graphics; NIST uranium table retained in papers/park_production_v2/nist_uranium.html.
   choices:
-  - Keep the material comparison diagnostic; do not feed it into Park's baseline source rate.
+  - Keep the material comparison diagnostic; do not feed it into Park's baseline source
+    rate.
   supports:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/cross_section.pdf
   produced_by: code/park_production_v2/production.cpp::PlotCrossSection
-  shows: Total dark-photon production cross section per free electron versus incident photon energy for four masses.
+  shows: Total dark-photon production cross section per free electron versus incident
+    photon energy for four masses.
   from_scratch: Derived two-diagram invariant trace and analytic total.
   from_library: ROOT quadrature and graphics.
   choices:
@@ -887,7 +944,8 @@ figures:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/cross_section.svg
   produced_by: code/park_production_v2/production.cpp::PlotCrossSection
-  shows: Total dark-photon production cross section per free electron versus incident photon energy for four masses.
+  shows: Total dark-photon production cross section per free electron versus incident
+    photon energy for four masses.
   from_scratch: Derived two-diagram invariant trace and analytic total.
   from_library: ROOT quadrature and graphics.
   choices:
@@ -896,26 +954,34 @@ figures:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/figure1_comparison.pdf
   produced_by: code/park_production_v2/production.cpp::PlotSpectra
-  shows: Calculated reactor dark-photon spectra overlaid with horizontal segments extracted from Park Figure 1.
+  shows: Calculated reactor dark-photon spectra overlaid with horizontal segments
+    extracted from Park Figure 1.
   from_scratch: Source convolution using the new production cross section.
-  from_library: ROOT quadrature and graphics; Poppler SVG extraction of the supplied PDF.
+  from_library: ROOT quadrature and graphics; Poppler SVG extraction of the supplied
+    PDF.
   choices:
-  - Compare bin averages without fitting a normalization; disclose the finite-mass mismatch.
+  - Compare bin averages without fitting a normalization; disclose the finite-mass
+    mismatch.
   supports:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/figure1_comparison.svg
   produced_by: code/park_production_v2/production.cpp::PlotSpectra
-  shows: Calculated reactor dark-photon spectra overlaid with horizontal segments extracted from Park Figure 1.
+  shows: Calculated reactor dark-photon spectra overlaid with horizontal segments
+    extracted from Park Figure 1.
   from_scratch: Source convolution using the new production cross section.
-  from_library: ROOT quadrature and graphics; Poppler SVG extraction of the supplied PDF.
+  from_library: ROOT quadrature and graphics; Poppler SVG extraction of the supplied
+    PDF.
   choices:
-  - Compare bin averages without fitting a normalization; disclose the finite-mass mismatch.
+  - Compare bin averages without fitting a normalization; disclose the finite-mass
+    mismatch.
   supports:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/lecture_en_p4.png
   produced_by: pdftoppm::render report_park_production_v2_en.pdf page 4
-  shows: Raster preview of the English lecture's compact cross-section formula and analytic total.
-  from_scratch: Preview only; the equations are generated from the ROOT/C++ results and LaTeX source.
+  shows: Raster preview of the English lecture's compact cross-section formula and
+    analytic total.
+  from_scratch: Preview only; the equations are generated from the ROOT/C++ results
+    and LaTeX source.
   from_library: Poppler PDF rendering.
   choices:
   - Use a page preview to check readable formula layout.
@@ -923,7 +989,8 @@ figures:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/lecture_en_p7.png
   produced_by: pdftoppm::render report_park_production_v2_en.pdf page 7
-  shows: Raster preview of the English lecture's Figure 1 comparison and residual table.
+  shows: Raster preview of the English lecture's Figure 1 comparison and residual
+    table.
   from_scratch: Preview only; plot and table originate from the ROOT/C++ run.
   from_library: Poppler PDF rendering.
   choices:
@@ -950,7 +1017,8 @@ figures:
   - park-production-v2-provenance
 - file: code/park_production_v2/output/paper_page2.svg
   produced_by: pdftocairo -f 2 -l 2 -svg papers_init/park2017.pdf
-  shows: Original supplied Park paper page containing Figure 1, retained for vector-coordinate extraction.
+  shows: Original supplied Park paper page containing Figure 1, retained for vector-coordinate
+    extraction.
   from_scratch: No new scientific curve; this is a source rendering.
   from_library: Poppler PDF-to-SVG conversion.
   choices:
@@ -977,8 +1045,10 @@ figures:
   - park-production-v2-provenance
 - file: report_park_production_v2_en.pdf
   produced_by: code/park_production_v2/lecture.tex compiled with task-local Tectonic
-  shows: English physics lecture containing the derivation, checks, source convolution, figure comparison and validity limits.
-  from_scratch: Lecture content and displayed equations describe the new ROOT/C++ calculation.
+  shows: English physics lecture containing the derivation, checks, source convolution,
+    figure comparison and validity limits.
+  from_scratch: Lecture content and displayed equations describe the new ROOT/C++
+    calculation.
   from_library: LaTeX/Tectonic typesetting and ROOT-generated PDF plots.
   choices:
   - State unavailable token and reasoning metadata instead of estimating it.
@@ -986,213 +1056,778 @@ figures:
   - park-production-v2-provenance
 - file: report_park_production_v2_es.pdf
   produced_by: code/park_production_v2/lecture.tex compiled with task-local Tectonic
-  shows: Spanish physics lecture containing the derivation, checks, source convolution, figure comparison and validity limits.
-  from_scratch: Lecture content and displayed equations describe the new ROOT/C++ calculation.
+  shows: Spanish physics lecture containing the derivation, checks, source convolution,
+    figure comparison and validity limits.
+  from_scratch: Lecture content and displayed equations describe the new ROOT/C++
+    calculation.
   from_library: LaTeX/Tectonic typesetting and ROOT-generated PDF plots.
   choices:
   - State unavailable token and reasoning metadata instead of estimating it.
   supports:
   - park-production-v2-provenance
-- file: "code/darkphoton_v3/output/lecture_es-6.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_en-1.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_en-3.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/report_darkphoton_v3_en.pdf"
-  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
-  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
-  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
-  from_library: "LaTeX/Tectonic typesetting."
-  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure1_medium.png"
-  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
-  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
-  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
-  from_library: "ROOT graph drawing and image export."
-  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_en-5.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/danilov_page3.png"
-  produced_by: "pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf"
-  shows: "Source page for Danilov TEXONO vector digitization and visual axis calibration."
-  from_scratch: "No new physics; exact vector path selection and axis transform are implemented in redo.cpp::DanilovPoints."
-  from_library: "Poppler source rendering."
-  choices: ["Deduplicate identical embedded vector paths.","Use actual PDF coordinates rather than an analytic imitation of the curve."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure2_texono_medium.png"
-  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
-  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
-  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
-  from_library: "ROOT integration and graphics; published curves are external reference evidence."
-  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_es-4.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure2_texono_medium.svg"
-  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
-  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
-  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
-  from_library: "ROOT integration and graphics; published curves are external reference evidence."
-  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/danilov_page3.svg"
-  produced_by: "pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf"
-  shows: "Source page for Danilov TEXONO vector digitization and visual axis calibration."
-  from_scratch: "No new physics; exact vector path selection and axis transform are implemented in redo.cpp::DanilovPoints."
-  from_library: "Poppler source rendering."
-  choices: ["Deduplicate identical embedded vector paths.","Use actual PDF coordinates rather than an analytic imitation of the curve."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure1_medium.svg"
-  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
-  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
-  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
-  from_library: "ROOT graph drawing and image export."
-  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_es-3.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure1_medium.pdf"
-  produced_by: "code/darkphoton_v3/redo.cpp::Produce"
-  shows: "Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6, for three masses."
-  from_scratch: "Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing spectrum."
-  from_library: "ROOT graph drawing and image export."
-  choices: ["Keep all graphs alive until export.","Use representative nonresonant masses with visible in-frame data."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure1_comparison.svg"
-  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
-  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
-  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
-  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
-  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure1_comparison.png"
-  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
-  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
-  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
-  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
-  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure1_comparison.pdf"
-  produced_by: "code/darkphoton_v3/redo.cpp::Figure1"
-  shows: "Park Figure 1 axes and masses: freshly recomputed source spectra versus extracted Park PDF coordinates."
-  from_scratch: "Rechecked trace kernel and fresh Compton convolution; no fitted normalization."
-  from_library: "ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source bins."
-  choices: ["Use one GW and the stated one-MeV source cutoff.","Display the residual disagreement rather than claim full reproduction."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_es-2.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_es-5.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_en-2.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_en-4.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/lecture_es-1.png"
-  produced_by: "pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf"
-  shows: "Full report page preview used to inspect text and embedded nonempty figures."
-  from_scratch: "No new physical data; visual validation of the final report."
-  from_library: "Poppler rendering."
-  choices: ["Inspect every page of both language reports."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/figure2_texono_medium.pdf"
-  produced_by: "code/darkphoton_v3/redo.cpp::Limits"
-  shows: "TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation, and two medium-efficiency scenarios."
-  from_scratch: "Massive inverse cross section, bounded root finding, finite in-frame plot checks."
-  from_library: "ROOT integration and graphics; published curves are external reference evidence."
-  choices: ["Exclude the material resonance window and terminate medium predictions at ten keV.","Use selected-event cap with explicit efficiency; do not fit the normalization.","Separate Park's confidence convention from the one-sided medium cap."]
-  supports: [darkphoton-v3-redo]
-- file: "code/darkphoton_v3/output/report_darkphoton_v3_es.pdf"
-  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
-  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
-  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
-  from_library: "LaTeX/Tectonic typesetting."
-  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
-  supports: [darkphoton-v3-redo]
-- file: "report_darkphoton_v3_en.pdf"
-  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
-  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
-  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
-  from_library: "LaTeX/Tectonic typesetting."
-  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
-  supports: [darkphoton-v3-redo]
-- file: "report_darkphoton_v3_es.pdf"
-  produced_by: "report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile lecture_redo.tex with Tectonic"
-  shows: "Bilingual physics lecture with the derivation, three populated plots, conditional limits, and explicit unresolved discrepancies."
-  from_scratch: "Audited derivation and explanatory text; ROOT-calculated plots."
-  from_library: "LaTeX/Tectonic typesetting."
-  choices: ["Distinguish implemented tests from unmodeled detector response.","Replace the earlier invalid claim of exact resonance probabilities."]
-  supports: [darkphoton-v3-redo]
-- file: "papers/darkphoton_v3/park2017.pdf"
-  produced_by: "local source preservation::copy supplied project PDF"
-  shows: "Local reference PDF supporting the equations and published comparison."
-  from_scratch: "None; reference artifact."
-  from_library: "Local PDF copy."
-  choices: ["Cite local sources and preserve the original scientific inputs."]
-  supports: [darkphoton-v3-redo]
-- file: "papers/darkphoton_v3/danilov2019.pdf"
-  produced_by: "local source preservation::copy supplied project PDF"
-  shows: "Local reference PDF supporting the equations and published comparison."
-  from_scratch: "None; reference artifact."
-  from_library: "Local PDF copy."
-  choices: ["Cite local sources and preserve the original scientific inputs."]
-  supports: [darkphoton-v3-redo]
-- file: "papers/darkphoton_v3/reference15.pdf"
-  produced_by: "local source preservation::copy supplied project PDF"
-  shows: "Local reference PDF supporting the equations and published comparison."
-  from_scratch: "None; reference artifact."
-  from_library: "Local PDF copy."
-  choices: ["Cite local sources and preserve the original scientific inputs."]
-  supports: [darkphoton-v3-redo]
+- file: code/darkphoton_v3/output/lecture_es-6.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_en-1.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_en-3.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/report_darkphoton_v3_en.pdf
+  produced_by: report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile
+    lecture_redo.tex with Tectonic
+  shows: Bilingual physics lecture with the derivation, three populated plots, conditional
+    limits, and explicit unresolved discrepancies.
+  from_scratch: Audited derivation and explanatory text; ROOT-calculated plots.
+  from_library: LaTeX/Tectonic typesetting.
+  choices:
+  - Distinguish implemented tests from unmodeled detector response.
+  - Replace the earlier invalid claim of exact resonance probabilities.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure1_medium.png
+  produced_by: code/darkphoton_v3/redo.cpp::Produce
+  shows: Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6,
+    for three masses.
+  from_scratch: Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing
+    spectrum.
+  from_library: ROOT graph drawing and image export.
+  choices:
+  - Keep all graphs alive until export.
+  - Use representative nonresonant masses with visible in-frame data.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_en-5.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/danilov_page3.png
+  produced_by: pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf
+  shows: Source page for Danilov TEXONO vector digitization and visual axis calibration.
+  from_scratch: No new physics; exact vector path selection and axis transform are
+    implemented in redo.cpp::DanilovPoints.
+  from_library: Poppler source rendering.
+  choices:
+  - Deduplicate identical embedded vector paths.
+  - Use actual PDF coordinates rather than an analytic imitation of the curve.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure2_texono_medium.png
+  produced_by: code/darkphoton_v3/redo.cpp::Limits
+  shows: 'TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation,
+    and two medium-efficiency scenarios.'
+  from_scratch: Massive inverse cross section, bounded root finding, finite in-frame
+    plot checks.
+  from_library: ROOT integration and graphics; published curves are external reference
+    evidence.
+  choices:
+  - Exclude the material resonance window and terminate medium predictions at ten
+    keV.
+  - Use selected-event cap with explicit efficiency; do not fit the normalization.
+  - Separate Park's confidence convention from the one-sided medium cap.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_es-4.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure2_texono_medium.svg
+  produced_by: code/darkphoton_v3/redo.cpp::Limits
+  shows: 'TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation,
+    and two medium-efficiency scenarios.'
+  from_scratch: Massive inverse cross section, bounded root finding, finite in-frame
+    plot checks.
+  from_library: ROOT integration and graphics; published curves are external reference
+    evidence.
+  choices:
+  - Exclude the material resonance window and terminate medium predictions at ten
+    keV.
+  - Use selected-event cap with explicit efficiency; do not fit the normalization.
+  - Separate Park's confidence convention from the one-sided medium cap.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/danilov_page3.svg
+  produced_by: pdftocairo or pdftoppm::render page 3 of papers/darkphoton_v3/danilov2019.pdf
+  shows: Source page for Danilov TEXONO vector digitization and visual axis calibration.
+  from_scratch: No new physics; exact vector path selection and axis transform are
+    implemented in redo.cpp::DanilovPoints.
+  from_library: Poppler source rendering.
+  choices:
+  - Deduplicate identical embedded vector paths.
+  - Use actual PDF coordinates rather than an analytic imitation of the curve.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure1_medium.svg
+  produced_by: code/darkphoton_v3/redo.cpp::Produce
+  shows: Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6,
+    for three masses.
+  from_scratch: Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing
+    spectrum.
+  from_library: ROOT graph drawing and image export.
+  choices:
+  - Keep all graphs alive until export.
+  - Use representative nonresonant masses with visible in-frame data.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_es-3.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure1_medium.pdf
+  produced_by: code/darkphoton_v3/redo.cpp::Produce
+  shows: Direct medium-converted photon spectrum divided by epsilon squared at epsilon=1e-6,
+    for three masses.
+  from_scratch: Danilov Eq.5 coefficient corrected to two; evaluate the small-mixing
+    spectrum.
+  from_library: ROOT graph drawing and image export.
+  choices:
+  - Keep all graphs alive until export.
+  - Use representative nonresonant masses with visible in-frame data.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure1_comparison.svg
+  produced_by: code/darkphoton_v3/redo.cpp::Figure1
+  shows: 'Park Figure 1 axes and masses: freshly recomputed source spectra versus
+    extracted Park PDF coordinates.'
+  from_scratch: Rechecked trace kernel and fresh Compton convolution; no fitted normalization.
+  from_library: ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source
+    bins.
+  choices:
+  - Use one GW and the stated one-MeV source cutoff.
+  - Display the residual disagreement rather than claim full reproduction.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure1_comparison.png
+  produced_by: code/darkphoton_v3/redo.cpp::Figure1
+  shows: 'Park Figure 1 axes and masses: freshly recomputed source spectra versus
+    extracted Park PDF coordinates.'
+  from_scratch: Rechecked trace kernel and fresh Compton convolution; no fitted normalization.
+  from_library: ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source
+    bins.
+  choices:
+  - Use one GW and the stated one-MeV source cutoff.
+  - Display the residual disagreement rather than claim full reproduction.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure1_comparison.pdf
+  produced_by: code/darkphoton_v3/redo.cpp::Figure1
+  shows: 'Park Figure 1 axes and masses: freshly recomputed source spectra versus
+    extracted Park PDF coordinates.'
+  from_scratch: Rechecked trace kernel and fresh Compton convolution; no fitted normalization.
+  from_library: ROOT quadrature, TGraph, TCanvas; previously extracted v2 PDF source
+    bins.
+  choices:
+  - Use one GW and the stated one-MeV source cutoff.
+  - Display the residual disagreement rather than claim full reproduction.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_es-2.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_es-5.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_en-2.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_en-4.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/lecture_es-1.png
+  produced_by: pdftoppm::render corresponding report_darkphoton_v3_en.pdf or report_darkphoton_v3_es.pdf
+  shows: Full report page preview used to inspect text and embedded nonempty figures.
+  from_scratch: No new physical data; visual validation of the final report.
+  from_library: Poppler rendering.
+  choices:
+  - Inspect every page of both language reports.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/figure2_texono_medium.pdf
+  produced_by: code/darkphoton_v3/redo.cpp::Limits
+  shows: 'TEXONO limits: Park quoted, Danilov vector extraction, Park-convention recalculation,
+    and two medium-efficiency scenarios.'
+  from_scratch: Massive inverse cross section, bounded root finding, finite in-frame
+    plot checks.
+  from_library: ROOT integration and graphics; published curves are external reference
+    evidence.
+  choices:
+  - Exclude the material resonance window and terminate medium predictions at ten
+    keV.
+  - Use selected-event cap with explicit efficiency; do not fit the normalization.
+  - Separate Park's confidence convention from the one-sided medium cap.
+  supports:
+  - darkphoton-v3-redo
+- file: code/darkphoton_v3/output/report_darkphoton_v3_es.pdf
+  produced_by: report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile
+    lecture_redo.tex with Tectonic
+  shows: Bilingual physics lecture with the derivation, three populated plots, conditional
+    limits, and explicit unresolved discrepancies.
+  from_scratch: Audited derivation and explanatory text; ROOT-calculated plots.
+  from_library: LaTeX/Tectonic typesetting.
+  choices:
+  - Distinguish implemented tests from unmodeled detector response.
+  - Replace the earlier invalid claim of exact resonance probabilities.
+  supports:
+  - darkphoton-v3-redo
+- file: report_darkphoton_v3_en.pdf
+  produced_by: report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile
+    lecture_redo.tex with Tectonic
+  shows: Bilingual physics lecture with the derivation, three populated plots, conditional
+    limits, and explicit unresolved discrepancies.
+  from_scratch: Audited derivation and explanatory text; ROOT-calculated plots.
+  from_library: LaTeX/Tectonic typesetting.
+  choices:
+  - Distinguish implemented tests from unmodeled detector response.
+  - Replace the earlier invalid claim of exact resonance probabilities.
+  supports:
+  - darkphoton-v3-redo
+- file: report_darkphoton_v3_es.pdf
+  produced_by: report_darkphoton_v3_en.tex or report_darkphoton_v3_es.tex::compile
+    lecture_redo.tex with Tectonic
+  shows: Bilingual physics lecture with the derivation, three populated plots, conditional
+    limits, and explicit unresolved discrepancies.
+  from_scratch: Audited derivation and explanatory text; ROOT-calculated plots.
+  from_library: LaTeX/Tectonic typesetting.
+  choices:
+  - Distinguish implemented tests from unmodeled detector response.
+  - Replace the earlier invalid claim of exact resonance probabilities.
+  supports:
+  - darkphoton-v3-redo
+- file: papers/darkphoton_v3/park2017.pdf
+  produced_by: local source preservation::copy supplied project PDF
+  shows: Local reference PDF supporting the equations and published comparison.
+  from_scratch: None; reference artifact.
+  from_library: Local PDF copy.
+  choices:
+  - Cite local sources and preserve the original scientific inputs.
+  supports:
+  - darkphoton-v3-redo
+- file: papers/darkphoton_v3/danilov2019.pdf
+  produced_by: local source preservation::copy supplied project PDF
+  shows: Local reference PDF supporting the equations and published comparison.
+  from_scratch: None; reference artifact.
+  from_library: Local PDF copy.
+  choices:
+  - Cite local sources and preserve the original scientific inputs.
+  supports:
+  - darkphoton-v3-redo
+- file: papers/darkphoton_v3/reference15.pdf
+  produced_by: local source preservation::copy supplied project PDF
+  shows: Local reference PDF supporting the equations and published comparison.
+  from_scratch: None; reference artifact.
+  from_library: Local PDF copy.
+  choices:
+  - Cite local sources and preserve the original scientific inputs.
+  supports:
+  - darkphoton-v3-redo
+- file: work/park_figure1_digitization/page2.svg
+  produced_by: work/park_figure1_digitization/extract.py::extract
+  shows: 'The source paper''s second page, including Figure 1: dark-photon energy
+    in MeV versus the production spectrum in units of 10^21 MeV^-1 s^-1 on a logarithmic
+    ordinate. This is the source graphic used for digitization.
+
+    '
+  from_scratch: No new figure or physical quantities computed; converted the source
+    PDF page.
+  from_library: Poppler pdftocairo converts page 2 of papers_init/park2017.pdf to
+    SVG.
+  choices:
+  - Preserve vector paths instead of reading raster pixels to retain plotted histogram
+    heights.
+  - Retain the full page to preserve axes, legend, and caption alongside the extracted
+    paths.
+  supports:
+  - park-figure1-plot-digitization
+- file: work/park_figure1_digitization/park_figure1_root.png
+  produced_by: work/park_figure1_digitization/plot_park_figure1.C::plot_park_figure1
+  shows: Dark-photon energy in MeV versus spectra in units of 10^21 MeV^-1 s^-1 for
+    the three masses in Park Figure 1, read from the digitized table.
+  from_scratch: Text parsing and bin-center-to-step rendering; no physical quantities
+    calculated.
+  from_library: ROOT TGraph, TCanvas, axis and legend rendering and image export.
+  choices:
+  - Use ROOT as requested by the user.
+  - Preserve the blue solid, black solid, and black dotted source curve styles and
+    logarithmic ordinate.
+  - Break paths at nan samples; do not extrapolate to the frame or fill absent data.
+  - Render bin-center data as steps without smoothing.
+  supports:
+  - park-figure1-root-plot
+- file: work/park_figure1_digitization/park_figure1_root.pdf
+  produced_by: work/park_figure1_digitization/plot_park_figure1.C::plot_park_figure1
+  shows: Dark-photon energy in MeV versus spectra in units of 10^21 MeV^-1 s^-1 for
+    the three masses in Park Figure 1, read from the digitized table.
+  from_scratch: Text parsing and bin-center-to-step rendering; no physical quantities
+    calculated.
+  from_library: ROOT TGraph, TCanvas, axis and legend rendering and image export.
+  choices:
+  - Use ROOT as requested by the user.
+  - Preserve the blue solid, black solid, and black dotted source curve styles and
+    logarithmic ordinate.
+  - Break paths at nan samples; do not extrapolate to the frame or fill absent data.
+  - Render bin-center data as steps without smoothing.
+  supports:
+  - park-figure1-root-plot
+- file: work/reactor_sensitivity/output/conditional_limits.svg
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/conditional_limits.pdf
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/conditional_limits.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: report_reactor_sensitivity_en.pdf
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: report_reactor_sensitivity_es.pdf
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_es-4.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_en-6.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_en-5.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_es-7.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_en-3.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_en-1.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_es-6.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_en-7.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_es-2.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_es-3.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_en-2.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_es-5.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_es-1.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/reactor_sensitivity/output/lecture_en-4.png
+  produced_by: work/reactor_sensitivity/sensitivity.cpp::Calculate; work/reactor_sensitivity/build_reports.py::assemble
+  shows: Mixing boundary versus dark-photon mass, with separate vacuum and medium
+    hypotheses; PDFs also explain the reused source-comparison plots.
+  from_scratch: Decay propagation and conditional event-boundary calculation
+  from_library: ROOT rendering; Tectonic PDF layout; checked project kernels
+  choices:
+  - Separate medium graphs across excluded resonance
+  - Label approximate decay and unvalidated response
+  supports:
+  - reactor-sensitivity-execution
+- file: work/danilov_fresh/output/oscillation_source.pdf
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/oscillation_source.svg
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/oscillation_source.png
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/polarized_cross_sections.pdf
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/polarized_cross_sections.svg
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/polarized_cross_sections.png
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/texono_exclusion.pdf
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/texono_exclusion.svg
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/texono_exclusion.png
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/decay_enhancement.pdf
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/decay_enhancement.svg
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: work/danilov_fresh/output/decay_enhancement.png
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: report_danilov_fresh_en.pdf
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
+- file: report_danilov_fresh_es.pdf
+  produced_by: work/danilov_fresh/calculate.cpp::DrawSource,DrawCrossSections,Limits,DecayPlot;
+    lecture.tex
+  shows: Fresh source, polarized cross sections, conditional exclusion or published
+    decay enhancement; lecture PDFs assemble these with derivations.
+  from_scratch: New amplitudes, conversion and event calculations; rendering of downloaded
+    decay input is distinguished in captions.
+  from_library: ROOT graphics and quadrature; published decay table; LaTeX layout
+  choices:
+  - No inherited curves
+  - Gaps for omitted resonance/invalid domain
+  - Absorption-only and decay-acceptance hypotheses shown separately
+  supports:
+  - danilov-fresh-2026-09-25
